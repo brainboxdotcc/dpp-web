@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1when__any_1_1awaiter" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::when_any::awaiter</compoundname>
+    <includes local="no">when_any.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1awaiter_1a81d9f05c1cdfbbfa54963c406d4400d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> *</type>
+        <definition>when_any* dpp::when_any&lt; Args &gt;::awaiter::self</definition>
+        <argsstring></argsstring>
+        <name>self</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="403" column="10" bodyfile="include/dpp/coro/when_any.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1when__any_1_1awaiter_1a2f05efe18ee11bdf39f0747b07510b51" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::when_any&lt; Args &gt;::awaiter::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when using co_await. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether the result is ready </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="410" column="7" bodyfile="include/dpp/coro/when_any.h" bodystart="410" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1when__any_1_1awaiter_1a4b366cae6532be865e2e0f7a13cc8fc8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::when_any&lt; Args &gt;::awaiter::await_suspend</definition>
+        <argsstring>(detail::std_coroutine::coroutine_handle&lt;&gt; caller) noexcept</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>detail::std_coroutine::coroutine_handle&lt;&gt;</type>
+          <declname>caller</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when using co_await. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Returns false if we want to resume immediately. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="419" column="6" bodyfile="include/dpp/coro/when_any.h" bodystart="419" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1when__any_1_1awaiter_1a7c0b78ec88317aa2b4de445bab2cea9a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1when__any_1_1result" kindref="compound">result</ref></type>
+        <definition>result dpp::when_any&lt; Args &gt;::awaiter::await_resume</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Third and final function called by the standard library when using co_await. Returns the result object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1when__any_1_1result" kindref="compound">result</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="430" column="8" bodyfile="include/dpp/coro/when_any.h" bodystart="430" bodyend="432"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Object returned by <ref refid="classdpp_1_1when__any_1a92c4350528299dbe000badca9a3fc9a7" kindref="member">operator co_await()</ref>. Meant to be used by the standard library, not by a user. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1when__any_1_1result" kindref="compound">result</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>dpp::when_any&lt; Args &gt;</label>
+        <link refid="classdpp_1_1when__any"/>
+      </node>
+      <node id="1">
+        <label>dpp::when_any&lt; Args &gt;::awaiter</label>
+        <link refid="structdpp_1_1when__any_1_1awaiter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>self</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/when_any.h" line="399" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="399" bodyend="433"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1when__any_1_1awaiter_1a2f05efe18ee11bdf39f0747b07510b51" prot="public" virt="non-virtual"><scope>dpp::when_any::awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1when__any_1_1awaiter_1a7c0b78ec88317aa2b4de445bab2cea9a" prot="public" virt="non-virtual"><scope>dpp::when_any::awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1when__any_1_1awaiter_1a4b366cae6532be865e2e0f7a13cc8fc8" prot="public" virt="non-virtual"><scope>dpp::when_any::awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1when__any_1_1awaiter_1a81d9f05c1cdfbbfa54963c406d4400d8" prot="public" virt="non-virtual"><scope>dpp::when_any::awaiter</scope><name>self</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

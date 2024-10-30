@@ -9,5 +9,6 @@ var installing =
     [ "Installing from zip (Windows) for Visual Studio", "install-windows-vs-zip.html", null ],
     [ "Installing from XMake", "install-xmake.html", null ],
     [ "Installing from Homebrew (OSX)", "install-brew.html", null ],
+    [ "Installing with Conan", "install-conan.html", null ],
     [ "Building D++ from Source", "install-from-source.html", "install-from-source" ]
 ];

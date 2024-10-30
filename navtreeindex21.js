@@ -7,7 +7,8 @@ var NAVTREEINDEX21 =
 "index.html#autotoc_md159":[0,6],
 "install-arch-aur.html":[3,3],
 "install-brew.html":[3,8],
-"install-from-source.html":[3,9],
+"install-conan.html":[3,9],
+"install-from-source.html":[3,10],
 "install-gentoo-portage.html":[3,5],
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a1497e7d00b13f4eec2dd1556af760885":[9,0,0,388,8],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a406609dc4e2712b0abc9ca72bf57e390":[9,0,0,388,11],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a64b0c58ed6fc338811fa50e4001c739b":[9,0,0,388,10],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a6c27cbd85161eb3666d8f136391a5f58":[9,0,0,388,12],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a7ad00eff38e894d72279e13b29e4ab87":[9,0,0,388,3]
+"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a6c27cbd85161eb3666d8f136391a5f58":[9,0,0,388,12]
 };

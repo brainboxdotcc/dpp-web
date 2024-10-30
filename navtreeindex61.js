@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"structdpp_1_1guild__role__create__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,114,4],
 "structdpp_1_1guild__role__create__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,119,4],
 "structdpp_1_1guild__role__delete__t.html":[9,0,0,120],
 "structdpp_1_1guild__role__delete__t.html":[11,0,0,115],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "structdpp_1_1guild__stickers__update__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,127,6],
 "structdpp_1_1guild__stickers__update__t.html#aae35038ecb874c46e355fac3863615d0":[11,0,0,122,6],
 "structdpp_1_1guild__stickers__update__t.html#ab79bd932dcd8a9b8280276e2f228784f":[11,0,0,122,13],
-"structdpp_1_1guild__stickers__update__t.html#ab79bd932dcd8a9b8280276e2f228784f":[9,0,0,127,13],
-"structdpp_1_1guild__stickers__update__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,127,7]
+"structdpp_1_1guild__stickers__update__t.html#ab79bd932dcd8a9b8280276e2f228784f":[9,0,0,127,13]
 };
