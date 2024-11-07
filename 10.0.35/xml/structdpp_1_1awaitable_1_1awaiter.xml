@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1awaitable_1_1awaiter" kind="struct" language="C++" prot="protected">
+    <compoundname>dpp::awaitable::awaiter</compoundname>
+    <includes local="no">awaitable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1awaiter_1a638dcbde255195c2bacf7bf0b96f0a46" prot="public" static="no" mutable="no">
+        <type>Derived</type>
+        <definition>Derived dpp::awaitable&lt; T &gt;::awaiter&lt; Derived &gt;::awaitable_obj</definition>
+        <argsstring></argsstring>
+        <name>awaitable_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="248" column="9" bodyfile="include/dpp/coro/awaitable.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1awaitable_1_1awaiter_1aa5575e2dbdf59045f57254bc5614f87b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; T &gt;::awaiter&lt; Derived &gt;::await_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when co_await-ing this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the awaitable&apos;s <ref refid="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" kindref="member">valid()</ref> would return false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether the result is ready, in which case we don&apos;t need to suspend </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="256" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="700" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1awaitable_1_1awaiter_1a336889faecf004add892722ac55f267e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; T &gt;::awaiter&lt; Derived &gt;::await_suspend</definition>
+        <argsstring>(detail::std_coroutine::coroutine_handle&lt;&gt; handle)</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>detail::std_coroutine::coroutine_handle&lt;&gt;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when co_await-ing this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the awaitable&apos;s <ref refid="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" kindref="member">valid()</ref> would return false. At this point the coroutine frame was allocated and suspended.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether we do need to suspend or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="266" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="669" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1awaitable_1_1awaiter_1ad5c03ed6cf1372bad2da768f4a584e63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T dpp::awaitable&lt; T &gt;::awaiter&lt; Derived &gt;::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Third and final function called by the standard library when co_await-ing this object, after resuming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>?</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any exception that occured during the retrieval of the value will be thrown </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T The result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="274" column="3" bodyfile="include/dpp/coro/awaitable.h" bodystart="682" bodyend="694"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Awaiter returned by co_await. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the await_ready, await_suspend and await_resume functions required by the C++ standard. This class is CRTP-like, in that it will refer to an object derived from awaitable.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Derived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of reference to refer to the awaitable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Derived</label>
+      </node>
+      <node id="1">
+        <label>dpp::awaitable&lt; T &gt;::awaiter&lt; Derived &gt;</label>
+        <link refid="structdpp_1_1awaitable_1_1awaiter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>awaitable_obj</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/awaitable.h" line="247" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="247" bodyend="275"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1awaitable_1_1awaiter_1aa5575e2dbdf59045f57254bc5614f87b" prot="public" virt="non-virtual"><scope>dpp::awaitable::awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1awaitable_1_1awaiter_1ad5c03ed6cf1372bad2da768f4a584e63" prot="public" virt="non-virtual"><scope>dpp::awaitable::awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1awaitable_1_1awaiter_1a336889faecf004add892722ac55f267e" prot="public" virt="non-virtual"><scope>dpp::awaitable::awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1awaitable_1_1awaiter_1a638dcbde255195c2bacf7bf0b96f0a46" prot="public" virt="non-virtual"><scope>dpp::awaitable::awaiter</scope><name>awaitable_obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

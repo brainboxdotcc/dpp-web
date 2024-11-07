@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="cache_8h" kind="file" language="C++">
+    <compoundname>cache.h</compoundname>
+    <includes refid="export_8h" local="no">dpp/export.h</includes>
+    <includes refid="snowflake_8h" local="no">dpp/snowflake.h</includes>
+    <includes refid="managed_8h" local="no">dpp/managed.h</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">shared_mutex</includes>
+    <includedby refid="cluster_8h" local="no">cluster.h</includedby>
+    <includedby refid="dpp_8h" local="no">dpp.h</includedby>
+    <includedby refid="restresults_8h" local="no">restresults.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>cache.h</label>
+        <link refid="cache_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp/exception.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp/export.h</label>
+      </node>
+      <node id="4">
+        <label>dpp/json_fwd.h</label>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dpp/managed.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp/snowflake.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>dpp/nlohmann/json_fwd.hpp</label>
+      </node>
+      <node id="8">
+        <label>exception</label>
+      </node>
+      <node id="14">
+        <label>mutex</label>
+      </node>
+      <node id="15">
+        <label>shared_mutex</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>type_traits</label>
+      </node>
+      <node id="13">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>cache.h</label>
+        <link refid="cache_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cluster.h</label>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>collector.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>discordvoiceclient.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp.h</label>
+      </node>
+      <node id="6">
+        <label>restrequest.h</label>
+      </node>
+      <node id="8">
+        <label>restresults.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>timed_listener.h</label>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdpp_1_1cache" prot="public">dpp::cache</innerclass>
+    <innernamespace refid="namespacedpp">dpp</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cache_8h_1abf752ad963521930033a1fff6054b164" prot="public" static="no">
+        <name>cache_decl</name>
+        <param><defname>type</defname></param>
+        <param><defname>setter</defname></param>
+        <param><defname>getter</defname></param>
+        <param><defname>counter</defname></param>
+        <initializer>/** Find an object in the cache by id. @return type* Pointer to the object or nullptr when it&apos;s not found */ DPP_EXPORT class type * setter (snowflake id); DPP_EXPORT cache&lt;class type&gt; * getter (); /** Get the amount of cached type objects. */ DPP_EXPORT uint64_t counter ();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="264" column="9" bodyfile="include/dpp/cache.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/cache.h"/>
+  </compounddef>
+</doxygen>
