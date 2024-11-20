@@ -1,10 +1,10 @@
 var NAVTREEINDEX21 =
 {
-"index.html#autotoc_md156":[0,3,3],
-"index.html#autotoc_md157":[0,3,4],
-"index.html#autotoc_md158":[0,4],
-"index.html#autotoc_md159":[0,5],
-"index.html#autotoc_md160":[0,6],
+"index.html#autotoc_md157":[0,3,3],
+"index.html#autotoc_md158":[0,3,4],
+"index.html#autotoc_md159":[0,4],
+"index.html#autotoc_md160":[0,5],
+"index.html#autotoc_md161":[0,6],
 "install-arch-aur.html":[3,3],
 "install-brew.html":[3,8],
 "install-conan.html":[3,9],

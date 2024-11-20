@@ -653,7 +653,6 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Obtain an awaitable object that refers to any event. It can be co_await-ed to wait for the next event. </p>
-<p >Example:</p>
 <p >Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classdpp_1_1task.html">dpp::task&lt;&gt;</a> my_handler(<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line"> <span class="keyword">co_await</span> <span class="keyword">event</span>.co_reply(<a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>().add_component(<a class="code hl_class" href="classdpp_1_1component.html">dpp::component</a>().add_component().set_label(<span class="stringliteral">&quot;click me!&quot;</span>).set_id(<span class="stringliteral">&quot;test&quot;</span>)));</div>
 <div class="line"> </div>

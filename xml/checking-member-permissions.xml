@@ -6,9 +6,9 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Of course most people do just iterate over the roles of a member to check for a permission. But there&apos;s a helper method for that: <ref refid="classdpp_1_1guild_1abd799f5cbe1907c46b86937bda124bee" kindref="member">dpp::guild::base_permissions</ref> gets a member&apos;s permission taking into account the server owner and role permissions.</para>
+<para>Of course most people typically iterate over the roles of a member to check for a permission. But there is a helper method for this: <ref refid="classdpp_1_1guild_1abd799f5cbe1907c46b86937bda124bee" kindref="member">dpp::guild::base_permissions</ref> retrieves a member&apos;s permissions, taking into account role permissions <bold>and</bold> the server owner.</para>
 <para>For total member permissions including channel overwrites use either the <ref refid="classdpp_1_1channel_1adfb656e912fba27c809ab8754e2855b5" kindref="member">dpp::channel::get_user_permissions</ref> or <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">dpp::guild::permission_overwrites</ref> method. Both do the same under the hood.</para>
-<para>They all return a <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class, which is a wrapper around a permission bitmask containing bits of the <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> enum.</para>
+<para>They all return a <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class, which is a wrapper around a permission bitmask with several helpful methods for easier manipulation and checking of permissions. This bitmask contains flags from the <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> enum.</para>
 <para>Demonstration:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>*<sp/>c<sp/>=<sp/><ref refid="namespacedpp_1a165978ef81875d2798e78c6eaf4eeafd" kindref="member">dpp::find_channel</ref>(some_channel_id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>&amp;&amp;<sp/>c-&gt;<ref refid="classdpp_1_1channel_1adfb656e912fba27c809ab8754e2855b5" kindref="member">get_user_permissions</ref>(member).<ref refid="classdpp_1_1permission_1adc6228f57c04d9ad60df458c4a7e76bb" kindref="member">can</ref>(<ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79" kindref="member">dpp::p_send_messages</ref>))<sp/>{</highlight></codeline>
@@ -17,8 +17,8 @@
 </programlisting></para>
 <sect3 id="checking-member-permissions_1autotoc_md121">
 <title>Role Hierarchy</title>
-<para>The recommended and correct way to compare for roles in the hierarchy is using the comparison operators (<computeroutput>&lt;</computeroutput>, <computeroutput>&gt;</computeroutput>) on the dpp::role objects themselves. Keep in mind that multiple roles can have the same position number. As a result, comparing roles by position alone can lead to subtle bugs when checking for role hierarchy.</para>
-<para>For example let&apos;s say you have a ban command, and want to make sure that any issuer of the command can only ban members lower position than their own highest role.</para>
+<para>The recommended and correct way to compare for roles in the hierarchy is using the comparison operators (<computeroutput>&lt;</computeroutput>, <computeroutput>&gt;</computeroutput>) on the <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref> objects themselves. Keep in mind that multiple roles can have the same position number. As a result, comparing roles by position alone can lead to subtle bugs when checking for role hierarchy.</para>
+<para>For example let&apos;s say you have a ban command, and want to make sure that any issuer of the command can only ban members of lower position than their own highest role:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal">bot.on_interaction_create([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref><sp/>target_id<sp/>=<sp/>std::get&lt;dpp::snowflake&gt;(event.<ref refid="structdpp_1_1interaction__create__t_1ae89b601e82f534d5d87135b82a6f0491" kindref="member">get_parameter</ref>(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1guild__member" kindref="compound">dpp::guild_member</ref><sp/>target<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.command.get_resolved_member(target_id);</highlight></codeline>
@@ -42,7 +42,7 @@
 <title>Permissions in Interaction Events</title>
 <sect3 id="checking-member-permissions_1autotoc_md123">
 <title>Default Command Permissions</title>
-<para>Discord&apos;s intended way to manage permissions for commands is through default member permissions. You set them using <ref refid="classdpp_1_1slashcommand_1a51084be92893e21d13ffe320a2b77e8a" kindref="member">dpp::slashcommand::set_default_permissions</ref> when creating or updating a command to set the default permissions a user must have to use it. However, server administrators can then overwrite these permissions by their own restrictions.</para>
+<para>Discord&apos;s intended way of managing permissions for commands is through &quot;default member permissions&quot;. In a nutshell you tell Discord which permissions a user must have to use the command. Discord completely hides the command for members who don&apos;t have the required permissions. You set them using <ref refid="classdpp_1_1slashcommand_1a51084be92893e21d13ffe320a2b77e8a" kindref="member">dpp::slashcommand::set_default_permissions</ref> when creating or updating a command.</para>
 <para>The corresponding code to create a command with default permissions would look something like this:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref><sp/>command(</highlight><highlight class="stringliteral">&quot;ban&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ban<sp/>a<sp/>member&quot;</highlight><highlight class="normal">,<sp/>bot.me.id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -53,10 +53,13 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">bot.global_command_create(command);</highlight></codeline>
 </programlisting></para>
+<para>You can set the default member permissions to &quot;0&quot; to disable the command for everyone except admins by default.</para>
+<para>For more customization for server owners, they can override these permissions by their own restrictions in the server settings. This is why they are referred to as &quot;default&quot; permissions.</para>
 </sect3>
 <sect3 id="checking-member-permissions_1autotoc_md124">
 <title>Checking Permissions on Your Own</title>
-<para>If you want to check permissions on your own, the easiest way to check if a member has certain permissions in interaction events is by using the <ref refid="classdpp_1_1interaction_1a89ef384ef9f2c2f7bf99c2b5ba0844c3" kindref="member">dpp::interaction::get_resolved_permission</ref> function. The resolved list contains associated structures for the command and does not use the cache or require any extra API calls. Note that the permissions in the resolved set are pre-calculated by Discord and taking into account channel overwrites, roles and admin privileges. So no need to loop through roles or stuff like that.</para>
+<para>When using default permissions you don&apos;t necessarily need to check the issuing user for any permissions in the interaction event as Discord handles all that for you. However, if you don&apos;t want server admins to be able to override the command restrictions, you can make those permission checks on your own.</para>
+<para>To check if a member has certain permissions during interaction events, the easiest way is to use the <ref refid="classdpp_1_1interaction_1a89ef384ef9f2c2f7bf99c2b5ba0844c3" kindref="member">dpp::interaction::get_resolved_permission</ref> function. The resolved list contains associated structures for the command and does not rely on the cache or require any extra API calls. Additionally, the permissions in the resolved set are pre-calculated by Discord and taking into account channel overwrites, roles and admin privileges. So, there&apos;s no need to loop through roles or stuff like that.</para>
 <para>Let&apos;s imagine the following scenario:</para>
 <para>You have a ban command and want to make sure the issuer has the ban permission.</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal">bot.on_interaction_create([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
@@ -67,9 +70,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
 </programlisting></para>
-<para><simplesect kind="note"><para>When using default permissions you don&apos;t necessarily need to check the issuing user for any permissions in the interaction event as Discord handles all that for you. But if you&apos;d sleep better...</para>
-</simplesect>
-</para>
 </sect3>
 <sect3 id="checking-member-permissions_1autotoc_md125">
 <title>From Parameters</title>
@@ -95,7 +95,11 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
-</programlisting> </para>
+</programlisting></para>
+</sect3>
+<sect3 id="checking-member-permissions_1autotoc_md127">
+<title>Things to Keep in Mind</title>
+<para>When replying to interactions using <ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">dpp::interaction_create_t::reply</ref>, you do <bold>not</bold> need to manually check whether the bot has permission to send messages. A bot always has permissions to reply to an interaction. </para>
 </sect3>
 </sect2>
     </detaileddescription>
