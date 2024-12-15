@@ -6,21 +6,21 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect2 id="buildmeson_1autotoc_md173">
+<sect2 id="buildmeson_1autotoc_md174">
 <title>1. Toolchain</title>
 <para>Before compiling, you will need to install <computeroutput>meson</computeroutput> on your system. To be sure that <computeroutput>meson</computeroutput> is installed, you can type the following command:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">meson<sp/>--version</highlight></codeline>
 <codeline><highlight class="normal">0.63.2</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildmeson_1autotoc_md174">
+<sect2 id="buildmeson_1autotoc_md175">
 <title>2. Create a Meson project</title>
 <para>First, you&apos;ll need to go ahead and create an empty directory, we&apos;ll call it <computeroutput>meson-project</computeroutput>.</para>
 <para>Then, run this command:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">meson<sp/>init<sp/>-l<sp/>cpp</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildmeson_1autotoc_md175">
+<sect2 id="buildmeson_1autotoc_md176">
 <title>3. Configuring Your Meson Project</title>
 <para>Add the following line after the <computeroutput>project()</computeroutput> line in your <computeroutput>meson.build</computeroutput> file.</para>
 <para><programlisting filename=".yml"><codeline><highlight class="normal">dpp<sp/>=<sp/>dependency(&apos;dpp&apos;)</highlight></codeline>
@@ -43,7 +43,7 @@
 </programlisting></para>
 <para>Meson automatically generates a cpp for your project. And a test suite.</para>
 </sect2>
-<sect2 id="buildmeson_1autotoc_md176">
+<sect2 id="buildmeson_1autotoc_md177">
 <title>4. Building</title>
 <para>To build a Meson project, run the following:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">meson<sp/>setup<sp/>builddir</highlight></codeline>

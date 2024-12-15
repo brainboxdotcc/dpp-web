@@ -264,7 +264,6 @@ var hierarchy =
     [ "dpp::utility::icon", "structdpp_1_1utility_1_1icon.html", null ],
     [ "dpp::utility::iconhash", "structdpp_1_1utility_1_1iconhash.html", null ],
     [ "dpp::utility::image_data", "structdpp_1_1utility_1_1image__data.html", null ],
-    [ "dpp::in_thread", "classdpp_1_1in__thread.html", null ],
     [ "dpp::integration_account", "structdpp_1_1integration__account.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
     [ "dpp::integration_configuration", "structdpp_1_1integration__configuration.html", null ],
@@ -491,14 +490,16 @@ var hierarchy =
     [ "dpp::detail::coroutine::promise_t< R >", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", null ],
     [ "dpp::detail::coroutine::promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", null ],
     [ "dpp::detail::task::promise_base< R >::proxy_awaiter< A >", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html", null ],
-    [ "dpp::request_queue::queued_deleting_request", "structdpp_1_1request__queue_1_1queued__deleting__request.html", null ],
     [ "dpp::raii_socket", "structdpp_1_1raii__socket.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
+    [ "dpp::request_concurrency_queue", "classdpp_1_1request__concurrency__queue.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::when_any< Args >::result", "classdpp_1_1when__any_1_1result.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
     [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
+    [ "dpp::socket_engine_base", "structdpp_1_1socket__engine__base.html", null ],
+    [ "dpp::socket_events", "structdpp_1_1socket__events.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
@@ -508,10 +509,15 @@ var hierarchy =
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
+    [ "dpp::thread_pool", "structdpp_1_1thread__pool.html", null ],
+    [ "dpp::thread_pool_task", "structdpp_1_1thread__pool__task.html", null ],
+    [ "dpp::thread_pool_task_comparator", "structdpp_1_1thread__pool__task__comparator.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
+    [ "dpp::timer_comparator", "structdpp_1_1timer__comparator.html", null ],
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
-    [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ]
+    [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ],
+    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
 ];

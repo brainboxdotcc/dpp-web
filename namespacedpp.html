@@ -515,9 +515,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html">https_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a HTTPS socket client based on the SSL client.  <a href="classdpp_1_1https__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html">in_thread</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a thread in the thread pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in queues.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, so that requests are less likely to block while waiting for internal containers to be usable.  <a href="classdpp_1_1in__thread.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1integration.html">integration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an integration on a guild, e.g. a connection to twitch.  <a href="classdpp_1_1integration.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -698,6 +695,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1ready__t.html">ready_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session ready.  <a href="structdpp_1_1ready__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__concurrency__queue.html">request_concurrency_queue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a timer instance in a pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in cluster.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, making it thread safe to call and use these from anywhere in the code.  <a href="classdpp_1_1request__concurrency__queue.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> objects.  <a href="classdpp_1_1request__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -739,6 +739,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for a 64 bit unsigned value representing many things on discord. This value is known in distributed computing as a snowflake value.  <a href="classdpp_1_1snowflake.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the base class for socket engines. The actual implementation is OS specific and the correct implementation is detected by CMake. It is then compiled specifically into DPP so only one implementation can exist in the implementation. All implementations should behave identically to the user, abstracting out implementation-specific behaviours (e.g. difference between edge and level triggered event mechanisms etc).  <a href="structdpp_1_1socket__engine__base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__events.html">socket_events</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an active socket event set in the socket engine.  <a href="structdpp_1_1socket__events.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html">ssl_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a simple non-blocking SSL stream client.  <a href="classdpp_1_1ssl__client.html#details">More...</a><br /></td></tr>
@@ -799,11 +805,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">metadata for threads  <a href="structdpp_1_1thread__metadata.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__pool.html">thread_pool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thread pool contains 1 or more worker threads which accept <a class="el" href="structdpp_1_1thread__pool__task.html" title="A task within a thread pool. A simple lambda that accepts no parameters and returns void.">thread_pool_task</a> lambadas into a queue, which is processed in-order by whichever thread is free.  <a href="structdpp_1_1thread__pool.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__pool__task.html">thread_pool_task</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A task within a thread pool. A simple lambda that accepts no parameters and returns void.  <a href="structdpp_1_1thread__pool__task.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__pool__task__comparator.html">thread_pool_task_comparator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two thread pool tasks by priority.  <a href="structdpp_1_1thread__pool__task__comparator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__update__t.html">thread_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Update.  <a href="structdpp_1_1thread__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1timed__listener.html">timed_listener</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classdpp_1_1timed__listener.html" title="A timed_listener is a way to temporarily attach to an event for a specific timeframe,...">timed_listener</a> is a way to temporarily attach to an event for a specific timeframe, then detach when complete. A lambda may also be optionally called when the timeout is reached. Destructing the <a class="el" href="classdpp_1_1timed__listener.html" title="A timed_listener is a way to temporarily attach to an event for a specific timeframe,...">timed_listener</a> detaches any attached event listeners, and cancels any created timers, but does not call any timeout lambda.  <a href="classdpp_1_1timed__listener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1timer__comparator.html">timer_comparator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to compare two timers next tick times in a priority queue.  <a href="structdpp_1_1timer__comparator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1timer__t.html">timer_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to store state of active timers.  <a href="structdpp_1_1timer__t.html#details">More...</a><br /></td></tr>
@@ -883,6 +901,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html">when_any</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <a class="el" href="classdpp_1_1when__any_1_1result.html">result</a> object that contains the index of the awaitable that finished first. A user can call <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9">result::index()</a> and <a class="el" href="classdpp_1_1when__any_1_1result.html#a17e2a5a81f2e8c7c399fef1e1fd2a1f1">result::get&lt;N&gt;()</a> on the result object to get the result, similar to std::variant.  <a href="classdpp_1_1when__any.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1zlibcontext.html">zlibcontext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an opaque class containing zlib library specific structures. This wraps the C pointers needed for zlib with unique_ptr and gives us a nice buffer abstraction so we don't need to wrestle with raw pointers.  <a href="classdpp_1_1zlibcontext.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
@@ -954,9 +975,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a022dce6b086ec4515384eaece59c84c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> = std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt;</td></tr>
 <tr class="memdesc:a022dce6b086ec4515384eaece59c84c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function used as a callback for any REST based command.  <a href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">More...</a><br /></td></tr>
 <tr class="separator:a022dce6b086ec4515384eaece59c84c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c862611232b317153bcfc106534292"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad4c862611232b317153bcfc106534292">dns_cache_t</a> = std::unordered_map&lt; std::string, <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> * &gt;</td></tr>
-<tr class="memdesc:ad4c862611232b317153bcfc106534292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache container type.  <a href="namespacedpp.html#ad4c862611232b317153bcfc106534292">More...</a><br /></td></tr>
-<tr class="separator:ad4c862611232b317153bcfc106534292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85e1c4be79e3284d57af6eb20f52d14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae85e1c4be79e3284d57af6eb20f52d14">dns_cache_t</a> = std::unordered_map&lt; std::string, std::unique_ptr&lt; <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> &gt; &gt;</td></tr>
+<tr class="memdesc:ae85e1c4be79e3284d57af6eb20f52d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache container type.  <a href="namespacedpp.html#ae85e1c4be79e3284d57af6eb20f52d14">More...</a><br /></td></tr>
+<tr class="separator:ae85e1c4be79e3284d57af6eb20f52d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a1e92263bfa31397d459725d26e47b6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a></td></tr>
 <tr class="memdesc:a9a1e92263bfa31397d459725d26e47b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container of invites.  <a href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">More...</a><br /></td></tr>
 <tr class="separator:a9a1e92263bfa31397d459725d26e47b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -981,6 +1002,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4dbbdf54366910bacd95554ccbc705a2"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">http_headers</a></td></tr>
 <tr class="memdesc:a4dbbdf54366910bacd95554ccbc705a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request headers.  <a href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">More...</a><br /></td></tr>
 <tr class="separator:a4dbbdf54366910bacd95554ccbc705a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af597d5e0f7483338956d105bbcfd9b63"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af597d5e0f7483338956d105bbcfd9b63">https_client_completion_event</a> = std::function&lt; void(class <a class="el" href="classdpp_1_1https__client.html">https_client</a> *)&gt;</td></tr>
+<tr class="separator:af597d5e0f7483338956d105bbcfd9b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13e2c5898009fad42ebe12fd5641d8a"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1integration.html">integration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a></td></tr>
 <tr class="memdesc:aa13e2c5898009fad42ebe12fd5641d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of integrations.  <a href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">More...</a><br /></td></tr>
 <tr class="separator:aa13e2c5898009fad42ebe12fd5641d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1016,6 +1039,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a13c4d4e6238396245b349e6a637897e0"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a13c4d4e6238396245b349e6a637897e0">shard_list</a></td></tr>
 <tr class="memdesc:a13c4d4e6238396245b349e6a637897e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of shards.  <a href="namespacedpp.html#a13c4d4e6238396245b349e6a637897e0">More...</a><br /></td></tr>
 <tr class="separator:a13c4d4e6238396245b349e6a637897e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1922d22daae6683aff3a8b192cac2e7a"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, time_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1922d22daae6683aff3a8b192cac2e7a">reconnect_list</a></td></tr>
+<tr class="memdesc:a1922d22daae6683aff3a8b192cac2e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of shards awaiting reconnection, by id with earliest possible reconnect time.  <a href="namespacedpp.html#a1922d22daae6683aff3a8b192cac2e7a">More...</a><br /></td></tr>
+<tr class="separator:a1922d22daae6683aff3a8b192cac2e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d3c7966f425ceea724a1dcd4218bc4"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; <a class="el" href="namespacedpp.html#a161fc59985e2e2f32d24f72397002e46">active_threads</a>, <a class="el" href="classdpp_1_1application__role__connection.html">application_role_connection</a>, <a class="el" href="namespacedpp.html#a91276efac2bca1f8fe69b27a3bbc821f">application_role_connection_metadata_list</a>, <a class="el" href="structdpp_1_1confirmation.html">confirmation</a>, <a class="el" href="structdpp_1_1message.html">message</a>, <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a>, <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="classdpp_1_1user__identified.html">user_identified</a>, <a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a>, <a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a>, <a class="el" href="classdpp_1_1channel.html">channel</a>, <a class="el" href="namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30">channel_map</a>, <a class="el" href="structdpp_1_1thread__member.html">thread_member</a>, <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a">thread_member_map</a>, <a class="el" href="classdpp_1_1guild.html">guild</a>, <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">guild_map</a>, <a class="el" href="classdpp_1_1guild__command__permissions.html">guild_command_permissions</a>, <a class="el" href="namespacedpp.html#a855d4fbe3b9026d08b31561a61a82e92">guild_command_permissions_map</a>, <a class="el" href="classdpp_1_1role.html">role</a>, <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a>, <a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a">invite_map</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a>, <a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a>, <a class="el" href="classdpp_1_1emoji.html">emoji</a>, <a class="el" href="namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9">emoji_map</a>, <a class="el" href="classdpp_1_1ban.html">ban</a>, <a class="el" href="namespacedpp.html#a52b195380df96e9c43f35fa2da82db14">ban_map</a>, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a>, <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a>, <a class="el" href="classdpp_1_1voicestate.html">voicestate</a>, <a class="el" href="classdpp_1_1integration.html">integration</a>, <a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a>, <a class="el" href="classdpp_1_1webhook.html">webhook</a>, <a class="el" href="namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca">webhook_map</a>, <a class="el" href="structdpp_1_1prune.html">prune</a>, <a class="el" href="classdpp_1_1guild__widget.html">guild_widget</a>, <a class="el" href="structdpp_1_1gateway.html">gateway</a>, <a class="el" href="classdpp_1_1interaction.html">interaction</a>, <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a>, <a class="el" href="classdpp_1_1auditlog.html">auditlog</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>, <a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a>, <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a>, <a class="el" href="structdpp_1_1sticker.html">sticker</a>, <a class="el" href="namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f">sticker_map</a>, <a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a>, <a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">sticker_pack_map</a>, <a class="el" href="classdpp_1_1application.html">application</a>, <a class="el" href="namespacedpp.html#a9cd9f77c18810c3ad68e06b0625099bd">application_map</a>, <a class="el" href="classdpp_1_1connection.html">connection</a>, <a class="el" href="namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a">connection_map</a>, <a class="el" href="classdpp_1_1thread.html">thread</a>, <a class="el" href="namespacedpp.html#afb8eae726b5ea68baff8c48d7fb835af">thread_map</a>, <a class="el" href="structdpp_1_1scheduled__event.html">scheduled_event</a>, <a class="el" href="namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781">scheduled_event_map</a>, <a class="el" href="structdpp_1_1event__member.html">event_member</a>, <a class="el" href="namespacedpp.html#a912d2a5c3a763ffc462dfb7c4c7a0562">event_member_map</a>, <a class="el" href="classdpp_1_1automod__rule.html">automod_rule</a>, <a class="el" href="namespacedpp.html#a9933dc4fb55fa0e30b939b905b9b0df6">automod_rule_map</a>, <a class="el" href="structdpp_1_1onboarding.html">onboarding</a>, <a class="el" href="structdpp_1_1welcome__screen.html">welcome_screen</a>, <a class="el" href="classdpp_1_1entitlement.html">entitlement</a>, <a class="el" href="namespacedpp.html#a6a417d5030786dd8921fa3a480ddac25">entitlement_map</a>, <a class="el" href="classdpp_1_1sku.html">sku</a>, <a class="el" href="namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1">sku_map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab9d3c7966f425ceea724a1dcd4218bc4">confirmable_t</a></td></tr>
 <tr class="memdesc:ab9d3c7966f425ceea724a1dcd4218bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for types that can be returned for a REST API call.  <a href="namespacedpp.html#ab9d3c7966f425ceea724a1dcd4218bc4">More...</a><br /></td></tr>
 <tr class="separator:ab9d3c7966f425ceea724a1dcd4218bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1040,12 +1066,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:acfb6805855456fe93068c474c8f977c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> = int</td></tr>
 <tr class="memdesc:acfb6805855456fe93068c474c8f977c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a socket file descriptor. This is used to ensure parity between windows and unix-like systems.  <a href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">More...</a><br /></td></tr>
 <tr class="separator:acfb6805855456fe93068c474c8f977c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a982a3efeac04ddb820bbe87b08155640"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">socket_callback_t</a></td></tr>
-<tr class="memdesc:a982a3efeac04ddb820bbe87b08155640"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for socket status.  <a href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">More...</a><br /></td></tr>
-<tr class="separator:a982a3efeac04ddb820bbe87b08155640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f89983921c7ddfa7f91705bd05e2b9e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">socket_notification_t</a></td></tr>
-<tr class="memdesc:a9f89983921c7ddfa7f91705bd05e2b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A socket notification callback.  <a href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">More...</a><br /></td></tr>
-<tr class="separator:a9f89983921c7ddfa7f91705bd05e2b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9685f9b1294f6e1be261a3d84270ea7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad9685f9b1294f6e1be261a3d84270ea7">socket_read_event</a> = std::function&lt; void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a> &amp;)&gt;</td></tr>
+<tr class="memdesc:ad9685f9b1294f6e1be261a3d84270ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ready event.  <a href="namespacedpp.html#ad9685f9b1294f6e1be261a3d84270ea7">More...</a><br /></td></tr>
+<tr class="separator:ad9685f9b1294f6e1be261a3d84270ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe40ae4383ba430f4256e8ca99b91870"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#abe40ae4383ba430f4256e8ca99b91870">socket_write_event</a> = std::function&lt; void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a> &amp;)&gt;</td></tr>
+<tr class="memdesc:abe40ae4383ba430f4256e8ca99b91870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write ready event.  <a href="namespacedpp.html#abe40ae4383ba430f4256e8ca99b91870">More...</a><br /></td></tr>
+<tr class="separator:abe40ae4383ba430f4256e8ca99b91870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c1f0e20e7b399e32272dc788412d8f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5c1f0e20e7b399e32272dc788412d8f">socket_error_event</a> = std::function&lt; void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a> &amp;, int error_code)&gt;</td></tr>
+<tr class="memdesc:ae5c1f0e20e7b399e32272dc788412d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error event.  <a href="namespacedpp.html#ae5c1f0e20e7b399e32272dc788412d8f">More...</a><br /></td></tr>
+<tr class="separator:ae5c1f0e20e7b399e32272dc788412d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528b0d9736647cc49207bbe4c1adee61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">socket_container</a> = std::unordered_map&lt; <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>, std::unique_ptr&lt; <a class="el" href="structdpp_1_1socket__events.html">socket_events</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a528b0d9736647cc49207bbe4c1adee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container of event sets keyed by socket file descriptor.  <a href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">More...</a><br /></td></tr>
+<tr class="separator:a528b0d9736647cc49207bbe4c1adee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81bdee80b6fd684ea6959ec67e6ecafb"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81bdee80b6fd684ea6959ec67e6ecafb">stage_instance_map</a></td></tr>
 <tr class="memdesc:a81bdee80b6fd684ea6959ec67e6ecafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of stage instances.  <a href="namespacedpp.html#a81bdee80b6fd684ea6959ec67e6ecafb">More...</a><br /></td></tr>
 <tr class="separator:a81bdee80b6fd684ea6959ec67e6ecafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1058,18 +1090,21 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a161fc59985e2e2f32d24f72397002e46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a161fc59985e2e2f32d24f72397002e46">active_threads</a> = std::map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="structdpp_1_1active__thread__info.html">active_thread_info</a> &gt;</td></tr>
 <tr class="memdesc:a161fc59985e2e2f32d24f72397002e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of threads alongside optionally the <a class="el" href="structdpp_1_1thread__member.html" title="represents membership of a user with a thread">thread_member</a> tied to the bot if it is in the thread. The map's key is the thread id. Returned from the <a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847" title="Get all active threads in the guild, including public and private threads. Threads are ordered by the...">cluster::threads_get_active</a> method.  <a href="namespacedpp.html#a161fc59985e2e2f32d24f72397002e46">More...</a><br /></td></tr>
 <tr class="separator:a161fc59985e2e2f32d24f72397002e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4c7438f07bccdcf3af16492e4fc627"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">work_unit</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:aef4c7438f07bccdcf3af16492e4fc627"><td class="mdescLeft">&#160;</td><td class="mdescRight">A work unit is a lambda executed in the thread pool.  <a href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">More...</a><br /></td></tr>
+<tr class="separator:aef4c7438f07bccdcf3af16492e4fc627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a></td></tr>
 <tr class="memdesc:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a timer handle. Returned from <a class="el" href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> and used by <a class="el" href="classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3" title="Stop a ticking timer.">cluster::stop_timer</a>. This is obtained from a simple incrementing value, internally.  <a href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">More...</a><br /></td></tr>
 <tr class="separator:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4658c417b9af90d3021253375580a61"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad4658c417b9af90d3021253375580a61">timer_callback_t</a></td></tr>
 <tr class="memdesc:ad4658c417b9af90d3021253375580a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for a timer callback.  <a href="namespacedpp.html#ad4658c417b9af90d3021253375580a61">More...</a><br /></td></tr>
 <tr class="separator:ad4658c417b9af90d3021253375580a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a408d79969007e9c450e186f5387df9e5"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; time_t, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a408d79969007e9c450e186f5387df9e5">timer_next_t</a></td></tr>
-<tr class="memdesc:a408d79969007e9c450e186f5387df9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due.  <a href="namespacedpp.html#a408d79969007e9c450e186f5387df9e5">More...</a><br /></td></tr>
-<tr class="separator:a408d79969007e9c450e186f5387df9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">timer_reg_t</a></td></tr>
-<tr class="memdesc:a81b406b8f9f9fa3da4b61fd006f13455"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of timers stored by handle.  <a href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">More...</a><br /></td></tr>
-<tr class="separator:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555c45a82cfc92384477899e67a86183"><td class="memItemLeft" align="right" valign="top">typedef std::priority_queue&lt; <a class="el" href="structdpp_1_1timer__t.html">timer_t</a>, std::vector&lt; <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> &gt;, <a class="el" href="structdpp_1_1timer__comparator.html">timer_comparator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a555c45a82cfc92384477899e67a86183">timer_next_t</a></td></tr>
+<tr class="memdesc:a555c45a82cfc92384477899e67a86183"><td class="mdescLeft">&#160;</td><td class="mdescRight">A priority timers, ordered by earliest first so that the head is always the soonest to be due.  <a href="namespacedpp.html#a555c45a82cfc92384477899e67a86183">More...</a><br /></td></tr>
+<tr class="separator:a555c45a82cfc92384477899e67a86183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e8be057c39e90fcffe752ce430cd23"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac9e8be057c39e90fcffe752ce430cd23">timers_deleted_t</a></td></tr>
+<tr class="memdesc:ac9e8be057c39e90fcffe752ce430cd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of deleted timer handles.  <a href="namespacedpp.html#ac9e8be057c39e90fcffe752ce430cd23">More...</a><br /></td></tr>
+<tr class="separator:ac9e8be057c39e90fcffe752ce430cd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4073c92e19579c06591033a4a234e1"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1user.html">user</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a></td></tr>
 <tr class="memdesc:a1c4073c92e19579c06591033a4a234e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of users.  <a href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">More...</a><br /></td></tr>
 <tr class="separator:a1c4073c92e19579c06591033a4a234e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1348,6 +1383,25 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9a2049904620e4f62b82f8dc818de864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter types when registering a command. We don't pass these in when triggering the command in the handler, because it is expected the developer added the command so they know what types to expect for each named parameter.  <a href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864">More...</a><br /></td></tr>
 <tr class="separator:a9a2049904620e4f62b82f8dc818de864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b599993835b3e8ad568db4515a413ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413ac">shard_frame_type</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca7545cacadc4b8e50b0e68cd5efb48832">ft_dispatch</a> = 0
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413acaa9814e0293746dc0cc5ed78249c764db">ft_heartbeat</a> = 1
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413acaf11b16f9166ce8c37cf1371112b6f2c9">ft_identify</a> = 2
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca6f0f0e1b503c8900c11242d2ca1ba159">ft_presence</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413acabec203eba0275e5fbd0572e53719d0aa">ft_voice_state_update</a> = 4
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca77a487ae0834013213ba9e69b477f61d">ft_resume</a> = 6
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca49471b9d384f59a11690dc0e6bcafd88">ft_reconnect</a> = 7
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca2feaebb7ffb1d726d5801c6e1f1b1f1e">ft_request_guild_members</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca07492eb915ecb97a16653744844521a1">ft_invalid_session</a> = 9
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca0859c8ef8399d5f0e0bd2051609de90f">ft_hello</a> = 10
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413aca6668dd1d25bf5bb870c09ce2117423a1">ft_heartbeat_ack</a> = 11
+, <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413acada08888d73b521f44435aff13fab62da">ft_request_soundboard_sounds</a> = 31
+<br />
+ }</td></tr>
+<tr class="memdesc:a6b599993835b3e8ad568db4515a413ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents different event opcodes sent and received on a shard websocket.  <a href="namespacedpp.html#a6b599993835b3e8ad568db4515a413ac">More...</a><br /></td></tr>
+<tr class="separator:a6b599993835b3e8ad568db4515a413ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d631bf36ecccb5fcf937c964a49a0a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0a">dave_version_t</a> : uint8_t { <a class="el" href="namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83">dave_version_none</a> = 0
 , <a class="el" href="namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aa015a5fa481d645bf1547dfa5b7ab0b84">dave_version_1</a> = 1
  }</td></tr>
@@ -1528,354 +1582,355 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cf25f7dd0692a2b3174bad8b9083ed4">err_no_voice_support</a> = 29
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4adc2d89aa161b23accf2fd794d1837d">err_invalid_voice_packet_length</a> = 30
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa86bc94e0b70c1408639f0791c28a3e6">err_opus</a> = 31
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abb3c7711836d78caf6f6bbf9d60538b5">err_etf</a> = 33
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af5c9639d62748ae90b71309c785969c1">err_cant_start_shard</a> = 32
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3ab5878430a5c1dbc27324de3276070d">err_cache</a> = 34
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abb3c7711836d78caf6f6bbf9d60538b5">err_etf</a> = 33
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3ab5878430a5c1dbc27324de3276070d">err_cache</a> = 34
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7896d73d6ebddaa6eedddc88565f1083">err_icon_size</a> = 35
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab9fa3212551768224b755ada8ec666e6">err_massive_audio</a> = 36
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4b8a0b5640d5d41adee08356bf851d72">err_unknown</a> = 37
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a48ae089060218e9a175be9dbb5485550">err_bad_request</a> = 400
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4b8a0b5640d5d41adee08356bf851d72">err_unknown</a> = 37
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a48ae089060218e9a175be9dbb5485550">err_bad_request</a> = 400
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aab81fe110a966f8764183c0bbb34584d">err_unauthorized</a> = 401
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a540d90a58ac0b0a26fabfc21fefc5043">err_payment_required</a> = 402
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a18e9a42f1202931b081e6e2541adcdbc">err_forbidden</a> = 403
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2191088dbdeafdef92472a5a003516a8">err_not_found</a> = 404
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a18e9a42f1202931b081e6e2541adcdbc">err_forbidden</a> = 403
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2191088dbdeafdef92472a5a003516a8">err_not_found</a> = 404
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abed4daed15d699876891ba6747caf2b1">err_method_not_allowed</a> = 405
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af11d88e5271cca0d090ef0b4b24453a1">err_not_acceptable</a> = 406
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa9381b2a5916648dacec0bb8689eb5f6">err_proxy_auth_required</a> = 407
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6a7093692bac1d0fb6601c64a11ee2ff">err_request_timeout</a> = 408
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa9381b2a5916648dacec0bb8689eb5f6">err_proxy_auth_required</a> = 407
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6a7093692bac1d0fb6601c64a11ee2ff">err_request_timeout</a> = 408
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6477198c246524936cdbb44552958d6b">err_conflict</a> = 409
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a12f13cbd14d8929cf58abba13c443d8b">err_gone</a> = 410
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a295449eed69babf408b582aab74b9a74">err_length_required</a> = 411
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1878b04e56e0a207043c90e4c0d0fde5">err_precondition_failed</a> = 412
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a295449eed69babf408b582aab74b9a74">err_length_required</a> = 411
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1878b04e56e0a207043c90e4c0d0fde5">err_precondition_failed</a> = 412
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4ca433cb1deb4f7273d221a78c67fccc">err_payload_too_large</a> = 413
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a87e7c1dd5488d6383345b824f096b881">err_uri_too_long</a> = 414
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0dc55df73fab0629c91a840d823b46ec">err_unsupported_media_type</a> = 415
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a435d17eb9583adb2eb467512e23c7218">err_range_not_satisfiable</a> = 416
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0dc55df73fab0629c91a840d823b46ec">err_unsupported_media_type</a> = 415
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a435d17eb9583adb2eb467512e23c7218">err_range_not_satisfiable</a> = 416
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a47a61d56e22458b78960e9a03fd442e0">err_expectation_failed</a> = 417
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aceac6c3850dd8b26f1bdeb15bb74eb5e">err_im_a_teapot</a> = 418
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a300bddb31d6c2845336ade2684bceeba">err_page_expired</a> = 419
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a034af7471d49719595f38219f74582fc">err_twitter_rate_limited</a> = 420
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a300bddb31d6c2845336ade2684bceeba">err_page_expired</a> = 419
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a034af7471d49719595f38219f74582fc">err_twitter_rate_limited</a> = 420
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8972521b626d02f339a2000075c1fb93">err_misdirected_request</a> = 421
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3516b950de6d2715db378d8dfd9824b3">err_unprocessable_content</a> = 422
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9326c5ef5f67cefd79f905e57057198d">err_webdav_locked</a> = 423
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2ce9a98e95c1adf174372aae2141d93b">err_webdav_failed_dependency</a> = 424
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9326c5ef5f67cefd79f905e57057198d">err_webdav_locked</a> = 423
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2ce9a98e95c1adf174372aae2141d93b">err_webdav_failed_dependency</a> = 424
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aeb7d5a250bd0980627a9228a9c195592">err_too_early</a> = 425
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afc27a43762971da42fe0879628278c9b">err_upgrade_required</a> = 426
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af62006ca37009c3cf9e1bd7430ffa4d1">err_precondition_required</a> = 428
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abd9d1ef54e88d2ce0ceebe71af2a98d3">err_rate_limited</a> = 429
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af62006ca37009c3cf9e1bd7430ffa4d1">err_precondition_required</a> = 428
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abd9d1ef54e88d2ce0ceebe71af2a98d3">err_rate_limited</a> = 429
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab8bb11c1ae7e737c213ff59d2c916298">err_request_headers_too_large</a> = 431
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2c10f98ec982362f625fc8bc452c394e">err_page_blocked</a> = 450
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a36de9913fe6a1e8bdce35e04e28ea4b3">err_unavailable_for_legal_reasons</a> = 451
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6fb88596c5b5268bd3aa7dc469f37a62">err_http_request_on_https_port</a> = 497
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a36de9913fe6a1e8bdce35e04e28ea4b3">err_unavailable_for_legal_reasons</a> = 451
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6fb88596c5b5268bd3aa7dc469f37a62">err_http_request_on_https_port</a> = 497
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a69184611cbbee6fa163320c20298ec83">err_internal_server_error</a> = 500
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a92888feae0e85ee15cf7c24e0b958056">err_not_implemented</a> = 501
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af8587ef43cd045aeab952a8d2e78a65a">err_bad_gateway</a> = 502
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0034e758ddd51710fad625f3748b60be">err_service_unavailable</a> = 503
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af8587ef43cd045aeab952a8d2e78a65a">err_bad_gateway</a> = 502
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0034e758ddd51710fad625f3748b60be">err_service_unavailable</a> = 503
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4c63c54a85c57eee44feb0772c45d33e">err_gateway_timeout</a> = 504
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a34dbccf881c06801f59ea4bd38b5f391">err_http_version_not_supported</a> = 505
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a15cec2219ac69a93080f05ef430e6a61">err_variant_also_negotiates</a> = 506
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9a8ebef3ecbf178e05e1cdfa283bf637">err_webdav_insufficient_storage</a> = 507
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a15cec2219ac69a93080f05ef430e6a61">err_variant_also_negotiates</a> = 506
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9a8ebef3ecbf178e05e1cdfa283bf637">err_webdav_insufficient_storage</a> = 507
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2b7401e086186bf1afd8c146480d89b0">err_webdav_loop_detected</a> = 508
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0e37628ce444882d40a5171ca621552f">err_bandwidth_limit_exceeded</a> = 509
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a04a09c98913cdb8d6770a34716a84abb">err_not_extended</a> = 510
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6adc355945caa70c54686175eb38859b">err_network_auth_required</a> = 511
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a04a09c98913cdb8d6770a34716a84abb">err_not_extended</a> = 510
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6adc355945caa70c54686175eb38859b">err_network_auth_required</a> = 511
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a30591ef3d5d35c8a548b4aece3b6cfe2">err_web_server_down</a> = 521
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab6ef1828a94379e2318d8f6881c1cfab">err_connection_timed_out</a> = 522
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7afa53084f9760bb087af585336a215d">err_origin_unreachable</a> = 523
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a178c4e0a3d0b7468c0c2d3bcd691f6bb">err_timeout</a> = 524
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7afa53084f9760bb087af585336a215d">err_origin_unreachable</a> = 523
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a178c4e0a3d0b7468c0c2d3bcd691f6bb">err_timeout</a> = 524
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a205deea1d91b5e159911ae4955eef47f">err_ssl_handshake_failed</a> = 525
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abd9183d73c0cc016256da8d9674dc180">err_invalid_ssl_certificate</a> = 526
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a007c53a3bdafd18c4a0456cf2469eb35">err_railgun</a> = 527
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aeb24798b3d387ab4847282daf8ec85a9">err_cloudflare</a> = 530
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a007c53a3bdafd18c4a0456cf2469eb35">err_railgun</a> = 527
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aeb24798b3d387ab4847282daf8ec85a9">err_cloudflare</a> = 530
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6e097067da6d6a83e6f83e9abee3c634">err_websocket_unknown</a> = 4000
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a59b0f395a9c47e28d9a81e7c998bca25">err_websocket_bad_opcode</a> = 4001
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a02022c63e0d577d053234bc32bcbc39a">err_websocket_decode</a> = 4002
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a30300f56153fef087b967b87d3747bd1">err_websocket_not_authenticated</a> = 4003
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a02022c63e0d577d053234bc32bcbc39a">err_websocket_decode</a> = 4002
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a30300f56153fef087b967b87d3747bd1">err_websocket_not_authenticated</a> = 4003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab9273ab8c4d2e8f28fe83d68f47e823d">err_websocket_authentication_failed</a> = 4004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aaa07d1dfd82be4026c92da5c2f1f1323">err_websocket_already_authenticated</a> = 4005
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9f9e26a96753b83e190da01aaad41f0c">err_websocket_invalid_seq_number</a> = 4007
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af9248f33724f70abcf1bb241dd1dcf05">err_websocket_rate_limited</a> = 4008
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9f9e26a96753b83e190da01aaad41f0c">err_websocket_invalid_seq_number</a> = 4007
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af9248f33724f70abcf1bb241dd1dcf05">err_websocket_rate_limited</a> = 4008
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a110dbe1cc8b0d3698f46348c8a8cc1fc">err_websocket_session_timeout</a> = 4009
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad411fe99fccb5517a3c0eaf33f65fc41">err_websocket_invalid_shard</a> = 4010
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a05e216cd5c33cf091e34549c22a4359e">err_websocket_sharding_required</a> = 4011
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a95bac2bc4a93f45f59477c0c34ea6af4">err_websocket_invalid_api_version</a> = 4012
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a05e216cd5c33cf091e34549c22a4359e">err_websocket_sharding_required</a> = 4011
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a95bac2bc4a93f45f59477c0c34ea6af4">err_websocket_invalid_api_version</a> = 4012
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5977954f10fd8a76ec0bfba09ceb191b">err_websocket_invalid_intents</a> = 4013
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5869334d7489a811148e6e6e733fb6ca">err_websocket_disallowed_intents</a> = 4014
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cd9197f83ada36b61942ee17c4d52d4">err_websocket_voice_disconnected</a> = 4014
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa835b568f268387103744468da66bc23">err_websocket_voice_server_crashed</a> = 4015
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cd9197f83ada36b61942ee17c4d52d4">err_websocket_voice_disconnected</a> = 4014
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa835b568f268387103744468da66bc23">err_websocket_voice_server_crashed</a> = 4015
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a69add27f5355abb1e297d792ae17a6be">err_websocket_voice_unknown_encryption</a> = 4016
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af390463b7116e0be4e7d0a364adbc406">err_compression_stream</a> = 6000
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8132d2cb03f175bf6b4695a21130e6b4">err_compression_data</a> = 6001
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad4d9a393d705ceef57d47d3bb569b901">err_compression_memory</a> = 6002
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8132d2cb03f175bf6b4695a21130e6b4">err_compression_data</a> = 6001
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad4d9a393d705ceef57d47d3bb569b901">err_compression_memory</a> = 6002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab88591508d96b86cb49cedd2e6f17ab7">err_unknown_account</a> = 10001
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a45a4f094653e23e58fa6791f3217c267">err_unknown_application</a> = 10002
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2367198c1497a5571400fa1fd8b75061">err_unknown_channel</a> = 10003
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3ef01d3f2b3e606fcccb00fe05303fb8">err_unknown_guild</a> = 10004
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2367198c1497a5571400fa1fd8b75061">err_unknown_channel</a> = 10003
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3ef01d3f2b3e606fcccb00fe05303fb8">err_unknown_guild</a> = 10004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0e77a1b3c1d50008b1606627cd09165d">err_unknown_integration</a> = 10005
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad14d654624b7caac66ca2183506a8aea">err_unknown_invite</a> = 10006
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab3680372660690bd3346cdd3b5427e04">err_unknown_member</a> = 10007
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afe40af46c6c9d6ad9195e8750381dce9">err_unknown_message</a> = 10008
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab3680372660690bd3346cdd3b5427e04">err_unknown_member</a> = 10007
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afe40af46c6c9d6ad9195e8750381dce9">err_unknown_message</a> = 10008
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af7c0825771a58aab26f7f14b01851104">err_unknown_permission_overwrite</a> = 10009
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3066027ceb0a7871d225ecb99e575aa5">err_unknown_provider</a> = 10010
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a53a0954a89f59fd2b47f69fb565d13da">err_unknown_role</a> = 10011
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac23c7b15d60b96786943ca9c2e71c7a6">err_unknown_token</a> = 10012
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a53a0954a89f59fd2b47f69fb565d13da">err_unknown_role</a> = 10011
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac23c7b15d60b96786943ca9c2e71c7a6">err_unknown_token</a> = 10012
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a761f8b22c33b7d02f54f79e917b71156">err_unknown_user</a> = 10013
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4b19f9b1fd47864a8ef4f447ec506ede">err_unknown_emoji</a> = 10014
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a39401992729c43446447efb66ef3b6aa">err_unknown_webhook</a> = 10015
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae1f81ce50563d3cfc83f9b127ce10495">err_unknown_webhook_service</a> = 10016
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a39401992729c43446447efb66ef3b6aa">err_unknown_webhook</a> = 10015
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae1f81ce50563d3cfc83f9b127ce10495">err_unknown_webhook_service</a> = 10016
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af1461d36679f49d71568d93490fd8320">err_unknown_session</a> = 10020
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af28f8098935fc0f923c6ed4ace321699">err_unknown_ban</a> = 10026
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a31c440715173ef764617c3a788e0c398">err_unknown_sku</a> = 10027
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae5dc3fe55d7be62dc0124ac243641e4e">err_unknown_store_listing</a> = 10028
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a31c440715173ef764617c3a788e0c398">err_unknown_sku</a> = 10027
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae5dc3fe55d7be62dc0124ac243641e4e">err_unknown_store_listing</a> = 10028
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae9d3091f70cdaf5e58234be737eb5ff8">err_unknown_entitlement</a> = 10029
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1138cd1e10dd18f7382ffbc568ddb66f">err_unknown_build</a> = 10030
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afeda60f11c5349ec54597acd7bca7b95">err_unknown_lobby</a> = 10031
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1e9f945fc8afde88773e103543e58868">err_unknown_branch</a> = 10032
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afeda60f11c5349ec54597acd7bca7b95">err_unknown_lobby</a> = 10031
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1e9f945fc8afde88773e103543e58868">err_unknown_branch</a> = 10032
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9f923aed7c6de7304b69d1e3a453ccee">err_unknown_store_directory_layout</a> = 10033
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae3c9c7fc4d4d0a80c46e7813158eea87">err_unknown_redistributable</a> = 10036
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a743ec89d781fa07d610dbbc6f26488e6">err_unknown_gift_code</a> = 10038
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a90b05c9d7ee1c4010588a37620dcee07">err_unknown_stream</a> = 10049
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a743ec89d781fa07d610dbbc6f26488e6">err_unknown_gift_code</a> = 10038
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a90b05c9d7ee1c4010588a37620dcee07">err_unknown_stream</a> = 10049
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abacd86a004733248ef69cbce4e0f8203">err_unknown_premium_server_subscribe_cooldown</a> = 10050
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9a1cf7e7859bd9674dc3d0af0ed88ea4">err_unknown_guild_template</a> = 10057
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afb6cd799df6996138dc4eb332d24f954">err_unknown_discoverable_server_category</a> = 10059
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aade09a942483fdc03ea2c8468600a233">err_unknown_sticker</a> = 10060
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afb6cd799df6996138dc4eb332d24f954">err_unknown_discoverable_server_category</a> = 10059
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aade09a942483fdc03ea2c8468600a233">err_unknown_sticker</a> = 10060
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae2f8fd10f55163f9bbd2a88585e4c4db">err_unknown_interaction</a> = 10062
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a596339df60cdf0f9692358700b052096">err_unknown_application_command</a> = 10063
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af5b009ace2e118cf819d083ad0c62100">err_unknown_voice_state</a> = 10065
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9806df6fc9a105a2b9009c950d1af1b2">err_unknown_application_command_permissions</a> = 10066
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af5b009ace2e118cf819d083ad0c62100">err_unknown_voice_state</a> = 10065
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9806df6fc9a105a2b9009c950d1af1b2">err_unknown_application_command_permissions</a> = 10066
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a490fcdaf426152de3deee297784bdfcb">err_unknown_stage_instance</a> = 10067
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6182d44cfb91d9da22563607c74f4ef8">err_unknown_guild_member_verification_form</a> = 10068
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa25530b1b5fc0e6d306e2a6288c84d26">err_unknown_guild_welcome_screen</a> = 10069
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad438dddd3becef3d841fd139bbbb6b14">err_unknown_guild_scheduled_event</a> = 10070
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa25530b1b5fc0e6d306e2a6288c84d26">err_unknown_guild_welcome_screen</a> = 10069
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad438dddd3becef3d841fd139bbbb6b14">err_unknown_guild_scheduled_event</a> = 10070
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3fa71a550930ff412a412ef5df0624d8">err_unknown_guild_scheduled_event_user</a> = 10071
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9db7fff1918c6ee5fc2224267a908088">err_unknown_tag</a> = 10087
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6286b0506f70a05ef57d110e43346c84">err_bots_cannot_use_this_endpoint</a> = 20001
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aab63a4574ad5394354e34ab361cba4e8">err_only_bots_can_use_this_endpoint</a> = 20002
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6286b0506f70a05ef57d110e43346c84">err_bots_cannot_use_this_endpoint</a> = 20001
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aab63a4574ad5394354e34ab361cba4e8">err_only_bots_can_use_this_endpoint</a> = 20002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac0c8105aedc824205871fc2a0a8b7672">err_explicit_content</a> = 20009
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4e5c7a3449fc6f842a21522aecd5b937">err_unauthorized_for_application</a> = 20012
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8a6db7ada87b3d6ee06eb232dc792f62">err_slowmode_rate_limit</a> = 20016
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa20b01b211bdf0973d270803818a2655">err_owner_only</a> = 20018
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8a6db7ada87b3d6ee06eb232dc792f62">err_slowmode_rate_limit</a> = 20016
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa20b01b211bdf0973d270803818a2655">err_owner_only</a> = 20018
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8cca723f31b1a670815617e144a77c2f">err_announcement_rate_limit</a> = 20022
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7c66f69a32d3cb9e5366713c95a9dd8a">err_under_minimum_age</a> = 20024
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a80f8e5357d699a7d0cddf5a1a61f84ac">err_write_rate_limit</a> = 20029
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae97b49fd9f8e328505a1df5649f36a45">err_stage_banned_words</a> = 20031
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a80f8e5357d699a7d0cddf5a1a61f84ac">err_write_rate_limit</a> = 20029
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae97b49fd9f8e328505a1df5649f36a45">err_stage_banned_words</a> = 20031
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af69abd0b03e6fc29324dfc202123c14d">err_guild_premium_subscription_level_too_low</a> = 20035
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6efd122c141fd810949a689bd0ad0ad4">err_guilds</a> = 30001
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1acc897ba89766aeb4dfa4ad8a1a934a31">err_friends</a> = 30002
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a97c9f539ea29b2a94ca91f18945ec9c9">err_pins_for_the_channel</a> = 30003
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1acc897ba89766aeb4dfa4ad8a1a934a31">err_friends</a> = 30002
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a97c9f539ea29b2a94ca91f18945ec9c9">err_pins_for_the_channel</a> = 30003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a56d1d272a3c813311be10bc97d92623d">err_recipients</a> = 30004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a22b00e8363b1c7873152315e870e5dea">err_guild_roles</a> = 30005
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af160f61e38d24ba93cd7a6565f407f71">err_webhooks</a> = 30007
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab252ff6097d286ab5a8f7e539764fbc7">err_emojis</a> = 30008
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af160f61e38d24ba93cd7a6565f407f71">err_webhooks</a> = 30007
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab252ff6097d286ab5a8f7e539764fbc7">err_emojis</a> = 30008
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6b5da87a78141fb9124719acb98ed119">err_reactions</a> = 30010
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9eea5763cf7c26047227accbd4e371c4">err_group_dms</a> = 30011
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a391653fef4bc6f3ebfbe5f29fef05f14">err_guild_channels</a> = 30013
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1720cd790008314e9e9bcaf38eb6e73c">err_attachments_in_a_message</a> = 30015
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a391653fef4bc6f3ebfbe5f29fef05f14">err_guild_channels</a> = 30013
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1720cd790008314e9e9bcaf38eb6e73c">err_attachments_in_a_message</a> = 30015
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9f61d6b4a39d85a7ef6c747752571320">err_invites</a> = 30016
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af11372a4cd30e5baa9f2f1c2f89815b6">err_animated_emojis</a> = 30018
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3cf1255b48b98fe66ece21679e4cecc8">err_server_members</a> = 30019
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afaab5e0adfed1e1de5de05d7e8374604">err_server_categories</a> = 30030
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3cf1255b48b98fe66ece21679e4cecc8">err_server_members</a> = 30019
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afaab5e0adfed1e1de5de05d7e8374604">err_server_categories</a> = 30030
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a60d1f78945b7625cd42fc3d06ce0bde9">err_guild_already_has_a_template</a> = 30031
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a03346d3be024db86f5f0aa5900db005f">err_application_commands</a> = 30032
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7df59c3a0d1beab97c5ca42a578681da">err_thread_participants</a> = 30033
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a161ad7ee8f799763cf7d46beface86c8">err_daily_application_command_creates</a> = 30034
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7df59c3a0d1beab97c5ca42a578681da">err_thread_participants</a> = 30033
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a161ad7ee8f799763cf7d46beface86c8">err_daily_application_command_creates</a> = 30034
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8561705a13ae9cb4a073481521fac4d0">err_bans_for_non_guild_members_have_been_exceeded</a> = 30035
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1aa3105b00dbb44d8b8d68865c49144c">err_bans_fetches</a> = 30037
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1d6e8de10b155158df70a7615ab39137">err_uncompleted_guild_scheduled_events</a> = 30038
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a238e479381e1d85a28ee25e235cfdfe7">err_stickers</a> = 30039
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1d6e8de10b155158df70a7615ab39137">err_uncompleted_guild_scheduled_events</a> = 30038
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a238e479381e1d85a28ee25e235cfdfe7">err_stickers</a> = 30039
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a686ea00f018444f9bc782c36a536e77b">err_prune_requests</a> = 30040
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1a628dcd7b9f18c88b3585197ce54f14">err_guild_widget_settings_updates</a> = 30042
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab549393127975290989770822d758f89">err_edits_to_messages_older_than_1_hour</a> = 30046
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1c956a3927dccd39c5c7012257213213">err_pinned_threads_in_a_forum_channel</a> = 30047
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab549393127975290989770822d758f89">err_edits_to_messages_older_than_1_hour</a> = 30046
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1c956a3927dccd39c5c7012257213213">err_pinned_threads_in_a_forum_channel</a> = 30047
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a80b117df3d30c276e6a659fae1082d5f">err_tags_in_a_forum_channel</a> = 30048
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a37a0dea1b2755fae607627facba4ded9">err_bitrate_is_too_high_for_channel_of_this_type</a> = 30052
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a32f115ed327237e19921a718dc356766">err_premium_emojis</a> = 30056
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa034d9a3d44ffcd1f20cae8e134c1697">err_webhooks_per_guild</a> = 30058
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a32f115ed327237e19921a718dc356766">err_premium_emojis</a> = 30056
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa034d9a3d44ffcd1f20cae8e134c1697">err_webhooks_per_guild</a> = 30058
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2e73f1665996b29b2e38b795c0b23ed3">err_channel_permission_overwrites</a> = 30060
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aaab9bc41b33357aefe5078c7c214d08b">err_the_channels_for_this_guild_are_too_large</a> = 30061
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2db60b2590ee5213ab3e5175c0fabd04">err_unauthorized_invalid_token</a> = 40001
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cd61267dd1100d4cacafa6577cc98e2">err_verify_your_account</a> = 40002
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2db60b2590ee5213ab3e5175c0fabd04">err_unauthorized_invalid_token</a> = 40001
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cd61267dd1100d4cacafa6577cc98e2">err_verify_your_account</a> = 40002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a51a8cf3a4119efbd35d395143c42561e">err_you_are_opening_direct_messages_too_fast</a> = 40003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0c82d1721c56d8577a2ef58e2ee005b3">err_send_messages_has_been_temporarily_disabled</a> = 40004
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1af9305a56603895c5d173c066af8584">err_request_entity_too_large</a> = 40005
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6d6141604ffa74dda4a3d1d953e0d851">err_this_feature_has_been_temporarily_disabled_server_side</a> = 40006
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1af9305a56603895c5d173c066af8584">err_request_entity_too_large</a> = 40005
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6d6141604ffa74dda4a3d1d953e0d851">err_this_feature_has_been_temporarily_disabled_server_side</a> = 40006
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af3a9f48078f6c76b36aa492c8feac6f3">err_the_user_is_banned_from_this_guild</a> = 40007
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a61d5bb6b9a99033fd7b915a4034eb324">err_connection_has_been_revoked</a> = 40012
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5674b534ab80b4849e08dac35fd642e4">err_target_user_is_not_connected_to_voice</a> = 40032
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad21863ec779268b0762b1160d0efc14d">err_this_message_has_already_been_crossposted</a> = 40033
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5674b534ab80b4849e08dac35fd642e4">err_target_user_is_not_connected_to_voice</a> = 40032
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad21863ec779268b0762b1160d0efc14d">err_this_message_has_already_been_crossposted</a> = 40033
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad4b6d04ccec89db7279d2ee79b28865a">err_an_application_command_with_that_name_already_exists</a> = 40041
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a23748f4fc5d1032c8a2edfdbd1c74af3">err_application_interaction_failed_to_send</a> = 40043
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a729ffff11c332de16e32ee53dfc1e44c">err_cannot_send_a_message_in_a_forum_channel</a> = 40058
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a241bb5d55f581d124a262637e07d91b7">err_interaction_has_already_been_acknowledged</a> = 40060
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a729ffff11c332de16e32ee53dfc1e44c">err_cannot_send_a_message_in_a_forum_channel</a> = 40058
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a241bb5d55f581d124a262637e07d91b7">err_interaction_has_already_been_acknowledged</a> = 40060
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab87663d4ab53911c6bd5bb440d985730">err_tag_names_must_be_unique</a> = 40061
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aef8d479c0fd5522b87a80405277a5230">err_service_resource_is_being_rate_limited</a> = 40062
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa850bf0a23f902a82ff338af4e469925">err_no_tags_available</a> = 40066
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a59018fa0abdaef3368da2367ae9f4d1e">err_tag_required</a> = 40067
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa850bf0a23f902a82ff338af4e469925">err_no_tags_available</a> = 40066
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a59018fa0abdaef3368da2367ae9f4d1e">err_tag_required</a> = 40067
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa9bfc72f4a452b1aab352f499241abd8">err_entitlement_already_granted</a> = 40074
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8a256a277c5d227b92b31b35844c5183">err_missing_access</a> = 50001
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a51d69a6e3a69191dda355a9c26b0c4c6">err_invalid_account_type</a> = 50002
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a76368150f5a992954cb79aed1c5f06a6">err_cannot_execute_action_on_a_dm_channel</a> = 50003
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a51d69a6e3a69191dda355a9c26b0c4c6">err_invalid_account_type</a> = 50002
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a76368150f5a992954cb79aed1c5f06a6">err_cannot_execute_action_on_a_dm_channel</a> = 50003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8b62650d29b80b476913f015bf7ab8d3">err_guild_widget_disabled</a> = 50004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa9615dd7105b999e881d9edc34a3a448">err_cannot_edit_a_message_by_other_user</a> = 50005
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a09376651c160afe69ca4128752fcc2d3">err_cannot_send_empty_message</a> = 50006
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a66661285bfa32dcbf0166ad835ae81ae">err_cannot_send_messages_to_this_user</a> = 50007
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a09376651c160afe69ca4128752fcc2d3">err_cannot_send_empty_message</a> = 50006
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a66661285bfa32dcbf0166ad835ae81ae">err_cannot_send_messages_to_this_user</a> = 50007
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3f5a5dda57d495d3b218f7b13cc1c251">err_cannot_send_messages_in_a_non_text_channel</a> = 50008
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abf03c65a6ec17d61353d896a5fc7072f">err_channel_verification_level_too_high</a> = 50009
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8a9789bb5c9a8acf173f63cf3ea37f65">err_oauth2_application_does_not_have_a_bot</a> = 50010
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adb85d07ea322072a181838efe3dd2033">err_oauth2_application_limit</a> = 50011
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8a9789bb5c9a8acf173f63cf3ea37f65">err_oauth2_application_does_not_have_a_bot</a> = 50010
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adb85d07ea322072a181838efe3dd2033">err_oauth2_application_limit</a> = 50011
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4f7a05b8f2d453710613c8026f70bafb">err_invalid_oauth2_state</a> = 50012
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ad11196672397887bfa65c7d678851630">err_permissions</a> = 50013
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adea063dc2ec902e1009ef5245d096b34">err_invalid_authentication_token</a> = 50014
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6016c0625fd3bf3613e0603900861cf7">err_note_was_too_long</a> = 50015
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adea063dc2ec902e1009ef5245d096b34">err_invalid_authentication_token</a> = 50014
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6016c0625fd3bf3613e0603900861cf7">err_note_was_too_long</a> = 50015
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adc66e0993e9627241ef6182c265c3413">err_too_few_or_too_many_messages</a> = 50016
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7d25f1777311452e0a258a8fa0794b49">err_invalid_mfa_level</a> = 50017
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae61a1bbabf2bb5825c053e5b5e9c6cf4">err_invalid_pin</a> = 50019
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a20f8f3b93bed30ffa8a3f3a0cedadff4">err_invite_code_invalid</a> = 50020
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae61a1bbabf2bb5825c053e5b5e9c6cf4">err_invalid_pin</a> = 50019
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a20f8f3b93bed30ffa8a3f3a0cedadff4">err_invite_code_invalid</a> = 50020
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a09f5259f85522c91113a765412dcf406">err_system_message</a> = 50021
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a83d2bd6a620921211ee58527969bc3f9">err_channel_type</a> = 50024
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a912957ed94ec22bb5c80753ea7698de3">err_invalid_oauth2_access_token</a> = 50025
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a39f6bc7ca97238595747bf08ec1f8089">err_missing_required_oauth2_scope</a> = 50026
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a912957ed94ec22bb5c80753ea7698de3">err_invalid_oauth2_access_token</a> = 50025
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a39f6bc7ca97238595747bf08ec1f8089">err_missing_required_oauth2_scope</a> = 50026
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac1c05f45b0183fb02e3aaa38029f569f">err_invalid_webhook_token</a> = 50027
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af2f85cd43befc9fdb042b4322fb97b81">err_invalid_role</a> = 50028
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a25ad2abe08ecc1f1cfcaa0d36aca233e">err_invalid_recipients</a> = 50033
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afe893788cf1017b1328b222aa5052f17">err_too_old_to_bulk_delete</a> = 50034
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a25ad2abe08ecc1f1cfcaa0d36aca233e">err_invalid_recipients</a> = 50033
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afe893788cf1017b1328b222aa5052f17">err_too_old_to_bulk_delete</a> = 50034
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a022ea98ea693008d72e1849de390b47f">err_invalid_form_body</a> = 50035
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3bfb1d5e073fadbbe92a16af8a5fad7f">err_invite_error</a> = 50036
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aebf1795f588ba5c34c7ee9ceddf65d35">err_invalid_activity_action</a> = 50039
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1228dd31b3a6f78d9125c423355338d2">err_invalid_api_version_provided</a> = 50041
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aebf1795f588ba5c34c7ee9ceddf65d35">err_invalid_activity_action</a> = 50039
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1228dd31b3a6f78d9125c423355338d2">err_invalid_api_version_provided</a> = 50041
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a894d838d42bf1b752efa9e2edbeea1f4">err_file_uploaded_exceeds_the_maximum_size</a> = 50045
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa64ff1f4c91bbdd67a8488066040dc04">err_invalid_file_uploaded</a> = 50046
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa8c08ef780a1163d3b3c500db55b6d54">err_cannot_self_redeem_this_gift</a> = 50054
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a14c8a90a40e1f9396330a748380c1761">err_invalid_guild</a> = 50055
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa8c08ef780a1163d3b3c500db55b6d54">err_cannot_self_redeem_this_gift</a> = 50054
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a14c8a90a40e1f9396330a748380c1761">err_invalid_guild</a> = 50055
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4c0e073aa007e7fa5822724a8aeeeedd">err_invalid_sku</a> = 50057
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa4527fa0a435b72764484a61bfd75cc4">err_invalid_request_origin</a> = 50067
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7c86c2394273ad93bddfd1716498f284">err_invalid_message_type</a> = 50068
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1acf2fdaaf3250763f70230c51d54ee59f">err_payment_source_required</a> = 50070
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7c86c2394273ad93bddfd1716498f284">err_invalid_message_type</a> = 50068
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1acf2fdaaf3250763f70230c51d54ee59f">err_payment_source_required</a> = 50070
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1af4a9fba918cfcfaf117f6fa1f6151aa9">err_cannot_modify_a_system_webhook</a> = 50073
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a85b9918e215b3725e0fc81ca7aad4a8c">err_cannot_delete_a_channel_required_for_community_guilds</a> = 50074
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a827d975c22f5890907c120562a416165">err_cannot_edit_stickers_within_a_message</a> = 50080
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2c10ddf7fbce3800c808d1c6d677515e">err_invalid_sticker_sent</a> = 50081
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a827d975c22f5890907c120562a416165">err_cannot_edit_stickers_within_a_message</a> = 50080
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a2c10ddf7fbce3800c808d1c6d677515e">err_invalid_sticker_sent</a> = 50081
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3e9420a86508e7cb1aa5adbc90328c5b">err_tried_to_perform_an_operation_on_an_archived_thread</a> = 50083
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0e41e0e182fbf98d3042bb5d9faf40f2">err_invalid_thread_notification_settings</a> = 50084
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a85af5db5db0187978da7b13fbdcb6a5e">err_before_value_is_earlier_than_the_thread_creation_date</a> = 50085
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9da0fdd70f58f83fccd7d37ccbe507af">err_community_server_channels_must_be_text_channels</a> = 50086
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a85af5db5db0187978da7b13fbdcb6a5e">err_before_value_is_earlier_than_the_thread_creation_date</a> = 50085
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9da0fdd70f58f83fccd7d37ccbe507af">err_community_server_channels_must_be_text_channels</a> = 50086
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5f243f4dc41346cc24485ee48b36299c">err_bad_event_entity_type</a> = 50091
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a489d91bb48ff6e691a9c3cad6cacff0d">err_this_server_is_not_available_in_your_location</a> = 50095
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a79551a7f435890969a92a7db63769d01">err_monetization_enabled_in_order_to_perform_this_action</a> = 50097
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a088d082c49f6965cff1f747a2d8f3fec">err_more_boosts_to_perform_this_action</a> = 50101
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a79551a7f435890969a92a7db63769d01">err_monetization_enabled_in_order_to_perform_this_action</a> = 50097
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a088d082c49f6965cff1f747a2d8f3fec">err_more_boosts_to_perform_this_action</a> = 50101
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5c361eba0155051c4966ff4c6f9c64bd">err_the_request_body_contains_invalid_json</a> = 50109
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a22c0abe650b330367ff622fb62d319e6">err_owner_cannot_be_pending_member</a> = 50131
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac0c8925fe830aa7b5d5de742506d5e41">err_ownership_cannot_be_transferred_to_a_bot_user</a> = 50132
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5cd3eebfcf1e2ccf988aae9d75eaf479">err_failed_to_resize_asset_below_the_maximum_size</a> = 50138
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac0c8925fe830aa7b5d5de742506d5e41">err_ownership_cannot_be_transferred_to_a_bot_user</a> = 50132
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5cd3eebfcf1e2ccf988aae9d75eaf479">err_failed_to_resize_asset_below_the_maximum_size</a> = 50138
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a96c5bbf4b649640c55bc6eb12624ed47">err_cannot_mix_subscription_and_non_subscription_roles_for_an_emoji</a> = 50144
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab117ef64f8d6445de9ca820f3235e987">err_cannot_convert_between_premium_emoji_and_normal_emoji</a> = 50145
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abad4a63a7ecabbf6571f503815fac6b8">err_uploaded_file_not_found</a> = 50146
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac626e6cd707381cc259b72b8526b4800">err_voice_messages_do_not_support_additional_content</a> = 50159
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abad4a63a7ecabbf6571f503815fac6b8">err_uploaded_file_not_found</a> = 50146
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac626e6cd707381cc259b72b8526b4800">err_voice_messages_do_not_support_additional_content</a> = 50159
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a037582a27086d9a7320c52ba4a17900a">err_voice_messages_must_have_a_single_audio_attachment</a> = 50160
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afefaa91f2a349b92dd6eeb72130c4fca">err_voice_messages_must_have_supporting_metadata</a> = 50161
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1c6a78a17d386f35632ff45c0b3c7b47">err_voice_messages_cannot_be_edited</a> = 50162
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aca533dce25d590c97e085f24b2e7e355">err_cannot_delete_guild_subscription_integration</a> = 50163
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1c6a78a17d386f35632ff45c0b3c7b47">err_voice_messages_cannot_be_edited</a> = 50162
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aca533dce25d590c97e085f24b2e7e355">err_cannot_delete_guild_subscription_integration</a> = 50163
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a745297d9a4d8a1d7c023033647715b8a">err_you_cannot_send_voice_messages_in_this_channel</a> = 50173
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a68de82e11ca499b69d84ac58543e3e41">err_the_user_account_must_first_be_verified</a> = 50178
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa822d4f095096cc53473f16570b630a3">err_you_do_not_have_permission_to_send_this_sticker</a> = 50600
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ace54012ab1c9045321e3c9a06f464c9a">err_two_factor_is_required_for_this_operation</a> = 60003
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa822d4f095096cc53473f16570b630a3">err_you_do_not_have_permission_to_send_this_sticker</a> = 50600
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ace54012ab1c9045321e3c9a06f464c9a">err_two_factor_is_required_for_this_operation</a> = 60003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ac7a14877123d326f921cedeadef6dfa7">err_no_users_with_discordtag_exist</a> = 80004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a8c587d9c3b529e60022010a51824b584">err_reaction_was_blocked</a> = 90001
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9313cea344602ee8c137fb1616987294">err_user_cannot_use_burst_reactions</a> = 90002
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a856ba6a15c207cec8fbf219746143936">err_application_not_yet_available</a> = 110001
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a9313cea344602ee8c137fb1616987294">err_user_cannot_use_burst_reactions</a> = 90002
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a856ba6a15c207cec8fbf219746143936">err_application_not_yet_available</a> = 110001
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6e0aaa41af4a1d2ce8de1f1709eb8f23">err_api_resource_is_currently_overloaded</a> = 130000
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adc931258cc6800f719bc032fd6b14191">err_the_stage_is_already_open</a> = 150006
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adc423d21a0295462d5cee123222492be">err_cannot_reply_without_permission_to_read_message_history</a> = 160002
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4398520a75c545927de50deb6f6f9a56">err_a_thread_has_already_been_created_for_this_message</a> = 160004
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adc423d21a0295462d5cee123222492be">err_cannot_reply_without_permission_to_read_message_history</a> = 160002
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4398520a75c545927de50deb6f6f9a56">err_a_thread_has_already_been_created_for_this_message</a> = 160004
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aba18bc772eebd452cf4f725a35333445">err_thread_is_locked</a> = 160005
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a25649b667d14dcb12e1155fc6c147f01">err_active_threads</a> = 160006
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a743f09ef9f3dad07ab7f9843822d57f7">err_active_announcement_threads</a> = 160007
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab85842061d469a6727e0f8a010435729">err_invalid_json_for_uploaded_lottie_file</a> = 170001
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a743f09ef9f3dad07ab7f9843822d57f7">err_active_announcement_threads</a> = 160007
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab85842061d469a6727e0f8a010435729">err_invalid_json_for_uploaded_lottie_file</a> = 170001
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4fb93dee1764ebc7995743fbe52d7738">err_uploaded_lotties_cannot_contain_rasterized_images</a> = 170002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a0aea51fd74019068ca1aa73b7764ffe6">err_sticker_maximum_framerate</a> = 170003
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6e3d0b0b60eafb75e42e0740e1cd125d">err_sticker_frame_count</a> = 170004
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab336e248f2d095e1bad4f9ad7f5055c3">err_lottie_animation_dimensions</a> = 170005
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6e3d0b0b60eafb75e42e0740e1cd125d">err_sticker_frame_count</a> = 170004
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ab336e248f2d095e1bad4f9ad7f5055c3">err_lottie_animation_dimensions</a> = 170005
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a387cc04171b7c8548cb7c0ca38da1ec4">err_sticker_frame_rate</a> = 170006
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3343936a1ff49bb35c084de19d9bf9e2">err_sticker_animation_duration</a> = 170007
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae130e0d9d2bfcbacbba3fc7829cecc00">err_cannot_update_a_finished_event</a> = 180000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afa3e413ad261d7a268808936d023b579">err_failed_to_create_stage_needed_for_stage_event</a> = 180002
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae130e0d9d2bfcbacbba3fc7829cecc00">err_cannot_update_a_finished_event</a> = 180000
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1afa3e413ad261d7a268808936d023b579">err_failed_to_create_stage_needed_for_stage_event</a> = 180002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a10178c1d4aba54151b7e901e0f19b270">err_message_was_blocked_by_automatic_moderation</a> = 200000
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1acb79adbe5c23f6b6de59419bc14077ad">err_title_was_blocked_by_automatic_moderation</a> = 200001
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6238d3114419f4b10af5e75228f145c5">err_webhooks_posted_to_forum_channels_must_have_a_thread_name_or_thread_id</a> = 220001
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5ea190a68fbb33dadaf95a70473aad0a">err_webhooks_posted_to_forum_channels_cannot_have_both_a_thread_name_and_thread_id</a> = 220002
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6238d3114419f4b10af5e75228f145c5">err_webhooks_posted_to_forum_channels_must_have_a_thread_name_or_thread_id</a> = 220001
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a5ea190a68fbb33dadaf95a70473aad0a">err_webhooks_posted_to_forum_channels_cannot_have_both_a_thread_name_and_thread_id</a> = 220002
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1ae1ba2072c7003c02fce5a9ef734f65a9">err_webhooks_can_only_create_threads_in_forum_channels</a> = 220003
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aec60feba5e8368838a5d3fdba6683e0d">err_webhook_services_cannot_be_used_in_forum_channels</a> = 220004
-, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a10cd5794f1fd8ab048be8b2ac70e7831">err_message_blocked_links</a> = 240000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a01eee020bd243782551534a89f26c357">err_cannot_enable_onboarding_requirements_are_not_met</a> = 350000
+&#160;&#160;<a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a10cd5794f1fd8ab048be8b2ac70e7831">err_message_blocked_links</a> = 240000
+, <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a01eee020bd243782551534a89f26c357">err_cannot_enable_onboarding_requirements_are_not_met</a> = 350000
 , <a class="el" href="namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1c816b8906369cd66cfc27e060f8d12d">err_cannot_update_onboarding_below_requirements</a> = 350001
 <br />
  }</td></tr>
@@ -2393,27 +2448,27 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:af7af4fdfe2315c48c3223b1dd6124d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity types for rich presence.  <a href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4d">More...</a><br /></td></tr>
 <tr class="separator:af7af4fdfe2315c48c3223b1dd6124d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae525add0ec39d647375aabe5ce455449"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449">http_error</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da">h_success</a> = 0
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449ac4bebebf31327d34b0cef9846cf57d26">h_unknown</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a2733f3556e92a1cf264f17064ffe8fba">h_connection</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449abfaba5457d3e065a9cb76a6b8a606c15">h_bind_ip_address</a>
+<tr class="memitem:a8dcd9c69793bb37009cf6f8a0e8b970f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970f">http_error</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fab072c2cf95f4a567183c1d9fb0e6f3da">h_success</a> = 0
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fac4bebebf31327d34b0cef9846cf57d26">h_unknown</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa2733f3556e92a1cf264f17064ffe8fba">h_connection</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fabfaba5457d3e065a9cb76a6b8a606c15">h_bind_ip_address</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a1d3eaa9c4c535305b27f31cca5658e84">h_read</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449aa6d32000fe1b31898ed22b07cb59fd4f">h_write</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a156ae0ec15a21a9dc9e441a88fcd27df">h_exceed_redirect_count</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a0d1c6efb2738ae30a285d275d4a8c344">h_canceled</a>
+&#160;&#160;<a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa1d3eaa9c4c535305b27f31cca5658e84">h_read</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970faa6d32000fe1b31898ed22b07cb59fd4f">h_write</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa156ae0ec15a21a9dc9e441a88fcd27df">h_exceed_redirect_count</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa0d1c6efb2738ae30a285d275d4a8c344">h_canceled</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449abc69e4c147eb8f8329c3a56fd366111a">h_ssl_connection</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449adebed5c3ac6b8afa99546334cfb32090">h_ssl_loading_certs</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a87de6a04c8faa6470259fad90d64125d">h_ssl_server_verification</a>
-, <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e">h_unsupported_multipart_boundary_chars</a>
+&#160;&#160;<a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fabc69e4c147eb8f8329c3a56fd366111a">h_ssl_connection</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fadebed5c3ac6b8afa99546334cfb32090">h_ssl_loading_certs</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa87de6a04c8faa6470259fad90d64125d">h_ssl_server_verification</a>
+, <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fab64dc04f299fcfd9b1f4750908eb0a2e">h_unsupported_multipart_boundary_chars</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54">h_compression</a>
+&#160;&#160;<a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970fa65bb2cb9582bd3e13fc7704e36a5bf54">h_compression</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae525add0ec39d647375aabe5ce455449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values. Most of these are currently unused in https_client.  <a href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449">More...</a><br /></td></tr>
-<tr class="separator:ae525add0ec39d647375aabe5ce455449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8dcd9c69793bb37009cf6f8a0e8b970f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values. Most of these are currently unused in https_client.  <a href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970f">More...</a><br /></td></tr>
+<tr class="separator:a8dcd9c69793bb37009cf6f8a0e8b970f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805ef1feb2862a208ec0e9d1be005c88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e">m_get</a>
 , <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88afc49711c29fdc4f00456e06562c9168e">m_post</a>
@@ -2482,6 +2537,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8976e5ec3bb1e3550f315a6472fa45d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SKU flags.  <a href="namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1">More...</a><br /></td></tr>
 <tr class="separator:a8976e5ec3bb1e3550f315a6472fa45d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47df59fd5325a437251e77878c629532"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532">socket_event_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6">WANT_READ</a> = 1
+, <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc">WANT_WRITE</a> = 2
+, <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984">WANT_ERROR</a> = 4
+, <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca">WANT_DELETION</a> = 8
+ }</td></tr>
+<tr class="memdesc:a47df59fd5325a437251e77878c629532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of IO events a socket may subscribe to.  <a href="namespacedpp.html#a47df59fd5325a437251e77878c629532">More...</a><br /></td></tr>
+<tr class="separator:a47df59fd5325a437251e77878c629532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29954c9dfc5a906346177226d036a418"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418">stage_privacy_level</a> : uint8_t { <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed">sp_public</a> = 1
 , <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d">sp_guild_only</a> = 2
  }</td></tr>
@@ -2722,9 +2784,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a11a29c34fa2bce39d743860fb6fdb572"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572">ts_to_string</a> (time_t ts)</td></tr>
 <tr class="memdesc:a11a29c34fa2bce39d743860fb6fdb572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert time_t unix epoch to std::string ISO date/time.  <a href="namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572">More...</a><br /></td></tr>
 <tr class="separator:a11a29c34fa2bce39d743860fb6fdb572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c64da3e6d42da998ed877c18025afa0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0">resolve_hostname</a> (const std::string &amp;hostname, const std::string &amp;port)</td></tr>
-<tr class="memdesc:a7c64da3e6d42da998ed877c18025afa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a hostname to an addrinfo.  <a href="namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0">More...</a><br /></td></tr>
-<tr class="separator:a7c64da3e6d42da998ed877c18025afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa367a416efe81604e688e550bc196258"><td class="memItemLeft" align="right" valign="top">DPP_EXPORT const <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa367a416efe81604e688e550bc196258">resolve_hostname</a> (const std::string &amp;hostname, const std::string &amp;port)</td></tr>
+<tr class="memdesc:aa367a416efe81604e688e550bc196258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a hostname to an addrinfo.  <a href="namespacedpp.html#aa367a416efe81604e688e550bc196258">More...</a><br /></td></tr>
+<tr class="separator:aa367a416efe81604e688e550bc196258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5546e9406901147259e107ce24b5ff72"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">build_type</a> &gt; </td></tr>
 <tr class="memitem:a5546e9406901147259e107ce24b5ff72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a5546e9406901147259e107ce24b5ff72">validate_configuration</a> ()</td></tr>
 <tr class="separator:a5546e9406901147259e107ce24b5ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2778,12 +2840,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a94b9083871fc849024b4f4d2641320c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a94b9083871fc849024b4f4d2641320c0">rest_request_vector</a> (<a class="el" href="classdpp_1_1cluster.html">dpp::cluster</a> *c, const char *basepath, const std::string &amp;major, const std::string &amp;minor, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a94b9083871fc849024b4f4d2641320c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated REST request helper to save on typing (for returned lists, specialised for objects which doesn't have ids)  <a href="namespacedpp.html#a94b9083871fc849024b4f4d2641320c0">More...</a><br /></td></tr>
 <tr class="separator:a94b9083871fc849024b4f4d2641320c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">close_socket</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sfd)</td></tr>
-<tr class="memdesc:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <a href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">More...</a><br /></td></tr>
-<tr class="separator:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">set_nonblocking</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sockfd, bool non_blocking)</td></tr>
-<tr class="memdesc:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a socket to blocking or non-blocking IO.  <a href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">More...</a><br /></td></tr>
-<tr class="separator:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a692a885e0bfc0d698e8bcb00c0c748"><td class="memItemLeft" align="right" valign="top">DPP_EXPORT std::unique_ptr&lt; <a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1a692a885e0bfc0d698e8bcb00c0c748">create_socket_engine</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator)</td></tr>
+<tr class="memdesc:a1a692a885e0bfc0d698e8bcb00c0c748"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is implemented by whatever derived form socket_engine takes.  <a href="namespacedpp.html#a1a692a885e0bfc0d698e8bcb00c0c748">More...</a><br /></td></tr>
+<tr class="separator:a1a692a885e0bfc0d698e8bcb00c0c748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8312b33513f0d91203cd6b34296e800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab8312b33513f0d91203cd6b34296e800">set_signal_handler</a> (int signal)</td></tr>
+<tr class="memdesc:ab8312b33513f0d91203cd6b34296e800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up a signal handler to be ignored.  <a href="namespacedpp.html#ab8312b33513f0d91203cd6b34296e800">More...</a><br /></td></tr>
+<tr class="separator:ab8312b33513f0d91203cd6b34296e800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07b429f676b3eeb3e519562b70a9972"><td class="memItemLeft" align="right" valign="top">DPP_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae07b429f676b3eeb3e519562b70a9972">close_socket</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sfd)</td></tr>
+<tr class="memdesc:ae07b429f676b3eeb3e519562b70a9972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <a href="namespacedpp.html#ae07b429f676b3eeb3e519562b70a9972">More...</a><br /></td></tr>
+<tr class="separator:ae07b429f676b3eeb3e519562b70a9972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4be59026a3091dae2a6912a9bab911"><td class="memItemLeft" align="right" valign="top">DPP_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1a4be59026a3091dae2a6912a9bab911">set_nonblocking</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sockfd, bool non_blocking)</td></tr>
+<tr class="memdesc:a1a4be59026a3091dae2a6912a9bab911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a socket to blocking or non-blocking IO.  <a href="namespacedpp.html#a1a4be59026a3091dae2a6912a9bab911">More...</a><br /></td></tr>
+<tr class="separator:a1a4be59026a3091dae2a6912a9bab911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8227c717e1a550b3c3962cea1964d92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa8227c717e1a550b3c3962cea1964d92"><td class="memTemplItemLeft" align="right" valign="top">std::basic_string&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92">lowercase</a> (const std::basic_string&lt; T &gt; &amp;s)</td></tr>
 <tr class="memdesc:aa8227c717e1a550b3c3962cea1964d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to lowercase using tolower()  <a href="namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92">More...</a><br /></td></tr>
@@ -2833,10 +2901,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">leading_zeroes</a> (T i, size_t width)</td></tr>
 <tr class="memdesc:a239ea76cdedff39d6bc8104dadb77ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a numeric type as a string with leading zeroes.  <a href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">More...</a><br /></td></tr>
 <tr class="separator:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplParams" colspan="2">template&lt;typename T , class F , class... Ts&gt; </td></tr>
-<tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">sync</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *c, F func, Ts &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a D++ REST function synchronously.  <a href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">More...</a><br /></td></tr>
-<tr class="separator:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d77e1ffffe22979d93132a7acee1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;tmdata)</td></tr>
 <tr class="memdesc:a77d77e1ffffe22979d93132a7acee1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1thread__metadata.html" title="metadata for threads">thread_metadata</a> object to json.  <a href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">More...</a><br /></td></tr>
 <tr class="separator:a77d77e1ffffe22979d93132a7acee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2853,6 +2917,12 @@ Variables</h2></td></tr>
 <tr class="separator:a5609082c12782be33f82b955a5d07b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae611302ba7fc914d4732b65541132651"><td class="memItemLeft" align="right" valign="top">DPP_EXPORT std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae611302ba7fc914d4732b65541132651">deletion_mutex</a></td></tr>
 <tr class="separator:ae611302ba7fc914d4732b65541132651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0734e9859548186679ec55f37faf57f0"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0734e9859548186679ec55f37faf57f0">NO_SHARDS</a> = ~0U</td></tr>
+<tr class="memdesc:a0734e9859548186679ec55f37faf57f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass this value into the constructor of <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> for the shard count to create a cluster with no shards. A cluster with no shards does not connect to a websocket, but can still use the event loop to dispatch HTTPS API requests to Discord. This is useful for bots that do not need to receive websocket events as it will save a lot of resources.  <a href="namespacedpp.html#a0734e9859548186679ec55f37faf57f0">More...</a><br /></td></tr>
+<tr class="separator:a0734e9859548186679ec55f37faf57f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417868153abc8ec1706fcaddbab3850d"><td class="memItemLeft" align="right" valign="top">constexpr time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a417868153abc8ec1706fcaddbab3850d">RECONNECT_INTERVAL</a> = 5</td></tr>
+<tr class="memdesc:a417868153abc8ec1706fcaddbab3850d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many seconds to wait between (re)connections. DO NOT change this. It is mandated by the Discord API spec!  <a href="namespacedpp.html#a417868153abc8ec1706fcaddbab3850d">More...</a><br /></td></tr>
+<tr class="separator:a417868153abc8ec1706fcaddbab3850d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864cd30661fc496fae896ddf311ccdb4"><td class="memItemLeft" align="right" valign="top">constexpr int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a864cd30661fc496fae896ddf311ccdb4">opus_sample_rate_hz</a> = 48000</td></tr>
 <tr class="memdesc:a864cd30661fc496fae896ddf311ccdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample rate for OPUS (48khz)  <a href="namespacedpp.html#a864cd30661fc496fae896ddf311ccdb4">More...</a><br /></td></tr>
 <tr class="separator:a864cd30661fc496fae896ddf311ccdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2880,8 +2950,20 @@ Variables</h2></td></tr>
 <tr class="separator:a1c541a98114325f4c6c0f138887a8eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e7e143b9572651ee47636e65ff8425"><td class="memItemLeft" align="right" valign="top">enum DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae7e7e143b9572651ee47636e65ff8425">mrt_forward</a> = 1</td></tr>
 <tr class="separator:ae7e7e143b9572651ee47636e65ff8425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6321a697903a4e58f7b38e268f54658d"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6321a697903a4e58f7b38e268f54658d">DPP_BUFSIZE</a> {16 * 1024}</td></tr>
+<tr class="memdesc:a6321a697903a4e58f7b38e268f54658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL_read buffer size.  <a href="namespacedpp.html#a6321a697903a4e58f7b38e268f54658d">More...</a><br /></td></tr>
+<tr class="separator:a6321a697903a4e58f7b38e268f54658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b92dd2787f4e2c1d11e4ffe94a0ffc"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a75b92dd2787f4e2c1d11e4ffe94a0ffc">ERROR_STATUS</a> {-1}</td></tr>
+<tr class="memdesc:a75b92dd2787f4e2c1d11e4ffe94a0ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a failed socket system call, e.g. connect() failure.  <a href="namespacedpp.html#a75b92dd2787f4e2c1d11e4ffe94a0ffc">More...</a><br /></td></tr>
+<tr class="separator:a75b92dd2787f4e2c1d11e4ffe94a0ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780ea9df2eab00f9d83923389c1a47e8"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a780ea9df2eab00f9d83923389c1a47e8">MAX_RETRIES</a> {4}</td></tr>
+<tr class="memdesc:a780ea9df2eab00f9d83923389c1a47e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of internal connect() retries on TCP connections.  <a href="namespacedpp.html#a780ea9df2eab00f9d83923389c1a47e8">More...</a><br /></td></tr>
+<tr class="separator:a780ea9df2eab00f9d83923389c1a47e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae876818464d49870905285dd988de870"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae876818464d49870905285dd988de870">MAX_AVATAR_SIZE</a> = 10240 * 1000</td></tr>
 <tr class="separator:ae876818464d49870905285dd988de870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75de928bc7a0908e5060c7301a50ed87"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a75de928bc7a0908e5060c7301a50ed87">DECOMP_BUFFER_SIZE</a> = 512 * 1024</td></tr>
+<tr class="memdesc:a75de928bc7a0908e5060c7301a50ed87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of decompression buffer for zlib compressed traffic.  <a href="namespacedpp.html#a75de928bc7a0908e5060c7301a50ed87">More...</a><br /></td></tr>
+<tr class="separator:a75de928bc7a0908e5060c7301a50ed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The main namespace for D++ functions. classes and types. </p>
@@ -3029,7 +3111,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The function definition for a command handler. Expects a command name string, and a list of command parameters. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000228">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
 
 </div>
 </div>
@@ -3132,14 +3214,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4c862611232b317153bcfc106534292" name="ad4c862611232b317153bcfc106534292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c862611232b317153bcfc106534292">&#9670;&nbsp;</a></span>dns_cache_t</h2>
+<a id="ae85e1c4be79e3284d57af6eb20f52d14" name="ae85e1c4be79e3284d57af6eb20f52d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85e1c4be79e3284d57af6eb20f52d14">&#9670;&nbsp;</a></span>dns_cache_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacedpp.html#ad4c862611232b317153bcfc106534292">dpp::dns_cache_t</a> = typedef std::unordered_map&lt;std::string, <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a>*&gt;</td>
+          <td class="memname">using <a class="el" href="namespacedpp.html#ae85e1c4be79e3284d57af6eb20f52d14">dpp::dns_cache_t</a> = typedef std::unordered_map&lt;std::string, std::unique_ptr&lt;<a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3289,7 +3371,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Results of HTTP requests are called back to these std::function types. </p>
-<dl class="section note"><dt>Note</dt><dd>Returned http_completion_events are called ASYNCHRONOUSLY in your code which means they execute in a separate thread. The completion events arrive in order. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Returned http_completion_events are called ASYNCHRONOUSLY in your code which means they execute in a separate thread, results for the requests going into a <a class="el" href="structdpp_1_1thread__pool.html" title="A thread pool contains 1 or more worker threads which accept thread_pool_task lambadas into a queue,...">dpp::thread_pool</a>. Completion events may not arrive in order depending on if one request takes longer than another. Using the callbacks or using coroutines correctly ensures that the order they arrive in the queue does not negatively affect your code. </dd></dl>
 
 </div>
 </div>
@@ -3306,6 +3388,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Request headers. </p>
+
+</div>
+</div>
+<a id="af597d5e0f7483338956d105bbcfd9b63" name="af597d5e0f7483338956d105bbcfd9b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af597d5e0f7483338956d105bbcfd9b63">&#9670;&nbsp;</a></span>https_client_completion_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#af597d5e0f7483338956d105bbcfd9b63">dpp::https_client_completion_event</a> = typedef std::function&lt;void(class <a class="el" href="classdpp_1_1https__client.html">https_client</a>*)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3516,6 +3612,22 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a1922d22daae6683aff3a8b192cac2e7a" name="a1922d22daae6683aff3a8b192cac2e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1922d22daae6683aff3a8b192cac2e7a">&#9670;&nbsp;</a></span>reconnect_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;uint32_t, time_t&gt; <a class="el" href="namespacedpp.html#a1922d22daae6683aff3a8b192cac2e7a">dpp::reconnect_list</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of shards awaiting reconnection, by id with earliest possible reconnect time. </p>
+
+</div>
+</div>
 <a id="a75c3daf035b2a2d9a5e0fcc5f11c936f" name="a75c3daf035b2a2d9a5e0fcc5f11c936f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75c3daf035b2a2d9a5e0fcc5f11c936f">&#9670;&nbsp;</a></span>role_collector_t</h2>
 
@@ -3561,7 +3673,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Represents the various discord permissions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000245">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3661,35 +3773,67 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a982a3efeac04ddb820bbe87b08155640" name="a982a3efeac04ddb820bbe87b08155640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a982a3efeac04ddb820bbe87b08155640">&#9670;&nbsp;</a></span>socket_callback_t</h2>
+<a id="a528b0d9736647cc49207bbe4c1adee61" name="a528b0d9736647cc49207bbe4c1adee61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528b0d9736647cc49207bbe4c1adee61">&#9670;&nbsp;</a></span>socket_container</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>()&gt; <a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">dpp::socket_callback_t</a></td>
+          <td class="memname">using <a class="el" href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">dpp::socket_container</a> = typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>, std::unique_ptr&lt;<a class="el" href="structdpp_1_1socket__events.html">socket_events</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback for socket status. </p>
+<p>Container of event sets keyed by socket file descriptor. </p>
 
 </div>
 </div>
-<a id="a9f89983921c7ddfa7f91705bd05e2b9e" name="a9f89983921c7ddfa7f91705bd05e2b9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f89983921c7ddfa7f91705bd05e2b9e">&#9670;&nbsp;</a></span>socket_notification_t</h2>
+<a id="ae5c1f0e20e7b399e32272dc788412d8f" name="ae5c1f0e20e7b399e32272dc788412d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c1f0e20e7b399e32272dc788412d8f">&#9670;&nbsp;</a></span>socket_error_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">dpp::socket_notification_t</a></td>
+          <td class="memname">using <a class="el" href="namespacedpp.html#ae5c1f0e20e7b399e32272dc788412d8f">dpp::socket_error_event</a> = typedef std::function&lt;void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a>&amp;, int error_code)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A socket notification callback. </p>
+<p>Error event. </p>
+
+</div>
+</div>
+<a id="ad9685f9b1294f6e1be261a3d84270ea7" name="ad9685f9b1294f6e1be261a3d84270ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9685f9b1294f6e1be261a3d84270ea7">&#9670;&nbsp;</a></span>socket_read_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#ad9685f9b1294f6e1be261a3d84270ea7">dpp::socket_read_event</a> = typedef std::function&lt;void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read ready event. </p>
+
+</div>
+</div>
+<a id="abe40ae4383ba430f4256e8ca99b91870" name="abe40ae4383ba430f4256e8ca99b91870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe40ae4383ba430f4256e8ca99b91870">&#9670;&nbsp;</a></span>socket_write_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#abe40ae4383ba430f4256e8ca99b91870">dpp::socket_write_event</a> = typedef std::function&lt;void(<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, const struct <a class="el" href="structdpp_1_1socket__events.html">socket_events</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write ready event. </p>
 
 </div>
 </div>
@@ -3821,35 +3965,35 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a408d79969007e9c450e186f5387df9e5" name="a408d79969007e9c450e186f5387df9e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a408d79969007e9c450e186f5387df9e5">&#9670;&nbsp;</a></span>timer_next_t</h2>
+<a id="a555c45a82cfc92384477899e67a86183" name="a555c45a82cfc92384477899e67a86183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555c45a82cfc92384477899e67a86183">&#9670;&nbsp;</a></span>timer_next_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::multimap&lt;time_t, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a>*&gt; <a class="el" href="namespacedpp.html#a408d79969007e9c450e186f5387df9e5">dpp::timer_next_t</a></td>
+          <td class="memname">typedef std::priority_queue&lt;<a class="el" href="structdpp_1_1timer__t.html">timer_t</a>, std::vector&lt;<a class="el" href="structdpp_1_1timer__t.html">timer_t</a>&gt;, <a class="el" href="structdpp_1_1timer__comparator.html">timer_comparator</a>&gt; <a class="el" href="namespacedpp.html#a555c45a82cfc92384477899e67a86183">dpp::timer_next_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due. </p>
+<p>A priority timers, ordered by earliest first so that the head is always the soonest to be due. </p>
 
 </div>
 </div>
-<a id="a81b406b8f9f9fa3da4b61fd006f13455" name="a81b406b8f9f9fa3da4b61fd006f13455"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81b406b8f9f9fa3da4b61fd006f13455">&#9670;&nbsp;</a></span>timer_reg_t</h2>
+<a id="ac9e8be057c39e90fcffe752ce430cd23" name="ac9e8be057c39e90fcffe752ce430cd23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e8be057c39e90fcffe752ce430cd23">&#9670;&nbsp;</a></span>timers_deleted_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a>*&gt; <a class="el" href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">dpp::timer_reg_t</a></td>
+          <td class="memname">typedef std::set&lt;<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&gt; <a class="el" href="namespacedpp.html#ac9e8be057c39e90fcffe752ce430cd23">dpp::timers_deleted_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A map of timers stored by handle. </p>
+<p>A set of deleted timer handles. </p>
 
 </div>
 </div>
@@ -3913,6 +4057,22 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>A group of webhooks. </p>
+
+</div>
+</div>
+<a id="aef4c7438f07bccdcf3af16492e4fc627" name="aef4c7438f07bccdcf3af16492e4fc627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4c7438f07bccdcf3af16492e4fc627">&#9670;&nbsp;</a></span>work_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">dpp::work_unit</a> = typedef std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A work unit is a lambda executed in the thread pool. </p>
 
 </div>
 </div>
@@ -5024,6 +5184,7 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1a6cf25f7dd0692a2b3174bad8b9083ed4" name="aacfd9dabf035bd86026220ba73d36ba1a6cf25f7dd0692a2b3174bad8b9083ed4"></a>err_no_voice_support&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1a4adc2d89aa161b23accf2fd794d1837d" name="aacfd9dabf035bd86026220ba73d36ba1a4adc2d89aa161b23accf2fd794d1837d"></a>err_invalid_voice_packet_length&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1aa86bc94e0b70c1408639f0791c28a3e6" name="aacfd9dabf035bd86026220ba73d36ba1aa86bc94e0b70c1408639f0791c28a3e6"></a>err_opus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1af5c9639d62748ae90b71309c785969c1" name="aacfd9dabf035bd86026220ba73d36ba1af5c9639d62748ae90b71309c785969c1"></a>err_cant_start_shard&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1abb3c7711836d78caf6f6bbf9d60538b5" name="aacfd9dabf035bd86026220ba73d36ba1abb3c7711836d78caf6f6bbf9d60538b5"></a>err_etf&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1a3ab5878430a5c1dbc27324de3276070d" name="aacfd9dabf035bd86026220ba73d36ba1a3ab5878430a5c1dbc27324de3276070d"></a>err_cache&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aacfd9dabf035bd86026220ba73d36ba1a7896d73d6ebddaa6eedddc88565f1083" name="aacfd9dabf035bd86026220ba73d36ba1a7896d73d6ebddaa6eedddc88565f1083"></a>err_icon_size&#160;</td><td class="fielddoc"></td></tr>
@@ -5456,15 +5617,15 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa1471f351d0cbe0aaae622d50c8050bbf" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa1471f351d0cbe0aaae622d50c8050bbf"></a>g_role_icons&#160;</td><td class="fielddoc"><p >Guild is able to set role icons. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa0ec280972e684f49e958e9b882e01760" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa0ec280972e684f49e958e9b882e01760"></a>g_seven_day_thread_archive&#160;</td><td class="fielddoc"><p >Guild has access to the seven day archive time for threads. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000234">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa58c9c9013412ff54052a11bae62d48fb" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa58c9c9013412ff54052a11bae62d48fb"></a>g_three_day_thread_archive&#160;</td><td class="fielddoc"><p >Guild has access to the three day archive time for threads. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000235">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8"></a>g_ticketed_events&#160;</td><td class="fielddoc"><p >Guild has enabled ticketed events. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965"></a>g_channel_banners&#160;</td><td class="fielddoc"><p >Guild can have channel banners. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000236">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
 </td></tr>
 </table>
 
@@ -5602,45 +5763,45 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae525add0ec39d647375aabe5ce455449" name="ae525add0ec39d647375aabe5ce455449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae525add0ec39d647375aabe5ce455449">&#9670;&nbsp;</a></span>http_error</h2>
+<a id="a8dcd9c69793bb37009cf6f8a0e8b970f" name="a8dcd9c69793bb37009cf6f8a0e8b970f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcd9c69793bb37009cf6f8a0e8b970f">&#9670;&nbsp;</a></span>http_error</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449">dpp::http_error</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a8dcd9c69793bb37009cf6f8a0e8b970f">dpp::http_error</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Error values. Most of these are currently unused in <a class="el" href="classdpp_1_1https__client.html" title="Implements a HTTPS socket client based on the SSL client.">https_client</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da" name="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da"></a>h_success&#160;</td><td class="fielddoc"><p >Request successful. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fab072c2cf95f4a567183c1d9fb0e6f3da" name="a8dcd9c69793bb37009cf6f8a0e8b970fab072c2cf95f4a567183c1d9fb0e6f3da"></a>h_success&#160;</td><td class="fielddoc"><p >Request successful. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449ac4bebebf31327d34b0cef9846cf57d26" name="ae525add0ec39d647375aabe5ce455449ac4bebebf31327d34b0cef9846cf57d26"></a>h_unknown&#160;</td><td class="fielddoc"><p >Status unknown. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fac4bebebf31327d34b0cef9846cf57d26" name="a8dcd9c69793bb37009cf6f8a0e8b970fac4bebebf31327d34b0cef9846cf57d26"></a>h_unknown&#160;</td><td class="fielddoc"><p >Status unknown. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a2733f3556e92a1cf264f17064ffe8fba" name="ae525add0ec39d647375aabe5ce455449a2733f3556e92a1cf264f17064ffe8fba"></a>h_connection&#160;</td><td class="fielddoc"><p >Connect failed. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa2733f3556e92a1cf264f17064ffe8fba" name="a8dcd9c69793bb37009cf6f8a0e8b970fa2733f3556e92a1cf264f17064ffe8fba"></a>h_connection&#160;</td><td class="fielddoc"><p >Connect failed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449abfaba5457d3e065a9cb76a6b8a606c15" name="ae525add0ec39d647375aabe5ce455449abfaba5457d3e065a9cb76a6b8a606c15"></a>h_bind_ip_address&#160;</td><td class="fielddoc"><p >Invalid local ip address. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fabfaba5457d3e065a9cb76a6b8a606c15" name="a8dcd9c69793bb37009cf6f8a0e8b970fabfaba5457d3e065a9cb76a6b8a606c15"></a>h_bind_ip_address&#160;</td><td class="fielddoc"><p >Invalid local ip address. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a1d3eaa9c4c535305b27f31cca5658e84" name="ae525add0ec39d647375aabe5ce455449a1d3eaa9c4c535305b27f31cca5658e84"></a>h_read&#160;</td><td class="fielddoc"><p >Read error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa1d3eaa9c4c535305b27f31cca5658e84" name="a8dcd9c69793bb37009cf6f8a0e8b970fa1d3eaa9c4c535305b27f31cca5658e84"></a>h_read&#160;</td><td class="fielddoc"><p >Read error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449aa6d32000fe1b31898ed22b07cb59fd4f" name="ae525add0ec39d647375aabe5ce455449aa6d32000fe1b31898ed22b07cb59fd4f"></a>h_write&#160;</td><td class="fielddoc"><p >Write error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970faa6d32000fe1b31898ed22b07cb59fd4f" name="a8dcd9c69793bb37009cf6f8a0e8b970faa6d32000fe1b31898ed22b07cb59fd4f"></a>h_write&#160;</td><td class="fielddoc"><p >Write error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a156ae0ec15a21a9dc9e441a88fcd27df" name="ae525add0ec39d647375aabe5ce455449a156ae0ec15a21a9dc9e441a88fcd27df"></a>h_exceed_redirect_count&#160;</td><td class="fielddoc"><p >Too many 30x redirects. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa156ae0ec15a21a9dc9e441a88fcd27df" name="a8dcd9c69793bb37009cf6f8a0e8b970fa156ae0ec15a21a9dc9e441a88fcd27df"></a>h_exceed_redirect_count&#160;</td><td class="fielddoc"><p >Too many 30x redirects. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a0d1c6efb2738ae30a285d275d4a8c344" name="ae525add0ec39d647375aabe5ce455449a0d1c6efb2738ae30a285d275d4a8c344"></a>h_canceled&#160;</td><td class="fielddoc"><p >Request cancelled. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa0d1c6efb2738ae30a285d275d4a8c344" name="a8dcd9c69793bb37009cf6f8a0e8b970fa0d1c6efb2738ae30a285d275d4a8c344"></a>h_canceled&#160;</td><td class="fielddoc"><p >Request cancelled. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449abc69e4c147eb8f8329c3a56fd366111a" name="ae525add0ec39d647375aabe5ce455449abc69e4c147eb8f8329c3a56fd366111a"></a>h_ssl_connection&#160;</td><td class="fielddoc"><p >SSL connection error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fabc69e4c147eb8f8329c3a56fd366111a" name="a8dcd9c69793bb37009cf6f8a0e8b970fabc69e4c147eb8f8329c3a56fd366111a"></a>h_ssl_connection&#160;</td><td class="fielddoc"><p >SSL connection error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449adebed5c3ac6b8afa99546334cfb32090" name="ae525add0ec39d647375aabe5ce455449adebed5c3ac6b8afa99546334cfb32090"></a>h_ssl_loading_certs&#160;</td><td class="fielddoc"><p >SSL cert loading error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fadebed5c3ac6b8afa99546334cfb32090" name="a8dcd9c69793bb37009cf6f8a0e8b970fadebed5c3ac6b8afa99546334cfb32090"></a>h_ssl_loading_certs&#160;</td><td class="fielddoc"><p >SSL cert loading error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a87de6a04c8faa6470259fad90d64125d" name="ae525add0ec39d647375aabe5ce455449a87de6a04c8faa6470259fad90d64125d"></a>h_ssl_server_verification&#160;</td><td class="fielddoc"><p >SSL server verification error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa87de6a04c8faa6470259fad90d64125d" name="a8dcd9c69793bb37009cf6f8a0e8b970fa87de6a04c8faa6470259fad90d64125d"></a>h_ssl_server_verification&#160;</td><td class="fielddoc"><p >SSL server verification error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e" name="ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e"></a>h_unsupported_multipart_boundary_chars&#160;</td><td class="fielddoc"><p >Unsupported multipart boundary characters. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fab64dc04f299fcfd9b1f4750908eb0a2e" name="a8dcd9c69793bb37009cf6f8a0e8b970fab64dc04f299fcfd9b1f4750908eb0a2e"></a>h_unsupported_multipart_boundary_chars&#160;</td><td class="fielddoc"><p >Unsupported multipart boundary characters. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54" name="ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54"></a>h_compression&#160;</td><td class="fielddoc"><p >Compression error. </p>
+<tr><td class="fieldname"><a id="a8dcd9c69793bb37009cf6f8a0e8b970fa65bb2cb9582bd3e13fc7704e36a5bf54" name="a8dcd9c69793bb37009cf6f8a0e8b970fa65bb2cb9582bd3e13fc7704e36a5bf54"></a>h_compression&#160;</td><td class="fielddoc"><p >Compression error. </p>
 </td></tr>
 </table>
 
@@ -6478,7 +6639,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Represents voice regions for guilds and channels. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>Deprecated in favour of per-channel regions. Please use <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">dpp::channel::rtc_region</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>Deprecated in favour of per-channel regions. Please use <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">dpp::channel::rtc_region</a> instead. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313" name="a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313"></a>r_brazil&#160;</td><td class="fielddoc"><p >Brazil. </p>
 </td></tr>
@@ -6539,6 +6700,61 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171" name="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171"></a>r_guild_connections&#160;</td><td class="fielddoc"><p >Whether the role is a guild's linked role. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6" name="af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6"></a>r_in_prompt&#160;</td><td class="fielddoc"><p >Whether the role can be selected by members in an onboarding prompt. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6b599993835b3e8ad568db4515a413ac" name="a6b599993835b3e8ad568db4515a413ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b599993835b3e8ad568db4515a413ac">&#9670;&nbsp;</a></span>shard_frame_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a6b599993835b3e8ad568db4515a413ac">dpp::shard_frame_type</a> : int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents different event opcodes sent and received on a shard websocket. </p>
+<p >These are used internally to route frames. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca7545cacadc4b8e50b0e68cd5efb48832" name="a6b599993835b3e8ad568db4515a413aca7545cacadc4b8e50b0e68cd5efb48832"></a>ft_dispatch&#160;</td><td class="fielddoc"><p >An event was dispatched. </p>
+<dl class="section note"><dt>Note</dt><dd>Receive only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413acaa9814e0293746dc0cc5ed78249c764db" name="a6b599993835b3e8ad568db4515a413acaa9814e0293746dc0cc5ed78249c764db"></a>ft_heartbeat&#160;</td><td class="fielddoc"><p >Fired periodically by the client to keep the connection alive. </p>
+<dl class="section note"><dt>Note</dt><dd>Send/Receive </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413acaf11b16f9166ce8c37cf1371112b6f2c9" name="a6b599993835b3e8ad568db4515a413acaf11b16f9166ce8c37cf1371112b6f2c9"></a>ft_identify&#160;</td><td class="fielddoc"><p >Starts a new session during the initial handshake. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca6f0f0e1b503c8900c11242d2ca1ba159" name="a6b599993835b3e8ad568db4515a413aca6f0f0e1b503c8900c11242d2ca1ba159"></a>ft_presence&#160;</td><td class="fielddoc"><p >Update the client's presence. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413acabec203eba0275e5fbd0572e53719d0aa" name="a6b599993835b3e8ad568db4515a413acabec203eba0275e5fbd0572e53719d0aa"></a>ft_voice_state_update&#160;</td><td class="fielddoc"><p >Used to join/leave or move between voice channels. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca77a487ae0834013213ba9e69b477f61d" name="a6b599993835b3e8ad568db4515a413aca77a487ae0834013213ba9e69b477f61d"></a>ft_resume&#160;</td><td class="fielddoc"><p >Resume a previous session that was disconnected. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca49471b9d384f59a11690dc0e6bcafd88" name="a6b599993835b3e8ad568db4515a413aca49471b9d384f59a11690dc0e6bcafd88"></a>ft_reconnect&#160;</td><td class="fielddoc"><p >You should attempt to reconnect and resume immediately. </p>
+<dl class="section note"><dt>Note</dt><dd>Receive only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca2feaebb7ffb1d726d5801c6e1f1b1f1e" name="a6b599993835b3e8ad568db4515a413aca2feaebb7ffb1d726d5801c6e1f1b1f1e"></a>ft_request_guild_members&#160;</td><td class="fielddoc"><p >Request information about offline guild members in a large guild. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca07492eb915ecb97a16653744844521a1" name="a6b599993835b3e8ad568db4515a413aca07492eb915ecb97a16653744844521a1"></a>ft_invalid_session&#160;</td><td class="fielddoc"><p >The session has been invalidated. You should reconnect and identify/resume accordingly. </p>
+<dl class="section note"><dt>Note</dt><dd>Receive only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca0859c8ef8399d5f0e0bd2051609de90f" name="a6b599993835b3e8ad568db4515a413aca0859c8ef8399d5f0e0bd2051609de90f"></a>ft_hello&#160;</td><td class="fielddoc"><p >Sent immediately after connecting, contains the heartbeat interval to use. </p>
+<dl class="section note"><dt>Note</dt><dd>Receive only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413aca6668dd1d25bf5bb870c09ce2117423a1" name="a6b599993835b3e8ad568db4515a413aca6668dd1d25bf5bb870c09ce2117423a1"></a>ft_heartbeat_ack&#160;</td><td class="fielddoc"><p >Sent in response to receiving a heartbeat to acknowledge that it has been received. </p>
+<dl class="section note"><dt>Note</dt><dd>Receive only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b599993835b3e8ad568db4515a413acada08888d73b521f44435aff13fab62da" name="a6b599993835b3e8ad568db4515a413acada08888d73b521f44435aff13fab62da"></a>ft_request_soundboard_sounds&#160;</td><td class="fielddoc"><p >Request information about soundboard sounds in a set of guilds. </p>
+<dl class="section note"><dt>Note</dt><dd>Send only </dd></dl>
 </td></tr>
 </table>
 
@@ -6621,6 +6837,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a47df59fd5325a437251e77878c629532" name="a47df59fd5325a437251e77878c629532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47df59fd5325a437251e77878c629532">&#9670;&nbsp;</a></span>socket_event_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532">dpp::socket_event_flags</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Types of IO events a socket may subscribe to. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6" name="a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6"></a>WANT_READ&#160;</td><td class="fielddoc"><p >Socket wants to receive events when it can be read from. This is provided by the underlying implementation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc" name="a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc"></a>WANT_WRITE&#160;</td><td class="fielddoc"><p >Socket wants to receive events when it can be written to. This is provided by the underlying implementation, and will be a one-off event. If you want to receive ongoing write events you must re-request this event type each time. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984" name="a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984"></a>WANT_ERROR&#160;</td><td class="fielddoc"><p >Socket wants to receive events that indicate an error condition. Note that EOF (graceful close) is not an error condition and is indicated by errno being 0 and ::read() returning 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca" name="a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca"></a>WANT_DELETION&#160;</td><td class="fielddoc"><p >Socket should be removed as soon as is safe to do so. Generally, this is after the current iteration through the active event list. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a29954c9dfc5a906346177226d036a418" name="a29954c9dfc5a906346177226d036a418"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29954c9dfc5a906346177226d036a418">&#9670;&nbsp;</a></span>stage_privacy_level</h2>
 
@@ -6655,11 +6897,11 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Types of startup for <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> </p>
+<p>Types of startup for <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" name="af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"></a>st_wait&#160;</td><td class="fielddoc"><p >Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will not return in normal operation. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" name="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e"></a>st_return&#160;</td><td class="fielddoc"><p >Return immediately after starting shard threads. If you set the parameter of <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> to this value, you will have to manage the lifetime and scope of your cluster object yourself. Taking it out of scope or deleting its pointer will terminate the bot. </p>
+<tr><td class="fieldname"><a id="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" name="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e"></a>st_return&#160;</td><td class="fielddoc"><p >Return immediately after starting shard threads. If you set the parameter of <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start()</a> to this value, you will have to manage the lifetime and scope of your cluster object yourself. Taking it out of scope or deleting its pointer will terminate the bot. </p>
 </td></tr>
 </table>
 
@@ -7152,14 +7394,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2aee5f8caf98a0dbebd4f1abb464dc00" name="a2aee5f8caf98a0dbebd4f1abb464dc00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aee5f8caf98a0dbebd4f1abb464dc00">&#9670;&nbsp;</a></span>close_socket()</h2>
+<a id="ae07b429f676b3eeb3e519562b70a9972" name="ae07b429f676b3eeb3e519562b70a9972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07b429f676b3eeb3e519562b70a9972">&#9670;&nbsp;</a></span>close_socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::close_socket </td>
+          <td class="memname">DPP_EXPORT bool dpp::close_socket </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
           <td class="paramname"><em>sfd</em></td><td>)</td>
@@ -7211,6 +7453,32 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string number with commas added </dd></dl>
+
+</div>
+</div>
+<a id="a1a692a885e0bfc0d698e8bcb00c0c748" name="a1a692a885e0bfc0d698e8bcb00c0c748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a692a885e0bfc0d698e8bcb00c0c748">&#9670;&nbsp;</a></span>create_socket_engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPP_EXPORT std::unique_ptr&lt; <a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a> &gt; dpp::create_socket_engine </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramname"><em>creator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is implemented by whatever derived form socket_engine takes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creator</td><td>Creating cluster </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -7353,7 +7621,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </p>
-<p >It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000230">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
+<p >It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
 <p >List of guild commands to bulk register</p>
 <p >List of global commands to bulk register</p>
 <p >Commands in the handler</p>
@@ -8589,14 +8857,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7c64da3e6d42da998ed877c18025afa0" name="a7c64da3e6d42da998ed877c18025afa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c64da3e6d42da998ed877c18025afa0">&#9670;&nbsp;</a></span>resolve_hostname()</h2>
+<a id="aa367a416efe81604e688e550bc196258" name="aa367a416efe81604e688e550bc196258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa367a416efe81604e688e550bc196258">&#9670;&nbsp;</a></span>resolve_hostname()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> * dpp::resolve_hostname </td>
+          <td class="memname">DPP_EXPORT const <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> * dpp::resolve_hostname </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>hostname</em>, </td>
@@ -9944,14 +10212,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0c5e194a6e6cb7d653d73b19b5348dc3" name="a0c5e194a6e6cb7d653d73b19b5348dc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c5e194a6e6cb7d653d73b19b5348dc3">&#9670;&nbsp;</a></span>set_nonblocking()</h2>
+<a id="a1a4be59026a3091dae2a6912a9bab911" name="a1a4be59026a3091dae2a6912a9bab911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4be59026a3091dae2a6912a9bab911">&#9670;&nbsp;</a></span>set_nonblocking()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::set_nonblocking </td>
+          <td class="memname">DPP_EXPORT bool dpp::set_nonblocking </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -10028,6 +10296,32 @@ template&lt;class T &gt; </div>
     <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
     <tr><td class="paramname">key</td><td>key name to check for the values </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8312b33513f0d91203cd6b34296e800" name="ab8312b33513f0d91203cd6b34296e800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8312b33513f0d91203cd6b34296e800">&#9670;&nbsp;</a></span>set_signal_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::set_signal_handler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set up a signal handler to be ignored. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>Signal to set. If the signal is already set up with a handler, this will do nothing. </td></tr>
   </table>
   </dd>
 </dl>
@@ -10283,73 +10577,6 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>found value </dd></dl>
-
-</div>
-</div>
-<a id="a6de81ad1777ea865ffb7bc2f91a4e330" name="a6de81ad1777ea865ffb7bc2f91a4e330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de81ad1777ea865ffb7bc2f91a4e330">&#9670;&nbsp;</a></span>sync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , class F , class... Ts&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T dpp::sync </td>
-          <td>(</td>
-          <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">F&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Ts &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call a D++ REST function synchronously. </p>
-<p >Synchronously calling a REST function means <em>IT WILL BLOCK</em> - This is a Bad Thing™ and strongly discouraged. There are very few circumstances you actually need this. If you do need to use this, you'll know it.</p>
-<p >Example:</p>
-<div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
-<div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:2071</div></div>
-</div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>type of expected return value, should match up with the method called </td></tr>
-    <tr><td class="paramname">F</td><td>Type of class method in <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> to call. </td></tr>
-    <tr><td class="paramname">Ts</td><td>Function parameters in method call </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>A pointer to <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> object </td></tr>
-    <tr><td class="paramname">func</td><td>pointer to class method in <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> to call. This can call any <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> member function who's last parameter is a <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3" title="A function used as a callback for any REST based command.">dpp::command_completion_event_t</a> callback type. </td></tr>
-    <tr><td class="paramname">args</td><td>Zero or more arguments for the method call </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An instantiated object of type T </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1rest__exception.html" title="Represents an error on a REST API call, e.g. a HTTPS request.">dpp::rest_exception</a></td><td>On failure of the method call, an exception is thrown </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -10838,6 +11065,30 @@ template&lt;typename... Args&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a75de928bc7a0908e5060c7301a50ed87" name="a75de928bc7a0908e5060c7301a50ed87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75de928bc7a0908e5060c7301a50ed87">&#9670;&nbsp;</a></span>DECOMP_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t dpp::DECOMP_BUFFER_SIZE = 512 * 1024</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of decompression buffer for zlib compressed traffic. </p>
+
+</div>
+</div>
 <a id="ae611302ba7fc914d4732b65541132651" name="ae611302ba7fc914d4732b65541132651"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae611302ba7fc914d4732b65541132651">&#9670;&nbsp;</a></span>deletion_mutex</h2>
 
@@ -10904,6 +11155,55 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a6321a697903a4e58f7b38e268f54658d" name="a6321a697903a4e58f7b38e268f54658d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6321a697903a4e58f7b38e268f54658d">&#9670;&nbsp;</a></span>DPP_BUFSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t dpp::DPP_BUFSIZE {16 * 1024}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SSL_read buffer size. </p>
+<p >You'd think that we would get better performance with a bigger buffer, but SSL frames are 16k each. SSL_read in non-blocking mode will only read 16k at a time. There's no point in a bigger buffer as it'd go unused. </p>
+
+</div>
+</div>
+<a id="a75b92dd2787f4e2c1d11e4ffe94a0ffc" name="a75b92dd2787f4e2c1d11e4ffe94a0ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b92dd2787f4e2c1d11e4ffe94a0ffc">&#9670;&nbsp;</a></span>ERROR_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int dpp::ERROR_STATUS {-1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Represents a failed socket system call, e.g. connect() failure. </p>
+
+</div>
+</div>
 <a id="af762f7c2f0c23de9fbba385e8f547d29" name="af762f7c2f0c23de9fbba385e8f547d29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af762f7c2f0c23de9fbba385e8f547d29">&#9670;&nbsp;</a></span>FORMAT_VERSION</h2>
 
@@ -10940,9 +11240,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot;</span></div>
-<div class="line">                                                + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_MAJOR, <span class="keyword">false</span>) + <span class="stringliteral">&quot;.&quot;</span></div>
-<div class="line">                                                + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_MINOR, <span class="keyword">false</span>) + <span class="stringliteral">&quot;.&quot;</span></div>
-<div class="line">                                                + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_PATCH, <span class="keyword">false</span>) + <span class="stringliteral">&quot;)&quot;</span></div>
+<div class="line">    + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_MAJOR, <span class="keyword">false</span>) + <span class="stringliteral">&quot;.&quot;</span> + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_MINOR, <span class="keyword">false</span>) + <span class="stringliteral">&quot;.&quot;</span> + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_PATCH, <span class="keyword">false</span>) + <span class="stringliteral">&quot;)&quot;</span></div>
 <div class="ttc" id="anamespacedpp_html_a3c36c34216e24fa7c008164b669e5bd6"><div class="ttname"><a href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">dpp::to_hex</a></div><div class="ttdeci">std::string to_hex(T i, bool leading_zeroes=true)</div><div class="ttdoc">Convert a numeric value to hex.</div><div class="ttdef"><b>Definition:</b> stringops.h:195</div></div>
 </div><!-- fragment -->
 </div>
@@ -10993,6 +11291,30 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a780ea9df2eab00f9d83923389c1a47e8" name="a780ea9df2eab00f9d83923389c1a47e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780ea9df2eab00f9d83923389c1a47e8">&#9670;&nbsp;</a></span>MAX_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int dpp::MAX_RETRIES {4}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of internal connect() retries on TCP connections. </p>
+
+</div>
+</div>
 <a id="a1c541a98114325f4c6c0f138887a8eac" name="a1c541a98114325f4c6c0f138887a8eac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c541a98114325f4c6c0f138887a8eac">&#9670;&nbsp;</a></span>message_ref_type</h2>
 
@@ -11021,6 +11343,30 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 <p >A forwarded message </p>
+
+</div>
+</div>
+<a id="a0734e9859548186679ec55f37faf57f0" name="a0734e9859548186679ec55f37faf57f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0734e9859548186679ec55f37faf57f0">&#9670;&nbsp;</a></span>NO_SHARDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t dpp::NO_SHARDS = ~0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pass this value into the constructor of <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> for the shard count to create a cluster with no shards. A cluster with no shards does not connect to a websocket, but can still use the event loop to dispatch HTTPS API requests to Discord. This is useful for bots that do not need to receive websocket events as it will save a lot of resources. </p>
 
 </div>
 </div>
@@ -11069,6 +11415,30 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Sample rate for OPUS (48khz) </p>
+
+</div>
+</div>
+<a id="a417868153abc8ec1706fcaddbab3850d" name="a417868153abc8ec1706fcaddbab3850d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417868153abc8ec1706fcaddbab3850d">&#9670;&nbsp;</a></span>RECONNECT_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr time_t dpp::RECONNECT_INTERVAL = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many seconds to wait between (re)connections. DO NOT change this. It is mandated by the Discord API spec! </p>
 
 </div>
 </div>

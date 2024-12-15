@@ -175,8 +175,8 @@
 <para>Every time an event is fired on the collector, this method wil be called to determine if we should add an object to the list or not. This function can then process the <computeroutput>element</computeroutput> value, extract the parts which are to be saved to a list (e.g. a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> out of a <ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>) and return it as the return value. Returning a value of nullptr causes no object to be stored.</para>
 <para>Here is an example of how to filter messages which have specific text in them. This should be used with the specialised type <ref refid="classdpp_1_1message__collector" kindref="compound">dpp::message_collector</ref></para>
 <para><programlisting filename=".cpp"><codeline><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>*<sp/><ref refid="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" kindref="member">filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>m)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.msg.content.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m.msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacedpp_1_1unicode__emoji_1a24ac871c89f4e1779cfeda23077faeac" kindref="member">m</ref>.msg.content.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="namespacedpp_1_1unicode__emoji_1a24ac871c89f4e1779cfeda23077faeac" kindref="member">m</ref>.msg;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
@@ -355,6 +355,9 @@
           <edgelabel>request_timeout</edgelabel>
         </childnode>
         <childnode refid="21" relation="usage">
+          <edgelabel>socketengine</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -426,7 +429,7 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>event_router_t&lt;</label>
       </node>
       <node id="12">
@@ -436,16 +439,19 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
+      <node id="20">
+        <label>atomic_bool</label>
+      </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="20">
-        <label>condition_variable</label>
       </node>
       <node id="3">
         <label>std::string</label>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="21">
+        <label>unique_ptr&lt;</label>
       </node>
       <node id="5">
         <label>time_t</label>

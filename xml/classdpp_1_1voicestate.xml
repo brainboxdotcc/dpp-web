@@ -415,19 +415,19 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9">
+      <node id="14">
         <label>bool</label>
       </node>
-      <node id="27">
+      <node id="26">
         <label>cache_policy_setting_t</label>
       </node>
       <node id="18">
         <label>double</label>
       </node>
-      <node id="26">
+      <node id="25">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>channel_policy</edgelabel>
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>guild_policy</edgelabel>
@@ -441,7 +441,7 @@
         <childnode refid="7" relation="usage">
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>last_identify</edgelabel>
         </childnode>
         <childnode refid="17" relation="usage">
@@ -456,17 +456,20 @@
         <childnode refid="19" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="26" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
           <edgelabel>request_timeout</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>socketengine</edgelabel>
         </childnode>
         <childnode refid="30" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
@@ -487,9 +490,11 @@
         <link refid="classdpp_1_1discord__client"/>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>ready</edgelabel>
-          <edgelabel>terminating</edgelabel>
+        <childnode refid="7" relation="usage">
+          <edgelabel>last_ping_message</edgelabel>
+          <edgelabel>resume_gateway_url</edgelabel>
+          <edgelabel>sessionid</edgelabel>
+          <edgelabel>token</edgelabel>
         </childnode>
         <childnode refid="16" relation="usage">
           <edgelabel>creator</edgelabel>
@@ -502,31 +507,26 @@
           <edgelabel>resumes</edgelabel>
           <edgelabel>shard_id</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>last_heartbeat</edgelabel>
           <edgelabel>last_heartbeat_ack</edgelabel>
-        </childnode>
-        <childnode refid="31" relation="usage">
-          <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>last_seq</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>resume_gateway_url</edgelabel>
-          <edgelabel>sessionid</edgelabel>
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="32" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>voice_mutex</edgelabel>
         </childnode>
         <childnode refid="18" relation="usage">
           <edgelabel>websocket_ping</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="14" relation="usage">
+          <edgelabel>ready</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
           <edgelabel>protocol</edgelabel>
         </childnode>
-        <childnode refid="33" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>connecting_voice_channels</edgelabel>
         </childnode>
       </node>
@@ -559,31 +559,34 @@
           <edgelabel>port</edgelabel>
         </childnode>
         <childnode refid="9" relation="usage">
-          <edgelabel>keepalive</edgelabel>
-          <edgelabel>make_new</edgelabel>
-          <edgelabel>nonblocking</edgelabel>
-          <edgelabel>plaintext</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
           <edgelabel>sfd</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>ssl</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>last_tick</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>connect_retries</edgelabel>
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>bytes_in</edgelabel>
           <edgelabel>bytes_out</edgelabel>
+          <edgelabel>unique_id</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
-          <edgelabel>custom_readable_fd</edgelabel>
-          <edgelabel>custom_writeable_fd</edgelabel>
+          <edgelabel>connected</edgelabel>
+          <edgelabel>keepalive</edgelabel>
+          <edgelabel>plaintext</edgelabel>
+          <edgelabel>tcp_connect_done</edgelabel>
         </childnode>
         <childnode refid="15" relation="usage">
-          <edgelabel>custom_readable_ready</edgelabel>
-          <edgelabel>custom_writeable_ready</edgelabel>
+          <edgelabel>timer_handle</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>owner</edgelabel>
         </childnode>
       </node>
       <node id="19">
@@ -607,7 +610,7 @@
         <childnode refid="24" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
@@ -635,10 +638,10 @@
         <childnode refid="7" relation="usage">
           <edgelabel>session_id</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>request_to_speak</edgelabel>
         </childnode>
       </node>
@@ -647,11 +650,17 @@
         <link refid="classdpp_1_1websocket__client"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timed_out</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timeout</edgelabel>
+        </childnode>
       </node>
       <node id="30">
         <label>event_router_t&lt;</label>
       </node>
-      <node id="10">
+      <node id="9">
         <label>int</label>
       </node>
       <node id="22">
@@ -668,22 +677,19 @@
           <edgelabel>&lt; voicestate &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="10">
         <label>openssl_connection *</label>
+      </node>
+      <node id="15">
+        <label>size_t</label>
+      </node>
+      <node id="28">
+        <label>atomic_bool</label>
       </node>
       <node id="8">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="29">
-        <label>condition_variable</label>
-      </node>
-      <node id="14">
-        <label>function&lt; dpp::socket()&gt;</label>
-      </node>
-      <node id="15">
-        <label>function&lt; void()&gt;</label>
-      </node>
-      <node id="32">
+      <node id="31">
         <label>std::shared_mutex</label>
       </node>
       <node id="7">
@@ -691,13 +697,13 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
-        <label>native_handle_type</label>
+      <node id="29">
+        <label>unique_ptr&lt;</label>
       </node>
-      <node id="33">
+      <node id="32">
         <label>unordered_map&lt;</label>
       </node>
-      <node id="12">
+      <node id="11">
         <label>time_t</label>
       </node>
       <node id="24">
@@ -709,10 +715,10 @@
       <node id="13">
         <label>uint64_t</label>
       </node>
-      <node id="25">
+      <node id="12">
         <label>uint8_t</label>
       </node>
-      <node id="28">
+      <node id="27">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>

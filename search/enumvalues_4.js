@@ -3,5 +3,17 @@ var searchData=
   ['fl_5fgallery_5fview_0',['fl_gallery_view',['../namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcad45bc2cdf8f7f4fc2cc8235e57413659',1,'dpp']]],
   ['fl_5flist_5fview_1',['fl_list_view',['../namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcaa5334b0ac4307ad529b69e1379690726',1,'dpp']]],
   ['fl_5fnot_5fset_2',['fl_not_set',['../namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcadcc413fd0eba14440a29f3a3d748f187',1,'dpp']]],
-  ['free_5fpurchase_3',['FREE_PURCHASE',['../namespacedpp.html#a0fd6672429865506411af5a83d065ab0a238e798c670b09f06e443b88318fc2af',1,'dpp']]]
+  ['free_5fpurchase_3',['FREE_PURCHASE',['../namespacedpp.html#a0fd6672429865506411af5a83d065ab0a238e798c670b09f06e443b88318fc2af',1,'dpp']]],
+  ['ft_5fdispatch_4',['ft_dispatch',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca7545cacadc4b8e50b0e68cd5efb48832',1,'dpp']]],
+  ['ft_5fheartbeat_5',['ft_heartbeat',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413acaa9814e0293746dc0cc5ed78249c764db',1,'dpp']]],
+  ['ft_5fheartbeat_5fack_6',['ft_heartbeat_ack',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca6668dd1d25bf5bb870c09ce2117423a1',1,'dpp']]],
+  ['ft_5fhello_7',['ft_hello',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca0859c8ef8399d5f0e0bd2051609de90f',1,'dpp']]],
+  ['ft_5fidentify_8',['ft_identify',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413acaf11b16f9166ce8c37cf1371112b6f2c9',1,'dpp']]],
+  ['ft_5finvalid_5fsession_9',['ft_invalid_session',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca07492eb915ecb97a16653744844521a1',1,'dpp']]],
+  ['ft_5fpresence_10',['ft_presence',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca6f0f0e1b503c8900c11242d2ca1ba159',1,'dpp']]],
+  ['ft_5freconnect_11',['ft_reconnect',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca49471b9d384f59a11690dc0e6bcafd88',1,'dpp']]],
+  ['ft_5frequest_5fguild_5fmembers_12',['ft_request_guild_members',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca2feaebb7ffb1d726d5801c6e1f1b1f1e',1,'dpp']]],
+  ['ft_5frequest_5fsoundboard_5fsounds_13',['ft_request_soundboard_sounds',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413acada08888d73b521f44435aff13fab62da',1,'dpp']]],
+  ['ft_5fresume_14',['ft_resume',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413aca77a487ae0834013213ba9e69b477f61d',1,'dpp']]],
+  ['ft_5fvoice_5fstate_5fupdate_15',['ft_voice_state_update',['../namespacedpp.html#a6b599993835b3e8ad568db4515a413acabec203eba0275e5fbd0572e53719d0aa',1,'dpp']]]
 ];

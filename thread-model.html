@@ -102,8 +102,15 @@ $(document).ready(function(){initNavTree('thread-model.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><div class="dotgraph">
-<iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_2.svg" width="1490" height="708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
- </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+<iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_2.svg" width="528" height="852"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<h2><a class="anchor" id="autotoc_md86"></a>
+Details</h2>
+<ol type="1">
+<li>User Code - No assumptions are made about how your program threads, if at all.</li>
+<li>The event loop manages all socket IO for the cluster. If you start the cluster with <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" title="Return immediately after starting shard threads. If you set the parameter of cluster::start() to this...">dpp::st_return</a> this will run under its own thread, otherwise if you use <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" title="Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...">dpp::st_wait</a> it will run in the same thread as the caller of the <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">dpp::cluster::start</a> method. The event loop will be either poll, epoll or kqueue based depending on your system capabilities. You should always start a cluster after forking, if your program forks, as various types of IO loop cannot be inherited by a forked process.</li>
+<li>Set thread pool size via cluster constructor. Thread pool uses a priority queue and defaults in size to half the system concurrency value. Every callback or completed coroutine ends up executing here. The minimum concurrency of this pool is 4. </li>
+</ol>
+</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">

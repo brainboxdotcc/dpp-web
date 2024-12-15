@@ -128,7 +128,6 @@
     <innerclass refid="classdpp_1_1http__request" prot="public">dpp::http_request</innerclass>
     <innerclass refid="structdpp_1_1http__request__completion__t" prot="public">dpp::http_request_completion_t</innerclass>
     <innerclass refid="classdpp_1_1https__client" prot="public">dpp::https_client</innerclass>
-    <innerclass refid="classdpp_1_1in__thread" prot="public">dpp::in_thread</innerclass>
     <innerclass refid="classdpp_1_1integration" prot="public">dpp::integration</innerclass>
     <innerclass refid="structdpp_1_1integration__account" prot="public">dpp::integration_account</innerclass>
     <innerclass refid="structdpp_1_1integration__app" prot="public">dpp::integration_app</innerclass>
@@ -190,6 +189,7 @@
     <innerclass refid="structdpp_1_1reaction" prot="public">dpp::reaction</innerclass>
     <innerclass refid="classdpp_1_1reaction__collector" prot="public">dpp::reaction_collector</innerclass>
     <innerclass refid="structdpp_1_1ready__t" prot="public">dpp::ready_t</innerclass>
+    <innerclass refid="classdpp_1_1request__concurrency__queue" prot="public">dpp::request_concurrency_queue</innerclass>
     <innerclass refid="classdpp_1_1request__queue" prot="public">dpp::request_queue</innerclass>
     <innerclass refid="structdpp_1_1resolved__user" prot="public">dpp::resolved_user</innerclass>
     <innerclass refid="classdpp_1_1rest__exception" prot="public">dpp::rest_exception</innerclass>
@@ -204,6 +204,8 @@
     <innerclass refid="classdpp_1_1slashcommand" prot="public">dpp::slashcommand</innerclass>
     <innerclass refid="structdpp_1_1slashcommand__t" prot="public">dpp::slashcommand_t</innerclass>
     <innerclass refid="classdpp_1_1snowflake" prot="public">dpp::snowflake</innerclass>
+    <innerclass refid="structdpp_1_1socket__engine__base" prot="public">dpp::socket_engine_base</innerclass>
+    <innerclass refid="structdpp_1_1socket__events" prot="public">dpp::socket_events</innerclass>
     <innerclass refid="classdpp_1_1ssl__client" prot="public">dpp::ssl_client</innerclass>
     <innerclass refid="structdpp_1_1stage__instance" prot="public">dpp::stage_instance</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__create__t" prot="public">dpp::stage_instance_create_t</innerclass>
@@ -224,8 +226,12 @@
     <innerclass refid="structdpp_1_1thread__member__update__t" prot="public">dpp::thread_member_update_t</innerclass>
     <innerclass refid="structdpp_1_1thread__members__update__t" prot="public">dpp::thread_members_update_t</innerclass>
     <innerclass refid="structdpp_1_1thread__metadata" prot="public">dpp::thread_metadata</innerclass>
+    <innerclass refid="structdpp_1_1thread__pool" prot="public">dpp::thread_pool</innerclass>
+    <innerclass refid="structdpp_1_1thread__pool__task" prot="public">dpp::thread_pool_task</innerclass>
+    <innerclass refid="structdpp_1_1thread__pool__task__comparator" prot="public">dpp::thread_pool_task_comparator</innerclass>
     <innerclass refid="structdpp_1_1thread__update__t" prot="public">dpp::thread_update_t</innerclass>
     <innerclass refid="classdpp_1_1timed__listener" prot="public">dpp::timed_listener</innerclass>
+    <innerclass refid="structdpp_1_1timer__comparator" prot="public">dpp::timer_comparator</innerclass>
     <innerclass refid="structdpp_1_1timer__t" prot="public">dpp::timer_t</innerclass>
     <innerclass refid="structdpp_1_1typing__start__t" prot="public">dpp::typing_start_t</innerclass>
     <innerclass refid="classdpp_1_1user" prot="public">dpp::user</innerclass>
@@ -252,6 +258,7 @@
     <innerclass refid="structdpp_1_1welcome__channel" prot="public">dpp::welcome_channel</innerclass>
     <innerclass refid="structdpp_1_1welcome__screen" prot="public">dpp::welcome_screen</innerclass>
     <innerclass refid="classdpp_1_1when__any" prot="public">dpp::when_any</innerclass>
+    <innerclass refid="classdpp_1_1zlibcontext" prot="public">dpp::zlibcontext</innerclass>
     <innernamespace refid="namespacedpp_1_1cache__policy">dpp::cache_policy</innernamespace>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
     <innernamespace refid="namespacedpp_1_1dave">dpp::dave</innernamespace>
@@ -1873,19 +1880,19 @@
           <name>st_return</name>
           <initializer>= true</initializer>
           <briefdescription>
-<para>Return immediately after starting shard threads. If you set the parameter of <ref refid="classdpp_1_1cluster_1a40e99d13e1380eccd30d13123014594f" kindref="member">cluster::start()</ref> to this value, you will have to manage the lifetime and scope of your cluster object yourself. Taking it out of scope or deleting its pointer will terminate the bot. </para>
+<para>Return immediately after starting shard threads. If you set the parameter of <ref refid="classdpp_1_1cluster_1a51ef65c943c76edd7abd7c8e21e34416" kindref="member">cluster::start()</ref> to this value, you will have to manage the lifetime and scope of your cluster object yourself. Taking it out of scope or deleting its pointer will terminate the bot. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>Types of startup for <ref refid="classdpp_1_1cluster_1a40e99d13e1380eccd30d13123014594f" kindref="member">cluster::start()</ref> </para>
+<para>Types of startup for <ref refid="classdpp_1_1cluster_1a51ef65c943c76edd7abd7c8e21e34416" kindref="member">cluster::start()</ref> </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="57" column="1" bodyfile="include/dpp/cluster.h" bodystart="57" bodyend="74"/>
+        <location file="include/dpp/cluster.h" line="66" column="1" bodyfile="include/dpp/cluster.h" bodystart="66" bodyend="83"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a9a2049904620e4f62b82f8dc818de864" prot="public" static="no" strong="no">
         <type></type>
@@ -1955,6 +1962,163 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="72" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="72" bodyend="107"/>
       </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a6b599993835b3e8ad568db4515a413ac" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>shard_frame_type</name>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca7545cacadc4b8e50b0e68cd5efb48832" prot="public">
+          <name>ft_dispatch</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>An event was dispatched. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Receive only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413acaa9814e0293746dc0cc5ed78249c764db" prot="public">
+          <name>ft_heartbeat</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Fired periodically by the client to keep the connection alive. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send/Receive </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413acaf11b16f9166ce8c37cf1371112b6f2c9" prot="public">
+          <name>ft_identify</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Starts a new session during the initial handshake. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca6f0f0e1b503c8900c11242d2ca1ba159" prot="public">
+          <name>ft_presence</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Update the client&apos;s presence. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413acabec203eba0275e5fbd0572e53719d0aa" prot="public">
+          <name>ft_voice_state_update</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Used to join/leave or move between voice channels. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca77a487ae0834013213ba9e69b477f61d" prot="public">
+          <name>ft_resume</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Resume a previous session that was disconnected. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca49471b9d384f59a11690dc0e6bcafd88" prot="public">
+          <name>ft_reconnect</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>You should attempt to reconnect and resume immediately. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Receive only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca2feaebb7ffb1d726d5801c6e1f1b1f1e" prot="public">
+          <name>ft_request_guild_members</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Request information about offline guild members in a large guild. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca07492eb915ecb97a16653744844521a1" prot="public">
+          <name>ft_invalid_session</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>The session has been invalidated. You should reconnect and identify/resume accordingly. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Receive only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca0859c8ef8399d5f0e0bd2051609de90f" prot="public">
+          <name>ft_hello</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Sent immediately after connecting, contains the heartbeat interval to use. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Receive only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413aca6668dd1d25bf5bb870c09ce2117423a1" prot="public">
+          <name>ft_heartbeat_ack</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+<para>Sent in response to receiving a heartbeat to acknowledge that it has been received. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Receive only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6b599993835b3e8ad568db4515a413acada08888d73b521f44435aff13fab62da" prot="public">
+          <name>ft_request_soundboard_sounds</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+<para>Request information about soundboard sounds in a set of guilds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Send only </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents different event opcodes sent and received on a shard websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These are used internally to route frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="67" column="1" bodyfile="include/dpp/discordclient.h" bodystart="67" bodyend="140"/>
+      </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0a" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>dave_version_t</name>
@@ -1983,7 +2147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="131" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="131" bodyend="140"/>
+        <location file="include/dpp/discordvoiceclient.h" line="132" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="132" bodyend="141"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a589107ba48617812d4c260d95be99503" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2203,7 +2367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="145" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="145" bodyend="172"/>
+        <location file="include/dpp/discordvoiceclient.h" line="146" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="146" bodyend="173"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1adb4889dd66bab821f51dba5136e07e81" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2233,7 +2397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="2127" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="2127" bodyend="2136"/>
+        <location file="include/dpp/dispatcher.h" line="2137" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="2137" bodyend="2146"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947c" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -3099,6 +3263,14 @@
         <enumvalue id="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1aa86bc94e0b70c1408639f0791c28a3e6" prot="public">
           <name>err_opus</name>
           <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1af5c9639d62748ae90b71309c785969c1" prot="public">
+          <name>err_cant_start_shard</name>
+          <initializer>= 32</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -5348,7 +5520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/exception.h" line="45" column="1" bodyfile="include/dpp/exception.h" bodystart="45" bodyend="380"/>
+        <location file="include/dpp/exception.h" line="45" column="1" bodyfile="include/dpp/exception.h" bodystart="45" bodyend="381"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a82f764e7486a06178101b0db23ddadfc" prot="public" static="no" strong="yes">
         <type></type>
@@ -5505,7 +5677,7 @@
 <para>Represents voice regions for guilds and channels. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000233"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated in favour of per-channel regions. Please use <ref refid="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" kindref="member">dpp::channel::rtc_region</ref> instead. </para>
+<para><xrefsect id="deprecated_1_deprecated000025"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated in favour of per-channel regions. Please use <ref refid="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" kindref="member">dpp::channel::rtc_region</ref> instead. </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -5774,7 +5946,7 @@
 <para>Guild has access to the seven day archive time for threads. </para>
           </briefdescription>
           <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000234"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
+<para><xrefsect id="deprecated_1_deprecated000026"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
 </xrefdescription></xrefsect></para>
           </detaileddescription>
         </enumvalue>
@@ -5785,7 +5957,7 @@
 <para>Guild has access to the three day archive time for threads. </para>
           </briefdescription>
           <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000235"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
+<para><xrefsect id="deprecated_1_deprecated000027"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
 </xrefdescription></xrefsect></para>
           </detaileddescription>
         </enumvalue>
@@ -5805,7 +5977,7 @@
 <para>Guild can have channel banners. </para>
           </briefdescription>
           <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000236"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
+<para><xrefsect id="deprecated_1_deprecated000028"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Removed by Discord </para>
 </xrefdescription></xrefsect></para>
           </detaileddescription>
         </enumvalue>
@@ -6511,7 +6683,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="45" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="45" bodyend="82"/>
+        <location file="include/dpp/httpsclient.h" line="43" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="43" bodyend="80"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a772599e8a351acf3a1d4e0267ca15158" prot="public" static="no" strong="no">
         <type></type>
@@ -8572,10 +8744,10 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="210" column="1" bodyfile="include/dpp/presence.h" bodystart="210" bodyend="255"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1ae525add0ec39d647375aabe5ce455449" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970f" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
         <name>http_error</name>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fab072c2cf95f4a567183c1d9fb0e6f3da" prot="public">
           <name>h_success</name>
           <initializer>= 0</initializer>
           <briefdescription>
@@ -8584,7 +8756,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449ac4bebebf31327d34b0cef9846cf57d26" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fac4bebebf31327d34b0cef9846cf57d26" prot="public">
           <name>h_unknown</name>
           <briefdescription>
 <para>Status unknown. </para>
@@ -8592,7 +8764,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a2733f3556e92a1cf264f17064ffe8fba" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa2733f3556e92a1cf264f17064ffe8fba" prot="public">
           <name>h_connection</name>
           <briefdescription>
 <para>Connect failed. </para>
@@ -8600,7 +8772,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449abfaba5457d3e065a9cb76a6b8a606c15" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fabfaba5457d3e065a9cb76a6b8a606c15" prot="public">
           <name>h_bind_ip_address</name>
           <briefdescription>
 <para>Invalid local ip address. </para>
@@ -8608,7 +8780,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a1d3eaa9c4c535305b27f31cca5658e84" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa1d3eaa9c4c535305b27f31cca5658e84" prot="public">
           <name>h_read</name>
           <briefdescription>
 <para>Read error. </para>
@@ -8616,7 +8788,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449aa6d32000fe1b31898ed22b07cb59fd4f" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970faa6d32000fe1b31898ed22b07cb59fd4f" prot="public">
           <name>h_write</name>
           <briefdescription>
 <para>Write error. </para>
@@ -8624,7 +8796,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a156ae0ec15a21a9dc9e441a88fcd27df" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa156ae0ec15a21a9dc9e441a88fcd27df" prot="public">
           <name>h_exceed_redirect_count</name>
           <briefdescription>
 <para>Too many 30x redirects. </para>
@@ -8632,7 +8804,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a0d1c6efb2738ae30a285d275d4a8c344" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa0d1c6efb2738ae30a285d275d4a8c344" prot="public">
           <name>h_canceled</name>
           <briefdescription>
 <para>Request cancelled. </para>
@@ -8640,7 +8812,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449abc69e4c147eb8f8329c3a56fd366111a" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fabc69e4c147eb8f8329c3a56fd366111a" prot="public">
           <name>h_ssl_connection</name>
           <briefdescription>
 <para>SSL connection error. </para>
@@ -8648,7 +8820,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449adebed5c3ac6b8afa99546334cfb32090" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fadebed5c3ac6b8afa99546334cfb32090" prot="public">
           <name>h_ssl_loading_certs</name>
           <briefdescription>
 <para>SSL cert loading error. </para>
@@ -8656,7 +8828,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a87de6a04c8faa6470259fad90d64125d" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa87de6a04c8faa6470259fad90d64125d" prot="public">
           <name>h_ssl_server_verification</name>
           <briefdescription>
 <para>SSL server verification error. </para>
@@ -8664,7 +8836,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fab64dc04f299fcfd9b1f4750908eb0a2e" prot="public">
           <name>h_unsupported_multipart_boundary_chars</name>
           <briefdescription>
 <para>Unsupported multipart boundary characters. </para>
@@ -8672,7 +8844,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54" prot="public">
+        <enumvalue id="namespacedpp_1a8dcd9c69793bb37009cf6f8a0e8b970fa65bb2cb9582bd3e13fc7704e36a5bf54" prot="public">
           <name>h_compression</name>
           <briefdescription>
 <para>Compression error. </para>
@@ -8739,7 +8911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="182" column="1" bodyfile="include/dpp/queues.h" bodystart="182" bodyend="207"/>
+        <location file="include/dpp/queues.h" line="185" column="1" bodyfile="include/dpp/queues.h" bodystart="185" bodyend="210"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1af803e69eddf23c5862947295f3df5d53" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9100,6 +9272,54 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sku.h" line="60" column="1" bodyfile="include/dpp/sku.h" bodystart="60" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a47df59fd5325a437251e77878c629532" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>socket_event_flags</name>
+        <enumvalue id="namespacedpp_1a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6" prot="public">
+          <name>WANT_READ</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Socket wants to receive events when it can be read from. This is provided by the underlying implementation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc" prot="public">
+          <name>WANT_WRITE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Socket wants to receive events when it can be written to. This is provided by the underlying implementation, and will be a one-off event. If you want to receive ongoing write events you must re-request this event type each time. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984" prot="public">
+          <name>WANT_ERROR</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Socket wants to receive events that indicate an error condition. Note that EOF (graceful close) is not an error condition and is indicated by errno being 0 and ::read() returning 0. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca" prot="public">
+          <name>WANT_DELETION</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Socket should be removed as soon as is safe to do so. Generally, this is after the current iteration through the active event list. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of IO events a socket may subscribe to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="36" column="1" bodyfile="include/dpp/socketengine.h" bodystart="36" bodyend="60"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a29954c9dfc5a906346177226d036a418" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9900,7 +10120,7 @@
 <para>The function definition for a command handler. Expects a command name string, and a list of command parameters. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000228"><xreftitle>Deprecated</xreftitle><xrefdescription><para>commandhandler and message commands are deprecated and <ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref> is encouraged as a replacement. </para>
+<para><xrefsect id="deprecated_1_deprecated000020"><xreftitle>Deprecated</xreftitle><xrefdescription><para>commandhandler and message commands are deprecated and <ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref> is encouraged as a replacement. </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -9923,7 +10143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="636" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="636" bodyend="-1"/>
+        <location file="include/dpp/coro/awaitable.h" line="637" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="637" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ae225fa7236536ef5a433821171982dbf" prot="public" static="no">
         <type>std::function&lt; void(const std::string &amp;)&gt;</type>
@@ -9955,9 +10175,9 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="67" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="67" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1ad4c862611232b317153bcfc106534292" prot="public" static="no">
-        <type>std::unordered_map&lt; std::string, <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> * &gt;</type>
-        <definition>using dpp::dns_cache_t = typedef std::unordered_map&lt;std::string, dns_cache_entry*&gt;</definition>
+      <memberdef kind="typedef" id="namespacedpp_1ae85e1c4be79e3284d57af6eb20f52d14" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, std::unique_ptr&lt; <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> &gt; &gt;</type>
+        <definition>using dpp::dns_cache_t = typedef std::unordered_map&lt;std::string, std::unique_ptr&lt;dns_cache_entry&gt; &gt;</definition>
         <argsstring></argsstring>
         <name>dns_cache_t</name>
         <briefdescription>
@@ -9967,7 +10187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dns.h" line="86" column="1" bodyfile="include/dpp/dns.h" bodystart="86" bodyend="-1"/>
+        <location file="include/dpp/dns.h" line="87" column="1" bodyfile="include/dpp/dns.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref> &gt;</type>
@@ -10079,7 +10299,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="87" column="23" bodyfile="include/dpp/httpsclient.h" bodystart="87" bodyend="-1"/>
+        <location file="include/dpp/httpsclient.h" line="85" column="23" bodyfile="include/dpp/httpsclient.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1af597d5e0f7483338956d105bbcfd9b63" prot="public" static="no">
+        <type>std::function&lt; void(class <ref refid="classdpp_1_1https__client" kindref="compound">https_client</ref> *)&gt;</type>
+        <definition>using dpp::https_client_completion_event = typedef std::function&lt;void(class https_client*)&gt;</definition>
+        <argsstring></argsstring>
+        <name>https_client_completion_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="131" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref> &gt;</type>
@@ -10204,7 +10437,7 @@
 <para>Represents the various discord permissions. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000245"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> instead. </para>
+<para><xrefsect id="deprecated_1_deprecated000037"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> instead. </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -10234,13 +10467,13 @@
 <para>Results of HTTP requests are called back to these std::function types. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Returned http_completion_events are called ASYNCHRONOUSLY in your code which means they execute in a separate thread. The completion events arrive in order. </para>
+<para><simplesect kind="note"><para>Returned http_completion_events are called ASYNCHRONOUSLY in your code which means they execute in a separate thread, results for the requests going into a <ref refid="structdpp_1_1thread__pool" kindref="compound">dpp::thread_pool</ref>. Completion events may not arrive in order depending on if one request takes longer than another. Using the callbacks or using coroutines correctly ensures that the order they arrive in the queue does not negatively affect your code. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="177" column="23" bodyfile="include/dpp/queues.h" bodystart="177" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="180" column="23" bodyfile="include/dpp/queues.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" prot="public" static="no">
         <type>std::map&lt; uint32_t, class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> * &gt;</type>
@@ -10254,7 +10487,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restresults.h" line="54" column="18" bodyfile="include/dpp/restresults.h" bodystart="54" bodyend="-1"/>
+        <location file="include/dpp/restresults.h" line="53" column="18" bodyfile="include/dpp/restresults.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a1922d22daae6683aff3a8b192cac2e7a" prot="public" static="no">
+        <type>std::map&lt; uint32_t, time_t &gt;</type>
+        <definition>typedef std::map&lt;uint32_t, time_t&gt; dpp::reconnect_list</definition>
+        <argsstring></argsstring>
+        <name>reconnect_list</name>
+        <briefdescription>
+<para>List of shards awaiting reconnection, by id with earliest possible reconnect time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="58" column="18" bodyfile="include/dpp/restresults.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ab9d3c7966f425ceea724a1dcd4218bc4" prot="public" static="no">
         <type>std::variant&lt; <ref refid="namespacedpp_1a161fc59985e2e2f32d24f72397002e46" kindref="member">active_threads</ref>, <ref refid="classdpp_1_1application__role__connection" kindref="compound">application_role_connection</ref>, <ref refid="namespacedpp_1a91276efac2bca1f8fe69b27a3bbc821f" kindref="member">application_role_connection_metadata_list</ref>, <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref>, <ref refid="namespacedpp_1a855d4fbe3b9026d08b31561a61a82e92" kindref="member">guild_command_permissions_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1voicestate" kindref="compound">voicestate</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref>, <ref refid="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" kindref="member">application_map</ref>, <ref refid="classdpp_1_1connection" kindref="compound">connection</ref>, <ref refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kindref="member">connection_map</ref>, <ref refid="classdpp_1_1thread" kindref="compound">thread</ref>, <ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref>, <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>, <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">scheduled_event_map</ref>, <ref refid="structdpp_1_1event__member" kindref="compound">event_member</ref>, <ref refid="namespacedpp_1a912d2a5c3a763ffc462dfb7c4c7a0562" kindref="member">event_member_map</ref>, <ref refid="classdpp_1_1automod__rule" kindref="compound">automod_rule</ref>, <ref refid="namespacedpp_1a9933dc4fb55fa0e30b939b905b9b0df6" kindref="member">automod_rule_map</ref>, <ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref>, <ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref>, <ref refid="classdpp_1_1entitlement" kindref="compound">entitlement</ref>, <ref refid="namespacedpp_1a6a417d5030786dd8921fa3a480ddac25" kindref="member">entitlement_map</ref>, <ref refid="classdpp_1_1sku" kindref="compound">sku</ref>, <ref refid="namespacedpp_1a20f4dcbbb36ff72bc8e725a36bcb45c1" kindref="member">sku_map</ref> &gt;</type>
@@ -10268,7 +10515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restresults.h" line="195" column="2" bodyfile="include/dpp/restresults.h" bodystart="195" bodyend="-1"/>
+        <location file="include/dpp/restresults.h" line="199" column="2" bodyfile="include/dpp/restresults.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -10282,7 +10529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restresults.h" line="337" column="23" bodyfile="include/dpp/restresults.h" bodystart="337" bodyend="-1"/>
+        <location file="include/dpp/restresults.h" line="341" column="23" bodyfile="include/dpp/restresults.h" bodystart="341" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref> &gt;</type>
@@ -10368,33 +10615,61 @@
         </inbodydescription>
         <location file="include/dpp/socket.h" line="47" column="1" bodyfile="include/dpp/socket.h" bodystart="47" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" prot="public" static="no">
-        <type>std::function&lt; <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref>()&gt;</type>
-        <definition>typedef std::function&lt;dpp::socket()&gt; dpp::socket_callback_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1ad9685f9b1294f6e1be261a3d84270ea7" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref> fd, const struct <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> &amp;)&gt;</type>
+        <definition>using dpp::socket_read_event = typedef std::function&lt;void(dpp::socket fd, const struct socket_events&amp;)&gt;</definition>
         <argsstring></argsstring>
-        <name>socket_callback_t</name>
+        <name>socket_read_event</name>
         <briefdescription>
-<para>A callback for socket status. </para>
+<para>Read ready event. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="43" column="23" bodyfile="include/dpp/sslclient.h" bodystart="38" bodyend="-1"/>
+        <location file="include/dpp/socketengine.h" line="65" column="1" bodyfile="include/dpp/socketengine.h" bodystart="65" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" prot="public" static="no">
-        <type>std::function&lt; void()&gt;</type>
-        <definition>typedef std::function&lt;void()&gt; dpp::socket_notification_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1abe40ae4383ba430f4256e8ca99b91870" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref> fd, const struct <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> &amp;)&gt;</type>
+        <definition>using dpp::socket_write_event = typedef std::function&lt;void(dpp::socket fd, const struct socket_events&amp;)&gt;</definition>
         <argsstring></argsstring>
-        <name>socket_notification_t</name>
+        <name>socket_write_event</name>
         <briefdescription>
-<para>A socket notification callback. </para>
+<para>Write ready event. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="48" column="23" bodyfile="include/dpp/sslclient.h" bodystart="48" bodyend="-1"/>
+        <location file="include/dpp/socketengine.h" line="70" column="1" bodyfile="include/dpp/socketengine.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1ae5c1f0e20e7b399e32272dc788412d8f" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref> fd, const struct <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> &amp;, int error_code)&gt;</type>
+        <definition>using dpp::socket_error_event = typedef std::function&lt;void(dpp::socket fd, const struct socket_events&amp;, int error_code)&gt;</definition>
+        <argsstring></argsstring>
+        <name>socket_error_event</name>
+        <briefdescription>
+<para>Error event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="75" column="1" bodyfile="include/dpp/socketengine.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a528b0d9736647cc49207bbe4c1adee61" prot="public" static="no">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref>, std::unique_ptr&lt; <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> &gt; &gt;</type>
+        <definition>using dpp::socket_container = typedef std::unordered_map&lt;dpp::socket, std::unique_ptr&lt;socket_events&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>socket_container</name>
+        <briefdescription>
+<para>Container of event sets keyed by socket file descriptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="141" column="1" bodyfile="include/dpp/socketengine.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a81bdee80b6fd684ea6959ec67e6ecafb" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref> &gt;</type>
@@ -10452,6 +10727,20 @@
         </inbodydescription>
         <location file="include/dpp/thread.h" line="234" column="1" bodyfile="include/dpp/thread.h" bodystart="234" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1aef4c7438f07bccdcf3af16492e4fc627" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using dpp::work_unit = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>work_unit</name>
+        <briefdescription>
+<para>A work unit is a lambda executed in the thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="36" column="1" bodyfile="include/dpp/thread_pool.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" prot="public" static="no">
         <type>size_t</type>
         <definition>typedef size_t dpp::timer</definition>
@@ -10464,7 +10753,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="39" column="16" bodyfile="include/dpp/timer.h" bodystart="39" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="41" column="16" bodyfile="include/dpp/timer.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ad4658c417b9af90d3021253375580a61" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref>)&gt;</type>
@@ -10478,35 +10767,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="44" column="23" bodyfile="include/dpp/timer.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="46" column="23" bodyfile="include/dpp/timer.h" bodystart="46" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a408d79969007e9c450e186f5387df9e5" prot="public" static="no">
-        <type>std::multimap&lt; time_t, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
-        <definition>typedef std::multimap&lt;time_t, timer_t*&gt; dpp::timer_next_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1a555c45a82cfc92384477899e67a86183" prot="public" static="no">
+        <type>std::priority_queue&lt; <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref>, std::vector&lt; <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> &gt;, <ref refid="structdpp_1_1timer__comparator" kindref="compound">timer_comparator</ref> &gt;</type>
+        <definition>typedef std::priority_queue&lt;timer_t, std::vector&lt;timer_t&gt;, timer_comparator&gt; dpp::timer_next_t</definition>
         <argsstring></argsstring>
         <name>timer_next_t</name>
         <briefdescription>
-<para>A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due. </para>
+<para>A priority timers, ordered by earliest first so that the head is always the soonest to be due. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="80" column="23" bodyfile="include/dpp/timer.h" bodystart="80" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="98" column="29" bodyfile="include/dpp/timer.h" bodystart="98" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a81b406b8f9f9fa3da4b61fd006f13455" prot="public" static="no">
-        <type>std::unordered_map&lt; <ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref>, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
-        <definition>typedef std::unordered_map&lt;timer, timer_t*&gt; dpp::timer_reg_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1ac9e8be057c39e90fcffe752ce430cd23" prot="public" static="no">
+        <type>std::set&lt; <ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref> &gt;</type>
+        <definition>typedef std::set&lt;timer&gt; dpp::timers_deleted_t</definition>
         <argsstring></argsstring>
-        <name>timer_reg_t</name>
+        <name>timers_deleted_t</name>
         <briefdescription>
-<para>A map of timers stored by handle. </para>
+<para>A set of deleted timer handles. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="85" column="28" bodyfile="include/dpp/timer.h" bodystart="85" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="103" column="18" bodyfile="include/dpp/timer.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref> &gt;</type>
@@ -10592,6 +10881,36 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="34" column="30" declfile="include/dpp/cache.h" declline="34" declcolumn="30"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a0734e9859548186679ec55f37faf57f0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t dpp::NO_SHARDS</definition>
+        <argsstring></argsstring>
+        <name>NO_SHARDS</name>
+        <initializer>= ~0U</initializer>
+        <briefdescription>
+<para>Pass this value into the constructor of <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> for the shard count to create a cluster with no shards. A cluster with no shards does not connect to a websocket, but can still use the event loop to dispatch HTTPS API requests to Discord. This is useful for bots that do not need to receive websocket events as it will save a lot of resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="61" column="20" bodyfile="include/dpp/cluster.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a417868153abc8ec1706fcaddbab3850d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr time_t</type>
+        <definition>constexpr time_t dpp::RECONNECT_INTERVAL</definition>
+        <argsstring></argsstring>
+        <name>RECONNECT_INTERVAL</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>How many seconds to wait between (re)connections. DO NOT change this. It is mandated by the Discord API spec! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="60" column="18" bodyfile="include/dpp/discordclient.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a864cd30661fc496fae896ddf311ccdb4" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int32_t</type>
         <definition>constexpr int32_t dpp::opus_sample_rate_hz</definition>
@@ -10605,7 +10924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="62" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="62" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="63" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a4382884d78d028b54f2eaf9ac5738313" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int32_t</type>
@@ -10620,7 +10939,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="67" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="67" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="68" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1afbbdf6864ee7fd1a425a854a76584917" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -10635,7 +10954,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="72" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="72" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="73" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af9ada17b1b7470c57690031929bb7cff" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr size_t</type>
@@ -10649,7 +10968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="86" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="86" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="87" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a8dacf5d2b88b00c076bed556cb622a40" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr size_t</type>
@@ -10663,7 +10982,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="88" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="88" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="89" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af762f7c2f0c23de9fbba385e8f547d29" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -10702,9 +11021,7 @@
         <argsstring></argsstring>
         <name>http_version</name>
         <initializer>= &quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot;
-                                                + to_hex(DPP_VERSION_MAJOR, false) + &quot;.&quot;
-                                                + <ref refid="namespacedpp_1a3c36c34216e24fa7c008164b669e5bd6" kindref="member">to_hex</ref>(DPP_VERSION_MINOR, false) + &quot;.&quot;
-                                                + <ref refid="namespacedpp_1a3c36c34216e24fa7c008164b669e5bd6" kindref="member">to_hex</ref>(DPP_VERSION_PATCH, false) + &quot;)&quot;</initializer>
+	+ to_hex(DPP_VERSION_MAJOR, false) + &quot;.&quot; + <ref refid="namespacedpp_1a3c36c34216e24fa7c008164b669e5bd6" kindref="member">to_hex</ref>(DPP_VERSION_MINOR, false) + &quot;.&quot; + <ref refid="namespacedpp_1a3c36c34216e24fa7c008164b669e5bd6" kindref="member">to_hex</ref>(DPP_VERSION_PATCH, false) + &quot;)&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -10725,7 +11042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="40" column="36" bodyfile="include/dpp/httpsclient.h" bodystart="40" bodyend="-1"/>
+        <location file="include/dpp/httpsclient.h" line="38" column="36" bodyfile="include/dpp/httpsclient.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a1c541a98114325f4c6c0f138887a8eac" prot="public" static="no" mutable="no">
         <type>enum DPP_EXPORT</type>
@@ -10756,6 +11073,52 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2061" column="1" bodyfile="include/dpp/message.h" bodystart="2061" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a6321a697903a4e58f7b38e268f54658d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t dpp::DPP_BUFSIZE</definition>
+        <argsstring></argsstring>
+        <name>DPP_BUFSIZE</name>
+        <initializer>{16 * 1024}</initializer>
+        <briefdescription>
+<para>SSL_read buffer size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>You&apos;d think that we would get better performance with a bigger buffer, but SSL frames are 16k each. SSL_read in non-blocking mode will only read 16k at a time. There&apos;s no point in a bigger buffer as it&apos;d go unused. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="66" column="20" bodyfile="include/dpp/sslclient.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a75b92dd2787f4e2c1d11e4ffe94a0ffc" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int dpp::ERROR_STATUS</definition>
+        <argsstring></argsstring>
+        <name>ERROR_STATUS</name>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+<para>Represents a failed socket system call, e.g. connect() failure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="71" column="15" bodyfile="include/dpp/sslclient.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a780ea9df2eab00f9d83923389c1a47e8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int dpp::MAX_RETRIES</definition>
+        <argsstring></argsstring>
+        <name>MAX_RETRIES</name>
+        <initializer>{4}</initializer>
+        <briefdescription>
+<para>Maximum number of internal connect() retries on TCP connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="76" column="15" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ae876818464d49870905285dd988de870" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr uint32_t</type>
         <definition>constexpr uint32_t dpp::MAX_AVATAR_SIZE</definition>
@@ -10769,6 +11132,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/user.h" line="31" column="20" bodyfile="include/dpp/user.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a75de928bc7a0908e5060c7301a50ed87" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t dpp::DECOMP_BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DECOMP_BUFFER_SIZE</name>
+        <initializer>= 512 * 1024</initializer>
+        <briefdescription>
+<para>Size of decompression buffer for zlib compressed traffic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="38" column="18" bodyfile="include/dpp/zlibcontext.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -11493,7 +11871,7 @@
 <para>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </para>
         </briefdescription>
         <detaileddescription>
-<para>It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. <xrefsect id="deprecated_1_deprecated000230"><xreftitle>Deprecated</xreftitle><xrefdescription><para>commandhandler and message commands are deprecated and <ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref> is encouraged as a replacement. </para>
+<para>It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. <xrefsect id="deprecated_1_deprecated000022"><xreftitle>Deprecated</xreftitle><xrefdescription><para>commandhandler and message commands are deprecated and <ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref> is encouraged as a replacement. </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -12914,9 +13292,9 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </inbodydescription>
         <location file="include/dpp/discordevents.h" line="230" column="24" declfile="include/dpp/discordevents.h" declline="230" declcolumn="24"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a7c64da3e6d42da998ed877c18025afa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> *</type>
-        <definition>const dns_cache_entry * dpp::resolve_hostname</definition>
+      <memberdef kind="function" id="namespacedpp_1aa367a416efe81604e688e550bc196258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT const <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> *</type>
+        <definition>DPP_EXPORT const dns_cache_entry * dpp::resolve_hostname</definition>
         <argsstring>(const std::string &amp;hostname, const std::string &amp;port)</argsstring>
         <name>resolve_hostname</name>
         <param>
@@ -12963,7 +13341,7 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dns.h" line="96" column="23" declfile="include/dpp/dns.h" declline="96" declcolumn="23"/>
+        <location file="include/dpp/dns.h" line="97" column="34" declfile="include/dpp/dns.h" declline="97" declcolumn="34"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a5546e9406901147259e107ce24b5ff72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -14375,9 +14753,65 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </inbodydescription>
         <location file="include/dpp/restrequest.h" line="281" column="24" bodyfile="include/dpp/restrequest.h" bodystart="281" bodyend="294"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a2aee5f8caf98a0dbebd4f1abb464dc00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::close_socket</definition>
+      <memberdef kind="function" id="namespacedpp_1a1a692a885e0bfc0d698e8bcb00c0c748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT std::unique_ptr&lt; <ref refid="structdpp_1_1socket__engine__base" kindref="compound">socket_engine_base</ref> &gt;</type>
+        <definition>DPP_EXPORT std::unique_ptr&lt; socket_engine_base &gt; dpp::create_socket_engine</definition>
+        <argsstring>(class cluster *creator)</argsstring>
+        <name>create_socket_engine</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>This is implemented by whatever derived form socket_engine takes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Creating cluster </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="262" column="28" declfile="include/dpp/socketengine.h" declline="262" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ab8312b33513f0d91203cd6b34296e800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::set_signal_handler</definition>
+        <argsstring>(int signal)</argsstring>
+        <name>set_signal_handler</name>
+        <param>
+          <type>int</type>
+          <declname>signal</declname>
+        </param>
+        <briefdescription>
+<para>Set up a signal handler to be ignored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>signal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Signal to set. If the signal is already set up with a handler, this will do nothing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="270" column="6" declfile="include/dpp/socketengine.h" declline="270" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ae07b429f676b3eeb3e519562b70a9972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT bool</type>
+        <definition>DPP_EXPORT bool dpp::close_socket</definition>
         <argsstring>(dpp::socket sfd)</argsstring>
         <name>close_socket</name>
         <param>
@@ -14403,11 +14837,11 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="56" column="6" declfile="include/dpp/sslclient.h" declline="56" declcolumn="6"/>
+        <location file="include/dpp/sslclient.h" line="48" column="17" declfile="include/dpp/sslclient.h" declline="48" declcolumn="17"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a0c5e194a6e6cb7d653d73b19b5348dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::set_nonblocking</definition>
+      <memberdef kind="function" id="namespacedpp_1a1a4be59026a3091dae2a6912a9bab911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT bool</type>
+        <definition>DPP_EXPORT bool dpp::set_nonblocking</definition>
         <argsstring>(dpp::socket sockfd, bool non_blocking)</argsstring>
         <name>set_nonblocking</name>
         <param>
@@ -14445,7 +14879,7 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="65" column="6" declfile="include/dpp/sslclient.h" declline="65" declcolumn="6"/>
+        <location file="include/dpp/sslclient.h" line="57" column="17" declfile="include/dpp/sslclient.h" declline="57" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aa8227c717e1a550b3c3962cea1964d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -15015,113 +15449,6 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/stringops.h" line="215" column="25" bodyfile="include/dpp/stringops.h" bodystart="215" bodyend="221"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a6de81ad1777ea865ffb7bc2f91a4e330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-          <param>
-            <type>class F</type>
-          </param>
-          <param>
-            <type>class...</type>
-            <declname>Ts</declname>
-            <defname>Ts</defname>
-          </param>
-        </templateparamlist>
-        <type>T</type>
-        <definition>T dpp::sync</definition>
-        <argsstring>(class cluster *c, F func, Ts &amp;&amp;... args)</argsstring>
-        <name>sync</name>
-        <param>
-          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-          <declname>c</declname>
-        </param>
-        <param>
-          <type>F</type>
-          <declname>func</declname>
-        </param>
-        <param>
-          <type>Ts &amp;&amp;...</type>
-          <declname>args</declname>
-        </param>
-        <briefdescription>
-<para>Call a D++ REST function synchronously. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Synchronously calling a REST function means <emphasis>IT WILL BLOCK</emphasis> - This is a Bad Thing™ and strongly discouraged. There are very few circumstances you actually need this. If you do need to use this, you&apos;ll know it.</para>
-<para>Example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref><sp/>m<sp/>=<sp/>dpp::sync&lt;dpp::message&gt;(&amp;bot,<sp/>&amp;<ref refid="classdpp_1_1cluster_1aa6ae3dc32ebc2dd14264962710d35af7" kindref="member">dpp::cluster::message_create</ref>,<sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(channel_id,<sp/></highlight><highlight class="stringliteral">&quot;moo.&quot;</highlight><highlight class="normal">));</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="warning"><para>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <ref refid="classdpp_1_1cluster_1aaaac4fce048efff1be42965c82235b3e" kindref="member">dpp::cluster::on_interaction_create</ref>! </para>
-</simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>type of expected return value, should match up with the method called </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>F</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type of class method in <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> to call. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>Ts</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Function parameters in method call </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A pointer to <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>func</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>pointer to class method in <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> to call. This can call any <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> member function who&apos;s last parameter is a <ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">dpp::command_completion_event_t</ref> callback type. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>args</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Zero or more arguments for the method call </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>An instantiated object of type T </para>
-</simplesect>
-<parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>On failure of the method call, an exception is thrown </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sync.h" line="54" column="18" bodyfile="include/dpp/sync.h" bodystart="54" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a77d77e1ffffe22979d93132a7acee1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

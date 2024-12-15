@@ -2,24 +2,128 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1zlibcontext" kind="class" language="C++" prot="public">
     <compoundname>dpp::zlibcontext</compoundname>
+    <includes local="no">zlibcontext.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1zlibcontext_1a9d39a0ef94d09fc1f9eece55d1134f46" prot="public" static="no" mutable="no">
-        <type>z_stream</type>
-        <definition>z_stream dpp::zlibcontext::d_stream</definition>
+      <memberdef kind="variable" id="classdpp_1_1zlibcontext_1a53b0932e34093ad76c7c0a29d31dd94f" prot="public" static="no" mutable="no">
+        <type>z_stream *</type>
+        <definition>z_stream* dpp::zlibcontext::d_stream</definition>
         <argsstring></argsstring>
         <name>d_stream</name>
+        <initializer>{}</initializer>
         <briefdescription>
-<para>Zlib stream struct. </para>
+<para>Zlib stream struct. The actual type is defined in zlib.h so is only defined in the implementation file. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordclient.cpp" line="55" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="55" bodyend="-1"/>
+        <location file="include/dpp/zlibcontext.h" line="51" column="10" bodyfile="include/dpp/zlibcontext.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1zlibcontext_1a7218bfdd30d31026cb0c5dccdde1eb30" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; dpp::zlibcontext::decomp_buffer</definition>
+        <argsstring></argsstring>
+        <name>decomp_buffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>ZLib decompression buffer. This is automatically set to DECOMP_BUFFER_SIZE bytes when the class is constructed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="58" column="13" bodyfile="include/dpp/zlibcontext.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1zlibcontext_1aa7286ecef3d0317c592817d124292b4f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::zlibcontext::decompressed_total</definition>
+        <argsstring></argsstring>
+        <name>decompressed_total</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Total decompressed received bytes counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="63" column="10" bodyfile="include/dpp/zlibcontext.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1zlibcontext_1a2e3adac71668a999db65a30802111834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::zlibcontext::zlibcontext</definition>
+        <argsstring>()</argsstring>
+        <name>zlibcontext</name>
+        <briefdescription>
+<para>Initialise zlib struct via inflateInit() and size the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1zlibcontext_1a8c2d6b0e54a1c7f1f563549b49cbf8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::zlibcontext::~zlibcontext</definition>
+        <argsstring>()</argsstring>
+        <name>~zlibcontext</name>
+        <briefdescription>
+<para>Destroy zlib struct via inflateEnd() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1zlibcontext_1afd48eb6ea77ee0c7664fef53b3c19718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1" kindref="member">exception_error_code</ref></type>
+        <definition>exception_error_code dpp::zlibcontext::decompress</definition>
+        <argsstring>(const std::string &amp;buffer, std::string &amp;decompressed)</argsstring>
+        <name>decompress</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>decompressed</declname>
+        </param>
+        <briefdescription>
+<para>Decompress zlib deflated buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input compressed stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decompressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output decompressed content </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an error code on error, or err_no_code_specified (0) on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/zlibcontext.h" line="82" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This is an opaque class containing zlib library specific structures. We define it this way so that the public facing D++ library doesn&apos;t require the zlib headers be available to build against it. </para>
+<para>This is an opaque class containing zlib library specific structures. This wraps the C pointers needed for zlib with unique_ptr and gives us a nice buffer abstraction so we don&apos;t need to wrestle with raw pointers. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -30,14 +134,31 @@
         <childnode refid="2" relation="usage">
           <edgelabel>d_stream</edgelabel>
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>decomp_buffer</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>decompressed_total</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector&lt;</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
       </node>
       <node id="2">
-        <label>z_stream</label>
+        <label>z_stream *</label>
       </node>
     </collaborationgraph>
-    <location file="src/dpp/discordclient.cpp" line="50" column="1" bodyfile="src/dpp/discordclient.cpp" bodystart="50" bodyend="56"/>
+    <location file="include/dpp/zlibcontext.h" line="45" column="1" bodyfile="include/dpp/zlibcontext.h" bodystart="45" bodyend="83"/>
     <listofallmembers>
-      <member refid="classdpp_1_1zlibcontext_1a9d39a0ef94d09fc1f9eece55d1134f46" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>d_stream</name></member>
+      <member refid="classdpp_1_1zlibcontext_1a53b0932e34093ad76c7c0a29d31dd94f" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>d_stream</name></member>
+      <member refid="classdpp_1_1zlibcontext_1a7218bfdd30d31026cb0c5dccdde1eb30" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>decomp_buffer</name></member>
+      <member refid="classdpp_1_1zlibcontext_1afd48eb6ea77ee0c7664fef53b3c19718" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>decompress</name></member>
+      <member refid="classdpp_1_1zlibcontext_1aa7286ecef3d0317c592817d124292b4f" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>decompressed_total</name></member>
+      <member refid="classdpp_1_1zlibcontext_1a2e3adac71668a999db65a30802111834" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>zlibcontext</name></member>
+      <member refid="classdpp_1_1zlibcontext_1a8c2d6b0e54a1c7f1f563549b49cbf8f6" prot="public" virt="non-virtual"><scope>dpp::zlibcontext</scope><name>~zlibcontext</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

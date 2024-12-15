@@ -3,29 +3,28 @@
   <compounddef id="classdpp_1_1request__queue" kind="class" language="C++" prot="public">
     <compoundname>dpp::request_queue</compoundname>
     <includes local="no">queues.h</includes>
-    <innerclass refid="structdpp_1_1request__queue_1_1completed__request" prot="protected">dpp::request_queue::completed_request</innerclass>
-    <innerclass refid="structdpp_1_1request__queue_1_1queued__deleting__request" prot="protected">dpp::request_queue::queued_deleting_request</innerclass>
+    <innerclass refid="structdpp_1_1request__queue_1_1completed__request" prot="public">dpp::request_queue::completed_request</innerclass>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdpp_1_1request__queue_1a7fc81bccd183cc7fe664c9a68dd08dd8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="friend" id="classdpp_1_1request__queue_1a3d7a9c3d8fe07096512bf5c3e6442d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>class</type>
-        <definition>friend class in_thread</definition>
+        <definition>friend class request_concurrency_queue</definition>
         <argsstring></argsstring>
-        <name>in_thread</name>
+        <name>request_concurrency_queue</name>
         <param>
-          <type><ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref></type>
+          <type><ref refid="classdpp_1_1request__concurrency__queue" kindref="compound">request_concurrency_queue</ref></type>
         </param>
         <briefdescription>
-<para>Required so <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref> can access these member variables. </para>
+<para>Required so <ref refid="classdpp_1_1request__concurrency__queue" kindref="compound">request_concurrency_queue</ref> can access these member variables. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="507" column="14" bodyfile="include/dpp/queues.h" bodystart="507" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="528" column="14" bodyfile="include/dpp/queues.h" bodystart="528" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="protected" static="no" mutable="no">
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
         <definition>class cluster* dpp::request_queue::creator</definition>
         <argsstring></argsstring>
@@ -37,173 +36,90 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="512" column="15" bodyfile="include/dpp/queues.h" bodystart="512" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="533" column="15" bodyfile="include/dpp/queues.h" bodystart="533" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" prot="protected" static="no" mutable="no">
-        <type>std::shared_mutex</type>
-        <definition>std::shared_mutex dpp::request_queue::out_mutex</definition>
-        <argsstring></argsstring>
-        <name>out_mutex</name>
-        <briefdescription>
-<para>Outbound queue mutex thread safety. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="517" column="19" bodyfile="include/dpp/queues.h" bodystart="517" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="protected" static="no" mutable="no">
-        <type>std::thread *</type>
-        <definition>std::thread* dpp::request_queue::out_thread</definition>
-        <argsstring></argsstring>
-        <name>out_thread</name>
-        <briefdescription>
-<para>Outbound queue thread Note that although there are many &apos;in queues&apos;, which handle the HTTP requests, there is only ever one &apos;out queue&apos; which dispatches the results to the caller. This is to simplify thread management in bots that use the library, as less mutexing and thread safety boilerplate is required. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="526" column="13" bodyfile="include/dpp/queues.h" bodystart="526" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" prot="protected" static="no" mutable="no">
-        <type>std::condition_variable</type>
-        <definition>std::condition_variable dpp::request_queue::out_ready</definition>
-        <argsstring></argsstring>
-        <name>out_ready</name>
-        <briefdescription>
-<para>Outbound queue condition. Signalled when there are requests completed to call callbacks for. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="532" column="25" bodyfile="include/dpp/queues.h" bodystart="532" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a1fa529254021faa302ad92f164042f01" prot="protected" static="no" mutable="no">
-        <type>std::queue&lt; <ref refid="structdpp_1_1request__queue_1_1completed__request" kindref="compound">completed_request</ref> &gt;</type>
-        <definition>std::queue&lt;completed_request&gt; dpp::request_queue::responses_out</definition>
-        <argsstring></argsstring>
-        <name>responses_out</name>
-        <briefdescription>
-<para>Completed requests queue. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="552" column="12" bodyfile="include/dpp/queues.h" bodystart="552" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1abc7363f3fc7e0f8bf8b9437b669697d4" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref> &gt; &gt;</type>
-        <definition>std::vector&lt;std::unique_ptr&lt;in_thread&gt; &gt; dpp::request_queue::requests_in</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4caf0261af3f71b7b6251a6876b0d205" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1request__concurrency__queue" kindref="compound">request_concurrency_queue</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;request_concurrency_queue&gt; &gt; dpp::request_queue::requests_in</definition>
         <argsstring></argsstring>
         <name>requests_in</name>
         <briefdescription>
-<para>A vector of inbound request threads forming a pool. There are a set number of these defined by a constant in queues.cpp. A request is always placed on the same element in this vector, based upon its url, so that two conditions are satisfied: 1) Any requests for the same ratelimit bucket are handled by the same thread in the pool so that they do not create unnecessary 429 errors, 2) Requests for different endpoints go into different buckets, so that they may be requested in parallel A global ratelimit event pauses all threads in the pool. These are few and far between. </para>
+<para>A vector of timers forming a pool. </para>
         </briefdescription>
         <detaileddescription>
+<para>There are a set number of these defined by a constant in cluster.cpp. A request is always placed on the same element in this vector, based upon its url, so that two conditions are satisfied:</para>
+<para>1) Any requests for the same ratelimit bucket are handled by the same concurrency queue in the pool so that they do not create unnecessary 429 errors, 2) Requests for different endpoints go into different buckets, so that they may be requested in parallel A global ratelimit event pauses all timers in the pool. These are few and far between. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="563" column="13" bodyfile="include/dpp/queues.h" bodystart="563" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="561" column="13" bodyfile="include/dpp/queues.h" bodystart="561" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9ad976e7018a76e6d42daa103f665667" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1request__queue_1_1queued__deleting__request" kindref="compound">queued_deleting_request</ref> &gt;</type>
-        <definition>std::vector&lt;queued_deleting_request&gt; dpp::request_queue::responses_to_delete</definition>
-        <argsstring></argsstring>
-        <name>responses_to_delete</name>
-        <briefdescription>
-<para>Completed requests to delete. Sorted by deletion time. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="597" column="13" bodyfile="include/dpp/queues.h" bodystart="597" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="public" static="no" mutable="no">
         <type>std::atomic&lt; bool &gt;</type>
         <definition>std::atomic&lt;bool&gt; dpp::request_queue::terminating</definition>
         <argsstring></argsstring>
         <name>terminating</name>
         <briefdescription>
-<para>Set to true if the threads should terminate. </para>
+<para>Set to true if the timers should terminate. When this is set to true no further requests are accepted to the queues. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="602" column="13" bodyfile="include/dpp/queues.h" bodystart="602" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="567" column="13" bodyfile="include/dpp/queues.h" bodystart="567" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool dpp::request_queue::globally_ratelimited</definition>
         <argsstring></argsstring>
         <name>globally_ratelimited</name>
         <briefdescription>
-<para>True if globally rate limited - makes the entire request thread wait. </para>
+<para>True if globally rate limited. </para>
         </briefdescription>
         <detaileddescription>
+<para>When globally rate limited the concurrency queues associated with this request queue will not process any requests in their timers until the global rate limit expires. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="607" column="6" bodyfile="include/dpp/queues.h" bodystart="607" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="575" column="6" bodyfile="include/dpp/queues.h" bodystart="575" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::request_queue::globally_limited_for</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4afc7b0771639f50b8c8c3ac29811d5c" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::request_queue::globally_limited_until</definition>
         <argsstring></argsstring>
-        <name>globally_limited_for</name>
+        <name>globally_limited_until</name>
         <briefdescription>
-<para>How many seconds we are globally rate limited for. </para>
+<para>When we are globally rate limited until (unix epoch) </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Only if globally_ratelimited is true. </para>
+<para><simplesect kind="note"><para>Only valid if globally_rate limited is true. If we are globally rate limited, queues in this class will not process requests until the current unix epoch time is greater than this time. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="614" column="10" bodyfile="include/dpp/queues.h" bodystart="614" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="584" column="8" bodyfile="include/dpp/queues.h" bodystart="584" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a55eefe311c71c787c779eb035aa9daea" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1aba9533238e86684583e82082559a77d5" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
-        <definition>uint32_t dpp::request_queue::in_thread_pool_size</definition>
+        <definition>uint32_t dpp::request_queue::in_queue_pool_size</definition>
         <argsstring></argsstring>
-        <name>in_thread_pool_size</name>
+        <name>in_queue_pool_size</name>
         <briefdescription>
-<para>Number of request threads in the thread pool. </para>
+<para>Number of request queues in the pool. This is the direct size of the requests_in vector. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="619" column="10" bodyfile="include/dpp/queues.h" bodystart="619" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::request_queue::out_loop</definition>
-        <argsstring>()</argsstring>
-        <name>out_loop</name>
-        <briefdescription>
-<para>Outbound queue thread loop. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="624" column="6"/>
+        <location file="include/dpp/queues.h" line="590" column="10" bodyfile="include/dpp/queues.h" bodystart="590" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1request__queue_1afec7ef3d2deeef5687355cb1e6fb2eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1request__queue_1a15b79f23d7cd685c827b26d9470674a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::request_queue::request_queue</definition>
-        <argsstring>(class cluster *owner, uint32_t request_threads=8)</argsstring>
+        <argsstring>(class cluster *owner, uint32_t request_concurrency=8)</argsstring>
         <name>request_queue</name>
         <param>
           <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
@@ -211,7 +127,7 @@
         </param>
         <param>
           <type>uint32_t</type>
-          <declname>request_threads</declname>
+          <declname>request_concurrency</declname>
           <defval>8</defval>
         </param>
         <briefdescription>
@@ -228,10 +144,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>request_threads</parametername>
+<parametername>request_concurrency</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The number of http request threads to allocate to the threadpool. By default eight threads are allocated. Side effects: Creates threads for the queue </para>
+<para>The number of http request queues to allocate. Each request queue is a <ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">dpp::timer</ref> which ticks every second looking for new requests to run. The timer will hold back requests if we are waiting as to comply with rate limits. Adding a request to this class will cause the queue it is placed in to run immediately but this cannot override rate limits. By default eight concurrency queues are allocated. Side effects: Creates timers for the queue </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -239,56 +155,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="634" column="1"/>
+        <location file="include/dpp/queues.h" line="603" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1request__queue_1a0d0783d9546803f568b1de48898c5c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> &amp;</type>
-        <definition>request_queue &amp; dpp::request_queue::add_request_threads</definition>
-        <argsstring>(uint32_t request_threads)</argsstring>
-        <name>add_request_threads</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>request_threads</declname>
-        </param>
-        <briefdescription>
-<para>Add more request threads to the library at runtime. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>You should do this at a quiet time when there are few requests happening. This will reorganise the hashing used to place requests into the thread pool so if you do this while the bot is busy there is a small chance of receiving &quot;429 rate limited&quot; errors. </para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>request_threads</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Number of threads to add. It is not possible to scale down at runtime. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="644" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1request__queue_1a6a734c3fc440847f02980be0e3df0c2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1request__queue_1a814e3fc2d3684b462db4f852554620b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
-        <definition>uint32_t dpp::request_queue::get_request_thread_count</definition>
+        <definition>uint32_t dpp::request_queue::get_request_queue_count</definition>
         <argsstring>() const</argsstring>
-        <name>get_request_thread_count</name>
+        <name>get_request_queue_count</name>
         <briefdescription>
-<para>Get the request thread count. </para>
+<para>Get the request queue concurrency count. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>uint32_t number of request threads that are active </para>
+<para><simplesect kind="return"><para>uint32_t number of request queues that are active </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="650" column="10"/>
+        <location file="include/dpp/queues.h" line="609" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -296,13 +180,13 @@
         <argsstring>()</argsstring>
         <name>~request_queue</name>
         <briefdescription>
-<para>Destroy the request queue object. Side effects: Joins and deletes queue threads. </para>
+<para>Destroy the request queue object. Side effects: Ends and deletes concurrency timers. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="656" column="1"/>
+        <location file="include/dpp/queues.h" line="615" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a78a3adde76b2c5ddb6c06b36d00a9646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> &amp;</type>
@@ -334,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="665" column="15"/>
+        <location file="include/dpp/queues.h" line="624" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1adf8d6cdce3298446bc199d8a04a9d158" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -351,7 +235,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="671" column="6"/>
+        <location file="include/dpp/queues.h" line="630" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__queue_1ac14da0303e89f6f7a32b919f85d70ae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t dpp::request_queue::get_active_request_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_active_request_count</name>
+        <briefdescription>
+<para>Returns the number of active requests on this queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total number of active requests </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="636" column="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -359,11 +260,11 @@
     </briefdescription>
     <detaileddescription>
 <para>It ensures asynchronous delivery of events and queueing of requests.</para>
-<para>It will spawn two threads, one to make outbound HTTP requests and push the returned results into a queue, and the second to call the callback methods with these results. They are separated so that if the user decides to take a long time processing a reply in their callback it won&apos;t affect when other requests are sent, and if a HTTP request takes a long time due to latency, it won&apos;t hold up user processing.</para>
-<para>There are usually two <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> objects in each <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <ref refid="classdpp_1_1cluster_1a7a8e44c8d273e16c87b5f95c64495c09" kindref="member">dpp::cluster::request()</ref>. </para>
+<para>It will spawn multiple timers to make outbound HTTP requests and then call the callbacks of those requests on completion within the <ref refid="structdpp_1_1thread__pool" kindref="compound">dpp::thread_pool</ref> for the cluster. If the user decides to take a long time processing a reply in their callback it won&apos;t affect when other requests are sent, and if a HTTP request takes a long time due to latency, it won&apos;t hold up user processing.</para>
+<para>There are usually two <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> objects in each <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <ref refid="classdpp_1_1cluster_1aa4ead3406c471a64fa1fa578cc51cf2e" kindref="member">dpp::cluster::request()</ref>. They are separated so that the one for user requests can be specifically configured to never ever send the Discord token unless it is explicitly placed into the request, for security reasons. </para>
     </detaileddescription>
     <collaborationgraph>
-      <node id="27">
+      <node id="25">
         <label>bool</label>
       </node>
       <node id="18">
@@ -417,6 +318,9 @@
           <edgelabel>request_timeout</edgelabel>
         </childnode>
         <childnode refid="21" relation="usage">
+          <edgelabel>socketengine</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -447,33 +351,20 @@
         <childnode refid="2" relation="usage">
           <edgelabel>creator</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>out_mutex</edgelabel>
-        </childnode>
         <childnode refid="23" relation="usage">
-          <edgelabel>out_thread</edgelabel>
-        </childnode>
-        <childnode refid="20" relation="usage">
-          <edgelabel>out_ready</edgelabel>
+          <edgelabel>requests_in</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
-          <edgelabel>responses_out</edgelabel>
-        </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>requests_in</edgelabel>
-          <edgelabel>responses_to_delete</edgelabel>
-        </childnode>
-        <childnode refid="26" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>globally_ratelimited</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>globally_limited_for</edgelabel>
+        <childnode refid="5" relation="usage">
+          <edgelabel>globally_limited_until</edgelabel>
         </childnode>
         <childnode refid="6" relation="usage">
-          <edgelabel>in_thread_pool_size</edgelabel>
+          <edgelabel>in_queue_pool_size</edgelabel>
         </childnode>
       </node>
       <node id="10">
@@ -516,7 +407,7 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>event_router_t&lt;</label>
       </node>
       <node id="12">
@@ -526,30 +417,24 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="26">
+      <node id="24">
         <label>atomic&lt;</label>
+      </node>
+      <node id="20">
+        <label>atomic_bool</label>
       </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="20">
-        <label>condition_variable</label>
-      </node>
-      <node id="24">
-        <label>queue&lt;</label>
-      </node>
-      <node id="22">
-        <label>std::shared_mutex</label>
       </node>
       <node id="3">
         <label>std::string</label>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
-        <label>std::thread</label>
+      <node id="21">
+        <label>unique_ptr&lt;</label>
       </node>
-      <node id="25">
+      <node id="23">
         <label>vector&lt;</label>
       </node>
       <node id="5">
@@ -571,26 +456,20 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/queues.h" line="502" column="1" bodyfile="include/dpp/queues.h" bodystart="502" bodyend="672"/>
+    <location file="include/dpp/queues.h" line="523" column="1" bodyfile="include/dpp/queues.h" bodystart="523" bodyend="637"/>
     <listofallmembers>
-      <member refid="classdpp_1_1request__queue_1a0d0783d9546803f568b1de48898c5c6e" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>add_request_threads</name></member>
-      <member refid="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>creator</name></member>
-      <member refid="classdpp_1_1request__queue_1a6a734c3fc440847f02980be0e3df0c2b" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>get_request_thread_count</name></member>
-      <member refid="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_limited_for</name></member>
-      <member refid="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_ratelimited</name></member>
-      <member refid="classdpp_1_1request__queue_1a7fc81bccd183cc7fe664c9a68dd08dd8" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_thread</name></member>
-      <member refid="classdpp_1_1request__queue_1a55eefe311c71c787c779eb035aa9daea" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_thread_pool_size</name></member>
+      <member refid="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>creator</name></member>
+      <member refid="classdpp_1_1request__queue_1ac14da0303e89f6f7a32b919f85d70ae7" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>get_active_request_count</name></member>
+      <member refid="classdpp_1_1request__queue_1a814e3fc2d3684b462db4f852554620b6" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>get_request_queue_count</name></member>
+      <member refid="classdpp_1_1request__queue_1a4afc7b0771639f50b8c8c3ac29811d5c" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_limited_until</name></member>
+      <member refid="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_ratelimited</name></member>
+      <member refid="classdpp_1_1request__queue_1aba9533238e86684583e82082559a77d5" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_queue_pool_size</name></member>
       <member refid="classdpp_1_1request__queue_1adf8d6cdce3298446bc199d8a04a9d158" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>is_globally_ratelimited</name></member>
-      <member refid="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_loop</name></member>
-      <member refid="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_mutex</name></member>
-      <member refid="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_ready</name></member>
-      <member refid="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_thread</name></member>
       <member refid="classdpp_1_1request__queue_1a78a3adde76b2c5ddb6c06b36d00a9646" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>post_request</name></member>
-      <member refid="classdpp_1_1request__queue_1afec7ef3d2deeef5687355cb1e6fb2eb3" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>request_queue</name></member>
-      <member refid="classdpp_1_1request__queue_1abc7363f3fc7e0f8bf8b9437b669697d4" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>requests_in</name></member>
-      <member refid="classdpp_1_1request__queue_1a1fa529254021faa302ad92f164042f01" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>responses_out</name></member>
-      <member refid="classdpp_1_1request__queue_1a9ad976e7018a76e6d42daa103f665667" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>responses_to_delete</name></member>
-      <member refid="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>terminating</name></member>
+      <member refid="classdpp_1_1request__queue_1a3d7a9c3d8fe07096512bf5c3e6442d41" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>request_concurrency_queue</name></member>
+      <member refid="classdpp_1_1request__queue_1a15b79f23d7cd685c827b26d9470674a4" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>request_queue</name></member>
+      <member refid="classdpp_1_1request__queue_1a4caf0261af3f71b7b6251a6876b0d205" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>requests_in</name></member>
+      <member refid="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>terminating</name></member>
       <member refid="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>~request_queue</name></member>
     </listofallmembers>
   </compounddef>

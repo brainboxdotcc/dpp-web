@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="896" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="896" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="906" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="906" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1guild__stickers__update__t_1ab79bd932dcd8a9b8280276e2f228784f" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="901" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="901" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="911" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="911" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -50,20 +50,35 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="84" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="84" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>discord_client* dpp::event_dispatch_t::from</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a5c277ee79a8ef31736dc3795dbfc8d3f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::event_dispatch_t::shard</definition>
         <argsstring></argsstring>
-        <name>from</name>
-        <initializer>= nullptr</initializer>
+        <name>shard</name>
+        <initializer>= 0</initializer>
         <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
+<para>Shard the event came from. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="90" column="16" bodyfile="include/dpp/dispatcher.h" bodystart="90" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="89" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a8a87dcb222d9e2444a50b4df5caa28d4" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
+        <definition>dpp::cluster* dpp::event_dispatch_t::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Cluster owning the event dispatch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="94" column="15" bodyfile="include/dpp/dispatcher.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" prot="public" static="no" mutable="yes">
         <type>bool</type>
@@ -78,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="95" column="14" bodyfile="include/dpp/dispatcher.h" bodystart="95" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="99" column="14" bodyfile="include/dpp/dispatcher.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -94,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="890" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="900" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1ae250d3a1ee0ad2e90ad075e1aead5478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -122,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="890" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="900" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1aae35038ecb874c46e355fac3863615d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -150,16 +165,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="890" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="900" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1af32126d4ed56366b4413c84b272383b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1a143ee2c836c05740204e3d90f26d148b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
-        <argsstring>(discord_client *client, const std::string &amp;raw)</argsstring>
+        <argsstring>(dpp::cluster *creator, uint32_t shard_id, const std::string &amp;raw)</argsstring>
         <name>event_dispatch_t</name>
         <param>
-          <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-          <declname>client</declname>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shard_id</declname>
         </param>
         <param>
           <type>const std::string &amp;</type>
@@ -171,10 +190,10 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>client</parametername>
+<parametername>shard_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The shard the event originated on. May be a nullptr, e.g. for voice events </para>
+<para>The shard the event originated on. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -190,16 +209,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="890" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="900" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1a4d5c139c862c5ed02227b1e9ffc38095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1a1fa0821763f9cd81e1bc4935cda31204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
-        <argsstring>(discord_client *client, std::string &amp;&amp;raw)</argsstring>
+        <argsstring>(dpp::cluster *creator, uint32_t shard_id, std::string &amp;&amp;raw)</argsstring>
         <name>event_dispatch_t</name>
         <param>
-          <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-          <declname>client</declname>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>shard_id</declname>
         </param>
         <param>
           <type>std::string &amp;&amp;</type>
@@ -211,10 +234,10 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>client</parametername>
+<parametername>shard_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The shard the event originated on. May be a nullptr, e.g. for voice events </para>
+<para>The shard the event originated on. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -230,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="890" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="900" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1a2500c6d9987fbfc509fd0a960b1968e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -258,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="891" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="901" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1guild__stickers__update__t_1a4645c2cc7dfe1def0b936d5726f7b8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -286,7 +309,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="891" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="901" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a7ef6731ea526ef76928c459e19723fbb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>discord_client * dpp::event_dispatch_t::from</definition>
+        <argsstring>() const</argsstring>
+        <name>from</name>
+        <briefdescription>
+<para>Returns the shard object for the events shard id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>discord client object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="132" column="16"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -305,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="161" column="24"/>
+        <location file="include/dpp/dispatcher.h" line="171" column="24"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -324,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="169" column="18"/>
+        <location file="include/dpp/dispatcher.h" line="179" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -341,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="177" column="6"/>
+        <location file="include/dpp/dispatcher.h" line="187" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -362,28 +402,28 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="42">
+      <node id="33">
         <label>K</label>
       </node>
-      <node id="43">
+      <node id="34">
         <label>T</label>
       </node>
-      <node id="8">
+      <node id="24">
         <label>bool</label>
       </node>
-      <node id="27">
+      <node id="19">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="49">
+      <node id="40">
         <label>default_message_notification_t</label>
       </node>
-      <node id="17">
+      <node id="8">
         <label>double</label>
       </node>
-      <node id="26">
+      <node id="18">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>channel_policy</edgelabel>
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>guild_policy</edgelabel>
@@ -391,40 +431,43 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="15">
+      <node id="6">
         <label>dpp::cluster</label>
         <link refid="classdpp_1_1cluster"/>
         <childnode refid="3" relation="usage">
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>last_identify</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>cluster_id</edgelabel>
           <edgelabel>intents</edgelabel>
           <edgelabel>maxclusters</edgelabel>
           <edgelabel>numshards</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>rest_ping</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="26" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>request_timeout</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="22" relation="usage">
+          <edgelabel>socketengine</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -438,54 +481,6 @@
           <edgelabel>...</edgelabel>
         </childnode>
       </node>
-      <node id="5">
-        <label>dpp::discord_client</label>
-        <link refid="classdpp_1_1discord__client"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>ready</edgelabel>
-          <edgelabel>terminating</edgelabel>
-        </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>creator</edgelabel>
-        </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>heartbeat_interval</edgelabel>
-          <edgelabel>intents</edgelabel>
-          <edgelabel>max_shards</edgelabel>
-          <edgelabel>reconnects</edgelabel>
-          <edgelabel>resumes</edgelabel>
-          <edgelabel>shard_id</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>last_heartbeat</edgelabel>
-          <edgelabel>last_heartbeat_ack</edgelabel>
-        </childnode>
-        <childnode refid="31" relation="usage">
-          <edgelabel>thread_id</edgelabel>
-        </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>last_seq</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>resume_gateway_url</edgelabel>
-          <edgelabel>sessionid</edgelabel>
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="32" relation="usage">
-          <edgelabel>voice_mutex</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>websocket_ping</edgelabel>
-        </childnode>
-        <childnode refid="28" relation="usage">
-          <edgelabel>protocol</edgelabel>
-        </childnode>
-        <childnode refid="33" relation="usage">
-          <edgelabel>connecting_voice_channels</edgelabel>
-        </childnode>
-      </node>
       <node id="2">
         <label>dpp::event_dispatch_t</label>
         <link refid="structdpp_1_1event__dispatch__t"/>
@@ -493,46 +488,49 @@
           <edgelabel>raw_event</edgelabel>
         </childnode>
         <childnode refid="5" relation="usage">
-          <edgelabel>from</edgelabel>
+          <edgelabel>shard</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="6" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
           <edgelabel>cancelled</edgelabel>
         </childnode>
       </node>
-      <node id="34">
+      <node id="25">
         <label>dpp::guild</label>
         <link refid="classdpp_1_1guild"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="10" relation="public-inheritance">
         </childnode>
-        <childnode refid="35" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>description</edgelabel>
           <edgelabel>name</edgelabel>
           <edgelabel>vanity_url_code</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>channels</edgelabel>
           <edgelabel>emojis</edgelabel>
           <edgelabel>roles</edgelabel>
           <edgelabel>threads</edgelabel>
         </childnode>
-        <childnode refid="37" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="44" relation="usage">
+        <childnode refid="35" relation="usage">
           <edgelabel>welcome_screen</edgelabel>
         </childnode>
-        <childnode refid="46" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>banner</edgelabel>
           <edgelabel>discovery_splash</edgelabel>
           <edgelabel>icon</edgelabel>
           <edgelabel>splash</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>afk_channel_id</edgelabel>
           <edgelabel>application_id</edgelabel>
           <edgelabel>owner_id</edgelabel>
@@ -542,64 +540,64 @@
           <edgelabel>system_channel_id</edgelabel>
           <edgelabel>widget_channel_id</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>flags</edgelabel>
           <edgelabel>max_members</edgelabel>
           <edgelabel>max_presences</edgelabel>
           <edgelabel>member_count</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>flags_extra</edgelabel>
           <edgelabel>premium_subscription_count</edgelabel>
           <edgelabel>shard_id</edgelabel>
         </childnode>
-        <childnode refid="48" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>afk_timeout</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>max_video_channel_users</edgelabel>
         </childnode>
-        <childnode refid="49" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>default_message_notifications</edgelabel>
         </childnode>
-        <childnode refid="50" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>premium_tier</edgelabel>
         </childnode>
-        <childnode refid="51" relation="usage">
+        <childnode refid="42" relation="usage">
           <edgelabel>verification_level</edgelabel>
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="43" relation="usage">
           <edgelabel>explicit_content_filter</edgelabel>
         </childnode>
-        <childnode refid="53" relation="usage">
+        <childnode refid="44" relation="usage">
           <edgelabel>mfa_level</edgelabel>
         </childnode>
-        <childnode refid="54" relation="usage">
+        <childnode refid="45" relation="usage">
           <edgelabel>nsfw_level</edgelabel>
         </childnode>
       </node>
-      <node id="39">
+      <node id="30">
         <label>dpp::guild_member</label>
         <link refid="classdpp_1_1guild__member"/>
-        <childnode refid="40" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>nickname</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>roles</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>communication_disabled_until</edgelabel>
           <edgelabel>joined_at</edgelabel>
           <edgelabel>premium_since</edgelabel>
@@ -610,102 +608,64 @@
         <link refid="structdpp_1_1guild__stickers__update__t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="34" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>updating_guild</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>stickers</edgelabel>
         </childnode>
       </node>
-      <node id="22">
+      <node id="14">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
-      <node id="19">
+      <node id="10">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
-        <childnode refid="20" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="11">
         <label>dpp::snowflake</label>
         <link refid="classdpp_1_1snowflake"/>
         <childnode refid="12" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="7">
-        <label>dpp::ssl_client</label>
-        <link refid="classdpp_1_1ssl__client"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>buffer</edgelabel>
-          <edgelabel>cipher</edgelabel>
-          <edgelabel>hostname</edgelabel>
-          <edgelabel>obuffer</edgelabel>
-          <edgelabel>port</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>keepalive</edgelabel>
-          <edgelabel>make_new</edgelabel>
-          <edgelabel>nonblocking</edgelabel>
-          <edgelabel>plaintext</edgelabel>
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>sfd</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>ssl</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>last_tick</edgelabel>
-        </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>bytes_in</edgelabel>
-          <edgelabel>bytes_out</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>custom_readable_fd</edgelabel>
-          <edgelabel>custom_writeable_fd</edgelabel>
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>custom_readable_ready</edgelabel>
-          <edgelabel>custom_writeable_ready</edgelabel>
-        </childnode>
-      </node>
-      <node id="18">
+      <node id="9">
         <label>dpp::user</label>
         <link refid="classdpp_1_1user"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="10" relation="public-inheritance">
         </childnode>
-        <childnode refid="21" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>global_name</edgelabel>
           <edgelabel>username</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>avatar</edgelabel>
           <edgelabel>avatar_decoration</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="46">
+      <node id="37">
         <label>dpp::utility::icon</label>
         <link refid="structdpp_1_1utility_1_1icon"/>
-        <childnode refid="47" relation="usage">
+        <childnode refid="38" relation="usage">
           <edgelabel>hash_or_data</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="15">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="12" relation="usage">
@@ -713,155 +673,131 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="6">
-        <label>dpp::websocket_client</label>
-        <link refid="classdpp_1_1websocket__client"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="44">
+      <node id="35">
         <label>dpp::welcome_screen</label>
         <link refid="structdpp_1_1welcome__screen"/>
-        <childnode refid="45" relation="public-inheritance">
+        <childnode refid="36" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>description</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>welcome_channels</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="23">
         <label>event_router_t&lt;</label>
       </node>
-      <node id="48">
+      <node id="39">
         <label>guild_afk_timeout_t</label>
       </node>
-      <node id="52">
+      <node id="43">
         <label>guild_explicit_content_t</label>
       </node>
-      <node id="54">
+      <node id="45">
         <label>guild_nsfw_level_t</label>
       </node>
-      <node id="50">
+      <node id="41">
         <label>guild_premium_tier_t</label>
       </node>
-      <node id="9">
-        <label>int</label>
-      </node>
-      <node id="35">
+      <node id="26">
         <label>dpp::json_interface&lt; guild &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="22" relation="template-instance">
+        <childnode refid="14" relation="template-instance">
           <edgelabel>&lt; guild &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="40">
+      <node id="31">
         <label>dpp::json_interface&lt; guild_member &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="22" relation="template-instance">
+        <childnode refid="14" relation="template-instance">
           <edgelabel>&lt; guild_member &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="13">
         <label>dpp::json_interface&lt; user &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="22" relation="template-instance">
+        <childnode refid="14" relation="template-instance">
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="45">
+      <node id="36">
         <label>dpp::json_interface&lt; welcome_screen &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="22" relation="template-instance">
+        <childnode refid="14" relation="template-instance">
           <edgelabel>&lt; welcome_screen &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="53">
+      <node id="44">
         <label>mfa_level_t</label>
       </node>
-      <node id="10">
-        <label>openssl_connection *</label>
+      <node id="21">
+        <label>atomic_bool</label>
       </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="29">
-        <label>condition_variable</label>
-      </node>
-      <node id="13">
-        <label>function&lt; dpp::socket()&gt;</label>
-      </node>
-      <node id="14">
-        <label>function&lt; void()&gt;</label>
-      </node>
-      <node id="37">
+      <node id="28">
         <label>map&lt;</label>
-      </node>
-      <node id="32">
-        <label>std::shared_mutex</label>
       </node>
       <node id="3">
         <label>std::string</label>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
-        <label>native_handle_type</label>
+      <node id="22">
+        <label>unique_ptr&lt;</label>
       </node>
-      <node id="41">
+      <node id="32">
         <label>std::unordered_map&lt; K, T &gt;</label>
-        <childnode refid="42" relation="usage">
+        <childnode refid="33" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
-        <childnode refid="43" relation="usage">
+        <childnode refid="34" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="33">
-        <label>unordered_map&lt;</label>
-      </node>
-      <node id="47">
+      <node id="38">
         <label>variant&lt;</label>
       </node>
-      <node id="36">
+      <node id="27">
         <label>vector&lt;</label>
       </node>
-      <node id="11">
+      <node id="7">
         <label>time_t</label>
       </node>
-      <node id="24">
+      <node id="16">
         <label>uint16_t</label>
       </node>
-      <node id="16">
+      <node id="5">
         <label>uint32_t</label>
       </node>
       <node id="12">
         <label>uint64_t</label>
       </node>
-      <node id="25">
+      <node id="17">
         <label>uint8_t</label>
       </node>
-      <node id="38">
+      <node id="29">
         <label>std::unordered_map&lt; snowflake, guild_member &gt;</label>
-        <childnode refid="20" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
-        <childnode refid="39" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
-        <childnode refid="41" relation="template-instance">
+        <childnode refid="32" relation="template-instance">
           <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="51">
+      <node id="42">
         <label>verification_level_t</label>
       </node>
-      <node id="28">
+      <node id="20">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="889" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="889" bodyend="902"/>
+    <location file="include/dpp/dispatcher.h" line="899" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="899" bodyend="912"/>
     <listofallmembers>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>cancel_event</name></member>
@@ -869,13 +805,15 @@
       <member refid="structdpp_1_1guild__stickers__update__t_1ad761e8dec36073665f520aaa13fbe6dc" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1ae250d3a1ee0ad2e90ad075e1aead5478" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1aae35038ecb874c46e355fac3863615d0" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
-      <member refid="structdpp_1_1guild__stickers__update__t_1af32126d4ed56366b4413c84b272383b7" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
-      <member refid="structdpp_1_1guild__stickers__update__t_1a4d5c139c862c5ed02227b1e9ffc38095" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>from</name></member>
+      <member refid="structdpp_1_1guild__stickers__update__t_1a143ee2c836c05740204e3d90f26d148b" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__stickers__update__t_1a1fa0821763f9cd81e1bc4935cda31204" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a7ef6731ea526ef76928c459e19723fbb" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>from</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>is_cancelled</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1a2500c6d9987fbfc509fd0a960b1968e9" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>operator=</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1a4645c2cc7dfe1def0b936d5726f7b8db" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>operator=</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a8a87dcb222d9e2444a50b4df5caa28d4" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>owner</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a5c277ee79a8ef31736dc3795dbfc8d3f" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>shard</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1ab79bd932dcd8a9b8280276e2f228784f" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>stickers</name></member>
       <member refid="structdpp_1_1guild__stickers__update__t_1a9d9983215c40ff057b9c62248d3a715d" prot="public" virt="non-virtual"><scope>dpp::guild_stickers_update_t</scope><name>updating_guild</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a2bed0468ebf80c46bf6ee2407afa2cfd" prot="public" virt="virtual"><scope>dpp::guild_stickers_update_t</scope><name>~event_dispatch_t</name></member>

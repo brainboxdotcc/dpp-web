@@ -10,8 +10,6 @@
 digraph &quot;Thread Model&quot; {
     graph [ranksep=1];
     node [colorscheme=&quot;blues9&quot;,fontname=&quot;helvetica&quot;];
-    &quot;Discord Events&quot; -&gt; &quot;Your Program&quot;
-
     &quot;Your Program&quot; [style=filled, color=1, shape=rect]
     &quot;Cluster&quot; [style=filled, color=1, shape=rect]
 
@@ -20,72 +18,54 @@ digraph &quot;Thread Model&quot; {
         color=lightgrey;
         node [style=filled,color=2]
         &quot;Your Program&quot;
-        &quot;Cluster&quot;
-        label = &quot;User Code&quot;;
+        &quot;Your Program&quot; -&gt; &quot;Cluster&quot;
+        label = &quot;(1)&quot;;
     }
+
+    subgraph cluster_3 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=2]
+        &quot;Cluster&quot; -&gt; &quot;Event Loop&quot;
+        &quot;Event Loop&quot; -&gt; &quot;HTTP(S) requests&quot;
+        &quot;Event Loop&quot; -&gt; &quot;Voice Sessions&quot;
+        &quot;Event Loop&quot; -&gt; &quot;Shards&quot;
+        &quot;Shards&quot; -&gt; &quot;Websocket Events&quot;
+        label = &quot;(2)&quot;;
+    }
+
 
     subgraph cluster_0 {
         style=filled;
         color=lightgrey;
         node [style=filled,color=4]
-        &quot;Shard 1&quot; [style=filled, color=4]
-        &quot;Shard 2&quot;
-        &quot;Shard 3...&quot;
-        label = &quot;Shards (Each is a thread, one per 2500 Discord guilds)&quot;;
-    }
-
-    subgraph cluster_1 {
-        style=filled
-        color=lightgrey;
-        node [style=filled,color=4]
-        &quot;REST Requests&quot;
-        &quot;Request In Queue 1&quot;
-        &quot;Request In Queue 2&quot;
-        &quot;Request In Queue 3...&quot;
-        &quot;Request Out Queue&quot;
-        label = &quot;REST Requests (Each in queue, and the out queue, are threads)&quot;
-    }
-
-    subgraph cluster_3 {
-        style=filled
-        color=lightgrey;
-        node [style=filled,color=4]
-        &quot;Discord Events&quot; [style=filled,color=4]
-        &quot;User Callback Functions&quot;
-        label = &quot;Events and Callbacks&quot;
+        &quot;Voice Sessions&quot; -&gt; &quot;Websocket Events&quot;
+        &quot;HTTP(S) requests&quot; -&gt; &quot;Thread Pool (4..n threads)&quot;
+        &quot;Websocket Events&quot; -&gt; &quot;Thread Pool (4..n threads)&quot;
+        &quot;Thread Pool (4..n threads)&quot;
+        label = &quot;(3)&quot;;
     }
 
     &quot;Cluster&quot; [shape=rect]
-    &quot;REST Requests&quot; [shape=rect]
-    &quot;Request In Queue 1&quot; [shape=rect]
-    &quot;Request In Queue 2&quot; [shape=rect]
-    &quot;Request In Queue 3...&quot; [shape=rect]
-    &quot;Shard 1&quot; [shape=rect]
-    &quot;Shard 2&quot; [shape=rect]
-    &quot;Shard 3...&quot; [shape=rect]
-    &quot;Request Out Queue&quot; [shape=rect]
-    &quot;Discord Events&quot; [shape=rect]
-    &quot;User Callback Functions&quot; [shape=rect]
+    &quot;Thread Pool (4..n threads)&quot; [shape=rect]
+    &quot;HTTP(S) requests&quot;  [shape=rect]
+    &quot;Shards&quot;  [shape=rect]
+    &quot;Websocket Events&quot;  [shape=rect]
+    &quot;Event Loop&quot;  [shape=rect]
+    &quot;Voice Sessions&quot;  [shape=rect]
 
-    &quot;Cluster&quot; -&gt; &quot;REST Requests&quot;
-    &quot;Shard 1&quot; -&gt; &quot;Discord Events&quot;
-    &quot;Shard 2&quot; -&gt; &quot;Discord Events&quot;
-    &quot;Shard 3...&quot; -&gt; &quot;Discord Events&quot;
-    &quot;Your Program&quot; -&gt; &quot;Cluster&quot;
-    &quot;Cluster&quot; -&gt; &quot;Shard 1&quot;
-    &quot;Cluster&quot; -&gt; &quot;Shard 2&quot;
-    &quot;Cluster&quot; -&gt; &quot;Shard 3...&quot;
-    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 1&quot;
-    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 2&quot;
-    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 3...&quot;
-    &quot;Request In Queue 1&quot; -&gt; &quot;Request Out Queue&quot;
-    &quot;Request In Queue 2&quot; -&gt; &quot;Request Out Queue&quot;
-    &quot;Request In Queue 3...&quot; -&gt; &quot;Request Out Queue&quot;
-    &quot;Request Out Queue&quot; -&gt; &quot;User Callback Functions&quot;
-    &quot;User Callback Functions&quot; -&gt; &quot;Your Program&quot;
 }
 </dot>
- </para>
+</para>
+<sect2 id="thread-model_1autotoc_md86">
+<title>Details</title>
+<para><orderedlist>
+<listitem><para>User Code - No assumptions are made about how your program threads, if at all.</para>
+</listitem><listitem><para>The event loop manages all socket IO for the cluster. If you start the cluster with <ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" kindref="member">dpp::st_return</ref> this will run under its own thread, otherwise if you use <ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref> it will run in the same thread as the caller of the <ref refid="classdpp_1_1cluster_1a51ef65c943c76edd7abd7c8e21e34416" kindref="member">dpp::cluster::start</ref> method. The event loop will be either poll, epoll or kqueue based depending on your system capabilities. You should always start a cluster after forking, if your program forks, as various types of IO loop cannot be inherited by a forked process.</para>
+</listitem><listitem><para>Set thread pool size via cluster constructor. Thread pool uses a priority queue and defaults in size to half the system concurrency value. Every callback or completed coroutine ends up executing here. The minimum concurrency of this pool is 4. </para>
+</listitem></orderedlist>
+</para>
+</sect2>
     </detaileddescription>
     <location file="docpages/advanced_reference/thread_model.md"/>
   </compounddef>

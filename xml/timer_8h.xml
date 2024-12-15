@@ -3,14 +3,17 @@
   <compounddef id="timer_8h" kind="file" language="C++">
     <compoundname>timer.h</compoundname>
     <includes refid="export_8h" local="no">dpp/export.h</includes>
-    <includes local="no">stdint.h</includes>
+    <includes local="no">cstdint</includes>
     <includes local="no">map</includes>
     <includes local="no">unordered_map</includes>
-    <includes local="no">stddef.h</includes>
+    <includes local="no">cstddef</includes>
     <includes local="no">ctime</includes>
+    <includes local="no">set</includes>
+    <includes local="no">queue</includes>
     <includes local="no">functional</includes>
     <includedby refid="cluster_8h" local="no">cluster.h</includedby>
     <includedby refid="restresults_8h" local="no">restresults.h</includedby>
+    <includedby refid="sslclient_8h" local="no">sslclient.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>dpp/export.h</label>
@@ -32,27 +35,46 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
       </node>
       <node id="7">
         <label>ctime</label>
       </node>
-      <node id="8">
+      <node id="10">
         <label>functional</label>
       </node>
       <node id="4">
         <label>map</label>
       </node>
-      <node id="6">
-        <label>stddef.h</label>
+      <node id="9">
+        <label>queue</label>
       </node>
-      <node id="3">
-        <label>stdint.h</label>
+      <node id="8">
+        <label>set</label>
       </node>
       <node id="5">
         <label>unordered_map</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="13">
+        <label>appcommand.h</label>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>cluster.h</label>
         <childnode refid="3" relation="include">
@@ -71,13 +93,71 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="14">
+        <label>commandhandler.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>discordclient.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
       <node id="5">
         <label>discordvoiceclient.h</label>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="15">
+        <label>dispatcher.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
       <node id="4">
         <label>dpp.h</label>
+      </node>
+      <node id="10">
+        <label>httpsclient.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>message.h</label>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>queues.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="6">
         <label>restrequest.h</label>
@@ -85,6 +165,20 @@
       <node id="8">
         <label>restresults.h</label>
         <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sslclient.h</label>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>thread.h</label>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -101,9 +195,19 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>wsclient.h</label>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structdpp_1_1timer__t" prot="public">dpp::timer_t</innerclass>
+    <innerclass refid="structdpp_1_1timer__comparator" prot="public">dpp::timer_comparator</innerclass>
     <innerclass refid="classdpp_1_1oneshot__timer" prot="public">dpp::oneshot_timer</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
     <briefdescription>

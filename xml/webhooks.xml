@@ -9,23 +9,35 @@
 <para>Webhooks are a simple way to post messages from other apps and websites into Discord. They allow getting automated messages and data updates sent to a text channel in your server. <ulink url="https://support.discord.com/hc/en-us/articles/228383668">Read more</ulink> in this article about Webhooks.</para>
 <para>The following code shows how to send messages in a channel using a webhook.</para>
 <para><programlisting filename="webhooks.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/>Normally,<sp/>you<sp/>put<sp/>your<sp/>bot<sp/>token<sp/>in<sp/>here,<sp/>but<sp/>its<sp/>not<sp/>required<sp/>for<sp/>webhooks.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>you<sp/>just<sp/>want<sp/>to<sp/>fire<sp/>webhooks,<sp/>you<sp/>can<sp/>instantiate<sp/>a<sp/>cluster<sp/>with<sp/>no<sp/>token<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>the<sp/>cluster<sp/>in<sp/>its<sp/>own<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.<ref refid="classdpp_1_1cluster_1a51ef65c943c76edd7abd7c8e21e34416" kindref="member">start</ref>(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" kindref="member">dpp::st_return</ref>);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>webhook<sp/>object<sp/>using<sp/>the<sp/>URL<sp/>you<sp/>got<sp/>from<sp/>Discord<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1webhook" kindref="compound">dpp::webhook</ref><sp/>wh(</highlight><highlight class="stringliteral">&quot;https://discord.com/api/webhooks/833047646548133537/ntCHEYYIoHSLy_GOxPx6pmM0sUoLbP101ct-WI6F-S4beAV2vaIcl_Id5loAMyQwxqhE&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Send<sp/>a<sp/>message<sp/>with<sp/>this<sp/>webhook<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.execute_webhook_sync(wh,<sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(</highlight><highlight class="stringliteral">&quot;Have<sp/>a<sp/>great<sp/>time<sp/>here<sp/>:smile:&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Send<sp/>a<sp/>message<sp/>with<sp/>this<sp/>webhook<sp/>asynchronously<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.<ref refid="classdpp_1_1cluster_1a0417d872a41150d122901fd300a89190" kindref="member">execute_webhook</ref>(wh,<sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(</highlight><highlight class="stringliteral">&quot;Have<sp/>a<sp/>great<sp/>time<sp/>here<sp/>:smile:&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>here<sp/>for<sp/>the<sp/>webhook<sp/>to<sp/>complete,<sp/>but<sp/>we<sp/>could<sp/>do<sp/>anything<sp/>we<sp/>need<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(bot.<ref refid="classdpp_1_1cluster_1ac0e8d27147b827fed102981e8004e235" kindref="member">active_requests</ref>()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::seconds(1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>When<sp/>we<sp/>return<sp/>here,<sp/>the<sp/>cluster<sp/>will<sp/>be<sp/>terminated<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
-<para>The above is just a very simple example. You can also send embed messages. All you have to do is to add an embed to the message you want to send. If you want to, you can also send it into a thread. </para>
+<para><simplesect kind="note"><para>For just sending a webhook, the example above is overkill. If you are here because you searched for &apos;how to send a Discord webhook in C++&apos;, you&apos;ll quickly learn that D++ can do much more than just send webhooks! The above is just a very simple example. You can also send embed messages. All you have to do is to add an embed to the message you want to send. If you want to, you can also send it into a thread. For further examples, check the rest of the site. </para>
+</simplesect>
+</para>
     </detaileddescription>
     <location file="docpages/example_programs/the_basics/webhooks.md"/>
   </compounddef>

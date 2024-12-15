@@ -102,28 +102,28 @@ $(document).ready(function(){initNavTree('buildopenbsd.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>This page assumes you are the root user. If you are not, start the package install commands with <code>doas</code>, along with <code>make install</code>.</dd></dl>
-<h2><a class="anchor" id="autotoc_md99"></a>
+<h2><a class="anchor" id="autotoc_md100"></a>
 1. Toolchain</h2>
 <p >Since the project uses <code>CMake</code>, you'll need to install it! If you don't have it, you can do the following:</p>
 <div class="fragment"><div class="line">pkg_add cmake</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md100"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md101"></a>
 2. Install Voice Dependencies (Optional)</h2>
 <p >If you wish to use voice support, you'll need to do the following:</p>
 <div class="fragment"><div class="line">pkg_add opus</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md101"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md102"></a>
 3. Build Source Code</h2>
 <div class="fragment"><div class="line">cmake -B ./build</div>
 <div class="line">cmake --build ./build -j8</div>
 </div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md102"></a>
+<h2><a class="anchor" id="autotoc_md103"></a>
 4. Install Globally</h2>
 <div class="fragment"><div class="line">cd build; make install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md103"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md104"></a>
 5. Installation to a Different Directory</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
 <div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
 </div><!-- fragment --><p >Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md104"></a>
+<h2><a class="anchor" id="autotoc_md105"></a>
 6. Using the Library</h2>
 <p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in CMake, without linking to a folder! You can't use this with <code>clang++</code>, nor <code>g++</code>, as OpenBSD seems to be broken on this end, so your only option from here is to use CMake. This isn't a bad thing, as we recommend people to use CMake anyways!</p>
 <p ><b>Have fun!</b> </p>

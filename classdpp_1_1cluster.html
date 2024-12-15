@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html',''); initRes
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classdpp_1_1cluster-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">dpp::cluster Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">dpp::cluster Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -122,9 +122,15 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a50b5bea83641d9542df5c0ec7fa5b43c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a50b5bea83641d9542df5c0ec7fa5b43c">cluster</a> (const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, uint32_t <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a>=<a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">i_default_intents</a>, uint32_t shards=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#a5155862c1d7267c7f4ee8781ff3e8d7f">cluster_id</a>=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#ad80e4df300e69988d163d61c14e540ab">maxclusters</a>=1, bool compressed=true, <a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a> policy=<a class="el" href="namespacedpp_1_1cache__policy.html#a851fe024df39295092817467cee45abe">cache_policy::cpol_default</a>, uint32_t request_threads=12, uint32_t request_threads_raw=1)</td></tr>
-<tr class="memdesc:a50b5bea83641d9542df5c0ec7fa5b43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a cluster. All but the token are optional.  <a href="classdpp_1_1cluster.html#a50b5bea83641d9542df5c0ec7fa5b43c">More...</a><br /></td></tr>
-<tr class="separator:a50b5bea83641d9542df5c0ec7fa5b43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461cf26781bda18ec60b3b5026ea2598"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a461cf26781bda18ec60b3b5026ea2598">cluster</a> (uint32_t pool_threads=std::thread::hardware_concurrency()/2)</td></tr>
+<tr class="memdesc:a461cf26781bda18ec60b3b5026ea2598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a cluster without a token. A cluster created without a token has no shards, and just runs the event loop. You can use this to make asynchronous HTTP requests via e.g. <a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request</a> without having to connect to a websocket to receive shard events.  <a href="classdpp_1_1cluster.html#a461cf26781bda18ec60b3b5026ea2598">More...</a><br /></td></tr>
+<tr class="separator:a461cf26781bda18ec60b3b5026ea2598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a22b49f725c6ae318e97cd4134be29f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2a22b49f725c6ae318e97cd4134be29f">cluster</a> (const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, uint32_t <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a>=<a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">i_default_intents</a>, uint32_t shards=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#a5155862c1d7267c7f4ee8781ff3e8d7f">cluster_id</a>=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#ad80e4df300e69988d163d61c14e540ab">maxclusters</a>=1, bool compressed=true, <a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a> policy=<a class="el" href="namespacedpp_1_1cache__policy.html#a851fe024df39295092817467cee45abe">cache_policy::cpol_default</a>, uint32_t pool_threads=std::thread::hardware_concurrency()/2)</td></tr>
+<tr class="memdesc:a2a22b49f725c6ae318e97cd4134be29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a cluster. All but the token are optional.  <a href="classdpp_1_1cluster.html#a2a22b49f725c6ae318e97cd4134be29f">More...</a><br /></td></tr>
+<tr class="separator:a2a22b49f725c6ae318e97cd4134be29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6ff8d56c0e11de2a4ae7c1027df596c6">queue_work</a> (int priority, <a class="el" href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">work_unit</a> <a class="el" href="classdpp_1_1task.html">task</a>)</td></tr>
+<tr class="memdesc:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place some arbitrary work into the thread pool for execution when time permits.  <a href="classdpp_1_1cluster.html#a6ff8d56c0e11de2a4ae7c1027df596c6">More...</a><br /></td></tr>
+<tr class="separator:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0b523f89559b4ce204ca9ed9693d79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79">cluster</a> (const <a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a6b0b523f89559b4ce204ca9ed9693d79"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> is non-copyable  <a href="classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79">More...</a><br /></td></tr>
 <tr class="separator:a6b0b523f89559b4ce204ca9ed9693d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6e6c0859b49fdb91edb74e6b16a87521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the cluster object.  <a href="classdpp_1_1cluster.html#a6e6c0859b49fdb91edb74e6b16a87521">More...</a><br /></td></tr>
 <tr class="separator:a6e6c0859b49fdb91edb74e6b16a87521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ace7f63d2a8571b6f586e2ac1ac3d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a3ace7f63d2a8571b6f586e2ac1ac3d0c">shutdown</a> ()</td></tr>
-<tr class="memdesc:a3ace7f63d2a8571b6f586e2ac1ac3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">End cluster execution without destructing it. To restart the cluster, call <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> again.  <a href="classdpp_1_1cluster.html#a3ace7f63d2a8571b6f586e2ac1ac3d0c">More...</a><br /></td></tr>
+<tr class="memdesc:a3ace7f63d2a8571b6f586e2ac1ac3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">End cluster execution without destructing it. To restart the cluster, call <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start()</a> again.  <a href="classdpp_1_1cluster.html#a3ace7f63d2a8571b6f586e2ac1ac3d0c">More...</a><br /></td></tr>
 <tr class="separator:a3ace7f63d2a8571b6f586e2ac1ac3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a590b138e5a832faba65cc8de449c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4">get_rest</a> ()</td></tr>
 <tr class="memdesc:a77a590b138e5a832faba65cc8de449c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rest_queue object which handles HTTPS requests to Discord.  <a href="classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4">More...</a><br /></td></tr>
@@ -150,8 +156,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aaf4dd99670856e7efed749e53e96fa7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw rest_queue object which handles all HTTP(S) requests that are not directed at Discord.  <a href="classdpp_1_1cluster.html#aaf4dd99670856e7efed749e53e96fa7c">More...</a><br /></td></tr>
 <tr class="separator:aaf4dd99670856e7efed749e53e96fa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056e4191c03dd210c2a410b6599a0bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">set_websocket_protocol</a> (<a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672">websocket_protocol_t</a> mode)</td></tr>
-<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
+<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
 <tr class="separator:a056e4191c03dd210c2a410b6599a0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4de3765be2073c0c39cc1c16481f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a5c4de3765be2073c0c39cc1c16481f83">tick_timers</a> ()</td></tr>
+<tr class="memdesc:a5c4de3765be2073c0c39cc1c16481f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick active timers.  <a href="classdpp_1_1cluster.html#a5c4de3765be2073c0c39cc1c16481f83">More...</a><br /></td></tr>
+<tr class="separator:a5c4de3765be2073c0c39cc1c16481f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbcc02c388c197cf7050551ef89aeefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">set_audit_reason</a> (const std::string &amp;reason)</td></tr>
 <tr class="memdesc:adbcc02c388c197cf7050551ef89aeefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically.  <a href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">More...</a><br /></td></tr>
 <tr class="separator:adbcc02c388c197cf7050551ef89aeefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +194,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af12b5b33ea156bde9977796858066a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1utility_1_1uptime.html">dpp::utility::uptime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b">uptime</a> ()</td></tr>
 <tr class="memdesc:af12b5b33ea156bde9977796858066a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the uptime of the cluster.  <a href="classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b">More...</a><br /></td></tr>
 <tr class="separator:af12b5b33ea156bde9977796858066a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e99d13e1380eccd30d13123014594f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f">start</a> (bool return_after=true)</td></tr>
-<tr class="memdesc:a40e99d13e1380eccd30d13123014594f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the cluster, connecting all its shards.  <a href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f">More...</a><br /></td></tr>
-<tr class="separator:a40e99d13e1380eccd30d13123014594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ef65c943c76edd7abd7c8e21e34416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416">start</a> (<a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">start_type</a> return_after=<a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">st_wait</a>)</td></tr>
+<tr class="memdesc:a51ef65c943c76edd7abd7c8e21e34416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the cluster, connecting all its shards.  <a href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416">More...</a><br /></td></tr>
+<tr class="separator:a51ef65c943c76edd7abd7c8e21e34416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b67c9455ac0378712e4c0fd0ba7f2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9">set_presence</a> (const class <a class="el" href="classdpp_1_1presence.html">dpp::presence</a> &amp;p)</td></tr>
 <tr class="memdesc:a9b67c9455ac0378712e4c0fd0ba7f2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the presence for all shards on the cluster.  <a href="classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9">More...</a><br /></td></tr>
 <tr class="separator:a9b67c9455ac0378712e4c0fd0ba7f2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +212,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23b30a318b678865fe1e6e9ec778c711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">register_command</a> (const std::string &amp;name, const slashcommand_handler_t handler)</td></tr>
 <tr class="memdesc:a23b30a318b678865fe1e6e9ec778c711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a slash command handler.  <a href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">More...</a><br /></td></tr>
 <tr class="separator:a23b30a318b678865fe1e6e9ec778c711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e8d27147b827fed102981e8004e235"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac0e8d27147b827fed102981e8004e235">active_requests</a> ()</td></tr>
+<tr class="memdesc:ac0e8d27147b827fed102981e8004e235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of currently active HTTP(S) requests active in the cluster. This total includes all in-flight API requests and calls to <a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. Note that once a request is passed to the thread pool it is no longer counted here.  <a href="classdpp_1_1cluster.html#ac0e8d27147b827fed102981e8004e235">More...</a><br /></td></tr>
+<tr class="separator:ac0e8d27147b827fed102981e8004e235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66cb8a3a2bc9e62d155df088af29081"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:ab66cb8a3a2bc9e62d155df088af29081"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_same_v&lt; std::invoke_result_t&lt; F, const slashcommand_handler_t &amp; &gt;, <a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; void &gt; &gt;, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081">register_command</a> (const std::string &amp;name, F &amp;&amp;handler)</td></tr>
 <tr class="memdesc:ab66cb8a3a2bc9e62d155df088af29081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a coroutine-based slash command handler.  <a href="classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081">More...</a><br /></td></tr>
@@ -216,9 +228,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a548e19022b7d3ee825920888da07493b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a548e19022b7d3ee825920888da07493b">post_rest_multipart</a> (const std::string &amp;endpoint, const std::string &amp;major_parameters, const std::string &amp;parameters, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a> callback, const std::vector&lt; <a class="el" href="structdpp_1_1message__file__data.html">message_file_data</a> &gt; &amp;file_data={})</td></tr>
 <tr class="memdesc:a548e19022b7d3ee825920888da07493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a multipart REST request. Where possible use a helper method instead like message_create.  <a href="classdpp_1_1cluster.html#a548e19022b7d3ee825920888da07493b">More...</a><br /></td></tr>
 <tr class="separator:a548e19022b7d3ee825920888da07493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8e44c8d273e16c87b5f95c64495c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7a8e44c8d273e16c87b5f95c64495c09">request</a> (const std::string &amp;url, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, <a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a> callback, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={}, const std::string &amp;protocol=&quot;1.1&quot;, time_t <a class="el" href="classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8">request_timeout</a>=5)</td></tr>
-<tr class="memdesc:a7a8e44c8d273e16c87b5f95c64495c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.  <a href="classdpp_1_1cluster.html#a7a8e44c8d273e16c87b5f95c64495c09">More...</a><br /></td></tr>
-<tr class="separator:a7a8e44c8d273e16c87b5f95c64495c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ead3406c471a64fa1fa578cc51cf2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e">request</a> (const std::string &amp;url, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, <a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a> callback, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={}, const std::string &amp;protocol=&quot;1.1&quot;)</td></tr>
+<tr class="memdesc:aa4ead3406c471a64fa1fa578cc51cf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.  <a href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e">More...</a><br /></td></tr>
+<tr class="separator:aa4ead3406c471a64fa1fa578cc51cf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e03d7c6a19f6a652d3a80b1a8157ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a61e03d7c6a19f6a652d3a80b1a8157ca">interaction_response_create</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> interaction_id, const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, const <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a> &amp;r, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a61e03d7c6a19f6a652d3a80b1a8157ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a slash command.  <a href="classdpp_1_1cluster.html#a61e03d7c6a19f6a652d3a80b1a8157ca">More...</a><br /></td></tr>
 <tr class="separator:a61e03d7c6a19f6a652d3a80b1a8157ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1464,555 +1476,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebed6516449a186f68ed8ec188166023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aebed6516449a186f68ed8ec188166023">co_get_webhook_with_token</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> webhook_id, const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>)</td></tr>
 <tr class="memdesc:aebed6516449a186f68ed8ec188166023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get webhook using token.  <a href="classdpp_1_1cluster.html#aebed6516449a186f68ed8ec188166023">More...</a><br /></td></tr>
 <tr class="separator:aebed6516449a186f68ed8ec188166023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create/overwrite global slash commands. Any existing global slash commands will be deleted and replaced with these.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a global slash command (a bot can have a maximum of 100 of these).  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a global slash command.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a global slash command (a bot can have a maximum of 100 of these)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a global slash command (a bot can have a maximum of 100 of these)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application's global slash commands.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create/overwrite guild slash commands. Any existing guild slash commands on this guild will be deleted and replaced with these.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all slash command permissions of a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit/Overwrite the permissions of all existing slash commands in a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a slash command local to a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit slash command permissions of a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a slash command of a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the permissions for a slash command of a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a slash command local to a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application's slash commands for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a slash command.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit response to a slash command.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single auto moderation rule.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an auto moderation rule.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit an auto moderation rule.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an auto moderation rule.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a permission from a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a channel's permissions.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a channel's permissions.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit multiple channels positions.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follow an announcement (news) channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create invite for a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get invites for a channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger channel typing indicator.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger channel typing indicator.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all channels for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the status of a voice channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dm channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current user DM channels.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a direct message, also create the channel for the direct message if needed.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a recipient to a Group DM using their access token.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a recipient from a Group DM.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#afb0fd2592f901c60d505bc4ac5226e49" title="Load an image into the object.">emoji::load_image()</a> method.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a guild emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a single emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all emojis for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all Application Emojis.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an Application Emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Application Emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit an Application Emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an Application Emoji.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all entitlements for a given app, active and expired.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a test entitlement to a given SKU for a given guild or user. Discord will act as though that user or guild has entitlement to your premium offering.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a currently-active test entitlement. Discord will act as though that user or guild no longer has entitlement to your premium offering.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">For One-Time Purchase consumable SKUs, marks a given entitlement for the user as consumed.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gateway information for the bot using the token.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify current member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the audit log for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add guild ban.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete guild ban.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete guild integration.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit guild widget.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get single guild ban.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild ban list.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild integrations.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild vanity url, if enabled.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild widget.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify guild integration.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get prune counts.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin guild prune.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change current user nickname.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync guild integration.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the guild's onboarding configuration.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the guild's onboarding configuration.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the guild's welcome screen.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the properties of an existing guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild members.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add role to guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove (kick) a guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove (kick) a guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout of a guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove role from guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove role from guild member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the guild member to a other voice channel, if member is connected to one. Set the <code>channel_id</code> to <code>0</code> to disconnect the user.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for guild members based on whether their username or nickname starts with the given string.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild invites.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details about an invite.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a reaction to a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to a channel. The callback function is called when the message has been sent.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crosspost a message. The callback function is called when the message has been sent.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all reactions on a message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all reactions on a message by id.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bulk delete messages from a channel. The callback function is called when the message has been edited.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete own reaction from a message. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete own reaction from a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a user's reaction from a message. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a user's reaction from a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all reactions on a message using a particular emoji. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all reactions on a message using a particular emoji by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a message on a channel. The callback function is called when the message has been edited.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the flags of a message on a channel. The callback function is called when the message has been edited.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reactions on a message for a particular emoji. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reactions on a message for a particular emoji by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin a message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get multiple messages.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpin a message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of users that voted for this specific answer.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of users that voted for this specific answer.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately end a poll.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately end a poll.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a channel's pins.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a role on a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a role.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a role on a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit multiple role's position in a guild. Returns a list of all roles of the guild on success.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a role for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application's role connection metadata records.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the application's role connection metadata records.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get user application role connection.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update user application role connection.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all scheduled events for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a scheduled event on a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a scheduled event from a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit/modify a scheduled event on a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a scheduled event for a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all SKUs for a given application.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stage instance associated with the channel id, if it exists.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a stage instance.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sticker in a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a sticker from a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a guild sticker.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a sticker in a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild stickers.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a nitro sticker.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of available sticker packs.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new guild based on a template.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the template.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the template's metadata.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild templates.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs the template to the guild's current state.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a template.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a thread.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all active threads in the guild, including public and private threads. Threads are ordered by their id, in descending order.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get private archived threads in a channel which current user has joined (Sorted by ID in descending order)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get private archived threads in a channel (Sorted by archive_timestamp in descending order)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get public archived threads in a channel (Sorted by archive_timestamp in descending order)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread member.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get members of a thread.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread in a forum or media channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread with a message (Discord: ID of a thread is same as message ID)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a member from a thread.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread specified by thread_id. This uses the same call as <a class="el" href="classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5" title="Get a channel.">dpp::cluster::channel_get</a> but returns a thread object.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit current (bot) user.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current (bot) user.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bot's voice state on a stage channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bot's voice state in a guild without a Gateway connection.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a user's voice state on a stage channel.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a user's voice state in a guild without a Gateway connection.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current user's connections (linked accounts, e.g. steam, xbox). This call requires the oauth2 <code>connections</code> scope and cannot be executed against a bot token.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current (bot) user guilds.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a guild.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a user by id, without using the cache.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a user by id, checking in the cache first.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild voice regions.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a webhook.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete webhook message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete webhook with token.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit webhook.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit webhook message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit webhook with token (token is encapsulated in the webhook object)  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute webhook.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get channel webhooks.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild webhooks.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get webhook.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get webhook message.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a28f2a89adc3c5a559478c36d38533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">DPP_DEPRECATED</a>(reason)</td></tr>
-<tr class="memdesc:ab7a28f2a89adc3c5a559478c36d38533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get webhook using token.  <a href="classdpp_1_1cluster.html#ab7a28f2a89adc3c5a559478c36d38533">More...</a><br /></td></tr>
-<tr class="separator:ab7a28f2a89adc3c5a559478c36d38533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -2046,12 +1509,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae10466db79966215a799fc2a30010551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672">websocket_protocol_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551">ws_mode</a></td></tr>
 <tr class="memdesc:ae10466db79966215a799fc2a30010551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Websocket mode for all shards in the cluster, either ws_json or ws_etf. Production bots should use ETF, while development bots should use JSON.  <a href="classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551">More...</a><br /></td></tr>
 <tr class="separator:ae10466db79966215a799fc2a30010551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e11def2111a4fc38db65d4d0b104e6"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a43e11def2111a4fc38db65d4d0b104e6">terminating</a></td></tr>
-<tr class="memdesc:a43e11def2111a4fc38db65d4d0b104e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition variable notified when the cluster is terminating.  <a href="classdpp_1_1cluster.html#a43e11def2111a4fc38db65d4d0b104e6">More...</a><br /></td></tr>
-<tr class="separator:a43e11def2111a4fc38db65d4d0b104e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab5b992db2b53f80cc466deffec96b8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8">request_timeout</a> = 20</td></tr>
+<tr class="memitem:a4fda0276d58547fa9524ee482e0e5e73"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4fda0276d58547fa9524ee482e0e5e73">terminating</a> {false}</td></tr>
+<tr class="memdesc:a4fda0276d58547fa9524ee482e0e5e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomic bool to set to true when the cluster is terminating.  <a href="classdpp_1_1cluster.html#a4fda0276d58547fa9524ee482e0e5e73">More...</a><br /></td></tr>
+<tr class="separator:a4fda0276d58547fa9524ee482e0e5e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab5b992db2b53f80cc466deffec96b8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8">request_timeout</a> = 60</td></tr>
 <tr class="memdesc:a7ab5b992db2b53f80cc466deffec96b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time (in seconds) that a request is allowed to take.  <a href="classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8">More...</a><br /></td></tr>
 <tr class="separator:a7ab5b992db2b53f80cc466deffec96b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815a61354eae254bb52ad3493056f4f6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a815a61354eae254bb52ad3493056f4f6">socketengine</a></td></tr>
+<tr class="memdesc:a815a61354eae254bb52ad3493056f4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket engine instance.  <a href="classdpp_1_1cluster.html#a815a61354eae254bb52ad3493056f4f6">More...</a><br /></td></tr>
+<tr class="separator:a815a61354eae254bb52ad3493056f4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571d473f65f67265878fa4ba0e405f2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__state__update__t.html">voice_state_update_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a571d473f65f67265878fa4ba0e405f2f">on_voice_state_update</a></td></tr>
 <tr class="memdesc:a571d473f65f67265878fa4ba0e405f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice state update event  <a href="classdpp_1_1cluster.html#a571d473f65f67265878fa4ba0e405f2f">More...</a><br /></td></tr>
 <tr class="separator:a571d473f65f67265878fa4ba0e405f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2309,8 +1775,48 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The cluster class represents a group of shards and a command queue for sending and receiving commands from discord via HTTP. You should usually instantiate a cluster object at the very least to make use of the library. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a50b5bea83641d9542df5c0ec7fa5b43c" name="a50b5bea83641d9542df5c0ec7fa5b43c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50b5bea83641d9542df5c0ec7fa5b43c">&#9670;&nbsp;</a></span>cluster() <span class="overload">[1/3]</span></h2>
+<a id="a461cf26781bda18ec60b3b5026ea2598" name="a461cf26781bda18ec60b3b5026ea2598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461cf26781bda18ec60b3b5026ea2598">&#9670;&nbsp;</a></span>cluster() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::cluster::cluster </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pool_threads</em> = <code>std::thread::hardware_concurrency()/2</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for creating a cluster without a token. A cluster created without a token has no shards, and just runs the event loop. You can use this to make asynchronous HTTP requests via e.g. <a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request</a> without having to connect to a websocket to receive shard events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool_threads</td><td>The number of threads to allocate for the thread pool. This defaults to half your system concurrency and if set to a number less than 4, will default to 4. All callbacks and events are placed into the thread pool. The bigger you make this pool (but generally no bigger than your number of cores), the more your bot will scale. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>Thrown on windows, if WinSock fails to initialise, or on any other system if a <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">dpp::request_queue</a> fails to construct </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a22b49f725c6ae318e97cd4134be29f" name="a2a22b49f725c6ae318e97cd4134be29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a22b49f725c6ae318e97cd4134be29f">&#9670;&nbsp;</a></span>cluster() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2361,13 +1867,7 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>request_threads</em> = <code>12</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>request_threads_raw</em> = <code>1</code>&#160;</td>
+          <td class="paramname"><em>pool_threads</em> = <code>std::thread::hardware_concurrency()/2</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2387,8 +1887,7 @@ Friends</h2></td></tr>
     <tr><td class="paramname">maxclusters</td><td>The total number of clusters that are active, which may be on separate processes or even separate machines. </td></tr>
     <tr><td class="paramname">compressed</td><td>Whether or not to use compression for shards on this cluster. Saves a ton of bandwidth at the cost of some CPU </td></tr>
     <tr><td class="paramname">policy</td><td>Set the caching policy for the cluster, either lazy (only cache users/members when they message the bot) or aggressive (request whole member lists on seeing new guilds too) </td></tr>
-    <tr><td class="paramname">request_threads</td><td>The number of threads to allocate for making HTTP requests to Discord. This defaults to 12. You can increase this at runtime via the object returned from <a class="el" href="classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4" title="Get the rest_queue object which handles HTTPS requests to Discord.">get_rest()</a>. </td></tr>
-    <tr><td class="paramname">request_threads_raw</td><td>The number of threads to allocate for making HTTP requests to sites outside of Discord. This defaults to 1. You can increase this at runtime via the object returned from <a class="el" href="classdpp_1_1cluster.html#aaf4dd99670856e7efed749e53e96fa7c" title="Get the raw rest_queue object which handles all HTTP(S) requests that are not directed at Discord.">get_raw_rest()</a>. </td></tr>
+    <tr><td class="paramname">pool_threads</td><td>The number of threads to allocate for the thread pool. This defaults to half your system concurrency and if set to a number less than 4, will default to 4. All callbacks and events are placed into the thread pool. The bigger you make this pool (but generally no bigger than your number of cores), the more your bot will scale. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2402,7 +1901,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a6b0b523f89559b4ce204ca9ed9693d79" name="a6b0b523f89559b4ce204ca9ed9693d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b0b523f89559b4ce204ca9ed9693d79">&#9670;&nbsp;</a></span>cluster() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0b523f89559b4ce204ca9ed9693d79">&#9670;&nbsp;</a></span>cluster() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2430,7 +1929,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a2d957f52245734f6d44444af8380c952" name="a2d957f52245734f6d44444af8380c952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d957f52245734f6d44444af8380c952">&#9670;&nbsp;</a></span>cluster() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d957f52245734f6d44444af8380c952">&#9670;&nbsp;</a></span>cluster() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2485,6 +1984,26 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac0e8d27147b827fed102981e8004e235" name="ac0e8d27147b827fed102981e8004e235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e8d27147b827fed102981e8004e235">&#9670;&nbsp;</a></span>active_requests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t dpp::cluster::active_requests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of currently active HTTP(S) requests active in the cluster. This total includes all in-flight API requests and calls to <a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. Note that once a request is passed to the thread pool it is no longer counted here. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total active request count </dd></dl>
+
+</div>
+</div>
 <a id="ac7da91963240dc59068dfd38eb8d37ac" name="ac7da91963240dc59068dfd38eb8d37ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7da91963240dc59068dfd38eb8d37ac">&#9670;&nbsp;</a></span>application_emoji_create()</h2>
 
@@ -4270,8 +3789,8 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to set permissions for </td></tr>
     <tr><td class="paramname">overwrite_id</td><td>Overwrite to change (a user or role ID) </td></tr>
-    <tr><td class="paramname">allow</td><td>allow permissions bitmask </td></tr>
-    <tr><td class="paramname">deny</td><td>deny permissions bitmask </td></tr>
+    <tr><td class="paramname">allow</td><td>Bitmask of allowed permissions (refer to enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>) </td></tr>
+    <tr><td class="paramname">deny</td><td>Bitmask of denied permissions (refer to enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>) </td></tr>
     <tr><td class="paramname">member</td><td>true if the overwrite_id is a user id, false if it is a channel id </td></tr>
   </table>
   </dd>
@@ -4333,8 +3852,8 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>ID of the channel to set permissions for </td></tr>
     <tr><td class="paramname">overwrite_id</td><td>Overwrite to change (a user or role ID) </td></tr>
-    <tr><td class="paramname">allow</td><td>allow permissions bitmask </td></tr>
-    <tr><td class="paramname">deny</td><td>deny permissions bitmask </td></tr>
+    <tr><td class="paramname">allow</td><td>Bitmask of allowed permissions (refer to enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>) </td></tr>
+    <tr><td class="paramname">deny</td><td>Bitmask of denied permissions (refer to enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>) </td></tr>
     <tr><td class="paramname">member</td><td>true if the overwrite_id is a user id, false if it is a channel id </td></tr>
   </table>
   </dd>
@@ -18871,6 +18390,44 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 </div>
 </div>
+<a id="a6ff8d56c0e11de2a4ae7c1027df596c6" name="a6ff8d56c0e11de2a4ae7c1027df596c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff8d56c0e11de2a4ae7c1027df596c6">&#9670;&nbsp;</a></span>queue_work()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::queue_work </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">work_unit</a>&#160;</td>
+          <td class="paramname"><em>task</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place some arbitrary work into the thread pool for execution when time permits. </p>
+<p >Work units are fetched into threads on the thread pool from the queue in order of priority, lowest numeric values first. Low numeric values should be reserved for API replies from Discord, guild creation events, etc.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">priority</td><td>Priority of the work unit </td></tr>
+    <tr><td class="paramname">task</td><td>Task to queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a23b30a318b678865fe1e6e9ec778c711" name="a23b30a318b678865fe1e6e9ec778c711"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23b30a318b678865fe1e6e9ec778c711">&#9670;&nbsp;</a></span>register_command() <span class="overload">[1/2]</span></h2>
 
@@ -18957,8 +18514,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a7a8e44c8d273e16c87b5f95c64495c09" name="a7a8e44c8d273e16c87b5f95c64495c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8e44c8d273e16c87b5f95c64495c09">&#9670;&nbsp;</a></span>request()</h2>
+<a id="aa4ead3406c471a64fa1fa578cc51cf2e" name="aa4ead3406c471a64fa1fa578cc51cf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ead3406c471a64fa1fa578cc51cf2e">&#9670;&nbsp;</a></span>request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -19003,13 +18560,7 @@ template&lt;typename F &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>protocol</em> = <code>&quot;1.1&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>request_timeout</em> = <code>5</code>&#160;</td>
+          <td class="paramname"><em>protocol</em> = <code>&quot;1.1&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -19029,7 +18580,6 @@ template&lt;typename F &gt; </div>
     <tr><td class="paramname">mimetype</td><td>MIME type of POST data </td></tr>
     <tr><td class="paramname">headers</td><td>Headers to send with the request </td></tr>
     <tr><td class="paramname">protocol</td><td>HTTP protocol to use (1.1 and 1.0 are supported) </td></tr>
-    <tr><td class="paramname">request_timeout</td><td>How many seconds before the connection is considered failed if not finished </td></tr>
   </table>
   </dd>
 </dl>
@@ -19404,7 +18954,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
+<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>websocket protocol to use, either ws_json or ws_etf. </td></tr>
@@ -19436,7 +18986,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>End cluster execution without destructing it. To restart the cluster, call <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> again. </p>
+<p>End cluster execution without destructing it. To restart the cluster, call <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">cluster::start()</a> again. </p>
 
 </div>
 </div>
@@ -19623,8 +19173,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a40e99d13e1380eccd30d13123014594f" name="a40e99d13e1380eccd30d13123014594f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e99d13e1380eccd30d13123014594f">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a51ef65c943c76edd7abd7c8e21e34416" name="a51ef65c943c76edd7abd7c8e21e34416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ef65c943c76edd7abd7c8e21e34416">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -19632,8 +19182,8 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">void dpp::cluster::start </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>return_after</em> = <code>true</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">start_type</a>&#160;</td>
+          <td class="paramname"><em>return_after</em> = <code><a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">st_wait</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -20444,6 +19994,25 @@ template&lt;typename F &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5c4de3765be2073c0c39cc1c16481f83" name="a5c4de3765be2073c0c39cc1c16481f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4de3765be2073c0c39cc1c16481f83">&#9670;&nbsp;</a></span>tick_timers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::tick_timers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tick active timers. </p>
 
 </div>
 </div>
@@ -22435,7 +22004,7 @@ Use operator() to attach a lambda to this event, and the detach method to detach
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t dpp::cluster::request_timeout = 20</td>
+          <td class="memname">uint16_t dpp::cluster::request_timeout = 60</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -22460,19 +22029,36 @@ Use operator() to attach a lambda to this event, and the detach method to detach
 
 </div>
 </div>
-<a id="a43e11def2111a4fc38db65d4d0b104e6" name="a43e11def2111a4fc38db65d4d0b104e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43e11def2111a4fc38db65d4d0b104e6">&#9670;&nbsp;</a></span>terminating</h2>
+<a id="a815a61354eae254bb52ad3493056f4f6" name="a815a61354eae254bb52ad3493056f4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815a61354eae254bb52ad3493056f4f6">&#9670;&nbsp;</a></span>socketengine</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::condition_variable dpp::cluster::terminating</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a>&gt; dpp::cluster::socketengine</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Condition variable notified when the cluster is terminating. </p>
+<p>Socket engine instance. </p>
+
+</div>
+</div>
+<a id="a4fda0276d58547fa9524ee482e0e5e73" name="a4fda0276d58547fa9524ee482e0e5e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fda0276d58547fa9524ee482e0e5e73">&#9670;&nbsp;</a></span>terminating</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_bool dpp::cluster::terminating {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomic bool to set to true when the cluster is terminating. </p>
+<p >D++ itself does not set this value, it is for library users to set if they want the cluster to terminate outside of a flow where they may have simple access to destruct the cluster object. </p>
 
 </div>
 </div>

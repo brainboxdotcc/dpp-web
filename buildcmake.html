@@ -102,18 +102,18 @@ $(document).ready(function(){initNavTree('buildcmake.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section warning"><dt>Warning</dt><dd><b>This tutorial will assume that you have already installed DPP.</b> If you haven't, please head over to <a class="el" href="install-linux-deb.html">this page</a>, or any install page that matches your OS. If you want to use source, then continue your journey over at <a class="el" href="buildlinux.html">this page</a> for a full explanation into using CMake with source.</dd></dl>
-<h2><a class="anchor" id="autotoc_md169"></a>
+<h2><a class="anchor" id="autotoc_md170"></a>
 1. Toolchain</h2>
 <p >Before continuing, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command:</p>
 <div class="fragment"><div class="line">$ cmake --version</div>
 <div class="line">cmake version 3.22.1</div>
 </div><!-- fragment --><p >If your CMake version is not as shown above then don't worry! You can still follow along, even if you're ahead or behind!</p>
-<h2><a class="anchor" id="autotoc_md170"></a>
+<h2><a class="anchor" id="autotoc_md171"></a>
 2. Create a CMake project</h2>
 <p >In an empty directory, create the following files and directories:</p>
 <div class="dotgraph">
 <iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_4.svg" width="839" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<h2><a class="anchor" id="autotoc_md171"></a>
+<h2><a class="anchor" id="autotoc_md172"></a>
 3. Configure CMake</h2>
 <p >You'll need to modify the <code>CMakeLists.txt</code> to tell CMake what it's looking for, and other information.</p>
 <p >Here is an example CMake configuration, you can adapt it according to your needs:</p>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('buildcmake.html',''); initResizable();
 <div class="line">include(FindPackageHandleStandardArgs)</div>
 <div class="line"> </div>
 <div class="line">find_package_handle_standard_args(DPP DEFAULT_MSG DPP_LIBRARIES DPP_INCLUDE_DIR)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md172"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md173"></a>
 4. Build the bot.</h2>
 <p >Now that we have our all our cmake stuff setup and we've got our code in place, we can initalise CMake. You'll want to go inside the <code>build/</code> directory and do <code>cmake ..</code>.</p>
 <p >Once that's completed, you'll want to head back to your up-most folder (where all the folders are for your bot) and run <code>cmake --build build/ -j4</code> (replace -j4 with however many threads you want to use). This will start compiling your bot and creating the executable.</p>

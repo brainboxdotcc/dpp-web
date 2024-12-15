@@ -240,7 +240,6 @@ var annotated_dup =
       [ "http_request", "classdpp_1_1http__request.html", "classdpp_1_1http__request" ],
       [ "http_request_completion_t", "structdpp_1_1http__request__completion__t.html", "structdpp_1_1http__request__completion__t" ],
       [ "https_client", "classdpp_1_1https__client.html", "classdpp_1_1https__client" ],
-      [ "in_thread", "classdpp_1_1in__thread.html", "classdpp_1_1in__thread" ],
       [ "integration", "classdpp_1_1integration.html", "classdpp_1_1integration" ],
       [ "integration_account", "structdpp_1_1integration__account.html", "structdpp_1_1integration__account" ],
       [ "integration_app", "structdpp_1_1integration__app.html", "structdpp_1_1integration__app" ],
@@ -302,6 +301,7 @@ var annotated_dup =
       [ "reaction", "structdpp_1_1reaction.html", "structdpp_1_1reaction" ],
       [ "reaction_collector", "classdpp_1_1reaction__collector.html", "classdpp_1_1reaction__collector" ],
       [ "ready_t", "structdpp_1_1ready__t.html", "structdpp_1_1ready__t" ],
+      [ "request_concurrency_queue", "classdpp_1_1request__concurrency__queue.html", "classdpp_1_1request__concurrency__queue" ],
       [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
       [ "resolved_user", "structdpp_1_1resolved__user.html", "structdpp_1_1resolved__user" ],
       [ "rest_exception", "classdpp_1_1rest__exception.html", "classdpp_1_1rest__exception" ],
@@ -316,6 +316,8 @@ var annotated_dup =
       [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
       [ "slashcommand_t", "structdpp_1_1slashcommand__t.html", "structdpp_1_1slashcommand__t" ],
       [ "snowflake", "classdpp_1_1snowflake.html", "classdpp_1_1snowflake" ],
+      [ "socket_engine_base", "structdpp_1_1socket__engine__base.html", "structdpp_1_1socket__engine__base" ],
+      [ "socket_events", "structdpp_1_1socket__events.html", "structdpp_1_1socket__events" ],
       [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
       [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
       [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
@@ -336,8 +338,12 @@ var annotated_dup =
       [ "thread_member_update_t", "structdpp_1_1thread__member__update__t.html", "structdpp_1_1thread__member__update__t" ],
       [ "thread_members_update_t", "structdpp_1_1thread__members__update__t.html", "structdpp_1_1thread__members__update__t" ],
       [ "thread_metadata", "structdpp_1_1thread__metadata.html", "structdpp_1_1thread__metadata" ],
+      [ "thread_pool", "structdpp_1_1thread__pool.html", "structdpp_1_1thread__pool" ],
+      [ "thread_pool_task", "structdpp_1_1thread__pool__task.html", "structdpp_1_1thread__pool__task" ],
+      [ "thread_pool_task_comparator", "structdpp_1_1thread__pool__task__comparator.html", "structdpp_1_1thread__pool__task__comparator" ],
       [ "thread_update_t", "structdpp_1_1thread__update__t.html", "structdpp_1_1thread__update__t" ],
       [ "timed_listener", "classdpp_1_1timed__listener.html", "classdpp_1_1timed__listener" ],
+      [ "timer_comparator", "structdpp_1_1timer__comparator.html", "structdpp_1_1timer__comparator" ],
       [ "timer_t", "structdpp_1_1timer__t.html", "structdpp_1_1timer__t" ],
       [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],
       [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
@@ -363,7 +369,8 @@ var annotated_dup =
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
       [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ],
-      [ "when_any", "classdpp_1_1when__any.html", "classdpp_1_1when__any" ]
+      [ "when_any", "classdpp_1_1when__any.html", "classdpp_1_1when__any" ],
+      [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
     ] ],
     [ "std", null, [
       [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]
