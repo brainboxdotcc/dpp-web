@@ -15,6 +15,6 @@ var structdpp_1_1webhooks__update__t =
     [ "owner", "structdpp_1_1webhooks__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1webhooks__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1webhooks__update__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ],
-    [ "webhook_channel", "structdpp_1_1webhooks__update__t.html#a39a25531b301ffc214ddd17a7b3475f3", null ],
-    [ "webhook_guild", "structdpp_1_1webhooks__update__t.html#ab4ff84fc65e90fe97fa0526d0976f7ae", null ]
+    [ "webhook_channel", "structdpp_1_1webhooks__update__t.html#a3fcae06691aee929fa0715b5338a5cac", null ],
+    [ "webhook_guild", "structdpp_1_1webhooks__update__t.html#a48a919f76fbc32a24d02b468f2ab3bdd", null ]
 ];

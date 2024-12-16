@@ -12,8 +12,8 @@ var structdpp_1_1guild__role__create__t =
     [ "operator=", "structdpp_1_1guild__role__create__t.html#a2500c6d9987fbfc509fd0a960b1968e9", null ],
     [ "operator=", "structdpp_1_1guild__role__create__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
     [ "cancelled", "structdpp_1_1guild__role__create__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
-    [ "created", "structdpp_1_1guild__role__create__t.html#a2f07681bfc59700b451764013a9d4e13", null ],
-    [ "creating_guild", "structdpp_1_1guild__role__create__t.html#abf1677c16593fd8c6c8f9914d8c2292d", null ],
+    [ "created", "structdpp_1_1guild__role__create__t.html#a5d5f752405418e16b99260a7658d2a26", null ],
+    [ "creating_guild", "structdpp_1_1guild__role__create__t.html#a22744230f6e1257a62d25bd733eb07e0", null ],
     [ "owner", "structdpp_1_1guild__role__create__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1guild__role__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1guild__role__create__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]

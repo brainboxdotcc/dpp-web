@@ -13,9 +13,9 @@ var structdpp_1_1message__delete__bulk__t =
     [ "operator=", "structdpp_1_1message__delete__bulk__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
     [ "cancelled", "structdpp_1_1message__delete__bulk__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
     [ "deleted", "structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235", null ],
-    [ "deleting_channel", "structdpp_1_1message__delete__bulk__t.html#a26ba3d82ef9ea2a0b5f4cc6c7332f0df", null ],
-    [ "deleting_guild", "structdpp_1_1message__delete__bulk__t.html#a64b47d0bdbbfbd08f2dfd4f61944efda", null ],
-    [ "deleting_user", "structdpp_1_1message__delete__bulk__t.html#aa8fb42cb1b7f751bcbad1964d48cb759", null ],
+    [ "deleting_channel", "structdpp_1_1message__delete__bulk__t.html#ab519c2e92084a4b1cf75b0fdcaf24b9b", null ],
+    [ "deleting_guild", "structdpp_1_1message__delete__bulk__t.html#a3a8d8070c91b026b3ef191ffb9a9b1f8", null ],
+    [ "deleting_user", "structdpp_1_1message__delete__bulk__t.html#a275da8609977e5efb045246601ec76d5", null ],
     [ "owner", "structdpp_1_1message__delete__bulk__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1message__delete__bulk__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1message__delete__bulk__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]

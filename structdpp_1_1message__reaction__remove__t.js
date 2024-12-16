@@ -16,9 +16,9 @@ var structdpp_1_1message__reaction__remove__t =
     [ "message_id", "structdpp_1_1message__reaction__remove__t.html#a104a115bf299a21affd104f5e74a7087", null ],
     [ "owner", "structdpp_1_1message__reaction__remove__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1message__reaction__remove__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
-    [ "reacting_channel", "structdpp_1_1message__reaction__remove__t.html#ab10be361baa593c9715b72b61f701e12", null ],
+    [ "reacting_channel", "structdpp_1_1message__reaction__remove__t.html#ac74e6372b5602baac31430e707f31ed3", null ],
     [ "reacting_emoji", "structdpp_1_1message__reaction__remove__t.html#a318122b733ddbf503fa1f984782f6503", null ],
-    [ "reacting_guild", "structdpp_1_1message__reaction__remove__t.html#aa392a2a0af9eecace90f8afdae0e3ed2", null ],
+    [ "reacting_guild", "structdpp_1_1message__reaction__remove__t.html#a879ea982ca20a651c83ee2315bdcb657", null ],
     [ "reacting_user_id", "structdpp_1_1message__reaction__remove__t.html#aa4086eee72124257c292aa11db1a7433", null ],
     [ "shard", "structdpp_1_1message__reaction__remove__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]
 ];

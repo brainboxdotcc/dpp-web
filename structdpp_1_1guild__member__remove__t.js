@@ -16,6 +16,6 @@ var structdpp_1_1guild__member__remove__t =
     [ "owner", "structdpp_1_1guild__member__remove__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1guild__member__remove__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "removed", "structdpp_1_1guild__member__remove__t.html#acd44cd60efc3b79409e850b0dee5b8de", null ],
-    [ "removing_guild", "structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e", null ],
+    [ "removing_guild", "structdpp_1_1guild__member__remove__t.html#ae3dbbed0ac60ffb05dd42f8fa799b5d5", null ],
     [ "shard", "structdpp_1_1guild__member__remove__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]
 ];

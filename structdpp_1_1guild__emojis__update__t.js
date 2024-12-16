@@ -16,5 +16,5 @@ var structdpp_1_1guild__emojis__update__t =
     [ "owner", "structdpp_1_1guild__emojis__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1guild__emojis__update__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ],
-    [ "updating_guild", "structdpp_1_1guild__emojis__update__t.html#a8d93eb74c1a847a94c7ac7dabaadbf3a", null ]
+    [ "updating_guild", "structdpp_1_1guild__emojis__update__t.html#ad60e4549cb06821abf618f1b52e25694", null ]
 ];

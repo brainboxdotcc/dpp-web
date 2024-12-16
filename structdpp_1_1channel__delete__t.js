@@ -13,7 +13,7 @@ var structdpp_1_1channel__delete__t =
     [ "operator=", "structdpp_1_1channel__delete__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
     [ "cancelled", "structdpp_1_1channel__delete__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
     [ "deleted", "structdpp_1_1channel__delete__t.html#a44952507b8ee31184e45539db8557f65", null ],
-    [ "deleting_guild", "structdpp_1_1channel__delete__t.html#a62fed6cec71e22af4ea44826511a8b25", null ],
+    [ "deleting_guild", "structdpp_1_1channel__delete__t.html#a7fcc8e2c711b88f2056142388e559632", null ],
     [ "owner", "structdpp_1_1channel__delete__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1channel__delete__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1channel__delete__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]

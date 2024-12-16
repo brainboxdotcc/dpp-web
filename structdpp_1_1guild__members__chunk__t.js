@@ -11,9 +11,9 @@ var structdpp_1_1guild__members__chunk__t =
     [ "is_cancelled", "structdpp_1_1guild__members__chunk__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "operator=", "structdpp_1_1guild__members__chunk__t.html#a2500c6d9987fbfc509fd0a960b1968e9", null ],
     [ "operator=", "structdpp_1_1guild__members__chunk__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
-    [ "adding", "structdpp_1_1guild__members__chunk__t.html#acb353498295673f3ecd5983c19558a17", null ],
+    [ "adding", "structdpp_1_1guild__members__chunk__t.html#abf688e21f11a82cf9739496364d063fc", null ],
     [ "cancelled", "structdpp_1_1guild__members__chunk__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
-    [ "members", "structdpp_1_1guild__members__chunk__t.html#a6ede9c42c304da55461d6a7cbde4b0be", null ],
+    [ "members", "structdpp_1_1guild__members__chunk__t.html#ab73d11913ee4b4f6c3ce8b67de1b4b58", null ],
     [ "owner", "structdpp_1_1guild__members__chunk__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1guild__members__chunk__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1guild__members__chunk__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]

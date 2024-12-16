@@ -12,8 +12,8 @@ var structdpp_1_1channel__create__t =
     [ "operator=", "structdpp_1_1channel__create__t.html#a2500c6d9987fbfc509fd0a960b1968e9", null ],
     [ "operator=", "structdpp_1_1channel__create__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
     [ "cancelled", "structdpp_1_1channel__create__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
-    [ "created", "structdpp_1_1channel__create__t.html#ac53d6d52204a29c6884f4f18492d5c47", null ],
-    [ "creating_guild", "structdpp_1_1channel__create__t.html#a8c8f9f215eed9b1e99adc12eafdee945", null ],
+    [ "created", "structdpp_1_1channel__create__t.html#ada24874be42ca5381297cd6af719d7fb", null ],
+    [ "creating_guild", "structdpp_1_1channel__create__t.html#aed96ad0e249d49c8363032de1408800d", null ],
     [ "owner", "structdpp_1_1channel__create__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1channel__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1channel__create__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]

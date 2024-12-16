@@ -15,5 +15,5 @@ var structdpp_1_1guild__update__t =
     [ "owner", "structdpp_1_1guild__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1guild__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1guild__update__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ],
-    [ "updated", "structdpp_1_1guild__update__t.html#a713b4bd961d45764e5903f85fb8ef9a2", null ]
+    [ "updated", "structdpp_1_1guild__update__t.html#a6d3f3c8960fe71f7ccfb396bcd9cd2b1", null ]
 ];

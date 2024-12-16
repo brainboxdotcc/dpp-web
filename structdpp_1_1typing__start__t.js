@@ -16,8 +16,8 @@ var structdpp_1_1typing__start__t =
     [ "raw_event", "structdpp_1_1typing__start__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "shard", "structdpp_1_1typing__start__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ],
     [ "timestamp", "structdpp_1_1typing__start__t.html#a9bd3028990dec19b65e046d918074676", null ],
-    [ "typing_channel", "structdpp_1_1typing__start__t.html#a0803971e8cf5e1d411ebbc521c68d046", null ],
-    [ "typing_guild", "structdpp_1_1typing__start__t.html#a1af4c9392721323617f909e2d74d85cb", null ],
-    [ "typing_user", "structdpp_1_1typing__start__t.html#a9faffa3da5cb3907651ad92613a11a35", null ],
+    [ "typing_channel", "structdpp_1_1typing__start__t.html#a5c498655fb13252dd4967a60ebe60710", null ],
+    [ "typing_guild", "structdpp_1_1typing__start__t.html#aa872b61ee20b07b0fe52e949f419a08b", null ],
+    [ "typing_user", "structdpp_1_1typing__start__t.html#a8ddb3a840b25de2534188ecaaffdcba2", null ],
     [ "user_id", "structdpp_1_1typing__start__t.html#a52e77e181dbd3974eb082a7197c895ad", null ]
 ];

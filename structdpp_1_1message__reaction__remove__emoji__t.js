@@ -16,8 +16,8 @@ var structdpp_1_1message__reaction__remove__emoji__t =
     [ "message_id", "structdpp_1_1message__reaction__remove__emoji__t.html#a8f56826905f65cb4cc5e054f18482c3b", null ],
     [ "owner", "structdpp_1_1message__reaction__remove__emoji__t.html#a8a87dcb222d9e2444a50b4df5caa28d4", null ],
     [ "raw_event", "structdpp_1_1message__reaction__remove__emoji__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
-    [ "reacting_channel", "structdpp_1_1message__reaction__remove__emoji__t.html#aeecf3d9382565bc7f025062df0fa54a2", null ],
+    [ "reacting_channel", "structdpp_1_1message__reaction__remove__emoji__t.html#a7c061cb40b7f05bab6a03d7108782d25", null ],
     [ "reacting_emoji", "structdpp_1_1message__reaction__remove__emoji__t.html#a7a6b417e811e1ed7824b559898a47585", null ],
-    [ "reacting_guild", "structdpp_1_1message__reaction__remove__emoji__t.html#a388843e9c44d64872839a99b163bd614", null ],
+    [ "reacting_guild", "structdpp_1_1message__reaction__remove__emoji__t.html#a716808ed5c3c53ac7ac5575ccb110598", null ],
     [ "shard", "structdpp_1_1message__reaction__remove__emoji__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f", null ]
 ];
