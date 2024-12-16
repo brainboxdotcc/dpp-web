@@ -425,6 +425,7 @@ var classdpp_1_1cluster =
     [ "stage_instance_edit", "classdpp_1_1cluster.html#a720ea171f6c432a2ba0cc897fcc61475", null ],
     [ "stage_instance_get", "classdpp_1_1cluster.html#a1edd6ac5d8553b4823465bebadfaa9af", null ],
     [ "start", "classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416", null ],
+    [ "start_timer", "classdpp_1_1cluster.html#a83a692bd74ddb15e61b2fabfc4d5d32d", null ],
     [ "start_timer", "classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5", null ],
     [ "sticker_packs_get", "classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18", null ],
     [ "stop_timer", "classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"context-menu.html":[5,1,6],
+"coro-introduction.html":[5,3,0],
 "coro-simple-commands.html":[5,3,1],
 "cpp-eval-command-discord.html":[5,4,6],
 "creating-a-bot-application.html":[4,0],
@@ -25,8 +27,8 @@ var NAVTREEINDEX21 =
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,5],
-"functions_func.html":[11,3,1],
 "functions_func.html":[11,3,1,0],
+"functions_func.html":[11,3,1],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -97,8 +99,8 @@ var NAVTREEINDEX21 =
 "glossary-of-common-discord-terms.html":[2],
 "governance.html":[6,7],
 "hierarchy.html":[11,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md151":[0,0],
 "index.html#autotoc_md152":[0,1],
 "index.html#autotoc_md153":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0669793c484cf708f689aa9fcc94f7b3":[9,0,0,341,29],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[9,0,0,341,52],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da094813c7b248e43b3cdac6efe5d2da19":[9,0,0,341,37],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e":[9,0,0,341,22],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0c82a5ff83035e5fb41f03c3bc9d31e1":[9,0,0,341,20],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0cbd9fbee92211f6766fbbccc9e6ebd2":[9,0,0,341,7]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e":[9,0,0,341,22]
 };

@@ -152,7 +152,7 @@ var searchData=
   ['stage_5finstance_5fget_149',['stage_instance_get',['../classdpp_1_1cluster.html#a1edd6ac5d8553b4823465bebadfaa9af',1,'dpp::cluster']]],
   ['start_150',['start',['../classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416',1,'dpp::cluster']]],
   ['start_5fconnecting_151',['start_connecting',['../classdpp_1_1discord__client.html#a7eadcab0e2fdc157e32c1645fa6e6d3c',1,'dpp::discord_client']]],
-  ['start_5ftimer_152',['start_timer',['../classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5',1,'dpp::cluster']]],
+  ['start_5ftimer_152',['start_timer',['../classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5',1,'dpp::cluster::start_timer(timer_callback_t on_tick, uint64_t frequency, timer_callback_t on_stop={})'],['../classdpp_1_1cluster.html#a83a692bd74ddb15e61b2fabfc4d5d32d',1,'dpp::cluster::start_timer(T &amp;&amp;on_tick, uint64_t frequency, U &amp;&amp;on_stop={})']]],
   ['status_153',['status',['../classdpp_1_1presence.html#a3b1a81ea3d14f7507923ba37fa8e4961',1,'dpp::presence']]],
   ['sticker_154',['sticker',['../structdpp_1_1sticker.html#a0d0f399bc06d635cab0fc0cab9603b6f',1,'dpp::sticker']]],
   ['sticker_5fpacks_5fget_155',['sticker_packs_get',['../classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18',1,'dpp::cluster']]],

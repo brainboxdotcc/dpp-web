@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"structdpp_1_1welcome__screen.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,262,3],
+"structdpp_1_1welcome__screen.html#a9e5060318661179f38fccbd3b5e4b37f":[9,0,0,262,7],
 "structdpp_1_1welcome__screen.html#a9e5060318661179f38fccbd3b5e4b37f":[11,0,0,257,7],
 "structdpp_1_1welcome__screen.html#aa1389a45fb5894bcdfa79d9976ab5ee2":[11,0,0,257,0],
 "structdpp_1_1welcome__screen.html#aa1389a45fb5894bcdfa79d9976ab5ee2":[9,0,0,262,0],
