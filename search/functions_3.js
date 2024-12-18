@@ -20,10 +20,11 @@ var searchData=
   ['discord_5fclient_17',['discord_client',['../classdpp_1_1discord__client.html#a3351021cf4eb96a90a7f0da8e1125af5',1,'dpp::discord_client::discord_client(discord_client &amp;old, uint64_t sequence, const std::string &amp;session_id)'],['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client::discord_client(dpp::cluster *_cluster, uint32_t _shard_id, uint32_t _max_shards, const std::string &amp;_token, uint32_t intents=0, bool compressed=true, websocket_protocol_t ws_protocol=ws_json)']]],
   ['discord_5fvoice_5fclient_18',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a631da143d224aed3051ccc649fd248c0',1,'dpp::discord_voice_client']]],
   ['discover_5fip_19',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
-  ['done_20',['done',['../classdpp_1_1task.html#ac030b9e766ceb3b427e88e926b92b81b',1,'dpp::task']]],
-  ['double_5fnot_5fnull_21',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
-  ['download_22',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
-  ['dpp_5fcheck_5fabi_5fcompat_23',['DPP_CHECK_ABI_COMPAT',['../namespacedpp.html#a617b87100a40cead8c87add5e6adf4de',1,'dpp::DPP_CHECK_ABI_COMPAT(async&lt;&gt;, async_dummy)'],['../namespacedpp.html#a702b8ec12c8abc77c264d5a6876ac62c',1,'dpp::DPP_CHECK_ABI_COMPAT(coroutine&lt; void &gt;, coroutine_dummy) DPP_CHECK_ABI_COMPAT(coroutine&lt; uint64_t &gt;'],['../namespacedpp.html#a4788a37ace2799b30444c02f55110b78',1,'dpp::DPP_CHECK_ABI_COMPAT(task&lt; void &gt;, task_dummy) DPP_CHECK_ABI_COMPAT(task&lt; uint64_t &gt;']]],
-  ['dpp_5fdeprecated_24',['DPP_DEPRECATED',['../structdpp_1_1error__detail.html#a9fcd5855a0091b4a5b5e0b511e7182f5',1,'dpp::error_detail::DPP_DEPRECATED()'],['../namespacedpp.html#a4643f72c0feee6f4f8dbda0869786418',1,'dpp::DPP_DEPRECATED()']]],
-  ['dtemplate_25',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
+  ['do_5fraw_5ftrace_20',['do_raw_trace',['../classdpp_1_1ssl__client.html#a96739f7abe24b9d7b17f67dc32a91399',1,'dpp::ssl_client']]],
+  ['done_21',['done',['../classdpp_1_1task.html#ac030b9e766ceb3b427e88e926b92b81b',1,'dpp::task']]],
+  ['double_5fnot_5fnull_22',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
+  ['download_23',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
+  ['dpp_5fcheck_5fabi_5fcompat_24',['DPP_CHECK_ABI_COMPAT',['../namespacedpp.html#a617b87100a40cead8c87add5e6adf4de',1,'dpp::DPP_CHECK_ABI_COMPAT(async&lt;&gt;, async_dummy)'],['../namespacedpp.html#a702b8ec12c8abc77c264d5a6876ac62c',1,'dpp::DPP_CHECK_ABI_COMPAT(coroutine&lt; void &gt;, coroutine_dummy) DPP_CHECK_ABI_COMPAT(coroutine&lt; uint64_t &gt;'],['../namespacedpp.html#a4788a37ace2799b30444c02f55110b78',1,'dpp::DPP_CHECK_ABI_COMPAT(task&lt; void &gt;, task_dummy) DPP_CHECK_ABI_COMPAT(task&lt; uint64_t &gt;']]],
+  ['dpp_5fdeprecated_25',['DPP_DEPRECATED',['../structdpp_1_1error__detail.html#a9fcd5855a0091b4a5b5e0b511e7182f5',1,'dpp::error_detail::DPP_DEPRECATED()'],['../namespacedpp.html#a4643f72c0feee6f4f8dbda0869786418',1,'dpp::DPP_DEPRECATED()']]],
+  ['dtemplate_26',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
 ];

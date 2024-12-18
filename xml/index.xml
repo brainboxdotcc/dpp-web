@@ -1758,6 +1758,7 @@
     <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" kind="variable"><name>tcp_connect_done</name></member>
     <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" kind="variable"><name>timer_handle</name></member>
     <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" kind="variable"><name>unique_id</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" kind="variable"><name>raw_trace</name></member>
     <member refid="classdpp_1_1discord__client_1aab3808d0e5f68c28d305efa8d1cde6af" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a72a08a27b0d61b82e88ceb92b557cb8e" kind="variable"><name>zlib_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a0c7eeee6642b74777eb48b90b5d5c3b4" kind="variable"><name>message_queue</name></member>
@@ -1791,6 +1792,7 @@
     <member refid="classdpp_1_1discord__client_1a7eadcab0e2fdc157e32c1645fa6e6d3c" kind="function"><name>start_connecting</name></member>
     <member refid="classdpp_1_1websocket__client_1abce54f634a3b43f4b9b5bac5d1e99702" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" kind="function"><name>get_state</name></member>
+    <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" kind="function"><name>do_raw_trace</name></member>
     <member refid="classdpp_1_1discord__client_1a43d77bd4e49d0d55120ac109de69d523" kind="function"><name>jsonobj_to_string</name></member>
     <member refid="classdpp_1_1discord__client_1a5b19bc3ad4248b19b08ebc65eea9947b" kind="function"><name>set_resume_hostname</name></member>
     <member refid="classdpp_1_1discord__client_1a89e7fc69efa6e8e35123c31e13a5e479" kind="function"><name>cleanup</name></member>
@@ -1820,6 +1822,7 @@
     <member refid="classdpp_1_1websocket__client_1ae4b1e98d3e535a13fd912cdb00fc4c05" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1ab872768661dc89d54f0381b0fff5b674" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
+    <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" kind="function"><name>enable_raw_tracing</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" kind="function"><name>get_unique_id</name></member>
@@ -1954,6 +1957,7 @@
     <member refid="classdpp_1_1websocket__client_1ae4b1e98d3e535a13fd912cdb00fc4c05" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1ab872768661dc89d54f0381b0fff5b674" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
+    <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" kind="function"><name>enable_raw_tracing</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" kind="function"><name>get_unique_id</name></member>
@@ -1982,8 +1986,10 @@
     <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" kind="variable"><name>tcp_connect_done</name></member>
     <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" kind="variable"><name>timer_handle</name></member>
     <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" kind="variable"><name>unique_id</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" kind="variable"><name>raw_trace</name></member>
     <member refid="classdpp_1_1websocket__client_1abce54f634a3b43f4b9b5bac5d1e99702" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" kind="function"><name>get_state</name></member>
+    <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" kind="function"><name>do_raw_trace</name></member>
   </compound>
   <compound refid="structdpp_1_1dns__cache__entry" kind="struct"><name>dpp::dns_cache_entry</name>
     <member refid="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" kind="variable"><name>addr</name></member>
@@ -3188,6 +3194,7 @@
     <member refid="classdpp_1_1ssl__client_1a16fdc0f7005b8ba56ecc46beec4cad1c" kind="variable"><name>owner</name></member>
     <member refid="classdpp_1_1https__client_1ae14f32471d065d5a72b40da01731cb71" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1https__client_1af0b48879cca3f23df33cbad1cc73f7d2" kind="function"><name>get_state</name></member>
+    <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" kind="function"><name>do_raw_trace</name></member>
     <member refid="classdpp_1_1https__client_1a52ed26cfbff8e2cfb17fddffa8e8e9a6" kind="function"><name>https_client</name></member>
     <member refid="classdpp_1_1https__client_1a327d83e594b36de04bf58d5ab8258b8e" kind="function"><name>~https_client</name></member>
     <member refid="classdpp_1_1https__client_1ae247d12f198e690590532ee86958cae2" kind="function"><name>handle_buffer</name></member>
@@ -3199,6 +3206,7 @@
     <member refid="classdpp_1_1https__client_1acecf3bc12787b4115de00a4977d86c90" kind="function"><name>get_headers</name></member>
     <member refid="classdpp_1_1https__client_1affac629e0843afcdc9a77351a550d6be" kind="function"><name>get_content</name></member>
     <member refid="classdpp_1_1https__client_1aad457d811e2b8655eef18d2f3b76e076" kind="function"><name>get_status</name></member>
+    <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" kind="function"><name>enable_raw_tracing</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" kind="function"><name>get_unique_id</name></member>
@@ -3229,6 +3237,7 @@
     <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" kind="variable"><name>tcp_connect_done</name></member>
     <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" kind="variable"><name>timer_handle</name></member>
     <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" kind="variable"><name>unique_id</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" kind="variable"><name>raw_trace</name></member>
   </compound>
   <compound refid="structdpp_1_1utility_1_1icon" kind="struct"><name>dpp::utility::icon</name>
     <member refid="structdpp_1_1utility_1_1icon_1af065440df4b576afd69d414adeece20e" kind="variable"><name>hash_or_data</name></member>
@@ -4947,6 +4956,7 @@
   </compound>
   <compound refid="classdpp_1_1ssl__client" kind="class"><name>dpp::ssl_client</name>
     <member refid="classdpp_1_1ssl__client_1ad9d45fab1f8a3d9e1b4cfb71c544aa1f" kind="variable"><name>ssl_mutex</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac840d11856b088abf7793bc6dc1dd593" kind="variable"><name>out_mutex</name></member>
     <member refid="classdpp_1_1ssl__client_1a80ef04f711164cfe2b7fbbcc5e21be63" kind="variable"><name>client_to_server_length</name></member>
     <member refid="classdpp_1_1ssl__client_1a641bd32114216b9c94652aa438ca76a1" kind="variable"><name>client_to_server_offset</name></member>
     <member refid="classdpp_1_1ssl__client_1af338abe8bf4c15731728230825dcdc43" kind="variable"><name>client_to_server_buffer</name></member>
@@ -4968,11 +4978,14 @@
     <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" kind="variable"><name>tcp_connect_done</name></member>
     <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" kind="variable"><name>timer_handle</name></member>
     <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" kind="variable"><name>unique_id</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" kind="variable"><name>raw_trace</name></member>
     <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
     <member refid="classdpp_1_1ssl__client_1a16fdc0f7005b8ba56ecc46beec4cad1c" kind="variable"><name>owner</name></member>
     <member refid="classdpp_1_1ssl__client_1a05cd0216e438be9d45d2483a00202f6b" kind="function"><name>cleanup</name></member>
     <member refid="classdpp_1_1ssl__client_1a5028e720508fcb82533ce838dcea5f2e" kind="function"><name>one_second_timer</name></member>
     <member refid="classdpp_1_1ssl__client_1a9a5168edeb1901d62aecf273c28f03ca" kind="function"><name>connect</name></member>
+    <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" kind="function"><name>do_raw_trace</name></member>
+    <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" kind="function"><name>enable_raw_tracing</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" kind="function"><name>get_unique_id</name></member>
@@ -6021,11 +6034,13 @@
     <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" kind="variable"><name>tcp_connect_done</name></member>
     <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" kind="variable"><name>timer_handle</name></member>
     <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" kind="variable"><name>unique_id</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" kind="variable"><name>raw_trace</name></member>
     <member refid="classdpp_1_1websocket__client_1aa851724333720b7d727526d609ddf0fc" kind="function"><name>parseheader</name></member>
     <member refid="classdpp_1_1websocket__client_1aed87bf90f63bc8de5a9dd1b02775a24d" kind="function"><name>fill_header</name></member>
     <member refid="classdpp_1_1websocket__client_1aa6b7e6f02dd929717ec09e0be0ed94dc" kind="function"><name>handle_ping</name></member>
     <member refid="classdpp_1_1websocket__client_1abce54f634a3b43f4b9b5bac5d1e99702" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" kind="function"><name>get_state</name></member>
+    <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" kind="function"><name>do_raw_trace</name></member>
     <member refid="classdpp_1_1websocket__client_1a40b00c90da14a301522a756f8e93490d" kind="function"><name>websocket_client</name></member>
     <member refid="classdpp_1_1websocket__client_1a32f422f3a5a7a1aeb35a273be5c66d17" kind="function"><name>~websocket_client</name></member>
     <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" kind="function"><name>write</name></member>
@@ -6036,6 +6051,7 @@
     <member refid="classdpp_1_1websocket__client_1ae56e2b577298a170ba9af5bff0d9a732" kind="function"><name>one_second_timer</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
     <member refid="classdpp_1_1websocket__client_1afecbc8710086fb321d3253ff49d8c685" kind="function"><name>on_disconnect</name></member>
+    <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" kind="function"><name>enable_raw_tracing</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" kind="function"><name>get_unique_id</name></member>

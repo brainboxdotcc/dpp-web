@@ -279,6 +279,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2613fa8b73b1e7960c62bfe8cdef1dd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1websocket__client.html#a2613fa8b73b1e7960c62bfe8cdef1dd7">send_close_packet</a> ()</td></tr>
 <tr class="memdesc:a2613fa8b73b1e7960c62bfe8cdef1dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send OP_CLOSE error code 1000 to the other side of the connection. This indicates graceful close.  <a href="classdpp_1_1websocket__client.html#a2613fa8b73b1e7960c62bfe8cdef1dd7">More...</a><br /></td></tr>
 <tr class="separator:a2613fa8b73b1e7960c62bfe8cdef1dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da035d84f8d82c9741db0fcf8fc1cbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a0da035d84f8d82c9741db0fcf8fc1cbc">enable_raw_tracing</a> ()</td></tr>
+<tr class="memdesc:a0da035d84f8d82c9741db0fcf8fc1cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">For low-level debugging, calling this function will enable low level I/O logging for this connection to the logger. This can be very loud, and output a lot of data, so only enable it selectively where you need it.  <a href="classdpp_1_1ssl__client.html#a0da035d84f8d82c9741db0fcf8fc1cbc">More...</a><br /></td></tr>
+<tr class="separator:a0da035d84f8d82c9741db0fcf8fc1cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4da6489c8f08030ca49c060a23740a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a">get_bytes_out</a> ()</td></tr>
 <tr class="memdesc:aad4da6489c8f08030ca49c060a23740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bytes out objectGet total bytes sent.  <a href="classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a">More...</a><br /></td></tr>
 <tr class="separator:aad4da6489c8f08030ca49c060a23740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,6 +371,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2d64dce5afa6a2e3a125b915316d7f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#af3b7f3e861707f45beefa9449de70519">ws_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1websocket__client.html#a2d64dce5afa6a2e3a125b915316d7f6a">get_state</a> () const</td></tr>
 <tr class="memdesc:a2d64dce5afa6a2e3a125b915316d7f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get websocket state.  <a href="classdpp_1_1websocket__client.html#a2d64dce5afa6a2e3a125b915316d7f6a">More...</a><br /></td></tr>
 <tr class="separator:a2d64dce5afa6a2e3a125b915316d7f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96739f7abe24b9d7b17f67dc32a91399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a96739f7abe24b9d7b17f67dc32a91399">do_raw_trace</a> (const std::string &amp;<a class="el" href="structdpp_1_1message.html">message</a>) const</td></tr>
+<tr class="memdesc:a96739f7abe24b9d7b17f67dc32a91399"><td class="mdescLeft">&#160;</td><td class="mdescRight">If raw_trace is set to true, log a debug message for this connection.  <a href="classdpp_1_1ssl__client.html#a96739f7abe24b9d7b17f67dc32a91399">More...</a><br /></td></tr>
+<tr class="separator:a96739f7abe24b9d7b17f67dc32a91399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -425,6 +431,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:adf682f42a07664887300335e1927828a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#adf682f42a07664887300335e1927828a">unique_id</a></td></tr>
 <tr class="memdesc:adf682f42a07664887300335e1927828a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID of socket used as a nonce You can use this to identify requests vs reply if you want. D++ itself only sets this, and does not use it in any logic. It starts at 1 and increments for each request made.  <a href="classdpp_1_1ssl__client.html#adf682f42a07664887300335e1927828a">More...</a><br /></td></tr>
 <tr class="separator:adf682f42a07664887300335e1927828a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3a22d8f3de7ed7287dd8e88e049ddb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a7b3a22d8f3de7ed7287dd8e88e049ddb">raw_trace</a> {false}</td></tr>
+<tr class="memdesc:a7b3a22d8f3de7ed7287dd8e88e049ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this to true to log all IO to debug for this connection. This is an internal developer facility. Do not enable it unless you need to, as it will be very noisy.  <a href="classdpp_1_1ssl__client.html#a7b3a22d8f3de7ed7287dd8e88e049ddb">More...</a><br /></td></tr>
+<tr class="separator:a7b3a22d8f3de7ed7287dd8e88e049ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implements a discord voice connection. Each <a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a> connects to one voice channel and derives from a websocket client. </p>
@@ -673,6 +682,68 @@ Protected Attributes</h2></td></tr>
 <p>Discord external IP detection. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::string Your external IP address </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This is a blocking operation that waits for a single packet from Discord's voice servers. </dd></dl>
+
+</div>
+</div>
+<a id="a96739f7abe24b9d7b17f67dc32a91399" name="a96739f7abe24b9d7b17f67dc32a91399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96739f7abe24b9d7b17f67dc32a91399">&#9670;&nbsp;</a></span>do_raw_trace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::ssl_client::do_raw_trace </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If raw_trace is set to true, log a debug message for this connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>debug message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0da035d84f8d82c9741db0fcf8fc1cbc" name="a0da035d84f8d82c9741db0fcf8fc1cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da035d84f8d82c9741db0fcf8fc1cbc">&#9670;&nbsp;</a></span>enable_raw_tracing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::ssl_client::enable_raw_tracing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For low-level debugging, calling this function will enable low level I/O logging for this connection to the logger. This can be very loud, and output a lot of data, so only enable it selectively where you need it. </p>
+<p >Generally, you won't need this, it is a library development utility. </p>
 
 </div>
 </div>
@@ -2658,6 +2729,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>True for a plain text connection. </p>
+
+</div>
+</div>
+<a id="a7b3a22d8f3de7ed7287dd8e88e049ddb" name="a7b3a22d8f3de7ed7287dd8e88e049ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3a22d8f3de7ed7287dd8e88e049ddb">&#9670;&nbsp;</a></span>raw_trace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::raw_trace {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set this to true to log all IO to debug for this connection. This is an internal developer facility. Do not enable it unless you need to, as it will be very noisy. </p>
 
 </div>
 </div>
