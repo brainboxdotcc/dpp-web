@@ -500,6 +500,7 @@ var hierarchy =
     [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
     [ "dpp::socket_engine_base", "structdpp_1_1socket__engine__base.html", null ],
     [ "dpp::socket_events", "structdpp_1_1socket__events.html", null ],
+    [ "dpp::socket_stats", "structdpp_1_1socket__stats.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

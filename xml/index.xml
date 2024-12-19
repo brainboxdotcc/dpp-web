@@ -4927,10 +4927,10 @@
     <member refid="classdpp_1_1snowflake_1ad91dcb90ead67a1751e6cdac53d2879f" kind="function"><name>get_increment</name></member>
   </compound>
   <compound refid="structdpp_1_1socket__engine__base" kind="struct"><name>dpp::socket_engine_base</name>
+    <member refid="structdpp_1_1socket__engine__base_1ae97986988ae0714fa88f022ef12df16d" kind="variable"><name>owner</name></member>
     <member refid="structdpp_1_1socket__engine__base_1a73ee6082446d48daedac90228f74eb4d" kind="variable"><name>fds_mutex</name></member>
     <member refid="structdpp_1_1socket__engine__base_1aa34700b8b016170668548faee23aa516" kind="variable"><name>fds</name></member>
-    <member refid="structdpp_1_1socket__engine__base_1ad80b801d7190659b871170df3a644430" kind="variable"><name>to_delete_count</name></member>
-    <member refid="structdpp_1_1socket__engine__base_1ae97986988ae0714fa88f022ef12df16d" kind="variable"><name>owner</name></member>
+    <member refid="structdpp_1_1socket__engine__base_1aa5678696646a53cf7e713e1580c47db0" kind="variable"><name>stats</name></member>
     <member refid="structdpp_1_1socket__engine__base_1a3177d7e1f55655d1b0256b3c401b8640" kind="function"><name>socket_engine_base</name></member>
     <member refid="structdpp_1_1socket__engine__base_1ab41f58817f27a5a20633e9aa14d5f074" kind="function"><name>socket_engine_base</name></member>
     <member refid="structdpp_1_1socket__engine__base_1a68b43e48f602124007d21e472466bcdc" kind="function"><name>socket_engine_base</name></member>
@@ -4942,8 +4942,10 @@
     <member refid="structdpp_1_1socket__engine__base_1a7b07f0a5c0727e6eddaa0b10b1ee9f33" kind="function"><name>update_socket</name></member>
     <member refid="structdpp_1_1socket__engine__base_1af90ba41a8ef7292e81d44c053f28470f" kind="function"><name>delete_socket</name></member>
     <member refid="structdpp_1_1socket__engine__base_1abe203593996388688f76782aff3eccf4" kind="function"><name>prune</name></member>
-    <member refid="structdpp_1_1socket__engine__base_1a35d1ff396f528ed002127caa8d870157" kind="function"><name>remove_socket</name></member>
+    <member refid="structdpp_1_1socket__engine__base_1ae71de099e1f484bdd5f0b802d843c193" kind="function"><name>inplace_modify_fd</name></member>
+    <member refid="structdpp_1_1socket__engine__base_1a73e1a6b45637f08955137ded7e825155" kind="function"><name>get_stats</name></member>
     <member refid="structdpp_1_1socket__engine__base_1a8c1fa27742dd26974355590fe5c5e5c8" kind="function"><name>get_fd</name></member>
+    <member refid="structdpp_1_1socket__engine__base_1a35d1ff396f528ed002127caa8d870157" kind="function"><name>remove_socket</name></member>
   </compound>
   <compound refid="structdpp_1_1socket__events" kind="struct"><name>dpp::socket_events</name>
     <member refid="structdpp_1_1socket__events_1a688a8f275524c3b31815293cc4e3e013" kind="variable"><name>fd</name></member>
@@ -4953,6 +4955,16 @@
     <member refid="structdpp_1_1socket__events_1ad74d0b17e9191c536e07b02ef846ab6d" kind="variable"><name>on_error</name></member>
     <member refid="structdpp_1_1socket__events_1a5c1bd411c7a2b2bcb377d0178d613007" kind="function"><name>socket_events</name></member>
     <member refid="structdpp_1_1socket__events_1a735ea56848d4b82f6f7be1bc8fef0a42" kind="function"><name>socket_events</name></member>
+  </compound>
+  <compound refid="structdpp_1_1socket__stats" kind="struct"><name>dpp::socket_stats</name>
+    <member refid="structdpp_1_1socket__stats_1a60d4b06e06c142d95d5aaeb7f939ac7e" kind="variable"><name>reads</name></member>
+    <member refid="structdpp_1_1socket__stats_1a9e5e5f3482193400ee0011d82a594145" kind="variable"><name>writes</name></member>
+    <member refid="structdpp_1_1socket__stats_1ab831217801917ccb238cccb8b6cc34cf" kind="variable"><name>errors</name></member>
+    <member refid="structdpp_1_1socket__stats_1ac076b200ab9680a4d5e15ff5bddd6627" kind="variable"><name>updates</name></member>
+    <member refid="structdpp_1_1socket__stats_1a6983287a3588a479094706bb8963a5ec" kind="variable"><name>deletions</name></member>
+    <member refid="structdpp_1_1socket__stats_1a7b2468b44567dc7dcd3b475f71089279" kind="variable"><name>iterations</name></member>
+    <member refid="structdpp_1_1socket__stats_1a77a76a90b96357847fa55fc60197ee0e" kind="variable"><name>active_fds</name></member>
+    <member refid="structdpp_1_1socket__stats_1a7be4378c0a590bb6d6ef7a555812e445" kind="variable"><name>engine_type</name></member>
   </compound>
   <compound refid="classdpp_1_1ssl__client" kind="class"><name>dpp::ssl_client</name>
     <member refid="classdpp_1_1ssl__client_1ad9d45fab1f8a3d9e1b4cfb71c544aa1f" kind="variable"><name>ssl_mutex</name></member>

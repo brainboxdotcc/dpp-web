@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1socket__engine__base.html
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="structdpp_1_1socket__engine__base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::socket_engine_base Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -155,30 +156,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe203593996388688f76782aff3eccf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#abe203593996388688f76782aff3eccf4">prune</a> ()</td></tr>
 <tr class="memdesc:abe203593996388688f76782aff3eccf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through the list of sockets and remove any with WANT_DELETION set. This will also call implementation-specific <a class="el" href="structdpp_1_1socket__engine__base.html#a35d1ff396f528ed002127caa8d870157" title="Called by the prune() function to remove sockets when safe to do so. This is normally at the end or b...">remove_socket()</a> on each entry to be removed.  <a href="structdpp_1_1socket__engine__base.html#abe203593996388688f76782aff3eccf4">More...</a><br /></td></tr>
 <tr class="separator:abe203593996388688f76782aff3eccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71de099e1f484bdd5f0b802d843c193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#ae71de099e1f484bdd5f0b802d843c193">inplace_modify_fd</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd, uint8_t extra_flags)</td></tr>
+<tr class="memdesc:ae71de099e1f484bdd5f0b802d843c193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge new flags in with the given file descriptor.  <a href="structdpp_1_1socket__engine__base.html#ae71de099e1f484bdd5f0b802d843c193">More...</a><br /></td></tr>
+<tr class="separator:ae71de099e1f484bdd5f0b802d843c193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e1a6b45637f08955137ded7e825155"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1socket__stats.html">socket_stats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a73e1a6b45637f08955137ded7e825155">get_stats</a> () const</td></tr>
+<tr class="memdesc:a73e1a6b45637f08955137ded7e825155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics for socket engine.  <a href="structdpp_1_1socket__engine__base.html#a73e1a6b45637f08955137ded7e825155">More...</a><br /></td></tr>
+<tr class="separator:a73e1a6b45637f08955137ded7e825155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a73ee6082446d48daedac90228f74eb4d"><td class="memItemLeft" align="right" valign="top">std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a73ee6082446d48daedac90228f74eb4d">fds_mutex</a></td></tr>
-<tr class="memdesc:a73ee6082446d48daedac90228f74eb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for fds.  <a href="structdpp_1_1socket__engine__base.html#a73ee6082446d48daedac90228f74eb4d">More...</a><br /></td></tr>
-<tr class="separator:a73ee6082446d48daedac90228f74eb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa34700b8b016170668548faee23aa516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">socket_container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#aa34700b8b016170668548faee23aa516">fds</a></td></tr>
-<tr class="memdesc:aa34700b8b016170668548faee23aa516"><td class="mdescLeft">&#160;</td><td class="mdescRight">File descriptors, and their states.  <a href="structdpp_1_1socket__engine__base.html#aa34700b8b016170668548faee23aa516">More...</a><br /></td></tr>
-<tr class="separator:aa34700b8b016170668548faee23aa516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad80b801d7190659b871170df3a644430"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#ad80b801d7190659b871170df3a644430">to_delete_count</a> {0}</td></tr>
-<tr class="memdesc:ad80b801d7190659b871170df3a644430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of file descriptors we are waiting to delete.  <a href="structdpp_1_1socket__engine__base.html#ad80b801d7190659b871170df3a644430">More...</a><br /></td></tr>
-<tr class="separator:ad80b801d7190659b871170df3a644430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97986988ae0714fa88f022ef12df16d"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#ae97986988ae0714fa88f022ef12df16d">owner</a> {nullptr}</td></tr>
 <tr class="memdesc:ae97986988ae0714fa88f022ef12df16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owning cluster.  <a href="structdpp_1_1socket__engine__base.html#ae97986988ae0714fa88f022ef12df16d">More...</a><br /></td></tr>
 <tr class="separator:ae97986988ae0714fa88f022ef12df16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a35d1ff396f528ed002127caa8d870157"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a35d1ff396f528ed002127caa8d870157">remove_socket</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd)</td></tr>
-<tr class="memdesc:a35d1ff396f528ed002127caa8d870157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="structdpp_1_1socket__engine__base.html#abe203593996388688f76782aff3eccf4" title="Iterate through the list of sockets and remove any with WANT_DELETION set. This will also call implem...">prune()</a> function to remove sockets when safe to do so. This is normally at the end or before an iteration of the event loop.  <a href="structdpp_1_1socket__engine__base.html#a35d1ff396f528ed002127caa8d870157">More...</a><br /></td></tr>
-<tr class="separator:a35d1ff396f528ed002127caa8d870157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1fa27742dd26974355590fe5c5e5c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1socket__events.html">socket_events</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a8c1fa27742dd26974355590fe5c5e5c8">get_fd</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd)</td></tr>
 <tr class="memdesc:a8c1fa27742dd26974355590fe5c5e5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a file descriptors socket events.  <a href="structdpp_1_1socket__engine__base.html#a8c1fa27742dd26974355590fe5c5e5c8">More...</a><br /></td></tr>
 <tr class="separator:a8c1fa27742dd26974355590fe5c5e5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d1ff396f528ed002127caa8d870157"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a35d1ff396f528ed002127caa8d870157">remove_socket</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> fd)</td></tr>
+<tr class="memdesc:a35d1ff396f528ed002127caa8d870157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="structdpp_1_1socket__engine__base.html#abe203593996388688f76782aff3eccf4" title="Iterate through the list of sockets and remove any with WANT_DELETION set. This will also call implem...">prune()</a> function to remove sockets when safe to do so. This is normally at the end or before an iteration of the event loop.  <a href="structdpp_1_1socket__engine__base.html#a35d1ff396f528ed002127caa8d870157">More...</a><br /></td></tr>
+<tr class="separator:a35d1ff396f528ed002127caa8d870157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a73ee6082446d48daedac90228f74eb4d"><td class="memItemLeft" align="right" valign="top">std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#a73ee6082446d48daedac90228f74eb4d">fds_mutex</a></td></tr>
+<tr class="memdesc:a73ee6082446d48daedac90228f74eb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for fds.  <a href="structdpp_1_1socket__engine__base.html#a73ee6082446d48daedac90228f74eb4d">More...</a><br /></td></tr>
+<tr class="separator:a73ee6082446d48daedac90228f74eb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34700b8b016170668548faee23aa516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">socket_container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#aa34700b8b016170668548faee23aa516">fds</a></td></tr>
+<tr class="memdesc:aa34700b8b016170668548faee23aa516"><td class="mdescLeft">&#160;</td><td class="mdescRight">File descriptors, and their states.  <a href="structdpp_1_1socket__engine__base.html#aa34700b8b016170668548faee23aa516">More...</a><br /></td></tr>
+<tr class="separator:aa34700b8b016170668548faee23aa516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5678696646a53cf7e713e1580c47db0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1socket__stats.html">socket_stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html#aa5678696646a53cf7e713e1580c47db0">stats</a> {}</td></tr>
+<tr class="memdesc:aa5678696646a53cf7e713e1580c47db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket engine statistics.  <a href="structdpp_1_1socket__engine__base.html#aa5678696646a53cf7e713e1580c47db0">More...</a><br /></td></tr>
+<tr class="separator:aa5678696646a53cf7e713e1580c47db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This is the base class for socket engines. The actual implementation is OS specific and the correct implementation is detected by CMake. It is then compiled specifically into DPP so only one implementation can exist in the implementation. All implementations should behave identically to the user, abstracting out implementation-specific behaviours (e.g. difference between edge and level triggered event mechanisms etc). </p>
@@ -353,6 +363,63 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>file descriptor or nullptr if doesn't exist </dd></dl>
+
+</div>
+</div>
+<a id="a73e1a6b45637f08955137ded7e825155" name="a73e1a6b45637f08955137ded7e825155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e1a6b45637f08955137ded7e825155">&#9670;&nbsp;</a></span>get_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structdpp_1_1socket__stats.html">socket_stats</a> &amp; dpp::socket_engine_base::get_stats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get statistics for socket engine. </p>
+<dl class="section return"><dt>Returns</dt><dd>socket stats </dd></dl>
+
+</div>
+</div>
+<a id="ae71de099e1f484bdd5f0b802d843c193" name="ae71de099e1f484bdd5f0b802d843c193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71de099e1f484bdd5f0b802d843c193">&#9670;&nbsp;</a></span>inplace_modify_fd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::socket_engine_base::inplace_modify_fd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>extra_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merge new flags in with the given file descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramname">extra_flags</td><td>extra flags to add </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -568,11 +635,19 @@ Protected Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacedpp.html#a528b0d9736647cc49207bbe4c1adee61">socket_container</a> dpp::socket_engine_base::fds</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>File descriptors, and their states. </p>
@@ -584,11 +659,19 @@ Protected Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_mutex dpp::socket_engine_base::fds_mutex</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Mutex for fds. </p>
@@ -611,19 +694,27 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad80b801d7190659b871170df3a644430" name="ad80b801d7190659b871170df3a644430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad80b801d7190659b871170df3a644430">&#9670;&nbsp;</a></span>to_delete_count</h2>
+<a id="aa5678696646a53cf7e713e1580c47db0" name="aa5678696646a53cf7e713e1580c47db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5678696646a53cf7e713e1580c47db0">&#9670;&nbsp;</a></span>stats</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t dpp::socket_engine_base::to_delete_count {0}</td>
+          <td class="memname"><a class="el" href="structdpp_1_1socket__stats.html">socket_stats</a> dpp::socket_engine_base::stats {}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Number of file descriptors we are waiting to delete. </p>
+<p>Socket engine statistics. </p>
 
 </div>
 </div>

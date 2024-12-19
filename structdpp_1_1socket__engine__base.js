@@ -6,6 +6,8 @@ var structdpp_1_1socket__engine__base =
     [ "~socket_engine_base", "structdpp_1_1socket__engine__base.html#a08a48b2da040d807140eb34edc42f653", null ],
     [ "delete_socket", "structdpp_1_1socket__engine__base.html#af90ba41a8ef7292e81d44c053f28470f", null ],
     [ "get_fd", "structdpp_1_1socket__engine__base.html#a8c1fa27742dd26974355590fe5c5e5c8", null ],
+    [ "get_stats", "structdpp_1_1socket__engine__base.html#a73e1a6b45637f08955137ded7e825155", null ],
+    [ "inplace_modify_fd", "structdpp_1_1socket__engine__base.html#ae71de099e1f484bdd5f0b802d843c193", null ],
     [ "operator=", "structdpp_1_1socket__engine__base.html#a0375dc518e4b135713290772cc2f1c2e", null ],
     [ "operator=", "structdpp_1_1socket__engine__base.html#acee69a3ddd605265a366ebffadf55a62", null ],
     [ "process_events", "structdpp_1_1socket__engine__base.html#a80ab1706910c0c3297af8502bdf32b58", null ],
@@ -16,5 +18,5 @@ var structdpp_1_1socket__engine__base =
     [ "fds", "structdpp_1_1socket__engine__base.html#aa34700b8b016170668548faee23aa516", null ],
     [ "fds_mutex", "structdpp_1_1socket__engine__base.html#a73ee6082446d48daedac90228f74eb4d", null ],
     [ "owner", "structdpp_1_1socket__engine__base.html#ae97986988ae0714fa88f022ef12df16d", null ],
-    [ "to_delete_count", "structdpp_1_1socket__engine__base.html#ad80b801d7190659b871170df3a644430", null ]
+    [ "stats", "structdpp_1_1socket__engine__base.html#aa5678696646a53cf7e713e1580c47db0", null ]
 ];

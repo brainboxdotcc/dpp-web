@@ -990,12 +990,13 @@ var searchData=
   ['wrench_987',['wrench',['../namespacedpp_1_1unicode__emoji.html#a1d5c855c9fdb136eaea5cea242e04dc8',1,'dpp::unicode_emoji']]],
   ['wrestlers_988',['wrestlers',['../namespacedpp_1_1unicode__emoji.html#aa2cfd30ad9816ab986cbfff6b8bff066',1,'dpp::unicode_emoji']]],
   ['wrestling_989',['wrestling',['../namespacedpp_1_1unicode__emoji.html#a10d306edf09d2337bb7ac18ebbf13b44',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_990',['writing_hand',['../namespacedpp_1_1unicode__emoji.html#ab809baab0c4c337c07777da6c8394097',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_5ftone1_991',['writing_hand_tone1',['../namespacedpp_1_1unicode__emoji.html#ad92c2c955eadde69f509749379ef3aaf',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_5ftone2_992',['writing_hand_tone2',['../namespacedpp_1_1unicode__emoji.html#aeca1fbfe89e09b0287d789e26f7abbd3',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_5ftone3_993',['writing_hand_tone3',['../namespacedpp_1_1unicode__emoji.html#a0bc67676021bf538075f77b97db9cee8',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_5ftone4_994',['writing_hand_tone4',['../namespacedpp_1_1unicode__emoji.html#a490f19b54727cb7525907de29c6411b6',1,'dpp::unicode_emoji']]],
-  ['writing_5fhand_5ftone5_995',['writing_hand_tone5',['../namespacedpp_1_1unicode__emoji.html#a1464ff193bead45405cca70d56b5bc43',1,'dpp::unicode_emoji']]],
-  ['wrx_5fblue_996',['wrx_blue',['../namespacedpp_1_1colors.html#ab62fcafe0a6fdf4a995683942a301195',1,'dpp::colors']]],
-  ['ws_5fmode_997',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]]
+  ['writes_990',['writes',['../structdpp_1_1socket__stats.html#a9e5e5f3482193400ee0011d82a594145',1,'dpp::socket_stats']]],
+  ['writing_5fhand_991',['writing_hand',['../namespacedpp_1_1unicode__emoji.html#ab809baab0c4c337c07777da6c8394097',1,'dpp::unicode_emoji']]],
+  ['writing_5fhand_5ftone1_992',['writing_hand_tone1',['../namespacedpp_1_1unicode__emoji.html#ad92c2c955eadde69f509749379ef3aaf',1,'dpp::unicode_emoji']]],
+  ['writing_5fhand_5ftone2_993',['writing_hand_tone2',['../namespacedpp_1_1unicode__emoji.html#aeca1fbfe89e09b0287d789e26f7abbd3',1,'dpp::unicode_emoji']]],
+  ['writing_5fhand_5ftone3_994',['writing_hand_tone3',['../namespacedpp_1_1unicode__emoji.html#a0bc67676021bf538075f77b97db9cee8',1,'dpp::unicode_emoji']]],
+  ['writing_5fhand_5ftone4_995',['writing_hand_tone4',['../namespacedpp_1_1unicode__emoji.html#a490f19b54727cb7525907de29c6411b6',1,'dpp::unicode_emoji']]],
+  ['writing_5fhand_5ftone5_996',['writing_hand_tone5',['../namespacedpp_1_1unicode__emoji.html#a1464ff193bead45405cca70d56b5bc43',1,'dpp::unicode_emoji']]],
+  ['wrx_5fblue_997',['wrx_blue',['../namespacedpp_1_1colors.html#ab62fcafe0a6fdf4a995683942a301195',1,'dpp::colors']]],
+  ['ws_5fmode_998',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]]
 ];

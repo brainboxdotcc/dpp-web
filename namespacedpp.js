@@ -6651,6 +6651,7 @@ var namespacedpp =
     [ "snowflake", "classdpp_1_1snowflake.html", "classdpp_1_1snowflake" ],
     [ "socket_engine_base", "structdpp_1_1socket__engine__base.html", "structdpp_1_1socket__engine__base" ],
     [ "socket_events", "structdpp_1_1socket__events.html", "structdpp_1_1socket__events" ],
+    [ "socket_stats", "structdpp_1_1socket__stats.html", "structdpp_1_1socket__stats" ],
     [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
     [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
     [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
