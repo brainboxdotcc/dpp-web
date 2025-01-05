@@ -379,6 +379,213 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="1697" column="6"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1a3a6b2fb8f988827b1d4766a2d8ee9eaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_send</definition>
+        <argsstring>(const std::string &amp;m) const</argsstring>
+        <name>co_send</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Send a text to the same channel as the channel_id in received event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to send On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1706" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1a1aae59356b3a082c67928333049a9d6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_send</definition>
+        <argsstring>(const message &amp;msg) const</argsstring>
+        <name>co_send</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to the same channel as the channel_id in received event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to send On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1714" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1a55d87523defa4684d6d7fb395ef8af7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_send</definition>
+        <argsstring>(message &amp;&amp;msg) const</argsstring>
+        <name>co_send</name>
+        <param>
+          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to the same channel as the channel_id in received event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to send On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1722" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1a0ed4ed7af09ff586f3571db1c82248cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_reply</definition>
+        <argsstring>(const std::string &amp;m, bool mention_replied_user=false) const</argsstring>
+        <name>co_reply</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mention_replied_user</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Reply to the message received in the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to send as a reply. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mention_replied_user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mentions (pings) the author of message replied to, if true On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1731" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1a448c05ad3cf8b1866bc8076761b949b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_reply</definition>
+        <argsstring>(const message &amp;msg, bool mention_replied_user=false) const</argsstring>
+        <name>co_reply</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mention_replied_user</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Reply to the message received in the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to send as a reply. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mention_replied_user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mentions (pings) the author of message replied to, if true On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1740" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1message__create__t_1aa66aebaaf47697f66837f7a7f371f85f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &gt;</type>
+        <definition>dpp::async&lt; dpp::confirmation_callback_t &gt; dpp::message_create_t::co_reply</definition>
+        <argsstring>(message &amp;&amp;msg, bool mention_replied_user=false) const</argsstring>
+        <name>co_reply</name>
+        <param>
+          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mention_replied_user</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Reply to the message received in the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to send as a reply. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mention_replied_user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mentions (pings) the author of message replied to, if true On success the result will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1749" column="12"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1message__create__t_1ad761e8dec36073665f520aaa13fbe6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
@@ -1059,11 +1266,17 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="1645" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1645" bodyend="1698"/>
+    <location file="include/dpp/dispatcher.h" line="1645" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1645" bodyend="1751"/>
     <listofallmembers>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>cancelled</name></member>
+      <member refid="structdpp_1_1message__create__t_1a0ed4ed7af09ff586f3571db1c82248cb" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_reply</name></member>
+      <member refid="structdpp_1_1message__create__t_1a448c05ad3cf8b1866bc8076761b949b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_reply</name></member>
+      <member refid="structdpp_1_1message__create__t_1aa66aebaaf47697f66837f7a7f371f85f" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_reply</name></member>
+      <member refid="structdpp_1_1message__create__t_1a3a6b2fb8f988827b1d4766a2d8ee9eaa" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_send</name></member>
+      <member refid="structdpp_1_1message__create__t_1a1aae59356b3a082c67928333049a9d6f" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_send</name></member>
+      <member refid="structdpp_1_1message__create__t_1a55d87523defa4684d6d7fb395ef8af7b" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>co_send</name></member>
       <member refid="structdpp_1_1message__create__t_1ad761e8dec36073665f520aaa13fbe6dc" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1message__create__t_1ae250d3a1ee0ad2e90ad075e1aead5478" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1message__create__t_1aae35038ecb874c46e355fac3863615d0" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>event_dispatch_t</name></member>

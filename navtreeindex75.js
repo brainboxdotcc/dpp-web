@@ -1,5 +1,17 @@
 var NAVTREEINDEX75 =
 {
+"structdpp_1_1voice__client__speaking__t.html#a143ee2c836c05740204e3d90f26d148b":[11,0,0,243,4],
+"structdpp_1_1voice__client__speaking__t.html#a1fa0821763f9cd81e1bc4935cda31204":[9,0,0,248,5],
+"structdpp_1_1voice__client__speaking__t.html#a1fa0821763f9cd81e1bc4935cda31204":[11,0,0,243,5],
+"structdpp_1_1voice__client__speaking__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[11,0,0,243,9],
+"structdpp_1_1voice__client__speaking__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[9,0,0,248,9],
+"structdpp_1_1voice__client__speaking__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,243,13],
+"structdpp_1_1voice__client__speaking__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,248,13],
+"structdpp_1_1voice__client__speaking__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[11,0,0,243,10],
+"structdpp_1_1voice__client__speaking__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,248,10],
+"structdpp_1_1voice__client__speaking__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,248,0],
+"structdpp_1_1voice__client__speaking__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,243,0],
+"structdpp_1_1voice__client__speaking__t.html#a5835d5ddc60b1d06389d85c92e7d06be":[9,0,0,248,15],
 "structdpp_1_1voice__client__speaking__t.html#a5835d5ddc60b1d06389d85c92e7d06be":[11,0,0,243,15],
 "structdpp_1_1voice__client__speaking__t.html#a5afbcd36109734ad0fca14ec848b73b7":[9,0,0,248,1],
 "structdpp_1_1voice__client__speaking__t.html#a5afbcd36109734ad0fca14ec848b73b7":[11,0,0,243,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX75 =
 "structdpp_1_1webhooks__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,260,10],
 "structdpp_1_1webhooks__update__t.html#a48a919f76fbc32a24d02b468f2ab3bdd":[11,0,0,255,16],
 "structdpp_1_1webhooks__update__t.html#a48a919f76fbc32a24d02b468f2ab3bdd":[9,0,0,260,16],
-"structdpp_1_1webhooks__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,260,0],
-"structdpp_1_1webhooks__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,255,0],
-"structdpp_1_1webhooks__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[9,0,0,260,1],
-"structdpp_1_1webhooks__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[11,0,0,255,1],
-"structdpp_1_1webhooks__update__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f":[11,0,0,255,14],
-"structdpp_1_1webhooks__update__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f":[9,0,0,260,14],
-"structdpp_1_1webhooks__update__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,260,11],
-"structdpp_1_1webhooks__update__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,255,11],
-"structdpp_1_1webhooks__update__t.html#a7ef6731ea526ef76928c459e19723fbb":[11,0,0,255,7],
-"structdpp_1_1webhooks__update__t.html#a7ef6731ea526ef76928c459e19723fbb":[9,0,0,260,7],
-"structdpp_1_1webhooks__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4":[9,0,0,260,12],
-"structdpp_1_1webhooks__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4":[11,0,0,255,12],
-"structdpp_1_1webhooks__update__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,260,6]
+"structdpp_1_1webhooks__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,260,0]
 };

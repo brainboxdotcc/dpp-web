@@ -2,6 +2,12 @@ var structdpp_1_1message__create__t =
 [
     [ "cancel_event", "structdpp_1_1message__create__t.html#a54af3a0990fe041d4f5e8ad897367f7f", null ],
     [ "cancel_event", "structdpp_1_1message__create__t.html#a5afbcd36109734ad0fca14ec848b73b7", null ],
+    [ "co_reply", "structdpp_1_1message__create__t.html#a448c05ad3cf8b1866bc8076761b949b7", null ],
+    [ "co_reply", "structdpp_1_1message__create__t.html#a0ed4ed7af09ff586f3571db1c82248cb", null ],
+    [ "co_reply", "structdpp_1_1message__create__t.html#aa66aebaaf47697f66837f7a7f371f85f", null ],
+    [ "co_send", "structdpp_1_1message__create__t.html#a1aae59356b3a082c67928333049a9d6f", null ],
+    [ "co_send", "structdpp_1_1message__create__t.html#a3a6b2fb8f988827b1d4766a2d8ee9eaa", null ],
+    [ "co_send", "structdpp_1_1message__create__t.html#a55d87523defa4684d6d7fb395ef8af7b", null ],
     [ "event_dispatch_t", "structdpp_1_1message__create__t.html#ad761e8dec36073665f520aaa13fbe6dc", null ],
     [ "event_dispatch_t", "structdpp_1_1message__create__t.html#ae250d3a1ee0ad2e90ad075e1aead5478", null ],
     [ "event_dispatch_t", "structdpp_1_1message__create__t.html#a143ee2c836c05740204e3d90f26d148b", null ],
