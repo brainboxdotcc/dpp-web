@@ -143,7 +143,7 @@ How much RAM does this library use?</h2>
 <p >For a very small bot, you can get the memory usage as low as <b>6 megabytes</b> on a Raspberry Pi.</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
 How do I use this library in Windows?</h2>
-<p >The easiest way is to use our <a href="https://github.com/brainboxdotcc/windows-bot-template">template project</a>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the DLLs, <code>.lib</code> file, and header files (<code>bin</code>, <code>lib</code> and <code>include</code> directories), placing them in a easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and and include directories) at the correct locations. Add the <code>include</code> folder you extracted to your include directories, and add <code>dpp.lib</code> to your library directories. Ensure the project is set to C++17 standard or later in the settings. You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <code>bin</code> directory exist in the same directory as your executable.</p>
+<p >The easiest way is to use our <a href="https://github.com/brainboxdotcc/windows-bot-template">template project</a>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the DLLs, <code>.lib</code> file, and header files (<code>bin</code>, <code>lib</code> and <code>include</code> directories), placing them in a easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and and include directories) at the correct locations. Add the <code>include</code> folder you extracted to your include directories, and add <code>dpp.lib</code> to your library directories. Ensure the project is set to C++20 standard or later in the settings (If you're using VS2019, you need to use C++17). You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <code>bin</code> directory exist in the same directory as your executable.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Does this library support Visual Studio 2022?</h2>
 <p >Yes! The master branch comes with pre-built binaries for Visual Studio 2022 and our Windows bot template has a <a href="https://github.com/brainboxdotcc/windows-bot-template/tree/vs2022">vs2022 branch</a> which you can clone to get Visual Studio 2022 specific code. For the time being we support both Visual Studio 2019 and 2022. At some point in the future only 2022 may be supported as 2019 becomes outdated.</p>
@@ -167,7 +167,7 @@ What's the best way to learn C++?</h2>
 <p >If you don't understand something then feel free to ask in the <a href="https://discord.gg/dpp">Discord server</a>... <em>we don't bite!</em></p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 Do I need to be an expert in C++ to use this library?</h2>
-<p >NO! Definitely not! We have tried to keep things as simple as possible. We only use language features where they make sense, not just because they exist. Take a look at the example program (<code>test.cpp</code> and you'll see just how simple it is to get up and running quickly). We use a small subset of C++17 and C++14 features.</p>
+<p >NO! Definitely not! We have tried to keep things as simple as possible. We only use language features where they make sense, not just because they exist. Take a look at the example program (<code>test.cpp</code> and you'll see just how simple it is to get up and running quickly). We use a small subset of C++20, C++17, and C++14 features.</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Why is D++ also called DPP</h2>
 <p >DPP is short for <em>D Plus Plus</em> (D++), a play on the Discord and C++ names. You'll see the library referred to as <code>dpp</code> within source code as <code>d++</code> is not a valid symbol, so we couldn't exactly use that as our namespace name.</p>
@@ -200,7 +200,7 @@ Does this Discord library support the threads feature?</h2>
 <p >Yes! D++ supports Discord threads. You can create, edit and delete threads and also attach events watching for messages within threads.</p>
 <h2><a class="anchor" id="autotoc_md19"></a>
 Does D++ require C++20 support?</h2>
-<p >No, the library only requires C++17. We have some optional features such as <a class="el" href="using-coroutines.html">coroutines</a> that do require C++20, but they are disabled by default.</p>
+<p >By default, Yes. However, you can specify <code>-DDPP_NO_CORO</code> to make the library use C++17 features. You can read more about it at <a class="el" href="using-coroutines.html">coroutines</a>.</p>
 <h2><a class="anchor" id="autotoc_md20"></a>
 When I start my bot I get an error: "error while loading shared libraries: libdpp.so: cannot open shared object file: No such file or directory"</h2>
 <p >To fix this issue, run <code>ldconfig</code>: <code>sudo ldconfig</code> as root. Log out if your SSH session and log back in, and the bot should be able to find the library.</p>

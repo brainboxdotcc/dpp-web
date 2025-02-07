@@ -10,7 +10,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><para><simplesect kind="warning"><para>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. </para>
+<para><para><simplesect kind="warning"><para>D++ Coroutines are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, your program has to support C++20. </para>
 </simplesect>
 </para>
 </para>
@@ -22,9 +22,15 @@
 </listitem><listitem><para><ref refid="expiring-buttons" kindref="compound">Making expiring buttons with when_any</ref></para>
 </listitem></itemizedlist>
 </para>
-<para>Coroutines are currently disabled by default; to use them you will need to build D++ <ref refid="install-from-source" kindref="compound">from source</ref> and use the option <computeroutput>-DDPP_CORO=on</computeroutput> in your CMake command. Your application also needs to enable C++20 and define DPP_CORO, by using:<itemizedlist>
-<listitem><para><computeroutput>-std=c++20 -DDPP_CORO</computeroutput> in your build command if building manually, or</para>
-</listitem><listitem><para>if using CMake, add <computeroutput>target_compile_definitions(my_program PUBLIC DPP_CORO)</computeroutput> and <computeroutput>target_compile_features(my_program PUBLIC cxx_std_20)</computeroutput>. </para>
+<para>Coroutines require you to use C++20. You can do this by adding<itemizedlist>
+<listitem><para><computeroutput>-std=c++20</computeroutput> in your build command (before specifying files) if building manually, or,</para>
+</listitem><listitem><para>if using CMake, by adding <computeroutput>target_compile_features(my_program PUBLIC cxx_std_20)</computeroutput> in your <computeroutput>CMakeLists.txt</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para>If you don&apos;t want to use Coroutines, You can either add<itemizedlist>
+<listitem><para><computeroutput>-DDPP_NO_CORO</computeroutput> in your build command, or, if using CMake,</para>
+</listitem><listitem><para><computeroutput>target_compile_definitions(my_program PUBLIC DPP_NO_CORO)</computeroutput>.</para>
+</listitem><listitem><para>Additionally, you can build D++ without Coroutines with the same above. </para>
 </listitem></itemizedlist>
 </para>
     </detaileddescription>

@@ -17,7 +17,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md2">
 <title>How do I use this library in Windows?</title>
-<para>The easiest way is to use our <ulink url="https://github.com/brainboxdotcc/windows-bot-template">template project</ulink>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the DLLs, <computeroutput>.lib</computeroutput> file, and header files (<computeroutput>bin</computeroutput>, <computeroutput>lib</computeroutput> and <computeroutput>include</computeroutput> directories), placing them in a easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and and include directories) at the correct locations. Add the <computeroutput>include</computeroutput> folder you extracted to your include directories, and add <computeroutput>dpp.lib</computeroutput> to your library directories. Ensure the project is set to C++17 standard or later in the settings. You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <computeroutput>bin</computeroutput> directory exist in the same directory as your executable.</para>
+<para>The easiest way is to use our <ulink url="https://github.com/brainboxdotcc/windows-bot-template">template project</ulink>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the DLLs, <computeroutput>.lib</computeroutput> file, and header files (<computeroutput>bin</computeroutput>, <computeroutput>lib</computeroutput> and <computeroutput>include</computeroutput> directories), placing them in a easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and and include directories) at the correct locations. Add the <computeroutput>include</computeroutput> folder you extracted to your include directories, and add <computeroutput>dpp.lib</computeroutput> to your library directories. Ensure the project is set to C++20 standard or later in the settings (If you&apos;re using VS2019, you need to use C++17). You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <computeroutput>bin</computeroutput> directory exist in the same directory as your executable.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md3">
 <title>Does this library support Visual Studio 2022?</title>
@@ -48,7 +48,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md8">
 <title>Do I need to be an expert in C++ to use this library?</title>
-<para>NO! Definitely not! We have tried to keep things as simple as possible. We only use language features where they make sense, not just because they exist. Take a look at the example program (<computeroutput>test.cpp</computeroutput> and you&apos;ll see just how simple it is to get up and running quickly). We use a small subset of C++17 and C++14 features.</para>
+<para>NO! Definitely not! We have tried to keep things as simple as possible. We only use language features where they make sense, not just because they exist. Take a look at the example program (<computeroutput>test.cpp</computeroutput> and you&apos;ll see just how simple it is to get up and running quickly). We use a small subset of C++20, C++17, and C++14 features.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md9">
 <title>Why is D++ also called DPP</title>
@@ -92,7 +92,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md19">
 <title>Does D++ require C++20 support?</title>
-<para>No, the library only requires C++17. We have some optional features such as <ref refid="using-coroutines" kindref="compound">coroutines</ref> that do require C++20, but they are disabled by default.</para>
+<para>By default, Yes. However, you can specify <computeroutput>-DDPP_NO_CORO</computeroutput> to make the library use C++17 features. You can read more about it at <ref refid="using-coroutines" kindref="compound">coroutines</ref>.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md20">
 <title>When I start my bot I get an error: &quot;error while loading shared libraries: libdpp.so: cannot open shared object file: No such file or directory&quot;</title>

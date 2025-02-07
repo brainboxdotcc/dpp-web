@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('using-coroutines.html',''); initResiza
   <div class="headertitle"><div class="title">Using Coroutines </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><dl class="section warning"><dt>Warning</dt><dd>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. </dd></dl>
+<div class="textblock"><p ><dl class="section warning"><dt>Warning</dt><dd>D++ Coroutines are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, your program has to support C++20. </dd></dl>
 </p>
 <p >One of the most anticipated features of C++20 is the addition of coroutines: in short, they are functions that can be paused while waiting for data and resumed when that data is ready. They make asynchronous programs much easier to write, but they do come with additional dangers and subtleties.</p>
 <ul>
@@ -110,9 +110,14 @@ $(document).ready(function(){initNavTree('using-coroutines.html',''); initResiza
 <li><a class="el" href="awaiting-events.html">Waiting for events</a></li>
 <li><a class="el" href="expiring-buttons.html">Making expiring buttons with when_any</a></li>
 </ul>
-<p >Coroutines are currently disabled by default; to use them you will need to build D++ <a class="el" href="install-from-source.html">from source</a> and use the option <code>-DDPP_CORO=on</code> in your CMake command. Your application also needs to enable C++20 and define DPP_CORO, by using:</p><ul>
-<li><code>-std=c++20 -DDPP_CORO</code> in your build command if building manually, or</li>
-<li>if using CMake, add <code>target_compile_definitions(my_program PUBLIC DPP_CORO)</code> and <code>target_compile_features(my_program PUBLIC cxx_std_20)</code>. </li>
+<p >Coroutines require you to use C++20. You can do this by adding</p><ul>
+<li><code>-std=c++20</code> in your build command (before specifying files) if building manually, or,</li>
+<li>if using CMake, by adding <code>target_compile_features(my_program PUBLIC cxx_std_20)</code> in your <code>CMakeLists.txt</code>.</li>
+</ul>
+<p >If you don't want to use Coroutines, You can either add</p><ul>
+<li><code>-DDPP_NO_CORO</code> in your build command, or, if using CMake,</li>
+<li><code>target_compile_definitions(my_program PUBLIC DPP_NO_CORO)</code>.</li>
+<li>Additionally, you can build D++ without Coroutines with the same above. </li>
 </ul>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->

@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('building-a-cpp-discord-bot-in-repl.htm
 <li>Use wget, or the upload button, to get the precompiled x64 release into your repl as a file, e.g. <code>wget -O libdpp.deb <a href="https://dl.dpp.dev/latest">https://dl.dpp.dev/latest</a></code>,</li>
 <li>Extract this deb file using <code>dpkg</code>: <div class="fragment"><div class="line">dpkg -x libdpp.deb .</div>
 </div><!-- fragment --></li>
-<li>Compile your bot, note that you should be sure to include the <code>pthread</code> library explicitly and reference the extracted dpp installation you just put into the repl: <div class="fragment"><div class="line">g++ -o bot main.cpp -ldpp -lpthread -L./usr/lib -I./usr/include -std=c++17</div>
+<li>Compile your bot, note that you should be sure to include the <code>pthread</code> library explicitly and reference the extracted dpp installation you just put into the repl: <div class="fragment"><div class="line">g++ -o bot main.cpp -ldpp -lpthread -L./usr/lib -I./usr/include -std=c++20</div>
 </div><!-- fragment --></li>
 <li>Run your bot! Note that you will need to set <code>LD_PRELOAD</code> to reference <code>libdpp.so</code> as it will be located in <code>$HOME</code> and not <code>/usr/lib</code>: <div class="fragment"><div class="line">LD_PRELOAD=./usr/lib/libdpp.so ./bot</div>
 </div><!-- fragment --></li>
