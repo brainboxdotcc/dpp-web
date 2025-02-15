@@ -11,37 +11,18 @@ var hierarchy =
     [ "dpp::poll_results::answer_count", "structdpp_1_1poll__results_1_1answer__count.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
     [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
-    [ "dpp::detail::when_any::arg_helper_s< T >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", null ],
-    [ "dpp::detail::when_any::arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audio_mixer", "classdpp_1_1audio__mixer.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
-    [ "dpp::detail::event_router::awaitable< T >", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", null ],
     [ "dpp::awaitable_dummy", "structdpp_1_1awaitable__dummy.html", [
       [ "dpp::async_dummy", "structdpp_1_1async__dummy.html", null ],
       [ "dpp::task_dummy", "structdpp_1_1task__dummy.html", null ]
-    ] ],
-    [ "dpp::awaitable< T >::awaiter< Derived >", "structdpp_1_1awaitable_1_1awaiter.html", null ],
-    [ "dpp::when_any< Args >::awaiter", "structdpp_1_1when__any_1_1awaiter.html", null ],
-    [ "dpp::basic_awaitable< Derived >", "classdpp_1_1basic__awaitable.html", null ],
-    [ "dpp::basic_awaitable< awaitable< R > >", "classdpp_1_1basic__awaitable.html", [
-      [ "dpp::awaitable< R >", "classdpp_1_1awaitable.html", [
-        [ "dpp::async< R >", "classdpp_1_1async.html", null ],
-        [ "dpp::task< R >", "classdpp_1_1task.html", null ]
-      ] ]
-    ] ],
-    [ "dpp::basic_awaitable< awaitable< T > >", "classdpp_1_1basic__awaitable.html", [
-      [ "dpp::awaitable< T >", "classdpp_1_1awaitable.html", null ]
-    ] ],
-    [ "dpp::basic_awaitable< coroutine< R > >", "classdpp_1_1basic__awaitable.html", [
-      [ "dpp::coroutine< R >", "classdpp_1_1coroutine.html", null ]
     ] ],
     [ "dpp::bignumber", "classdpp_1_1bignumber.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
-    [ "dpp::detail::async::callback< R >", "structdpp_1_1detail_1_1async_1_1callback.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
@@ -64,9 +45,6 @@ var hierarchy =
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::coroutine_dummy", "structdpp_1_1coroutine__dummy.html", null ],
-    [ "dpp::detail::std_coroutine::coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", null ],
-    [ "dpp::detail::std_coroutine::coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", null ],
-    [ "dpp::detail::std_coroutine::coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::dave_binary_header_t", "structdpp_1_1dave__binary__header__t.html", null ],
     [ "dpp::dns_cache_entry", "structdpp_1_1dns__cache__entry.html", null ],
     [ "dpp::utility::dummy< T >", "structdpp_1_1utility_1_1dummy.html", null ],
@@ -76,8 +54,6 @@ var hierarchy =
     [ "dpp::embed_footer", "structdpp_1_1embed__footer.html", null ],
     [ "dpp::embed_image", "structdpp_1_1embed__image.html", null ],
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
-    [ "dpp::detail::promise::empty", "structdpp_1_1detail_1_1promise_1_1empty.html", null ],
-    [ "dpp::detail::when_any::empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
     [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
@@ -251,12 +227,9 @@ var hierarchy =
         [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", [
           [ "dpp::invalid_token_exception", "classdpp_1_1invalid__token__exception.html", null ]
         ] ],
-        [ "dpp::task_cancelled_exception", "classdpp_1_1task__cancelled__exception.html", null ],
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
-    [ "dpp::detail::coroutine::final_awaiter< R >", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", null ],
-    [ "dpp::detail::task::final_awaiter< R >", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", null ],
     [ "std::hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", null ],
     [ "dpp::http_connect_info", "structdpp_1_1http__connect__info.html", null ],
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
@@ -269,7 +242,6 @@ var hierarchy =
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
     [ "dpp::integration_configuration", "structdpp_1_1integration__configuration.html", null ],
     [ "dpp::interaction_metadata_type", "structdpp_1_1interaction__metadata__type.html", null ],
-    [ "dpp::job", "structdpp_1_1job.html", null ],
     [ "dpp::job_dummy", "structdpp_1_1job__dummy.html", null ],
     [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
     [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
@@ -462,7 +434,6 @@ var hierarchy =
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::message_snapshot< T >", "structdpp_1_1message__snapshot.html", null ],
-    [ "dpp::moveable_promise< T >", "classdpp_1_1moveable__promise.html", null ],
     [ "dpp::moving_averager", "structdpp_1_1moving__averager.html", null ],
     [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
@@ -474,29 +445,11 @@ var hierarchy =
     [ "dpp::poll_answer", "structdpp_1_1poll__answer.html", null ],
     [ "dpp::poll_media", "structdpp_1_1poll__media.html", null ],
     [ "dpp::poll_results", "structdpp_1_1poll__results.html", null ],
-    [ "dpp::detail::job::promise< Args >", "structdpp_1_1detail_1_1job_1_1promise.html", null ],
-    [ "dpp::detail::promise::promise_base< T >", "classdpp_1_1detail_1_1promise_1_1promise__base.html", [
-      [ "dpp::basic_promise< R >", "classdpp_1_1basic__promise.html", [
-        [ "dpp::detail::task::promise_base< R >", "structdpp_1_1detail_1_1task_1_1promise__base.html", [
-          [ "dpp::detail::task::promise_t< R >", "structdpp_1_1detail_1_1task_1_1promise__t.html", null ]
-        ] ]
-      ] ],
-      [ "dpp::basic_promise< void >", "classdpp_1_1basic__promise.html", [
-        [ "dpp::detail::task::promise_base< void >", "structdpp_1_1detail_1_1task_1_1promise__base.html", [
-          [ "dpp::detail::task::promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", null ]
-        ] ]
-      ] ],
-      [ "dpp::basic_promise< T >", "classdpp_1_1basic__promise.html", null ]
-    ] ],
-    [ "dpp::detail::coroutine::promise_t< R >", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", null ],
-    [ "dpp::detail::coroutine::promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", null ],
-    [ "dpp::detail::task::promise_base< R >::proxy_awaiter< A >", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html", null ],
     [ "dpp::request_queue::queued_deleting_request", "structdpp_1_1request__queue_1_1queued__deleting__request.html", null ],
     [ "dpp::raii_socket", "structdpp_1_1raii__socket.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
-    [ "dpp::when_any< Args >::result", "classdpp_1_1when__any_1_1result.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
     [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
@@ -512,6 +465,5 @@ var hierarchy =
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
-    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
-    [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ]
+    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ]
 ];

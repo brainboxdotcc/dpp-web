@@ -241,7 +241,6 @@ var classdpp_1_1cluster =
     [ "co_roles_edit_position", "classdpp_1_1cluster.html#a4ccce48e1a9388861b6359ef1dd77594", null ],
     [ "co_roles_get", "classdpp_1_1cluster.html#aa3bf7f040cae29cf185f84fa415ed9e9", null ],
     [ "co_skus_get", "classdpp_1_1cluster.html#af1e2f2ea714ed1ce01e46a7d843630ea", null ],
-    [ "co_sleep", "classdpp_1_1cluster.html#ab960df57796742a4013c7a492f782ed8", null ],
     [ "co_stage_instance_delete", "classdpp_1_1cluster.html#a89e989a8a4dceab8104a73d1a7a1d9a4", null ],
     [ "co_stage_instance_get", "classdpp_1_1cluster.html#a36841035bc83febe57280a304482cd82", null ],
     [ "co_sticker_packs_get", "classdpp_1_1cluster.html#a1471308de099ad3fb4331aff4678193f", null ],

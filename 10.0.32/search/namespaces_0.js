@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['async_0',['async',['../namespacedpp_1_1detail_1_1async.html',1,'dpp::detail']]],
-  ['cache_5fpolicy_1',['cache_policy',['../namespacedpp_1_1cache__policy.html',1,'dpp']]],
-  ['colors_2',['colors',['../namespacedpp_1_1colors.html',1,'dpp']]],
-  ['coroutine_3',['coroutine',['../namespacedpp_1_1detail_1_1coroutine.html',1,'dpp::detail']]],
-  ['dave_4',['dave',['../namespacedpp_1_1dave.html',1,'dpp']]],
-  ['detail_5',['detail',['../namespacedpp_1_1detail.html',1,'dpp']]],
-  ['dpp_6',['dpp',['../namespacedpp.html',1,'']]],
-  ['embed_5ftype_7',['embed_type',['../namespacedpp_1_1embed__type.html',1,'dpp']]],
-  ['event_5frouter_8',['event_router',['../namespacedpp_1_1detail_1_1event__router.html',1,'dpp::detail']]],
-  ['events_9',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
-  ['job_10',['job',['../namespacedpp_1_1detail_1_1job.html',1,'dpp::detail']]],
-  ['mls_11',['mls',['../namespacedpp_1_1dave_1_1mls.html',1,'dpp::dave']]],
-  ['promise_12',['promise',['../namespacedpp_1_1detail_1_1promise.html',1,'dpp::detail']]],
-  ['std_5fcoroutine_13',['std_coroutine',['../namespacedpp_1_1detail_1_1std__coroutine.html',1,'dpp::detail']]],
-  ['task_14',['task',['../namespacedpp_1_1detail_1_1task.html',1,'dpp::detail']]],
-  ['unicode_5femoji_15',['unicode_emoji',['../namespacedpp_1_1unicode__emoji.html',1,'dpp']]],
-  ['utility_16',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
-  ['when_5fany_17',['when_any',['../namespacedpp_1_1detail_1_1when__any.html',1,'dpp::detail']]]
+  ['cache_5fpolicy_0',['cache_policy',['../namespacedpp_1_1cache__policy.html',1,'dpp']]],
+  ['colors_1',['colors',['../namespacedpp_1_1colors.html',1,'dpp']]],
+  ['dave_2',['dave',['../namespacedpp_1_1dave.html',1,'dpp']]],
+  ['dpp_3',['dpp',['../namespacedpp.html',1,'']]],
+  ['embed_5ftype_4',['embed_type',['../namespacedpp_1_1embed__type.html',1,'dpp']]],
+  ['events_5',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
+  ['mls_6',['mls',['../namespacedpp_1_1dave_1_1mls.html',1,'dpp::dave']]],
+  ['unicode_5femoji_7',['unicode_emoji',['../namespacedpp_1_1unicode__emoji.html',1,'dpp']]],
+  ['utility_8',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]]
 ];

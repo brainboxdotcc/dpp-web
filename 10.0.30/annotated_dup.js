@@ -1,42 +1,6 @@
 var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
-      [ "detail", "namespacedpp_1_1detail.html", [
-        [ "async", "namespacedpp_1_1detail_1_1async.html", [
-          [ "async_base", "classdpp_1_1detail_1_1async_1_1async__base.html", "classdpp_1_1detail_1_1async_1_1async__base" ],
-          [ "async_callback_data", "structdpp_1_1detail_1_1async_1_1async__callback__data.html", "structdpp_1_1detail_1_1async_1_1async__callback__data" ]
-        ] ],
-        [ "coroutine", "namespacedpp_1_1detail_1_1coroutine.html", [
-          [ "coroutine_base", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base" ],
-          [ "final_awaiter", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter" ],
-          [ "promise_t", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t" ],
-          [ "promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4" ]
-        ] ],
-        [ "event_router", "namespacedpp_1_1detail_1_1event__router.html", [
-          [ "awaitable", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", "classdpp_1_1detail_1_1event__router_1_1awaitable" ]
-        ] ],
-        [ "job", "namespacedpp_1_1detail_1_1job.html", [
-          [ "promise", "structdpp_1_1detail_1_1job_1_1promise.html", "structdpp_1_1detail_1_1job_1_1promise" ]
-        ] ],
-        [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
-          [ "coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" ],
-          [ "coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4" ],
-          [ "coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4" ]
-        ] ],
-        [ "task", "namespacedpp_1_1detail_1_1task.html", [
-          [ "final_awaiter", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", "structdpp_1_1detail_1_1task_1_1final__awaiter" ],
-          [ "promise_base", "structdpp_1_1detail_1_1task_1_1promise__base.html", "structdpp_1_1detail_1_1task_1_1promise__base" ],
-          [ "promise_t", "structdpp_1_1detail_1_1task_1_1promise__t.html", "structdpp_1_1detail_1_1task_1_1promise__t" ],
-          [ "promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" ],
-          [ "task_base", "classdpp_1_1detail_1_1task_1_1task__base.html", "classdpp_1_1detail_1_1task_1_1task__base" ]
-        ] ],
-        [ "when_any", "namespacedpp_1_1detail_1_1when__any.html", [
-          [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
-          [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
-          [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
-        ] ],
-        [ "empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ]
-      ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
         [ "automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", "classdpp_1_1events_1_1automod__rule__delete" ],
@@ -125,7 +89,6 @@ var annotated_dup =
       [ "application_install_params", "structdpp_1_1application__install__params.html", "structdpp_1_1application__install__params" ],
       [ "application_role_connection", "classdpp_1_1application__role__connection.html", "classdpp_1_1application__role__connection" ],
       [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html", "classdpp_1_1application__role__connection__metadata" ],
-      [ "async", "classdpp_1_1async.html", "classdpp_1_1async" ],
       [ "async_dummy", "structdpp_1_1async__dummy.html", "structdpp_1_1async__dummy" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
       [ "audio_mixer", "classdpp_1_1audio__mixer.html", "classdpp_1_1audio__mixer" ],
@@ -174,7 +137,6 @@ var annotated_dup =
       [ "connection", "classdpp_1_1connection.html", "classdpp_1_1connection" ],
       [ "connection_exception", "classdpp_1_1connection__exception.html", "classdpp_1_1connection__exception" ],
       [ "context_menu_t", "structdpp_1_1context__menu__t.html", "structdpp_1_1context__menu__t" ],
-      [ "coroutine", "classdpp_1_1coroutine.html", "classdpp_1_1coroutine" ],
       [ "coroutine_dummy", "structdpp_1_1coroutine__dummy.html", "structdpp_1_1coroutine__dummy" ],
       [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
       [ "discord_voice_client", "classdpp_1_1discord__voice__client.html", "classdpp_1_1discord__voice__client" ],
@@ -249,7 +211,6 @@ var annotated_dup =
       [ "invite", "classdpp_1_1invite.html", "classdpp_1_1invite" ],
       [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
       [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],
-      [ "job", "structdpp_1_1job.html", null ],
       [ "job_dummy", "structdpp_1_1job__dummy.html", null ],
       [ "json_interface", "structdpp_1_1json__interface.html", "structdpp_1_1json__interface" ],
       [ "length_exception", "classdpp_1_1length__exception.html", "classdpp_1_1length__exception" ],
@@ -312,8 +273,6 @@ var annotated_dup =
       [ "stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", "structdpp_1_1stage__instance__update__t" ],
       [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
       [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
-      [ "task", "classdpp_1_1task.html", "classdpp_1_1task" ],
-      [ "task_cancelled_exception", "classdpp_1_1task__cancelled__exception.html", "classdpp_1_1task__cancelled__exception" ],
       [ "task_dummy", "structdpp_1_1task__dummy.html", "structdpp_1_1task__dummy" ],
       [ "team_member", "classdpp_1_1team__member.html", "classdpp_1_1team__member" ],
       [ "thread", "classdpp_1_1thread.html", "classdpp_1_1thread" ],
@@ -351,8 +310,7 @@ var annotated_dup =
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
-      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ],
-      [ "when_any", "classdpp_1_1when__any.html", "classdpp_1_1when__any" ]
+      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ]
     ] ],
     [ "std", null, [
       [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]

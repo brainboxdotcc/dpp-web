@@ -1,9 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"namespacedpp_1_1colors.html#acf9d219c7032cb7037dfc18bff0f7b88":[7,0,0,0,243],
-"namespacedpp_1_1colors.html#ad0030759828582ad2b43aacac68b286a":[7,0,0,0,16],
-"namespacedpp_1_1colors.html#ad05e547a41c96222b3e74407064646b0":[7,0,0,0,208],
-"namespacedpp_1_1colors.html#ad06876e4b21d4acc940b3968f577c89e":[7,0,0,0,212],
 "namespacedpp_1_1colors.html#ad0e57001ab64c9c7ed9c346bda1dbfa3":[7,0,0,0,394],
 "namespacedpp_1_1colors.html#ad12827bae59107bd17d27d978cb711ae":[7,0,0,0,34],
 "namespacedpp_1_1colors.html#ad1a05387c70e71028be5ac22f25c7b46":[7,0,0,0,596],
@@ -178,8 +174,8 @@ var NAVTREEINDEX23 =
 "namespacemembers_d.html":[7,1,0,3],
 "namespacemembers_e.html":[7,1,0,4],
 "namespacemembers_enum.html":[7,1,4],
-"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval.html":[7,1,5],
+"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval_c.html":[7,1,5,1],
 "namespacemembers_eval_d.html":[7,1,5,2],
 "namespacemembers_eval_e.html":[7,1,5,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX23 =
 "pages.html":[],
 "record-user.html":[4,2,3],
 "slashcommands.html":[4,1,0],
-"soundboard.html":[4,2,0]
+"soundboard.html":[4,2,0],
+"spdlog.html":[4,3,1],
+"stream-mp3-discord-bot.html":[4,2,2],
+"structdpp_1_1active__threads.html":[7,0,0,4],
+"structdpp_1_1active__threads.html":[8,0,0,2]
 };

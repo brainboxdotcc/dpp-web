@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespacedpp_1_1detail" kind="namespace" language="C++">
+    <compoundname>dpp::detail</compoundname>
+    <innernamespace refid="namespacedpp_1_1detail_1_1async">dpp::detail::async</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1coroutine">dpp::detail::coroutine</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1event__router">dpp::detail::event_router</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1job">dpp::detail::job</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1promise">dpp::detail::promise</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1std__coroutine">dpp::detail::std_coroutine</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1task">dpp::detail::task</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1when__any">dpp::detail::when_any</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1afb0a0bcfb46ac28d58102ed8bb9c7e16" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>decltype(<ref refid="namespacedpp_1_1detail_1a63c76824ad809907fbd7fd5f714ad45d" kindref="member">co_await_resolve</ref>(std::declval&lt; T &gt;()).await_resume())</type>
+        <definition>using dpp::detail::awaitable_result = typedef decltype(co_await_resolve(std::declval&lt;T&gt;()).await_resume())</definition>
+        <argsstring></argsstring>
+        <name>awaitable_result</name>
+        <briefdescription>
+<para>Convenience alias for the result of a certain awaitable&apos;s await_resume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="166" column="1" bodyfile="include/dpp/coro/coro.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedpp_1_1detail_1a50720bbf31f5cead0b3a9c950d94e3f1" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::detail::has_co_await_member</definition>
+        <argsstring></argsstring>
+        <name>has_co_await_member</name>
+        <briefdescription>
+<para>Concept to check if a type has a useable <computeroutput>operator co_await()</computeroutput> member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is actually a C++20 concept but Doxygen doesn&apos;t do well with them </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="127" column="23" bodyfile="include/dpp/coro/coro.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1_1detail_1a5f269e00059b8788c5da4b1cc1826017" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::detail::has_free_co_await</definition>
+        <argsstring></argsstring>
+        <name>has_free_co_await</name>
+        <briefdescription>
+<para>Concept to check if a type has a useable overload of the free function <computeroutput>operator co_await(expr)</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is actually a C++20 concept but Doxygen doesn&apos;t do well with them </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="135" column="23" bodyfile="include/dpp/coro/coro.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1_1detail_1aa081ef3c8654b456a0d5579b0bfbede2" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::detail::has_await_members</definition>
+        <argsstring></argsstring>
+        <name>has_await_members</name>
+        <briefdescription>
+<para>Concept to check if a type has useable <computeroutput>await_ready()</computeroutput>, <computeroutput>await_suspend()</computeroutput> and <computeroutput>await_resume()</computeroutput> member functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is actually a C++20 concept but Doxygen doesn&apos;t do well with them </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="143" column="23" bodyfile="include/dpp/coro/coro.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1_1detail_1a449419ec6538a4e7f4476940f0041606" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::detail::awaitable_type</definition>
+        <argsstring></argsstring>
+        <name>awaitable_type</name>
+        <briefdescription>
+<para>Concept to check if a type can be used with co_await. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is actually a C++20 concept but Doxygen doesn&apos;t do well with them </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="151" column="23" bodyfile="include/dpp/coro/coro.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedpp_1_1detail_1a63c76824ad809907fbd7fd5f714ad45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::co_await_resolve</definition>
+        <argsstring>(auto &amp;&amp;expr)</argsstring>
+        <name>co_await_resolve</name>
+        <param>
+          <type>auto &amp;&amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Mimics the compiler&apos;s behavior of using co_await. That is, it returns whichever works first, in order : <computeroutput>expr.operator co_await();</computeroutput> &gt; <computeroutput>operator co_await(expr)</computeroutput> &gt; <computeroutput>expr</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is conditionally noexcept, if the returned expression also is. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coro.h" line="158" column="10" bodyfile="include/dpp/coro/coro.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation details for internal use only. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para>This is only meant to be used by D++ internally. Support will not be given regarding the facilities in this namespace. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/coro/async.h" line="47" column="1"/>
+  </compounddef>
+</doxygen>

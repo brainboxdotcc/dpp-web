@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1socket__events" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::socket_events</compoundname>
+    <includes local="no">socketengine.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1socket__events_1a688a8f275524c3b31815293cc4e3e013" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
+        <definition>dpp::socket dpp::socket_events::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <initializer>{INVALID_SOCKET}</initializer>
+        <briefdescription>
+<para>File descriptor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This should be a valid file descriptor created via <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="139" column="13" bodyfile="include/dpp/socketengine.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__events_1a592952dbcb9ca90fdb7109dc277a10d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::socket_events::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Flag bit mask of values from <ref refid="namespacedpp_1a47df59fd5325a437251e77878c629532" kindref="member">dpp::socket_event_flags</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="144" column="9" bodyfile="include/dpp/socketengine.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__events_1a799176fc0c66941d4cfe03b76f48e290" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ad9685f9b1294f6e1be261a3d84270ea7" kindref="member">socket_read_event</ref></type>
+        <definition>socket_read_event dpp::socket_events::on_read</definition>
+        <argsstring></argsstring>
+        <name>on_read</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Read ready event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function will be called from a different thread to that which adds the event set to the socket engine. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="151" column="19" bodyfile="include/dpp/socketengine.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__events_1a16b31e40fa1b97a441e9067a0424d7e7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1abe40ae4383ba430f4256e8ca99b91870" kindref="member">socket_write_event</ref></type>
+        <definition>socket_write_event dpp::socket_events::on_write</definition>
+        <argsstring></argsstring>
+        <name>on_write</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Write ready event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function will be called from a different thread to that which adds the event set to the socket engine. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="158" column="20" bodyfile="include/dpp/socketengine.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__events_1ad74d0b17e9191c536e07b02ef846ab6d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ae5c1f0e20e7b399e32272dc788412d8f" kindref="member">socket_error_event</ref></type>
+        <definition>socket_error_event dpp::socket_events::on_error</definition>
+        <argsstring></argsstring>
+        <name>on_error</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Error event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function will be called from a different thread to that which adds the event set to the socket engine. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="165" column="20" bodyfile="include/dpp/socketengine.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1socket__events_1a5c1bd411c7a2b2bcb377d0178d613007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::socket_events::socket_events</definition>
+        <argsstring>(dpp::socket socket_fd, uint8_t _flags, const socket_read_event &amp;read_event, const socket_write_event &amp;write_event={}, const socket_error_event &amp;error_event={})</argsstring>
+        <name>socket_events</name>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
+          <declname>socket_fd</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_flags</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ad9685f9b1294f6e1be261a3d84270ea7" kindref="member">socket_read_event</ref> &amp;</type>
+          <declname>read_event</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1abe40ae4383ba430f4256e8ca99b91870" kindref="member">socket_write_event</ref> &amp;</type>
+          <declname>write_event</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ae5c1f0e20e7b399e32272dc788412d8f" kindref="member">socket_error_event</ref> &amp;</type>
+          <declname>error_event</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>socket_fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial flags bitmask </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>read_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>read ready event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>write_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write ready event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="175" column="1" bodyfile="include/dpp/socketengine.h" bodystart="175" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1socket__events_1a735ea56848d4b82f6f7be1bc8fef0a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::socket_events::socket_events</definition>
+        <argsstring>()=default</argsstring>
+        <name>socket_events</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socketengine.h" line="181" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an active socket event set in the socket engine. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An event set contains a file descriptor, a set of event handler callbacks, and a set of bitmask flags which indicate which events it wants to receive. It is possible to quickly toggle event types on or off, as it is not always necessary or desired to receive all events all the time, in fact doing so can cause an event storm which will consume 100% CPU (e.g. if you request to receive write events all the time). </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::socket_events</label>
+        <link refid="structdpp_1_1socket__events"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fd</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>on_read</edgelabel>
+          <edgelabel>on_write</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>on_error</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>int</label>
+      </node>
+      <node id="4">
+        <label>function&lt; void(dpp::socket fd, const struct socket_events &amp;)&gt;</label>
+      </node>
+      <node id="5">
+        <label>function&lt; void(dpp::socket fd, const struct socket_events &amp;, int error_code)&gt;</label>
+      </node>
+      <node id="3">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/socketengine.h" line="133" column="1" bodyfile="include/dpp/socketengine.h" bodystart="133" bodyend="182"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1socket__events_1a688a8f275524c3b31815293cc4e3e013" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>fd</name></member>
+      <member refid="structdpp_1_1socket__events_1a592952dbcb9ca90fdb7109dc277a10d5" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>flags</name></member>
+      <member refid="structdpp_1_1socket__events_1ad74d0b17e9191c536e07b02ef846ab6d" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>on_error</name></member>
+      <member refid="structdpp_1_1socket__events_1a799176fc0c66941d4cfe03b76f48e290" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>on_read</name></member>
+      <member refid="structdpp_1_1socket__events_1a16b31e40fa1b97a441e9067a0424d7e7" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>on_write</name></member>
+      <member refid="structdpp_1_1socket__events_1a5c1bd411c7a2b2bcb377d0178d613007" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>socket_events</name></member>
+      <member refid="structdpp_1_1socket__events_1a735ea56848d4b82f6f7be1bc8fef0a42" prot="public" virt="non-virtual"><scope>dpp::socket_events</scope><name>socket_events</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

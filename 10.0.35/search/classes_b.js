@@ -28,7 +28,6 @@ var searchData=
   ['message_5fsnapshot_25',['message_snapshot',['../structdpp_1_1message__snapshot.html',1,'dpp']]],
   ['message_5fupdate_26',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
   ['message_5fupdate_5ft_27',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]],
-  ['moveable_5fpromise_28',['moveable_promise',['../classdpp_1_1moveable__promise.html',1,'dpp']]],
-  ['moving_5faverager_29',['moving_averager',['../structdpp_1_1moving__averager.html',1,'dpp']]],
-  ['multipart_5fcontent_30',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]]
+  ['moving_5faverager_28',['moving_averager',['../structdpp_1_1moving__averager.html',1,'dpp']]],
+  ['multipart_5fcontent_29',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]]
 ];

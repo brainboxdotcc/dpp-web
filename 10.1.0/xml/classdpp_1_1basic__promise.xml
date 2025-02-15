@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1basic__promise" kind="class" language="C++" prot="public">
+    <compoundname>dpp::basic_promise</compoundname>
+    <basecompoundref refid="classdpp_1_1detail_1_1promise_1_1promise__base" prot="public" virt="non-virtual">dpp::detail::promise::promise_base&lt; T &gt;</basecompoundref>
+    <includes local="no">awaitable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1basic__promise_1a0db85d35ebb20c8ae33fb7bcb8126be8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>Notify</declname>
+            <defname>Notify</defname>
+            <defval>true</defval>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::basic_promise&lt; T &gt;::emplace_value</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>emplace_value</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+    <requiresclause>(std::constructible_from&lt;T, Args...&gt;)    </requiresclause>
+        <briefdescription>
+<para>Construct the result in place by forwarding the arguments, and by default resume any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to resume any awaiter or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the promise is not empty. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="524" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="524" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__promise_1a447db9b10164abd6c003e1c0d7e8c8e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>Notify</declname>
+            <defname>Notify</defname>
+            <defval>true</defval>
+          </param>
+          <param>
+            <type>typename U</type>
+            <defval>T</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::basic_promise&lt; T &gt;::set_value</definition>
+        <argsstring>(U &amp;&amp;v)</argsstring>
+        <name>set_value</name>
+        <param>
+          <type>U &amp;&amp;</type>
+          <declname>v</declname>
+        </param>
+    <requiresclause>(std::convertible_to&lt;U&amp;&amp;, T&gt;)    </requiresclause>
+        <briefdescription>
+<para>Construct the result by forwarding reference, and resume any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to resume any awaiter or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the promise is not empty. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="547" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="547" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__promise_1a73fd19246018779cdb69160e858b61f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>Notify</declname>
+            <defname>Notify</defname>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::basic_promise&lt; T &gt;::set_value</definition>
+        <argsstring>()</argsstring>
+        <name>set_value</name>
+    <requiresclause>(std::is_void_v&lt;T&gt;)    </requiresclause>
+        <briefdescription>
+<para>Construct a void result, and resume any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to resume any awaiter or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the promise is not empty. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="559" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="559" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a3692b8c1d5876c3d5e5cbeacd80ccd21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>Notify</declname>
+            <defname>Notify</defname>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::detail::promise::promise_base&lt; T &gt;::set_exception</definition>
+        <argsstring>(std::exception_ptr ptr)</argsstring>
+        <name>set_exception</name>
+        <param>
+          <type>std::exception_ptr</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set this promise to an exception and resume any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to resume any awaiter or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the promise is not empty. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>?</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any exception thrown by the coroutine if resumed will propagate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="461" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="461" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1ac0f07d73a364294c41a356c625c771a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::promise::promise_base&lt; T &gt;::notify_awaiter</definition>
+        <argsstring>()</argsstring>
+        <name>notify_awaiter</name>
+        <briefdescription>
+<para>Notify a currently awaiting coroutine that the result is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may resume the coroutine on the current thread. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>?</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any exception thrown by the coroutine if resumed will propagate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="478" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="478" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1ad8a08251ee1f02a54db0b47086dd0430" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; T &gt;</type>
+        <definition>awaitable&lt; T &gt; dpp::detail::promise::promise_base&lt; T &gt;::get_awaitable</definition>
+        <argsstring>()</argsstring>
+        <name>get_awaitable</name>
+        <briefdescription>
+<para>Get an awaitable object for this promise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if get_awaitable has already been called on this object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>awaitable&lt;T&gt; An object that can be co_await-ed to retrieve the value of this promise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="490" column="11" bodyfile="include/dpp/coro/awaitable.h" bodystart="490" bodyend="496"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a05ced1bc5f364cb854aa167e8c68e761" prot="protected" static="no">
+        <type>result_t&lt; T &gt;</type>
+        <definition>using dpp::detail::promise::promise_base&lt; T &gt;::storage_type =  result_t&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>storage_type</name>
+        <briefdescription>
+<para>Variant representing one of either 3 states of the result value : empty, result, exception. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="383" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a22eae277a3f57f66e58ce5b85f200b92" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a05ced1bc5f364cb854aa167e8c68e761" kindref="member">storage_type</ref></type>
+        <definition>storage_type dpp::detail::promise::promise_base&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= std::monostate{}</initializer>
+        <briefdescription>
+<para>State of the result value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a05ced1bc5f364cb854aa167e8c68e761" kindref="member">storage_type</ref></para>
+</simplesect>
+<simplesect kind="note"><para>use .index() instead of std::holds_alternative to support <ref refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ae513ed75fe60ae8ebdf22c92d067b019" kindref="member">promise_base&lt;std::exception_ptr&gt;</ref> and <ref refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ae513ed75fe60ae8ebdf22c92d067b019" kindref="member">promise_base&lt;std::monostate&gt;</ref> :) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="392" column="14" bodyfile="include/dpp/coro/awaitable.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a14eff25d580b969666ea65ce8e8f3ee5" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; uint8_t &gt;</type>
+        <definition>std::atomic&lt;uint8_t&gt; dpp::detail::promise::promise_base&lt; T &gt;::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= sf_none</initializer>
+        <briefdescription>
+<para>State of the awaitable tied to this promise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="397" column="13" bodyfile="include/dpp/coro/awaitable.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1promise_1_1promise__base_1af9f80c93e2b4017965b49a4f38ee887c" prot="protected" static="no" mutable="no">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::promise::promise_base&lt; T &gt;::awaiter</definition>
+        <argsstring></argsstring>
+        <name>awaiter</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Coroutine handle currently awaiting the completion of this promise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="402" column="2" bodyfile="include/dpp/coro/awaitable.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a86f602b42edf028332fabf44cab8f41b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::promise::promise_base&lt; T &gt;::throw_if_not_empty</definition>
+        <argsstring>()</argsstring>
+        <name>throw_if_not_empty</name>
+        <briefdescription>
+<para>Check if the result is empty, throws otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the result isn&apos;t empty. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="409" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="409" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1ab30a2a85e4a1dcdd3dd0bd9febcd01f4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::promise::promise_base&lt; T &gt;::release_awaiter</definition>
+        <argsstring>()</argsstring>
+        <name>release_awaiter</name>
+        <briefdescription>
+<para>Unlinks this promise from its currently linked awaiter and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>At the time of writing this is only used in the case of a serious internal error in <ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref>. Avoid using this as this will crash if the promise is used after this. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="421" column="2" bodyfile="include/dpp/coro/awaitable.h" bodystart="421" bodyend="423"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic promise class, represents the owning potion of an asynchronous value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is roughly equivalent to std::promise, with the crucial distinction that the promise <emphasis>IS</emphasis> the shared state. As such, the promise needs to be kept alive for the entire time a value can be retrieved.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the asynchronous value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>dpp::basic_promise&lt; R &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; R &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::basic_promise&lt; void &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; void &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::basic_promise&lt; T &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::detail::promise::promise_base&lt; T &gt;</label>
+        <link refid="classdpp_1_1detail_1_1promise_1_1promise__base"/>
+      </node>
+      <node id="4">
+        <label>dpp::detail::task::promise_base&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::detail::task::promise_t&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__t"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dpp::detail::task::promise_t&lt; void &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::detail::task::promise_base&lt; void &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; void &gt;</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::basic_promise&lt; T &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::detail::promise::promise_base&lt; T &gt;</label>
+        <link refid="classdpp_1_1detail_1_1promise_1_1promise__base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>awaiter</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>result_t&lt; T &gt;</label>
+      </node>
+      <node id="4">
+        <label>atomic&lt;</label>
+      </node>
+      <node id="5">
+        <label>coroutine_handle</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/awaitable.h" line="511" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="511" bodyend="569"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1af9f80c93e2b4017965b49a4f38ee887c" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>awaiter</name></member>
+      <member refid="classdpp_1_1basic__promise_1a0db85d35ebb20c8ae33fb7bcb8126be8" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>emplace_value</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ad8a08251ee1f02a54db0b47086dd0430" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>get_awaitable</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ac0f07d73a364294c41a356c625c771a0" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>notify_awaiter</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ad57e7b6b9356c568a6ebde925a3f0271" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a6c93f001ea860a9d2284cb569808a32c" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ae513ed75fe60ae8ebdf22c92d067b019" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>promise_base</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a68bfea36f835e91f954ca8e4bc3adfc2" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>promise_base</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ac439a6106681c55058f73a27db3d4037" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>promise_base</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ab30a2a85e4a1dcdd3dd0bd9febcd01f4" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>release_awaiter</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a3692b8c1d5876c3d5e5cbeacd80ccd21" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_exception</name></member>
+      <member refid="classdpp_1_1basic__promise_1a447db9b10164abd6c003e1c0d7e8c8e1" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_value</name></member>
+      <member refid="classdpp_1_1basic__promise_1a73fd19246018779cdb69160e858b61f0" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_value</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a14eff25d580b969666ea65ce8e8f3ee5" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>state</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a05ced1bc5f364cb854aa167e8c68e761" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>storage_type</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a86f602b42edf028332fabf44cab8f41b" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>throw_if_not_empty</name></member>
+      <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a22eae277a3f57f66e58ce5b85f200b92" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

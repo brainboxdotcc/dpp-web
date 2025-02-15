@@ -6,8 +6,6 @@ var searchData=
   ['welcome_5fchannel_3',['welcome_channel',['../structdpp_1_1welcome__channel.html#a1bf46e62ef14590bcb116991406e7d41',1,'dpp::welcome_channel']]],
   ['welcome_5fscreen_4',['welcome_screen',['../structdpp_1_1welcome__screen.html#aa1389a45fb5894bcdfa79d9976ab5ee2',1,'dpp::welcome_screen']]],
   ['what_5',['what',['../classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9',1,'dpp::exception']]],
-  ['when_6',['when',['../classdpp_1_1event__router__t.html#a16c2527f66c8b74e5c0678ace4fa549e',1,'dpp::event_router_t']]],
-  ['when_5fany_7',['when_any',['../classdpp_1_1when__any.html#ac39aad6084441a5d4b07388923a1ecc2',1,'dpp::when_any::when_any()=default'],['../classdpp_1_1when__any.html#a86200684f682373def017f5fa0358da4',1,'dpp::when_any::when_any(Args_ &amp;&amp;... args)'],['../classdpp_1_1when__any.html#a6579037dad6b5cbb02bcda852fb31142',1,'dpp::when_any::when_any(const when_any &amp;)=delete'],['../classdpp_1_1when__any.html#a10d02683e3c556b9f9b051ccdf679ea0',1,'dpp::when_any::when_any(when_any &amp;&amp;) noexcept=default'],['../namespacedpp.html#adec042312c305da2b49380300bde130b',1,'dpp::when_any()']]],
-  ['widget_5fenabled_8',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
-  ['write_9',['write',['../classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a9e4a4fa84657f3c0557e2837e3aa2c00',1,'dpp::websocket_client::write()']]]
+  ['widget_5fenabled_6',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
+  ['write_7',['write',['../classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a9e4a4fa84657f3c0557e2837e3aa2c00',1,'dpp::websocket_client::write()']]]
 ];

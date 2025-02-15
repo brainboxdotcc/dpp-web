@@ -10,7 +10,5 @@ var searchData=
   ['automod_5faction_5ftype_7',['automod_action_type',['../namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14c',1,'dpp']]],
   ['automod_5fevent_5ftype_8',['automod_event_type',['../namespacedpp.html#a397e69e257d7cb9733f1449317e27d90',1,'dpp']]],
   ['automod_5fpreset_5ftype_9',['automod_preset_type',['../namespacedpp.html#a8d92860238000a25eeff7eed29ec1067',1,'dpp']]],
-  ['automod_5ftrigger_5ftype_10',['automod_trigger_type',['../namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6',1,'dpp']]],
-  ['await_5fstate_11',['await_state',['../namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1',1,'dpp::detail::when_any']]],
-  ['awaiter_5fstate_12',['awaiter_state',['../namespacedpp_1_1detail_1_1event__router.html#af9ce1f09309e4ce5bd9a1fa5efa6e252',1,'dpp::detail::event_router']]]
+  ['automod_5ftrigger_5ftype_10',['automod_trigger_type',['../namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6',1,'dpp']]]
 ];

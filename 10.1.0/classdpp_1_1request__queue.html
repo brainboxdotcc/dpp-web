@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta property="og:title" content="dpp::request_queue Class Reference - D++ - The lightweight C++ Discord API Library">
+<meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="dpp::request_queue Class Reference - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
+<meta property="og:url" content="https://dpp.dev/">
+<meta property="og:type" content="website">
+<meta property="twitter:title" content="dpp::request_queue Class Reference - D++ - The lightweight C++ Discord API Library">
+<title>dpp::request_queue Class Reference - D++ - The lightweight C++ Discord API Library</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<script>
+	setTimeout(function() {
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option selected value='/10.1.0/'>10.1.0</option><option value='/10.0.35/'>10.0.35</option><option value='/10.0.34/'>10.0.34</option><option value='/10.0.33/'>10.0.33</option><option value='/10.0.32/'>10.0.32</option><option value='/10.0.31/'>10.0.31</option><option value='/10.0.30/'>10.0.30</option><option value='/10.0.29/'>10.0.29</option><option value='/10.0.28/'>10.0.28</option><option value='/10.0.27/'>10.0.27</option><option value='/10.0.26/'>10.0.26</option><option value='/10.0.25/'>10.0.25</option><option value='/10.0.24/'>10.0.24</option><option value='/10.0.23/'>10.0.23</option><option value='/10.0.22/'>10.0.22</option><option value='/10.0.21/'>10.0.21</option><option value='/10.0.20/'>10.0.20</option><option value='/10.0.19/'>10.0.19</option><option value='/10.0.18/'>10.0.18</option><option value='/10.0.17/'>10.0.17</option><option value='/10.0.16/'>10.0.16</option><option value='/10.0.15/'>10.0.15</option><option value='/10.0.14/'>10.0.14</option><option value='/10.0.13/'>10.0.13</option><option value='/10.0.12/'>10.0.12</option><option value='/10.0.11/'>10.0.11</option><option value='/10.0.10/'>10.0.10</option><option value='/10.0.9/'>10.0.9</option><option value='/10.0.8/'>10.0.8</option><option value='/10.0.7/'>10.0.7</option><option value='/10.0.6/'>10.0.6</option><option value='/10.0.5/'>10.0.5</option><option value='/10.0.4/'>10.0.4</option><option value='/10.0.3/'>10.0.3</option><option value='/10.0.2/'>10.0.2</option><option value='/10.0.1/'>10.0.1</option><option value='/10.0.0/'>10.0.0</option><option value='/9.0.19/'>9.0.19</option><option value='/9.0.18/'>9.0.18</option><option value='/9.0.17/'>9.0.17</option><option value='/9.0.16/'>9.0.16</option><option value='/9.0.15/'>9.0.15</option><option value='/9.0.14/'>9.0.14</option><option value='/9.0.13/'>9.0.13</option><option value='/9.0.12/'>9.0.12</option><option value='/9.0.11/'>9.0.11</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+	}, 500);
+</script>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr>
+  <td id="projectlogo"><img alt="Logo" src="DPP-Logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">D++ (DPP)
+   </div>
+   <div id="projectbrief">C++ Discord API Bot Library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<label for="MSearchField" style="display: none">Search</label>
+<!-- Generated by Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdpp_1_1request__queue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classdpp_1_1request__queue-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">dpp::request_queue Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> objects.  
+ <a href="classdpp_1_1request__queue.html#details">More...</a></p>
+
+<p><code>#include &lt;queues.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::request_queue:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1request__queue__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1request__queue_1_1completed__request.html">completed_request</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A completed request. Contains both the request and the response.  <a href="structdpp_1_1request__queue_1_1completed__request.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a15b79f23d7cd685c827b26d9470674a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a15b79f23d7cd685c827b26d9470674a4">request_queue</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, uint32_t request_concurrency=8)</td></tr>
+<tr class="memdesc:a15b79f23d7cd685c827b26d9470674a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="classdpp_1_1request__queue.html#a15b79f23d7cd685c827b26d9470674a4">More...</a><br /></td></tr>
+<tr class="separator:a15b79f23d7cd685c827b26d9470674a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814e3fc2d3684b462db4f852554620b6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a814e3fc2d3684b462db4f852554620b6">get_request_queue_count</a> () const</td></tr>
+<tr class="memdesc:a814e3fc2d3684b462db4f852554620b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the request queue concurrency count.  <a href="classdpp_1_1request__queue.html#a814e3fc2d3684b462db4f852554620b6">More...</a><br /></td></tr>
+<tr class="separator:a814e3fc2d3684b462db4f852554620b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">~request_queue</a> ()</td></tr>
+<tr class="memdesc:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the request queue object. Side effects: Ends and deletes concurrency timers.  <a href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">More...</a><br /></td></tr>
+<tr class="separator:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a78a3adde76b2c5ddb6c06b36d00a9646">post_request</a> (std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt; req)</td></tr>
+<tr class="memdesc:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue.  <a href="classdpp_1_1request__queue.html#a78a3adde76b2c5ddb6c06b36d00a9646">More...</a><br /></td></tr>
+<tr class="separator:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8d6cdce3298446bc199d8a04a9d158"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#adf8d6cdce3298446bc199d8a04a9d158">is_globally_ratelimited</a> () const</td></tr>
+<tr class="memdesc:adf8d6cdce3298446bc199d8a04a9d158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bot is currently globally rate limited.  <a href="classdpp_1_1request__queue.html#adf8d6cdce3298446bc199d8a04a9d158">More...</a><br /></td></tr>
+<tr class="separator:adf8d6cdce3298446bc199d8a04a9d158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14da0303e89f6f7a32b919f85d70ae7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#ac14da0303e89f6f7a32b919f85d70ae7">get_active_request_count</a> () const</td></tr>
+<tr class="memdesc:ac14da0303e89f6f7a32b919f85d70ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of active requests on this queue.  <a href="classdpp_1_1request__queue.html#ac14da0303e89f6f7a32b919f85d70ae7">More...</a><br /></td></tr>
+<tr class="separator:ac14da0303e89f6f7a32b919f85d70ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:afc5bd2c27798f38630d996d1666dbbca"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#afc5bd2c27798f38630d996d1666dbbca">creator</a></td></tr>
+<tr class="memdesc:afc5bd2c27798f38630d996d1666dbbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cluster that owns this <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a>.  <a href="classdpp_1_1request__queue.html#afc5bd2c27798f38630d996d1666dbbca">More...</a><br /></td></tr>
+<tr class="separator:afc5bd2c27798f38630d996d1666dbbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caf0261af3f71b7b6251a6876b0d205"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdpp_1_1request__concurrency__queue.html">request_concurrency_queue</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4caf0261af3f71b7b6251a6876b0d205">requests_in</a></td></tr>
+<tr class="memdesc:a4caf0261af3f71b7b6251a6876b0d205"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of timers forming a pool.  <a href="classdpp_1_1request__queue.html#a4caf0261af3f71b7b6251a6876b0d205">More...</a><br /></td></tr>
+<tr class="separator:a4caf0261af3f71b7b6251a6876b0d205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5ae71c447221809505b2a9b326da8b"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#aea5ae71c447221809505b2a9b326da8b">terminating</a></td></tr>
+<tr class="memdesc:aea5ae71c447221809505b2a9b326da8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true if the timers should terminate. When this is set to true no further requests are accepted to the queues.  <a href="classdpp_1_1request__queue.html#aea5ae71c447221809505b2a9b326da8b">More...</a><br /></td></tr>
+<tr class="separator:aea5ae71c447221809505b2a9b326da8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a95ae8742f8d76d69ffbf63993b383"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a72a95ae8742f8d76d69ffbf63993b383">globally_ratelimited</a></td></tr>
+<tr class="memdesc:a72a95ae8742f8d76d69ffbf63993b383"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if globally rate limited.  <a href="classdpp_1_1request__queue.html#a72a95ae8742f8d76d69ffbf63993b383">More...</a><br /></td></tr>
+<tr class="separator:a72a95ae8742f8d76d69ffbf63993b383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afc7b0771639f50b8c8c3ac29811d5c"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4afc7b0771639f50b8c8c3ac29811d5c">globally_limited_until</a></td></tr>
+<tr class="memdesc:a4afc7b0771639f50b8c8c3ac29811d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When we are globally rate limited until (unix epoch)  <a href="classdpp_1_1request__queue.html#a4afc7b0771639f50b8c8c3ac29811d5c">More...</a><br /></td></tr>
+<tr class="separator:a4afc7b0771639f50b8c8c3ac29811d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9533238e86684583e82082559a77d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#aba9533238e86684583e82082559a77d5">in_queue_pool_size</a></td></tr>
+<tr class="memdesc:aba9533238e86684583e82082559a77d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of request queues in the pool. This is the direct size of the requests_in vector.  <a href="classdpp_1_1request__queue.html#aba9533238e86684583e82082559a77d5">More...</a><br /></td></tr>
+<tr class="separator:aba9533238e86684583e82082559a77d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3d7a9c3d8fe07096512bf5c3e6442d41"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a3d7a9c3d8fe07096512bf5c3e6442d41">request_concurrency_queue</a></td></tr>
+<tr class="memdesc:a3d7a9c3d8fe07096512bf5c3e6442d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required so <a class="el" href="classdpp_1_1request__concurrency__queue.html" title="Represents a timer instance in a pool handling requests to HTTP(S) servers. There are several of thes...">request_concurrency_queue</a> can access these member variables.  <a href="classdpp_1_1request__queue.html#a3d7a9c3d8fe07096512bf5c3e6442d41">More...</a><br /></td></tr>
+<tr class="separator:a3d7a9c3d8fe07096512bf5c3e6442d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> objects. </p>
+<p >It ensures asynchronous delivery of events and queueing of requests.</p>
+<p >It will spawn multiple timers to make outbound HTTP requests and then call the callbacks of those requests on completion within the <a class="el" href="structdpp_1_1thread__pool.html" title="A thread pool contains 1 or more worker threads which accept thread_pool_task lambadas into a queue,...">dpp::thread_pool</a> for the cluster. If the user decides to take a long time processing a reply in their callback it won't affect when other requests are sent, and if a HTTP request takes a long time due to latency, it won't hold up user processing.</p>
+<p >There are usually two <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> objects in each <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <a class="el" href="classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. They are separated so that the one for user requests can be specifically configured to never ever send the Discord token unless it is explicitly placed into the request, for security reasons. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a15b79f23d7cd685c827b26d9470674a4" name="a15b79f23d7cd685c827b26d9470674a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b79f23d7cd685c827b26d9470674a4">&#9670;&nbsp;</a></span>request_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::request_queue::request_queue </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>request_concurrency</em> = <code>8</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>The creating cluster. </td></tr>
+    <tr><td class="paramname">request_concurrency</td><td>The number of http request queues to allocate. Each request queue is a <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30" title="Represents a timer handle. Returned from cluster::start_timer and used by cluster::stop_timer....">dpp::timer</a> which ticks every second looking for new requests to run. The timer will hold back requests if we are waiting as to comply with rate limits. Adding a request to this class will cause the queue it is placed in to run immediately but this cannot override rate limits. By default eight concurrency queues are allocated. Side effects: Creates timers for the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ccaae72d03d626852be0a0d3c6b86dd" name="a5ccaae72d03d626852be0a0d3c6b86dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccaae72d03d626852be0a0d3c6b86dd">&#9670;&nbsp;</a></span>~request_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::request_queue::~request_queue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the request queue object. Side effects: Ends and deletes concurrency timers. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac14da0303e89f6f7a32b919f85d70ae7" name="ac14da0303e89f6f7a32b919f85d70ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14da0303e89f6f7a32b919f85d70ae7">&#9670;&nbsp;</a></span>get_active_request_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t dpp::request_queue::get_active_request_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of active requests on this queue. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total number of active requests </dd></dl>
+
+</div>
+</div>
+<a id="a814e3fc2d3684b462db4f852554620b6" name="a814e3fc2d3684b462db4f852554620b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814e3fc2d3684b462db4f852554620b6">&#9670;&nbsp;</a></span>get_request_queue_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dpp::request_queue::get_request_queue_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the request queue concurrency count. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t number of request queues that are active </dd></dl>
+
+</div>
+</div>
+<a id="adf8d6cdce3298446bc199d8a04a9d158" name="adf8d6cdce3298446bc199d8a04a9d158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8d6cdce3298446bc199d8a04a9d158">&#9670;&nbsp;</a></span>is_globally_ratelimited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::request_queue::is_globally_ratelimited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the bot is currently globally rate limited. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if globally rate limited </dd></dl>
+
+</div>
+</div>
+<a id="a78a3adde76b2c5ddb6c06b36d00a9646" name="a78a3adde76b2c5ddb6c06b36d00a9646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a3adde76b2c5ddb6c06b36d00a9646">&#9670;&nbsp;</a></span>post_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> &amp; dpp::request_queue::post_request </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue. </p>
+<dl class="section note"><dt>Note</dt><dd>Will use a simple hash function to determine which of the 'in queues' to place this request onto. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>request to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to self </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3d7a9c3d8fe07096512bf5c3e6442d41" name="a3d7a9c3d8fe07096512bf5c3e6442d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7a9c3d8fe07096512bf5c3e6442d41">&#9670;&nbsp;</a></span>request_concurrency_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classdpp_1_1request__concurrency__queue.html">request_concurrency_queue</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Required so <a class="el" href="classdpp_1_1request__concurrency__queue.html" title="Represents a timer instance in a pool handling requests to HTTP(S) servers. There are several of thes...">request_concurrency_queue</a> can access these member variables. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afc5bd2c27798f38630d996d1666dbbca" name="afc5bd2c27798f38630d996d1666dbbca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5bd2c27798f38630d996d1666dbbca">&#9670;&nbsp;</a></span>creator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="classdpp_1_1cluster.html">cluster</a>* dpp::request_queue::creator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The cluster that owns this <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a>. </p>
+
+</div>
+</div>
+<a id="a4afc7b0771639f50b8c8c3ac29811d5c" name="a4afc7b0771639f50b8c8c3ac29811d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4afc7b0771639f50b8c8c3ac29811d5c">&#9670;&nbsp;</a></span>globally_limited_until</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t dpp::request_queue::globally_limited_until</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When we are globally rate limited until (unix epoch) </p>
+<dl class="section note"><dt>Note</dt><dd>Only valid if globally_rate limited is true. If we are globally rate limited, queues in this class will not process requests until the current unix epoch time is greater than this time. </dd></dl>
+
+</div>
+</div>
+<a id="a72a95ae8742f8d76d69ffbf63993b383" name="a72a95ae8742f8d76d69ffbf63993b383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a95ae8742f8d76d69ffbf63993b383">&#9670;&nbsp;</a></span>globally_ratelimited</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::request_queue::globally_ratelimited</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if globally rate limited. </p>
+<p >When globally rate limited the concurrency queues associated with this request queue will not process any requests in their timers until the global rate limit expires. </p>
+
+</div>
+</div>
+<a id="aba9533238e86684583e82082559a77d5" name="aba9533238e86684583e82082559a77d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9533238e86684583e82082559a77d5">&#9670;&nbsp;</a></span>in_queue_pool_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dpp::request_queue::in_queue_pool_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of request queues in the pool. This is the direct size of the requests_in vector. </p>
+
+</div>
+</div>
+<a id="a4caf0261af3f71b7b6251a6876b0d205" name="a4caf0261af3f71b7b6251a6876b0d205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4caf0261af3f71b7b6251a6876b0d205">&#9670;&nbsp;</a></span>requests_in</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classdpp_1_1request__concurrency__queue.html">request_concurrency_queue</a>&gt; &gt; dpp::request_queue::requests_in</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of timers forming a pool. </p>
+<p >There are a set number of these defined by a constant in cluster.cpp. A request is always placed on the same element in this vector, based upon its url, so that two conditions are satisfied:</p>
+<p >1) Any requests for the same ratelimit bucket are handled by the same concurrency queue in the pool so that they do not create unnecessary 429 errors, 2) Requests for different endpoints go into different buckets, so that they may be requested in parallel A global ratelimit event pauses all timers in the pool. These are few and far between. </p>
+
+</div>
+</div>
+<a id="aea5ae71c447221809505b2a9b326da8b" name="aea5ae71c447221809505b2a9b326da8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5ae71c447221809505b2a9b326da8b">&#9670;&nbsp;</a></span>terminating</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; dpp::request_queue::terminating</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to true if the timers should terminate. When this is set to true no further requests are accepted to the queues. </p>
+
+</div>
+</div>
+</div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+</div><!-- doc-content -->
+<div id="nav-path" class="navpath">
+	<ul>
+		<li class="navelem"><a class="el" href="namespacedpp.html">dpp</a></li><li class="navelem"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a></li>
+	</ul>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTH6YHBNG5"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-QTH6YHBNG5');
+	$(function() {
+		$(".fragment").each(function(i,node) {
+			var $node = $(node);
+			$node.children(":not(.line)").remove();
+			$node.html("<pre><code class='stan'>" + $node.text().trim().replaceAll("<", "&lt;").replaceAll(">", "&gt;") + "</code></pre>");
+			hljs.configure({
+				languages: ['cpp','diff','cmake','bash','sh','text'],
+				ignoreUnescapedHTML: true
+			});
+			hljs.highlightAll(node);
+			hljs.initLineNumbersOnLoad(node);  
+		});
+		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
+	});
+</script>
+<style>
+	.hljs-ln-code, code, code a, pre.fragment, div.fragment, div.fragment .line, div.fragment span, div.fragment .line a, div.fragment .line span {
+		font-family: 'JetBrains Mono', monospace !important;
+		font-size: 0.8rem !important;
+	}
+	.fragment {
+		padding: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		background: none !important;
+		border: 0 !important;
+	}
+	.hljs-ln-n::before {
+		content: attr(data-line-number);
+		padding-right: 1rem !important;
+	}
+	table.markdownTable code td, table.markdownTable code th, table.fieldtable code td, table.fieldtable code th, table.doxtable code td, table.doxtable code th {
+		border: 0 !important;
+		padding: 0 !important;
+	}	
+</style>
+<div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
+	<!-- For crawlability of past versions -->
+	<a href='/10.1.0/'>D++ Library version 10.1.0</a><a href='/10.0.35/'>D++ Library version 10.0.35</a><a href='/10.0.34/'>D++ Library version 10.0.34</a><a href='/10.0.33/'>D++ Library version 10.0.33</a><a href='/10.0.32/'>D++ Library version 10.0.32</a><a href='/10.0.31/'>D++ Library version 10.0.31</a><a href='/10.0.30/'>D++ Library version 10.0.30</a><a href='/10.0.29/'>D++ Library version 10.0.29</a><a href='/10.0.28/'>D++ Library version 10.0.28</a><a href='/10.0.27/'>D++ Library version 10.0.27</a><a href='/10.0.26/'>D++ Library version 10.0.26</a><a href='/10.0.25/'>D++ Library version 10.0.25</a><a href='/10.0.24/'>D++ Library version 10.0.24</a><a href='/10.0.23/'>D++ Library version 10.0.23</a><a href='/10.0.22/'>D++ Library version 10.0.22</a><a href='/10.0.21/'>D++ Library version 10.0.21</a><a href='/10.0.20/'>D++ Library version 10.0.20</a><a href='/10.0.19/'>D++ Library version 10.0.19</a><a href='/10.0.18/'>D++ Library version 10.0.18</a><a href='/10.0.17/'>D++ Library version 10.0.17</a><a href='/10.0.16/'>D++ Library version 10.0.16</a><a href='/10.0.15/'>D++ Library version 10.0.15</a><a href='/10.0.14/'>D++ Library version 10.0.14</a><a href='/10.0.13/'>D++ Library version 10.0.13</a><a href='/10.0.12/'>D++ Library version 10.0.12</a><a href='/10.0.11/'>D++ Library version 10.0.11</a><a href='/10.0.10/'>D++ Library version 10.0.10</a><a href='/10.0.9/'>D++ Library version 10.0.9</a><a href='/10.0.8/'>D++ Library version 10.0.8</a><a href='/10.0.7/'>D++ Library version 10.0.7</a><a href='/10.0.6/'>D++ Library version 10.0.6</a><a href='/10.0.5/'>D++ Library version 10.0.5</a><a href='/10.0.4/'>D++ Library version 10.0.4</a><a href='/10.0.3/'>D++ Library version 10.0.3</a><a href='/10.0.2/'>D++ Library version 10.0.2</a><a href='/10.0.1/'>D++ Library version 10.0.1</a><a href='/10.0.0/'>D++ Library version 10.0.0</a><a href='/9.0.19/'>D++ Library version 9.0.19</a><a href='/9.0.18/'>D++ Library version 9.0.18</a><a href='/9.0.17/'>D++ Library version 9.0.17</a><a href='/9.0.16/'>D++ Library version 9.0.16</a><a href='/9.0.15/'>D++ Library version 9.0.15</a><a href='/9.0.14/'>D++ Library version 9.0.14</a><a href='/9.0.13/'>D++ Library version 9.0.13</a><a href='/9.0.12/'>D++ Library version 9.0.12</a><a href='/9.0.11/'>D++ Library version 9.0.11</a><a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
+</div>
+</body>
+</html>

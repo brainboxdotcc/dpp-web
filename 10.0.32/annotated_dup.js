@@ -1,42 +1,6 @@
 var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
-      [ "detail", "namespacedpp_1_1detail.html", [
-        [ "async", "namespacedpp_1_1detail_1_1async.html", [
-          [ "callback", "structdpp_1_1detail_1_1async_1_1callback.html", "structdpp_1_1detail_1_1async_1_1callback" ]
-        ] ],
-        [ "coroutine", "namespacedpp_1_1detail_1_1coroutine.html", [
-          [ "final_awaiter", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter" ],
-          [ "promise_t", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t" ],
-          [ "promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4" ]
-        ] ],
-        [ "event_router", "namespacedpp_1_1detail_1_1event__router.html", [
-          [ "awaitable", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", "classdpp_1_1detail_1_1event__router_1_1awaitable" ]
-        ] ],
-        [ "job", "namespacedpp_1_1detail_1_1job.html", [
-          [ "promise", "structdpp_1_1detail_1_1job_1_1promise.html", "structdpp_1_1detail_1_1job_1_1promise" ]
-        ] ],
-        [ "promise", "namespacedpp_1_1detail_1_1promise.html", [
-          [ "empty", "structdpp_1_1detail_1_1promise_1_1empty.html", null ],
-          [ "promise_base", "classdpp_1_1detail_1_1promise_1_1promise__base.html", "classdpp_1_1detail_1_1promise_1_1promise__base" ]
-        ] ],
-        [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
-          [ "coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" ],
-          [ "coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4" ],
-          [ "coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4" ]
-        ] ],
-        [ "task", "namespacedpp_1_1detail_1_1task.html", [
-          [ "final_awaiter", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", "structdpp_1_1detail_1_1task_1_1final__awaiter" ],
-          [ "promise_base", "structdpp_1_1detail_1_1task_1_1promise__base.html", "structdpp_1_1detail_1_1task_1_1promise__base" ],
-          [ "promise_t", "structdpp_1_1detail_1_1task_1_1promise__t.html", "structdpp_1_1detail_1_1task_1_1promise__t" ],
-          [ "promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" ]
-        ] ],
-        [ "when_any", "namespacedpp_1_1detail_1_1when__any.html", [
-          [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
-          [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
-          [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
-        ] ]
-      ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
         [ "automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", "classdpp_1_1events_1_1automod__rule__delete" ],
@@ -125,7 +89,6 @@ var annotated_dup =
       [ "application_install_params", "structdpp_1_1application__install__params.html", "structdpp_1_1application__install__params" ],
       [ "application_role_connection", "classdpp_1_1application__role__connection.html", "classdpp_1_1application__role__connection" ],
       [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html", "classdpp_1_1application__role__connection__metadata" ],
-      [ "async", "classdpp_1_1async.html", "classdpp_1_1async" ],
       [ "async_dummy", "structdpp_1_1async__dummy.html", "structdpp_1_1async__dummy" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
       [ "audio_mixer", "classdpp_1_1audio__mixer.html", "classdpp_1_1audio__mixer" ],
@@ -142,11 +105,8 @@ var annotated_dup =
       [ "automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", "structdpp_1_1automod__rule__delete__t" ],
       [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
       [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
-      [ "awaitable", "classdpp_1_1awaitable.html", "classdpp_1_1awaitable" ],
       [ "awaitable_dummy", "structdpp_1_1awaitable__dummy.html", "structdpp_1_1awaitable__dummy" ],
       [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
-      [ "basic_awaitable", "classdpp_1_1basic__awaitable.html", "classdpp_1_1basic__awaitable" ],
-      [ "basic_promise", "classdpp_1_1basic__promise.html", "classdpp_1_1basic__promise" ],
       [ "bignumber", "classdpp_1_1bignumber.html", "classdpp_1_1bignumber" ],
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
@@ -178,7 +138,6 @@ var annotated_dup =
       [ "connection", "classdpp_1_1connection.html", "classdpp_1_1connection" ],
       [ "connection_exception", "classdpp_1_1connection__exception.html", "classdpp_1_1connection__exception" ],
       [ "context_menu_t", "structdpp_1_1context__menu__t.html", "structdpp_1_1context__menu__t" ],
-      [ "coroutine", "classdpp_1_1coroutine.html", "classdpp_1_1coroutine" ],
       [ "coroutine_dummy", "structdpp_1_1coroutine__dummy.html", "structdpp_1_1coroutine__dummy" ],
       [ "dave_binary_header_t", "structdpp_1_1dave__binary__header__t.html", "structdpp_1_1dave__binary__header__t" ],
       [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
@@ -254,7 +213,6 @@ var annotated_dup =
       [ "invite", "classdpp_1_1invite.html", "classdpp_1_1invite" ],
       [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
       [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],
-      [ "job", "structdpp_1_1job.html", null ],
       [ "job_dummy", "structdpp_1_1job__dummy.html", null ],
       [ "json_interface", "structdpp_1_1json__interface.html", "structdpp_1_1json__interface" ],
       [ "length_exception", "classdpp_1_1length__exception.html", "classdpp_1_1length__exception" ],
@@ -276,7 +234,6 @@ var annotated_dup =
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
       [ "message_snapshot", "structdpp_1_1message__snapshot.html", "structdpp_1_1message__snapshot" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
-      [ "moveable_promise", "classdpp_1_1moveable__promise.html", "classdpp_1_1moveable__promise" ],
       [ "moving_averager", "structdpp_1_1moving__averager.html", "structdpp_1_1moving__averager" ],
       [ "multipart_content", "structdpp_1_1multipart__content.html", "structdpp_1_1multipart__content" ],
       [ "onboarding", "structdpp_1_1onboarding.html", "structdpp_1_1onboarding" ],
@@ -319,8 +276,6 @@ var annotated_dup =
       [ "stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", "structdpp_1_1stage__instance__update__t" ],
       [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
       [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
-      [ "task", "classdpp_1_1task.html", "classdpp_1_1task" ],
-      [ "task_cancelled_exception", "classdpp_1_1task__cancelled__exception.html", "classdpp_1_1task__cancelled__exception" ],
       [ "task_dummy", "structdpp_1_1task__dummy.html", "structdpp_1_1task__dummy" ],
       [ "team_member", "classdpp_1_1team__member.html", "classdpp_1_1team__member" ],
       [ "thread", "classdpp_1_1thread.html", "classdpp_1_1thread" ],
@@ -359,8 +314,7 @@ var annotated_dup =
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
-      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ],
-      [ "when_any", "classdpp_1_1when__any.html", "classdpp_1_1when__any" ]
+      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ]
     ] ],
     [ "std", null, [
       [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]

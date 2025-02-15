@@ -297,15 +297,6 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
-  <compound refid="structdpp_1_1awaitable" kind="struct"><name>dpp::awaitable</name>
-    <member refid="structdpp_1_1awaitable_1af0925610441138d6a14436e7f2d0967c" kind="variable"><name>p</name></member>
-    <member refid="structdpp_1_1awaitable_1a8169c6a6ff27e480c5a21ba16c90f4b4" kind="variable"><name>bot</name></member>
-    <member refid="structdpp_1_1awaitable_1a62fd1e7f048b5909f47553ba6605ef63" kind="variable"><name>api_req</name></member>
-    <member refid="structdpp_1_1awaitable_1a4e460170b9be9a970c63e54cf98a92c0" kind="function"><name>awaitable</name></member>
-    <member refid="structdpp_1_1awaitable_1a1c11f670442e39665674857d9142e6e8" kind="function"><name>await_ready</name></member>
-    <member refid="structdpp_1_1awaitable_1a14bc35641027bb4135b705f27c034408" kind="function"><name>await_suspend</name></member>
-    <member refid="structdpp_1_1awaitable_1a570fbf2e041333b9995957a29a36c52d" kind="function"><name>await_resume</name></member>
-  </compound>
   <compound refid="classdpp_1_1ban" kind="class"><name>dpp::ban</name>
     <member refid="classdpp_1_1ban_1af3f56d08933ee4007f442b11c6b75c01" kind="variable"><name>reason</name></member>
     <member refid="classdpp_1_1ban_1aa4bfab1d617a8e41fe5353c210f7b7ea" kind="variable"><name>user_id</name></member>
@@ -1770,7 +1761,7 @@
     <member refid="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" kind="variable"><name>next_handle</name></member>
     <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" kind="variable"><name>lock</name></member>
     <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" kind="variable"><name>dispatch_container</name></member>
-    <member refid="classdpp_1_1event__router__t_1a176a88a4835f22aa23713e8034d7880f" kind="variable"><name>coroutine_container</name></member>
+    <member refid="classdpp_1_1event__router__t_1a6b70b119c58c1675c2608a4e177fedaf" kind="variable"><name>dummy_container</name></member>
     <member refid="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" kind="variable"><name>warning</name></member>
     <member refid="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" kind="function"><name>set_warning_callback</name></member>
     <member refid="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" kind="function"><name>event_router_t</name></member>
@@ -1779,7 +1770,6 @@
     <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" kind="function"><name>operator bool</name></member>
     <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" kind="function"><name>operator()</name></member>
     <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" kind="function"><name>attach</name></member>
-    <member refid="classdpp_1_1event__router__t_1a2344d67111010777d10459e6b65bf2aa" kind="function"><name>co_attach</name></member>
     <member refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" kind="function"><name>detach</name></member>
   </compound>
   <compound refid="classdpp_1_1exception" kind="class"><name>dpp::exception</name>
@@ -2903,17 +2893,6 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
-  <compound refid="structdpp_1_1promise" kind="struct"><name>dpp::promise</name>
-    <member refid="structdpp_1_1promise_1aaddd2e7301e00813104af3f11354c225" kind="variable"><name>bot</name></member>
-    <member refid="structdpp_1_1promise_1a5cb0ab5b83870cbf4817b10076b86e81" kind="variable"><name>callback</name></member>
-    <member refid="structdpp_1_1promise_1a2e7f1e7ed76bf6e139dc97d739d8be68" kind="function"><name>promise</name></member>
-    <member refid="structdpp_1_1promise_1a2ec5aa6a369eebe00cc132d47b7a82c8" kind="function"><name>promise</name></member>
-    <member refid="structdpp_1_1promise_1a83bd5561846db091231756ed58fef015" kind="function"><name>get_return_object</name></member>
-    <member refid="structdpp_1_1promise_1a78a5eaa14024940669c13f531283141b" kind="function"><name>initial_suspend</name></member>
-    <member refid="structdpp_1_1promise_1a84c616d67a9c09bc71f77d6c006d697e" kind="function"><name>final_suspend</name></member>
-    <member refid="structdpp_1_1promise_1ad396e69656a668a6c424116d7386ca98" kind="function"><name>return_void</name></member>
-    <member refid="structdpp_1_1promise_1a4e700ae9254be134e6ef6dc217001140" kind="function"><name>unhandled_exception</name></member>
-  </compound>
   <compound refid="structdpp_1_1prune" kind="struct"><name>dpp::prune</name>
     <member refid="structdpp_1_1prune_1a981d093ed62361879e862c6e4b98556a" kind="variable"><name>days</name></member>
     <member refid="structdpp_1_1prune_1a83cf2b149716078a0379f97b2c47526c" kind="variable"><name>include_roles</name></member>
@@ -3380,9 +3359,6 @@
     <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
-  </compound>
-  <compound refid="structdpp_1_1task" kind="struct"><name>dpp::task</name>
-    <member refid="structdpp_1_1task_1aa29dac12ce5bb62992480c81dd27bc53" kind="typedef"><name>promise_type</name></member>
   </compound>
   <compound refid="classdpp_1_1team__member" kind="class"><name>dpp::team_member</name>
     <member refid="classdpp_1_1team__member_1ac01c919406ebaeba9ce8ed08eaff9eaa" kind="variable"><name>membership_state</name></member>
@@ -4607,7 +4583,6 @@
     <member refid="namespacedpp_1a6daf230da747f01eeaa36fd3d5e51a65" kind="typedef"><name>parameter_registration_t</name></member>
     <member refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kind="typedef"><name>parameter_list_t</name></member>
     <member refid="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" kind="typedef"><name>command_handler</name></member>
-    <member refid="namespacedpp_1a4f13c6a68b674ab0b3e55f6df38b46a2" kind="typedef"><name>handle_type</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1ad4c862611232b317153bcfc106534292" kind="typedef"><name>dns_cache_t</name></member>
     <member refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kind="typedef"><name>dtemplate_map</name></member>

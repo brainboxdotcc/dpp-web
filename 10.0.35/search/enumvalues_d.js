@@ -29,6 +29,5 @@ var searchData=
   ['rc_5finteger_5fgreater_5fthan_5for_5fequal_26',['rc_integer_greater_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a3a89fd8df0e8705bf8123663bfe78f9e',1,'dpp']]],
   ['rc_5finteger_5fless_5fthan_5for_5fequal_27',['rc_integer_less_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a2bbd23aeabfa38d2010c61d4dc099e5a',1,'dpp']]],
   ['rc_5finteger_5fnot_5fequal_28',['rc_integer_not_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a1702fd60f2aa9084fa2bebe1ee3cd2b2',1,'dpp']]],
-  ['release_29',['release',['../namespacedpp.html#a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4',1,'dpp']]],
-  ['resuming_30',['resuming',['../namespacedpp_1_1detail_1_1event__router.html#af9ce1f09309e4ce5bd9a1fa5efa6e252ada0fab80f6b5030fec3a3ddb74ed5e17',1,'dpp::detail::event_router']]]
+  ['release_29',['release',['../namespacedpp.html#a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4',1,'dpp']]]
 ];

@@ -1,7 +1,6 @@
 var classdpp_1_1event__router__t =
 [
     [ "event_router_t", "classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822", null ],
-    [ "attach", "classdpp_1_1event__router__t.html#a02d0066788552b191413d201d2ef5997", null ],
     [ "attach", "classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c", null ],
     [ "call", "classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3", null ],
     [ "detach", "classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4", null ],
