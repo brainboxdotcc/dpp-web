@@ -4,9 +4,9 @@
     <compoundname>dpp::integration_configuration</compoundname>
     <includes local="no">application.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1integration__configuration_1a51494f936d67b2fb3c18b61b43b81e2b" prot="public" static="no" mutable="no">
-        <type>std::optional&lt; <ref refid="structdpp_1_1application__install__params" kindref="compound">application_install_params</ref> &gt;</type>
-        <definition>std::optional&lt;application_install_params&gt; dpp::integration_configuration::oauth2_install_params</definition>
+      <memberdef kind="variable" id="structdpp_1_1integration__configuration_1ad11610b10088e9c0d9ff1938bc14310e" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1application__install__params" kindref="compound">application_install_params</ref></type>
+        <definition>application_install_params dpp::integration_configuration::oauth2_install_params</definition>
         <argsstring></argsstring>
         <name>oauth2_install_params</name>
         <briefdescription>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="219" column="15" bodyfile="include/dpp/application.h" bodystart="219" bodyend="-1"/>
+        <location file="include/dpp/application.h" line="219" column="28" bodyfile="include/dpp/application.h" bodystart="219" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -24,6 +24,16 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="2">
+        <label>dpp::application_install_params</label>
+        <link refid="structdpp_1_1application__install__params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>permissions</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopes</edgelabel>
+        </childnode>
+      </node>
       <node id="1">
         <label>dpp::integration_configuration</label>
         <link refid="structdpp_1_1integration__configuration"/>
@@ -31,13 +41,23 @@
           <edgelabel>oauth2_install_params</edgelabel>
         </childnode>
       </node>
-      <node id="2">
-        <label>optional&lt;</label>
+      <node id="3">
+        <label>dpp::permission</label>
+        <link refid="classdpp_1_1permission"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector&lt;</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
       </node>
     </collaborationgraph>
     <location file="include/dpp/application.h" line="218" column="1" bodyfile="include/dpp/application.h" bodystart="218" bodyend="220"/>
     <listofallmembers>
-      <member refid="structdpp_1_1integration__configuration_1a51494f936d67b2fb3c18b61b43b81e2b" prot="public" virt="non-virtual"><scope>dpp::integration_configuration</scope><name>oauth2_install_params</name></member>
+      <member refid="structdpp_1_1integration__configuration_1ad11610b10088e9c0d9ff1938bc14310e" prot="public" virt="non-virtual"><scope>dpp::integration_configuration</scope><name>oauth2_install_params</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

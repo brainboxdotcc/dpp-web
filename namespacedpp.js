@@ -6806,9 +6806,9 @@ var namespacedpp =
       [ "apf_gateway_message_content_limited", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888", null ],
       [ "apf_application_command_badge", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a401e761d72bd0b9bc94b95e4d2271d4e", null ]
     ] ],
-    [ "application_integration_types", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158", [
-      [ "ait_guild_install", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158ae9361a04022a1040f16d28dcc6db5dbf", null ],
-      [ "ait_user_install", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158a9601746fb7bd857786fc2729836e1211", null ]
+    [ "application_integration_types", "namespacedpp.html#a3948f04120ff6382aa17988a320f5785", [
+      [ "ait_guild_install", "namespacedpp.html#a3948f04120ff6382aa17988a320f5785ae9361a04022a1040f16d28dcc6db5dbf", null ],
+      [ "ait_user_install", "namespacedpp.html#a3948f04120ff6382aa17988a320f5785a9601746fb7bd857786fc2729836e1211", null ]
     ] ],
     [ "application_role_connection_metadata_type", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33", [
       [ "rc_integer_less_than_or_equal", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a2bbd23aeabfa38d2010c61d4dc099e5a", null ],
@@ -7522,18 +7522,18 @@ var namespacedpp =
       [ "i_gif", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31a366092ea3e4a9f5a1c1c4962094d3b9f", null ],
       [ "i_webp", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31a629c56aafbf3660b0814a743bf9f3458", null ]
     ] ],
-    [ "integration_flags", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0", [
-      [ "if_enabled", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187", null ],
-      [ "if_syncing", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11", null ],
-      [ "if_emoticons", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f", null ],
-      [ "if_revoked", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1", null ],
-      [ "if_expire_kick", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad", null ]
+    [ "integration_flags", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629", [
+      [ "if_enabled", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629aea01d18af1995c14b8f93a1def0c5187", null ],
+      [ "if_syncing", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629af10c00f79febd6633620cc60ff214e11", null ],
+      [ "if_emoticons", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629ac954473822136b410364f0e57b2f317f", null ],
+      [ "if_revoked", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629a29bde3bb98405da55ed02463ca320ef1", null ],
+      [ "if_expire_kick", "namespacedpp.html#a773f4bfaa8abc4d3ee8104d96f2dc629a8fa6e6961f9500c23086730960c35bad", null ]
     ] ],
-    [ "integration_type", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94f", [
-      [ "i_twitch", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf", null ],
-      [ "i_youtube", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fa899faa63fdc7c1fc7f44b64c926b5f40", null ],
-      [ "i_discord", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab9837432650669ee78368c2ef5d45ffe", null ],
-      [ "i_guild_subscription", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab8f7613bad83ab3cfaf534e3805f40fd", null ]
+    [ "integration_type", "namespacedpp.html#a549ccba6d0c676f8ad238b445191be93", [
+      [ "i_twitch", "namespacedpp.html#a549ccba6d0c676f8ad238b445191be93addc9e2ea6cfa8e6a5163742056a7ccdf", null ],
+      [ "i_youtube", "namespacedpp.html#a549ccba6d0c676f8ad238b445191be93a899faa63fdc7c1fc7f44b64c926b5f40", null ],
+      [ "i_discord", "namespacedpp.html#a549ccba6d0c676f8ad238b445191be93ab9837432650669ee78368c2ef5d45ffe", null ],
+      [ "i_guild_subscription", "namespacedpp.html#a549ccba6d0c676f8ad238b445191be93ab8f7613bad83ab3cfaf534e3805f40fd", null ]
     ] ],
     [ "intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5", [
       [ "i_guilds", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5afdc0ced010f66a5c3a0c818ec5975359", null ],
