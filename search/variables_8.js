@@ -159,7 +159,7 @@ var searchData=
   ['heavy_5fmultiplication_5fx_156',['heavy_multiplication_x',['../namespacedpp_1_1unicode__emoji.html#ab403dbd76b8bee2b9a2d7f9b184925ab',1,'dpp::unicode_emoji']]],
   ['heavy_5fplus_5fsign_157',['heavy_plus_sign',['../namespacedpp_1_1unicode__emoji.html#a0aeb743bf78ba3936f0535bd9eeeb89c',1,'dpp::unicode_emoji']]],
   ['hedgehog_158',['hedgehog',['../namespacedpp_1_1unicode__emoji.html#a219d7ea5a8882cce97b08f84885f0b13',1,'dpp::unicode_emoji']]],
-  ['height_159',['height',['../structdpp_1_1embed__image.html#a3b7a8bc11894f4ce4fed111219cd9d93',1,'dpp::embed_image::height()'],['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()']]],
+  ['height_159',['height',['../structdpp_1_1embed__image.html#a9e718ff16e1ca96e282b5d32a28a85e2',1,'dpp::embed_image::height()'],['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()']]],
   ['helicopter_160',['helicopter',['../namespacedpp_1_1unicode__emoji.html#aea1883e9fe1e9270f1010c3152973b84',1,'dpp::unicode_emoji']]],
   ['heliotrope_5fpurple_161',['heliotrope_purple',['../namespacedpp_1_1colors.html#aa002ffd528d9ca80449ae298622cac4e',1,'dpp::colors']]],
   ['helmet_5fwith_5fcross_162',['helmet_with_cross',['../namespacedpp_1_1unicode__emoji.html#a5575212e32505bab55745e03a0b53557',1,'dpp::unicode_emoji']]],

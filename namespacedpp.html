@@ -366,7 +366,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A footer in a <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a>.  <a href="structdpp_1_1embed__footer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1embed__image.html">embed_image</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An video, image or thumbnail in a <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a>.  <a href="structdpp_1_1embed__image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An video, image or thumbnail in a <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a> or <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a> (v2)  <a href="structdpp_1_1embed__image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1embed__provider.html">embed_provider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embed provider in a <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a>. Received from discord but cannot be sent.  <a href="structdpp_1_1embed__provider.html#details">More...</a><br /></td></tr>
@@ -2199,6 +2199,16 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a">cot_role_selectmenu</a> = 6
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3">cot_mentionable_selectmenu</a> = 7
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e">cot_channel_selectmenu</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7ac4c659276315b39a8a0648cec8447126">cot_section</a> = 9
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7ab467dbe0ad62db73f732d682892d10ee">cot_text_display</a> = 10
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7afed83d9735350b6ba6610afc29a80ee8">cot_thumbnail</a> = 11
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7aa5e64fc2a3c71634686ee95c3ae38f75">cot_media_gallery</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7aef6eba8b3437774bc0222e22c36f3085">cot_file</a> = 13
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a316c89bc30b7ba5e80269fd61940316d">cot_separator</a> = 14
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7ab08451a5d0de05f7392aca6d43f9ef08">cot_content_inventory_entry</a> = 16
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154">cot_container</a> = 17
 <br />
  }</td></tr>
 <tr class="memdesc:afce43206033521b990e3a72bb87481b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the type of a component.  <a href="namespacedpp.html#afce43206033521b990e3a72bb87481b7">More...</a><br /></td></tr>
@@ -2225,6 +2235,18 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a33007c1e6a21d250b7682025ebce9cdda5a6bb44a6821ca206c4f94c8cbd8c1b7">cdt_channel</a> = 2
  }</td></tr>
 <tr class="separator:a33007c1e6a21d250b7682025ebce9cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249add3e7a98665ae50eea6782981fa4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4">media_loading_state</a> : uint8_t { <a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a018c7b3512caf854870e27c6e5b33f6c">ls_unknown</a> = 0
+, <a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a10472420bed90e1c6141f300d58affaa">ls_loading</a> = 1
+, <a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a1fbdc9e8e56fe2982de97929a82c57d2">ls_loaded_success</a> = 2
+, <a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4aa18b6fb792acde408aeb5c3bd041a58e">ls_not_found</a> = 3
+ }</td></tr>
+<tr class="memdesc:a249add3e7a98665ae50eea6782981fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loading state for "unfurled" media, e.g. thumbnails and images in a message or component.  <a href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4">More...</a><br /></td></tr>
+<tr class="separator:a249add3e7a98665ae50eea6782981fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251283ad3361a7aae0de0d89cc220676"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a251283ad3361a7aae0de0d89cc220676">separator_spacing</a> : uint8_t { <a class="el" href="namespacedpp.html#a251283ad3361a7aae0de0d89cc220676a76612f26970457c566d232b19116d283">sep_small</a> = 1
+, <a class="el" href="namespacedpp.html#a251283ad3361a7aae0de0d89cc220676a00a8c8436c57bc16f6713f3cfef71cac">sep_large</a> = 2
+ }</td></tr>
+<tr class="memdesc:a251283ad3361a7aae0de0d89cc220676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spacing types for components v2 separator.  <a href="namespacedpp.html#a251283ad3361a7aae0de0d89cc220676">More...</a><br /></td></tr>
+<tr class="separator:a251283ad3361a7aae0de0d89cc220676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ead2d4ab4b3a6035a7940e65027da1d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1d">attachment_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1da51410217c0113152a312da176d376e91">a_is_remix</a> = 1 &lt;&lt; 2
  }</td></tr>
 <tr class="memdesc:a9ead2d4ab4b3a6035a7940e65027da1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask flags for a <a class="el" href="structdpp_1_1attachment.html" title="Represents an attachment in a dpp::message.">dpp::attachment</a>.  <a href="namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1d">More...</a><br /></td></tr>
@@ -2259,53 +2281,56 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746">m_thread_mention_failed</a> = 1 &lt;&lt; 8
 , <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757">m_suppress_notifications</a> = 1 &lt;&lt; 12
 , <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8">m_is_voice_message</a> = 1 &lt;&lt; 13
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a9824311104c50758aa4918c31dbc76c8">m_has_snapshot</a> = 1 &lt;&lt; 14
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a3aa022e7258c60abd50c9b0b28cad538">m_using_components_v2</a> = 1 &lt;&lt; 15
 <br />
  }</td></tr>
 <tr class="memdesc:ad0f89d72815d4d483f689baa5cca5107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask flags for a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a>.  <a href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107">More...</a><br /></td></tr>
 <tr class="separator:ad0f89d72815d4d483f689baa5cca5107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">message_type</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152">mt_default</a> = 0
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcae8c521e0821e3ce39219566726f46df3">mt_recipient_add</a> = 1
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b">mt_recipient_remove</a> = 2
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcab3bbd4be55810d639b4e46061a882203">mt_call</a> = 3
+<tr class="memitem:a9e6278f6006cf4ab45d64dd1fc3a11db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11db">message_type</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbac7573c73d464b30ffd2fee74f8618152">mt_default</a> = 0
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbae8c521e0821e3ce39219566726f46df3">mt_recipient_add</a> = 1
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba2e93d061d961d64a50310ac4e5444c3b">mt_recipient_remove</a> = 2
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbab3bbd4be55810d639b4e46061a882203">mt_call</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaeeb2b80decc86e5eb2060af5ac91b1d2">mt_channel_name_change</a> = 4
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcab19bff5918591d0230159889a7b25b95">mt_channel_icon_change</a> = 5
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca57b369b4b6b01c8061dad83b9e5eae9b">mt_channel_pinned_message</a> = 6
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc">mt_guild_member_join</a> = 7
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbaeeb2b80decc86e5eb2060af5ac91b1d2">mt_channel_name_change</a> = 4
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbab19bff5918591d0230159889a7b25b95">mt_channel_icon_change</a> = 5
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba57b369b4b6b01c8061dad83b9e5eae9b">mt_channel_pinned_message</a> = 6
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba3dbb35e6017af75be21cd1e1eac708cc">mt_guild_member_join</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572">mt_user_premium_guild_subscription</a> = 8
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554">mt_user_premium_guild_subscription_tier_1</a> = 9
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25">mt_user_premium_guild_subscription_tier_2</a> = 10
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787">mt_user_premium_guild_subscription_tier_3</a> = 11
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbabac2f050715993fd79a820d2e04c8572">mt_user_premium_guild_subscription</a> = 8
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbacf707cbe6c016d2661c0375bb021c554">mt_user_premium_guild_subscription_tier_1</a> = 9
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba1efe7500d0c09339b36e12249bd94b25">mt_user_premium_guild_subscription_tier_2</a> = 10
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba01435a57a373ce70598dabdb6d330787">mt_user_premium_guild_subscription_tier_3</a> = 11
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca45207c1afef758448fbc0b3c9a1830c6">mt_channel_follow_add</a> = 12
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca19a3b8cfddfc3dadbe11bb403b53f9ad">mt_guild_discovery_disqualified</a> = 14
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0761b0d92c9f4c6d5fda7ac47cb7e596">mt_guild_discovery_requalified</a> = 15
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcad8660ef6201f4b777a7f5f40216cf3aa">mt_guild_discovery_grace_period_initial_warning</a> = 16
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba45207c1afef758448fbc0b3c9a1830c6">mt_channel_follow_add</a> = 12
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba19a3b8cfddfc3dadbe11bb403b53f9ad">mt_guild_discovery_disqualified</a> = 14
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba0761b0d92c9f4c6d5fda7ac47cb7e596">mt_guild_discovery_requalified</a> = 15
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbad8660ef6201f4b777a7f5f40216cf3aa">mt_guild_discovery_grace_period_initial_warning</a> = 16
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcadd602178260b393c54fd8a509b05c0cc">mt_guild_discovery_grace_period_final_warning</a> = 17
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88">mt_thread_created</a> = 18
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c">mt_reply</a> = 19
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac0bfbd92c02b3e5e0a74f2b949c321fa">mt_application_command</a> = 20
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbadd602178260b393c54fd8a509b05c0cc">mt_guild_discovery_grace_period_final_warning</a> = 17
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba08b27991fef9b0c79308f33f29cffc88">mt_thread_created</a> = 18
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba13c1c1a4ead0ba6bfaca3c8e0fa53c7c">mt_reply</a> = 19
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbac0bfbd92c02b3e5e0a74f2b949c321fa">mt_application_command</a> = 20
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f">mt_thread_starter_message</a> = 21
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a">mt_guild_invite_reminder</a> = 22
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe">mt_context_menu_command</a> = 23
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509">mt_auto_moderation_action</a> = 24
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbaca707ebc93c56257189a2d10ae6f550f">mt_thread_starter_message</a> = 21
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba316506608264a2b1546fd7b71c82748a">mt_guild_invite_reminder</a> = 22
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba79aa113309ce945bd954058449e0f9fe">mt_context_menu_command</a> = 23
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba0ae71382837674b43d0e443da0eed509">mt_auto_moderation_action</a> = 24
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f">mt_role_subscription_purchase</a> = 25
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca5498258270a5478dbd76a7607a3a263d">mt_interaction_premium_upsell</a> = 26
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca6b15e76e3432267f6eae17d2048c07cc">mt_stage_start</a> = 27
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcadb58ce86bf80b21531f74b83e6fe7afd">mt_stage_end</a> = 28
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba7d0619d8752ba2c87bd838fb2f9e4c5f">mt_role_subscription_purchase</a> = 25
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba5498258270a5478dbd76a7607a3a263d">mt_interaction_premium_upsell</a> = 26
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba6b15e76e3432267f6eae17d2048c07cc">mt_stage_start</a> = 27
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbadb58ce86bf80b21531f74b83e6fe7afd">mt_stage_end</a> = 28
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca50d33a9d260edf3a45963b7e13b6a589">mt_stage_speaker</a> = 29
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacfd8dacbc3b7d79fdeb205b970639bb4">mt_stage_topic</a> = 31
-, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaede2ca9c4344d39cbddfca73d7d60ee8">mt_application_premium_subscription</a> = 32
+&#160;&#160;<a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dba50d33a9d260edf3a45963b7e13b6a589">mt_stage_speaker</a> = 29
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbacfd8dacbc3b7d79fdeb205b970639bb4">mt_stage_topic</a> = 31
+, <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbaede2ca9c4344d39cbddfca73d7d60ee8">mt_application_premium_subscription</a> = 32
 <br />
  }</td></tr>
-<tr class="memdesc:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message types for <a class="el" href="structdpp_1_1message.html#ad4aa6594661e1527815364ad5b33b96b" title="Message type.">dpp::message::type</a>.  <a href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">More...</a><br /></td></tr>
-<tr class="separator:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a9e6278f6006cf4ab45d64dd1fc3a11db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message types for <a class="el" href="structdpp_1_1message.html#ad4aa6594661e1527815364ad5b33b96b" title="Message type.">dpp::message::type</a>.  <a href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11db">More...</a><br /></td></tr>
+<tr class="separator:a9e6278f6006cf4ab45d64dd1fc3a11db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace5c63d91b72c5bae7d8cf9d8f531e52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52">cache_policy_setting_t</a> { <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a> = 0
 , <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c">cp_lazy</a> = 1
 , <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49">cp_none</a> = 2
@@ -4818,6 +4843,29 @@ template&lt;typename T &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" name="afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e"></a>cot_channel_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for channels. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7ac4c659276315b39a8a0648cec8447126" name="afce43206033521b990e3a72bb87481b7ac4c659276315b39a8a0648cec8447126"></a>cot_section&#160;</td><td class="fielddoc"><p >Section. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7ab467dbe0ad62db73f732d682892d10ee" name="afce43206033521b990e3a72bb87481b7ab467dbe0ad62db73f732d682892d10ee"></a>cot_text_display&#160;</td><td class="fielddoc"><p >Simple text. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7afed83d9735350b6ba6610afc29a80ee8" name="afce43206033521b990e3a72bb87481b7afed83d9735350b6ba6610afc29a80ee8"></a>cot_thumbnail&#160;</td><td class="fielddoc"><p >Image thumbnail, clickable to expand. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7aa5e64fc2a3c71634686ee95c3ae38f75" name="afce43206033521b990e3a72bb87481b7aa5e64fc2a3c71634686ee95c3ae38f75"></a>cot_media_gallery&#160;</td><td class="fielddoc"><p >Collection of media (images, videos) </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7aef6eba8b3437774bc0222e22c36f3085" name="afce43206033521b990e3a72bb87481b7aef6eba8b3437774bc0222e22c36f3085"></a>cot_file&#160;</td><td class="fielddoc"><p >File attachment from the uploads of the message. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a316c89bc30b7ba5e80269fd61940316d" name="afce43206033521b990e3a72bb87481b7a316c89bc30b7ba5e80269fd61940316d"></a>cot_separator&#160;</td><td class="fielddoc"><p >Separator between sections or other components. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7ab08451a5d0de05f7392aca6d43f9ef08" name="afce43206033521b990e3a72bb87481b7ab08451a5d0de05f7392aca6d43f9ef08"></a>cot_content_inventory_entry&#160;</td><td class="fielddoc"><p >Content inventory entry. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154" name="afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154"></a>cot_container&#160;</td><td class="fielddoc"><p >Container for other components. </p>
+<dl class="section note"><dt>Note</dt><dd>Available in components v2 only </dd></dl>
+</td></tr>
 </table>
 
 </div>
@@ -6162,6 +6210,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a249add3e7a98665ae50eea6782981fa4" name="a249add3e7a98665ae50eea6782981fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249add3e7a98665ae50eea6782981fa4">&#9670;&nbsp;</a></span>media_loading_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a249add3e7a98665ae50eea6782981fa4">dpp::media_loading_state</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loading state for "unfurled" media, e.g. thumbnails and images in a message or component. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a249add3e7a98665ae50eea6782981fa4a018c7b3512caf854870e27c6e5b33f6c" name="a249add3e7a98665ae50eea6782981fa4a018c7b3512caf854870e27c6e5b33f6c"></a>ls_unknown&#160;</td><td class="fielddoc"><p >Loading state is unknown. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a249add3e7a98665ae50eea6782981fa4a10472420bed90e1c6141f300d58affaa" name="a249add3e7a98665ae50eea6782981fa4a10472420bed90e1c6141f300d58affaa"></a>ls_loading&#160;</td><td class="fielddoc"><p >Discord is loading the media. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a249add3e7a98665ae50eea6782981fa4a1fbdc9e8e56fe2982de97929a82c57d2" name="a249add3e7a98665ae50eea6782981fa4a1fbdc9e8e56fe2982de97929a82c57d2"></a>ls_loaded_success&#160;</td><td class="fielddoc"><p >The image was processed and loaded successfully. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a249add3e7a98665ae50eea6782981fa4aa18b6fb792acde408aeb5c3bd041a58e" name="a249add3e7a98665ae50eea6782981fa4aa18b6fb792acde408aeb5c3bd041a58e"></a>ls_not_found&#160;</td><td class="fielddoc"><p >The media was not found. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ad0f89d72815d4d483f689baa5cca5107" name="ad0f89d72815d4d483f689baa5cca5107"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0f89d72815d4d483f689baa5cca5107">&#9670;&nbsp;</a></span>message_flags</h2>
 
@@ -6198,85 +6272,89 @@ template&lt;typename T &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8" name="ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8"></a>m_is_voice_message&#160;</td><td class="fielddoc"><p >This message is a voice message. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a9824311104c50758aa4918c31dbc76c8" name="ad0f89d72815d4d483f689baa5cca5107a9824311104c50758aa4918c31dbc76c8"></a>m_has_snapshot&#160;</td><td class="fielddoc"><p >Contains forwarded snapshot. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a3aa022e7258c60abd50c9b0b28cad538" name="ad0f89d72815d4d483f689baa5cca5107a3aa022e7258c60abd50c9b0b28cad538"></a>m_using_components_v2&#160;</td><td class="fielddoc"><p >Message components vector contains v2 components. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
-<a id="acd7f41dcc93c1cf48514d2b123e4d8bc" name="acd7f41dcc93c1cf48514d2b123e4d8bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd7f41dcc93c1cf48514d2b123e4d8bc">&#9670;&nbsp;</a></span>message_type</h2>
+<a id="a9e6278f6006cf4ab45d64dd1fc3a11db" name="a9e6278f6006cf4ab45d64dd1fc3a11db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6278f6006cf4ab45d64dd1fc3a11db">&#9670;&nbsp;</a></span>message_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">dpp::message_type</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11db">dpp::message_type</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Message types for <a class="el" href="structdpp_1_1message.html#ad4aa6594661e1527815364ad5b33b96b" title="Message type.">dpp::message::type</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152" name="acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152"></a>mt_default&#160;</td><td class="fielddoc"><p >Default. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbac7573c73d464b30ffd2fee74f8618152" name="a9e6278f6006cf4ab45d64dd1fc3a11dbac7573c73d464b30ffd2fee74f8618152"></a>mt_default&#160;</td><td class="fielddoc"><p >Default. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcae8c521e0821e3ce39219566726f46df3" name="acd7f41dcc93c1cf48514d2b123e4d8bcae8c521e0821e3ce39219566726f46df3"></a>mt_recipient_add&#160;</td><td class="fielddoc"><p >Add recipient. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbae8c521e0821e3ce39219566726f46df3" name="a9e6278f6006cf4ab45d64dd1fc3a11dbae8c521e0821e3ce39219566726f46df3"></a>mt_recipient_add&#160;</td><td class="fielddoc"><p >Add recipient. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b" name="acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b"></a>mt_recipient_remove&#160;</td><td class="fielddoc"><p >Remove recipient. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba2e93d061d961d64a50310ac4e5444c3b" name="a9e6278f6006cf4ab45d64dd1fc3a11dba2e93d061d961d64a50310ac4e5444c3b"></a>mt_recipient_remove&#160;</td><td class="fielddoc"><p >Remove recipient. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcab3bbd4be55810d639b4e46061a882203" name="acd7f41dcc93c1cf48514d2b123e4d8bcab3bbd4be55810d639b4e46061a882203"></a>mt_call&#160;</td><td class="fielddoc"><p >Call. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbab3bbd4be55810d639b4e46061a882203" name="a9e6278f6006cf4ab45d64dd1fc3a11dbab3bbd4be55810d639b4e46061a882203"></a>mt_call&#160;</td><td class="fielddoc"><p >Call. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcaeeb2b80decc86e5eb2060af5ac91b1d2" name="acd7f41dcc93c1cf48514d2b123e4d8bcaeeb2b80decc86e5eb2060af5ac91b1d2"></a>mt_channel_name_change&#160;</td><td class="fielddoc"><p >Channel name change. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbaeeb2b80decc86e5eb2060af5ac91b1d2" name="a9e6278f6006cf4ab45d64dd1fc3a11dbaeeb2b80decc86e5eb2060af5ac91b1d2"></a>mt_channel_name_change&#160;</td><td class="fielddoc"><p >Channel name change. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcab19bff5918591d0230159889a7b25b95" name="acd7f41dcc93c1cf48514d2b123e4d8bcab19bff5918591d0230159889a7b25b95"></a>mt_channel_icon_change&#160;</td><td class="fielddoc"><p >Channel icon change. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbab19bff5918591d0230159889a7b25b95" name="a9e6278f6006cf4ab45d64dd1fc3a11dbab19bff5918591d0230159889a7b25b95"></a>mt_channel_icon_change&#160;</td><td class="fielddoc"><p >Channel icon change. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca57b369b4b6b01c8061dad83b9e5eae9b" name="acd7f41dcc93c1cf48514d2b123e4d8bca57b369b4b6b01c8061dad83b9e5eae9b"></a>mt_channel_pinned_message&#160;</td><td class="fielddoc"><p >Message pinned. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba57b369b4b6b01c8061dad83b9e5eae9b" name="a9e6278f6006cf4ab45d64dd1fc3a11dba57b369b4b6b01c8061dad83b9e5eae9b"></a>mt_channel_pinned_message&#160;</td><td class="fielddoc"><p >Message pinned. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc" name="acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc"></a>mt_guild_member_join&#160;</td><td class="fielddoc"><p >Member joined. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba3dbb35e6017af75be21cd1e1eac708cc" name="a9e6278f6006cf4ab45d64dd1fc3a11dba3dbb35e6017af75be21cd1e1eac708cc"></a>mt_guild_member_join&#160;</td><td class="fielddoc"><p >Member joined. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572" name="acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572"></a>mt_user_premium_guild_subscription&#160;</td><td class="fielddoc"><p >Boost. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbabac2f050715993fd79a820d2e04c8572" name="a9e6278f6006cf4ab45d64dd1fc3a11dbabac2f050715993fd79a820d2e04c8572"></a>mt_user_premium_guild_subscription&#160;</td><td class="fielddoc"><p >Boost. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554" name="acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554"></a>mt_user_premium_guild_subscription_tier_1&#160;</td><td class="fielddoc"><p >Boost level 1. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbacf707cbe6c016d2661c0375bb021c554" name="a9e6278f6006cf4ab45d64dd1fc3a11dbacf707cbe6c016d2661c0375bb021c554"></a>mt_user_premium_guild_subscription_tier_1&#160;</td><td class="fielddoc"><p >Boost level 1. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25" name="acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25"></a>mt_user_premium_guild_subscription_tier_2&#160;</td><td class="fielddoc"><p >Boost level 2. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba1efe7500d0c09339b36e12249bd94b25" name="a9e6278f6006cf4ab45d64dd1fc3a11dba1efe7500d0c09339b36e12249bd94b25"></a>mt_user_premium_guild_subscription_tier_2&#160;</td><td class="fielddoc"><p >Boost level 2. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787" name="acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787"></a>mt_user_premium_guild_subscription_tier_3&#160;</td><td class="fielddoc"><p >Boost level 3. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba01435a57a373ce70598dabdb6d330787" name="a9e6278f6006cf4ab45d64dd1fc3a11dba01435a57a373ce70598dabdb6d330787"></a>mt_user_premium_guild_subscription_tier_3&#160;</td><td class="fielddoc"><p >Boost level 3. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca45207c1afef758448fbc0b3c9a1830c6" name="acd7f41dcc93c1cf48514d2b123e4d8bca45207c1afef758448fbc0b3c9a1830c6"></a>mt_channel_follow_add&#160;</td><td class="fielddoc"><p >Follow channel. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba45207c1afef758448fbc0b3c9a1830c6" name="a9e6278f6006cf4ab45d64dd1fc3a11dba45207c1afef758448fbc0b3c9a1830c6"></a>mt_channel_follow_add&#160;</td><td class="fielddoc"><p >Follow channel. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca19a3b8cfddfc3dadbe11bb403b53f9ad" name="acd7f41dcc93c1cf48514d2b123e4d8bca19a3b8cfddfc3dadbe11bb403b53f9ad"></a>mt_guild_discovery_disqualified&#160;</td><td class="fielddoc"><p >Disqualified from discovery. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba19a3b8cfddfc3dadbe11bb403b53f9ad" name="a9e6278f6006cf4ab45d64dd1fc3a11dba19a3b8cfddfc3dadbe11bb403b53f9ad"></a>mt_guild_discovery_disqualified&#160;</td><td class="fielddoc"><p >Disqualified from discovery. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca0761b0d92c9f4c6d5fda7ac47cb7e596" name="acd7f41dcc93c1cf48514d2b123e4d8bca0761b0d92c9f4c6d5fda7ac47cb7e596"></a>mt_guild_discovery_requalified&#160;</td><td class="fielddoc"><p >Re-qualified for discovery. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba0761b0d92c9f4c6d5fda7ac47cb7e596" name="a9e6278f6006cf4ab45d64dd1fc3a11dba0761b0d92c9f4c6d5fda7ac47cb7e596"></a>mt_guild_discovery_requalified&#160;</td><td class="fielddoc"><p >Re-qualified for discovery. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcad8660ef6201f4b777a7f5f40216cf3aa" name="acd7f41dcc93c1cf48514d2b123e4d8bcad8660ef6201f4b777a7f5f40216cf3aa"></a>mt_guild_discovery_grace_period_initial_warning&#160;</td><td class="fielddoc"><p >Discovery grace period warning 1. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbad8660ef6201f4b777a7f5f40216cf3aa" name="a9e6278f6006cf4ab45d64dd1fc3a11dbad8660ef6201f4b777a7f5f40216cf3aa"></a>mt_guild_discovery_grace_period_initial_warning&#160;</td><td class="fielddoc"><p >Discovery grace period warning 1. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcadd602178260b393c54fd8a509b05c0cc" name="acd7f41dcc93c1cf48514d2b123e4d8bcadd602178260b393c54fd8a509b05c0cc"></a>mt_guild_discovery_grace_period_final_warning&#160;</td><td class="fielddoc"><p >Discovery grace period warning 2. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbadd602178260b393c54fd8a509b05c0cc" name="a9e6278f6006cf4ab45d64dd1fc3a11dbadd602178260b393c54fd8a509b05c0cc"></a>mt_guild_discovery_grace_period_final_warning&#160;</td><td class="fielddoc"><p >Discovery grace period warning 2. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88" name="acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88"></a>mt_thread_created&#160;</td><td class="fielddoc"><p >Thread Created. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba08b27991fef9b0c79308f33f29cffc88" name="a9e6278f6006cf4ab45d64dd1fc3a11dba08b27991fef9b0c79308f33f29cffc88"></a>mt_thread_created&#160;</td><td class="fielddoc"><p >Thread Created. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c" name="acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c"></a>mt_reply&#160;</td><td class="fielddoc"><p >Reply. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba13c1c1a4ead0ba6bfaca3c8e0fa53c7c" name="a9e6278f6006cf4ab45d64dd1fc3a11dba13c1c1a4ead0ba6bfaca3c8e0fa53c7c"></a>mt_reply&#160;</td><td class="fielddoc"><p >Reply. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcac0bfbd92c02b3e5e0a74f2b949c321fa" name="acd7f41dcc93c1cf48514d2b123e4d8bcac0bfbd92c02b3e5e0a74f2b949c321fa"></a>mt_application_command&#160;</td><td class="fielddoc"><p >Application command. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbac0bfbd92c02b3e5e0a74f2b949c321fa" name="a9e6278f6006cf4ab45d64dd1fc3a11dbac0bfbd92c02b3e5e0a74f2b949c321fa"></a>mt_application_command&#160;</td><td class="fielddoc"><p >Application command. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f" name="acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f"></a>mt_thread_starter_message&#160;</td><td class="fielddoc"><p >Thread starter message. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbaca707ebc93c56257189a2d10ae6f550f" name="a9e6278f6006cf4ab45d64dd1fc3a11dbaca707ebc93c56257189a2d10ae6f550f"></a>mt_thread_starter_message&#160;</td><td class="fielddoc"><p >Thread starter message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a" name="acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a"></a>mt_guild_invite_reminder&#160;</td><td class="fielddoc"><p >Invite reminder. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba316506608264a2b1546fd7b71c82748a" name="a9e6278f6006cf4ab45d64dd1fc3a11dba316506608264a2b1546fd7b71c82748a"></a>mt_guild_invite_reminder&#160;</td><td class="fielddoc"><p >Invite reminder. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe" name="acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe"></a>mt_context_menu_command&#160;</td><td class="fielddoc"><p >Context Menu Command. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba79aa113309ce945bd954058449e0f9fe" name="a9e6278f6006cf4ab45d64dd1fc3a11dba79aa113309ce945bd954058449e0f9fe"></a>mt_context_menu_command&#160;</td><td class="fielddoc"><p >Context Menu Command. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509" name="acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509"></a>mt_auto_moderation_action&#160;</td><td class="fielddoc"><p >Auto moderation action. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba0ae71382837674b43d0e443da0eed509" name="a9e6278f6006cf4ab45d64dd1fc3a11dba0ae71382837674b43d0e443da0eed509"></a>mt_auto_moderation_action&#160;</td><td class="fielddoc"><p >Auto moderation action. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f" name="acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f"></a>mt_role_subscription_purchase&#160;</td><td class="fielddoc"><p >Role subscription purchase. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba7d0619d8752ba2c87bd838fb2f9e4c5f" name="a9e6278f6006cf4ab45d64dd1fc3a11dba7d0619d8752ba2c87bd838fb2f9e4c5f"></a>mt_role_subscription_purchase&#160;</td><td class="fielddoc"><p >Role subscription purchase. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca5498258270a5478dbd76a7607a3a263d" name="acd7f41dcc93c1cf48514d2b123e4d8bca5498258270a5478dbd76a7607a3a263d"></a>mt_interaction_premium_upsell&#160;</td><td class="fielddoc"><p >Interaction premium upsell @depreciated Replaced with buttons with a style of cos_premium This message type may stop working at any point. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba5498258270a5478dbd76a7607a3a263d" name="a9e6278f6006cf4ab45d64dd1fc3a11dba5498258270a5478dbd76a7607a3a263d"></a>mt_interaction_premium_upsell&#160;</td><td class="fielddoc"><p >Interaction premium upsell @depreciated Replaced with buttons with a style of cos_premium This message type may stop working at any point. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca6b15e76e3432267f6eae17d2048c07cc" name="acd7f41dcc93c1cf48514d2b123e4d8bca6b15e76e3432267f6eae17d2048c07cc"></a>mt_stage_start&#160;</td><td class="fielddoc"><p >Stage start. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba6b15e76e3432267f6eae17d2048c07cc" name="a9e6278f6006cf4ab45d64dd1fc3a11dba6b15e76e3432267f6eae17d2048c07cc"></a>mt_stage_start&#160;</td><td class="fielddoc"><p >Stage start. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcadb58ce86bf80b21531f74b83e6fe7afd" name="acd7f41dcc93c1cf48514d2b123e4d8bcadb58ce86bf80b21531f74b83e6fe7afd"></a>mt_stage_end&#160;</td><td class="fielddoc"><p >Stage end. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbadb58ce86bf80b21531f74b83e6fe7afd" name="a9e6278f6006cf4ab45d64dd1fc3a11dbadb58ce86bf80b21531f74b83e6fe7afd"></a>mt_stage_end&#160;</td><td class="fielddoc"><p >Stage end. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca50d33a9d260edf3a45963b7e13b6a589" name="acd7f41dcc93c1cf48514d2b123e4d8bca50d33a9d260edf3a45963b7e13b6a589"></a>mt_stage_speaker&#160;</td><td class="fielddoc"><p >Stage speaker. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dba50d33a9d260edf3a45963b7e13b6a589" name="a9e6278f6006cf4ab45d64dd1fc3a11dba50d33a9d260edf3a45963b7e13b6a589"></a>mt_stage_speaker&#160;</td><td class="fielddoc"><p >Stage speaker. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcacfd8dacbc3b7d79fdeb205b970639bb4" name="acd7f41dcc93c1cf48514d2b123e4d8bcacfd8dacbc3b7d79fdeb205b970639bb4"></a>mt_stage_topic&#160;</td><td class="fielddoc"><p >Stage topic. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbacfd8dacbc3b7d79fdeb205b970639bb4" name="a9e6278f6006cf4ab45d64dd1fc3a11dbacfd8dacbc3b7d79fdeb205b970639bb4"></a>mt_stage_topic&#160;</td><td class="fielddoc"><p >Stage topic. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcaede2ca9c4344d39cbddfca73d7d60ee8" name="acd7f41dcc93c1cf48514d2b123e4d8bcaede2ca9c4344d39cbddfca73d7d60ee8"></a>mt_application_premium_subscription&#160;</td><td class="fielddoc"><p >Guild application premium subscription. </p>
+<tr><td class="fieldname"><a id="a9e6278f6006cf4ab45d64dd1fc3a11dbaede2ca9c4344d39cbddfca73d7d60ee8" name="a9e6278f6006cf4ab45d64dd1fc3a11dbaede2ca9c4344d39cbddfca73d7d60ee8"></a>mt_application_premium_subscription&#160;</td><td class="fielddoc"><p >Guild application premium subscription. </p>
 </td></tr>
 </table>
 
@@ -6703,6 +6781,28 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171" name="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171"></a>r_guild_connections&#160;</td><td class="fielddoc"><p >Whether the role is a guild's linked role. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6" name="af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6"></a>r_in_prompt&#160;</td><td class="fielddoc"><p >Whether the role can be selected by members in an onboarding prompt. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a251283ad3361a7aae0de0d89cc220676" name="a251283ad3361a7aae0de0d89cc220676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251283ad3361a7aae0de0d89cc220676">&#9670;&nbsp;</a></span>separator_spacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a251283ad3361a7aae0de0d89cc220676">dpp::separator_spacing</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spacing types for components v2 separator. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a251283ad3361a7aae0de0d89cc220676a76612f26970457c566d232b19116d283" name="a251283ad3361a7aae0de0d89cc220676a76612f26970457c566d232b19116d283"></a>sep_small&#160;</td><td class="fielddoc"><p >Small separator. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a251283ad3361a7aae0de0d89cc220676a00a8c8436c57bc16f6713f3cfef71cac" name="a251283ad3361a7aae0de0d89cc220676a00a8c8436c57bc16f6713f3cfef71cac"></a>sep_large&#160;</td><td class="fielddoc"><p >Large separator. </p>
 </td></tr>
 </table>
 
