@@ -72,6 +72,7 @@
     <innerclass refid="structdpp_1_1dave__binary__header__t" prot="public">dpp::dave_binary_header_t</innerclass>
     <innerclass refid="classdpp_1_1discord__client" prot="public">dpp::discord_client</innerclass>
     <innerclass refid="classdpp_1_1discord__voice__client" prot="public">dpp::discord_voice_client</innerclass>
+    <innerclass refid="structdpp_1_1discord__webhook__server" prot="public">dpp::discord_webhook_server</innerclass>
     <innerclass refid="structdpp_1_1dns__cache__entry" prot="public">dpp::dns_cache_entry</innerclass>
     <innerclass refid="classdpp_1_1dtemplate" prot="public">dpp::dtemplate</innerclass>
     <innerclass refid="structdpp_1_1embed" prot="public">dpp::embed</innerclass>
@@ -127,6 +128,8 @@
     <innerclass refid="structdpp_1_1http__connect__info" prot="public">dpp::http_connect_info</innerclass>
     <innerclass refid="classdpp_1_1http__request" prot="public">dpp::http_request</innerclass>
     <innerclass refid="structdpp_1_1http__request__completion__t" prot="public">dpp::http_request_completion_t</innerclass>
+    <innerclass refid="structdpp_1_1http__server" prot="public">dpp::http_server</innerclass>
+    <innerclass refid="classdpp_1_1http__server__request" prot="public">dpp::http_server_request</innerclass>
     <innerclass refid="classdpp_1_1https__client" prot="public">dpp::https_client</innerclass>
     <innerclass refid="classdpp_1_1integration" prot="public">dpp::integration</innerclass>
     <innerclass refid="structdpp_1_1integration__account" prot="public">dpp::integration_account</innerclass>
@@ -200,14 +203,17 @@
     <innerclass refid="classdpp_1_1scheduled__event__collector" prot="public">dpp::scheduled_event_collector</innerclass>
     <innerclass refid="structdpp_1_1select__click__t" prot="public">dpp::select_click_t</innerclass>
     <innerclass refid="structdpp_1_1select__option" prot="public">dpp::select_option</innerclass>
+    <innerclass refid="classdpp_1_1signature__verifier" prot="public">dpp::signature_verifier</innerclass>
     <innerclass refid="classdpp_1_1sku" prot="public">dpp::sku</innerclass>
     <innerclass refid="classdpp_1_1slashcommand" prot="public">dpp::slashcommand</innerclass>
     <innerclass refid="structdpp_1_1slashcommand__t" prot="public">dpp::slashcommand_t</innerclass>
     <innerclass refid="classdpp_1_1snowflake" prot="public">dpp::snowflake</innerclass>
+    <innerclass refid="structdpp_1_1socket__close__t" prot="public">dpp::socket_close_t</innerclass>
     <innerclass refid="structdpp_1_1socket__engine__base" prot="public">dpp::socket_engine_base</innerclass>
     <innerclass refid="structdpp_1_1socket__events" prot="public">dpp::socket_events</innerclass>
+    <innerclass refid="structdpp_1_1socket__listener" prot="public">dpp::socket_listener</innerclass>
     <innerclass refid="structdpp_1_1socket__stats" prot="public">dpp::socket_stats</innerclass>
-    <innerclass refid="classdpp_1_1ssl__client" prot="public">dpp::ssl_client</innerclass>
+    <innerclass refid="classdpp_1_1ssl__connection" prot="public">dpp::ssl_connection</innerclass>
     <innerclass refid="structdpp_1_1stage__instance" prot="public">dpp::stage_instance</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__create__t" prot="public">dpp::stage_instance_create_t</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__delete__t" prot="public">dpp::stage_instance_delete_t</innerclass>
@@ -2398,7 +2404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="2190" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="2190" bodyend="2199"/>
+        <location file="include/dpp/dispatcher.h" line="2244" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="2244" bodyend="2253"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947c" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9463,6 +9469,56 @@
         </inbodydescription>
         <location file="include/dpp/sku.h" line="60" column="1" bodyfile="include/dpp/sku.h" bodystart="60" bodyend="75"/>
       </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1aff70bcac8227c2ce2daceb63637771b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>raii_socket_type</name>
+        <enumvalue id="namespacedpp_1aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585" prot="public">
+          <name>rst_udp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1aff70bcac8227c2ce2daceb63637771b7aab63ae4bfbd540e9b725cd90d5a98f9d" prot="public">
+          <name>rst_tcp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="110" column="1" bodyfile="include/dpp/socket.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a9bafdff8af52a052625274bf3a642b78" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>socket_listener_type</name>
+        <enumvalue id="namespacedpp_1a9bafdff8af52a052625274bf3a642b78a9f6ec38c707d7ddadebfe9be8b313f0e" prot="public">
+          <name>li_plaintext</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9bafdff8af52a052625274bf3a642b78ac7053e63911d59acc606677882eca6d6" prot="public">
+          <name>li_ssl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket_listener.h" line="36" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="36" bodyend="39"/>
+      </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a47df59fd5325a437251e77878c629532" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>socket_event_flags</name>
@@ -10477,6 +10533,20 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="2038" column="28" bodyfile="include/dpp/guild.h" bodystart="2038" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a9758c1c5e9637e64e889b672ef62465b" prot="public" static="no">
+        <type>std::function&lt; void(class <ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> *)&gt;</type>
+        <definition>using dpp::http_server_request_event = typedef std::function&lt;void(class http_server_request*)&gt;</definition>
+        <argsstring></argsstring>
+        <name>http_server_request_event</name>
+        <briefdescription>
+<para>Callback type for HTTP server request callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="40" column="1" bodyfile="include/dpp/http_server_request.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" prot="public" static="no">
         <type>std::multimap&lt; std::string, std::string &gt;</type>
         <definition>typedef std::multimap&lt;std::string, std::string&gt; dpp::http_headers</definition>
@@ -11277,7 +11347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="66" column="20" bodyfile="include/dpp/sslclient.h" bodystart="66" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="66" column="20" bodyfile="include/dpp/sslconnection.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a75b92dd2787f4e2c1d11e4ffe94a0ffc" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int</type>
@@ -11292,7 +11362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="71" column="15" bodyfile="include/dpp/sslclient.h" bodystart="71" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="71" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a780ea9df2eab00f9d83923389c1a47e8" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int</type>
@@ -11307,7 +11377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="76" column="15" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="76" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ae876818464d49870905285dd988de870" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr uint32_t</type>
@@ -15027,7 +15097,7 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="48" column="17" declfile="include/dpp/sslclient.h" declline="48" declcolumn="17"/>
+        <location file="include/dpp/sslconnection.h" line="48" column="17" declfile="include/dpp/sslconnection.h" declline="48" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1a4be59026a3091dae2a6912a9bab911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>DPP_EXPORT bool</type>
@@ -15069,7 +15139,7 @@ Easter egg (redefinition of dpp::commandhandler::thinking).</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="57" column="17" declfile="include/dpp/sslclient.h" declline="57" declcolumn="17"/>
+        <location file="include/dpp/sslconnection.h" line="57" column="17" declfile="include/dpp/sslconnection.h" declline="57" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aa8227c717e1a550b3c3962cea1964d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>

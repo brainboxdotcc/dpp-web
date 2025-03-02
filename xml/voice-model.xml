@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect1 id="voice-model_1autotoc_md88">
+<sect1 id="voice-model_1autotoc_md104">
 <title>High Level Summary</title>
 <para>Discord&apos;s audio system consists of several layers and inter-related systems as shown in the flow chart below.</para>
 <para>At the top level, connecting to a voice server requires the library to request the details of a voice server from Discord via the websocket for the shard where the server is located. Performing this request will make Discord reply with a websocket URI and an ephemeral token (not the bot token) which are used to establish an initial connection to this secondary websocket. Every connection to a voice channel creates a separate secondary websocket.</para>
@@ -21,7 +21,7 @@
 </para>
 <para>After reading all this, go get a coffee or something, you deserve it! ☕</para>
 </sect1>
-<sect1 id="voice-model_1autotoc_md89">
+<sect1 id="voice-model_1autotoc_md105">
 <title>Flow Diagram</title>
 <para><dot>
 digraph &quot;Example Directory&quot; {
@@ -58,11 +58,11 @@ digraph &quot;Example Directory&quot; {
         node [style=filled, color=3, shape=rect]
         &quot;discord_client::one_second_timer&quot;;
         &quot;websocket_client::write&quot;;
-        &quot;ssl_client::write&quot;;
+        &quot;ssl_connection::write&quot;;
         
         &quot;discord_client::one_second_timer&quot; -&gt; &quot;websocket_client::write&quot;;
-        &quot;websocket_client::write&quot; -&gt; &quot;ssl_client::write&quot;;
-        &quot;ssl_client::write&quot; -&gt; &quot;Discord&quot;;
+        &quot;websocket_client::write&quot; -&gt; &quot;ssl_connection::write&quot;;
+        &quot;ssl_connection::write&quot; -&gt; &quot;Discord&quot;;
         
         label = &quot;This is where we start sending\nwebsocket connections to Discord.&quot;;
     }
@@ -71,17 +71,17 @@ digraph &quot;Example Directory&quot; {
         style=filled;
         color=lightgrey;
         node [style=filled, color=3, shape=rect]
-        &quot;ssl_client::read_loop&quot;;
+        &quot;ssl_connection::read_loop&quot;;
         &quot;Response from Discord?&quot;;
         &quot;No&quot;;
         &quot;HTTP/1.1 204 No Content...&quot;;
         &quot;HTTP/1.1 101 Switching Protocols&quot;;
         
-        &quot;ssl_client::read_loop&quot; -&gt; &quot;Response from Discord?&quot;;
+        &quot;ssl_connection::read_loop&quot; -&gt; &quot;Response from Discord?&quot;;
         &quot;Response from Discord?&quot; -&gt; &quot;No&quot;;
         &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
         &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
-        &quot;No&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        &quot;No&quot; -&gt; &quot;ssl_connection::read_loop&quot;;
         
         &quot;Discord&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
         &quot;Discord&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
@@ -118,7 +118,7 @@ digraph &quot;Example Directory&quot; {
 
         &quot;voiceconn::connect&quot; -&gt; &quot;discord_voice_client::run&quot; [label=&quot;Once websocket_client has finished&quot;];
         &quot;discord_voice_client::run&quot; -&gt; &quot;discord_voice_client::thread_run&quot;;
-        &quot;discord_voice_client::thread_run&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        &quot;discord_voice_client::thread_run&quot; -&gt; &quot;ssl_connection::read_loop&quot;;
         
         label = &quot;Voice initalisation.\nThis will only fire when &apos;voice_server_update&apos; AND &apos;voice_state_update&apos; has fired.\nIf everything goes well, Discord should send back &apos;101 Switching Protocals&apos;.&quot;;
     }

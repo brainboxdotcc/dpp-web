@@ -136,9 +136,9 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:1397</div></div>
 <div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
 <div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:72</div></div>
-<div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:688</div></div>
-<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:971</div></div>
-<div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:705</div></div>
+<div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:742</div></div>
+<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1025</div></div>
+<div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:759</div></div>
 </div><!-- fragment --><p class="endtd"></p>
 </td><td><p class="starttd"></p>
 <div class="fragment"><div class="line">let Discord = require(&#39;discord.js&#39;);</div>
@@ -169,14 +169,14 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 </td></tr>
 </table>
 <p >Let's break this program down step by step:</p>
-<h2><a class="anchor" id="autotoc_md140"></a>
+<h2><a class="anchor" id="autotoc_md156"></a>
 1. Start with an empty C++ program</h2>
 <p >Make sure to include the header file for the D++ library with the instruction <code>#include &lt;dpp/dpp.h&gt;</code>!</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md141"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md157"></a>
 2. Create an instance of dpp::cluster</h2>
 <p >To make use of the library you must create a <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> object. This object is the main object in your program like the <code>Discord.Client</code> object in Discord.js.</p>
 <p >You can instantiate this class as shown below. Remember to put your bot token in the constant!</p>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(BOT_TOKEN);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md142"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md158"></a>
 3. Attach to an event</h2>
 <p >To have a bot that does something, you should attach to some events. Let's start by attaching to the <code>on_ready</code> event (<a class="el" href="classdpp_1_1cluster.html#aa006f45139c81be7705a4dc67e4da242" title="Called when a shard is connected and ready. A set of cluster::on_guild_create events will follow this...">dpp::cluster::on_ready</a>) which will notify your program when the bot is connected. In this event, we will register a slash command called 'ping'. Note that we must wrap our registration of the command in a template called <a class="el" href="namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0" title="Run some code within an if() statement only once.">dpp::run_once</a> which prevents it from being re-run every time your bot does a full reconnection (e.g. if the connection fails).</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md143"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md159"></a>
 4. Attach to another event to receive slash commands</h2>
 <p >If you want to handle a slash command, you should also attach your program to the <code>on_slashcommand</code> event (<a class="el" href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6" title="Called when a slash command is issued. Only dpp::ctxm_chat_input types of interaction are routed to t...">dpp::cluster::on_slashcommand</a>) which is basically the same as the Discord.js <code>interactionCreate</code> event. Lets add this to the program before the <code>on_ready</code> event:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md144"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md160"></a>
 5. Add some content to the events</h2>
 <p >Attaching to an event is a good start, but to make a bot you should actually put some program code into the interaction event. We will add some code to the <code>on_slashcommand</code> to look for our slash command '/ping' and reply with <code>Pong!</code>:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">});</div>
 </div><!-- fragment --><p >This code is simply comparing the command name <code>event.command.get_command_name()</code> (<a class="el" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140" title="Get the command name for a command interaction.">dpp::interaction::get_command_name</a>) against the value in a constant string value <code>"ping"</code>. If they match, then the <code>event.reply</code> method is called.</p>
 <p >The <code>event.reply</code> function (<a class="el" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493" title="Acknowledge interaction without displaying a message to the user, for use with button and select menu...">dpp::slashcommand_t::reply</a>) replies to a slash command with a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text.</p>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md161"></a>
 6. Add code to start the bot!</h2>
 <p >To make the bot start, we must call the <a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416" title="Start the cluster, connecting all its shards.">dpp::cluster::start</a> method, e.g. in our program by using <code>bot.start(dpp::st_wait)</code>.</p>
 <p >We also add a line to tell the library to output all its log information to the console, <code>bot.on_log(dpp::utility::cout_logger());</code> - if you wanted to do something more advanced, you can replace this parameter with a lambda just like all other events.</p>
@@ -280,10 +280,10 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md146"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md162"></a>
 7. Compile and run your bot</h2>
 <p >Compile your bot using <code>g++ -std=c++20 -o bot bot.cpp -ldpp</code> (if your .cpp file is called <code>bot.cpp</code>) and run it with <code>./bot</code>.</p>
-<h2><a class="anchor" id="autotoc_md147"></a>
+<h2><a class="anchor" id="autotoc_md163"></a>
 8. Inviting your bot to your server</h2>
 <p >When you invite your bot, you must use the <code>applications.commands</code> and <code>bots</code> scopes to ensure your bot can create guild slash commands. For example:</p>
 <div class="fragment"><div class="line">https://discord.com/oauth2/authorize?client_id=YOUR-BOTS-ID-HERE&amp;scope=bot+applications.commands&amp;permissions=BOT-PERMISSIONS-HERE</div>

@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a22b49f725c6ae318e97cd4134be29f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2a22b49f725c6ae318e97cd4134be29f">cluster</a> (const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, uint32_t <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a>=<a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">i_default_intents</a>, uint32_t shards=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#a5155862c1d7267c7f4ee8781ff3e8d7f">cluster_id</a>=0, uint32_t <a class="el" href="classdpp_1_1cluster.html#ad80e4df300e69988d163d61c14e540ab">maxclusters</a>=1, bool compressed=true, <a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a> policy=<a class="el" href="namespacedpp_1_1cache__policy.html#a851fe024df39295092817467cee45abe">cache_policy::cpol_default</a>, uint32_t pool_threads=std::thread::hardware_concurrency()/2)</td></tr>
 <tr class="memdesc:a2a22b49f725c6ae318e97cd4134be29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a cluster. All but the token are optional.  <a href="classdpp_1_1cluster.html#a2a22b49f725c6ae318e97cd4134be29f">More...</a><br /></td></tr>
 <tr class="separator:a2a22b49f725c6ae318e97cd4134be29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954c7dce3dab2786d482890c6c9ad009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a954c7dce3dab2786d482890c6c9ad009">enable_webhook_server</a> (const std::string &amp;discord_public_key, const std::string_view address, uint16_t port, const std::string &amp;ssl_private_key=&quot;&quot;, const std::string &amp;ssl_public_key=&quot;&quot;)</td></tr>
+<tr class="memdesc:a954c7dce3dab2786d482890c6c9ad009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a webhook server for receiving interactions.  <a href="classdpp_1_1cluster.html#a954c7dce3dab2786d482890c6c9ad009">More...</a><br /></td></tr>
+<tr class="separator:a954c7dce3dab2786d482890c6c9ad009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6ff8d56c0e11de2a4ae7c1027df596c6">queue_work</a> (int priority, <a class="el" href="namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627">work_unit</a> <a class="el" href="classdpp_1_1task.html">task</a>)</td></tr>
 <tr class="memdesc:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place some arbitrary work into the thread pool for execution when time permits.  <a href="classdpp_1_1cluster.html#a6ff8d56c0e11de2a4ae7c1027df596c6">More...</a><br /></td></tr>
 <tr class="separator:a6ff8d56c0e11de2a4ae7c1027df596c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1538,6 +1541,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab840686c7cd2e15f4a66ab64f62e106b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1log__t.html">log_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab840686c7cd2e15f4a66ab64f62e106b">on_log</a></td></tr>
 <tr class="memdesc:ab840686c7cd2e15f4a66ab64f62e106b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a log message is to be written to the log. You can attach any logging system here you wish, e.g. spdlog, or even just a simple use of std::cout or printf. If nothing attaches this log event, then the library will be silent.  <a href="classdpp_1_1cluster.html#ab840686c7cd2e15f4a66ab64f62e106b">More...</a><br /></td></tr>
 <tr class="separator:ab840686c7cd2e15f4a66ab64f62e106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297c31995606258992b62f694d7aa1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1socket__close__t.html">socket_close_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a297c31995606258992b62f694d7aa1cf">on_socket_close</a></td></tr>
+<tr class="memdesc:a297c31995606258992b62f694d7aa1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a file descriptor is removed from the socket engine.  <a href="classdpp_1_1cluster.html#a297c31995606258992b62f694d7aa1cf">More...</a><br /></td></tr>
+<tr class="separator:a297c31995606258992b62f694d7aa1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd01f0d6e1eb6e93a027da031aaa25f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1guild__join__request__delete__t.html">guild_join_request_delete_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4bd01f0d6e1eb6e93a027da031aaa25f">on_guild_join_request_delete</a></td></tr>
 <tr class="memdesc:a4bd01f0d6e1eb6e93a027da031aaa25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">on guild join request delete. Triggered when a user declines the membership screening questionnaire for a guild.  <a href="classdpp_1_1cluster.html#a4bd01f0d6e1eb6e93a027da031aaa25f">More...</a><br /></td></tr>
 <tr class="separator:a4bd01f0d6e1eb6e93a027da031aaa25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -12013,6 +12019,65 @@ If the user is found in the cache, special values set in <code><a class="el" hre
 
 </div>
 </div>
+<a id="a954c7dce3dab2786d482890c6c9ad009" name="a954c7dce3dab2786d482890c6c9ad009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954c7dce3dab2786d482890c6c9ad009">&#9670;&nbsp;</a></span>enable_webhook_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp; dpp::cluster::enable_webhook_server </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>discord_public_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string_view&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>ssl_private_key</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>ssl_public_key</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a webhook server for receiving interactions. </p>
+<dl class="section note"><dt>Note</dt><dd>This should be considered mutually exclusive with delivery of interaction events via shards. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">discord_public_key</td><td>Public key for the application from the application dashboard page </td></tr>
+    <tr><td class="paramname">address</td><td>address to bind to, use "0.0.0.0" to bind to all local addresses </td></tr>
+    <tr><td class="paramname">port</td><td>port to bind to. You should generally use a port &gt; 1024. </td></tr>
+    <tr><td class="paramname">ssl_private_key</td><td>Private key PEM file for HTTPS/SSL. If empty, a plaintext server is created </td></tr>
+    <tr><td class="paramname">ssl_public_key</td><td>Public key PEM file for HTTPS/SSL. If empty, a plaintext server is created </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa824bdd9621cef3f9e8ebf43e9bacb11" name="aa824bdd9621cef3f9e8ebf43e9bacb11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa824bdd9621cef3f9e8ebf43e9bacb11">&#9670;&nbsp;</a></span>entitlement_consume()</h2>
 
@@ -21635,6 +21700,23 @@ There are dedicated events to handle slashcommands (See <a class="el" href="clas
 
 <p>Called when a slash command is issued. Only <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" title="DEFAULT: these are the generic slash commands (e.g. /ping, /pong, etc)">dpp::ctxm_chat_input</a> types of interaction are routed to this event. For an example of this in action please see <a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1slashcommand__t.html" title="User has issued a slash command.">slashcommand_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="a297c31995606258992b62f694d7aa1cf" name="a297c31995606258992b62f694d7aa1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297c31995606258992b62f694d7aa1cf">&#9670;&nbsp;</a></span>on_socket_close</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1socket__close__t.html">socket_close_t</a>&gt; dpp::cluster::on_socket_close</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a file descriptor is removed from the socket engine. </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1socket__close__t.html" title="Closure of socket (removal from socket engine)">socket_close_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>

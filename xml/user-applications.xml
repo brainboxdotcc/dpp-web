@@ -6,14 +6,14 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect1 id="user-applications_1autotoc_md116">
+<sect1 id="user-applications_1autotoc_md132">
 <title>What are User Apps?</title>
 <para>A user app is a bot (application) which can be attached to a user&apos;s profile via oauth, rather than being invited to a guild via oauth. This is a relatively new feature on Discord, and will allow you to have your bot to act like a utility for the user, so regardless of what guild they are in, or if they are in a DM with someone else, they have access to your bot&apos;s commands and can issue them, potentially letting all users in that guild, or all users in the DM, see the replies from your slash commands.</para>
 <para><simplesect kind="warning"><para>Do not confuse User Apps with <bold>User Bots</bold>. User Apps are a new and very well supported feature, whereas <bold>User Bots</bold> means connecting a user&apos;s token as a bot, and is prohibited by the Discord TOS!</para>
 </simplesect>
 </para>
 </sect1>
-<sect1 id="user-applications_1autotoc_md117">
+<sect1 id="user-applications_1autotoc_md133">
 <title>Building the invite</title>
 <para>To get started, you will need to configure your bot so that it will accept a user app invite. This is done via the <ulink url="https://discord.com/developers">discord developer portal</ulink>.</para>
 <para>Click on your bot in the list of bots, and then choose <bold>Installation</bold> from the left hand menu. You must enable <bold>User Install</bold> if it is not already enabled.</para>
@@ -24,7 +24,7 @@ If you have entered all the settings correctly the screen should look like the o
 <para><image type="html" name="user_apps_1.png"></image>
 </para>
 </sect1>
-<sect1 id="user-applications_1autotoc_md118">
+<sect1 id="user-applications_1autotoc_md134">
 <title>Inviting the application</title>
 <para>You can now invite your bot to your profile. Follow the invite link at the top of the screen by clicking <bold>copy</bold> and pasting it into a web browser. You will be prompted to either add the bot to your profile, or to a guild, as shown below. Choose to add the bot to your profile:</para>
 <para><image type="html" name="user_apps_2.png"></image>
@@ -33,7 +33,7 @@ If you have entered all the settings correctly the screen should look like the o
 <para><image type="html" name="user_apps_3.png"></image>
 </para>
 </sect1>
-<sect1 id="user-applications_1autotoc_md119">
+<sect1 id="user-applications_1autotoc_md135">
 <title>Creating the program</title>
 <para>From this point on, right now, your bot will do nothing as you haven&apos;t added any code yet to make it operate as a user app. This comes next. Below is an example bot with one user application command.</para>
 <para>There are several important things to note in this program:</para>
@@ -49,7 +49,7 @@ If you have entered all the settings correctly the screen should look like the o
 </listitem><listitem><para>Calling <ref refid="classdpp_1_1interaction_1a6f042eba33c6d6ff14b612c0bf46fab3" kindref="member">dpp::interaction::get_authorizing_integration_owner()</ref> with the parameter value <ref refid="namespacedpp_1a3948f04120ff6382aa17988a320f5785a9601746fb7bd857786fc2729836e1211" kindref="member">dpp::ait_user_install</ref> will give you the <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref> ID of the user who has the app added to their profile, if a user is currently executing a user app command. If you call this function when not in a user app context, you will get an uninitialised snowflake value instead.</para>
 </listitem></itemizedlist>
 </para>
-<sect2 id="user-applications_1autotoc_md120">
+<sect2 id="user-applications_1autotoc_md136">
 <title>Example Program</title>
 <para><programlisting filename="user_apps.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -79,7 +79,7 @@ If you have entered all the settings correctly the screen should look like the o
 </programlisting></para>
 </sect2>
 </sect1>
-<sect1 id="user-applications_1autotoc_md121">
+<sect1 id="user-applications_1autotoc_md137">
 <title>Testing</title>
 <para>If all goes to plan, your new command will be accessible everywhere!</para>
 <para><image type="html" name="user_apps_4.png"></image>

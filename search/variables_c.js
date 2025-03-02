@@ -19,7 +19,7 @@ var searchData=
   ['last_5fquarter_5fmoon_16',['last_quarter_moon',['../namespacedpp_1_1unicode__emoji.html#a394b1408536bc832a3d1d4831c137500',1,'dpp::unicode_emoji']]],
   ['last_5fquarter_5fmoon_5fwith_5fface_17',['last_quarter_moon_with_face',['../namespacedpp_1_1unicode__emoji.html#a4ced47fb3325e449ce1d7465cd4a5589',1,'dpp::unicode_emoji']]],
   ['last_5fseq_18',['last_seq',['../classdpp_1_1discord__client.html#a8dc9f84c9b65a58f8e9eea6326a424bd',1,'dpp::discord_client']]],
-  ['last_5ftick_19',['last_tick',['../classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895',1,'dpp::ssl_client']]],
+  ['last_5ftick_19',['last_tick',['../classdpp_1_1ssl__connection.html#a9494e0dd128b5415a96d6ff9d24789aa',1,'dpp::ssl_connection']]],
   ['latency_20',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
   ['latin_5fcross_21',['latin_cross',['../namespacedpp_1_1unicode__emoji.html#aad9d9064a95bde5e20fa401c50acb636',1,'dpp::unicode_emoji']]],
   ['laughing_22',['laughing',['../namespacedpp_1_1unicode__emoji.html#aea0adbf8bae999433ecffe8deeaf669e',1,'dpp::unicode_emoji']]],

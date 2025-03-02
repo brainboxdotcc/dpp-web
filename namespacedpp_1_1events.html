@@ -99,12 +99,13 @@ $(document).ready(function(){initNavTree('namespacedpp_1_1events.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dpp::events Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The events namespace holds the internal event handlers for each websocket event. These are handled internally and also dispatched to the user code if the event is hooked.  
+<p>Route interaction event.  
 <a href="namespacedpp_1_1events.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -313,10 +314,74 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1events_1_1webhooks__update.html">webhooks_update</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal event handler for WEBHOOKS_UPDATE websocket events. Called for each websocket message of this type.  <a href="classdpp_1_1events_1_1webhooks__update.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa33d90e75c1ac9ada8fbdb560d040f84"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1events.html#aa33d90e75c1ac9ada8fbdb560d040f84">internal_handle_interaction</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, uint16_t shard_id, <a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;d, const std::string &amp;raw, bool from_webhook)</td></tr>
+<tr class="separator:aa33d90e75c1ac9ada8fbdb560d040f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The events namespace holds the internal event handlers for each websocket event. These are handled internally and also dispatched to the user code if the event is hooked. </p>
-</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+<div class="textblock"><p >Route interaction event. </p>
+<p >The events namespace holds the internal event handlers for each websocket event. These are handled internally and also dispatched to the user code if the event is hooked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creator</td><td>Creating cluster </td></tr>
+    <tr><td class="paramname">shard_id</td><td>Shard ID or 0 </td></tr>
+    <tr><td class="paramname">d</td><td>JSON data for the event </td></tr>
+    <tr><td class="paramname">raw</td><td>Raw JSON string </td></tr>
+    <tr><td class="paramname">from_webhook</td><td>True if the interaction comes from a webhook </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON interaction response, only valid when from_webhook is true </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa33d90e75c1ac9ada8fbdb560d040f84" name="aa33d90e75c1ac9ada8fbdb560d040f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33d90e75c1ac9ada8fbdb560d040f84">&#9670;&nbsp;</a></span>internal_handle_interaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DPP_EXPORT dpp::events::internal_handle_interaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramname"><em>creator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>shard_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>from_webhook</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>

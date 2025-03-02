@@ -215,6 +215,7 @@ var hierarchy =
       [ "dpp::presence_update_t", "structdpp_1_1presence__update__t.html", null ],
       [ "dpp::ready_t", "structdpp_1_1ready__t.html", null ],
       [ "dpp::resumed_t", "structdpp_1_1resumed__t.html", null ],
+      [ "dpp::socket_close_t", "structdpp_1_1socket__close__t.html", null ],
       [ "dpp::stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", null ],
       [ "dpp::stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", null ],
       [ "dpp::stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", null ],
@@ -497,11 +498,19 @@ var hierarchy =
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::when_any< Args >::result", "classdpp_1_1when__any_1_1result.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
+    [ "dpp::signature_verifier", "classdpp_1_1signature__verifier.html", null ],
     [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
     [ "dpp::socket_engine_base", "structdpp_1_1socket__engine__base.html", null ],
     [ "dpp::socket_events", "structdpp_1_1socket__events.html", null ],
+    [ "dpp::socket_listener< T, typename >", "structdpp_1_1socket__listener.html", null ],
+    [ "dpp::socket_listener< http_server_request >", "structdpp_1_1socket__listener.html", [
+      [ "dpp::http_server", "structdpp_1_1http__server.html", [
+        [ "dpp::discord_webhook_server", "structdpp_1_1discord__webhook__server.html", null ]
+      ] ]
+    ] ],
     [ "dpp::socket_stats", "structdpp_1_1socket__stats.html", null ],
-    [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
+    [ "dpp::ssl_connection", "classdpp_1_1ssl__connection.html", [
+      [ "dpp::http_server_request", "classdpp_1_1http__server__request.html", null ],
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
         [ "dpp::discord_client", "classdpp_1_1discord__client.html", null ],

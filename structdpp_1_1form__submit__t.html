@@ -135,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4645c2cc7dfe1def0b936d5726f7b8db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1form__submit__t.html#a4645c2cc7dfe1def0b936d5726f7b8db">operator=</a> (<a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&amp;rhs)=default</td></tr>
 <tr class="memdesc:a4645c2cc7dfe1def0b936d5726f7b8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move from another <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a> object.  <a href="structdpp_1_1form__submit__t.html#a4645c2cc7dfe1def0b936d5726f7b8db">More...</a><br /></td></tr>
 <tr class="separator:a4645c2cc7dfe1def0b936d5726f7b8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc798f5c46e0ebe18b98917028e550b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#aedc798f5c46e0ebe18b98917028e550b">success</a> () const</td></tr>
+<tr class="memdesc:aedc798f5c46e0ebe18b98917028e550b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a generic http success confirmation.  <a href="structdpp_1_1interaction__create__t.html#aedc798f5c46e0ebe18b98917028e550b">More...</a><br /></td></tr>
+<tr class="separator:aedc798f5c46e0ebe18b98917028e550b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7f9da2fc4c0a1e8691be98e65924e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a5d7f9da2fc4c0a1e8691be98e65924e4">set_queued_response</a> (const std::string &amp;response) const</td></tr>
+<tr class="memdesc:a5d7f9da2fc4c0a1e8691be98e65924e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this interaction is created from a webhook server, it fills this value with a JSON string which is sent as the HTTP response. This is thread local so that it is preserved when the event is copied, we guarantee that the request/response is in the same thread so this will always be valid.  <a href="structdpp_1_1interaction__create__t.html#a5d7f9da2fc4c0a1e8691be98e65924e4">More...</a><br /></td></tr>
+<tr class="separator:a5d7f9da2fc4c0a1e8691be98e65924e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">reply</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>()) const</td></tr>
 <tr class="memdesc:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acknowledge interaction without displaying a message to the user, for use with button and select menu components.  <a href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">More...</a><br /></td></tr>
 <tr class="separator:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a42a7aada4ad321e9d8e3645b8b4abc97">delete_original_response</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>()) const</td></tr>
 <tr class="memdesc:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete original response message for this interaction. This cannot be used on an ephemeral interaction response.  <a href="structdpp_1_1interaction__create__t.html#a42a7aada4ad321e9d8e3645b8b4abc97">More...</a><br /></td></tr>
 <tr class="separator:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce28535d8a279a398fe40a529b28463"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a9ce28535d8a279a398fe40a529b28463">get_queued_response</a> () const</td></tr>
+<tr class="memdesc:a9ce28535d8a279a398fe40a529b28463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get queued response when responding to a HTTP request.  <a href="structdpp_1_1interaction__create__t.html#a9ce28535d8a279a398fe40a529b28463">More...</a><br /></td></tr>
+<tr class="separator:a9ce28535d8a279a398fe40a529b28463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef38626cd24d2212b00ab866509b4d59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">dpp::confirmation_callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#aef38626cd24d2212b00ab866509b4d59">co_reply</a> () const</td></tr>
 <tr class="memdesc:aef38626cd24d2212b00ab866509b4d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acknowledge interaction without displaying a message to the user, for use with button and select menu components.  <a href="structdpp_1_1interaction__create__t.html#aef38626cd24d2212b00ab866509b4d59">More...</a><br /></td></tr>
 <tr class="separator:aef38626cd24d2212b00ab866509b4d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +252,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a95c70d776a5aa714d372d0fd3029dd02"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1component.html">component</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1form__submit__t.html#a95c70d776a5aa714d372d0fd3029dd02">components</a> = {}</td></tr>
 <tr class="memdesc:a95c70d776a5aa714d372d0fd3029dd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message components for form reply.  <a href="structdpp_1_1form__submit__t.html#a95c70d776a5aa714d372d0fd3029dd02">More...</a><br /></td></tr>
 <tr class="separator:a95c70d776a5aa714d372d0fd3029dd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a7ed4a2ceee852fd2c8695e1ff5571"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#aa9a7ed4a2ceee852fd2c8695e1ff5571">from_webhook</a> {false}</td></tr>
+<tr class="memdesc:aa9a7ed4a2ceee852fd2c8695e1ff5571"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if from a HTTP interaction webhook, false if from websocket.  <a href="structdpp_1_1interaction__create__t.html#aa9a7ed4a2ceee852fd2c8695e1ff5571">More...</a><br /></td></tr>
+<tr class="separator:aa9a7ed4a2ceee852fd2c8695e1ff5571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0c69c156a1e532507a918c13414f14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1interaction.html">interaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a> = {}</td></tr>
 <tr class="memdesc:a8b0c69c156a1e532507a918c13414f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">command interaction  <a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">More...</a><br /></td></tr>
 <tr class="separator:a8b0c69c156a1e532507a918c13414f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1205,6 +1217,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ce28535d8a279a398fe40a529b28463" name="a9ce28535d8a279a398fe40a529b28463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce28535d8a279a398fe40a529b28463">&#9670;&nbsp;</a></span>get_queued_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::interaction_create_t::get_queued_response </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get queued response when responding to a HTTP request. </p>
+<dl class="section return"><dt>Returns</dt><dd>response JSON </dd></dl>
+
+</div>
+</div>
 <a id="aca2880114f69b7ba62eb5137824c1432" name="aca2880114f69b7ba62eb5137824c1432"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca2880114f69b7ba62eb5137824c1432">&#9670;&nbsp;</a></span>is_cancelled()</h2>
 
@@ -1529,6 +1569,68 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5d7f9da2fc4c0a1e8691be98e65924e4" name="a5d7f9da2fc4c0a1e8691be98e65924e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7f9da2fc4c0a1e8691be98e65924e4">&#9670;&nbsp;</a></span>set_queued_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::interaction_create_t::set_queued_response </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>response</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If this interaction is created from a webhook server, it fills this value with a JSON string which is sent as the HTTP response. This is thread local so that it is preserved when the event is copied, we guarantee that the request/response is in the same thread so this will always be valid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">response</td><td>response to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aedc798f5c46e0ebe18b98917028e550b" name="aedc798f5c46e0ebe18b98917028e550b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc798f5c46e0ebe18b98917028e550b">&#9670;&nbsp;</a></span>success()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> dpp::interaction_create_t::success </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a generic http success confirmation. </p>
+<dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+
+</div>
+</div>
 <a id="ab0c0133ac861e7752cd700903303b7fb" name="ab0c0133ac861e7752cd700903303b7fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0c0133ac861e7752cd700903303b7fb">&#9670;&nbsp;</a></span>thinking()</h2>
 
@@ -1652,6 +1754,30 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>button custom id </p>
+
+</div>
+</div>
+<a id="aa9a7ed4a2ceee852fd2c8695e1ff5571" name="aa9a7ed4a2ceee852fd2c8695e1ff5571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a7ed4a2ceee852fd2c8695e1ff5571">&#9670;&nbsp;</a></span>from_webhook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::interaction_create_t::from_webhook {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if from a HTTP interaction webhook, false if from websocket. </p>
 
 </div>
 </div>

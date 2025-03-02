@@ -301,7 +301,7 @@ var searchData=
   ['bucket_298',['bucket',['../namespacedpp_1_1unicode__emoji.html#a8a67fb49c3efbc592bf0695d74b5379e',1,'dpp::unicode_emoji']]],
   ['buckets_299',['buckets',['../classdpp_1_1request__concurrency__queue.html#a4f1d6033dd91df0cb5f0cf17c399563e',1,'dpp::request_concurrency_queue']]],
   ['buf_300',['buf',['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer']]],
-  ['buffer_301',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
+  ['buffer_301',['buffer',['../classdpp_1_1ssl__connection.html#a4a8b48487e16cefed1f12821f64fa5e8',1,'dpp::ssl_connection']]],
   ['buffer_5fsize_302',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#acbf0184f5904907fd59fe3c78d7e73da',1,'dpp::voice_buffer_send_t']]],
   ['bug_303',['bug',['../namespacedpp_1_1unicode__emoji.html#acce782bd6db60b5a3ae4c2d0e4fa977a',1,'dpp::unicode_emoji']]],
   ['building_5fconstruction_304',['building_construction',['../namespacedpp_1_1unicode__emoji.html#a3a95cffb3ba1c595e4815310214f855c',1,'dpp::unicode_emoji']]],
@@ -325,6 +325,6 @@ var searchData=
   ['butterfly_5fblue_322',['butterfly_blue',['../namespacedpp_1_1colors.html#abe718bb2edc0bf55ebb9e91b8020f642',1,'dpp::colors']]],
   ['buttons_323',['buttons',['../classdpp_1_1activity.html#a65cb680cfef51d6b3d1796682c9c93c5',1,'dpp::activity']]],
   ['byte_5fblocks_5fper_5fregister_324',['byte_blocks_per_register',['../classdpp_1_1audio__mixer.html#a06bd9a06d40e70f1bd72ab4740285d3d',1,'dpp::audio_mixer']]],
-  ['bytes_5fin_325',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
-  ['bytes_5fout_326',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]]
+  ['bytes_5fin_325',['bytes_in',['../classdpp_1_1ssl__connection.html#a8715f4363a7c5ef7ddc5439d5ff2394a',1,'dpp::ssl_connection']]],
+  ['bytes_5fout_326',['bytes_out',['../classdpp_1_1ssl__connection.html#ad9fccc5b66b4a5713b54d8ed1ab9c743',1,'dpp::ssl_connection']]]
 ];

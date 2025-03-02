@@ -899,9 +899,9 @@ If the audio is recorded, the sending of audio packets is throttled. Otherwise, 
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="871" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="871" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aaba3255abd8ec8e94d1781771cfc9acb" prot="public" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool dpp::ssl_client::keepalive</definition>
+        <definition>bool dpp::ssl_connection::keepalive</definition>
         <argsstring></argsstring>
         <name>keepalive</name>
         <briefdescription>
@@ -911,11 +911,11 @@ If the audio is recorded, the sending of audio packets is throttled. Otherwise, 
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="278" column="6" bodyfile="include/dpp/sslclient.h" bodystart="278" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="280" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="280" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a16fdc0f7005b8ba56ecc46beec4cad1c" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a3ae20842849f8c2f0174902dc70d7e97" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-        <definition>class cluster* dpp::ssl_client::owner</definition>
+        <definition>class cluster* dpp::ssl_connection::owner</definition>
         <argsstring></argsstring>
         <name>owner</name>
         <briefdescription>
@@ -925,7 +925,35 @@ If the audio is recorded, the sending of audio packets is throttled. Otherwise, 
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="283" column="15" bodyfile="include/dpp/sslclient.h" bodystart="283" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="285" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aa8cfa2e6c511022b67dbd97cc57f0731" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::private_key_file</definition>
+        <argsstring></argsstring>
+        <name>private_key_file</name>
+        <briefdescription>
+<para>Private key PEM file path for inbound SSL connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="290" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad7feee672079e07699e25f7250021c66" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::public_key_file</definition>
+        <argsstring></argsstring>
+        <name>public_key_file</name>
+        <briefdescription>
+<para>Public key PEM file path for inbound SSL connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="295" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="295" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1391,7 +1419,7 @@ If the audio is recorded, the sending of audio packets is throttled. Otherwise, 
         <definition>virtual void dpp::discord_voice_client::log</definition>
         <argsstring>(dpp::loglevel severity, const std::string &amp;msg) const override</argsstring>
         <name>log</name>
-        <reimplements refid="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd">log</reimplements>
+        <reimplements refid="classdpp_1_1ssl__connection_1af7e21fef92907780581d04c8f98bf9b6">log</reimplements>
         <param>
           <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
           <declname>severity</declname>
@@ -2594,7 +2622,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         <definition>virtual bool dpp::websocket_client::handle_buffer</definition>
         <argsstring>(std::string &amp;buffer) override</argsstring>
         <name>handle_buffer</name>
-        <reimplements refid="classdpp_1_1ssl__client_1a0100372dd4c32d9faddaf69fffda7cfc">handle_buffer</reimplements>
+        <reimplements refid="classdpp_1_1ssl__connection_1a321015d761b174db3f4ffb2551bb2f99">handle_buffer</reimplements>
         <param>
           <type>std::string &amp;</type>
           <declname>buffer</declname>
@@ -2623,7 +2651,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         <definition>virtual void dpp::websocket_client::close</definition>
         <argsstring>() override</argsstring>
         <name>close</name>
-        <reimplements refid="classdpp_1_1ssl__client_1ae85df4b13fa64d701fb09f2bf44f100e">close</reimplements>
+        <reimplements refid="classdpp_1_1ssl__connection_1ab0e1c646dc2d36679ca2ef8b1e3fd3de">close</reimplements>
         <briefdescription>
 <para>Close websocket. </para>
         </briefdescription>
@@ -2650,9 +2678,9 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </inbodydescription>
         <location file="include/dpp/wsclient.h" line="244" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3f8164696a6ffedcf9db89b7b4a2ea6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::enable_raw_tracing</definition>
+        <definition>void dpp::ssl_connection::enable_raw_tracing</definition>
         <argsstring>()</argsstring>
         <name>enable_raw_tracing</name>
         <briefdescription>
@@ -2663,11 +2691,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="247" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="249" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::get_bytes_out</definition>
+        <definition>uint64_t dpp::ssl_connection::get_bytes_out</definition>
         <argsstring>()</argsstring>
         <name>get_bytes_out</name>
         <briefdescription>
@@ -2680,11 +2708,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="253" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="255" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a28c4296db4b541d99478c6db493f4b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::get_bytes_in</definition>
+        <definition>uint64_t dpp::ssl_connection::get_bytes_in</definition>
         <argsstring>()</argsstring>
         <name>get_bytes_in</name>
         <briefdescription>
@@ -2697,11 +2725,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="259" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="261" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3cc296231589356506a103ad8c7eee74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::get_unique_id</definition>
+        <definition>uint64_t dpp::ssl_connection::get_unique_id</definition>
         <argsstring>() const</argsstring>
         <name>get_unique_id</name>
         <briefdescription>
@@ -2714,11 +2742,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="267" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="269" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
-        <definition>std::string dpp::ssl_client::get_cipher</definition>
+        <definition>std::string dpp::ssl_connection::get_cipher</definition>
         <argsstring>()</argsstring>
         <name>get_cipher</name>
         <briefdescription>
@@ -2731,11 +2759,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="273" column="13"/>
+        <location file="include/dpp/sslconnection.h" line="275" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::read_loop</definition>
+        <definition>void dpp::ssl_connection::read_loop</definition>
         <argsstring>()</argsstring>
         <name>read_loop</name>
         <briefdescription>
@@ -2747,7 +2775,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
 <parametername>std::exception</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Any std::exception (or derivative) thrown from <ref refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kindref="member">read_loop()</ref> indicates setup failed </para>
+<para>Any std::exception (or derivative) thrown from <ref refid="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" kindref="member">read_loop()</ref> indicates setup failed </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -2755,11 +2783,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="302" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="324" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ae0fe670d8829bcfe600856a4c4adee00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::socket_write</definition>
+        <definition>void dpp::ssl_connection::socket_write</definition>
         <argsstring>(const std::string_view data)</argsstring>
         <name>socket_write</name>
         <param>
@@ -2785,11 +2813,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="322" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="344" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1adf054c481a7d9e804462db5b726af2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1acdd1152134b624d18a9e82162e64bafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::complete_handshake</definition>
+        <definition>void dpp::ssl_connection::complete_handshake</definition>
         <argsstring>(const struct socket_events *ev)</argsstring>
         <name>complete_handshake</name>
         <param>
@@ -2813,11 +2841,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="342" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="364" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a25b211229c4109489f68251e7d86a952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8c50238080a887b09473c82bff8de817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::on_read</definition>
+        <definition>void dpp::ssl_connection::on_read</definition>
         <argsstring>(dpp::socket fd, const struct dpp::socket_events &amp;ev)</argsstring>
         <name>on_read</name>
         <param>
@@ -2853,11 +2881,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="349" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="371" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a6f443e1b2f4ed33458eee2576f7015e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a07c9f5c2dfff5ef27db1e148589e2e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::on_write</definition>
+        <definition>void dpp::ssl_connection::on_write</definition>
         <argsstring>(dpp::socket fd, const struct dpp::socket_events &amp;e)</argsstring>
         <name>on_write</name>
         <param>
@@ -2893,11 +2921,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="356" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="378" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a0382a16a566b1ae091b5667ba98df42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8732ae4599f38f41d27de3f4c1c7cae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::on_error</definition>
+        <definition>void dpp::ssl_connection::on_error</definition>
         <argsstring>(dpp::socket fd, const struct dpp::socket_events &amp;, int error_code)</argsstring>
         <name>on_error</name>
         <param>
@@ -2936,7 +2964,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="363" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="385" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -2968,9 +2996,9 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </inbodydescription>
         <location file="include/dpp/wsclient.h" line="176" column="8" bodyfile="include/dpp/wsclient.h" bodystart="176" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a4a8b48487e16cefed1f12821f64fa5e8" prot="protected" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::ssl_client::buffer</definition>
+        <definition>std::string dpp::ssl_connection::buffer</definition>
         <argsstring></argsstring>
         <name>buffer</name>
         <briefdescription>
@@ -2980,11 +3008,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="128" column="13" bodyfile="include/dpp/sslclient.h" bodystart="128" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="128" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="128" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a80a568dbb2049f4727c0efdde185699e" prot="protected" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::ssl_client::obuffer</definition>
+        <definition>std::string dpp::ssl_connection::obuffer</definition>
         <argsstring></argsstring>
         <name>obuffer</name>
         <briefdescription>
@@ -2994,11 +3022,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="133" column="13" bodyfile="include/dpp/sslclient.h" bodystart="133" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="133" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="133" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a423ca70d4046067ebe219f85c7baa540" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1abd9c3cf6150d3c7e2badd12829437207" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
-        <definition>dpp::socket dpp::ssl_client::sfd</definition>
+        <definition>dpp::socket dpp::ssl_connection::sfd</definition>
         <argsstring></argsstring>
         <name>sfd</name>
         <briefdescription>
@@ -3008,11 +3036,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="138" column="13" bodyfile="include/dpp/sslclient.h" bodystart="138" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="138" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="138" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a26db29793a38b8a9dad74581597b298a" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a61cccaa18278dabe8eae3eafbf8dd1e7" prot="protected" static="no" mutable="no">
         <type>openssl_connection *</type>
-        <definition>openssl_connection* dpp::ssl_client::ssl</definition>
+        <definition>openssl_connection* dpp::ssl_connection::ssl</definition>
         <argsstring></argsstring>
         <name>ssl</name>
         <briefdescription>
@@ -3022,11 +3050,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="143" column="20" bodyfile="include/dpp/sslclient.h" bodystart="143" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="143" column="20" bodyfile="include/dpp/sslconnection.h" bodystart="143" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0e0c14fe8f51c54ea280509c8c0e5140" prot="protected" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::ssl_client::cipher</definition>
+        <definition>std::string dpp::ssl_connection::cipher</definition>
         <argsstring></argsstring>
         <name>cipher</name>
         <briefdescription>
@@ -3036,11 +3064,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="148" column="13" bodyfile="include/dpp/sslclient.h" bodystart="148" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="148" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="148" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a9494e0dd128b5415a96d6ff9d24789aa" prot="protected" static="no" mutable="no">
         <type>time_t</type>
-        <definition>time_t dpp::ssl_client::last_tick</definition>
+        <definition>time_t dpp::ssl_connection::last_tick</definition>
         <argsstring></argsstring>
         <name>last_tick</name>
         <briefdescription>
@@ -3050,11 +3078,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="153" column="8" bodyfile="include/dpp/sslclient.h" bodystart="153" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="153" column="8" bodyfile="include/dpp/sslconnection.h" bodystart="153" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a19b8b7ead269fe0ef80f0a98c1e90c56" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad694f10e342b640f5fa6e88119c86a17" prot="protected" static="no" mutable="no">
         <type>time_t</type>
-        <definition>time_t dpp::ssl_client::start</definition>
+        <definition>time_t dpp::ssl_connection::start</definition>
         <argsstring></argsstring>
         <name>start</name>
         <briefdescription>
@@ -3064,26 +3092,26 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="158" column="8" bodyfile="include/dpp/sslclient.h" bodystart="158" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="158" column="8" bodyfile="include/dpp/sslconnection.h" bodystart="158" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa621be77e296d0cb59ac9e80faf92692" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0d85356b40ea02323cc161af4f5467fc" prot="protected" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dpp::ssl_client::connect_retries</definition>
+        <definition>uint8_t dpp::ssl_connection::connect_retries</definition>
         <argsstring></argsstring>
         <name>connect_retries</name>
         <initializer>{0}</initializer>
         <briefdescription>
-<para>How many times we retried <ref refid="classdpp_1_1ssl__client_1a9a5168edeb1901d62aecf273c28f03ca" kindref="member">connect()</ref> </para>
+<para>How many times we retried <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="163" column="9" bodyfile="include/dpp/sslclient.h" bodystart="163" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="163" column="9" bodyfile="include/dpp/sslconnection.h" bodystart="163" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aedf42057136f2fae90424a18daddce51" prot="protected" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::ssl_client::hostname</definition>
+        <definition>std::string dpp::ssl_connection::hostname</definition>
         <argsstring></argsstring>
         <name>hostname</name>
         <briefdescription>
@@ -3093,11 +3121,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="168" column="13" bodyfile="include/dpp/sslclient.h" bodystart="168" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="168" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="168" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad9fccc5b66b4a5713b54d8ed1ab9c743" prot="protected" static="no" mutable="no">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::bytes_out</definition>
+        <definition>uint64_t dpp::ssl_connection::bytes_out</definition>
         <argsstring></argsstring>
         <name>bytes_out</name>
         <briefdescription>
@@ -3107,11 +3135,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="178" column="10" bodyfile="include/dpp/sslclient.h" bodystart="178" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="178" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="178" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a8715f4363a7c5ef7ddc5439d5ff2394a" prot="protected" static="no" mutable="no">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::bytes_in</definition>
+        <definition>uint64_t dpp::ssl_connection::bytes_in</definition>
         <argsstring></argsstring>
         <name>bytes_in</name>
         <briefdescription>
@@ -3121,11 +3149,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="183" column="10" bodyfile="include/dpp/sslclient.h" bodystart="183" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="183" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="183" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1addf00646298eba9176a675bba7269f27" prot="protected" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool dpp::ssl_client::plaintext</definition>
+        <definition>bool dpp::ssl_connection::plaintext</definition>
         <argsstring></argsstring>
         <name>plaintext</name>
         <briefdescription>
@@ -3135,11 +3163,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="188" column="6" bodyfile="include/dpp/sslclient.h" bodystart="188" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="188" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="188" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1ab14964f3fb7b075d8611984a3c02f81b" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1acf9eb0208d63e142a421f7f778b3a939" prot="protected" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool dpp::ssl_client::connected</definition>
+        <definition>bool dpp::ssl_connection::connected</definition>
         <argsstring></argsstring>
         <name>connected</name>
         <initializer>{false}</initializer>
@@ -3150,26 +3178,26 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="193" column="6" bodyfile="include/dpp/sslclient.h" bodystart="193" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="193" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="193" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a69e9248f431daf428683b1152c05b1a6" prot="protected" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool dpp::ssl_client::tcp_connect_done</definition>
+        <definition>bool dpp::ssl_connection::tcp_connect_done</definition>
         <argsstring></argsstring>
         <name>tcp_connect_done</name>
         <initializer>{false}</initializer>
         <briefdescription>
-<para>True if tcp <ref refid="classdpp_1_1ssl__client_1a9a5168edeb1901d62aecf273c28f03ca" kindref="member">connect()</ref> succeeded. </para>
+<para>True if tcp <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> succeeded. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="198" column="6" bodyfile="include/dpp/sslclient.h" bodystart="198" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="198" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="198" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a216b85ccf220d2aa66e9a4397dcdf4a3" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
-        <definition>timer dpp::ssl_client::timer_handle</definition>
+        <definition>timer dpp::ssl_connection::timer_handle</definition>
         <argsstring></argsstring>
         <name>timer_handle</name>
         <briefdescription>
@@ -3179,11 +3207,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="203" column="7" bodyfile="include/dpp/sslclient.h" bodystart="203" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="203" column="7" bodyfile="include/dpp/sslconnection.h" bodystart="203" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aa7a9277f5c258712b00e91b9cd062095" prot="protected" static="no" mutable="no">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::unique_id</definition>
+        <definition>uint64_t dpp::ssl_connection::unique_id</definition>
         <argsstring></argsstring>
         <name>unique_id</name>
         <briefdescription>
@@ -3193,11 +3221,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="212" column="10" bodyfile="include/dpp/sslclient.h" bodystart="212" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="212" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="212" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a62161bc05909fc1d67f3a59c5fbf6e79" prot="protected" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool dpp::ssl_client::raw_trace</definition>
+        <definition>bool dpp::ssl_connection::raw_trace</definition>
         <argsstring></argsstring>
         <name>raw_trace</name>
         <initializer>{false}</initializer>
@@ -3208,7 +3236,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="230" column="6" bodyfile="include/dpp/sslclient.h" bodystart="230" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="230" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="230" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -3217,7 +3245,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         <definition>virtual void dpp::websocket_client::connect</definition>
         <argsstring>() override</argsstring>
         <name>connect</name>
-        <reimplements refid="classdpp_1_1ssl__client_1a9a5168edeb1901d62aecf273c28f03ca">connect</reimplements>
+        <reimplements refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca">connect</reimplements>
         <briefdescription>
 <para>Connect to websocket server. </para>
         </briefdescription>
@@ -3244,9 +3272,9 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </inbodydescription>
         <location file="include/dpp/wsclient.h" line="164" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a74d9da0f1f0c5feb46ed0995bd7d2e05" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_client::do_raw_trace</definition>
+        <definition>void dpp::ssl_connection::do_raw_trace</definition>
         <argsstring>(const std::string &amp;message) const</argsstring>
         <name>do_raw_trace</name>
         <param>
@@ -3270,7 +3298,21 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="236" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="236" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a4bdff78b127e920033d0d9f8fb58d456" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::ssl_connection::on_buffer_drained</definition>
+        <argsstring>()</argsstring>
+        <name>on_buffer_drained</name>
+        <reimplementedby refid="classdpp_1_1http__server__request_1a89070e1f8e6757223883f647a45d7813">on_buffer_drained</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="238" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -3286,8 +3328,8 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </childnode>
       </node>
       <node id="3">
-        <label>dpp::ssl_client</label>
-        <link refid="classdpp_1_1ssl__client"/>
+        <label>dpp::ssl_connection</label>
+        <link refid="classdpp_1_1ssl__connection"/>
       </node>
       <node id="2">
         <label>dpp::websocket_client</label>
@@ -3436,14 +3478,16 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </childnode>
       </node>
       <node id="3">
-        <label>dpp::ssl_client</label>
-        <link refid="classdpp_1_1ssl__client"/>
+        <label>dpp::ssl_connection</label>
+        <link refid="classdpp_1_1ssl__connection"/>
         <childnode refid="4" relation="usage">
           <edgelabel>buffer</edgelabel>
           <edgelabel>cipher</edgelabel>
           <edgelabel>hostname</edgelabel>
           <edgelabel>obuffer</edgelabel>
           <edgelabel>port</edgelabel>
+          <edgelabel>private_key_file</edgelabel>
+          <edgelabel>public_key_file</edgelabel>
         </childnode>
         <childnode refid="6" relation="usage">
           <edgelabel>sfd</edgelabel>
@@ -3585,19 +3629,19 @@ Generally when you&apos;re streaming and you know there will be more packet to c
     </collaborationgraph>
     <location file="include/dpp/discordvoiceclient.h" line="236" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="237" bodyend="1264"/>
     <listofallmembers>
-      <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>buffer</name></member>
-      <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_in</name></member>
-      <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_out</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a4a8b48487e16cefed1f12821f64fa5e8" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>buffer</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a8715f4363a7c5ef7ddc5439d5ff2394a" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_in</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ad9fccc5b66b4a5713b54d8ed1ab9c743" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_out</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a4b8de633c5944659288af217e309b2f0" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>channel_id</name></member>
-      <member refid="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>cipher</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a0e0c14fe8f51c54ea280509c8c0e5140" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>cipher</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a95f3285fac343283212749ba109ae28a" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>cleanup</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a87b60251b68583d9307a4f72d3ce3249" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>clear_queue</name></member>
       <member refid="classdpp_1_1websocket__client_1ab872768661dc89d54f0381b0fff5b674" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>close</name></member>
-      <member refid="classdpp_1_1ssl__client_1adf054c481a7d9e804462db5b726af2e2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>complete_handshake</name></member>
+      <member refid="classdpp_1_1ssl__connection_1acdd1152134b624d18a9e82162e64bafe" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>complete_handshake</name></member>
       <member refid="classdpp_1_1websocket__client_1abce54f634a3b43f4b9b5bac5d1e99702" prot="protected" virt="virtual"><scope>dpp::discord_voice_client</scope><name>connect</name></member>
-      <member refid="classdpp_1_1ssl__client_1aa621be77e296d0cb59ac9e80faf92692" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>connect_retries</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a0d85356b40ea02323cc161af4f5467fc" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>connect_retries</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a5df040856f3fd775e81d99224c0a2218" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>connect_time</name></member>
-      <member refid="classdpp_1_1ssl__client_1ab14964f3fb7b075d8611984a3c02f81b" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>connected</name></member>
+      <member refid="classdpp_1_1ssl__connection_1acf9eb0208d63e142a421f7f778b3a939" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>connected</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>creator</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ab39e60b88eecc2a4a5173d1786f418bd" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>current_gain</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a47a1915dab8d243f5bc1c52610be06f2" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>dave_mls_pending_remove_list</name></member>
@@ -3606,8 +3650,8 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1a898d7b9e2144f2ee595b0c96a47b77da" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>destination</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a631da143d224aed3051ccc649fd248c0" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>discord_voice_client</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ae8e844ebb991eeb2d63771f6c5ea4938" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>discover_ip</name></member>
-      <member refid="classdpp_1_1ssl__client_1a96739f7abe24b9d7b17f67dc32a91399" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>do_raw_trace</name></member>
-      <member refid="classdpp_1_1ssl__client_1a0da035d84f8d82c9741db0fcf8fc1cbc" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>enable_raw_tracing</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a74d9da0f1f0c5feb46ed0995bd7d2e05" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>do_raw_trace</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a3f8164696a6ffedcf9db89b7b4a2ea6d" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>enable_raw_tracing</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aca97df078a5782b1ebd96287f4b2a0c8" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>encode</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ad3f32f985611d9b7fb753b7ca0446f21" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>encode_buffer</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a98dc4764408e7bbf5a2eafff24391f9a" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>encoder</name></member>
@@ -3616,9 +3660,9 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1a9369b02d9e0f4c3e5c0c5b36fcf87550" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>execute_pending_upgrade_downgrade</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a0dfd6ef262902a36dd897baf96e63847" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>external_ip</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ab35d726d6130295f1948cb5fbeace3b3" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>fd</name></member>
-      <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_bytes_in</name></member>
-      <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_bytes_out</name></member>
-      <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_cipher</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a28c4296db4b541d99478c6db493f4b03" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_bytes_in</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_bytes_out</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_cipher</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a524400b5c1ea99c01c932993f3a3b7b8" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_iteration_interval</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a69727c9ff92f6e86f4ee51260de3d111" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_marker_metadata</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a2d31c2395a9ec508cbff305c9e28c1b7" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_privacy_code</name></member>
@@ -3628,14 +3672,14 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_state</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a45085f49408bdeae9cd05dbf59d39972" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_timescale</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a4e75f5d97ca1691dde43ed8b0b8ca196" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_tracks_remaining</name></member>
-      <member refid="classdpp_1_1ssl__client_1af74793d8ea8e6a4389d97cc72f9e1c4d" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_unique_id</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a3cc296231589356506a103ad8c7eee74" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_unique_id</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a017e7c98b75000d0bdc76cc16b31c093" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_uptime</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a92ec2cba8cee44cbd3e0fa9c2a87ed66" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>get_user_privacy_code</name></member>
       <member refid="classdpp_1_1websocket__client_1ae4b1e98d3e535a13fd912cdb00fc4c05" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>handle_buffer</name></member>
       <member refid="classdpp_1_1discord__voice__client_1abffb083b1554a05ab41fcf1c7fa49489" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>handle_frame</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ae0f777580b2e2db9db05525db8b67d94" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>has_secret_key</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a20ea071ce2429f0eaad5fff783fc7281" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>heartbeat_interval</name></member>
-      <member refid="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>hostname</name></member>
+      <member refid="classdpp_1_1ssl__connection_1aedf42057136f2fae90424a18daddce51" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>hostname</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a5877d601964f10d987a288aae85574b3" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>increment</name></member>
       <member refid="classdpp_1_1discord__voice__client_1afe1408c1ad305aebedc7e99ba2128aa8" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>insert_marker</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6bf70617fbf6c0409e964e8465a2f484" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ip</name></member>
@@ -3645,11 +3689,11 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1a1a98e05342f5c6b8de0f9324758f3fd6" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>is_playing</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>is_ready</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a931db7e49b13e5c8abbebb204fa62ed2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>iteration_interval</name></member>
-      <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>keepalive</name></member>
+      <member refid="classdpp_1_1ssl__connection_1aaba3255abd8ec8e94d1781771cfc9acb" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>keepalive</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a4517befd07e1179155ffafa8ba69b73f" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_heartbeat</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a935814dbd158a739e2b04f3d506af930" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_loop_time</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ad5b391badaa5a55ed2f0ebff043e93c2" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_sleep_remainder</name></member>
-      <member refid="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_tick</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a9494e0dd128b5415a96d6ff9d24789aa" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_tick</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6a9412b209fb4b40a0842fad31997b2d" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_timestamp</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6a4111094ce256554beac3523b660822" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>log</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aa88ea27bc7f59500eb44486a782c5f49" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>message_queue</name></member>
@@ -3657,24 +3701,27 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1a8175929e6857660d26b39f5b9393e83d" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>mls_state</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a1ff3c6c8fe3650e5be8ddd268dcea6f6" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>modes</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ae177808f7232ce1b5bbea5a0f8ce2d82" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>moving_average</name></member>
-      <member refid="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>obuffer</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a80a568dbb2049f4727c0efdde185699e" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>obuffer</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a4bdff78b127e920033d0d9f8fb58d456" prot="protected" virt="virtual"><scope>dpp::discord_voice_client</scope><name>on_buffer_drained</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a355589d4bf9d94117f2ddeed94503c58" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>on_disconnect</name></member>
-      <member refid="classdpp_1_1ssl__client_1a0382a16a566b1ae091b5667ba98df42a" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_error</name></member>
-      <member refid="classdpp_1_1ssl__client_1a25b211229c4109489f68251e7d86a952" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_read</name></member>
-      <member refid="classdpp_1_1ssl__client_1a6f443e1b2f4ed33458eee2576f7015e2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_write</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a8732ae4599f38f41d27de3f4c1c7cae6" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_error</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a8c50238080a887b09473c82bff8de817" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_read</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a07c9f5c2dfff5ef27db1e148589e2e26" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>on_write</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a57a629da5df4c97d727705a03d849fbb" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>one_second_timer</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6439e7757480772486fe0d9397f580a2" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>outbuf</name></member>
-      <member refid="classdpp_1_1ssl__client_1a16fdc0f7005b8ba56ecc46beec4cad1c" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>owner</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a3ae20842849f8c2f0174902dc70d7e97" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>owner</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ab2778a8b5a45b7067ff9f8cbdf629d43" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>packet_nonce</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a9cccd4ae3b80ed56dd8cf29236f9a530" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>pause_audio</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a99fb90437d53de82d76cff97c4faad54" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>paused</name></member>
-      <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>plaintext</name></member>
+      <member refid="classdpp_1_1ssl__connection_1addf00646298eba9176a675bba7269f27" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>plaintext</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a0224045bd2740a12de343c9f4125ab4b" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>port</name></member>
+      <member refid="classdpp_1_1ssl__connection_1aa8cfa2e6c511022b67dbd97cc57f0731" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>private_key_file</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ab5723044d2865b2bea5cfc9011636f59" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>process_mls_group_rosters</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ad7feee672079e07699e25f7250021c66" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>public_key_file</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a406383b8c18a931d4c496e0d7a81cf43" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>queue_message</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a959c6452e0ea0cea3855c48100a4dcf3" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>queue_mutex</name></member>
-      <member refid="classdpp_1_1ssl__client_1a7b3a22d8f3de7ed7287dd8e88e049ddb" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>raw_trace</name></member>
-      <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>read_loop</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a62161bc05909fc1d67f3a59c5fbf6e79" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>raw_trace</name></member>
+      <member refid="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>read_loop</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ac285267f8471e7954b70ecba3f130a3f" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>read_ready</name></member>
       <member refid="classdpp_1_1discord__voice__client_1af7c2f1be7861b8d8d2400a456044fd9a" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ready_for_transition</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a33a511bbc164e265641cbf1b8d1ad18a" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>receive_sequence</name></member>
@@ -3707,23 +3754,24 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1a067cdfaf8a84c2bdf09febe974eb4730" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>set_timescale</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a1790b206609d45aa1e124c701a4407f3" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>set_user_gain</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a37aafdced7aeae45699e1ce7f1c34e83" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>setup</name></member>
-      <member refid="classdpp_1_1ssl__client_1a423ca70d4046067ebe219f85c7baa540" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>sfd</name></member>
+      <member refid="classdpp_1_1ssl__connection_1abd9c3cf6150d3c7e2badd12829437207" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>sfd</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a13e2ca2b646c348597e239d3ab72f67b" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>silence_packet</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6c45a33336db010eedf8853af16b94c8" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>skip_to_next_marker</name></member>
-      <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>socket_write</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ae0fe670d8829bcfe600856a4c4adee00" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>socket_write</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ae5456ed35a1a964a607e2abc8bd59691" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>speak</name></member>
-      <member refid="classdpp_1_1ssl__client_1a26db29793a38b8a9dad74581597b298a" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssl</name></member>
-      <member refid="classdpp_1_1ssl__client_1a0a50111a0c6de5f0ffe96de142819e94" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssl_client</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a61cccaa18278dabe8eae3eafbf8dd1e7" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssl</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a77bd0f626125dfef52cfe7fe40216772" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssl_connection</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a4652c6caae2d9387f580e82f717d0f26" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssl_connection</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6d51bd69dc867e99e062aef622e9083a" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssrc</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ab161d873ad8d72027d799f72d7adcd8a" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>ssrc_map</name></member>
-      <member refid="classdpp_1_1ssl__client_1a19b8b7ead269fe0ef80f0a98c1e90c56" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>start</name></member>
+      <member refid="classdpp_1_1ssl__connection_1ad694f10e342b640f5fa6e88119c86a17" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>start</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a0bf262c6102ffdae95f999b79462a443" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>stop_audio</name></member>
       <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>stream_mutex</name></member>
-      <member refid="classdpp_1_1ssl__client_1a9d61aefda2e6f1df2e8acdb5f4165510" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>tcp_connect_done</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a69e9248f431daf428683b1152c05b1a6" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>tcp_connect_done</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a495139ab5289f6f7860177cf121ba2cb" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>terminating</name></member>
       <member refid="classdpp_1_1websocket__client_1a0d8399d578f3dc811f3ef5a663a2064b" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timed_out</name></member>
       <member refid="classdpp_1_1websocket__client_1aed68bb754ba3745b6fbb895d16f96809" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timeout</name></member>
-      <member refid="classdpp_1_1ssl__client_1a1218ebf714d7511f3ead33c34c2fb30a" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timer_handle</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a216b85ccf220d2aa66e9a4397dcdf4a3" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timer_handle</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a5315fb8492343dc48142f77cc2d28100" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>times_looped</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aa7026b375459775b76d5cec4206a9bde" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timescale</name></member>
       <member refid="classdpp_1_1discord__voice__client_1accaef35c6259256403921302747be7b7" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>timestamp</name></member>
@@ -3733,7 +3781,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1discord__voice__client_1ad7c45bde49a5f411a2516564ae5b87b2" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>udp_events</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a90fbdd9deb1142bea3aedad0369c62e8" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>udp_recv</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a3af067458ec0133cb293e6d1e748295c" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>udp_send</name></member>
-      <member refid="classdpp_1_1ssl__client_1adf682f42a07664887300335e1927828a" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>unique_id</name></member>
+      <member refid="classdpp_1_1ssl__connection_1aa7a9277f5c258712b00e91b9cd062095" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>unique_id</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aba1326f21394c3aa1e566510b1cbf51f" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>update_ratchets</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a29a53aaa7f907d61d8bf9cee05ce2160" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>voice_courier</name></member>
       <member refid="classdpp_1_1discord__voice__client_1af5e73016b4f404a690a224827561b01f" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>voice_courier_loop</name></member>
@@ -3742,7 +3790,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
       <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>write</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a88eb8bcc0d54ce5d600a9c2a1e690e01" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>write_ready</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a9b06226881ba97a22d142c8fe4f5cbe9" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>~discord_voice_client</name></member>
-      <member refid="classdpp_1_1ssl__client_1a892b774dc3832123c829d4f3bcef693a" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>~ssl_client</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a23c94174be8ca86f9d4e30931bd4ff12" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>~ssl_connection</name></member>
       <member refid="classdpp_1_1websocket__client_1a32f422f3a5a7a1aeb35a273be5c66d17" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>~websocket_client</name></member>
     </listofallmembers>
   </compounddef>

@@ -130,7 +130,7 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacedpp_1_1embed__type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents possible values for the <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a> type field. These are loosely defined by the API docs and do not influence how the client renders embeds. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedpp_1_1events"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1events.html">events</a></td></tr>
-<tr class="memdesc:namespacedpp_1_1events"><td class="mdescLeft">&#160;</td><td class="mdescRight">The events namespace holds the internal event handlers for each websocket event. These are handled internally and also dispatched to the user code if the event is hooked. <br /></td></tr>
+<tr class="memdesc:namespacedpp_1_1events"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route interaction event. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedpp_1_1unicode__emoji"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1unicode__emoji.html">unicode_emoji</a></td></tr>
 <tr class="memdesc:namespacedpp_1_1unicode__emoji"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emoji unicodes. <br /></td></tr>
@@ -347,8 +347,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a discord voice connection. Each <a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a> connects to one voice channel and derives from a websocket client.  <a href="classdpp_1_1discord__voice__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1discord__webhook__server.html">discord_webhook_server</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a HTTP server which listens for incoming Discord interactions, and if verified as valid, raises them as cluster events, returning the response back. Note that Discord requires all interaction endpoints to have a valid SSL certificate (not self signed) so in most cases you should put this port behind a reverse proxy, e.g. nginx, apache, etc.  <a href="structdpp_1_1discord__webhook__server.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a cached DNS result. Used by the <a class="el" href="classdpp_1_1ssl__client.html" title="Implements a simple non-blocking SSL stream client.">ssl_client</a> class to store cached copies of dns lookups.  <a href="structdpp_1_1dns__cache__entry.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a cached DNS result. Used by the <a class="el" href="classdpp_1_1ssl__connection.html" title="Implements a simple non-blocking SSL stream connection.">ssl_connection</a> class to store cached copies of dns lookups.  <a href="structdpp_1_1dns__cache__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a guild template.  <a href="classdpp_1_1dtemplate.html#details">More...</a><br /></td></tr>
@@ -511,6 +514,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of any HTTP request. Contains the headers, vital rate limit figures, and returned request body.  <a href="structdpp_1_1http__request__completion__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1http__server.html">http_server</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a simple HTTP server which listens on a TCP port for a plaintext or SSL incoming request, and passes that request to a callback to generate the response.  <a href="structdpp_1_1http__server.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html">https_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a HTTPS socket client based on the SSL client.  <a href="classdpp_1_1https__client.html#details">More...</a><br /></td></tr>
@@ -728,6 +736,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1select__option.html">select_option</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An option for a select component.  <a href="structdpp_1_1select__option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1signature__verifier.html">signature_verifier</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies signatures on incoming webhooks using OpenSSL.  <a href="classdpp_1_1signature__verifier.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1sku.html">sku</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A definition of a discord SKU.  <a href="classdpp_1_1sku.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -740,17 +751,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for a 64 bit unsigned value representing many things on discord. This value is known in distributed computing as a snowflake value.  <a href="classdpp_1_1snowflake.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__close__t.html">socket_close_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closure of socket (removal from socket engine)  <a href="structdpp_1_1socket__close__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__engine__base.html">socket_engine_base</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the base class for socket engines. The actual implementation is OS specific and the correct implementation is detected by CMake. It is then compiled specifically into DPP so only one implementation can exist in the implementation. All implementations should behave identically to the user, abstracting out implementation-specific behaviours (e.g. difference between edge and level triggered event mechanisms etc).  <a href="structdpp_1_1socket__engine__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__events.html">socket_events</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an active socket event set in the socket engine.  <a href="structdpp_1_1socket__events.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__listener.html">socket_listener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens on a TCP socket for new connections, and whenever a new connection is received, accept it and spawn a new connection of type T.  <a href="structdpp_1_1socket__listener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__stats.html">socket_stats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains statistics about the IO loop.  <a href="structdpp_1_1socket__stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html">ssl_client</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a simple non-blocking SSL stream client.  <a href="classdpp_1_1ssl__client.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html">ssl_connection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a simple non-blocking SSL stream connection.  <a href="classdpp_1_1ssl__connection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stage instance. Stage instances are like a conference facility, with moderators/speakers and listeners.  <a href="structdpp_1_1stage__instance.html#details">More...</a><br /></td></tr>
@@ -1002,6 +1019,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a219aedbe5bf37835c4a65115fccba278"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a></td></tr>
 <tr class="memdesc:a219aedbe5bf37835c4a65115fccba278"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container of guild members.  <a href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">More...</a><br /></td></tr>
 <tr class="separator:a219aedbe5bf37835c4a65115fccba278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9758c1c5e9637e64e889b672ef62465b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b">http_server_request_event</a> = std::function&lt; void(class <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> *)&gt;</td></tr>
+<tr class="memdesc:a9758c1c5e9637e64e889b672ef62465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type for HTTP server request callbacks.  <a href="namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b">More...</a><br /></td></tr>
+<tr class="separator:a9758c1c5e9637e64e889b672ef62465b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dbbdf54366910bacd95554ccbc705a2"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">http_headers</a></td></tr>
 <tr class="memdesc:a4dbbdf54366910bacd95554ccbc705a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request headers.  <a href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">More...</a><br /></td></tr>
 <tr class="separator:a4dbbdf54366910bacd95554ccbc705a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2565,6 +2585,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8976e5ec3bb1e3550f315a6472fa45d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SKU flags.  <a href="namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1">More...</a><br /></td></tr>
 <tr class="separator:a8976e5ec3bb1e3550f315a6472fa45d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff70bcac8227c2ce2daceb63637771b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7">raii_socket_type</a> { <a class="el" href="namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585">rst_udp</a>
+, <a class="el" href="namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7aab63ae4bfbd540e9b725cd90d5a98f9d">rst_tcp</a>
+ }</td></tr>
+<tr class="separator:aff70bcac8227c2ce2daceb63637771b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bafdff8af52a052625274bf3a642b78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9bafdff8af52a052625274bf3a642b78">socket_listener_type</a> : uint8_t { <a class="el" href="namespacedpp.html#a9bafdff8af52a052625274bf3a642b78a9f6ec38c707d7ddadebfe9be8b313f0e">li_plaintext</a>
+, <a class="el" href="namespacedpp.html#a9bafdff8af52a052625274bf3a642b78ac7053e63911d59acc606677882eca6d6">li_ssl</a>
+ }</td></tr>
+<tr class="separator:a9bafdff8af52a052625274bf3a642b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47df59fd5325a437251e77878c629532"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532">socket_event_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6">WANT_READ</a> = 1
 , <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc">WANT_WRITE</a> = 2
 , <a class="el" href="namespacedpp.html#a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984">WANT_ERROR</a> = 4
@@ -3416,6 +3444,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Request headers. </p>
+
+</div>
+</div>
+<a id="a9758c1c5e9637e64e889b672ef62465b" name="a9758c1c5e9637e64e889b672ef62465b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9758c1c5e9637e64e889b672ef62465b">&#9670;&nbsp;</a></span>http_server_request_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b">dpp::http_server_request_event</a> = typedef std::function&lt;void(class <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a>*)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback type for HTTP server request callbacks. </p>
 
 </div>
 </div>
@@ -6707,6 +6751,24 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aff70bcac8227c2ce2daceb63637771b7" name="aff70bcac8227c2ce2daceb63637771b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff70bcac8227c2ce2daceb63637771b7">&#9670;&nbsp;</a></span>raii_socket_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7">dpp::raii_socket_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585" name="aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585"></a>rst_udp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aff70bcac8227c2ce2daceb63637771b7aab63ae4bfbd540e9b725cd90d5a98f9d" name="aff70bcac8227c2ce2daceb63637771b7aab63ae4bfbd540e9b725cd90d5a98f9d"></a>rst_tcp&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a51891a9e382f9c396d378de00fa65099" name="a51891a9e382f9c396d378de00fa65099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51891a9e382f9c396d378de00fa65099">&#9670;&nbsp;</a></span>region</h2>
 
@@ -6962,6 +7024,24 @@ template&lt;typename T &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca" name="a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca"></a>WANT_DELETION&#160;</td><td class="fielddoc"><p >Socket should be removed as soon as is safe to do so. Generally, this is after the current iteration through the active event list. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9bafdff8af52a052625274bf3a642b78" name="a9bafdff8af52a052625274bf3a642b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bafdff8af52a052625274bf3a642b78">&#9670;&nbsp;</a></span>socket_listener_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a9bafdff8af52a052625274bf3a642b78">dpp::socket_listener_type</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9bafdff8af52a052625274bf3a642b78a9f6ec38c707d7ddadebfe9be8b313f0e" name="a9bafdff8af52a052625274bf3a642b78a9f6ec38c707d7ddadebfe9be8b313f0e"></a>li_plaintext&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9bafdff8af52a052625274bf3a642b78ac7053e63911d59acc606677882eca6d6" name="a9bafdff8af52a052625274bf3a642b78ac7053e63911d59acc606677882eca6d6"></a>li_ssl&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

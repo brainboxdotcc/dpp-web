@@ -188,7 +188,7 @@ var searchData=
   ['horse_5fracing_5ftone4_185',['horse_racing_tone4',['../namespacedpp_1_1unicode__emoji.html#a365fc280db2bc40e4b09b91ad954e284',1,'dpp::unicode_emoji']]],
   ['horse_5fracing_5ftone5_186',['horse_racing_tone5',['../namespacedpp_1_1unicode__emoji.html#ae60c9b6f99bc12ee9e3ab9bbd506f440',1,'dpp::unicode_emoji']]],
   ['hospital_187',['hospital',['../namespacedpp_1_1unicode__emoji.html#a08dc296ca3eb3312506ead5f1354d0e6',1,'dpp::unicode_emoji']]],
-  ['hostname_188',['hostname',['../structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3',1,'dpp::http_connect_info::hostname()'],['../classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8',1,'dpp::ssl_client::hostname()']]],
+  ['hostname_188',['hostname',['../structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3',1,'dpp::http_connect_info::hostname()'],['../classdpp_1_1ssl__connection.html#aedf42057136f2fae90424a18daddce51',1,'dpp::ssl_connection::hostname()']]],
   ['hot_5fbeverage_189',['hot_beverage',['../namespacedpp_1_1unicode__emoji.html#ae1e93c3fadb4805b325524b9c27c38a8',1,'dpp::unicode_emoji']]],
   ['hot_5fdeep_5fpink_190',['hot_deep_pink',['../namespacedpp_1_1colors.html#a0317c2fdd3dec9e5d8c20f68f1f93b58',1,'dpp::colors']]],
   ['hot_5fdog_191',['hot_dog',['../namespacedpp_1_1unicode__emoji.html#af86a94309541630c5f850db837c67ea0',1,'dpp::unicode_emoji']]],

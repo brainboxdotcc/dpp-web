@@ -49,7 +49,7 @@ var searchData=
   ['unicorn_46',['unicorn',['../namespacedpp_1_1unicode__emoji.html#a1bad8e36ab3b7d28e4854beedaf2fead',1,'dpp::unicode_emoji']]],
   ['unicorn_5fface_47',['unicorn_face',['../namespacedpp_1_1unicode__emoji.html#a5b4ab454f98d678976d46ba2b7061f48',1,'dpp::unicode_emoji']]],
   ['unique_48',['unique',['../classdpp_1_1invite.html#a4d933ea3a2dc9a442ff711c63339bb1d',1,'dpp::invite']]],
-  ['unique_5fid_49',['unique_id',['../classdpp_1_1ssl__client.html#adf682f42a07664887300335e1927828a',1,'dpp::ssl_client']]],
+  ['unique_5fid_49',['unique_id',['../classdpp_1_1ssl__connection.html#aa7a9277f5c258712b00e91b9cd062095',1,'dpp::ssl_connection']]],
   ['unit_20tests_50',['Unit Tests',['../unit-tests.html',1,'advanced-reference']]],
   ['united_5fnations_51',['united_nations',['../namespacedpp_1_1unicode__emoji.html#a9ad66e85e0c912b005b19be189f08ba1',1,'dpp::unicode_emoji']]],
   ['universal_52',['universal',['../namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749',1,'dpp']]],

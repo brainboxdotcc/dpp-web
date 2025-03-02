@@ -16,15 +16,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="117" column="8" bodyfile="include/dpp/socket.h" bodystart="117" bodyend="-1"/>
+        <location file="include/dpp/socket.h" line="123" column="8" bodyfile="include/dpp/socket.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1raii__socket_1a360ba9282b4c45eb7c2f3da3cbe89308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1ac756ed9720a85b505c82e45074244aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::raii_socket::raii_socket</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(raii_socket_type type=rst_udp)</argsstring>
         <name>raii_socket</name>
+        <param>
+          <type><ref refid="namespacedpp_1aff70bcac8227c2ce2daceb63637771b7" kindref="member">raii_socket_type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacedpp_1aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585" kindref="member">rst_udp</ref></defval>
+        </param>
         <briefdescription>
 <para>Construct a socket. Calls <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket()</ref> and returns a new file descriptor. </para>
         </briefdescription>
@@ -32,7 +37,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="123" column="1"/>
+        <location file="include/dpp/socket.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1a7b334cc7990eddd35309441da65ed46f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::raii_socket::raii_socket</definition>
+        <argsstring>(socket plain_fd)</argsstring>
+        <name>raii_socket</name>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
+          <declname>plain_fd</declname>
+        </param>
+        <briefdescription>
+<para>Convert an established fd to an <ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plain_fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1raii__socket_1a03e56d3f9d867ba9129e88483ea7f62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -49,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="128" column="1"/>
+        <location file="include/dpp/socket.h" line="140" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1raii__socket_1a9ef4e5f89bb6b25d1fedfa336c01353f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -66,7 +99,139 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="133" column="1"/>
+        <location file="include/dpp/socket.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1a68a58ad8ede9d5a09293eac5786961db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool dpp::raii_socket::set_option</definition>
+        <argsstring>(int level, int name, T value)</argsstring>
+        <name>set_option</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of a socket option. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type to set option for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level at which to change the socket options </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The option to change the value of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if set successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="155" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1abeb033210b82a81105fdd0d8036f5599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::raii_socket::bind</definition>
+        <argsstring>(address_t address)</argsstring>
+        <name>bind</name>
+        <param>
+          <type><ref refid="classdpp_1_1address__t" kindref="compound">address_t</ref></type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Bind socket to IP/port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to bind to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="162" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1ad0c9e10b7841d71ffd5e2c3bf97459d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::raii_socket::listen</definition>
+        <argsstring>()</argsstring>
+        <name>listen</name>
+        <briefdescription>
+<para>Listen on previously bound port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="168" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1raii__socket_1ab243ec8773b62b76212858c886fab25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
+        <definition>socket dpp::raii_socket::accept</definition>
+        <argsstring>()</argsstring>
+        <name>accept</name>
+        <briefdescription>
+<para>Accept a pending connection on listening socket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new connection file descriptor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="174" column="8"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1raii__socket_1ac6e0bf827054b1e2b8c53ab8e0eebc01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref></type>
@@ -83,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="138" column="13"/>
+        <location file="include/dpp/socket.h" line="179" column="13"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1raii__socket_1ae105345be5845bc1f19fee743f4cb253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref></type>
@@ -100,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="143" column="13"/>
+        <location file="include/dpp/socket.h" line="184" column="13"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1raii__socket_1a3cb1d1eb105c51542291d10f70fa746b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -114,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="149" column="1"/>
+        <location file="include/dpp/socket.h" line="190" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -134,14 +299,19 @@
         <label>int</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/socket.h" line="113" column="1" bodyfile="include/dpp/socket.h" bodystart="113" bodyend="150"/>
+    <location file="include/dpp/socket.h" line="119" column="1" bodyfile="include/dpp/socket.h" bodystart="119" bodyend="191"/>
     <listofallmembers>
+      <member refid="structdpp_1_1raii__socket_1ab243ec8773b62b76212858c886fab25c" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>accept</name></member>
+      <member refid="structdpp_1_1raii__socket_1abeb033210b82a81105fdd0d8036f5599" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>bind</name></member>
       <member refid="structdpp_1_1raii__socket_1a076c1fbfc903f14529b6d7c7bdb7247c" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>fd</name></member>
+      <member refid="structdpp_1_1raii__socket_1ad0c9e10b7841d71ffd5e2c3bf97459d4" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>listen</name></member>
       <member refid="structdpp_1_1raii__socket_1ac6e0bf827054b1e2b8c53ab8e0eebc01" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>operator=</name></member>
       <member refid="structdpp_1_1raii__socket_1ae105345be5845bc1f19fee743f4cb253" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>operator=</name></member>
-      <member refid="structdpp_1_1raii__socket_1a360ba9282b4c45eb7c2f3da3cbe89308" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>raii_socket</name></member>
+      <member refid="structdpp_1_1raii__socket_1ac756ed9720a85b505c82e45074244aff" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>raii_socket</name></member>
+      <member refid="structdpp_1_1raii__socket_1a7b334cc7990eddd35309441da65ed46f" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>raii_socket</name></member>
       <member refid="structdpp_1_1raii__socket_1a03e56d3f9d867ba9129e88483ea7f62f" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>raii_socket</name></member>
       <member refid="structdpp_1_1raii__socket_1a9ef4e5f89bb6b25d1fedfa336c01353f" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>raii_socket</name></member>
+      <member refid="structdpp_1_1raii__socket_1a68a58ad8ede9d5a09293eac5786961db" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>set_option</name></member>
       <member refid="structdpp_1_1raii__socket_1a3cb1d1eb105c51542291d10f70fa746b" prot="public" virt="non-virtual"><scope>dpp::raii_socket</scope><name>~raii_socket</name></member>
     </listofallmembers>
   </compounddef>

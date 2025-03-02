@@ -4,7 +4,7 @@ var searchData=
   ['kangaroo_1',['kangaroo',['../namespacedpp_1_1unicode__emoji.html#ada5f0b5d059b6e1606a29c2b45db836b',1,'dpp::unicode_emoji']]],
   ['karate_5funiform_2',['karate_uniform',['../namespacedpp_1_1unicode__emoji.html#a02c2abff5b237ac14ec8abab3118adb6',1,'dpp::unicode_emoji']]],
   ['kayak_3',['kayak',['../namespacedpp_1_1unicode__emoji.html#aa1fad9987a54f81ca3bb19318aa408b1',1,'dpp::unicode_emoji']]],
-  ['keepalive_4',['keepalive',['../classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152',1,'dpp::ssl_client']]],
+  ['keepalive_4',['keepalive',['../classdpp_1_1ssl__connection.html#aaba3255abd8ec8e94d1781771cfc9acb',1,'dpp::ssl_connection']]],
   ['kelly_5fgreen_5',['kelly_green',['../namespacedpp_1_1colors.html#ab3c1d5e93d35aa92f52fb7867e44d819',1,'dpp::colors']]],
   ['key_6',['key',['../structdpp_1_1audit__change.html#abb0f7485a2d413476f1f8663fe1a8014',1,'dpp::audit_change::key()'],['../namespacedpp_1_1unicode__emoji.html#a6512e9f5b105c5c536b5fbc87d75a114',1,'dpp::unicode_emoji::key()'],['../classdpp_1_1application__role__connection__metadata.html#a89e105ed4039b790f6e92cb3953961d3',1,'dpp::application_role_connection_metadata::key()']]],
   ['key2_7',['key2',['../namespacedpp_1_1unicode__emoji.html#a43755f376d862dd3d54433af927061a1',1,'dpp::unicode_emoji']]],

@@ -6517,6 +6517,7 @@ var namespacedpp =
     [ "dave_binary_header_t", "structdpp_1_1dave__binary__header__t.html", "structdpp_1_1dave__binary__header__t" ],
     [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
     [ "discord_voice_client", "classdpp_1_1discord__voice__client.html", "classdpp_1_1discord__voice__client" ],
+    [ "discord_webhook_server", "structdpp_1_1discord__webhook__server.html", "structdpp_1_1discord__webhook__server" ],
     [ "dns_cache_entry", "structdpp_1_1dns__cache__entry.html", "structdpp_1_1dns__cache__entry" ],
     [ "dtemplate", "classdpp_1_1dtemplate.html", "classdpp_1_1dtemplate" ],
     [ "embed", "structdpp_1_1embed.html", "structdpp_1_1embed" ],
@@ -6572,6 +6573,8 @@ var namespacedpp =
     [ "http_connect_info", "structdpp_1_1http__connect__info.html", "structdpp_1_1http__connect__info" ],
     [ "http_request", "classdpp_1_1http__request.html", "classdpp_1_1http__request" ],
     [ "http_request_completion_t", "structdpp_1_1http__request__completion__t.html", "structdpp_1_1http__request__completion__t" ],
+    [ "http_server", "structdpp_1_1http__server.html", "structdpp_1_1http__server" ],
+    [ "http_server_request", "classdpp_1_1http__server__request.html", "classdpp_1_1http__server__request" ],
     [ "https_client", "classdpp_1_1https__client.html", "classdpp_1_1https__client" ],
     [ "integration", "classdpp_1_1integration.html", "classdpp_1_1integration" ],
     [ "integration_account", "structdpp_1_1integration__account.html", "structdpp_1_1integration__account" ],
@@ -6645,14 +6648,17 @@ var namespacedpp =
     [ "scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", "classdpp_1_1scheduled__event__collector" ],
     [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
+    [ "signature_verifier", "classdpp_1_1signature__verifier.html", "classdpp_1_1signature__verifier" ],
     [ "sku", "classdpp_1_1sku.html", "classdpp_1_1sku" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
     [ "slashcommand_t", "structdpp_1_1slashcommand__t.html", "structdpp_1_1slashcommand__t" ],
     [ "snowflake", "classdpp_1_1snowflake.html", "classdpp_1_1snowflake" ],
+    [ "socket_close_t", "structdpp_1_1socket__close__t.html", "structdpp_1_1socket__close__t" ],
     [ "socket_engine_base", "structdpp_1_1socket__engine__base.html", "structdpp_1_1socket__engine__base" ],
     [ "socket_events", "structdpp_1_1socket__events.html", "structdpp_1_1socket__events" ],
+    [ "socket_listener", "structdpp_1_1socket__listener.html", "structdpp_1_1socket__listener" ],
     [ "socket_stats", "structdpp_1_1socket__stats.html", "structdpp_1_1socket__stats" ],
-    [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
+    [ "ssl_connection", "classdpp_1_1ssl__connection.html", "classdpp_1_1ssl__connection" ],
     [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
     [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
     [ "stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", "structdpp_1_1stage__instance__delete__t" ],
@@ -6732,6 +6738,7 @@ var namespacedpp =
     [ "guild_member_map", "namespacedpp.html#a219aedbe5bf37835c4a65115fccba278", null ],
     [ "http_completion_event", "namespacedpp.html#ae3249e99494d04bb4be50341f474621e", null ],
     [ "http_headers", "namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2", null ],
+    [ "http_server_request_event", "namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b", null ],
     [ "https_client_completion_event", "namespacedpp.html#af597d5e0f7483338956d105bbcfd9b63", null ],
     [ "integration_map", "namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a", null ],
     [ "invite_map", "namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a", null ],
@@ -7759,6 +7766,10 @@ var namespacedpp =
       [ "ps_idle", "namespacedpp.html#a172aa830689e55f4bba337de1592db96ac85606cb4be43da0a426d80f6ad2c90f", null ],
       [ "ps_invisible", "namespacedpp.html#a172aa830689e55f4bba337de1592db96a623817baffee92df76b071dca8f49db2", null ]
     ] ],
+    [ "raii_socket_type", "namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7", [
+      [ "rst_udp", "namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7af360beb9749bf471cb5778d189f3e585", null ],
+      [ "rst_tcp", "namespacedpp.html#aff70bcac8227c2ce2daceb63637771b7aab63ae4bfbd540e9b725cd90d5a98f9d", null ]
+    ] ],
     [ "region", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099", [
       [ "r_brazil", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313", null ],
       [ "r_central_europe", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8", null ],
@@ -7824,6 +7835,10 @@ var namespacedpp =
       [ "WANT_WRITE", "namespacedpp.html#a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc", null ],
       [ "WANT_ERROR", "namespacedpp.html#a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984", null ],
       [ "WANT_DELETION", "namespacedpp.html#a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca", null ]
+    ] ],
+    [ "socket_listener_type", "namespacedpp.html#a9bafdff8af52a052625274bf3a642b78", [
+      [ "li_plaintext", "namespacedpp.html#a9bafdff8af52a052625274bf3a642b78a9f6ec38c707d7ddadebfe9be8b313f0e", null ],
+      [ "li_ssl", "namespacedpp.html#a9bafdff8af52a052625274bf3a642b78ac7053e63911d59acc606677882eca6d6", null ]
     ] ],
     [ "stage_privacy_level", "namespacedpp.html#a29954c9dfc5a906346177226d036a418", [
       [ "sp_public", "namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed", null ],

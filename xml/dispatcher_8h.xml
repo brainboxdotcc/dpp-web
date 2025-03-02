@@ -667,7 +667,7 @@
         </childnode>
       </node>
       <node id="41">
-        <label>dpp/sslclient.h</label>
+        <label>dpp/sslconnection.h</label>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
@@ -954,7 +954,11 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -962,18 +966,23 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="11">
         <label>commandhandler.h</label>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="7">
+        <label>discord_webhook_server.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
         <label>discordclient.h</label>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -986,29 +995,43 @@
         <link refid="dispatcher_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="4">
         <label>dpp.h</label>
       </node>
       <node id="6">
+        <label>http_server.h</label>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>restrequest.h</label>
       </node>
-      <node id="10">
+      <node id="13">
         <label>restresults.h</label>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="9">
+        <label>socket_listener.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>timed_listener.h</label>
         <childnode refid="3" relation="include">
         </childnode>
@@ -1018,6 +1041,7 @@
     </invincdepgraph>
     <innerclass refid="structdpp_1_1event__dispatch__t" prot="public">dpp::event_dispatch_t</innerclass>
     <innerclass refid="structdpp_1_1log__t" prot="public">dpp::log_t</innerclass>
+    <innerclass refid="structdpp_1_1socket__close__t" prot="public">dpp::socket_close_t</innerclass>
     <innerclass refid="structdpp_1_1guild__scheduled__event__user__add__t" prot="public">dpp::guild_scheduled_event_user_add_t</innerclass>
     <innerclass refid="structdpp_1_1guild__scheduled__event__user__remove__t" prot="public">dpp::guild_scheduled_event_user_remove_t</innerclass>
     <innerclass refid="structdpp_1_1guild__scheduled__event__create__t" prot="public">dpp::guild_scheduled_event_create_t</innerclass>
@@ -1100,6 +1124,7 @@
     <innerclass refid="structdpp_1_1entitlement__update__t" prot="public">dpp::entitlement_update_t</innerclass>
     <innerclass refid="structdpp_1_1entitlement__delete__t" prot="public">dpp::entitlement_delete_t</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
+    <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
     <innernamespace refid="namespacedpp_1_1utility">dpp::utility</innernamespace>
     <briefdescription>
     </briefdescription>
