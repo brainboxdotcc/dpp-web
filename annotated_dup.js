@@ -35,7 +35,8 @@ var annotated_dup =
           [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
           [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
           [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
-        ] ]
+        ] ],
+        [ "wrapped_ssl_ctx", "structdpp_1_1detail_1_1wrapped__ssl__ctx.html", "structdpp_1_1detail_1_1wrapped__ssl__ctx" ]
       ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],

@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('namespacedpp_1_1detail.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -132,6 +133,12 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacedpp_1_1detail_1_1when__any"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cogwheels for <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">dpp::when_any</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1wrapped__ssl__ctx.html">wrapped_ssl_ctx</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps a raw SSL_CTX pointer, managing moving, creation, and RAII destruction.  <a href="structdpp_1_1detail_1_1wrapped__ssl__ctx.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:afb0a0bcfb46ac28d58102ed8bb9c7e16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -144,6 +151,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a63c76824ad809907fbd7fd5f714ad45d"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#a63c76824ad809907fbd7fd5f714ad45d">co_await_resolve</a> (auto &amp;&amp;expr)</td></tr>
 <tr class="memdesc:a63c76824ad809907fbd7fd5f714ad45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mimics the compiler's behavior of using co_await. That is, it returns whichever works first, in order : <code>expr.operator co_await();</code> &gt; <code>operator co_await(expr)</code> &gt; <code>expr</code>  <a href="namespacedpp_1_1detail.html#a63c76824ad809907fbd7fd5f714ad45d">More...</a><br /></td></tr>
 <tr class="separator:a63c76824ad809907fbd7fd5f714ad45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d579e72bdfe586a46ecc6cb160598e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1detail_1_1wrapped__ssl__ctx.html">wrapped_ssl_ctx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#ab7d579e72bdfe586a46ecc6cb160598e">generate_ssl_context</a> (uint16_t port=0, const std::string &amp;private_key=&quot;&quot;, const std::string &amp;public_key=&quot;&quot;)</td></tr>
+<tr class="memdesc:ab7d579e72bdfe586a46ecc6cb160598e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new wrapped SSL context. If an SSL context already exists for the given port number, it will be returned, else a new one will be generated and cached. Contexts with port = 0 will be considered client contexts. There can only be one client context at a time and it covers all SSL client connections. There can be many SSL server contexts, individual ones can be cached per-port, each with their own loaded SSL private and public key PEM certificate.  <a href="namespacedpp_1_1detail.html#ab7d579e72bdfe586a46ecc6cb160598e">More...</a><br /></td></tr>
+<tr class="separator:ab7d579e72bdfe586a46ecc6cb160598e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea26922a96646ea9342e870aed7c6e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#abea26922a96646ea9342e870aed7c6e7">release_ssl_context</a> (uint16_t port=0)</td></tr>
+<tr class="memdesc:abea26922a96646ea9342e870aed7c6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an SSL context.  <a href="namespacedpp_1_1detail.html#abea26922a96646ea9342e870aed7c6e7">More...</a><br /></td></tr>
+<tr class="separator:abea26922a96646ea9342e870aed7c6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -205,6 +218,78 @@ template&lt;typename T &gt; </div>
 
 <p>Mimics the compiler's behavior of using co_await. That is, it returns whichever works first, in order : <code>expr.operator co_await();</code> &gt; <code>operator co_await(expr)</code> &gt; <code>expr</code> </p>
 <p >This function is conditionally noexcept, if the returned expression also is. </p>
+
+</div>
+</div>
+<a id="ab7d579e72bdfe586a46ecc6cb160598e" name="ab7d579e72bdfe586a46ecc6cb160598e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d579e72bdfe586a46ecc6cb160598e">&#9670;&nbsp;</a></span>generate_ssl_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1detail_1_1wrapped__ssl__ctx.html">wrapped_ssl_ctx</a> * dpp::detail::generate_ssl_context </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>private_key</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>public_key</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a new wrapped SSL context. If an SSL context already exists for the given port number, it will be returned, else a new one will be generated and cached. Contexts with port = 0 will be considered client contexts. There can only be one client context at a time and it covers all SSL client connections. There can be many SSL server contexts, individual ones can be cached per-port, each with their own loaded SSL private and public key PEM certificate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Port number. Pass zero to create or get the client context. </td></tr>
+    <tr><td class="paramname">private_key</td><td>Private key PEM pathname for server contexts </td></tr>
+    <tr><td class="paramname">public_key</td><td>Public key PEM pathname for server contexts </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wrapped SSL context </dd></dl>
+
+</div>
+</div>
+<a id="abea26922a96646ea9342e870aed7c6e7" name="abea26922a96646ea9342e870aed7c6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea26922a96646ea9342e870aed7c6e7">&#9670;&nbsp;</a></span>release_ssl_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::detail::release_ssl_context </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release an SSL context. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Only do this if you are certain no SSL connections remain that use this context. As OpenSSL is a C library it is impossible for us to track this on its behalf. Be careful! </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>port number to release </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

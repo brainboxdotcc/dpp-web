@@ -140,9 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99eeb4b81c8491fcde911cfd433394aa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1http__server__request.html#a99eeb4b81c8491fcde911cfd433394aa">get_status</a> () const</td></tr>
 <tr class="memdesc:a99eeb4b81c8491fcde911cfd433394aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current status code.  <a href="classdpp_1_1http__server__request.html#a99eeb4b81c8491fcde911cfd433394aa">More...</a><br /></td></tr>
 <tr class="separator:a99eeb4b81c8491fcde911cfd433394aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0748bfa172e1d3361dada92bf0f14a01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1http__server__request.html#a0748bfa172e1d3361dada92bf0f14a01">http_server_request</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> fd, bool plaintext_downgrade, const std::string &amp;private_key, const std::string &amp;public_key, <a class="el" href="namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b">http_server_request_event</a> handle_request)</td></tr>
-<tr class="memdesc:a0748bfa172e1d3361dada92bf0f14a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new server request object. Server request objects are instantiated for an incoming server connection, as such they already have a file descriptor.  <a href="classdpp_1_1http__server__request.html#a0748bfa172e1d3361dada92bf0f14a01">More...</a><br /></td></tr>
-<tr class="separator:a0748bfa172e1d3361dada92bf0f14a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bef47951bbbed641480b9f13cc9359"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1http__server__request.html#ad7bef47951bbbed641480b9f13cc9359">http_server_request</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> fd, uint16_t <a class="el" href="classdpp_1_1ssl__connection.html#a39851da532b2f7ee33570e3b1dafd097">port</a>, bool plaintext_downgrade, const std::string &amp;private_key, const std::string &amp;public_key, <a class="el" href="namespacedpp.html#a9758c1c5e9637e64e889b672ef62465b">http_server_request_event</a> handle_request)</td></tr>
+<tr class="memdesc:ad7bef47951bbbed641480b9f13cc9359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new server request object. Server request objects are instantiated for an incoming server connection, as such they already have a file descriptor.  <a href="classdpp_1_1http__server__request.html#ad7bef47951bbbed641480b9f13cc9359">More...</a><br /></td></tr>
+<tr class="separator:ad7bef47951bbbed641480b9f13cc9359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98769016320547afcc9d0e9c60902ff2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1http__server__request.html#a98769016320547afcc9d0e9c60902ff2">~http_server_request</a> () override</td></tr>
 <tr class="memdesc:a98769016320547afcc9d0e9c60902ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the https client object.  <a href="classdpp_1_1http__server__request.html#a98769016320547afcc9d0e9c60902ff2">More...</a><br /></td></tr>
 <tr class="separator:a98769016320547afcc9d0e9c60902ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,8 +322,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a62161bc05909fc1d67f3a59c5fbf6e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0748bfa172e1d3361dada92bf0f14a01" name="a0748bfa172e1d3361dada92bf0f14a01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0748bfa172e1d3361dada92bf0f14a01">&#9670;&nbsp;</a></span>http_server_request()</h2>
+<a id="ad7bef47951bbbed641480b9f13cc9359" name="ad7bef47951bbbed641480b9f13cc9359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7bef47951bbbed641480b9f13cc9359">&#9670;&nbsp;</a></span>http_server_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,6 +339,12 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>&#160;</td>
           <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -377,6 +383,7 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">creator</td><td>creating owner </td></tr>
     <tr><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramname">port</td><td>Port the connection came in on </td></tr>
     <tr><td class="paramname">plaintext_downgrade</td><td>true if plaintext, false if SSL </td></tr>
     <tr><td class="paramname">private_key</td><td>if SSL, the path to the private key PEM </td></tr>
     <tr><td class="paramname">public_key</td><td>if SSL, the path to the public key PEM </td></tr>

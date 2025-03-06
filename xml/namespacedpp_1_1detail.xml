@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="namespacedpp_1_1detail" kind="namespace" language="C++">
     <compoundname>dpp::detail</compoundname>
+    <innerclass refid="structdpp_1_1detail_1_1wrapped__ssl__ctx" prot="public">dpp::detail::wrapped_ssl_ctx</innerclass>
     <innernamespace refid="namespacedpp_1_1detail_1_1async">dpp::detail::async</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail_1_1coroutine">dpp::detail::coroutine</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail_1_1event__router">dpp::detail::event_router</innernamespace>
@@ -140,6 +141,94 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/coro.h" line="158" column="10" bodyfile="include/dpp/coro/coro.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1detail_1ab7d579e72bdfe586a46ecc6cb160598e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1detail_1_1wrapped__ssl__ctx" kindref="compound">wrapped_ssl_ctx</ref> *</type>
+        <definition>wrapped_ssl_ctx * dpp::detail::generate_ssl_context</definition>
+        <argsstring>(uint16_t port=0, const std::string &amp;private_key=&quot;&quot;, const std::string &amp;public_key=&quot;&quot;)</argsstring>
+        <name>generate_ssl_context</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>private_key</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>public_key</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Generate a new wrapped SSL context. If an SSL context already exists for the given port number, it will be returned, else a new one will be generated and cached. Contexts with port = 0 will be considered client contexts. There can only be one client context at a time and it covers all SSL client connections. There can be many SSL server contexts, individual ones can be cached per-port, each with their own loaded SSL private and public key PEM certificate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port number. Pass zero to create or get the client context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>private_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Private key PEM pathname for server contexts </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>public_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Public key PEM pathname for server contexts </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>wrapped SSL context </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/ssl_context.h" line="42" column="17" declfile="include/dpp/ssl_context.h" declline="42" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1detail_1abea26922a96646ea9342e870aed7c6e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::release_ssl_context</definition>
+        <argsstring>(uint16_t port=0)</argsstring>
+        <name>release_ssl_context</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Release an SSL context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Only do this if you are certain no SSL connections remain that use this context. As OpenSSL is a C library it is impossible for us to track this on its behalf. Be careful! </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port number to release </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/ssl_context.h" line="50" column="6" declfile="include/dpp/ssl_context.h" declline="50" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

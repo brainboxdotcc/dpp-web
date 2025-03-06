@@ -2037,6 +2037,7 @@
     <member refid="structdpp_1_1discord__webhook__server_1a031895249fbbaf0004e564ff92d2bb12" kind="variable"><name>verifier</name></member>
     <member refid="structdpp_1_1discord__webhook__server_1a32de0f73f1189780c1f77b9a923273a0" kind="variable"><name>public_key_hex</name></member>
     <member refid="structdpp_1_1http__server_1a0cc660796d16d37a42befb0c02b90b6d" kind="variable"><name>request_handler</name></member>
+    <member refid="structdpp_1_1http__server_1ae7393791211c60ba31911346f5cc1a02" kind="variable"><name>bound_port</name></member>
     <member refid="structdpp_1_1socket__listener_1a3fed071f1108cd751b3381876175943a" kind="variable"><name>fd</name></member>
     <member refid="structdpp_1_1socket__listener_1a23171433eef1f1955dd881427ad8683a" kind="variable"><name>connections</name></member>
     <member refid="structdpp_1_1socket__listener_1adc251f3dfe1c146603983b63e5ccf443" kind="variable"><name>creator</name></member>
@@ -3244,6 +3245,7 @@
   </compound>
   <compound refid="structdpp_1_1http__server" kind="struct"><name>dpp::http_server</name>
     <member refid="structdpp_1_1http__server_1a0cc660796d16d37a42befb0c02b90b6d" kind="variable"><name>request_handler</name></member>
+    <member refid="structdpp_1_1http__server_1ae7393791211c60ba31911346f5cc1a02" kind="variable"><name>bound_port</name></member>
     <member refid="structdpp_1_1socket__listener_1a3fed071f1108cd751b3381876175943a" kind="variable"><name>fd</name></member>
     <member refid="structdpp_1_1socket__listener_1a23171433eef1f1955dd881427ad8683a" kind="variable"><name>connections</name></member>
     <member refid="structdpp_1_1socket__listener_1adc251f3dfe1c146603983b63e5ccf443" kind="variable"><name>creator</name></member>
@@ -3254,6 +3256,7 @@
     <member refid="structdpp_1_1socket__listener_1a4c98537155766c325a8d417d873e2017" kind="variable"><name>events</name></member>
     <member refid="structdpp_1_1http__server_1a2ba3e4e702e493ed89bba850c3c60ad5" kind="function"><name>http_server</name></member>
     <member refid="structdpp_1_1http__server_1ae343e1e2425664d6263b2e0e836b6671" kind="function"><name>emplace</name></member>
+    <member refid="structdpp_1_1http__server_1af0f3faa04128894c0398a6665b15e859" kind="function"><name>~http_server</name></member>
     <member refid="structdpp_1_1socket__listener_1a1a3d7791b273a8056f306ae1874c2a47" kind="function"><name>handle_accept</name></member>
   </compound>
   <compound refid="classdpp_1_1http__server__request" kind="class"><name>dpp::http_server_request</name>
@@ -3301,7 +3304,7 @@
     <member refid="classdpp_1_1http__server__request_1ab27be4b58d0f3f3834436e1325aabe45" kind="function"><name>get_response_body</name></member>
     <member refid="classdpp_1_1http__server__request_1a4c7c7a69b993eba559959cfae599a6f1" kind="function"><name>get_request_body</name></member>
     <member refid="classdpp_1_1http__server__request_1a99eeb4b81c8491fcde911cfd433394aa" kind="function"><name>get_status</name></member>
-    <member refid="classdpp_1_1http__server__request_1a0748bfa172e1d3361dada92bf0f14a01" kind="function"><name>http_server_request</name></member>
+    <member refid="classdpp_1_1http__server__request_1ad7bef47951bbbed641480b9f13cc9359" kind="function"><name>http_server_request</name></member>
     <member refid="classdpp_1_1http__server__request_1a98769016320547afcc9d0e9c60902ff2" kind="function"><name>~http_server_request</name></member>
     <member refid="classdpp_1_1http__server__request_1a312827aaa48c1d7726efc9275ebd5cb6" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1http__server__request_1a187b7a0ffb65635d9f56591f400b6308" kind="function"><name>close</name></member>
@@ -5230,7 +5233,7 @@
     <member refid="classdpp_1_1ssl__connection_1a3cc296231589356506a103ad8c7eee74" kind="function"><name>get_unique_id</name></member>
     <member refid="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__connection_1a77bd0f626125dfef52cfe7fe40216772" kind="function"><name>ssl_connection</name></member>
-    <member refid="classdpp_1_1ssl__connection_1a4652c6caae2d9387f580e82f717d0f26" kind="function"><name>ssl_connection</name></member>
+    <member refid="classdpp_1_1ssl__connection_1ab9d2b0349eb22555403c692500a287bb" kind="function"><name>ssl_connection</name></member>
     <member refid="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" kind="function"><name>read_loop</name></member>
     <member refid="classdpp_1_1ssl__connection_1a23c94174be8ca86f9d4e30931bd4ff12" kind="function"><name>~ssl_connection</name></member>
     <member refid="classdpp_1_1ssl__connection_1a321015d761b174db3f4ffb2551bb2f99" kind="function"><name>handle_buffer</name></member>
@@ -6357,6 +6360,15 @@
     <member refid="classdpp_1_1when__any_1aa4f062352fa189569d89862e3d3615b3" kind="function"><name>operator=</name></member>
     <member refid="classdpp_1_1when__any_1a01071c5b9cbcdd6063ca222cffeba423" kind="function"><name>await_ready</name></member>
     <member refid="classdpp_1_1when__any_1a92c4350528299dbe000badca9a3fc9a7" kind="function"><name>operator co_await</name></member>
+  </compound>
+  <compound refid="structdpp_1_1detail_1_1wrapped__ssl__ctx" kind="struct"><name>dpp::detail::wrapped_ssl_ctx</name>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1a296bb7408bb753323e81c8b192255ecf" kind="variable"><name>context</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1a80666ea87a3dcd95edf83a82a2101ba3" kind="function"><name>wrapped_ssl_ctx</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1a0e710a9980ffad22c12dbeb056fa8ec4" kind="function"><name>wrapped_ssl_ctx</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1ae8ef65102b04184f913404910aa148cf" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1ad9757ee4513cbb05f3ed5242def3961b" kind="function"><name>wrapped_ssl_ctx</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1addb443b8d376c4394844005bb5881f93" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1detail_1_1wrapped__ssl__ctx_1a2772e6f01fd9c46ca759c75ac92522ac" kind="function"><name>~wrapped_ssl_ctx</name></member>
   </compound>
   <compound refid="classdpp_1_1zlibcontext" kind="class"><name>dpp::zlibcontext</name>
     <member refid="classdpp_1_1zlibcontext_1a53b0932e34093ad76c7c0a29d31dd94f" kind="variable"><name>d_stream</name></member>
@@ -8370,6 +8382,8 @@
     <member refid="namespacedpp_1_1detail_1aa081ef3c8654b456a0d5579b0bfbede2" kind="variable"><name>has_await_members</name></member>
     <member refid="namespacedpp_1_1detail_1a449419ec6538a4e7f4476940f0041606" kind="variable"><name>awaitable_type</name></member>
     <member refid="namespacedpp_1_1detail_1a63c76824ad809907fbd7fd5f714ad45d" kind="function"><name>co_await_resolve</name></member>
+    <member refid="namespacedpp_1_1detail_1ab7d579e72bdfe586a46ecc6cb160598e" kind="function"><name>generate_ssl_context</name></member>
+    <member refid="namespacedpp_1_1detail_1abea26922a96646ea9342e870aed7c6e7" kind="function"><name>release_ssl_context</name></member>
   </compound>
   <compound refid="namespacedpp_1_1detail_1_1async" kind="namespace"><name>dpp::detail::async</name>
   </compound>
@@ -14631,6 +14645,8 @@
   </compound>
   <compound refid="socketengine_8h" kind="file"><name>socketengine.h</name>
   </compound>
+  <compound refid="ssl__context_8h" kind="file"><name>ssl_context.h</name>
+  </compound>
   <compound refid="sslconnection_8h" kind="file"><name>sslconnection.h</name>
   </compound>
   <compound refid="stage__instance_8h" kind="file"><name>stage_instance.h</name>
@@ -14678,6 +14694,8 @@
   <compound refid="win32__safe__warnings_8h" kind="file"><name>win32_safe_warnings.h</name>
     <member refid="win32__safe__warnings_8h_1adeec197036530bfa9a10fb0b2a1e1580" kind="function"><name>_Pragma</name></member>
     <member refid="win32__safe__warnings_8h_1a998e60fd55405bea56bf3d683cfa4077" kind="function"><name>_Pragma</name></member>
+  </compound>
+  <compound refid="wrapped__ssl__ctx_8h" kind="file"><name>wrapped_ssl_ctx.h</name>
   </compound>
   <compound refid="wsclient_8h" kind="file"><name>wsclient.h</name>
   </compound>

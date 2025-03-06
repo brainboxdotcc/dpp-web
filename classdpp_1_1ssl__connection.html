@@ -149,9 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77bd0f626125dfef52cfe7fe40216772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a77bd0f626125dfef52cfe7fe40216772">ssl_connection</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, const std::string &amp;_hostname, const std::string &amp;_port=&quot;443&quot;, bool plaintext_downgrade=false, bool reuse=false)</td></tr>
 <tr class="memdesc:a77bd0f626125dfef52cfe7fe40216772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specified host and port. Throws std::runtime_error on fatal error.  <a href="classdpp_1_1ssl__connection.html#a77bd0f626125dfef52cfe7fe40216772">More...</a><br /></td></tr>
 <tr class="separator:a77bd0f626125dfef52cfe7fe40216772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4652c6caae2d9387f580e82f717d0f26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a4652c6caae2d9387f580e82f717d0f26">ssl_connection</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> fd, bool plaintext_downgrade=false, const std::string &amp;private_key=&quot;&quot;, const std::string &amp;public_key=&quot;&quot;)</td></tr>
-<tr class="memdesc:a4652c6caae2d9387f580e82f717d0f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a new connection from listen()/accept() socket.  <a href="classdpp_1_1ssl__connection.html#a4652c6caae2d9387f580e82f717d0f26">More...</a><br /></td></tr>
-<tr class="separator:a4652c6caae2d9387f580e82f717d0f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d2b0349eb22555403c692500a287bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#ab9d2b0349eb22555403c692500a287bb">ssl_connection</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *creator, <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> fd, uint16_t <a class="el" href="classdpp_1_1ssl__connection.html#a39851da532b2f7ee33570e3b1dafd097">port</a>, bool plaintext_downgrade=false, const std::string &amp;private_key=&quot;&quot;, const std::string &amp;public_key=&quot;&quot;)</td></tr>
+<tr class="memdesc:ab9d2b0349eb22555403c692500a287bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a new connection from listen()/accept() socket.  <a href="classdpp_1_1ssl__connection.html#ab9d2b0349eb22555403c692500a287bb">More...</a><br /></td></tr>
+<tr class="separator:ab9d2b0349eb22555403c692500a287bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29f339d46eb0d32ba74c341d25bbcb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#aa29f339d46eb0d32ba74c341d25bbcb4">read_loop</a> ()</td></tr>
 <tr class="memdesc:aa29f339d46eb0d32ba74c341d25bbcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up non blocking I/O and configure on_read, on_write and on_error.  <a href="classdpp_1_1ssl__connection.html#aa29f339d46eb0d32ba74c341d25bbcb4">More...</a><br /></td></tr>
 <tr class="separator:aa29f339d46eb0d32ba74c341d25bbcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,8 +336,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4652c6caae2d9387f580e82f717d0f26" name="a4652c6caae2d9387f580e82f717d0f26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4652c6caae2d9387f580e82f717d0f26">&#9670;&nbsp;</a></span>ssl_connection() <span class="overload">[2/2]</span></h2>
+<a id="ab9d2b0349eb22555403c692500a287bb" name="ab9d2b0349eb22555403c692500a287bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d2b0349eb22555403c692500a287bb">&#9670;&nbsp;</a></span>ssl_connection() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,6 +353,12 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>&#160;</td>
           <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -385,6 +391,7 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">creator</td><td>Creating cluster </td></tr>
     <tr><td class="paramname">fd</td><td>Socket file descriptor assigned by accept() </td></tr>
+    <tr><td class="paramname">port</td><td>Port the new fd came from </td></tr>
     <tr><td class="paramname">plaintext_downgrade</td><td>Set to true to connect using plaintext only, without initialising SSL. </td></tr>
     <tr><td class="paramname">private_key</td><td>if plaintext_downgrade is set to false, a private key PEM file for SSL connections </td></tr>
     <tr><td class="paramname">public_key</td><td>if plaintext_downgrade is set to false, a public key PEM file for SSL connections </td></tr>

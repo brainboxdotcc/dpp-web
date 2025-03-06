@@ -529,5 +529,6 @@ var hierarchy =
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ],
+    [ "dpp::detail::wrapped_ssl_ctx", "structdpp_1_1detail_1_1wrapped__ssl__ctx.html", null ],
     [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
 ];

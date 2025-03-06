@@ -1,7 +1,7 @@
 var classdpp_1_1ssl__connection =
 [
     [ "ssl_connection", "classdpp_1_1ssl__connection.html#a77bd0f626125dfef52cfe7fe40216772", null ],
-    [ "ssl_connection", "classdpp_1_1ssl__connection.html#a4652c6caae2d9387f580e82f717d0f26", null ],
+    [ "ssl_connection", "classdpp_1_1ssl__connection.html#ab9d2b0349eb22555403c692500a287bb", null ],
     [ "~ssl_connection", "classdpp_1_1ssl__connection.html#a23c94174be8ca86f9d4e30931bd4ff12", null ],
     [ "close", "classdpp_1_1ssl__connection.html#ab0e1c646dc2d36679ca2ef8b1e3fd3de", null ],
     [ "complete_handshake", "classdpp_1_1ssl__connection.html#acdd1152134b624d18a9e82162e64bafe", null ],

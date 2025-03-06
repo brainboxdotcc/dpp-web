@@ -5,6 +5,7 @@ var structdpp_1_1discord__webhook__server =
     [ "emplace", "structdpp_1_1discord__webhook__server.html#ae343e1e2425664d6263b2e0e836b6671", null ],
     [ "handle_accept", "structdpp_1_1discord__webhook__server.html#a1a3d7791b273a8056f306ae1874c2a47", null ],
     [ "handle_request", "structdpp_1_1discord__webhook__server.html#ad24895dc4d725254f1f4b1214f0a8f8f", null ],
+    [ "bound_port", "structdpp_1_1discord__webhook__server.html#ae7393791211c60ba31911346f5cc1a02", null ],
     [ "close_event", "structdpp_1_1discord__webhook__server.html#afa52fd464901a764d39060c7ea640acd", null ],
     [ "connections", "structdpp_1_1discord__webhook__server.html#a23171433eef1f1955dd881427ad8683a", null ],
     [ "creator", "structdpp_1_1discord__webhook__server.html#adc251f3dfe1c146603983b63e5ccf443", null ],

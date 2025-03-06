@@ -1,8 +1,10 @@
 var structdpp_1_1http__server =
 [
     [ "http_server", "structdpp_1_1http__server.html#a2ba3e4e702e493ed89bba850c3c60ad5", null ],
+    [ "~http_server", "structdpp_1_1http__server.html#af0f3faa04128894c0398a6665b15e859", null ],
     [ "emplace", "structdpp_1_1http__server.html#ae343e1e2425664d6263b2e0e836b6671", null ],
     [ "handle_accept", "structdpp_1_1http__server.html#a1a3d7791b273a8056f306ae1874c2a47", null ],
+    [ "bound_port", "structdpp_1_1http__server.html#ae7393791211c60ba31911346f5cc1a02", null ],
     [ "close_event", "structdpp_1_1http__server.html#afa52fd464901a764d39060c7ea640acd", null ],
     [ "connections", "structdpp_1_1http__server.html#a23171433eef1f1955dd881427ad8683a", null ],
     [ "creator", "structdpp_1_1http__server.html#adc251f3dfe1c146603983b63e5ccf443", null ],
