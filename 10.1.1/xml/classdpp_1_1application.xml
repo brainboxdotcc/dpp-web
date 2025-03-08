@@ -1,0 +1,1508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1application" kind="class" language="C++" prot="public">
+    <compoundname>dpp::application</compoundname>
+    <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; application &gt;</basecompoundref>
+    <includes local="no">application.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1application_1ab2d4a8b5319f1eda8661de4f0c95bb12" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; application &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; application &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="classdpp_1_1application" kindref="compound">application</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="219" column="28" bodyfile="include/dpp/application.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1application_1a84eabe6867188b3479c62856037d4f7e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="239" column="13" bodyfile="include/dpp/application.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ac6e765f3953994066ba388d70f3f7ecb" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::application::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+<para>The icon hash of the app (may be empty). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="244" column="19" bodyfile="include/dpp/application.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a6ddc12a2501ab7bd7b5d9ad3633cab9f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>The description of the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="249" column="13" bodyfile="include/dpp/application.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a63c2457fd823c7d2ff12c1f8b176c267" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::application::rpc_origins</definition>
+        <argsstring></argsstring>
+        <name>rpc_origins</name>
+        <briefdescription>
+<para>Optional: an array of rpc origin urls, if rpc is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="254" column="13" bodyfile="include/dpp/application.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a1724baabe72d957d04b0a30bc4604d8b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::bot_public</definition>
+        <argsstring></argsstring>
+        <name>bot_public</name>
+        <briefdescription>
+<para>When false, only app owner add the bot to guilds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="259" column="6" bodyfile="include/dpp/application.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a9942dd58f1ca9da0839f0a295612290c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::bot_require_code_grant</definition>
+        <argsstring></argsstring>
+        <name>bot_require_code_grant</name>
+        <briefdescription>
+<para>When true, the app&apos;s bot will only join upon completion of the full oauth2 code grant flow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="264" column="6" bodyfile="include/dpp/application.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a0141f7b13726532e2bb41a6b672c2b35" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::application::bot</definition>
+        <argsstring></argsstring>
+        <name>bot</name>
+        <briefdescription>
+<para>Optional: Partial user object for the bot user associated with the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="269" column="6" bodyfile="include/dpp/application.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a1ba6df6bcd2636fcc0203fdecb10047a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::terms_of_service_url</definition>
+        <argsstring></argsstring>
+        <name>terms_of_service_url</name>
+        <briefdescription>
+<para>Optional: the url of the app&apos;s terms of service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="274" column="13" bodyfile="include/dpp/application.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a97b791c3e357fcdcea6306efffb9584e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::privacy_policy_url</definition>
+        <argsstring></argsstring>
+        <name>privacy_policy_url</name>
+        <briefdescription>
+<para>Optional: the url of the app&apos;s privacy policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="279" column="13" bodyfile="include/dpp/application.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a5af52bd0ba8718a8bea8cd0c8898f1b6" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::application::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>Optional: partial user object containing info on the owner of the application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="284" column="6" bodyfile="include/dpp/application.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a2989a857540c3d20b96b3722a8c9aaf1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::summary</definition>
+        <argsstring></argsstring>
+        <name>summary</name>
+        <briefdescription>
+<para>If this application is a game sold on Discord, this field will be the summary field for the store page of its primary SKU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in v11 </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="291" column="13" bodyfile="include/dpp/application.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a53fefb61833dd83db7abe1b0a9c2ef3e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::verify_key</definition>
+        <argsstring></argsstring>
+        <name>verify_key</name>
+        <briefdescription>
+<para>The hex encoded key for verification in interactions and the GameSDK&apos;s GetTicket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="296" column="13" bodyfile="include/dpp/application.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a45812eef5fcaa5981dfbd107a8a565fc" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1app__team" kindref="compound">app_team</ref></type>
+        <definition>app_team dpp::application::team</definition>
+        <argsstring></argsstring>
+        <name>team</name>
+        <briefdescription>
+<para>If the application belongs to a team, this will be a list of the members of that team (may be empty). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="301" column="10" bodyfile="include/dpp/application.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1aff84fc8a95d5fe5aa88da545ebe5154c" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::application::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>Optional: if this application is a game sold on Discord, this field will be the guild to which it has been linked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="306" column="11" bodyfile="include/dpp/application.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a55ae7cb1d910896d5a4e8e500d34a598" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
+        <definition>guild dpp::application::guild_obj</definition>
+        <argsstring></argsstring>
+        <name>guild_obj</name>
+        <briefdescription>
+<para>Partial object of the associated guild. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="311" column="7" bodyfile="include/dpp/application.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a7aa6f427a79d6efb30d22f34dbecae98" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::application::primary_sku_id</definition>
+        <argsstring></argsstring>
+        <name>primary_sku_id</name>
+        <briefdescription>
+<para>Optional: if this application is a game sold on Discord, this field will be the id of the &quot;Game SKU&quot; that is created, if exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="316" column="11" bodyfile="include/dpp/application.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1af6ae37d7a50f84f688abc53b47655797" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::slug</definition>
+        <argsstring></argsstring>
+        <name>slug</name>
+        <briefdescription>
+<para>Optional: if this application is a game sold on Discord, this field will be the URL slug that links to the store page. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="321" column="13" bodyfile="include/dpp/application.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a564b1a926e6890cb59db5130c5b3ac5d" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::application::cover_image</definition>
+        <argsstring></argsstring>
+        <name>cover_image</name>
+        <briefdescription>
+<para>Optional: the application&apos;s default rich presence invite cover image hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="326" column="19" bodyfile="include/dpp/application.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ad057bffc84c68adf36cf6532455a7f40" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::application::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Optional: the application&apos;s public flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="331" column="10" bodyfile="include/dpp/application.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a789975e0fe7503223d30855934e48363" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::application::approximate_guild_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_guild_count</name>
+        <briefdescription>
+<para>Optional: Approximate count of guilds the app has been added to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="336" column="10" bodyfile="include/dpp/application.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a441c3db1e1e39cfdaad9fd354f19bd8f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::application::approximate_user_install_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_user_install_count</name>
+        <briefdescription>
+<para>Optional: Approximate count of users that have installed the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="341" column="10" bodyfile="include/dpp/application.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a683f95894a96b0c0aeca47ba120a28a7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::application::redirect_uris</definition>
+        <argsstring></argsstring>
+        <name>redirect_uris</name>
+        <briefdescription>
+<para>Optional: Array of redirect URIs for the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="346" column="13" bodyfile="include/dpp/application.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a9fa53e459d55c33e09abe373577ce89a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::interactions_endpoint_url</definition>
+        <argsstring></argsstring>
+        <name>interactions_endpoint_url</name>
+        <briefdescription>
+<para>Optional: Interactions endpoint URL for the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="351" column="13" bodyfile="include/dpp/application.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a2912fbfc670f3ff3785bab13ae39bcfb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::role_connections_verification_url</definition>
+        <argsstring></argsstring>
+        <name>role_connections_verification_url</name>
+        <briefdescription>
+<para>The application&apos;s role connection verification entry point which, when configured, will render the app as a verification method in the guild role verification configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="358" column="13" bodyfile="include/dpp/application.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1abc6671becb10a6d81554c74e6e064a18" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::application::tags</definition>
+        <argsstring></argsstring>
+        <name>tags</name>
+        <briefdescription>
+<para>Up to 5 tags describing the content and functionality of the application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="363" column="13" bodyfile="include/dpp/application.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a3d59f66fb7f7132320c3b3c37013729a" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1application__install__params" kindref="compound">application_install_params</ref></type>
+        <definition>application_install_params dpp::application::install_params</definition>
+        <argsstring></argsstring>
+        <name>install_params</name>
+        <briefdescription>
+<para>Settings for the application&apos;s default in-app authorization link, if enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="368" column="28" bodyfile="include/dpp/application.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a3416e35c84d22b482ef445396b3f4966" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a3948f04120ff6382aa17988a320f5785" kindref="member">application_integration_types</ref>, <ref refid="structdpp_1_1integration__configuration" kindref="compound">integration_configuration</ref> &gt;</type>
+        <definition>std::map&lt;application_integration_types, integration_configuration&gt; dpp::application::integration_types_config</definition>
+        <argsstring></argsstring>
+        <name>integration_types_config</name>
+        <briefdescription>
+<para>Default scopes and permissions for each supported installation context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="373" column="10" bodyfile="include/dpp/application.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ab375815dd2f6d026efb2da64f9443574" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::application::custom_install_url</definition>
+        <argsstring></argsstring>
+        <name>custom_install_url</name>
+        <briefdescription>
+<para>The application&apos;s default custom authorization link, if enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="378" column="13" bodyfile="include/dpp/application.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1abae423b73879736597b12e93fc1be3bb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::discoverability_state</definition>
+        <argsstring></argsstring>
+        <name>discoverability_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="383" column="8" bodyfile="include/dpp/application.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a1f18bccda4148d317aec6b98e67cec73" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::application::discovery_eligibility_flags</definition>
+        <argsstring></argsstring>
+        <name>discovery_eligibility_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="388" column="10" bodyfile="include/dpp/application.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a36be7d4e1bd51362dc6738d276d6feaa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::explicit_content_filter</definition>
+        <argsstring></argsstring>
+        <name>explicit_content_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="392" column="8" bodyfile="include/dpp/application.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a224efbd30ac56fdfa7c0fb5ba985d10b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::creator_monetization_state</definition>
+        <argsstring></argsstring>
+        <name>creator_monetization_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="397" column="8" bodyfile="include/dpp/application.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a6daf0d8671bbd45398a426f86281aec2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::integration_public</definition>
+        <argsstring></argsstring>
+        <name>integration_public</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="402" column="6" bodyfile="include/dpp/application.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ae759b7853b28fb15c4a9e5ea62635f4f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::integration_require_code_grant</definition>
+        <argsstring></argsstring>
+        <name>integration_require_code_grant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="407" column="6" bodyfile="include/dpp/application.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ac199705060761b9cfcf51ca783649541" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::application::interactions_event_types</definition>
+        <argsstring></argsstring>
+        <name>interactions_event_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="412" column="13" bodyfile="include/dpp/application.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ad5bd45a56d2be7a803226ed428e8dec4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::interactions_version</definition>
+        <argsstring></argsstring>
+        <name>interactions_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="417" column="8" bodyfile="include/dpp/application.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a6fe0f2813161691fbd3234693db0607e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::is_monetized</definition>
+        <argsstring></argsstring>
+        <name>is_monetized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="422" column="6" bodyfile="include/dpp/application.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a864f5180359507ffc7fab76a6cd6c976" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::application::monetization_eligibility_flags</definition>
+        <argsstring></argsstring>
+        <name>monetization_eligibility_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="427" column="10" bodyfile="include/dpp/application.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1af187e1e7085d9a29c80caf301c51f29b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::monetization_state</definition>
+        <argsstring></argsstring>
+        <name>monetization_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="432" column="8" bodyfile="include/dpp/application.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a7b58a0ab8701ac976f5de4e0cb03724e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::application::hook</definition>
+        <argsstring></argsstring>
+        <name>hook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="437" column="6" bodyfile="include/dpp/application.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a0e73547ca8afabd793beb8d38b7d7c1e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::rpc_application_state</definition>
+        <argsstring></argsstring>
+        <name>rpc_application_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="442" column="8" bodyfile="include/dpp/application.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1a1ce1654b773218a5f040a94c64844efa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::store_application_state</definition>
+        <argsstring></argsstring>
+        <name>store_application_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="447" column="8" bodyfile="include/dpp/application.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1application_1ab38474050c5faafe170dcef66099434b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::application::verification_state</definition>
+        <argsstring></argsstring>
+        <name>verification_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This variable is not documented by discord, we have no idea what it means and how it works. Use at your own risk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="452" column="8" bodyfile="include/dpp/application.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1application_1a3bb5c744a5dc43f844edfe8c80fda1f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1application" kindref="compound">application</ref> &amp;</type>
+        <definition>application &amp; dpp::application::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read class values from json object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A json object to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="233" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1application_1a20b27bd6cecfbff3ed083c65d4edf044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::application::application</definition>
+        <argsstring>()</argsstring>
+        <name>application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="455" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1application_1ae9c07959319bada770b8288157c319e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::application::~application</definition>
+        <argsstring>()</argsstring>
+        <name>~application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="458" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1application_1a0138647efb49da85a0fc3c03f650bbd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::application::get_cover_image_url</definition>
+        <argsstring>(uint16_t size=0, const image_type format=i_png) const</argsstring>
+        <name>get_cover_image_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get the application&apos;s cover image url if they have one, otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the cover image in pixels. It can be any power of two between 16 and 4096, otherwise the default sized cover image is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string cover image url or an empty string, if required attributes are missing or an invalid format was passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="468" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1application_1ab66914bd045d8083bd98662cf0d645ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::application::get_icon_url</definition>
+        <argsstring>(uint16_t size=0, const image_type format=i_png) const</argsstring>
+        <name>get_icon_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get the application&apos;s icon url if they have one, otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the icon in pixels. It can be any power of two between 16 and 4096, otherwise the default sized icon is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string icon url or an empty string, if required attributes are missing or an invalid format was passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="478" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1application" kindref="compound">application</ref> &amp;</type>
+        <definition>application  &amp; dpp::json_interface&lt; application  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; application  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; application  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The application class represents details of a bot application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::application</label>
+        <link refid="classdpp_1_1application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; application &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; application &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>K</label>
+      </node>
+      <node id="27">
+        <label>T</label>
+      </node>
+      <node id="11">
+        <label>bool</label>
+      </node>
+      <node id="33">
+        <label>default_message_notification_t</label>
+      </node>
+      <node id="17">
+        <label>dpp::app_team</label>
+        <link refid="classdpp_1_1app__team"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>icon</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+          <edgelabel>owner_user_id</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::application</label>
+        <link refid="classdpp_1_1application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>custom_install_url</edgelabel>
+          <edgelabel>description</edgelabel>
+          <edgelabel>interactions_endpoint_url</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>privacy_policy_url</edgelabel>
+          <edgelabel>role_connections_verification_url</edgelabel>
+          <edgelabel>slug</edgelabel>
+          <edgelabel>summary</edgelabel>
+          <edgelabel>terms_of_service_url</edgelabel>
+          <edgelabel>verify_key</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>cover_image</edgelabel>
+          <edgelabel>icon</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>interactions_event_types</edgelabel>
+          <edgelabel>redirect_uris</edgelabel>
+          <edgelabel>rpc_origins</edgelabel>
+          <edgelabel>tags</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>bot_public</edgelabel>
+          <edgelabel>bot_require_code_grant</edgelabel>
+          <edgelabel>hook</edgelabel>
+          <edgelabel>integration_public</edgelabel>
+          <edgelabel>integration_require_code_grant</edgelabel>
+          <edgelabel>is_monetized</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>bot</edgelabel>
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>team</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>primary_sku_id</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>guild_obj</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>discovery_eligibility_flags</edgelabel>
+          <edgelabel>flags</edgelabel>
+          <edgelabel>monetization_eligibility_flags</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>approximate_guild_count</edgelabel>
+          <edgelabel>approximate_user_install_count</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>install_params</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>integration_types_config</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creator_monetization_state</edgelabel>
+          <edgelabel>discoverability_state</edgelabel>
+          <edgelabel>explicit_content_filter</edgelabel>
+          <edgelabel>interactions_version</edgelabel>
+          <edgelabel>monetization_state</edgelabel>
+          <edgelabel>rpc_application_state</edgelabel>
+          <edgelabel>store_application_state</edgelabel>
+          <edgelabel>verification_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>dpp::application_install_params</label>
+        <link refid="structdpp_1_1application__install__params"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>permissions</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>scopes</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>dpp::guild</label>
+        <link refid="classdpp_1_1guild"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>vanity_url_code</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>channels</edgelabel>
+          <edgelabel>emojis</edgelabel>
+          <edgelabel>roles</edgelabel>
+          <edgelabel>threads</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>voice_members</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>welcome_screen</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>banner</edgelabel>
+          <edgelabel>discovery_splash</edgelabel>
+          <edgelabel>icon</edgelabel>
+          <edgelabel>splash</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>afk_channel_id</edgelabel>
+          <edgelabel>application_id</edgelabel>
+          <edgelabel>owner_id</edgelabel>
+          <edgelabel>public_updates_channel_id</edgelabel>
+          <edgelabel>rules_channel_id</edgelabel>
+          <edgelabel>safety_alerts_channel_id</edgelabel>
+          <edgelabel>system_channel_id</edgelabel>
+          <edgelabel>widget_channel_id</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>flags</edgelabel>
+          <edgelabel>max_members</edgelabel>
+          <edgelabel>max_presences</edgelabel>
+          <edgelabel>member_count</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>flags_extra</edgelabel>
+          <edgelabel>premium_subscription_count</edgelabel>
+          <edgelabel>shard_id</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>afk_timeout</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>max_video_channel_users</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>default_message_notifications</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>premium_tier</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>verification_level</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>explicit_content_filter</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mfa_level</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>nsfw_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>roles</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>communication_disabled_until</edgelabel>
+          <edgelabel>joined_at</edgelabel>
+          <edgelabel>premium_since</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>dpp::permission</label>
+        <link refid="classdpp_1_1permission"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>avatar</edgelabel>
+          <edgelabel>avatar_decoration</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>dpp::utility::icon</label>
+        <link refid="structdpp_1_1utility_1_1icon"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>hash_or_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dpp::welcome_screen</label>
+        <link refid="structdpp_1_1welcome__screen"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>description</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>welcome_channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>guild_afk_timeout_t</label>
+      </node>
+      <node id="36">
+        <label>guild_explicit_content_t</label>
+      </node>
+      <node id="38">
+        <label>guild_nsfw_level_t</label>
+      </node>
+      <node id="34">
+        <label>guild_premium_tier_t</label>
+      </node>
+      <node id="5">
+        <label>dpp::json_interface&lt; application &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; application &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp::json_interface&lt; guild &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; guild &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dpp::json_interface&lt; welcome_screen &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; welcome_screen &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>mfa_level_t</label>
+      </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="20">
+        <label>map&lt;</label>
+      </node>
+      <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="26" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>variant&lt;</label>
+      </node>
+      <node id="10">
+        <label>vector&lt;</label>
+      </node>
+      <node id="24">
+        <label>time_t</label>
+      </node>
+      <node id="15">
+        <label>uint16_t</label>
+      </node>
+      <node id="14">
+        <label>uint32_t</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+      <node id="16">
+        <label>uint8_t</label>
+      </node>
+      <node id="21">
+        <label>std::unordered_map&lt; snowflake, guild_member &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>verification_level_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/application.h" line="225" column="1" bodyfile="include/dpp/application.h" bodystart="225" bodyend="479"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1application_1a20b27bd6cecfbff3ed083c65d4edf044" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>application</name></member>
+      <member refid="classdpp_1_1application_1a789975e0fe7503223d30855934e48363" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>approximate_guild_count</name></member>
+      <member refid="classdpp_1_1application_1a441c3db1e1e39cfdaad9fd354f19bd8f" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>approximate_user_install_count</name></member>
+      <member refid="classdpp_1_1application_1a0141f7b13726532e2bb41a6b672c2b35" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>bot</name></member>
+      <member refid="classdpp_1_1application_1a1724baabe72d957d04b0a30bc4604d8b" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>bot_public</name></member>
+      <member refid="classdpp_1_1application_1a9942dd58f1ca9da0839f0a295612290c" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>bot_require_code_grant</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1application_1a564b1a926e6890cb59db5130c5b3ac5d" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>cover_image</name></member>
+      <member refid="classdpp_1_1application_1a224efbd30ac56fdfa7c0fb5ba985d10b" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>creator_monetization_state</name></member>
+      <member refid="classdpp_1_1application_1ab375815dd2f6d026efb2da64f9443574" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>custom_install_url</name></member>
+      <member refid="classdpp_1_1application_1a6ddc12a2501ab7bd7b5d9ad3633cab9f" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>description</name></member>
+      <member refid="classdpp_1_1application_1abae423b73879736597b12e93fc1be3bb" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>discoverability_state</name></member>
+      <member refid="classdpp_1_1application_1a1f18bccda4148d317aec6b98e67cec73" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>discovery_eligibility_flags</name></member>
+      <member refid="classdpp_1_1application_1a36be7d4e1bd51362dc6738d276d6feaa" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>explicit_content_filter</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1application_1a3bb5c744a5dc43f844edfe8c80fda1f2" prot="protected" virt="non-virtual"><scope>dpp::application</scope><name>fill_from_json_impl</name></member>
+      <member refid="classdpp_1_1application_1ad057bffc84c68adf36cf6532455a7f40" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>flags</name></member>
+      <member refid="classdpp_1_1application_1a0138647efb49da85a0fc3c03f650bbd5" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_cover_image_url</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1application_1ab66914bd045d8083bd98662cf0d645ae" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_icon_url</name></member>
+      <member refid="classdpp_1_1application_1aff84fc8a95d5fe5aa88da545ebe5154c" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1application_1a55ae7cb1d910896d5a4e8e500d34a598" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>guild_obj</name></member>
+      <member refid="classdpp_1_1application_1a7b58a0ab8701ac976f5de4e0cb03724e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>hook</name></member>
+      <member refid="classdpp_1_1application_1ac6e765f3953994066ba388d70f3f7ecb" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>icon</name></member>
+      <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>id</name></member>
+      <member refid="classdpp_1_1application_1a3d59f66fb7f7132320c3b3c37013729a" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>install_params</name></member>
+      <member refid="classdpp_1_1application_1a6daf0d8671bbd45398a426f86281aec2" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>integration_public</name></member>
+      <member refid="classdpp_1_1application_1ae759b7853b28fb15c4a9e5ea62635f4f" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>integration_require_code_grant</name></member>
+      <member refid="classdpp_1_1application_1a3416e35c84d22b482ef445396b3f4966" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>integration_types_config</name></member>
+      <member refid="classdpp_1_1application_1a9fa53e459d55c33e09abe373577ce89a" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>interactions_endpoint_url</name></member>
+      <member refid="classdpp_1_1application_1ac199705060761b9cfcf51ca783649541" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>interactions_event_types</name></member>
+      <member refid="classdpp_1_1application_1ad5bd45a56d2be7a803226ed428e8dec4" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>interactions_version</name></member>
+      <member refid="classdpp_1_1application_1a6fe0f2813161691fbd3234693db0607e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>is_monetized</name></member>
+      <member refid="classdpp_1_1application_1ab2d4a8b5319f1eda8661de4f0c95bb12" prot="protected" virt="non-virtual"><scope>dpp::application</scope><name>json_interface&lt; application &gt;</name></member>
+      <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1ac7a876ad1764b89f0568a1f1bc6bf640" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>managed</name></member>
+      <member refid="classdpp_1_1application_1a864f5180359507ffc7fab76a6cd6c976" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>monetization_eligibility_flags</name></member>
+      <member refid="classdpp_1_1application_1af187e1e7085d9a29c80caf301c51f29b" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>monetization_state</name></member>
+      <member refid="classdpp_1_1application_1a84eabe6867188b3479c62856037d4f7e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>name</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1application_1a5af52bd0ba8718a8bea8cd0c8898f1b6" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>owner</name></member>
+      <member refid="classdpp_1_1application_1a7aa6f427a79d6efb30d22f34dbecae98" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>primary_sku_id</name></member>
+      <member refid="classdpp_1_1application_1a97b791c3e357fcdcea6306efffb9584e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>privacy_policy_url</name></member>
+      <member refid="classdpp_1_1application_1a683f95894a96b0c0aeca47ba120a28a7" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>redirect_uris</name></member>
+      <member refid="classdpp_1_1application_1a2912fbfc670f3ff3785bab13ae39bcfb" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>role_connections_verification_url</name></member>
+      <member refid="classdpp_1_1application_1a0e73547ca8afabd793beb8d38b7d7c1e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>rpc_application_state</name></member>
+      <member refid="classdpp_1_1application_1a63c2457fd823c7d2ff12c1f8b176c267" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>rpc_origins</name></member>
+      <member refid="classdpp_1_1application_1af6ae37d7a50f84f688abc53b47655797" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>slug</name></member>
+      <member refid="classdpp_1_1application_1a1ce1654b773218a5f040a94c64844efa" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>store_application_state</name></member>
+      <member refid="classdpp_1_1application_1a2989a857540c3d20b96b3722a8c9aaf1" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>summary</name></member>
+      <member refid="classdpp_1_1application_1abc6671becb10a6d81554c74e6e064a18" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>tags</name></member>
+      <member refid="classdpp_1_1application_1a45812eef5fcaa5981dfbd107a8a565fc" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>team</name></member>
+      <member refid="classdpp_1_1application_1a1ba6df6bcd2636fcc0203fdecb10047a" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>terms_of_service_url</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>to_json</name></member>
+      <member refid="classdpp_1_1application_1ab38474050c5faafe170dcef66099434b" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>verification_state</name></member>
+      <member refid="classdpp_1_1application_1a53fefb61833dd83db7abe1b0a9c2ef3e" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>verify_key</name></member>
+      <member refid="classdpp_1_1application_1ae9c07959319bada770b8288157c319e6" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>~application</name></member>
+      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::application</scope><name>~managed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

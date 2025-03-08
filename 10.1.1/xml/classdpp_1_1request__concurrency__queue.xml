@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1request__concurrency__queue" kind="class" language="C++" prot="public">
+    <compoundname>dpp::request_concurrency_queue</compoundname>
+    <includes local="no">queues.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1a7978dcb49759ecf4ddf3ae4309aefb1e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_concurrency_queue::in_index</definition>
+        <argsstring></argsstring>
+        <name>in_index</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Queue index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="424" column="5" bodyfile="include/dpp/queues.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1af7bf7936853ee5e64cc3e7c872b36bb0" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; dpp::request_concurrency_queue::terminating</definition>
+        <argsstring></argsstring>
+        <name>terminating</name>
+        <briefdescription>
+<para>True if ending. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="429" column="13" bodyfile="include/dpp/queues.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1a0e19bde512eee94b60709182a2ad81c2" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> *</type>
+        <definition>class request_queue* dpp::request_concurrency_queue::requests</definition>
+        <argsstring></argsstring>
+        <name>requests</name>
+        <briefdescription>
+<para>Request queue that owns this <ref refid="classdpp_1_1request__concurrency__queue" kindref="compound">request_concurrency_queue</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="434" column="21" bodyfile="include/dpp/queues.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1ac522d901bf22402cec49a880a21d5b28" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>class cluster* dpp::request_concurrency_queue::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <briefdescription>
+<para>The cluster that owns this <ref refid="classdpp_1_1request__concurrency__queue" kindref="compound">request_concurrency_queue</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="439" column="15" bodyfile="include/dpp/queues.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1a33f08478684fae201d8ace29810fa2c8" prot="public" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::request_concurrency_queue::in_mutex</definition>
+        <argsstring></argsstring>
+        <name>in_mutex</name>
+        <briefdescription>
+<para>Inbound queue mutex thread safety. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="444" column="19" bodyfile="include/dpp/queues.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1ae90d8254414082070925fc7ba2956337" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">dpp::timer</ref></type>
+        <definition>dpp::timer dpp::request_concurrency_queue::in_timer</definition>
+        <argsstring></argsstring>
+        <name>in_timer</name>
+        <briefdescription>
+<para>Inbound queue timer. The timer is called every second, and when it wakes up it checks for requests pending to be sent in the queue. If there are any requests and we are not waiting on rate limit, it will send them, else it will wait for the rate limit to expire. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="452" column="12" bodyfile="include/dpp/queues.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1a4f1d6033dd91df0cb5f0cf17c399563e" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
+        <definition>std::map&lt;std::string, bucket_t&gt; dpp::request_concurrency_queue::buckets</definition>
+        <argsstring></argsstring>
+        <name>buckets</name>
+        <briefdescription>
+<para>Rate-limit bucket counters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="457" column="10" bodyfile="include/dpp/queues.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1ab417c5ee846fc04b9e9bf7bf0712508c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;http_request&gt; &gt; dpp::request_concurrency_queue::requests_in</definition>
+        <argsstring></argsstring>
+        <name>requests_in</name>
+        <briefdescription>
+<para>Queue of requests to be made. Sorted by <ref refid="classdpp_1_1http__request_1a31cf6b360a893292435ea56b8d6a94c6" kindref="member">http_request::endpoint</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="462" column="13" bodyfile="include/dpp/queues.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__concurrency__queue_1a9119a439aa50b6ad4e3882a69fdcbae5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;http_request&gt; &gt; dpp::request_concurrency_queue::removals</definition>
+        <argsstring></argsstring>
+        <name>removals</name>
+        <briefdescription>
+<para>Requests to remove after a set amount of time has passed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="467" column="13" bodyfile="include/dpp/queues.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1request__concurrency__queue_1af40e9db0e57b5b6c7c2f151d65f25796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::request_concurrency_queue::tick_and_deliver_requests</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>tick_and_deliver_requests</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Timer callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index ID for this timer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="473" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__concurrency__queue_1a2723e99e8b752c2aa98b062e8fa61f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::request_concurrency_queue::request_concurrency_queue</definition>
+        <argsstring>(class cluster *owner, class request_queue *req_q, uint32_t index)</argsstring>
+        <name>request_concurrency_queue</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>class <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> *</type>
+          <declname>req_q</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new concurrency queue object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning request queue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue index number, uniquely identifies this queue for hashing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="482" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__concurrency__queue_1a694f095ad50a8d50f61d08f34e95c1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::request_concurrency_queue::~request_concurrency_queue</definition>
+        <argsstring>()</argsstring>
+        <name>~request_concurrency_queue</name>
+        <briefdescription>
+<para>Destroy the concurrency queue object This will stop the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__concurrency__queue_1a71bca44c4ee9f5eb29d2970db6533f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::request_concurrency_queue::terminate</definition>
+        <argsstring>()</argsstring>
+        <name>terminate</name>
+        <briefdescription>
+<para>Flags the queue as terminating This will set the internal atomic bool that indicates this queue is to accept no more requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="494" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__concurrency__queue_1a87bb1a0d01ab47ef8c06d702e3ab5bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::request_concurrency_queue::post_request</definition>
+        <argsstring>(std::unique_ptr&lt; http_request &gt; req)</argsstring>
+        <name>post_request</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> &gt;</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Post a <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> to this queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> to post. The pointer will be freed when it has been executed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="502" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a timer instance in a pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in cluster.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, making it thread safe to call and use these from anywhere in the code. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="27">
+        <label>bool</label>
+      </node>
+      <node id="21">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="10">
+        <label>double</label>
+      </node>
+      <node id="20">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>channel_policy</edgelabel>
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>guild_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>request_timeout</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>socketengine</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>on_autocomplete</edgelabel>
+          <edgelabel>on_automod_rule_create</edgelabel>
+          <edgelabel>on_automod_rule_delete</edgelabel>
+          <edgelabel>on_automod_rule_execute</edgelabel>
+          <edgelabel>on_automod_rule_update</edgelabel>
+          <edgelabel>on_button_click</edgelabel>
+          <edgelabel>on_channel_create</edgelabel>
+          <edgelabel>on_channel_delete</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>on_channel_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="12">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::request_concurrency_queue</label>
+        <link refid="classdpp_1_1request__concurrency__queue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>in_index</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>requests</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>in_mutex</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>in_timer</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>buckets</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>removals</edgelabel>
+          <edgelabel>requests_in</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::request_queue</label>
+        <link refid="classdpp_1_1request__queue"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>requests_in</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>globally_ratelimited</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>globally_limited_until</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>in_queue_pool_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>avatar</edgelabel>
+          <edgelabel>avatar_decoration</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>event_router_t&lt;</label>
+      </node>
+      <node id="2">
+        <label>int</label>
+      </node>
+      <node id="15">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="16" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>size_t</label>
+      </node>
+      <node id="3">
+        <label>atomic&lt;</label>
+      </node>
+      <node id="23">
+        <label>atomic_bool</label>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="30">
+        <label>map&lt;</label>
+      </node>
+      <node id="28">
+        <label>std::shared_mutex</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unique_ptr&lt;</label>
+      </node>
+      <node id="26">
+        <label>vector&lt;</label>
+      </node>
+      <node id="8">
+        <label>time_t</label>
+      </node>
+      <node id="18">
+        <label>uint16_t</label>
+      </node>
+      <node id="9">
+        <label>uint32_t</label>
+      </node>
+      <node id="14">
+        <label>uint64_t</label>
+      </node>
+      <node id="19">
+        <label>uint8_t</label>
+      </node>
+      <node id="22">
+        <label>websocket_protocol_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/queues.h" line="419" column="1" bodyfile="include/dpp/queues.h" bodystart="419" bodyend="503"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1request__concurrency__queue_1a4f1d6033dd91df0cb5f0cf17c399563e" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>buckets</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1ac522d901bf22402cec49a880a21d5b28" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>creator</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a7978dcb49759ecf4ddf3ae4309aefb1e" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>in_index</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a33f08478684fae201d8ace29810fa2c8" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>in_mutex</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1ae90d8254414082070925fc7ba2956337" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>in_timer</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a87bb1a0d01ab47ef8c06d702e3ab5bfb" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>post_request</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a9119a439aa50b6ad4e3882a69fdcbae5" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>removals</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a2723e99e8b752c2aa98b062e8fa61f60" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>request_concurrency_queue</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a0e19bde512eee94b60709182a2ad81c2" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>requests</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1ab417c5ee846fc04b9e9bf7bf0712508c" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>requests_in</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a71bca44c4ee9f5eb29d2970db6533f4f" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>terminate</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1af7bf7936853ee5e64cc3e7c872b36bb0" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>terminating</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1af40e9db0e57b5b6c7c2f151d65f25796" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>tick_and_deliver_requests</name></member>
+      <member refid="classdpp_1_1request__concurrency__queue_1a694f095ad50a8d50f61d08f34e95c1c7" prot="public" virt="non-virtual"><scope>dpp::request_concurrency_queue</scope><name>~request_concurrency_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

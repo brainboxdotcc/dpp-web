@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1poll" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::poll</compoundname>
+    <includes local="no">message.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1poll_1a36305499b2df322987576dfa4e96d1f4" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1poll__media" kindref="compound">poll_media</ref></type>
+        <definition>poll_media dpp::poll::question</definition>
+        <argsstring></argsstring>
+        <name>question</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Poll question. At the time of writing only the text field is supported by Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>media </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1795" column="12" bodyfile="include/dpp/message.h" bodystart="1795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll_1a28a5c8a699caa4ab043bdfc2fb60514d" prot="public" static="no" mutable="no">
+        <type>std::map&lt; uint32_t, <ref refid="structdpp_1_1poll__answer" kindref="compound">poll_answer</ref> &gt;</type>
+        <definition>std::map&lt;uint32_t, poll_answer&gt; dpp::poll::answers</definition>
+        <argsstring></argsstring>
+        <name>answers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>List of answers of the poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing this can contain up to 10 answers </para>
+</simplesect>
+<simplesect kind="see"><para>answer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1803" column="10" bodyfile="include/dpp/message.h" bodystart="1803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll_1ab1b608584381a77e49e92076a3414757" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dpp::poll::expiry</definition>
+        <argsstring></argsstring>
+        <name>expiry</name>
+        <initializer>{24.0}</initializer>
+        <briefdescription>
+<para>When retriving a poll from the API, this is the timestamp at which the poll will expire. When creating a poll, this is the number of hours the poll should be up for, up to 7 days (168 hours), and this field will be rounded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1809" column="8" bodyfile="include/dpp/message.h" bodystart="1809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll_1a0ac605149a83c71d22c826ec6e7c1275" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::poll::allow_multiselect</definition>
+        <argsstring></argsstring>
+        <name>allow_multiselect</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Whether a user can select multiple answers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1814" column="6" bodyfile="include/dpp/message.h" bodystart="1814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll_1a13dbae0298c8e5e0ea7ad1de65511357" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" kindref="member">poll_layout_type</ref></type>
+        <definition>poll_layout_type dpp::poll::layout_type</definition>
+        <argsstring></argsstring>
+        <name>layout_type</name>
+        <initializer>{<ref refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6" kindref="member">pl_default</ref>}</initializer>
+        <briefdescription>
+<para>Layout type of the poll. Defaults to, well, pl_default. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" kindref="member">poll_layout_type</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1821" column="18" bodyfile="include/dpp/message.h" bodystart="1821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll_1a53579a33985515e9720c494f5cfab6f0" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structdpp_1_1poll__results" kindref="compound">poll_results</ref> &gt;</type>
+        <definition>std::optional&lt;poll_results&gt; dpp::poll::results</definition>
+        <argsstring></argsstring>
+        <name>results</name>
+        <initializer>{std::nullopt}</initializer>
+        <briefdescription>
+<para>The (optional) results of the poll. This field may or may not be present, and its absence means &quot;unknown results&quot;, not &quot;no results&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Quote from Discord: &quot;The results field may be not present in certain responses where, as an implementation detail,
+we do not fetch the poll results in our backend. This should be treated as &quot;unknown results&quot;,
+as opposed to &quot;no results&quot;. You can keep using the results if you have previously received them through other means.&quot;</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll#poll-results-object">https://discord.com/developers/docs/resources/poll#poll-results-object</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1832" column="15" bodyfile="include/dpp/message.h" bodystart="1832" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1poll_1afccc0bc6ea1caad627f09a5269c30d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::set_question</definition>
+        <argsstring>(std::string_view text)</argsstring>
+        <name>set_question</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Set the question for this poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text for the question </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1840" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a4163907a59483dbeac6722b7ebc7eddd" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::set_duration</definition>
+        <argsstring>(uint32_t hours) noexcept</argsstring>
+        <name>set_duration</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>hours</declname>
+        </param>
+        <briefdescription>
+<para>Set the duration of the poll in hours. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of the poll in hours, max 7 days (168 hours) at the time of writing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1848" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a652a498d6d3511f78824bbd8a012500b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::set_allow_multiselect</definition>
+        <argsstring>(bool allow) noexcept</argsstring>
+        <name>set_allow_multiselect</name>
+        <param>
+          <type>bool</type>
+          <declname>allow</declname>
+        </param>
+        <briefdescription>
+<para>Set if the poll should allow multi-selecting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should allow multi-select? </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1856" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1ad5007b0ebd5ea5eb71d0c3fe618279e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::add_answer</definition>
+        <argsstring>(const poll_media &amp;media)</argsstring>
+        <name>add_answer</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1poll__media" kindref="compound">poll_media</ref> &amp;</type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+<para>Add an answer to this poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing this, a poll can have up to 10 answers </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data of the answer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1865" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1aa838931d2e5530a25e2f09646188d647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::add_answer</definition>
+        <argsstring>(std::string_view text, snowflake emoji_id=0, bool is_animated=false)</argsstring>
+        <name>add_answer</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>emoji_id</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_animated</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add an answer to this poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing this, a poll can have up to 10 answers </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text for the answer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>emoji_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional emoji </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the emoji is animated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1876" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a7afe5c5c654305db08481a4c81e77910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::add_answer</definition>
+        <argsstring>(std::string_view text, std::string_view emoji)</argsstring>
+        <name>add_answer</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>emoji</declname>
+        </param>
+        <briefdescription>
+<para>Add an answer to this poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing this, a poll can have up to 10 answers </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text for the answer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>emoji</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional emoji </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1886" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1afc0ac008c2d2ec4bf2fd8c80bb2eda03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1poll" kindref="compound">poll</ref> &amp;</type>
+        <definition>poll &amp; dpp::poll::add_answer</definition>
+        <argsstring>(std::string_view text, const emoji &amp;e)</argsstring>
+        <name>add_answer</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Add an answer to this poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing this, a poll can have up to 10 answers </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text for the answer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional emoji </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self for method chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1896" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a6c0fd7a6310bd1f28080017b33b18446" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; dpp::poll::get_question_text</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_question_text</name>
+        <briefdescription>
+<para>Helper to get the question text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>question.text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1903" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a0234800573c1176e3eea8ebaf9fcd86a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structdpp_1_1poll__media" kindref="compound">poll_media</ref> *</type>
+        <definition>const poll_media * dpp::poll::find_answer</definition>
+        <argsstring>(uint32_t id) const noexcept</argsstring>
+        <name>find_answer</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Helper to find an answer by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID to find </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the answer with the matching ID, or nullptr if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1911" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1poll_1a1bc3ad5cf2a984ce2a85870296885e44" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::optional&lt; uint32_t &gt;</type>
+        <definition>std::optional&lt; uint32_t &gt; dpp::poll::get_vote_count</definition>
+        <argsstring>(uint32_t answer_id) const noexcept</argsstring>
+        <name>get_vote_count</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>answer_id</declname>
+        </param>
+        <briefdescription>
+<para>Helper to find the vote count in the results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>answer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the answer to find </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::optional&lt;uint32_t&gt; Optional count of votes. An empty optional means Discord did not send the results, it does not mean 0. It can also mean the poll does not have an answer with this ID </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll#poll-results-object">https://discord.com/developers/docs/resources/poll#poll-results-object</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1920" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a poll. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll">https://discord.com/developers/docs/resources/poll</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>bool</label>
+      </node>
+      <node id="10">
+        <label>double</label>
+      </node>
+      <node id="5">
+        <label>dpp::partial_emoji</label>
+        <link refid="structdpp_1_1partial__emoji"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>animated</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::poll</label>
+        <link refid="structdpp_1_1poll"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>question</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>answers</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>expiry</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>allow_multiselect</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>layout_type</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>results</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::poll_media</label>
+        <link refid="structdpp_1_1poll__media"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>emoji</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>poll_layout_type</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="9">
+        <label>map&lt;</label>
+      </node>
+      <node id="12">
+        <label>optional&lt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/message.h" line="1789" column="1" bodyfile="include/dpp/message.h" bodystart="1789" bodyend="1921"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1poll_1ad5007b0ebd5ea5eb71d0c3fe618279e0" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>add_answer</name></member>
+      <member refid="structdpp_1_1poll_1aa838931d2e5530a25e2f09646188d647" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>add_answer</name></member>
+      <member refid="structdpp_1_1poll_1a7afe5c5c654305db08481a4c81e77910" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>add_answer</name></member>
+      <member refid="structdpp_1_1poll_1afc0ac008c2d2ec4bf2fd8c80bb2eda03" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>add_answer</name></member>
+      <member refid="structdpp_1_1poll_1a0ac605149a83c71d22c826ec6e7c1275" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>allow_multiselect</name></member>
+      <member refid="structdpp_1_1poll_1a28a5c8a699caa4ab043bdfc2fb60514d" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>answers</name></member>
+      <member refid="structdpp_1_1poll_1ab1b608584381a77e49e92076a3414757" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>expiry</name></member>
+      <member refid="structdpp_1_1poll_1a0234800573c1176e3eea8ebaf9fcd86a" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>find_answer</name></member>
+      <member refid="structdpp_1_1poll_1a6c0fd7a6310bd1f28080017b33b18446" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>get_question_text</name></member>
+      <member refid="structdpp_1_1poll_1a1bc3ad5cf2a984ce2a85870296885e44" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>get_vote_count</name></member>
+      <member refid="structdpp_1_1poll_1a13dbae0298c8e5e0ea7ad1de65511357" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>layout_type</name></member>
+      <member refid="structdpp_1_1poll_1a36305499b2df322987576dfa4e96d1f4" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>question</name></member>
+      <member refid="structdpp_1_1poll_1a53579a33985515e9720c494f5cfab6f0" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>results</name></member>
+      <member refid="structdpp_1_1poll_1a652a498d6d3511f78824bbd8a012500b" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>set_allow_multiselect</name></member>
+      <member refid="structdpp_1_1poll_1a4163907a59483dbeac6722b7ebc7eddd" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>set_duration</name></member>
+      <member refid="structdpp_1_1poll_1afccc0bc6ea1caad627f09a5269c30d1a" prot="public" virt="non-virtual"><scope>dpp::poll</scope><name>set_question</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
