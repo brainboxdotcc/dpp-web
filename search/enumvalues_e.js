@@ -26,7 +26,6 @@ var searchData=
   ['st_5freturn_23',['st_return',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e',1,'dpp']]],
   ['st_5fstandard_24',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
   ['st_5fwait_25',['st_wait',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726',1,'dpp']]],
-  ['started_26',['started',['../namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9',1,'dpp::detail::when_any']]],
-  ['subscription_27',['SUBSCRIPTION',['../namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a3599f6e905c15cd919b5e9d256f0e9a7',1,'dpp']]],
-  ['subscription_5fgroup_28',['SUBSCRIPTION_GROUP',['../namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a79367d62208b5cc4be64107fe5e8a200',1,'dpp']]]
+  ['subscription_26',['SUBSCRIPTION',['../namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a3599f6e905c15cd919b5e9d256f0e9a7',1,'dpp']]],
+  ['subscription_5fgroup_27',['SUBSCRIPTION_GROUP',['../namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a79367d62208b5cc4be64107fe5e8a200',1,'dpp']]]
 ];

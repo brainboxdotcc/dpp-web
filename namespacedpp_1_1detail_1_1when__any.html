@@ -144,13 +144,13 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a2e21fb5fc3cc30494804672faf85f3c1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1">await_state</a> { <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9">started</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1acb05cab65afefab8fd3831d92cfc68be">waiting</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a6b2ded51d81a4403d8a4bd25fa1e57ee">done</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a4930128e58930768b1c1c75026ebc649">dangling</a>
+<tr class="memitem:a043b0c9a08845157bff81054d2c7f532"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532">await_state</a> : uint8_t { <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532a911c96c450563fc387d9a8f874ae5bf3">waiting</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532a75faa3c21d3e60abf683995d0b080bbc">done</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532a427afef4b22c6f2737c71606a2f86d1e">ready</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532aea97017529da6f508c24dba6c35f5099">dangling</a> = 1 &lt;&lt; 3
  }</td></tr>
-<tr class="memdesc:a2e21fb5fc3cc30494804672faf85f3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of a when_any object.  <a href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1">More...</a><br /></td></tr>
-<tr class="separator:a2e21fb5fc3cc30494804672faf85f3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a043b0c9a08845157bff81054d2c7f532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of a when_any object.  <a href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532">More...</a><br /></td></tr>
+<tr class="separator:a043b0c9a08845157bff81054d2c7f532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Internal cogwheels for <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">dpp::when_any</a>. </p>
@@ -210,35 +210,27 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a2e21fb5fc3cc30494804672faf85f3c1" name="a2e21fb5fc3cc30494804672faf85f3c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e21fb5fc3cc30494804672faf85f3c1">&#9670;&nbsp;</a></span>await_state</h2>
+<a id="a043b0c9a08845157bff81054d2c7f532" name="a043b0c9a08845157bff81054d2c7f532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043b0c9a08845157bff81054d2c7f532">&#9670;&nbsp;</a></span>await_state</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1">dpp::detail::when_any::await_state</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#a043b0c9a08845157bff81054d2c7f532">dpp::detail::when_any::await_state</a> : uint8_t</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Current state of a <a class="el" href="namespacedpp_1_1detail_1_1when__any.html" title="Internal cogwheels for dpp::when_any.">when_any</a> object. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9" name="a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9"></a>started&#160;</td><td class="fielddoc"><p >Object was started but not awaited. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a043b0c9a08845157bff81054d2c7f532a911c96c450563fc387d9a8f874ae5bf3" name="a043b0c9a08845157bff81054d2c7f532a911c96c450563fc387d9a8f874ae5bf3"></a>waiting&#160;</td><td class="fielddoc"><p >Object is being awaited. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e21fb5fc3cc30494804672faf85f3c1acb05cab65afefab8fd3831d92cfc68be" name="a2e21fb5fc3cc30494804672faf85f3c1acb05cab65afefab8fd3831d92cfc68be"></a>waiting&#160;</td><td class="fielddoc"><p >Object is being awaited. </p>
+<tr><td class="fieldname"><a id="a043b0c9a08845157bff81054d2c7f532a75faa3c21d3e60abf683995d0b080bbc" name="a043b0c9a08845157bff81054d2c7f532a75faa3c21d3e60abf683995d0b080bbc"></a>done&#160;</td><td class="fielddoc"><p >Object was resumed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e21fb5fc3cc30494804672faf85f3c1a6b2ded51d81a4403d8a4bd25fa1e57ee" name="a2e21fb5fc3cc30494804672faf85f3c1a6b2ded51d81a4403d8a4bd25fa1e57ee"></a>done&#160;</td><td class="fielddoc"><p >Object was resumed. </p>
+<tr><td class="fieldname"><a id="a043b0c9a08845157bff81054d2c7f532a427afef4b22c6f2737c71606a2f86d1e" name="a043b0c9a08845157bff81054d2c7f532a427afef4b22c6f2737c71606a2f86d1e"></a>ready&#160;</td><td class="fielddoc"><p >Result is ready to retrieve. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e21fb5fc3cc30494804672faf85f3c1a4930128e58930768b1c1c75026ebc649" name="a2e21fb5fc3cc30494804672faf85f3c1a4930128e58930768b1c1c75026ebc649"></a>dangling&#160;</td><td class="fielddoc"><p >Object was destroyed. </p>
+<tr><td class="fieldname"><a id="a043b0c9a08845157bff81054d2c7f532aea97017529da6f508c24dba6c35f5099" name="a043b0c9a08845157bff81054d2c7f532aea97017529da6f508c24dba6c35f5099"></a>dangling&#160;</td><td class="fielddoc"><p >Object was destroyed. </p>
 </td></tr>
 </table>
 
