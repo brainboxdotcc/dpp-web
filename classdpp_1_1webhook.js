@@ -15,6 +15,7 @@ var classdpp_1_1webhook =
     [ "json_interface< webhook >", "classdpp_1_1webhook.html#a99a6a96973afd054fc8632fc84970f15", null ],
     [ "application_id", "classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85", null ],
     [ "avatar", "classdpp_1_1webhook.html#aa9b4dd133a65bc6d575f749a58fd77d9", null ],
+    [ "avatar_url", "classdpp_1_1webhook.html#add6301915fbfb5334fbaaa80f5e8192a", null ],
     [ "channel_id", "classdpp_1_1webhook.html#ae553e70e26e0062648d0280aa74eaed0", null ],
     [ "guild_id", "classdpp_1_1webhook.html#aeb4a3c383260167ef6a05fe2e31f2e75", null ],
     [ "id", "classdpp_1_1webhook.html#a40bf0c6cc03909910512808fa6caa112", null ],

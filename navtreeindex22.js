@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"discord-application-command-file-upload.html":[5,1,0,4],
+"docs-standards.html":[6,4],
 "editing-channels-and-messages.html":[5,4,2],
 "editing_message_after_click.html":[5,1,4,4],
 "embed-message.html":[5,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[9,0,0,349,52],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da094813c7b248e43b3cdac6efe5d2da19":[9,0,0,349,37],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e":[9,0,0,349,22],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0c82a5ff83035e5fb41f03c3bc9d31e1":[9,0,0,349,20],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0cbd9fbee92211f6766fbbccc9e6ebd2":[9,0,0,349,7],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da126ed4119f99b4b03778bd1b5028d7e6":[9,0,0,349,31]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0c82a5ff83035e5fb41f03c3bc9d31e1":[9,0,0,349,20]
 };
