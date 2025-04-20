@@ -117,25 +117,25 @@ requires (std::constructible_from&lt;T, Args...&gt;)</td></tr>
 <tr class="memitem:a2797eb86e36556a42d16e544bbebbd8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a2797eb86e36556a42d16e544bbebbd8a">emplace_value</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a2797eb86e36556a42d16e544bbebbd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result in place by forwarding the arguments, and by default resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a2797eb86e36556a42d16e544bbebbd8a">More...</a><br /></td></tr>
 <tr class="separator:a2797eb86e36556a42d16e544bbebbd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true, typename U  = T&gt; <br />
-requires (std::convertible_to&lt;U&amp;&amp;, T&gt;)</td></tr>
-<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">set_value</a> (U &amp;&amp;v)</td></tr>
-<tr class="memdesc:a4f5338a987325c6d49bc17bcb23dae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by forwarding reference, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">More...</a><br /></td></tr>
-<tr class="separator:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf0a0ba61932e3be518fe0001e42ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#abbf0a0ba61932e3be518fe0001e42ce1">get_awaitable</a> ()</td></tr>
+<tr class="memdesc:abbf0a0ba61932e3be518fe0001e42ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an awaitable object for this promise.  <a href="classdpp_1_1moveable__promise.html#abbf0a0ba61932e3be518fe0001e42ce1">More...</a><br /></td></tr>
+<tr class="separator:abbf0a0ba61932e3be518fe0001e42ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f291d78a63dfacc1f2d9becba25254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a89f291d78a63dfacc1f2d9becba25254">notify_awaiter</a> ()</td></tr>
+<tr class="memdesc:a89f291d78a63dfacc1f2d9becba25254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify a currently awaiting coroutine that the result is ready.  <a href="classdpp_1_1moveable__promise.html#a89f291d78a63dfacc1f2d9becba25254">More...</a><br /></td></tr>
+<tr class="separator:a89f291d78a63dfacc1f2d9becba25254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; </td></tr>
+<tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#ad5792560d88ecc4c4cc7f68a12124dd4">set_exception</a> (std::exception_ptr ptr)</td></tr>
+<tr class="separator:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; <br />
 requires (std::is_void_v&lt;T&gt;)</td></tr>
 <tr class="memitem:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451">set_value</a> ()</td></tr>
 <tr class="memdesc:a8d36fc2c3ae52ab8922a01df7be72451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a void result, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451">More...</a><br /></td></tr>
 <tr class="separator:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; </td></tr>
-<tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#ad5792560d88ecc4c4cc7f68a12124dd4">set_exception</a> (std::exception_ptr ptr)</td></tr>
-<tr class="separator:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f291d78a63dfacc1f2d9becba25254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a89f291d78a63dfacc1f2d9becba25254">notify_awaiter</a> ()</td></tr>
-<tr class="memdesc:a89f291d78a63dfacc1f2d9becba25254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify a currently awaiting coroutine that the result is ready.  <a href="classdpp_1_1moveable__promise.html#a89f291d78a63dfacc1f2d9becba25254">More...</a><br /></td></tr>
-<tr class="separator:a89f291d78a63dfacc1f2d9becba25254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf0a0ba61932e3be518fe0001e42ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#abbf0a0ba61932e3be518fe0001e42ce1">get_awaitable</a> ()</td></tr>
-<tr class="memdesc:abbf0a0ba61932e3be518fe0001e42ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an awaitable object for this promise.  <a href="classdpp_1_1moveable__promise.html#abbf0a0ba61932e3be518fe0001e42ce1">More...</a><br /></td></tr>
-<tr class="separator:abbf0a0ba61932e3be518fe0001e42ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true, typename U  = T&gt; <br />
+requires (std::convertible_to&lt;U&amp;&amp;, T&gt;)</td></tr>
+<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">set_value</a> (U &amp;&amp;v)</td></tr>
+<tr class="memdesc:a4f5338a987325c6d49bc17bcb23dae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by forwarding reference, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">More...</a><br /></td></tr>
+<tr class="separator:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />

@@ -107,6 +107,23 @@
         </inbodydescription>
         <location file="include/dpp/bignum.h" line="79" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1bignumber_1a6143b31a5316dd69c553862d61a740da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint64_t &gt;</type>
+        <definition>std::vector&lt; uint64_t &gt; dpp::bignumber::get_binary</definition>
+        <argsstring>() const</argsstring>
+        <name>get_binary</name>
+        <briefdescription>
+<para>Get the array of 64 bit values that represents the bignumber. This is what we should use to store bignumbers in memory, not this bignumber class itself, as the bignumber class instantiates OpenSSL structs and takes significantly more ram than just a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of 64 bit values representing the bignumber </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/bignum.h" line="98" column="14"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1afc549f17451dad0c21640407e4de7826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::bignumber::get_number</definition>
@@ -137,23 +154,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/bignum.h" line="88" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1bignumber_1a6143b31a5316dd69c553862d61a740da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; uint64_t &gt;</type>
-        <definition>std::vector&lt; uint64_t &gt; dpp::bignumber::get_binary</definition>
-        <argsstring>() const</argsstring>
-        <name>get_binary</name>
-        <briefdescription>
-<para>Get the array of 64 bit values that represents the bignumber. This is what we should use to store bignumbers in memory, not this bignumber class itself, as the bignumber class instantiates OpenSSL structs and takes significantly more ram than just a vector. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Vector of 64 bit values representing the bignumber </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/bignum.h" line="98" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
