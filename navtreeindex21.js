@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"classdpp_1_1voicestate.html#abf58f2ac3357bc012b7bf617309919c9":[9,0,0,264,15],
+"classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db":[9,0,0,264,7],
+"classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db":[11,0,0,259,7],
+"classdpp_1_1voicestate.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,264,2],
 "classdpp_1_1voicestate.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,259,2],
 "classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6":[11,0,0,259,1],
 "classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6":[9,0,0,264,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX21 =
 "coro-introduction.html":[5,3,0],
 "coro-simple-commands.html":[5,3,1],
 "cpp-eval-command-discord.html":[5,4,6],
-"creating-a-bot-application.html":[4,0],
-"creating-a-discord-bot.html":[4],
-"default_select_value.html":[5,1,4,3],
-"deprecated.html":[7],
-"detecting-messages.html":[5,0,7]
+"creating-a-bot-application.html":[4,0]
 };
