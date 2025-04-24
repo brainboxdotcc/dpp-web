@@ -6801,6 +6801,11 @@ var namespacedpp =
       [ "at_custom", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400", null ],
       [ "at_competing", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72", null ]
     ] ],
+    [ "application_event_webhook_status", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8", [
+      [ "ews_disabled", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8a2280f4cf476dacb975fe000e62ab006e", null ],
+      [ "ews_enabled", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8ae31cf64ce532b56971c5b274f40cbb8e", null ],
+      [ "ews_disabled_by_discord", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8aee19fc2a054b323b2bc480be8f85592e", null ]
+    ] ],
     [ "application_flags", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72", [
       [ "apf_application_automod_rule_create_badge", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72aac315e0a3d5cef3e57756789179aa2c7", null ],
       [ "apf_gateway_presence", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a08dc8a2e3715e84bb24a63c7d158202a", null ],
