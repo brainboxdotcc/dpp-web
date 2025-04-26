@@ -181,6 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae85400249d50c40d261cb8ad749a7108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#ae85400249d50c40d261cb8ad749a7108">add_file</a> (std::string_view filename, std::string_view filecontent, std::string_view filemimetype=&quot;&quot;)</td></tr>
 <tr class="memdesc:ae85400249d50c40d261cb8ad749a7108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the message.  <a href="structdpp_1_1message.html#ae85400249d50c40d261cb8ad749a7108">More...</a><br /></td></tr>
 <tr class="separator:ae85400249d50c40d261cb8ad749a7108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f7c2cba5fe282b39c728b807edff10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a76f7c2cba5fe282b39c728b807edff10">add_json_components</a> (const std::string &amp;<a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a>)</td></tr>
+<tr class="memdesc:a76f7c2cba5fe282b39c728b807edff10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add pre-generated components to a message.  <a href="structdpp_1_1message.html#a76f7c2cba5fe282b39c728b807edff10">More...</a><br /></td></tr>
+<tr class="separator:a76f7c2cba5fe282b39c728b807edff10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21943f452317e1b4cc8a324c21fe661b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a21943f452317e1b4cc8a324c21fe661b">add_sticker</a> (const <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &amp;<a class="el" href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">id</a>)</td></tr>
 <tr class="memdesc:a21943f452317e1b4cc8a324c21fe661b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sticker to this message.  <a href="structdpp_1_1message.html#a21943f452317e1b4cc8a324c21fe661b">More...</a><br /></td></tr>
 <tr class="separator:a21943f452317e1b4cc8a324c21fe661b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +325,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab9cb60fc35159bfa604164c5574a4957"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1component.html">dpp::component</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#ab9cb60fc35159bfa604164c5574a4957">components</a></td></tr>
 <tr class="memdesc:ab9cb60fc35159bfa604164c5574a4957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message components.  <a href="structdpp_1_1message.html#ab9cb60fc35159bfa604164c5574a4957">More...</a><br /></td></tr>
 <tr class="separator:ab9cb60fc35159bfa604164c5574a4957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a2492742e15c3bed78c9f4535ed1dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#aa0a2492742e15c3bed78c9f4535ed1dd">components_json</a></td></tr>
+<tr class="memdesc:aa0a2492742e15c3bed78c9f4535ed1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-generated components as JSON. This overrides the components array if it is set.  <a href="structdpp_1_1message.html#aa0a2492742e15c3bed78c9f4535ed1dd">More...</a><br /></td></tr>
+<tr class="separator:aa0a2492742e15c3bed78c9f4535ed1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb17877db423d2ac4b103a67e1ae2ff6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a></td></tr>
 <tr class="memdesc:acb17877db423d2ac4b103a67e1ae2ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contents of the message.  <a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">More...</a><br /></td></tr>
 <tr class="separator:acb17877db423d2ac4b103a67e1ae2ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -802,6 +808,34 @@ Friends</h2></td></tr>
     <tr><td class="paramname">filename</td><td>filename </td></tr>
     <tr><td class="paramname">filecontent</td><td>raw file content </td></tr>
     <tr><td class="paramname">filemimetype</td><td>optional mime type of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>message&amp; reference to self </dd></dl>
+
+</div>
+</div>
+<a id="a76f7c2cba5fe282b39c728b807edff10" name="a76f7c2cba5fe282b39c728b807edff10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f7c2cba5fe282b39c728b807edff10">&#9670;&nbsp;</a></span>add_json_components()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a> &amp; dpp::message::add_json_components </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add pre-generated components to a message. </p>
+<dl class="section note"><dt>Note</dt><dd>This is intended to accept pre-generated component json from external tools such as <a href="https://discord.builders">https://discord.builders</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>components json to add. The JSON will be validated </td></tr>
   </table>
   </dd>
 </dl>
@@ -2142,6 +2176,22 @@ false objects are not the same id </dd></dl>
 </div><div class="memdoc">
 
 <p>Message components. </p>
+
+</div>
+</div>
+<a id="aa0a2492742e15c3bed78c9f4535ed1dd" name="aa0a2492742e15c3bed78c9f4535ed1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a2492742e15c3bed78c9f4535ed1dd">&#9670;&nbsp;</a></span>components_json</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> dpp::message::components_json</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre-generated components as JSON. This overrides the components array if it is set. </p>
 
 </div>
 </div>
