@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('stream-mp3-discord-bot.html',''); init
 <div class="line">            dpp::guild* g = dpp::find_guild(event.command.guild_id);</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* Attempt to connect to a voice channel, returns false if we fail to connect. */</span></div>
-<div class="line">            if (!g-&gt;connect_member_voice(event.command.get_issuing_user().id)) {</div>
+<div class="line">            if (!g-&gt;connect_member_voice(*event.owner, event.command.get_issuing_user().id)) {</div>
 <div class="line">                event.reply(<span class="stringliteral">&quot;You don&#39;t seem to be in a voice channel!&quot;</span>);</div>
 <div class="line">                return;</div>
 <div class="line">            }</div>

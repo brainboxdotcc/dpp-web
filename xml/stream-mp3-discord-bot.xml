@@ -75,7 +75,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::guild*<sp/>g<sp/>=<sp/>dpp::find_guild(event.command.guild_id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Attempt<sp/>to<sp/>connect<sp/>to<sp/>a<sp/>voice<sp/>channel,<sp/>returns<sp/>false<sp/>if<sp/>we<sp/>fail<sp/>to<sp/>connect.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!g-&gt;connect_member_voice(event.command.get_issuing_user().id))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!g-&gt;connect_member_voice(*event.owner,<sp/>event.command.get_issuing_user().id))<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(</highlight><highlight class="stringliteral">&quot;You<sp/>don&apos;t<sp/>seem<sp/>to<sp/>be<sp/>in<sp/>a<sp/>voice<sp/>channel!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>

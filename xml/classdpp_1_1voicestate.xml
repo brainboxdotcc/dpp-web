@@ -103,11 +103,12 @@
         </inbodydescription>
         <location file="include/dpp/voicestate.h" line="114" column="13" bodyfile="include/dpp/voicestate.h" bodystart="114" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1voicestate_1a94e4a9ddbfb2368a4d06c1cd1f538141" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::voicestate::shard</definition>
+      <memberdef kind="variable" id="classdpp_1_1voicestate_1a2805d3a80083db939934bcc41c1b9f8e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t dpp::voicestate::shard_id</definition>
         <argsstring></argsstring>
-        <name>shard</name>
+        <name>shard_id</name>
+        <initializer>{0}</initializer>
         <briefdescription>
 <para>Owning shard. </para>
         </briefdescription>
@@ -115,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voicestate.h" line="92" column="22" bodyfile="include/dpp/voicestate.h" bodystart="92" bodyend="-1"/>
+        <location file="include/dpp/voicestate.h" line="92" column="9" bodyfile="include/dpp/voicestate.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1voicestate_1a2a56a68ec5590ac218711f72893013fd" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -415,214 +416,15 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14">
-        <label>bool</label>
-      </node>
-      <node id="26">
-        <label>cache_policy_setting_t</label>
-      </node>
-      <node id="18">
-        <label>double</label>
-      </node>
-      <node id="25">
-        <label>dpp::cache_policy_t</label>
-        <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="26" relation="usage">
-          <edgelabel>channel_policy</edgelabel>
-          <edgelabel>emoji_policy</edgelabel>
-          <edgelabel>guild_policy</edgelabel>
-          <edgelabel>role_policy</edgelabel>
-          <edgelabel>user_policy</edgelabel>
-        </childnode>
-      </node>
-      <node id="16">
-        <label>dpp::cluster</label>
-        <link refid="classdpp_1_1cluster"/>
-        <childnode refid="7" relation="usage">
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>last_identify</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>cluster_id</edgelabel>
-          <edgelabel>intents</edgelabel>
-          <edgelabel>maxclusters</edgelabel>
-          <edgelabel>numshards</edgelabel>
-        </childnode>
-        <childnode refid="18" relation="usage">
-          <edgelabel>rest_ping</edgelabel>
-        </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>me</edgelabel>
-        </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>cache_policy</edgelabel>
-        </childnode>
-        <childnode refid="27" relation="usage">
-          <edgelabel>ws_mode</edgelabel>
-        </childnode>
-        <childnode refid="28" relation="usage">
-          <edgelabel>terminating</edgelabel>
-        </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>request_timeout</edgelabel>
-        </childnode>
-        <childnode refid="29" relation="usage">
-          <edgelabel>socketengine</edgelabel>
-        </childnode>
-        <childnode refid="30" relation="usage">
-          <edgelabel>on_autocomplete</edgelabel>
-          <edgelabel>on_automod_rule_create</edgelabel>
-          <edgelabel>on_automod_rule_delete</edgelabel>
-          <edgelabel>on_automod_rule_execute</edgelabel>
-          <edgelabel>on_automod_rule_update</edgelabel>
-          <edgelabel>on_button_click</edgelabel>
-          <edgelabel>on_channel_create</edgelabel>
-          <edgelabel>on_channel_delete</edgelabel>
-          <edgelabel>on_channel_pins_update</edgelabel>
-          <edgelabel>on_channel_update</edgelabel>
-          <edgelabel>...</edgelabel>
-        </childnode>
-      </node>
-      <node id="4">
-        <label>dpp::discord_client</label>
-        <link refid="classdpp_1_1discord__client"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>last_ping_message</edgelabel>
-          <edgelabel>resume_gateway_url</edgelabel>
-          <edgelabel>sessionid</edgelabel>
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>creator</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>heartbeat_interval</edgelabel>
-          <edgelabel>intents</edgelabel>
-          <edgelabel>max_shards</edgelabel>
-          <edgelabel>reconnects</edgelabel>
-          <edgelabel>resumes</edgelabel>
-          <edgelabel>shard_id</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>last_heartbeat</edgelabel>
-          <edgelabel>last_heartbeat_ack</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>last_seq</edgelabel>
-        </childnode>
-        <childnode refid="31" relation="usage">
-          <edgelabel>voice_mutex</edgelabel>
-        </childnode>
-        <childnode refid="18" relation="usage">
-          <edgelabel>websocket_ping</edgelabel>
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>ready</edgelabel>
-        </childnode>
-        <childnode refid="27" relation="usage">
-          <edgelabel>protocol</edgelabel>
-        </childnode>
-        <childnode refid="32" relation="usage">
-          <edgelabel>connecting_voice_channels</edgelabel>
-        </childnode>
-      </node>
       <node id="3">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
-      <node id="20">
-        <label>dpp::managed</label>
-        <link refid="classdpp_1_1managed"/>
-        <childnode refid="21" relation="usage">
-          <edgelabel>id</edgelabel>
-        </childnode>
-      </node>
-      <node id="21">
+      <node id="5">
         <label>dpp::snowflake</label>
         <link refid="classdpp_1_1snowflake"/>
-        <childnode refid="13" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>value</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
-        <label>dpp::ssl_connection</label>
-        <link refid="classdpp_1_1ssl__connection"/>
-        <childnode refid="7" relation="usage">
-          <edgelabel>buffer</edgelabel>
-          <edgelabel>cipher</edgelabel>
-          <edgelabel>hostname</edgelabel>
-          <edgelabel>obuffer</edgelabel>
-          <edgelabel>port</edgelabel>
-          <edgelabel>private_key_file</edgelabel>
-          <edgelabel>public_key_file</edgelabel>
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>sfd</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>ssl</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>last_tick</edgelabel>
-          <edgelabel>start</edgelabel>
-        </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>connect_retries</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>bytes_in</edgelabel>
-          <edgelabel>bytes_out</edgelabel>
-          <edgelabel>unique_id</edgelabel>
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>connected</edgelabel>
-          <edgelabel>keepalive</edgelabel>
-          <edgelabel>plaintext</edgelabel>
-          <edgelabel>raw_trace</edgelabel>
-          <edgelabel>tcp_connect_done</edgelabel>
-        </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>timer_handle</edgelabel>
-        </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>owner</edgelabel>
-        </childnode>
-      </node>
-      <node id="19">
-        <label>dpp::user</label>
-        <link refid="classdpp_1_1user"/>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>global_name</edgelabel>
-          <edgelabel>username</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>avatar</edgelabel>
-          <edgelabel>avatar_decoration</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>flags</edgelabel>
-        </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>discriminator</edgelabel>
-        </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>refcount</edgelabel>
-        </childnode>
-      </node>
-      <node id="23">
-        <label>dpp::utility::iconhash</label>
-        <link refid="structdpp_1_1utility_1_1iconhash"/>
-        <childnode refid="13" relation="usage">
-          <edgelabel>first</edgelabel>
-          <edgelabel>second</edgelabel>
         </childnode>
       </node>
       <node id="1">
@@ -631,9 +433,9 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="usage">
-          <edgelabel>shard</edgelabel>
+          <edgelabel>shard_id</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>channel_id</edgelabel>
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
@@ -641,37 +443,15 @@
         <childnode refid="7" relation="usage">
           <edgelabel>session_id</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>request_to_speak</edgelabel>
         </childnode>
       </node>
-      <node id="5">
-        <label>dpp::websocket_client</label>
-        <link refid="classdpp_1_1websocket__client"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>timed_out</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>timeout</edgelabel>
-        </childnode>
-      </node>
-      <node id="30">
-        <label>event_router_t&lt;</label>
-      </node>
-      <node id="9">
-        <label>int</label>
-      </node>
-      <node id="22">
-        <label>dpp::json_interface&lt; user &gt;</label>
-        <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="3" relation="template-instance">
-          <edgelabel>&lt; user &gt;</edgelabel>
-        </childnode>
+      <node id="4">
+        <label>int32_t</label>
       </node>
       <node id="2">
         <label>dpp::json_interface&lt; voicestate &gt;</label>
@@ -680,49 +460,22 @@
           <edgelabel>&lt; voicestate &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="10">
-        <label>openssl_connection *</label>
-      </node>
-      <node id="15">
-        <label>size_t</label>
-      </node>
-      <node id="28">
-        <label>atomic_bool</label>
-      </node>
       <node id="8">
         <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="31">
-        <label>std::shared_mutex</label>
       </node>
       <node id="7">
         <label>std::string</label>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
-        <label>unique_ptr&lt;</label>
-      </node>
-      <node id="32">
-        <label>unordered_map&lt;</label>
-      </node>
-      <node id="11">
+      <node id="10">
         <label>time_t</label>
       </node>
-      <node id="24">
-        <label>uint16_t</label>
-      </node>
-      <node id="17">
-        <label>uint32_t</label>
-      </node>
-      <node id="13">
+      <node id="6">
         <label>uint64_t</label>
       </node>
-      <node id="12">
+      <node id="9">
         <label>uint8_t</label>
-      </node>
-      <node id="27">
-        <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
     <location file="include/dpp/voicestate.h" line="76" column="1" bodyfile="include/dpp/voicestate.h" bodystart="76" bodyend="174"/>
@@ -743,7 +496,7 @@
       <member refid="classdpp_1_1voicestate_1a5b0fa82d1d55249aeb96fd7119aac5c2" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>self_stream</name></member>
       <member refid="classdpp_1_1voicestate_1a6d2114f152b6170f039c096f8a200219" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>self_video</name></member>
       <member refid="classdpp_1_1voicestate_1adda1e3192a8dbe103f5b5c29b29ca74b" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>session_id</name></member>
-      <member refid="classdpp_1_1voicestate_1a94e4a9ddbfb2368a4d06c1cd1f538141" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>shard</name></member>
+      <member refid="classdpp_1_1voicestate_1a2805d3a80083db939934bcc41c1b9f8e" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>shard_id</name></member>
       <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>to_json</name></member>
       <member refid="classdpp_1_1voicestate_1a2a56a68ec5590ac218711f72893013fd" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>user_id</name></member>
       <member refid="classdpp_1_1voicestate_1a2cffc101e4bff3c2aa40f5efc9fee895" prot="public" virt="non-virtual"><scope>dpp::voicestate</scope><name>voicestate</name></member>

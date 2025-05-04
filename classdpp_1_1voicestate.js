@@ -19,6 +19,6 @@ var classdpp_1_1voicestate =
     [ "guild_id", "classdpp_1_1voicestate.html#ae7a837b367c89d55482d448a4a6eb702", null ],
     [ "request_to_speak", "classdpp_1_1voicestate.html#a76c063d943a4aae66f15e03b018aeea8", null ],
     [ "session_id", "classdpp_1_1voicestate.html#adda1e3192a8dbe103f5b5c29b29ca74b", null ],
-    [ "shard", "classdpp_1_1voicestate.html#a94e4a9ddbfb2368a4d06c1cd1f538141", null ],
+    [ "shard_id", "classdpp_1_1voicestate.html#a2805d3a80083db939934bcc41c1b9f8e", null ],
     [ "user_id", "classdpp_1_1voicestate.html#a2a56a68ec5590ac218711f72893013fd", null ]
 ];
