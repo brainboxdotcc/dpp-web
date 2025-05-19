@@ -276,7 +276,7 @@ var classdpp_1_1cluster =
     [ "get_raw_rest", "classdpp_1_1cluster.html#aaf4dd99670856e7efed749e53e96fa7c", null ],
     [ "get_rest", "classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4", null ],
     [ "get_shard", "classdpp_1_1cluster.html#aed183f29fd767b4048fb43e7f49fe26e", null ],
-    [ "get_shards", "classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1", null ],
+    [ "get_shards", "classdpp_1_1cluster.html#a752d8c1439cf69d6e999e730f7d0b887", null ],
     [ "get_voice_regions", "classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc", null ],
     [ "get_webhook", "classdpp_1_1cluster.html#a40e140f1e2eda9632828bce461bc7338", null ],
     [ "get_webhook_message", "classdpp_1_1cluster.html#a8ff6d3aec04b3bc1ce06a3d077495994", null ],

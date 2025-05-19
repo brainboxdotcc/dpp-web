@@ -103,7 +103,7 @@ var searchData=
   ['get_5froles_100',['get_roles',['../classdpp_1_1guild__member.html#a14bf4d871976c25c0e8c66f8deb5d105',1,'dpp::guild_member']]],
   ['get_5fsecs_5fremaining_101',['get_secs_remaining',['../classdpp_1_1discord__voice__client.html#a15ba91026079da2100714c12b7ade88e',1,'dpp::discord_voice_client']]],
   ['get_5fshard_102',['get_shard',['../classdpp_1_1cluster.html#aed183f29fd767b4048fb43e7f49fe26e',1,'dpp::cluster']]],
-  ['get_5fshards_103',['get_shards',['../classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1',1,'dpp::cluster']]],
+  ['get_5fshards_103',['get_shards',['../classdpp_1_1cluster.html#a752d8c1439cf69d6e999e730f7d0b887',1,'dpp::cluster']]],
   ['get_5fsmall_5fasset_5furl_104',['get_small_asset_url',['../classdpp_1_1activity.html#ad30bd6ec17eda7ad7dc450a0e3c77d52',1,'dpp::activity']]],
   ['get_5fsocket_5faddress_105',['get_socket_address',['../classdpp_1_1address__t.html#a536fc2ed0707c6edfa0e54680867e4af',1,'dpp::address_t']]],
   ['get_5fsplash_5furl_106',['get_splash_url',['../classdpp_1_1guild.html#aa9e79b8daf552f520262339d60df9a2c',1,'dpp::guild']]],
