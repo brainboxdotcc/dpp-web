@@ -7,6 +7,7 @@ var classdpp_1_1voiceconn =
     [ "disconnect", "classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831", null ],
     [ "is_active", "classdpp_1_1voiceconn.html#a6d8f549df84d36594f34c6ef1470f1c9", null ],
     [ "is_ready", "classdpp_1_1voiceconn.html#aa63caa0d55507984cb064dddd209908d", null ],
+    [ "reassign_owner", "classdpp_1_1voiceconn.html#ad35026714c668e2dea3711d82cb29ae8", null ],
     [ "channel_id", "classdpp_1_1voiceconn.html#a9ae04af7ba5f3ed36e248ece6f2ad25b", null ],
     [ "dave", "classdpp_1_1voiceconn.html#a0bc9cf608a4830f31f317066a28c5dcb", null ],
     [ "session_id", "classdpp_1_1voiceconn.html#aaaae5391243bb862501088170037b041", null ],

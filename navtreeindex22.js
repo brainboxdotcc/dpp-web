@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"conceptdpp_1_1detail_1_1when__any_1_1void__result.html":[9,0,0,3,7,3],
+"conceptdpp_1_1detail_1_1when__any_1_1void__result.html":[10,0,0,0,0],
 "concepts.html":[10],
 "context-menu.html":[5,1,6],
 "coro-introduction.html":[5,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a249add3e7a98665ae50eea6782981fa4":[9,0,0,397],
 "namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a018c7b3512caf854870e27c6e5b33f6c":[9,0,0,397,0],
 "namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a10472420bed90e1c6141f300d58affaa":[9,0,0,397,1],
-"namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a1fbdc9e8e56fe2982de97929a82c57d2":[9,0,0,397,2],
-"namespacedpp.html#a249add3e7a98665ae50eea6782981fa4aa18b6fb792acde408aeb5c3bd041a58e":[9,0,0,397,3],
-"namespacedpp.html#a251283ad3361a7aae0de0d89cc220676":[9,0,0,413]
+"namespacedpp.html#a249add3e7a98665ae50eea6782981fa4a1fbdc9e8e56fe2982de97929a82c57d2":[9,0,0,397,2]
 };
