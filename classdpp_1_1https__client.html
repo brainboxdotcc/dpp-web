@@ -248,6 +248,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:af0b48879cca3f23df33cbad1cc73f7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdff78b127e920033d0d9f8fb58d456"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a4bdff78b127e920033d0d9f8fb58d456">on_buffer_drained</a> ()</td></tr>
 <tr class="separator:a4bdff78b127e920033d0d9f8fb58d456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054f295eb004fb9abbd987969b34f4bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a054f295eb004fb9abbd987969b34f4bb">start_connecting</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sockfd, const struct sockaddr *addr, socklen_t addrlen)</td></tr>
+<tr class="memdesc:a054f295eb004fb9abbd987969b34f4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start connecting to a TCP socket. This simply calls <a class="el" href="classdpp_1_1ssl__connection.html#ab062ff5c67a4a3f8021b212bbd040aca" title="Start SSL connection and connect to TCP endpoint.">connect()</a> and checks for error return, as the timeout is now handled in the main IO events for the <a class="el" href="classdpp_1_1ssl__connection.html" title="Implements a simple non-blocking SSL stream connection.">ssl_connection</a> class.  <a href="classdpp_1_1ssl__connection.html#a054f295eb004fb9abbd987969b34f4bb">More...</a><br /></td></tr>
+<tr class="separator:a054f295eb004fb9abbd987969b34f4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -1318,6 +1321,66 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The data may not be written immediately and may be written at a later time to the socket. </dd></dl>
+
+</div>
+</div>
+<a id="a054f295eb004fb9abbd987969b34f4bb" name="a054f295eb004fb9abbd987969b34f4bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054f295eb004fb9abbd987969b34f4bb">&#9670;&nbsp;</a></span>start_connecting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dpp::ssl_connection::start_connecting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct sockaddr *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">socklen_t&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start connecting to a TCP socket. This simply calls <a class="el" href="classdpp_1_1https__client.html#ae14f32471d065d5a72b40da01731cb71" title="Start the connection.">connect()</a> and checks for error return, as the timeout is now handled in the main IO events for the <a class="el" href="classdpp_1_1ssl__connection.html" title="Implements a simple non-blocking SSL stream connection.">ssl_connection</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sockfd</td><td>socket descriptor </td></tr>
+    <tr><td class="paramname">addr</td><td>address to connect to </td></tr>
+    <tr><td class="paramname">addrlen</td><td>address length </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>timeout in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int -1 on error, 0 on success just like POSIX <a class="el" href="classdpp_1_1https__client.html#ae14f32471d065d5a72b40da01731cb71" title="Start the connection.">connect()</a> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1connection__exception.html" title="Represents an error establishing or maintaining a connection.">dpp::connection_exception</a></td><td>on failure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

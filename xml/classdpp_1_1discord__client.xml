@@ -561,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="280" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="280" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="294" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="294" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ac6ef401a0b38b2cce833d184ddf38bbb" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -631,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="285" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="285" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="299" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aa8cfa2e6c511022b67dbd97cc57f0731" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -645,7 +645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="290" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="290" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="304" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1afde2bb2612e474fbfda2d7312e2bc5e7" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1af7cde3079d745428f44ef6231a2ac672" kindref="member">websocket_protocol_t</ref></type>
@@ -673,7 +673,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="295" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="295" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="309" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a03ffb74d2fa81b0e6f0864848151fa90" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -932,6 +932,77 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="275" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a054f295eb004fb9abbd987969b34f4bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::ssl_connection::start_connecting</definition>
+        <argsstring>(dpp::socket sockfd, const struct sockaddr *addr, socklen_t addrlen)</argsstring>
+        <name>start_connecting</name>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
+          <declname>sockfd</declname>
+        </param>
+        <param>
+          <type>const struct sockaddr *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>socklen_t</type>
+          <declname>addrlen</declname>
+        </param>
+        <briefdescription>
+<para>Start connecting to a TCP socket. This simply calls <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> and checks for error return, as the timeout is now handled in the main IO events for the <ref refid="classdpp_1_1ssl__connection" kindref="compound">ssl_connection</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sockfd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to connect to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addrlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int -1 on error, 0 on success just like POSIX <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1connection__exception" kindref="compound">dpp::connection_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on failure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="252" column="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1231,7 +1302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="365" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="379" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a4aa6d61b499be3e88138e25bcf5209b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> &amp;</type>
@@ -1361,7 +1432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="249" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="263" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a976f8a37c513560e36bff6047185bc41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1407,7 +1478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="261" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="275" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1424,7 +1495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="255" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="269" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1aad490f19d38e26deff51dccbfd1c445c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1458,7 +1529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="275" column="13"/>
+        <location file="include/dpp/sslconnection.h" line="289" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ade85ebcbf1a24079511436d504940fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1543,7 +1614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="269" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="283" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a6fef02c819339ee1d088b39647d70957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
@@ -1830,7 +1901,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="400" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8c50238080a887b09473c82bff8de817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1870,7 +1941,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="372" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a07c9f5c2dfff5ef27db1e148589e2e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1910,7 +1981,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="379" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="393" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a22449f499a4b4e952e8de4fd85c45e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1990,7 +2061,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="325" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="339" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ae659e7343de4a120d14f1b81e9535ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2051,7 +2122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="345" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="359" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -2492,6 +2563,7 @@
       <member refid="classdpp_1_1ssl__connection_1ab9d2b0349eb22555403c692500a287bb" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>ssl_connection</name></member>
       <member refid="classdpp_1_1ssl__connection_1ad694f10e342b640f5fa6e88119c86a17" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>start</name></member>
       <member refid="classdpp_1_1discord__client_1a7eadcab0e2fdc157e32c1645fa6e6d3c" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>start_connecting</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a054f295eb004fb9abbd987969b34f4bb" prot="protected" virt="non-virtual" ambiguityscope="dpp::websocket_client::"><scope>dpp::discord_client</scope><name>start_connecting</name></member>
       <member refid="classdpp_1_1ssl__connection_1a69e9248f431daf428683b1152c05b1a6" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>tcp_connect_done</name></member>
       <member refid="classdpp_1_1websocket__client_1a0d8399d578f3dc811f3ef5a663a2064b" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>timed_out</name></member>
       <member refid="classdpp_1_1websocket__client_1aed68bb754ba3745b6fbb895d16f96809" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>timeout</name></member>

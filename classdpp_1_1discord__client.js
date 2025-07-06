@@ -42,6 +42,7 @@ var classdpp_1_1discord__client =
     [ "send_close_packet", "classdpp_1_1discord__client.html#a2613fa8b73b1e7960c62bfe8cdef1dd7", null ],
     [ "socket_write", "classdpp_1_1discord__client.html#ae0fe670d8829bcfe600856a4c4adee00", null ],
     [ "start_connecting", "classdpp_1_1discord__client.html#a7eadcab0e2fdc157e32c1645fa6e6d3c", null ],
+    [ "start_connecting", "classdpp_1_1discord__client.html#a054f295eb004fb9abbd987969b34f4bb", null ],
     [ "write", "classdpp_1_1discord__client.html#a1a28fcb2647f4e1203c4aa1b842a2bc9", null ],
     [ "dpp::cluster", "classdpp_1_1discord__client.html#a836b658e110edfcbb21ea88b2ad90e90", null ],
     [ "dpp::events::guild_create", "classdpp_1_1discord__client.html#a38bd58112bc810d3a3ac9d88a316d2e9", null ],

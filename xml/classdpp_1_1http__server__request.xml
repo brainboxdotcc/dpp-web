@@ -434,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="280" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="280" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="294" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="294" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a3ae20842849f8c2f0174902dc70d7e97" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
@@ -448,7 +448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="285" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="285" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="299" column="15" bodyfile="include/dpp/sslconnection.h" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aa8cfa2e6c511022b67dbd97cc57f0731" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -462,7 +462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="290" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="290" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="304" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad7feee672079e07699e25f7250021c66" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -476,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="295" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="295" bodyend="-1"/>
+        <location file="include/dpp/sslconnection.h" line="309" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1http__server__request_1af0baab2d9dc60dc9f9d1c010cec3d049" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -619,6 +619,77 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="107" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a054f295eb004fb9abbd987969b34f4bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::ssl_connection::start_connecting</definition>
+        <argsstring>(dpp::socket sockfd, const struct sockaddr *addr, socklen_t addrlen)</argsstring>
+        <name>start_connecting</name>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
+          <declname>sockfd</declname>
+        </param>
+        <param>
+          <type>const struct sockaddr *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>socklen_t</type>
+          <declname>addrlen</declname>
+        </param>
+        <briefdescription>
+<para>Start connecting to a TCP socket. This simply calls <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> and checks for error return, as the timeout is now handled in the main IO events for the <ref refid="classdpp_1_1ssl__connection" kindref="compound">ssl_connection</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sockfd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to connect to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addrlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int -1 on error, 0 on success just like POSIX <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1connection__exception" kindref="compound">dpp::connection_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on failure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="252" column="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -777,7 +848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="365" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="379" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3f8164696a6ffedcf9db89b7b4a2ea6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -792,7 +863,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="249" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="263" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a28c4296db4b541d99478c6db493f4b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -809,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="261" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="275" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -826,7 +897,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="255" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="269" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -843,7 +914,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="275" column="13"/>
+        <location file="include/dpp/sslconnection.h" line="289" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1afd45991516d12aeee2c72718daf0d790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::string</type>
@@ -1053,7 +1124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="269" column="10"/>
+        <location file="include/dpp/sslconnection.h" line="283" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1a312827aaa48c1d7726efc9275ebd5cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1124,7 +1195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="357" column="14"/>
+        <location file="include/dpp/sslconnection.h" line="371" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8732ae4599f38f41d27de3f4c1c7cae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1167,7 +1238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="400" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8c50238080a887b09473c82bff8de817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1207,7 +1278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="372" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a07c9f5c2dfff5ef27db1e148589e2e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1247,7 +1318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="379" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="393" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1ac04e231d1e3558a9231d066d54f7a2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1286,7 +1357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="325" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="339" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1aaa8949dd0caab303dc3ec3300e865332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
@@ -1414,7 +1485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="345" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="359" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1741,6 +1812,7 @@
       <member refid="classdpp_1_1ssl__connection_1a77bd0f626125dfef52cfe7fe40216772" prot="public" virt="non-virtual"><scope>dpp::http_server_request</scope><name>ssl_connection</name></member>
       <member refid="classdpp_1_1ssl__connection_1ab9d2b0349eb22555403c692500a287bb" prot="public" virt="non-virtual"><scope>dpp::http_server_request</scope><name>ssl_connection</name></member>
       <member refid="classdpp_1_1ssl__connection_1ad694f10e342b640f5fa6e88119c86a17" prot="protected" virt="non-virtual"><scope>dpp::http_server_request</scope><name>start</name></member>
+      <member refid="classdpp_1_1ssl__connection_1a054f295eb004fb9abbd987969b34f4bb" prot="protected" virt="non-virtual"><scope>dpp::http_server_request</scope><name>start_connecting</name></member>
       <member refid="classdpp_1_1http__server__request_1a505beeadc243ce7be7fd2deb557e5229" prot="protected" virt="non-virtual"><scope>dpp::http_server_request</scope><name>state</name></member>
       <member refid="classdpp_1_1http__server__request_1a96b67a3962a47387d3ab04be693afad1" prot="protected" virt="non-virtual"><scope>dpp::http_server_request</scope><name>status</name></member>
       <member refid="classdpp_1_1ssl__connection_1a69e9248f431daf428683b1152c05b1a6" prot="protected" virt="non-virtual"><scope>dpp::http_server_request</scope><name>tcp_connect_done</name></member>

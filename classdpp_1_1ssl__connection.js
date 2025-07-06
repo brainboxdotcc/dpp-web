@@ -21,6 +21,7 @@ var classdpp_1_1ssl__connection =
     [ "one_second_timer", "classdpp_1_1ssl__connection.html#ada1465dbb409fb3c994f9529fabc3f2b", null ],
     [ "read_loop", "classdpp_1_1ssl__connection.html#aa29f339d46eb0d32ba74c341d25bbcb4", null ],
     [ "socket_write", "classdpp_1_1ssl__connection.html#ae0fe670d8829bcfe600856a4c4adee00", null ],
+    [ "start_connecting", "classdpp_1_1ssl__connection.html#a054f295eb004fb9abbd987969b34f4bb", null ],
     [ "buffer", "classdpp_1_1ssl__connection.html#a4a8b48487e16cefed1f12821f64fa5e8", null ],
     [ "bytes_in", "classdpp_1_1ssl__connection.html#a8715f4363a7c5ef7ddc5439d5ff2394a", null ],
     [ "bytes_out", "classdpp_1_1ssl__connection.html#ad9fccc5b66b4a5713b54d8ed1ab9c743", null ],

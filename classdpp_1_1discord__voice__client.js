@@ -64,6 +64,7 @@ var classdpp_1_1discord__voice__client =
     [ "skip_to_next_marker", "classdpp_1_1discord__voice__client.html#a6c45a33336db010eedf8853af16b94c8", null ],
     [ "socket_write", "classdpp_1_1discord__voice__client.html#ae0fe670d8829bcfe600856a4c4adee00", null ],
     [ "speak", "classdpp_1_1discord__voice__client.html#ae5456ed35a1a964a607e2abc8bd59691", null ],
+    [ "start_connecting", "classdpp_1_1discord__voice__client.html#a054f295eb004fb9abbd987969b34f4bb", null ],
     [ "stop_audio", "classdpp_1_1discord__voice__client.html#a0bf262c6102ffdae95f999b79462a443", null ],
     [ "write", "classdpp_1_1discord__voice__client.html#a1a28fcb2647f4e1203c4aa1b842a2bc9", null ],
     [ "buffer", "classdpp_1_1discord__voice__client.html#a4a8b48487e16cefed1f12821f64fa5e8", null ],

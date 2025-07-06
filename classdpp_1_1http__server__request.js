@@ -35,6 +35,7 @@ var classdpp_1_1http__server__request =
     [ "set_response_header", "classdpp_1_1http__server__request.html#aac1be92d137abece865a832a5a6a6873", null ],
     [ "set_status", "classdpp_1_1http__server__request.html#a3d5596e2e6097addc26e3c6047cbd6c2", null ],
     [ "socket_write", "classdpp_1_1http__server__request.html#ae0fe670d8829bcfe600856a4c4adee00", null ],
+    [ "start_connecting", "classdpp_1_1http__server__request.html#a054f295eb004fb9abbd987969b34f4bb", null ],
     [ "buffer", "classdpp_1_1http__server__request.html#a4a8b48487e16cefed1f12821f64fa5e8", null ],
     [ "bytes_in", "classdpp_1_1http__server__request.html#a8715f4363a7c5ef7ddc5439d5ff2394a", null ],
     [ "bytes_out", "classdpp_1_1http__server__request.html#ad9fccc5b66b4a5713b54d8ed1ab9c743", null ],
