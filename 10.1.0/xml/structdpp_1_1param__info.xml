@@ -4,33 +4,19 @@
     <compoundname>dpp::param_info</compoundname>
     <includes local="no">commandhandler.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1param__info_1a8bed6e1abf73e436a781c6d39bc236ba" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864" kindref="member">parameter_type</ref></type>
-        <definition>parameter_type dpp::param_info::type</definition>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1ae0cf01d6b4b58624d16b3ab14fcbde2a" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref>, std::string &gt;</type>
+        <definition>std::map&lt;command_value, std::string&gt; dpp::param_info::choices</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>choices</name>
         <briefdescription>
-<para>Type of parameter. </para>
+<para>Allowed multiple choice options. The key name is the string passed to the command handler and the key value is its description displayed to the user. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="118" column="16" bodyfile="include/dpp/commandhandler.h" bodystart="118" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1param__info_1a9e834a2d46d81a2f57e88c59ca887f5f" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::param_info::optional</definition>
-        <argsstring></argsstring>
-        <name>optional</name>
-        <briefdescription>
-<para>True if the parameter is optional. For non-slash commands optional parameters may only be on the end of the list. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="124" column="6" bodyfile="include/dpp/commandhandler.h" bodystart="124" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="136" column="10" bodyfile="include/dpp/commandhandler.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1param__info_1a83b97805bed52aafbce70379a9e4cb18" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -46,19 +32,33 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="129" column="13" bodyfile="include/dpp/commandhandler.h" bodystart="129" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1param__info_1ae0cf01d6b4b58624d16b3ab14fcbde2a" prot="public" static="no" mutable="no">
-        <type>std::map&lt; <ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref>, std::string &gt;</type>
-        <definition>std::map&lt;command_value, std::string&gt; dpp::param_info::choices</definition>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a9e834a2d46d81a2f57e88c59ca887f5f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::param_info::optional</definition>
         <argsstring></argsstring>
-        <name>choices</name>
+        <name>optional</name>
         <briefdescription>
-<para>Allowed multiple choice options. The key name is the string passed to the command handler and the key value is its description displayed to the user. </para>
+<para>True if the parameter is optional. For non-slash commands optional parameters may only be on the end of the list. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="136" column="10" bodyfile="include/dpp/commandhandler.h" bodystart="136" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="124" column="6" bodyfile="include/dpp/commandhandler.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a8bed6e1abf73e436a781c6d39bc236ba" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864" kindref="member">parameter_type</ref></type>
+        <definition>parameter_type dpp::param_info::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="118" column="16" bodyfile="include/dpp/commandhandler.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

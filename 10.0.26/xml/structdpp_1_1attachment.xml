@@ -4,47 +4,19 @@
     <compoundname>dpp::attachment</compoundname>
     <includes local="no">message.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::attachment::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>ID of attachment </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="790" column="11" bodyfile="include/dpp/message.h" bodystart="790" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a899697fe4fea962a9a81f0cae66e86f5" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::attachment::size</definition>
-        <argsstring></argsstring>
-        <name>size</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Size of the attachment in bytes </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="792" column="10" bodyfile="include/dpp/message.h" bodystart="792" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a37ae8a828923ad5184133f486241000c" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a57c192b2925012e1d06913da80f1bafd" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::attachment::filename</definition>
+        <definition>std::string dpp::attachment::content_type</definition>
         <argsstring></argsstring>
-        <name>filename</name>
+        <name>content_type</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>File name of the attachment </para>
+<para>MIME type of the attachment, if applicable </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="794" column="13" bodyfile="include/dpp/message.h" bodystart="794" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="806" column="13" bodyfile="include/dpp/message.h" bodystart="806" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1attachment_1a0b7feae87c4a22fcfa660b922f7d6ceb" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -60,75 +32,19 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="796" column="13" bodyfile="include/dpp/message.h" bodystart="796" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1ac8dfe8ccce296e4f30452ddbc5bded26" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::attachment::url</definition>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1ac9dcb0c9252a1bbaddc3090d92e282b3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dpp::attachment::duration_secs</definition>
         <argsstring></argsstring>
-        <name>url</name>
+        <name>duration_secs</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>URL which points to the attachment </para>
+<para>The duration of the audio file (currently for voice messages) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="798" column="13" bodyfile="include/dpp/message.h" bodystart="798" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1ac3fa01bbb9915006c0a11db9ed386749" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::attachment::proxy_url</definition>
-        <argsstring></argsstring>
-        <name>proxy_url</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Proxied URL which points to the attachment </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="800" column="13" bodyfile="include/dpp/message.h" bodystart="800" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a62039388d0f56e389a538b32716e44c5" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::attachment::width</definition>
-        <argsstring></argsstring>
-        <name>width</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Width of the attachment, if applicable </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="802" column="10" bodyfile="include/dpp/message.h" bodystart="802" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a448f0ad9591bb19788cd595ace201ce3" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::attachment::height</definition>
-        <argsstring></argsstring>
-        <name>height</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Height of the attachment, if applicable </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="804" column="10" bodyfile="include/dpp/message.h" bodystart="804" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a57c192b2925012e1d06913da80f1bafd" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::attachment::content_type</definition>
-        <argsstring></argsstring>
-        <name>content_type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>MIME type of the attachment, if applicable </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="806" column="13" bodyfile="include/dpp/message.h" bodystart="806" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="810" column="8" bodyfile="include/dpp/message.h" bodystart="810" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1attachment_1a453d43c1a5bb073038cc2a0890cfdbec" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -144,33 +60,19 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="808" column="6" bodyfile="include/dpp/message.h" bodystart="808" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1ac9dcb0c9252a1bbaddc3090d92e282b3" prot="public" static="no" mutable="no">
-        <type>double</type>
-        <definition>double dpp::attachment::duration_secs</definition>
-        <argsstring></argsstring>
-        <name>duration_secs</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>The duration of the audio file (currently for voice messages) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="810" column="8" bodyfile="include/dpp/message.h" bodystart="810" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1attachment_1a53081cdedef49b5545995629c3b25a26" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a37ae8a828923ad5184133f486241000c" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::attachment::waveform</definition>
+        <definition>std::string dpp::attachment::filename</definition>
         <argsstring></argsstring>
-        <name>waveform</name>
+        <name>filename</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>base64 encoded bytearray representing a sampled waveform (currently for voice messages) </para>
+<para>File name of the attachment </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="812" column="13" bodyfile="include/dpp/message.h" bodystart="812" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="794" column="13" bodyfile="include/dpp/message.h" bodystart="794" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1attachment_1a4e79a5abbab3880ca1344dd6d41b58bf" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -186,6 +88,34 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="814" column="8" bodyfile="include/dpp/message.h" bodystart="814" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a448f0ad9591bb19788cd595ace201ce3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::attachment::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the attachment, if applicable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="804" column="10" bodyfile="include/dpp/message.h" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::attachment::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of attachment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="790" column="11" bodyfile="include/dpp/message.h" bodystart="790" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1attachment_1ac20e7cdbbb8f1d79ffc04212efea4eb1" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message" kindref="compound">message</ref> *</type>
         <definition>struct message* dpp::attachment::owner</definition>
@@ -199,6 +129,76 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="816" column="15" bodyfile="include/dpp/message.h" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1ac3fa01bbb9915006c0a11db9ed386749" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::attachment::proxy_url</definition>
+        <argsstring></argsstring>
+        <name>proxy_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Proxied URL which points to the attachment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="800" column="13" bodyfile="include/dpp/message.h" bodystart="800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a899697fe4fea962a9a81f0cae66e86f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::attachment::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the attachment in bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="792" column="10" bodyfile="include/dpp/message.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1ac8dfe8ccce296e4f30452ddbc5bded26" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::attachment::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>URL which points to the attachment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="798" column="13" bodyfile="include/dpp/message.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a53081cdedef49b5545995629c3b25a26" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::attachment::waveform</definition>
+        <argsstring></argsstring>
+        <name>waveform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base64 encoded bytearray representing a sampled waveform (currently for voice messages) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="812" column="13" bodyfile="include/dpp/message.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1attachment_1a62039388d0f56e389a538b32716e44c5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::attachment::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the attachment, if applicable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="802" column="10" bodyfile="include/dpp/message.h" bodystart="802" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

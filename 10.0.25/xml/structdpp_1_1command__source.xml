@@ -4,20 +4,6 @@
     <compoundname>dpp::command_source</compoundname>
     <includes local="no">commandhandler.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1command__source_1a8ed068737789c5230db85047d9499b11" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::command_source::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-<para>Sending guild id. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="149" column="11" bodyfile="include/dpp/commandhandler.h" bodystart="149" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__source_1a98d2f56173783173717ee1ef90f6e424" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::command_source::channel_id</definition>
@@ -60,6 +46,34 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="161" column="13" bodyfile="include/dpp/commandhandler.h" bodystart="161" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__source_1a8ed068737789c5230db85047d9499b11" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::command_source::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>Sending guild id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="149" column="11" bodyfile="include/dpp/commandhandler.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__source_1acca58c533acf792deaccfa959665d06e" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structdpp_1_1interaction__create__t" kindref="compound">interaction_create_t</ref> &gt;</type>
+        <definition>std::optional&lt;interaction_create_t&gt; dpp::command_source::interaction_event</definition>
+        <argsstring></argsstring>
+        <name>interaction_event</name>
+        <briefdescription>
+<para>Copy of the underlying <ref refid="structdpp_1_1interaction__create__t" kindref="compound">interaction_create_t</ref> event, if it was an interaction create event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="175" column="15" bodyfile="include/dpp/commandhandler.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__source_1a04e791e7954c95ac7c3b6880760e297e" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
         <definition>user dpp::command_source::issuer</definition>
@@ -88,40 +102,8 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="170" column="15" bodyfile="include/dpp/commandhandler.h" bodystart="170" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__source_1acca58c533acf792deaccfa959665d06e" prot="public" static="no" mutable="no">
-        <type>std::optional&lt; <ref refid="structdpp_1_1interaction__create__t" kindref="compound">interaction_create_t</ref> &gt;</type>
-        <definition>std::optional&lt;interaction_create_t&gt; dpp::command_source::interaction_event</definition>
-        <argsstring></argsstring>
-        <name>interaction_event</name>
-        <briefdescription>
-<para>Copy of the underlying <ref refid="structdpp_1_1interaction__create__t" kindref="compound">interaction_create_t</ref> event, if it was an interaction create event. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="175" column="15" bodyfile="include/dpp/commandhandler.h" bodystart="175" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1command__source_1aafc88011b6c193c8b900584fa0da0728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::command_source::command_source</definition>
-        <argsstring>(const struct message_create_t &amp;event)</argsstring>
-        <name>command_source</name>
-        <param>
-          <type>const struct <ref refid="structdpp_1_1message__create__t" kindref="compound">message_create_t</ref> &amp;</type>
-          <declname>event</declname>
-        </param>
-        <briefdescription>
-<para>Construct a <ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref> object from a <ref refid="structdpp_1_1message__create__t" kindref="compound">message_create_t</ref> event. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="180" column="1"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__source_1ae617d4cd6fe898f7ab77b33a76b8f52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::command_source::command_source</definition>
@@ -139,6 +121,24 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1command__source_1aafc88011b6c193c8b900584fa0da0728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::command_source::command_source</definition>
+        <argsstring>(const struct message_create_t &amp;event)</argsstring>
+        <name>command_source</name>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1message__create__t" kindref="compound">message_create_t</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref> object from a <ref refid="structdpp_1_1message__create__t" kindref="compound">message_create_t</ref> event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="180" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,19 +5,6 @@
     <basecompoundref refid="classhttplib_1_1_stream" prot="public" virt="non-virtual">httplib::Stream</basecompoundref>
     <includes local="no">httplib.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_socket_stream_1aab1e9c555082de67f646cb3c303d6f91" prot="private" static="no" mutable="no">
-        <type>socket_t</type>
-        <definition>socket_t httplib::detail::SocketStream::sock_</definition>
-        <argsstring></argsstring>
-        <name>sock_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1914" column="12" bodyfile="include/dpp/httplib.h" bodystart="1914" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1detail_1_1_socket_stream_1a8d3d29cab4b58080b478284260506982" prot="private" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t httplib::detail::SocketStream::read_timeout_sec_</definition>
@@ -43,6 +30,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1916" column="10" bodyfile="include/dpp/httplib.h" bodystart="1916" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_socket_stream_1aab1e9c555082de67f646cb3c303d6f91" prot="private" static="no" mutable="no">
+        <type>socket_t</type>
+        <definition>socket_t httplib::detail::SocketStream::sock_</definition>
+        <argsstring></argsstring>
+        <name>sock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1914" column="12" bodyfile="include/dpp/httplib.h" bodystart="1914" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1detail_1_1_socket_stream_1a1d8bafc8e2c27f10e31978388b8178f8" prot="private" static="no" mutable="no">
         <type>time_t</type>
@@ -118,6 +118,28 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1904" column="3" bodyfile="include/dpp/httplib.h" bodystart="4064" bodyend="4064"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a10edcbf718672c3be447eaffa5bb25df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void httplib::detail::SocketStream::get_remote_ip_and_port</definition>
+        <argsstring>(std::string &amp;ip, int &amp;port) const override</argsstring>
+        <name>get_remote_ip_and_port</name>
+        <reimplements refid="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca">get_remote_ip_and_port</reimplements>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1910" column="8" bodyfile="include/dpp/httplib.h" bodystart="4102" bodyend="4105"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a54ef15b31ba398e33086574d412fb316" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
         <definition>bool httplib::detail::SocketStream::is_readable</definition>
@@ -168,50 +190,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1908" column="11" bodyfile="include/dpp/httplib.h" bodystart="4074" bodyend="4086"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a5758d225d89517db2a637fac308f041a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>ssize_t</type>
-        <definition>ssize_t httplib::detail::SocketStream::write</definition>
-        <argsstring>(const char *ptr, size_t size) override</argsstring>
-        <name>write</name>
-        <reimplements refid="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f">write</reimplements>
-        <param>
-          <type>const char *</type>
-          <declname>ptr</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>size</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1909" column="11" bodyfile="include/dpp/httplib.h" bodystart="4088" bodyend="4100"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a10edcbf718672c3be447eaffa5bb25df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>void httplib::detail::SocketStream::get_remote_ip_and_port</definition>
-        <argsstring>(std::string &amp;ip, int &amp;port) const override</argsstring>
-        <name>get_remote_ip_and_port</name>
-        <reimplements refid="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca">get_remote_ip_and_port</reimplements>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>ip</declname>
-        </param>
-        <param>
-          <type>int &amp;</type>
-          <declname>port</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1910" column="8" bodyfile="include/dpp/httplib.h" bodystart="4102" bodyend="4105"/>
-      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a1de284778b5558fbd7be59632bbaa85e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>socket_t</type>
         <definition>socket_t httplib::detail::SocketStream::socket</definition>
@@ -242,6 +220,28 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="490" column="11" bodyfile="include/dpp/httplib.h" bodystart="4010" bodyend="4012"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_socket_stream_1a5758d225d89517db2a637fac308f041a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::detail::SocketStream::write</definition>
+        <argsstring>(const char *ptr, size_t size) override</argsstring>
+        <name>write</name>
+        <reimplements refid="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f">write</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1909" column="11" bodyfile="include/dpp/httplib.h" bodystart="4088" bodyend="4100"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ssize_t</type>

@@ -5,6 +5,20 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; prune &gt;</basecompoundref>
     <includes local="no">prune.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1prune_1a948f8af4cf30f7e0a35978e36e1d3601" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::prune::compute_prune_count</definition>
+        <argsstring></argsstring>
+        <name>compute_prune_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if the count of pruneable users should be returned (discord recommend not using this on big guilds) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/prune.h" line="42" column="6" bodyfile="include/dpp/prune.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1prune_1a981d093ed62361879e862c6e4b98556a" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
         <definition>uint32_t dpp::prune::days</definition>
@@ -34,51 +48,8 @@
         </inbodydescription>
         <location file="include/dpp/prune.h" line="38" column="13" bodyfile="include/dpp/prune.h" bodystart="38" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1prune_1a948f8af4cf30f7e0a35978e36e1d3601" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::prune::compute_prune_count</definition>
-        <argsstring></argsstring>
-        <name>compute_prune_count</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if the count of pruneable users should be returned (discord recommend not using this on big guilds) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/prune.h" line="42" column="6" bodyfile="include/dpp/prune.h" bodystart="42" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1prune_1af14af138229a9c1205c97766d640a503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1prune" kindref="compound">prune</ref> &amp;</type>
-        <definition>prune &amp; dpp::prune::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON object to fill from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/prune.h" line="48" column="8"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1prune_1aa9cbce12fb8567214d0de25143149769" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>virtual std::string dpp::prune::build_json</definition>
@@ -109,6 +80,35 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/prune.h" line="54" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1prune_1af14af138229a9c1205c97766d640a503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1prune" kindref="compound">prune</ref> &amp;</type>
+        <definition>prune &amp; dpp::prune::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON object to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/prune.h" line="48" column="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

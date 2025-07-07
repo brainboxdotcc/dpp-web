@@ -5,33 +5,19 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; presence &gt;</basecompoundref>
     <includes local="no">presence.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::presence::user_id</definition>
+      <memberdef kind="variable" id="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &gt;</type>
+        <definition>std::vector&lt;activity&gt; dpp::presence::activities</definition>
         <argsstring></argsstring>
-        <name>user_id</name>
+        <name>activities</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The user the presence applies to </para>
+<para>List of activities </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="317" column="10" bodyfile="include/dpp/presence.h" bodystart="317" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::presence::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Guild ID. Apparently, Discord supports this internally but the client doesn&apos;t... </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="320" column="17" bodyfile="include/dpp/presence.h" bodystart="320" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="326" column="13" bodyfile="include/dpp/presence.h" bodystart="326" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1presence_1ab29149dcde2872002715212b8a6ff951" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -47,19 +33,33 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="323" column="8" bodyfile="include/dpp/presence.h" bodystart="323" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &gt;</type>
-        <definition>std::vector&lt;activity&gt; dpp::presence::activities</definition>
+      <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::presence::guild_id</definition>
         <argsstring></argsstring>
-        <name>activities</name>
+        <name>guild_id</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>List of activities </para>
+<para>Guild ID. Apparently, Discord supports this internally but the client doesn&apos;t... </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="326" column="13" bodyfile="include/dpp/presence.h" bodystart="326" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="320" column="17" bodyfile="include/dpp/presence.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::presence::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user the presence applies to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="317" column="10" bodyfile="include/dpp/presence.h" bodystart="317" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -183,35 +183,6 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="349" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1presence_1ad074f1ca4904e9a109d1fd0cb7f096a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &amp;</type>
-        <definition>presence &amp; dpp::presence::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON object to fill from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="355" column="11"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1presence_1ae55480b1271989b3d3a3096097bf0af9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>virtual std::string dpp::presence::build_json</definition>
@@ -261,21 +232,34 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="371" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
-        <definition>presence_status dpp::presence::web_status</definition>
-        <argsstring>() const</argsstring>
-        <name>web_status</name>
+      <memberdef kind="function" id="classdpp_1_1presence_1ad074f1ca4904e9a109d1fd0cb7f096a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &amp;</type>
+        <definition>presence &amp; dpp::presence::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The user&apos;s status on web <simplesect kind="return"><para>The user&apos;s status on web </para>
+<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON object to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="376" column="17"/>
+        <location file="include/dpp/presence.h" line="355" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1presence_1abf5fafbf7c71764f540b1d26c03b0607" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
@@ -308,6 +292,22 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/presence.h" line="386" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::web_status</definition>
+        <argsstring>() const</argsstring>
+        <name>web_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s status on web <simplesect kind="return"><para>The user&apos;s status on web </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="376" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

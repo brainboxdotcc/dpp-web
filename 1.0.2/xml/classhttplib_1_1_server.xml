@@ -5,6 +5,45 @@
     <includes local="no">httplib.h</includes>
     <innerclass refid="structhttplib_1_1_server_1_1_mount_point_entry" prot="private">httplib::Server::MountPointEntry</innerclass>
       <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;, std::exception &amp;e)&gt;</type>
+        <definition>using httplib::Server::ExceptionHandler =  std::function&lt;void(const Request &amp;, Response &amp;, std::exception &amp;e)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ExceptionHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="602" column="3" bodyfile="include/dpp/httplib.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" prot="public" static="no">
+        <type>std::function&lt; int(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
+        <definition>using httplib::Server::Expect100ContinueHandler =  std::function&lt;int(const Request &amp;, Response &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Expect100ContinueHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="615" column="3" bodyfile="include/dpp/httplib.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
+        <definition>using httplib::Server::Handler =  std::function&lt;void(const Request &amp;, Response &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="600" column="3" bodyfile="include/dpp/httplib.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="enum" id="classhttplib_1_1_server_1a68cf8c175834bde61120ac4216ea943b" prot="public" static="no" strong="yes">
         <type></type>
         <name>HandlerResponse</name>
@@ -30,45 +69,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="605" column="3" bodyfile="include/dpp/httplib.h" bodystart="605" bodyend="608"/>
       </memberdef>
-      <memberdef kind="typedef" id="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" prot="public" static="no">
-        <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
-        <definition>using httplib::Server::Handler =  std::function&lt;void(const Request &amp;, Response &amp;)&gt;</definition>
-        <argsstring></argsstring>
-        <name>Handler</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="600" column="3" bodyfile="include/dpp/httplib.h" bodystart="600" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" prot="public" static="no">
-        <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;, std::exception &amp;e)&gt;</type>
-        <definition>using httplib::Server::ExceptionHandler =  std::function&lt;void(const Request &amp;, Response &amp;, std::exception &amp;e)&gt;</definition>
-        <argsstring></argsstring>
-        <name>ExceptionHandler</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="602" column="3" bodyfile="include/dpp/httplib.h" bodystart="603" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" prot="public" static="no">
-        <type>std::function&lt; <ref refid="classhttplib_1_1_server_1a68cf8c175834bde61120ac4216ea943b" kindref="member">HandlerResponse</ref>(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
-        <definition>using httplib::Server::HandlerWithResponse =  std::function&lt;HandlerResponse(const Request &amp;, Response &amp;)&gt;</definition>
-        <argsstring></argsstring>
-        <name>HandlerWithResponse</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="609" column="3" bodyfile="include/dpp/httplib.h" bodystart="610" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;, const <ref refid="classhttplib_1_1_content_reader" kindref="compound">ContentReader</ref> &amp;content_reader)&gt;</type>
         <definition>using httplib::Server::HandlerWithContentReader =  std::function&lt;void( const Request &amp;, Response &amp;, const ContentReader &amp;content_reader)&gt;</definition>
@@ -82,18 +82,18 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="612" column="3" bodyfile="include/dpp/httplib.h" bodystart="613" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" prot="public" static="no">
-        <type>std::function&lt; int(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
-        <definition>using httplib::Server::Expect100ContinueHandler =  std::function&lt;int(const Request &amp;, Response &amp;)&gt;</definition>
+      <memberdef kind="typedef" id="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" prot="public" static="no">
+        <type>std::function&lt; <ref refid="classhttplib_1_1_server_1a68cf8c175834bde61120ac4216ea943b" kindref="member">HandlerResponse</ref>(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
+        <definition>using httplib::Server::HandlerWithResponse =  std::function&lt;HandlerResponse(const Request &amp;, Response &amp;)&gt;</definition>
         <argsstring></argsstring>
-        <name>Expect100ContinueHandler</name>
+        <name>HandlerWithResponse</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="615" column="3" bodyfile="include/dpp/httplib.h" bodystart="616" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="609" column="3" bodyfile="include/dpp/httplib.h" bodystart="610" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
@@ -140,18 +140,33 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a8bc06c5e7e93632a22db8fd35f68b4a1" prot="protected" static="no" mutable="no">
-        <type>std::atomic&lt; socket_t &gt;</type>
-        <definition>std::atomic&lt;socket_t&gt; httplib::Server::svr_sock_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a5a100e3e30db5c877c093c035b434a0e" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::Server::idle_interval_sec_</definition>
         <argsstring></argsstring>
-        <name>svr_sock_</name>
+        <name>idle_interval_sec_</name>
+        <initializer>=  0</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="703" column="15" bodyfile="include/dpp/httplib.h" bodystart="703" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="710" column="10" bodyfile="include/dpp/httplib.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a29c76072511d044af75f81140e7ae34e" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::Server::idle_interval_usec_</definition>
+        <argsstring></argsstring>
+        <name>idle_interval_usec_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="711" column="10" bodyfile="include/dpp/httplib.h" bodystart="711" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1a2a39446892282230d483cd137c56e4f7" prot="protected" static="no" mutable="no">
         <type>size_t</type>
@@ -181,6 +196,20 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="705" column="10" bodyfile="include/dpp/httplib.h" bodystart="705" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1aef94224ccf466318570d0309faa6c721" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t httplib::Server::payload_max_length_</definition>
+        <argsstring></argsstring>
+        <name>payload_max_length_</name>
+        <initializer>=  ((std::numeric_limits&lt;size_t&gt;::max)())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="712" column="10" bodyfile="include/dpp/httplib.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1ac9f203c13fe12f2ecb04386df44f6081" prot="protected" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t httplib::Server::read_timeout_sec_</definition>
@@ -208,6 +237,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="707" column="10" bodyfile="include/dpp/httplib.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a8bc06c5e7e93632a22db8fd35f68b4a1" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; socket_t &gt;</type>
+        <definition>std::atomic&lt;socket_t&gt; httplib::Server::svr_sock_</definition>
+        <argsstring></argsstring>
+        <name>svr_sock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="703" column="15" bodyfile="include/dpp/httplib.h" bodystart="703" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1a30362cb23ea93927768bc2a1a93e61bb" prot="protected" static="no" mutable="no">
         <type>time_t</type>
@@ -237,50 +279,22 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="709" column="10" bodyfile="include/dpp/httplib.h" bodystart="709" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a5a100e3e30db5c877c093c035b434a0e" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::Server::idle_interval_sec_</definition>
-        <argsstring></argsstring>
-        <name>idle_interval_sec_</name>
-        <initializer>=  0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="710" column="10" bodyfile="include/dpp/httplib.h" bodystart="710" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a29c76072511d044af75f81140e7ae34e" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::Server::idle_interval_usec_</definition>
-        <argsstring></argsstring>
-        <name>idle_interval_usec_</name>
-        <initializer>=  0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="711" column="10" bodyfile="include/dpp/httplib.h" bodystart="711" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1aef94224ccf466318570d0309faa6c721" prot="protected" static="no" mutable="no">
-        <type>size_t</type>
-        <definition>size_t httplib::Server::payload_max_length_</definition>
-        <argsstring></argsstring>
-        <name>payload_max_length_</name>
-        <initializer>=  ((std::numeric_limits&lt;size_t&gt;::max)())</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="712" column="10" bodyfile="include/dpp/httplib.h" bodystart="712" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhttplib_1_1_server_1ae7b4bd019468059aa09947526f95b152" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int httplib::Server::address_family_</definition>
+        <argsstring></argsstring>
+        <name>address_family_</name>
+        <initializer>= AF_UNSPEC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="786" column="7" bodyfile="include/dpp/httplib.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1a5634d1fde80b467d3e42680a098d944d" prot="private" static="no" mutable="no">
         <type>std::vector&lt; MountPointEntry &gt;</type>
         <definition>std::vector&lt;MountPointEntry&gt; httplib::Server::base_dirs_</definition>
@@ -294,18 +308,70 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="764" column="15" bodyfile="include/dpp/httplib.h" bodystart="764" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a294c8e913e0146e2701e9c17b4552f0f" prot="private" static="no" mutable="no">
-        <type>std::atomic&lt; bool &gt;</type>
-        <definition>std::atomic&lt;bool&gt; httplib::Server::is_running_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a1a2a7ccfd32db528b82588f2e3fac19c" prot="private" static="no" mutable="no">
+        <type>Handlers</type>
+        <definition>Handlers httplib::Server::delete_handlers_</definition>
         <argsstring></argsstring>
-        <name>is_running_</name>
+        <name>delete_handlers_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="766" column="15" bodyfile="include/dpp/httplib.h" bodystart="766" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="776" column="12" bodyfile="include/dpp/httplib.h" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a6cb15bfc1025c672c6b6b64cec7dd2de" prot="private" static="no" mutable="no">
+        <type>HandlersForContentReader</type>
+        <definition>HandlersForContentReader httplib::Server::delete_handlers_for_content_reader_</definition>
+        <argsstring></argsstring>
+        <name>delete_handlers_for_content_reader_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="777" column="28" bodyfile="include/dpp/httplib.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a1f36f29e6eed3b18b5f0fc32ca6f7654" prot="private" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
+        <definition>HandlerWithResponse httplib::Server::error_handler_</definition>
+        <argsstring></argsstring>
+        <name>error_handler_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="779" column="23" bodyfile="include/dpp/httplib.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a9cc812f8f81679580c9a1b9ce25fa69e" prot="private" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" kindref="member">ExceptionHandler</ref></type>
+        <definition>ExceptionHandler httplib::Server::exception_handler_</definition>
+        <argsstring></argsstring>
+        <name>exception_handler_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="780" column="20" bodyfile="include/dpp/httplib.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a00d432af06ea4de39934020883be2117" prot="private" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" kindref="member">Expect100ContinueHandler</ref></type>
+        <definition>Expect100ContinueHandler httplib::Server::expect_100_continue_handler_</definition>
+        <argsstring></argsstring>
+        <name>expect_100_continue_handler_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="784" column="28" bodyfile="include/dpp/httplib.h" bodystart="784" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1aa336decd371629e075bd0aa17167fcd6" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, std::string &gt;</type>
@@ -346,57 +412,44 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="769" column="12" bodyfile="include/dpp/httplib.h" bodystart="769" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a251316c55dd62d86bd58392eaba35afe" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a294c8e913e0146e2701e9c17b4552f0f" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; httplib::Server::is_running_</definition>
+        <argsstring></argsstring>
+        <name>is_running_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="766" column="15" bodyfile="include/dpp/httplib.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a5213a394fa9849f4710a5e26081d129f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
+        <definition>Logger httplib::Server::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="783" column="10" bodyfile="include/dpp/httplib.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1af3181bdeb88440f6abb5a595ceb41b04" prot="private" static="no" mutable="no">
         <type>Handlers</type>
-        <definition>Handlers httplib::Server::post_handlers_</definition>
+        <definition>Handlers httplib::Server::options_handlers_</definition>
         <argsstring></argsstring>
-        <name>post_handlers_</name>
+        <name>options_handlers_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="770" column="12" bodyfile="include/dpp/httplib.h" bodystart="770" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a52c52ae3e743e86a23826bbb79d14005" prot="private" static="no" mutable="no">
-        <type>HandlersForContentReader</type>
-        <definition>HandlersForContentReader httplib::Server::post_handlers_for_content_reader_</definition>
-        <argsstring></argsstring>
-        <name>post_handlers_for_content_reader_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="771" column="28" bodyfile="include/dpp/httplib.h" bodystart="771" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1af1535ba048469823646a37d8462577c9" prot="private" static="no" mutable="no">
-        <type>Handlers</type>
-        <definition>Handlers httplib::Server::put_handlers_</definition>
-        <argsstring></argsstring>
-        <name>put_handlers_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="772" column="12" bodyfile="include/dpp/httplib.h" bodystart="772" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1af603bc50c785a1cfef3618499ba74b3a" prot="private" static="no" mutable="no">
-        <type>HandlersForContentReader</type>
-        <definition>HandlersForContentReader httplib::Server::put_handlers_for_content_reader_</definition>
-        <argsstring></argsstring>
-        <name>put_handlers_for_content_reader_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="773" column="28" bodyfile="include/dpp/httplib.h" bodystart="773" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="778" column="12" bodyfile="include/dpp/httplib.h" bodystart="778" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1ac8f540c50353fa35b4e8d2b668f33f59" prot="private" static="no" mutable="no">
         <type>Handlers</type>
@@ -424,83 +477,31 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="775" column="28" bodyfile="include/dpp/httplib.h" bodystart="775" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a1a2a7ccfd32db528b82588f2e3fac19c" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a251316c55dd62d86bd58392eaba35afe" prot="private" static="no" mutable="no">
         <type>Handlers</type>
-        <definition>Handlers httplib::Server::delete_handlers_</definition>
+        <definition>Handlers httplib::Server::post_handlers_</definition>
         <argsstring></argsstring>
-        <name>delete_handlers_</name>
+        <name>post_handlers_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="776" column="12" bodyfile="include/dpp/httplib.h" bodystart="776" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="770" column="12" bodyfile="include/dpp/httplib.h" bodystart="770" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a6cb15bfc1025c672c6b6b64cec7dd2de" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a52c52ae3e743e86a23826bbb79d14005" prot="private" static="no" mutable="no">
         <type>HandlersForContentReader</type>
-        <definition>HandlersForContentReader httplib::Server::delete_handlers_for_content_reader_</definition>
+        <definition>HandlersForContentReader httplib::Server::post_handlers_for_content_reader_</definition>
         <argsstring></argsstring>
-        <name>delete_handlers_for_content_reader_</name>
+        <name>post_handlers_for_content_reader_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="777" column="28" bodyfile="include/dpp/httplib.h" bodystart="777" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1af3181bdeb88440f6abb5a595ceb41b04" prot="private" static="no" mutable="no">
-        <type>Handlers</type>
-        <definition>Handlers httplib::Server::options_handlers_</definition>
-        <argsstring></argsstring>
-        <name>options_handlers_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="778" column="12" bodyfile="include/dpp/httplib.h" bodystart="778" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a1f36f29e6eed3b18b5f0fc32ca6f7654" prot="private" static="no" mutable="no">
-        <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
-        <definition>HandlerWithResponse httplib::Server::error_handler_</definition>
-        <argsstring></argsstring>
-        <name>error_handler_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="779" column="23" bodyfile="include/dpp/httplib.h" bodystart="779" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a9cc812f8f81679580c9a1b9ce25fa69e" prot="private" static="no" mutable="no">
-        <type><ref refid="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" kindref="member">ExceptionHandler</ref></type>
-        <definition>ExceptionHandler httplib::Server::exception_handler_</definition>
-        <argsstring></argsstring>
-        <name>exception_handler_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="780" column="20" bodyfile="include/dpp/httplib.h" bodystart="780" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a32f84250edf87582331cee1ae5afa138" prot="private" static="no" mutable="no">
-        <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
-        <definition>HandlerWithResponse httplib::Server::pre_routing_handler_</definition>
-        <argsstring></argsstring>
-        <name>pre_routing_handler_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="781" column="23" bodyfile="include/dpp/httplib.h" bodystart="781" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="771" column="28" bodyfile="include/dpp/httplib.h" bodystart="771" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1a3808fcfd568f9967c28983fb12213582" prot="private" static="no" mutable="no">
         <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
@@ -515,59 +516,44 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="782" column="11" bodyfile="include/dpp/httplib.h" bodystart="782" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a5213a394fa9849f4710a5e26081d129f" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
-        <definition>Logger httplib::Server::logger_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a32f84250edf87582331cee1ae5afa138" prot="private" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
+        <definition>HandlerWithResponse httplib::Server::pre_routing_handler_</definition>
         <argsstring></argsstring>
-        <name>logger_</name>
+        <name>pre_routing_handler_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="783" column="10" bodyfile="include/dpp/httplib.h" bodystart="783" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="781" column="23" bodyfile="include/dpp/httplib.h" bodystart="781" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a00d432af06ea4de39934020883be2117" prot="private" static="no" mutable="no">
-        <type><ref refid="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" kindref="member">Expect100ContinueHandler</ref></type>
-        <definition>Expect100ContinueHandler httplib::Server::expect_100_continue_handler_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1af1535ba048469823646a37d8462577c9" prot="private" static="no" mutable="no">
+        <type>Handlers</type>
+        <definition>Handlers httplib::Server::put_handlers_</definition>
         <argsstring></argsstring>
-        <name>expect_100_continue_handler_</name>
+        <name>put_handlers_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="784" column="28" bodyfile="include/dpp/httplib.h" bodystart="784" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="772" column="12" bodyfile="include/dpp/httplib.h" bodystart="772" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1ae7b4bd019468059aa09947526f95b152" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int httplib::Server::address_family_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1af603bc50c785a1cfef3618499ba74b3a" prot="private" static="no" mutable="no">
+        <type>HandlersForContentReader</type>
+        <definition>HandlersForContentReader httplib::Server::put_handlers_for_content_reader_</definition>
         <argsstring></argsstring>
-        <name>address_family_</name>
-        <initializer>= AF_UNSPEC</initializer>
+        <name>put_handlers_for_content_reader_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="786" column="7" bodyfile="include/dpp/httplib.h" bodystart="786" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_server_1a826e59666e8b0b26c1a3843473c34e56" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool httplib::Server::tcp_nodelay_</definition>
-        <argsstring></argsstring>
-        <name>tcp_nodelay_</name>
-        <initializer>=  false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="787" column="8" bodyfile="include/dpp/httplib.h" bodystart="787" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="773" column="28" bodyfile="include/dpp/httplib.h" bodystart="773" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_server_1a9be7e79372d3659b4ff2d78ce7f09df8" prot="private" static="no" mutable="no">
         <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
@@ -582,6 +568,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="788" column="17" bodyfile="include/dpp/httplib.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_server_1a826e59666e8b0b26c1a3843473c34e56" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::Server::tcp_nodelay_</definition>
+        <argsstring></argsstring>
+        <name>tcp_nodelay_</name>
+        <initializer>=  false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="787" column="8" bodyfile="include/dpp/httplib.h" bodystart="787" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -611,18 +611,145 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="620" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1addd9edfcde3b07e4844ce81d2801a032" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
-        <definition>virtual bool httplib::Server::is_valid</definition>
-        <argsstring>() const</argsstring>
-        <name>is_valid</name>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a0aa8209ee4fe36ffb42302836214d159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int httplib::Server::bind_to_any_port</definition>
+        <argsstring>(const char *host, int socket_flags=0)</argsstring>
+        <name>bind_to_any_port</name>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>socket_flags</declname>
+          <defval>0</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="622" column="16"/>
+        <location file="include/dpp/httplib.h" line="688" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1acf36d16b4004a4a7deba69e695b1b48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::bind_to_port</definition>
+        <argsstring>(const char *host, int port, int socket_flags=0)</argsstring>
+        <name>bind_to_port</name>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>socket_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="687" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a57f9e5b3cffa12d0a252d7b85b07bef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Delete</definition>
+        <argsstring>(const char *pattern, Handler handler)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="641" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1ad2dd70569276f98ff1768c54064c6884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Delete</definition>
+        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="643" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a91356756033710b2de494ebff4ce749a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Delete</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="642" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a97aa616f8252a4a416647fa38a5f2c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Delete</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="644" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1ac989dfa5f91ca6a6a6fe05afbd5b1455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
@@ -670,64 +797,49 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="625" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a87525a7cd8845124ccd30b5d6d30dd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Post</definition>
-        <argsstring>(const char *pattern, Handler handler)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a93a632ffae8eea0380daaac719cba06c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::is_running</definition>
+        <argsstring>() const</argsstring>
+        <name>is_running</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="626" column="10"/>
+        <location file="include/dpp/httplib.h" line="693" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a910dd7da997c757262ab13239b0dd350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Post</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
+      <memberdef kind="function" id="classhttplib_1_1_server_1addd9edfcde3b07e4844ce81d2801a032" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool httplib::Server::is_valid</definition>
+        <argsstring>() const</argsstring>
+        <name>is_valid</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="627" column="10"/>
+        <location file="include/dpp/httplib.h" line="622" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a73ec20cee81e29f1daa765abedbb8e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Post</definition>
-        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
-        <name>Post</name>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a8249e88ea3730e87ec8ed1f9a717220f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::listen</definition>
+        <argsstring>(const char *host, int port, int socket_flags=0)</argsstring>
+        <name>listen</name>
         <param>
           <type>const char *</type>
-          <declname>pattern</declname>
+          <declname>host</declname>
         </param>
         <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>socket_flags</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -735,308 +847,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="628" column="10"/>
+        <location file="include/dpp/httplib.h" line="691" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a13d7ee6e34a0278a073f8ea111e20944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Post</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a3e50f66dfe531fe18590aa421ef2595f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::listen_after_bind</definition>
+        <argsstring>()</argsstring>
+        <name>listen_after_bind</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="629" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a10832b98c63618b00dd7acf842ba6bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Put</definition>
-        <argsstring>(const char *pattern, Handler handler)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="631" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a0d7c6e25fe0b1492da42f557262af63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Put</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="632" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a0c6c64f39aa67e9bb847391f79672bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Put</definition>
-        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="633" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a86c9af825118e5b50f26a30e2eab4e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Put</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="634" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a5dad24c71c5bf8ddee209473f0d3fdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Patch</definition>
-        <argsstring>(const char *pattern, Handler handler)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="636" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ac18cf37aa0225ed8ba0ce5efcca2b9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Patch</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="637" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a46283011fecabc24758188a466c495ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Patch</definition>
-        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="638" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1af352b5c42dba23759c832468194c2ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Patch</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="639" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a57f9e5b3cffa12d0a252d7b85b07bef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Delete</definition>
-        <argsstring>(const char *pattern, Handler handler)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="641" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a91356756033710b2de494ebff4ce749a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Delete</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="642" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ad2dd70569276f98ff1768c54064c6884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Delete</definition>
-        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="643" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a97aa616f8252a4a416647fa38a5f2c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::Delete</definition>
-        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>pattern</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>pattern_len</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="644" column="10"/>
+        <location file="include/dpp/httplib.h" line="689" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1ad6c25614bab97b5165df8471bbe2fbd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
@@ -1084,6 +908,316 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="647" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a5dad24c71c5bf8ddee209473f0d3fdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Patch</definition>
+        <argsstring>(const char *pattern, Handler handler)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="636" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a46283011fecabc24758188a466c495ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Patch</definition>
+        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="638" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1ac18cf37aa0225ed8ba0ce5efcca2b9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Patch</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="637" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1af352b5c42dba23759c832468194c2ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Patch</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="639" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a87525a7cd8845124ccd30b5d6d30dd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Post</definition>
+        <argsstring>(const char *pattern, Handler handler)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="626" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a73ec20cee81e29f1daa765abedbb8e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Post</definition>
+        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="628" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a910dd7da997c757262ab13239b0dd350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Post</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="627" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a13d7ee6e34a0278a073f8ea111e20944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Post</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="629" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a10832b98c63618b00dd7acf842ba6bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Put</definition>
+        <argsstring>(const char *pattern, Handler handler)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="631" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a0c6c64f39aa67e9bb847391f79672bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Put</definition>
+        <argsstring>(const char *pattern, HandlerWithContentReader handler)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="633" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a0d7c6e25fe0b1492da42f557262af63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Put</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, Handler handler)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="632" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a86c9af825118e5b50f26a30e2eab4e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::Put</definition>
+        <argsstring>(const char *pattern, size_t pattern_len, HandlerWithContentReader handler)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pattern_len</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a494a53d50a549a0e292fdf4485a5b5f8" kindref="member">HandlerWithContentReader</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="634" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1aeb6dd931cac3055c6296d9f7499d270b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::remove_mount_point</definition>
+        <argsstring>(const char *mount_point)</argsstring>
+        <name>remove_mount_point</name>
+        <param>
+          <type>const char *</type>
+          <declname>mount_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="652" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a964e626f335e98b5cd20902cf8088d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_address_family</definition>
+        <argsstring>(int family)</argsstring>
+        <name>set_address_family</name>
+        <param>
+          <type>int</type>
+          <declname>family</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="666" column="10"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1aa6104f886fc65a482989e75bb351a263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool httplib::Server::set_base_dir</definition>
@@ -1106,23 +1240,14 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="649" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1aad9dfd1fbea35b96766cec4bad877d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::set_mount_point</definition>
-        <argsstring>(const char *mount_point, const char *dir, Headers headers=Headers())</argsstring>
-        <name>set_mount_point</name>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a76dfb4c984a5b96aedb839d19c8f86d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_error_handler</definition>
+        <argsstring>(Handler handler)</argsstring>
+        <name>set_error_handler</name>
         <param>
-          <type>const char *</type>
-          <declname>mount_point</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>dir</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
-          <declname>headers</declname>
-          <defval><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref>()</defval>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1130,16 +1255,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="650" column="8"/>
+        <location file="include/dpp/httplib.h" line="658" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1aeb6dd931cac3055c6296d9f7499d270b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::remove_mount_point</definition>
-        <argsstring>(const char *mount_point)</argsstring>
-        <name>remove_mount_point</name>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a2811feccb162bc6da49b4abe5b82aa62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_error_handler</definition>
+        <argsstring>(HandlerWithResponse handler)</argsstring>
+        <name>set_error_handler</name>
         <param>
-          <type>const char *</type>
-          <declname>mount_point</declname>
+          <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
+          <declname>handler</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1147,7 +1272,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="652" column="8"/>
+        <location file="include/dpp/httplib.h" line="657" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1ad66316cc550d27081398c69be8e38935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_exception_handler</definition>
+        <argsstring>(ExceptionHandler handler)</argsstring>
+        <name>set_exception_handler</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" kindref="member">ExceptionHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="659" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1ada7a1b8419547c9ea72f21ecb6d1f2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_expect_100_continue_handler</definition>
+        <argsstring>(Expect100ContinueHandler handler)</argsstring>
+        <name>set_expect_100_continue_handler</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" kindref="member">Expect100ContinueHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="663" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a28a13496b25651d5422aa8df0724a92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
@@ -1187,14 +1346,22 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="655" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a2811feccb162bc6da49b4abe5b82aa62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1aee285a502bbfa6c5ae8e1915c7d4fde4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Rep</type>
+          </param>
+          <param>
+            <type>class Period</type>
+          </param>
+        </templateparamlist>
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_error_handler</definition>
-        <argsstring>(HandlerWithResponse handler)</argsstring>
-        <name>set_error_handler</name>
+        <definition>Server &amp; httplib::Server::set_idle_interval</definition>
+        <argsstring>(const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</argsstring>
+        <name>set_idle_interval</name>
         <param>
-          <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
-          <declname>handler</declname>
+          <type>const std::chrono::duration&lt; Rep, Period &gt; &amp;</type>
+          <declname>duration</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1202,16 +1369,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="657" column="10"/>
+        <location file="include/dpp/httplib.h" line="683" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a76dfb4c984a5b96aedb839d19c8f86d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1a9604f44fb0bd01389635442e4f1f9e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_error_handler</definition>
-        <argsstring>(Handler handler)</argsstring>
-        <name>set_error_handler</name>
+        <definition>Server &amp; httplib::Server::set_idle_interval</definition>
+        <argsstring>(time_t sec, time_t usec=0)</argsstring>
+        <name>set_idle_interval</name>
         <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
+          <type>time_t</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>usec</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1219,143 +1391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="658" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ad66316cc550d27081398c69be8e38935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_exception_handler</definition>
-        <argsstring>(ExceptionHandler handler)</argsstring>
-        <name>set_exception_handler</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a6800f2b075d3b687ef9f96faea5c087b" kindref="member">ExceptionHandler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="659" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a26bbbe58ee42f3eef5703015b16c696a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_pre_routing_handler</definition>
-        <argsstring>(HandlerWithResponse handler)</argsstring>
-        <name>set_pre_routing_handler</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="660" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a9399eb3235f737c934618b9f8f16f7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_post_routing_handler</definition>
-        <argsstring>(Handler handler)</argsstring>
-        <name>set_post_routing_handler</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="661" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ada7a1b8419547c9ea72f21ecb6d1f2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_expect_100_continue_handler</definition>
-        <argsstring>(Expect100ContinueHandler handler)</argsstring>
-        <name>set_expect_100_continue_handler</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_server_1a771b94c22126548bb00e8438738adae2" kindref="member">Expect100ContinueHandler</ref></type>
-          <declname>handler</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="663" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ab3f469bd07871a357da96de772ec7987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_logger</definition>
-        <argsstring>(Logger logger)</argsstring>
-        <name>set_logger</name>
-        <param>
-          <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
-          <declname>logger</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="664" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a964e626f335e98b5cd20902cf8088d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_address_family</definition>
-        <argsstring>(int family)</argsstring>
-        <name>set_address_family</name>
-        <param>
-          <type>int</type>
-          <declname>family</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="666" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a3fcd849f27f63fec7f62a6d8cc7d8435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_tcp_nodelay</definition>
-        <argsstring>(bool on)</argsstring>
-        <name>set_tcp_nodelay</name>
-        <param>
-          <type>bool</type>
-          <declname>on</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="667" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1ac6e87e1cedccef84813a4638694acd5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_socket_options</definition>
-        <argsstring>(SocketOptions socket_options)</argsstring>
-        <name>set_socket_options</name>
-        <param>
-          <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
-          <declname>socket_options</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="668" column="10"/>
+        <location file="include/dpp/httplib.h" line="681" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1af8905c1e99bdc3a0b353b8c3985fe7fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
@@ -1391,19 +1427,14 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="671" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1af9522ea3e32aa5b2e1cb9c7c93cf9473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1ab3f469bd07871a357da96de772ec7987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_read_timeout</definition>
-        <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_read_timeout</name>
+        <definition>Server &amp; httplib::Server::set_logger</definition>
+        <argsstring>(Logger logger)</argsstring>
+        <name>set_logger</name>
         <param>
-          <type>time_t</type>
-          <declname>sec</declname>
-        </param>
-        <param>
-          <type>time_t</type>
-          <declname>usec</declname>
-          <defval>0</defval>
+          <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
+          <declname>logger</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1411,7 +1442,84 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="673" column="10"/>
+        <location file="include/dpp/httplib.h" line="664" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1aad9dfd1fbea35b96766cec4bad877d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::set_mount_point</definition>
+        <argsstring>(const char *mount_point, const char *dir, Headers headers=Headers())</argsstring>
+        <name>set_mount_point</name>
+        <param>
+          <type>const char *</type>
+          <declname>mount_point</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
+          <declname>headers</declname>
+          <defval><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="650" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a4d6c37f9ae370d54513775082340a255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_payload_max_length</definition>
+        <argsstring>(size_t length)</argsstring>
+        <name>set_payload_max_length</name>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="685" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a9399eb3235f737c934618b9f8f16f7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_post_routing_handler</definition>
+        <argsstring>(Handler handler)</argsstring>
+        <name>set_post_routing_handler</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a7dd90fb4275b663feff97966b3581b9e" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="661" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a26bbbe58ee42f3eef5703015b16c696a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_pre_routing_handler</definition>
+        <argsstring>(HandlerWithResponse handler)</argsstring>
+        <name>set_pre_routing_handler</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_server_1a1dff40a6ecd0b29a7b7d850e1666477c" kindref="member">HandlerWithResponse</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="660" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1abd1a933ed52d307f3c6625dbe20f6772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1438,11 +1546,11 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="675" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a286064a2bc6aa22cdd7e022f093deaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1af9522ea3e32aa5b2e1cb9c7c93cf9473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_write_timeout</definition>
+        <definition>Server &amp; httplib::Server::set_read_timeout</definition>
         <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_write_timeout</name>
+        <name>set_read_timeout</name>
         <param>
           <type>time_t</type>
           <declname>sec</declname>
@@ -1458,7 +1566,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="677" column="10"/>
+        <location file="include/dpp/httplib.h" line="673" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1ac6e87e1cedccef84813a4638694acd5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_socket_options</definition>
+        <argsstring>(SocketOptions socket_options)</argsstring>
+        <name>set_socket_options</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
+          <declname>socket_options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="668" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a3fcd849f27f63fec7f62a6d8cc7d8435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
+        <definition>Server &amp; httplib::Server::set_tcp_nodelay</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>set_tcp_nodelay</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="667" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a4b23a94ce77ac1ede2c5b67a6b369064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1485,11 +1627,11 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="679" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a9604f44fb0bd01389635442e4f1f9e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1a286064a2bc6aa22cdd7e022f093deaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_idle_interval</definition>
+        <definition>Server &amp; httplib::Server::set_write_timeout</definition>
         <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_idle_interval</name>
+        <name>set_write_timeout</name>
         <param>
           <type>time_t</type>
           <declname>sec</declname>
@@ -1505,149 +1647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="681" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1aee285a502bbfa6c5ae8e1915c7d4fde4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Rep</type>
-          </param>
-          <param>
-            <type>class Period</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_idle_interval</definition>
-        <argsstring>(const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</argsstring>
-        <name>set_idle_interval</name>
-        <param>
-          <type>const std::chrono::duration&lt; Rep, Period &gt; &amp;</type>
-          <declname>duration</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="683" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a4d6c37f9ae370d54513775082340a255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_server" kindref="compound">Server</ref> &amp;</type>
-        <definition>Server &amp; httplib::Server::set_payload_max_length</definition>
-        <argsstring>(size_t length)</argsstring>
-        <name>set_payload_max_length</name>
-        <param>
-          <type>size_t</type>
-          <declname>length</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="685" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1acf36d16b4004a4a7deba69e695b1b48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::bind_to_port</definition>
-        <argsstring>(const char *host, int port, int socket_flags=0)</argsstring>
-        <name>bind_to_port</name>
-        <param>
-          <type>const char *</type>
-          <declname>host</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>port</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>socket_flags</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="687" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a0aa8209ee4fe36ffb42302836214d159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int httplib::Server::bind_to_any_port</definition>
-        <argsstring>(const char *host, int socket_flags=0)</argsstring>
-        <name>bind_to_any_port</name>
-        <param>
-          <type>const char *</type>
-          <declname>host</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>socket_flags</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="688" column="7"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a3e50f66dfe531fe18590aa421ef2595f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::listen_after_bind</definition>
-        <argsstring>()</argsstring>
-        <name>listen_after_bind</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="689" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a8249e88ea3730e87ec8ed1f9a717220f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::listen</definition>
-        <argsstring>(const char *host, int port, int socket_flags=0)</argsstring>
-        <name>listen</name>
-        <param>
-          <type>const char *</type>
-          <declname>host</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>port</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>socket_flags</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="691" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a93a632ffae8eea0380daaac719cba06c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::is_running</definition>
-        <argsstring>() const</argsstring>
-        <name>is_running</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="693" column="8"/>
+        <location file="include/dpp/httplib.h" line="677" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a0f2a6a638ad99012886c87c9786a43b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1695,6 +1695,60 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhttplib_1_1_server_1a99fb8f2e56464f038017db151888f521" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::Server::apply_ranges</definition>
+        <argsstring>(const Request &amp;req, Response &amp;res, std::string &amp;content_type, std::string &amp;boundary)</argsstring>
+        <name>apply_ranges</name>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>content_type</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="734" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a7ec358fcdbd3cf0e809c84c154da04fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int httplib::Server::bind_internal</definition>
+        <argsstring>(const char *host, int port, int socket_flags)</argsstring>
+        <name>bind_internal</name>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>socket_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="721" column="7"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a01c0fdeef827afd43609b939ed1d4db8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>socket_t</type>
         <definition>socket_t httplib::Server::create_server_socket</definition>
@@ -1723,95 +1777,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="719" column="12"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a7ec358fcdbd3cf0e809c84c154da04fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int httplib::Server::bind_internal</definition>
-        <argsstring>(const char *host, int port, int socket_flags)</argsstring>
-        <name>bind_internal</name>
-        <param>
-          <type>const char *</type>
-          <declname>host</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>port</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>socket_flags</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="721" column="7"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a294f20bcfc35d82236ab92b76c16d862" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::listen_internal</definition>
-        <argsstring>()</argsstring>
-        <name>listen_internal</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="722" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1affee90a82135504bd0945a22d9bf16f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::routing</definition>
-        <argsstring>(Request &amp;req, Response &amp;res, Stream &amp;strm)</argsstring>
-        <name>routing</name>
-        <param>
-          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="724" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a49a447f1c1304873df518178cbd51c5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::handle_file_request</definition>
-        <argsstring>(const Request &amp;req, Response &amp;res, bool head=false)</argsstring>
-        <name>handle_file_request</name>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>head</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="725" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a163837520a6811818a0f9ccb71ef863a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1867,6 +1832,45 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="729" column="3"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a49a447f1c1304873df518178cbd51c5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::handle_file_request</definition>
+        <argsstring>(const Request &amp;req, Response &amp;res, bool head=false)</argsstring>
+        <name>handle_file_request</name>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="725" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a294f20bcfc35d82236ab92b76c16d862" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::listen_internal</definition>
+        <argsstring>()</argsstring>
+        <name>listen_internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="722" column="8"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1ae8ef1891cd19a609fe583b3b63b025ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool httplib::Server::parse_request_line</definition>
@@ -1888,55 +1892,14 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="733" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a99fb8f2e56464f038017db151888f521" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::Server::apply_ranges</definition>
-        <argsstring>(const Request &amp;req, Response &amp;res, std::string &amp;content_type, std::string &amp;boundary)</argsstring>
-        <name>apply_ranges</name>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>content_type</declname>
-        </param>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>boundary</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="734" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a90636275a804067e36ffd5e3d310e86a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1a114ba8324e43dbd6240b68ca66f4b6be" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
-        <definition>bool httplib::Server::write_response</definition>
-        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res)</argsstring>
-        <name>write_response</name>
+        <definition>virtual bool httplib::Server::process_and_close_socket</definition>
+        <argsstring>(socket_t sock)</argsstring>
+        <name>process_and_close_socket</name>
         <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>close_connection</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
+          <type>socket_t</type>
+          <declname>sock</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1944,102 +1907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="736" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a1e7f1269fb97140ed003e6e1f64210c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::write_response_with_content</definition>
-        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res)</argsstring>
-        <name>write_response_with_content</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>close_connection</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="738" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a01c6136577d21b708780a9e42de992d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::write_response_core</definition>
-        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res, bool need_apply_ranges)</argsstring>
-        <name>write_response_core</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>close_connection</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>need_apply_ranges</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="740" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1aef004bcdc946af56186dd226442691d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::write_content_with_provider</definition>
-        <argsstring>(Stream &amp;strm, const Request &amp;req, Response &amp;res, const std::string &amp;boundary, const std::string &amp;content_type)</argsstring>
-        <name>write_content_with_provider</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>boundary</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="743" column="8"/>
+        <location file="include/dpp/httplib.h" line="757" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a32ad29652062d18383a1a1688892f9f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2065,43 +1933,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="746" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1af0053e85d97391bb7e36b01009140747" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::Server::read_content_with_content_receiver</definition>
-        <argsstring>(Stream &amp;strm, Request &amp;req, Response &amp;res, ContentReceiver receiver, MultipartContentHeader multipart_header, ContentReceiver multipart_receiver)</argsstring>
-        <name>read_content_with_content_receiver</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>receiver</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a252743256dcf78b19df63572307303da" kindref="member">MultipartContentHeader</ref></type>
-          <declname>multipart_header</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>multipart_receiver</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="748" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_server_1a11c926b70b053a62b328d2157eea0c32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2140,14 +1971,34 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="752" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_server_1a114ba8324e43dbd6240b68ca66f4b6be" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classhttplib_1_1_server_1af0053e85d97391bb7e36b01009140747" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>virtual bool httplib::Server::process_and_close_socket</definition>
-        <argsstring>(socket_t sock)</argsstring>
-        <name>process_and_close_socket</name>
+        <definition>bool httplib::Server::read_content_with_content_receiver</definition>
+        <argsstring>(Stream &amp;strm, Request &amp;req, Response &amp;res, ContentReceiver receiver, MultipartContentHeader multipart_header, ContentReceiver multipart_receiver)</argsstring>
+        <name>read_content_with_content_receiver</name>
         <param>
-          <type>socket_t</type>
-          <declname>sock</declname>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a252743256dcf78b19df63572307303da" kindref="member">MultipartContentHeader</ref></type>
+          <declname>multipart_header</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>multipart_receiver</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2155,7 +2006,156 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="757" column="16"/>
+        <location file="include/dpp/httplib.h" line="748" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1affee90a82135504bd0945a22d9bf16f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::routing</definition>
+        <argsstring>(Request &amp;req, Response &amp;res, Stream &amp;strm)</argsstring>
+        <name>routing</name>
+        <param>
+          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="724" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1aef004bcdc946af56186dd226442691d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::write_content_with_provider</definition>
+        <argsstring>(Stream &amp;strm, const Request &amp;req, Response &amp;res, const std::string &amp;boundary, const std::string &amp;content_type)</argsstring>
+        <name>write_content_with_provider</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="743" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a90636275a804067e36ffd5e3d310e86a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::write_response</definition>
+        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res)</argsstring>
+        <name>write_response</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>close_connection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="736" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a01c6136577d21b708780a9e42de992d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::write_response_core</definition>
+        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res, bool need_apply_ranges)</argsstring>
+        <name>write_response_core</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>close_connection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need_apply_ranges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="740" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_server_1a1e7f1269fb97140ed003e6e1f64210c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::Server::write_response_with_content</definition>
+        <argsstring>(Stream &amp;strm, bool close_connection, const Request &amp;req, Response &amp;res)</argsstring>
+        <name>write_response_with_content</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>close_connection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="738" column="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

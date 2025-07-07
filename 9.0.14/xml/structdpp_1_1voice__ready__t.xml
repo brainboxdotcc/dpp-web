@@ -5,33 +5,19 @@
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1voice__ready__t_1a337e1cfce8608d18283913dd94a1cdba" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
-        <definition>class discord_voice_client* dpp::voice_ready_t::voice_client</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
         <argsstring></argsstring>
-        <name>voice_client</name>
+        <name>from</name>
         <briefdescription>
-<para>voice client which is ready </para>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1410" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1410" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1voice__ready__t_1a176e7a9e1db9780c0dbf9a801d86794e" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::voice_ready_t::voice_channel_id</definition>
-        <argsstring></argsstring>
-        <name>voice_channel_id</name>
-        <briefdescription>
-<para>id of voice channel </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1414" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1414" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="64" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -47,19 +33,33 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="58" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="58" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+      <memberdef kind="variable" id="structdpp_1_1voice__ready__t_1a176e7a9e1db9780c0dbf9a801d86794e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::voice_ready_t::voice_channel_id</definition>
         <argsstring></argsstring>
-        <name>from</name>
+        <name>voice_channel_id</name>
         <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
+<para>id of voice channel </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="64" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="64" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1414" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1voice__ready__t_1a337e1cfce8608d18283913dd94a1cdba" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
+        <definition>class discord_voice_client* dpp::voice_ready_t::voice_client</definition>
+        <argsstring></argsstring>
+        <name>voice_client</name>
+        <briefdescription>
+<para>voice client which is ready </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1410" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1410" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

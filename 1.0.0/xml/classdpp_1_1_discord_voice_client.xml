@@ -5,62 +5,6 @@
     <basecompoundref refid="classdpp_1_1_w_s_client" prot="public" virt="non-virtual">dpp::WSClient</basecompoundref>
     <includes local="no">discordvoiceclient.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a1a42ec20c3d15e1f17f3719306e33e5f" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::DiscordVoiceClient::stream_mutex</definition>
-        <argsstring></argsstring>
-        <name>stream_mutex</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Mutex for outbound packet stream </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="77" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="77" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1ac76fe3cd8ffa0124f45a229e02317570" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::DiscordVoiceClient::queue_mutex</definition>
-        <argsstring></argsstring>
-        <name>queue_mutex</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Mutex for message queue </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="80" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="80" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a2ddc6bf779061afe027e490a4076075d" prot="private" static="no" mutable="no">
-        <type>std::deque&lt; std::string &gt;</type>
-        <definition>std::deque&lt;std::string&gt; dpp::DiscordVoiceClient::message_queue</definition>
-        <argsstring></argsstring>
-        <name>message_queue</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Queue of outbound messages </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="83" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="83" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a0aa34037b821df70bd4c666da8ed0a72" prot="private" static="no" mutable="no">
-        <type>std::thread *</type>
-        <definition>std::thread* dpp::DiscordVoiceClient::runner</definition>
-        <argsstring></argsstring>
-        <name>runner</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Thread this connection is executing on </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="86" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="86" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a070b86bbf8f778c160a767e6ce9ff6f6" prot="private" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t dpp::DiscordVoiceClient::connect_time</definition>
@@ -74,6 +18,48 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="92" column="8" bodyfile="include/dpp/discordvoiceclient.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a602afe98b1575f94d13dbaac1ea5abe3" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::DiscordVoiceClient::encode_buffer[65536]</definition>
+        <argsstring>[65536]</argsstring>
+        <name>encode_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding buffer for opus repacketizer and encode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="190" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a151b574585bacd775009e998cd3e465e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::DiscordVoiceClient::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File descriptor for UDP connection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="145" column="5" bodyfile="include/dpp/discordvoiceclient.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1add1a36626af5f2408ee235274c9ab42a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::DiscordVoiceClient::inbuf</definition>
+        <argsstring></argsstring>
+        <name>inbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input buffer. Each string is a received UDP packet. These will usually be RTP. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="122" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a5ee93c9d2d190c98c1edff0a53f8fac5" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -89,33 +75,19 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="97" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="97" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a79ae0a2701170b11e0fb00d67436cadf" prot="private" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::DiscordVoiceClient::port</definition>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a2ddc6bf779061afe027e490a4076075d" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; std::string &gt;</type>
+        <definition>std::deque&lt;std::string&gt; dpp::DiscordVoiceClient::message_queue</definition>
         <argsstring></argsstring>
-        <name>port</name>
+        <name>message_queue</name>
         <briefdescription>
-<para>Port number of UDP/RTP endpoint. </para>
         </briefdescription>
         <detaileddescription>
+<para>Queue of outbound messages </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="102" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="102" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a79c698d6ce4421ffd6073e5269284ae2" prot="private" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::DiscordVoiceClient::ssrc</definition>
-        <argsstring></argsstring>
-        <name>ssrc</name>
-        <briefdescription>
-<para>SSRC value. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="107" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="107" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="83" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a0f365edc1f7309144b20928d3854af30" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -145,20 +117,6 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="117" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="117" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1add1a36626af5f2408ee235274c9ab42a" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; dpp::DiscordVoiceClient::inbuf</definition>
-        <argsstring></argsstring>
-        <name>inbuf</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Input buffer. Each string is a received UDP packet. These will usually be RTP. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="122" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="122" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a07a4f4d33b00d2e751578d1a9d577a9a" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool dpp::DiscordVoiceClient::paused</definition>
@@ -173,33 +131,47 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="126" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="126" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a151b574585bacd775009e998cd3e465e" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::DiscordVoiceClient::fd</definition>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a79ae0a2701170b11e0fb00d67436cadf" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::DiscordVoiceClient::port</definition>
         <argsstring></argsstring>
-        <name>fd</name>
+        <name>port</name>
         <briefdescription>
+<para>Port number of UDP/RTP endpoint. </para>
         </briefdescription>
         <detaileddescription>
-<para>File descriptor for UDP connection </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="145" column="5" bodyfile="include/dpp/discordvoiceclient.h" bodystart="145" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="102" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="102" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a10d6cc449fc1b6ca4c57485b95d0aa9c" prot="private" static="no" mutable="no">
-        <type>struct sockaddr_in</type>
-        <definition>struct sockaddr_in dpp::DiscordVoiceClient::servaddr</definition>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1ac76fe3cd8ffa0124f45a229e02317570" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::DiscordVoiceClient::queue_mutex</definition>
         <argsstring></argsstring>
-        <name>servaddr</name>
+        <name>queue_mutex</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Socket address of voice server </para>
+<para>Mutex for message queue </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="149" column="18" bodyfile="include/dpp/discordvoiceclient.h" bodystart="149" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="80" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a0aa34037b821df70bd4c666da8ed0a72" prot="private" static="no" mutable="no">
+        <type>std::thread *</type>
+        <definition>std::thread* dpp::DiscordVoiceClient::runner</definition>
+        <argsstring></argsstring>
+        <name>runner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thread this connection is executing on </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="86" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1af7d72b594e3309d31455ea1150b80897" prot="private" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -215,6 +187,20 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="155" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="155" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a281bff3cd3d4e4a6fb7afa2a8b6db97e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::sending</definition>
+        <argsstring></argsstring>
+        <name>sending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is set to true if we have started sending audio. When this moves from false to true, this causes the client to send the &apos;talking&apos; notification to the websocket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="172" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a11144909ca686f46fb48046c1f1c782a" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t dpp::DiscordVoiceClient::sequence</definition>
@@ -228,6 +214,48 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="160" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a10d6cc449fc1b6ca4c57485b95d0aa9c" prot="private" static="no" mutable="no">
+        <type>struct sockaddr_in</type>
+        <definition>struct sockaddr_in dpp::DiscordVoiceClient::servaddr</definition>
+        <argsstring></argsstring>
+        <name>servaddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Socket address of voice server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="149" column="18" bodyfile="include/dpp/discordvoiceclient.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a79c698d6ce4421ffd6073e5269284ae2" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::DiscordVoiceClient::ssrc</definition>
+        <argsstring></argsstring>
+        <name>ssrc</name>
+        <briefdescription>
+<para>SSRC value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="107" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a1a42ec20c3d15e1f17f3719306e33e5f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::DiscordVoiceClient::stream_mutex</definition>
+        <argsstring></argsstring>
+        <name>stream_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mutex for outbound packet stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="77" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a6d72310a90e456a93aee0bdcbdd56859" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -243,19 +271,19 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="166" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="166" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a281bff3cd3d4e4a6fb7afa2a8b6db97e" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::sending</definition>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1aecbc4e3b4cbd0fca942af32c64d1fa5a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::DiscordVoiceClient::track_meta</definition>
         <argsstring></argsstring>
-        <name>sending</name>
+        <name>track_meta</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>This is set to true if we have started sending audio. When this moves from false to true, this causes the client to send the &apos;talking&apos; notification to the websocket. </para>
+<para>Meta data associated with each track. Arbitrary string that the user can set via dpp::DiscordVoiceClient::AddMarker </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="172" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="172" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="186" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1ac52eb969dfb56c27d4f2b56b60ac6708" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -271,36 +299,22 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="180" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="180" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1aecbc4e3b4cbd0fca942af32c64d1fa5a" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; dpp::DiscordVoiceClient::track_meta</definition>
-        <argsstring></argsstring>
-        <name>track_meta</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Meta data associated with each track. Arbitrary string that the user can set via dpp::DiscordVoiceClient::AddMarker </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="186" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="186" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a602afe98b1575f94d13dbaac1ea5abe3" prot="private" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::DiscordVoiceClient::encode_buffer[65536]</definition>
-        <argsstring>[65536]</argsstring>
-        <name>encode_buffer</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Encoding buffer for opus repacketizer and encode </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="190" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="190" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1ac287e6e27c3d40972488b16f9388a671" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::DiscordVoiceClient::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="320" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a9a57730172f273c77ce2fb4621b7459d" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
         <definition>class dpp::cluster* dpp::DiscordVoiceClient::creator</definition>
@@ -315,19 +329,63 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="291" column="20" bodyfile="include/dpp/discordvoiceclient.h" bodystart="291" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a5c023e7365ec1f5e1f918b2c5ee772b4" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::terminating</definition>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac6292cb6c5074d4bfdcfda12fe15997b" prot="public" static="no" mutable="no">
+        <type>std::function&lt; int()&gt;</type>
+        <definition>std::function&lt;int()&gt; dpp::SSLClient::custom_readable_fd</definition>
         <argsstring></argsstring>
-        <name>terminating</name>
+        <name>custom_readable_fd</name>
         <briefdescription>
+<para>Attaching an additional file descriptor to this function will send notifications when there is data to read. </para>
         </briefdescription>
         <detaileddescription>
-<para>True when the thread is shutting down </para>
+<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! Returning -1 means that you don&apos;t want to be notified. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="299" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="299" bodyend="-1"/>
+        <location file="include/dpp/sslclient.h" line="96" column="15" bodyfile="include/dpp/sslclient.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a9122566a8d8306a3b1e17eec6cba1584" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_readable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_readable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can read from the custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="110" column="15" bodyfile="include/dpp/sslclient.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ab89687d0e40aac259389a22a1c900444" prot="public" static="no" mutable="no">
+        <type>std::function&lt; int()&gt;</type>
+        <definition>std::function&lt;int()&gt; dpp::SSLClient::custom_writeable_fd</definition>
+        <argsstring></argsstring>
+        <name>custom_writeable_fd</name>
+        <briefdescription>
+<para>Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! You should toggle this to -1 when you do not have anything to write otherwise it&apos;ll keep triggering repeatedly (it is level triggered). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="105" column="15" bodyfile="include/dpp/sslclient.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1acbb60605bfc2a132df49ec23a062bb7c" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_writeable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_writeable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can write to a custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="115" column="15" bodyfile="include/dpp/sslclient.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a7257613f09f1cbf59965422af1fa3295" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -357,6 +415,48 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="305" column="8" bodyfile="include/dpp/discordvoiceclient.h" bodystart="305" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a9be86499028955e446de5c046367e800" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::DiscordVoiceClient::server_id</definition>
+        <argsstring></argsstring>
+        <name>server_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="317" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1aea8985673bee4dac11876ff630f8e048" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::DiscordVoiceClient::sessionid</definition>
+        <argsstring></argsstring>
+        <name>sessionid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discord voice session id </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="314" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a5c023e7365ec1f5e1f918b2c5ee772b4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::terminating</definition>
+        <argsstring></argsstring>
+        <name>terminating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True when the thread is shutting down </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="299" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a0a132f3f3795b5c3bb2d3d5c456c9d12" prot="public" static="no" mutable="no">
         <type>std::thread::native_handle_type</type>
         <definition>std::thread::native_handle_type dpp::DiscordVoiceClient::thread_id</definition>
@@ -385,106 +485,6 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="311" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="311" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1aea8985673bee4dac11876ff630f8e048" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::DiscordVoiceClient::sessionid</definition>
-        <argsstring></argsstring>
-        <name>sessionid</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Discord voice session id </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="314" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="314" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a9be86499028955e446de5c046367e800" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::DiscordVoiceClient::server_id</definition>
-        <argsstring></argsstring>
-        <name>server_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Server ID </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="317" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="317" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1ac287e6e27c3d40972488b16f9388a671" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::DiscordVoiceClient::channel_id</definition>
-        <argsstring></argsstring>
-        <name>channel_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Channel ID </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="320" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="320" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac6292cb6c5074d4bfdcfda12fe15997b" prot="public" static="no" mutable="no">
-        <type>std::function&lt; int()&gt;</type>
-        <definition>std::function&lt;int()&gt; dpp::SSLClient::custom_readable_fd</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_fd</name>
-        <briefdescription>
-<para>Attaching an additional file descriptor to this function will send notifications when there is data to read. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! Returning -1 means that you don&apos;t want to be notified. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="96" column="15" bodyfile="include/dpp/sslclient.h" bodystart="96" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ab89687d0e40aac259389a22a1c900444" prot="public" static="no" mutable="no">
-        <type>std::function&lt; int()&gt;</type>
-        <definition>std::function&lt;int()&gt; dpp::SSLClient::custom_writeable_fd</definition>
-        <argsstring></argsstring>
-        <name>custom_writeable_fd</name>
-        <briefdescription>
-<para>Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! You should toggle this to -1 when you do not have anything to write otherwise it&apos;ll keep triggering repeatedly (it is level triggered). </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="105" column="15" bodyfile="include/dpp/sslclient.h" bodystart="105" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a9122566a8d8306a3b1e17eec6cba1584" prot="public" static="no" mutable="no">
-        <type>std::function&lt; void()&gt;</type>
-        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_readable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can read from the custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="110" column="15" bodyfile="include/dpp/sslclient.h" bodystart="110" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1acbb60605bfc2a132df49ec23a062bb7c" prot="public" static="no" mutable="no">
-        <type>std::function&lt; void()&gt;</type>
-        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_writeable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_writeable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can write to a custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="115" column="15" bodyfile="include/dpp/sslclient.h" bodystart="115" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classdpp_1_1_discord_voice_client_1a64ed87adf6b5149854411fe846d6ae96" prot="public" static="yes" mutable="no">
@@ -502,247 +502,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a5d684d595a7c4b1f8652da67eb488838" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::ThreadRun</definition>
-        <argsstring>()</argsstring>
-        <name>ThreadRun</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Run shard loop under a thread </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="89" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ab81e08629854ed613f82269b06ff3858" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int dpp::DiscordVoiceClient::UDPSend</definition>
-        <argsstring>(const char *data, size_t length)</argsstring>
-        <name>UDPSend</name>
-        <param>
-          <type>const char *</type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>length</declname>
-        </param>
-        <briefdescription>
-<para>Send data to UDP socket immediately. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>data to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>length of data to send </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>int bytes sent. Will return -1 if we cannot send </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="199" column="5"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a20030037ac8484edcf879fbcf360aa8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int dpp::DiscordVoiceClient::UDPRecv</definition>
-        <argsstring>(char *data, size_t max_length)</argsstring>
-        <name>UDPRecv</name>
-        <param>
-          <type>char *</type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>max_length</declname>
-        </param>
-        <briefdescription>
-<para>Receieve data from UDP socket immediately. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>data to receive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>max_length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>size of data receiving buffer </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>int bytes received. -1 if there is an error (e.g. EAGAIN) </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="209" column="5"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1acc86337761486d314ee5fea828d93b20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int dpp::DiscordVoiceClient::WantWrite</definition>
-        <argsstring>()</argsstring>
-        <name>WantWrite</name>
-        <briefdescription>
-<para>This hooks the <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref>, returning the file descriptor if we want to send buffered data, or -1 if there is nothing to send. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>int file descriptor or -1 </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="218" column="5"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a8912aa45c7243ff8d37f47e3b1dfb391" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int dpp::DiscordVoiceClient::WantRead</definition>
-        <argsstring>()</argsstring>
-        <name>WantRead</name>
-        <briefdescription>
-<para>This hooks the <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref>, returning the file descriptor if we want to receive buffered data, or -1 if we are not wanting to receive. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>int file descriptor or -1 </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="227" column="5"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a66e6442f6d4bd6836a75d2c13f80cfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::WriteReady</definition>
-        <argsstring>()</argsstring>
-        <name>WriteReady</name>
-        <briefdescription>
-<para>Called by <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref> when the socket is ready for writing, at this point we pick the head item off the buffer and send it. So long as it doesnt error completely, we pop it off the head of the queue. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="235" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1afc5c1dd2fa91b2abb479e76d85326e99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::ReadReady</definition>
-        <argsstring>()</argsstring>
-        <name>ReadReady</name>
-        <briefdescription>
-<para>Called by <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref> when there is data to be read. At this point we insert that data into the input queue. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="242" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aa5cb3aa6d4b8d763f57a330ae7c2479f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::Send</definition>
-        <argsstring>(const char *packet, size_t len)</argsstring>
-        <name>Send</name>
-        <param>
-          <type>const char *</type>
-          <declname>packet</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>len</declname>
-        </param>
-        <briefdescription>
-<para>Send data to the UDP socket, using the buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>packet</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>packet data </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>len</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>length of packet </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="250" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1abf4a50ac78921c56203f5e2fad6ae3ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::QueueMessage</definition>
-        <argsstring>(const std::string &amp;j, bool to_front=false)</argsstring>
-        <name>QueueMessage</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>to_front</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Queue a message to be sent via the websocket. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The JSON data of the message to be sent </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>to_front</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If set to true, will place the message at the front of the queue not the back (this is for urgent messages such as heartbeat, presence, so they can take precedence over chunk requests etc) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="260" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1afab46a7e355754bf7615af4f3be150c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::DiscordVoiceClient::ClearQueue</definition>
@@ -756,23 +515,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="266" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a9d6fd8320f73dea56a7b0c3655709aba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>size_t</type>
-        <definition>size_t dpp::DiscordVoiceClient::GetQueueSize</definition>
-        <argsstring>()</argsstring>
-        <name>GetQueueSize</name>
-        <briefdescription>
-<para>Get the size of the outbound message queue. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The size of the queue </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="273" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aba40dfeb8917b058607e9aa1604794a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -840,39 +582,55 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="286" column="8"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a9bc3fa414d6fc546990544516c62fc82" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::DiscordVoiceClient::log</definition>
-        <argsstring>(dpp::loglevel severity, const std::string &amp;msg)</argsstring>
-        <name>log</name>
-        <reimplements refid="classdpp_1_1_s_s_l_client_1a00a16a89c1fd318aedb1b4fdd7a582af">log</reimplements>
-        <param>
-          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
-          <declname>severity</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>msg</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a9d6fd8320f73dea56a7b0c3655709aba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t dpp::DiscordVoiceClient::GetQueueSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetQueueSize</name>
         <briefdescription>
+<para>Get the size of the outbound message queue. </para>
         </briefdescription>
         <detaileddescription>
-<para>Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it. <parameterlist kind="param"><parameteritem>
+<para><simplesect kind="return"><para>The size of the queue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="273" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1abf4a50ac78921c56203f5e2fad6ae3ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::QueueMessage</definition>
+        <argsstring>(const std::string &amp;j, bool to_front=false)</argsstring>
+        <name>QueueMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>to_front</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Queue a message to be sent via the websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>severity</parametername>
+<parametername>j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The log level from <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> </para>
+<para>The JSON data of the message to be sent </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>msg</parametername>
+<parametername>to_front</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The log message to output </para>
+<para>If set to true, will place the message at the front of the queue not the back (this is for urgent messages such as heartbeat, presence, so they can take precedence over chunk requests etc) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -880,74 +638,210 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="328" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="260" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1af165a831d056b17d423bca6ad195354e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1afc5c1dd2fa91b2abb479e76d85326e99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>virtual void dpp::DiscordVoiceClient::OneSecondTimer</definition>
+        <definition>void dpp::DiscordVoiceClient::ReadReady</definition>
         <argsstring>()</argsstring>
-        <name>OneSecondTimer</name>
-        <reimplements refid="classdpp_1_1_s_s_l_client_1a7cac59e2f5b38bb1acfd0c1fd0a7a0e9">OneSecondTimer</reimplements>
+        <name>ReadReady</name>
         <briefdescription>
+<para>Called by <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref> when there is data to be read. At this point we insert that data into the input queue. </para>
         </briefdescription>
         <detaileddescription>
-<para>Fires every second from the underlying socket I/O loop, used for sending heartbeats </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="331" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="242" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a6b74c699c50c134d454249099286001a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::IsReady</definition>
-        <argsstring>()</argsstring>
-        <name>IsReady</name>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aa5cb3aa6d4b8d763f57a330ae7c2479f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::Send</definition>
+        <argsstring>(const char *packet, size_t len)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>const char *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
         <briefdescription>
-<para>voice client is ready to stream audio. The voice client is considered ready if it has a secret key. </para>
+<para>Send data to the UDP socket, using the buffer. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if ready to stream audio </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>packet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of packet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="250" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a5d684d595a7c4b1f8652da67eb488838" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::ThreadRun</definition>
+        <argsstring>()</argsstring>
+        <name>ThreadRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run shard loop under a thread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="89" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a20030037ac8484edcf879fbcf360aa8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::DiscordVoiceClient::UDPRecv</definition>
+        <argsstring>(char *data, size_t max_length)</argsstring>
+        <name>UDPRecv</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_length</declname>
+        </param>
+        <briefdescription>
+<para>Receieve data from UDP socket immediately. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to receive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data receiving buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int bytes received. -1 if there is an error (e.g. EAGAIN) </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="339" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="209" column="5"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1afb709366626d9078a43178f5381b8d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::IsConnected</definition>
-        <argsstring>()</argsstring>
-        <name>IsConnected</name>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ab81e08629854ed613f82269b06ff3858" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::DiscordVoiceClient::UDPSend</definition>
+        <argsstring>(const char *data, size_t length)</argsstring>
+        <name>UDPSend</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
         <briefdescription>
-<para>Returns true if the voice client is connected to the websocket. </para>
+<para>Send data to UDP socket immediately. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>True if connected </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to send </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int bytes sent. Will return -1 if we cannot send </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="346" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="199" column="5"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ad5996e0b097f583e3f2eee2648a649db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
-        <definition>dpp::utility::uptime dpp::DiscordVoiceClient::Uptime</definition>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a8912aa45c7243ff8d37f47e3b1dfb391" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::DiscordVoiceClient::WantRead</definition>
         <argsstring>()</argsstring>
-        <name>Uptime</name>
+        <name>WantRead</name>
         <briefdescription>
-<para>Returns the connection time of the voice client. </para>
+<para>This hooks the <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref>, returning the file descriptor if we want to receive buffered data, or -1 if we are not wanting to receive. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref> Detail of how long the voice client has been connected for </para>
+<para><simplesect kind="return"><para>int file descriptor or -1 </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="353" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="227" column="5"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1acc86337761486d314ee5fea828d93b20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::DiscordVoiceClient::WantWrite</definition>
+        <argsstring>()</argsstring>
+        <name>WantWrite</name>
+        <briefdescription>
+<para>This hooks the <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref>, returning the file descriptor if we want to send buffered data, or -1 if there is nothing to send. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int file descriptor or -1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="218" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a66e6442f6d4bd6836a75d2c13f80cfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::WriteReady</definition>
+        <argsstring>()</argsstring>
+        <name>WriteReady</name>
+        <briefdescription>
+<para>Called by <ref refid="classdpp_1_1_s_s_l_client" kindref="compound">SSLClient</ref> when the socket is ready for writing, at this point we pick the head item off the buffer and send it. So long as it doesnt error completely, we pop it off the head of the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="235" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a81dcf1b89d011c662c56c671857cb309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::DiscordVoiceClient::DiscordVoiceClient</definition>
@@ -1041,6 +935,193 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="365" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_w_s_client_1aaf200086f214a78e0d3b83519b892519" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::WSClient::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <reimplements refid="classdpp_1_1_s_s_l_client_1aab00ea04e3a83786c0b428f8f8746b8f">close</reimplements>
+        <briefdescription>
+<para>Close websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/wsclient.h" line="134" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aded5344bfd670f3f8a5881fc874cfe33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::DiscordVoiceClient::DiscoverIP</definition>
+        <argsstring>()</argsstring>
+        <name>DiscoverIP</name>
+        <briefdescription>
+<para>Discord external IP detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Your external IP address </para>
+</simplesect>
+<simplesect kind="note"><para>This is a blocking operation that waits for a single packet from Discord&apos;s voice servers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="507" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a76d1053c9a5513799ebf1f8b7d4c9aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::DiscordVoiceClient::Error</definition>
+        <argsstring>(uint32_t errorcode)</argsstring>
+        <name>Error</name>
+        <reimplements refid="classdpp_1_1_w_s_client_1ad6e829eef167197d2ee0e28d9b19a01c">Error</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>errorcode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle a websocket error. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errorcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error returned from the websocket </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="376" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a86c883435a97b87d43017332333b2a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::GetBytesIn</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytesIn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get total bytes received </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1af9abd52051cee90fd27e3bcff8d674d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::GetBytesOut</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytesOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get total bytes sent </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a8a863a9cc9635d007d6854f42f6d4452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt; std::string &gt; dpp::DiscordVoiceClient::GetMarkerMetadata</definition>
+        <argsstring>()</argsstring>
+        <name>GetMarkerMetadata</name>
+        <briefdescription>
+<para>Get the metdata string associated with each inserted marker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const std::vector&lt;std::string&gt;&amp; list of metadata strings </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="490" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a1f0c086629065b569dcc8e7c7d24ce15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
+        <definition>dpp::utility::uptime dpp::DiscordVoiceClient::GetRemaining</definition>
+        <argsstring>()</argsstring>
+        <name>GetRemaining</name>
+        <briefdescription>
+<para>Get the time remaining to send the audio output buffer in hours:minutes:seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref> length of buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="452" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ad13277b4402d501ba3072c6e270c18b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float dpp::DiscordVoiceClient::GetSecsRemaining</definition>
+        <argsstring>()</argsstring>
+        <name>GetSecsRemaining</name>
+        <briefdescription>
+<para>Get the number of seconds remaining of the audio output buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float number of seconds remaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="434" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a6aa74bf22020d413227570e445b3ae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::DiscordVoiceClient::GetTracksRemaining</definition>
+        <argsstring>()</argsstring>
+        <name>GetTracksRemaining</name>
+        <briefdescription>
+<para>Get the number of tracks remaining in the output buffer. This is calculated by the number of track markers plus one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint32_t Number of tracks in the buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="444" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_w_s_client_1af899d3c6a40df74bf881ee954bd10cf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool dpp::WSClient::HandleBuffer</definition>
+        <argsstring>(std::string &amp;buffer)</argsstring>
+        <name>HandleBuffer</name>
+        <reimplements refid="classdpp_1_1_s_s_l_client_1a2f4314c11b623d94504625274304c83a">HandleBuffer</reimplements>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Processes incoming frames from the SSL socket input buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/wsclient.h" line="129" column="22"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ae559c6891966256b9cc007a75776ccc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>virtual bool dpp::DiscordVoiceClient::HandleFrame</definition>
@@ -1071,25 +1152,26 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="371" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a76d1053c9a5513799ebf1f8b7d4c9aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a2471e45bb3266497118950ba9108851e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>virtual void dpp::DiscordVoiceClient::Error</definition>
-        <argsstring>(uint32_t errorcode)</argsstring>
-        <name>Error</name>
-        <reimplements refid="classdpp_1_1_w_s_client_1ad6e829eef167197d2ee0e28d9b19a01c">Error</reimplements>
+        <definition>void dpp::DiscordVoiceClient::InsertMarker</definition>
+        <argsstring>(const std::string &amp;metadata=&quot;&quot;)</argsstring>
+        <name>InsertMarker</name>
         <param>
-          <type>uint32_t</type>
-          <declname>errorcode</declname>
+          <type>const std::string &amp;</type>
+          <declname>metadata</declname>
+          <defval>&quot;&quot;</defval>
         </param>
         <briefdescription>
+<para>Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indictes the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <ref refid="classdpp_1_1_discord_voice_client_1ab7501791cff4a686a7146bc93fe783f7" kindref="member">dpp::DiscordVoiceClient::SkipToNextMarker</ref> function. </para>
         </briefdescription>
         <detaileddescription>
-<para>Handle a websocket error. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>errorcode</parametername>
+<parametername>metadata</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The error returned from the websocket </para>
+<para>Arbitrary information related to this track </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1097,7 +1179,172 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="376" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="469" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1afb709366626d9078a43178f5381b8d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::IsConnected</definition>
+        <argsstring>()</argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>Returns true if the voice client is connected to the websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if connected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="346" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aa4afaaba9cde7d611f120fcb4a2ea76f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::IsPaused</definition>
+        <argsstring>()</argsstring>
+        <name>IsPaused</name>
+        <briefdescription>
+<para>Returns true if the audio is paused. You can unpause with <ref refid="classdpp_1_1_discord_voice_client_1a7579c606ac7ecf75216e17c9455c3929" kindref="member">dpp::DiscordVoiceClient::PauseAudio</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if paused </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="499" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a773468126375c998753b505f34619ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::IsPlaying</definition>
+        <argsstring>()</argsstring>
+        <name>IsPlaying</name>
+        <briefdescription>
+<para>Returns true if we are playing audio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if audio is playing </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="426" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a6b74c699c50c134d454249099286001a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::DiscordVoiceClient::IsReady</definition>
+        <argsstring>()</argsstring>
+        <name>IsReady</name>
+        <briefdescription>
+<para>voice client is ready to stream audio. The voice client is considered ready if it has a secret key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if ready to stream audio </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="339" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a9bc3fa414d6fc546990544516c62fc82" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::DiscordVoiceClient::log</definition>
+        <argsstring>(dpp::loglevel severity, const std::string &amp;msg)</argsstring>
+        <name>log</name>
+        <reimplements refid="classdpp_1_1_s_s_l_client_1a00a16a89c1fd318aedb1b4fdd7a582af">log</reimplements>
+        <param>
+          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log level from <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="328" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1af165a831d056b17d423bca6ad195354e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::DiscordVoiceClient::OneSecondTimer</definition>
+        <argsstring>()</argsstring>
+        <name>OneSecondTimer</name>
+        <reimplements refid="classdpp_1_1_s_s_l_client_1a7cac59e2f5b38bb1acfd0c1fd0a7a0e9">OneSecondTimer</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fires every second from the underlying socket I/O loop, used for sending heartbeats </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="331" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a7579c606ac7ecf75216e17c9455c3929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::PauseAudio</definition>
+        <argsstring>(bool pause)</argsstring>
+        <name>PauseAudio</name>
+        <param>
+          <type>bool</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+<para>Pause sending of audio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pause</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to pause, false to resume </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="413" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a6c1ea74cfc2543f7e682f3181ff8215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::SSLClient::ReadLoop</definition>
+        <argsstring>()</argsstring>
+        <name>ReadLoop</name>
+        <briefdescription>
+<para>Nonblocking I/O loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="127" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a5b37471f33477db2b849cdcd67b5234f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1169,145 +1416,6 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="406" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a7579c606ac7ecf75216e17c9455c3929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::PauseAudio</definition>
-        <argsstring>(bool pause)</argsstring>
-        <name>PauseAudio</name>
-        <param>
-          <type>bool</type>
-          <declname>pause</declname>
-        </param>
-        <briefdescription>
-<para>Pause sending of audio. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pause</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>True to pause, false to resume </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="413" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ab79604721873cecb401ce8d12d6873bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::StopAudio</definition>
-        <argsstring>()</argsstring>
-        <name>StopAudio</name>
-        <briefdescription>
-<para>Immediately stop all audio. Clears the packet queue. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="419" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a773468126375c998753b505f34619ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::IsPlaying</definition>
-        <argsstring>()</argsstring>
-        <name>IsPlaying</name>
-        <briefdescription>
-<para>Returns true if we are playing audio. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if audio is playing </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="426" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ad13277b4402d501ba3072c6e270c18b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
-        <definition>float dpp::DiscordVoiceClient::GetSecsRemaining</definition>
-        <argsstring>()</argsstring>
-        <name>GetSecsRemaining</name>
-        <briefdescription>
-<para>Get the number of seconds remaining of the audio output buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>float number of seconds remaining </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="434" column="7"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a6aa74bf22020d413227570e445b3ae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::DiscordVoiceClient::GetTracksRemaining</definition>
-        <argsstring>()</argsstring>
-        <name>GetTracksRemaining</name>
-        <briefdescription>
-<para>Get the number of tracks remaining in the output buffer. This is calculated by the number of track markers plus one. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>uint32_t Number of tracks in the buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="444" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a1f0c086629065b569dcc8e7c7d24ce15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
-        <definition>dpp::utility::uptime dpp::DiscordVoiceClient::GetRemaining</definition>
-        <argsstring>()</argsstring>
-        <name>GetRemaining</name>
-        <briefdescription>
-<para>Get the time remaining to send the audio output buffer in hours:minutes:seconds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref> length of buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="452" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a2471e45bb3266497118950ba9108851e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::DiscordVoiceClient::InsertMarker</definition>
-        <argsstring>(const std::string &amp;metadata=&quot;&quot;)</argsstring>
-        <name>InsertMarker</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>metadata</declname>
-          <defval>&quot;&quot;</defval>
-        </param>
-        <briefdescription>
-<para>Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indictes the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <ref refid="classdpp_1_1_discord_voice_client_1ab7501791cff4a686a7146bc93fe783f7" kindref="member">dpp::DiscordVoiceClient::SkipToNextMarker</ref> function. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>metadata</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Arbitrary information related to this track </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="469" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ab7501791cff4a686a7146bc93fe783f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::DiscordVoiceClient::SkipToNextMarker</definition>
@@ -1325,58 +1433,36 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="483" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1a8a863a9cc9635d007d6854f42f6d4452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::vector&lt; std::string &gt;</type>
-        <definition>const std::vector&lt; std::string &gt; dpp::DiscordVoiceClient::GetMarkerMetadata</definition>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ab79604721873cecb401ce8d12d6873bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::DiscordVoiceClient::StopAudio</definition>
         <argsstring>()</argsstring>
-        <name>GetMarkerMetadata</name>
+        <name>StopAudio</name>
         <briefdescription>
-<para>Get the metdata string associated with each inserted marker. </para>
+<para>Immediately stop all audio. Clears the packet queue. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>const std::vector&lt;std::string&gt;&amp; list of metadata strings </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="490" column="19"/>
+        <location file="include/dpp/discordvoiceclient.h" line="419" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aa4afaaba9cde7d611f120fcb4a2ea76f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::DiscordVoiceClient::IsPaused</definition>
+      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1ad5996e0b097f583e3f2eee2648a649db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
+        <definition>dpp::utility::uptime dpp::DiscordVoiceClient::Uptime</definition>
         <argsstring>()</argsstring>
-        <name>IsPaused</name>
+        <name>Uptime</name>
         <briefdescription>
-<para>Returns true if the audio is paused. You can unpause with <ref refid="classdpp_1_1_discord_voice_client_1a7579c606ac7ecf75216e17c9455c3929" kindref="member">dpp::DiscordVoiceClient::PauseAudio</ref>. </para>
+<para>Returns the connection time of the voice client. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if paused </para>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref> Detail of how long the voice client has been connected for </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="499" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_discord_voice_client_1aded5344bfd670f3f8a5881fc874cfe33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::DiscordVoiceClient::DiscoverIP</definition>
-        <argsstring>()</argsstring>
-        <name>DiscoverIP</name>
-        <briefdescription>
-<para>Discord external IP detection. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string Your external IP address </para>
-</simplesect>
-<simplesect kind="note"><para>This is a blocking operation that waits for a single packet from Discord&apos;s voice servers. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="507" column="13"/>
+        <location file="include/dpp/discordvoiceclient.h" line="353" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1_w_s_client_1a18e3e2d3771d3a6ea17401a8caf36b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1406,92 +1492,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/wsclient.h" line="122" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_w_s_client_1af899d3c6a40df74bf881ee954bd10cf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
-        <definition>virtual bool dpp::WSClient::HandleBuffer</definition>
-        <argsstring>(std::string &amp;buffer)</argsstring>
-        <name>HandleBuffer</name>
-        <reimplements refid="classdpp_1_1_s_s_l_client_1a2f4314c11b623d94504625274304c83a">HandleBuffer</reimplements>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>buffer</declname>
-        </param>
-        <briefdescription>
-<para>Processes incoming frames from the SSL socket input buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>buffer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="129" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_w_s_client_1aaf200086f214a78e0d3b83519b892519" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::WSClient::close</definition>
-        <argsstring>()</argsstring>
-        <name>close</name>
-        <reimplements refid="classdpp_1_1_s_s_l_client_1aab00ea04e3a83786c0b428f8f8746b8f">close</reimplements>
-        <briefdescription>
-<para>Close websocket. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="134" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1af9abd52051cee90fd27e3bcff8d674d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::GetBytesOut</definition>
-        <argsstring>()</argsstring>
-        <name>GetBytesOut</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Get total bytes sent </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="85" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a86c883435a97b87d43017332333b2a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::GetBytesIn</definition>
-        <argsstring>()</argsstring>
-        <name>GetBytesIn</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Get total bytes received </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="88" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a6c1ea74cfc2543f7e682f3181ff8215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::SSLClient::ReadLoop</definition>
-        <argsstring>()</argsstring>
-        <name>ReadLoop</name>
-        <briefdescription>
-<para>Nonblocking I/O loop. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="127" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -1542,19 +1542,89 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="41" column="13" bodyfile="include/dpp/sslclient.h" bodystart="41" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a171dadd1d1afc362a632edbbcaa25150" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::obuffer</definition>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1af169f1ac00c59f2a749919d4dfb978bf" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::bytes_in</definition>
         <argsstring></argsstring>
-        <name>obuffer</name>
+        <name>bytes_in</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Output buffer for sending to openssl </para>
+<para>Bytes in </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="44" column="13" bodyfile="include/dpp/sslclient.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/sslclient.h" line="76" column="10" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a2678852573957846f9282be968085deb" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::bytes_out</definition>
+        <argsstring></argsstring>
+        <name>bytes_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bytes out </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="73" column="10" bodyfile="include/dpp/sslclient.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac3a430041c3a03d88411616567cb5a30" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::cipher</definition>
+        <argsstring></argsstring>
+        <name>cipher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSL cipher in use </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="61" column="13" bodyfile="include/dpp/sslclient.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae14b2dfb6828c49d7e88e404b8ce56e5" prot="protected" static="no" mutable="no">
+        <type>SSL_CTX *</type>
+        <definition>SSL_CTX* dpp::SSLClient::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OpenSSL context </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="58" column="9" bodyfile="include/dpp/sslclient.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ad53f1295dc277729511a4653c122cff3" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::hostname</definition>
+        <argsstring></argsstring>
+        <name>hostname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hostname connected to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="67" column="13" bodyfile="include/dpp/sslclient.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae9fdbc996fe0003160b1096329b9c8ba" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::SSLClient::last_tick</definition>
+        <argsstring></argsstring>
+        <name>last_tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For timers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="64" column="8" bodyfile="include/dpp/sslclient.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a5a7c0ad6978157507c525d2076b97244" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -1569,6 +1639,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="49" column="6" bodyfile="include/dpp/sslclient.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a171dadd1d1afc362a632edbbcaa25150" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::obuffer</definition>
+        <argsstring></argsstring>
+        <name>obuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output buffer for sending to openssl </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="44" column="13" bodyfile="include/dpp/sslclient.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a55eab8288050b982ec0741efe58381b9" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -1597,90 +1681,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="55" column="5" bodyfile="include/dpp/sslclient.h" bodystart="55" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae14b2dfb6828c49d7e88e404b8ce56e5" prot="protected" static="no" mutable="no">
-        <type>SSL_CTX *</type>
-        <definition>SSL_CTX* dpp::SSLClient::ctx</definition>
-        <argsstring></argsstring>
-        <name>ctx</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>OpenSSL context </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="58" column="9" bodyfile="include/dpp/sslclient.h" bodystart="58" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac3a430041c3a03d88411616567cb5a30" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::cipher</definition>
-        <argsstring></argsstring>
-        <name>cipher</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>SSL cipher in use </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="61" column="13" bodyfile="include/dpp/sslclient.h" bodystart="61" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae9fdbc996fe0003160b1096329b9c8ba" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::SSLClient::last_tick</definition>
-        <argsstring></argsstring>
-        <name>last_tick</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>For timers </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="64" column="8" bodyfile="include/dpp/sslclient.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ad53f1295dc277729511a4653c122cff3" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::hostname</definition>
-        <argsstring></argsstring>
-        <name>hostname</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Hostname connected to </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="67" column="13" bodyfile="include/dpp/sslclient.h" bodystart="67" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a2678852573957846f9282be968085deb" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::bytes_out</definition>
-        <argsstring></argsstring>
-        <name>bytes_out</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Bytes out </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="73" column="10" bodyfile="include/dpp/sslclient.h" bodystart="73" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1af169f1ac00c59f2a749919d4dfb978bf" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::bytes_in</definition>
-        <argsstring></argsstring>
-        <name>bytes_in</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Bytes in </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="76" column="10" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

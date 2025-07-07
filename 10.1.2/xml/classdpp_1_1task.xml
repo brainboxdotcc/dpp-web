@@ -90,20 +90,6 @@
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="107" column="10" bodyfile="include/dpp/coro/task.h" bodystart="107" bodyend="107"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1task_1a5335593eaebfc5be94fd8d765b373b15" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::task&lt; R &gt;::cleanup</definition>
-        <argsstring>()</argsstring>
-        <name>cleanup</name>
-        <briefdescription>
-<para>Clean up our handle, cancelling any running task. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="112" column="6" bodyfile="include/dpp/coro/task.h" bodystart="112" bodyend="121"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1awaitable_1a7d8e184c4b06848b3e46c780a8bfa5a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
         <definition>auto dpp::awaitable&lt; R  &gt;::abandon</definition>
@@ -121,6 +107,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="239" column="9" bodyfile="include/dpp/coro/awaitable.h" bodystart="641" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1task_1a5335593eaebfc5be94fd8d765b373b15" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::task&lt; R &gt;::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+<para>Clean up our handle, cancelling any running task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="112" column="6" bodyfile="include/dpp/coro/task.h" bodystart="112" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ad920651cfc75f83e7977a8dcd6f32a85" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -224,6 +224,104 @@
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="139" column="1" bodyfile="include/dpp/coro/task.h" bodystart="139" bodyend="139"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1task_1a23ee3394a7c7eee5d8c2fee6f829cb9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::task&lt; R &gt;::~task</definition>
+        <argsstring>()</argsstring>
+        <name>~task</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the handle. If the task is still running, it will be cancelled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="163" column="1" bodyfile="include/dpp/coro/task.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a1e16ffda1db2dcc811334a2ba0c59be3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; R  &gt;::await_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether we already have the result or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="345" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="661" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1task_1a50e182306695d5775e93bb033b58f729" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;&amp;</type>
+        <definition>task &amp;&amp; dpp::task&lt; R &gt;::cancel</definition>
+        <argsstring>() &amp;&amp;noexcept</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>*this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="191" column="6" bodyfile="include/dpp/coro/task.h" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1task_1a34273d4b33e3d3a54354ced1cce9ca4a" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;</type>
+        <definition>task &amp; dpp::task&lt; R &gt;::cancel</definition>
+        <argsstring>() &amp;noexcept</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>*this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="181" column="6" bodyfile="include/dpp/coro/task.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1task_1ac030b9e766ceb3b427e88e926b92b81b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::task&lt; R &gt;::done</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>done</name>
+        <briefdescription>
+<para>Function to check if the task has finished its execution entirely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether the task is finished. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="172" column="7" bodyfile="include/dpp/coro/task.h" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a2e8ac296160fcb2a4f9c9b17f05c19d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::awaitable&lt; R  &gt;::if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</definition>
+        <argsstring>()</argsstring>
+        <name>if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</name>
+        <briefdescription>
+<para>Title :) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>We use this in the destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="305" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="305" bodyend="307"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a1f532c5ceff4fadc0fa9174e80ff183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;</type>
         <definition>task &amp; dpp::task&lt; R &gt;::operator=</definition>
@@ -268,121 +366,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="151" column="6" bodyfile="include/dpp/coro/task.h" bodystart="151" bodyend="156"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1task_1a23ee3394a7c7eee5d8c2fee6f829cb9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>dpp::task&lt; R &gt;::~task</definition>
-        <argsstring>()</argsstring>
-        <name>~task</name>
-        <briefdescription>
-<para>Destructor. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Destroys the handle. If the task is still running, it will be cancelled. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="163" column="1" bodyfile="include/dpp/coro/task.h" bodystart="163" bodyend="165"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1task_1ac030b9e766ceb3b427e88e926b92b81b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::task&lt; R &gt;::done</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>done</name>
-        <briefdescription>
-<para>Function to check if the task has finished its execution entirely. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool Whether the task is finished. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="172" column="7" bodyfile="include/dpp/coro/task.h" bodystart="172" bodyend="174"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1task_1a34273d4b33e3d3a54354ced1cce9ca4a" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;</type>
-        <definition>task &amp; dpp::task&lt; R &gt;::cancel</definition>
-        <argsstring>() &amp;noexcept</argsstring>
-        <name>cancel</name>
-        <briefdescription>
-<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>*this </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="181" column="6" bodyfile="include/dpp/coro/task.h" bodystart="181" bodyend="184"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1task_1a50e182306695d5775e93bb033b58f729" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;&amp;</type>
-        <definition>task &amp;&amp; dpp::task&lt; R &gt;::cancel</definition>
-        <argsstring>() &amp;&amp;noexcept</argsstring>
-        <name>cancel</name>
-        <briefdescription>
-<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>*this </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="191" column="6" bodyfile="include/dpp/coro/task.h" bodystart="191" bodyend="194"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1awaitable_1a2e8ac296160fcb2a4f9c9b17f05c19d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::awaitable&lt; R  &gt;::if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</definition>
-        <argsstring>()</argsstring>
-        <name>if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</name>
-        <briefdescription>
-<para>Title :) </para>
-        </briefdescription>
-        <detaileddescription>
-<para>We use this in the destructor </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="305" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="305" bodyend="307"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::awaitable&lt; R  &gt;::valid</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>valid</name>
-        <briefdescription>
-<para>Check whether this awaitable refers to a valid promise. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool Whether this awaitable refers to a valid promise or not </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="338" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="656" bodyend="658"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1awaitable_1a1e16ffda1db2dcc811334a2ba0c59be3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::awaitable&lt; R  &gt;::await_ready</definition>
-        <argsstring>() const</argsstring>
-        <name>await_ready</name>
-        <briefdescription>
-<para>Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool Whether we already have the result or not </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="345" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="661" bodyend="667"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ae532f5a8ec60af0b49e7c02780f36f0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -473,21 +456,25 @@
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="189" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="189" bodyend="195"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="protected-type">
-      <memberdef kind="typedef" id="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" prot="protected" static="no">
-        <type>detail::promise::promise_base&lt; R &gt;</type>
-        <definition>using dpp::awaitable&lt; R  &gt;::shared_state =  detail::promise::promise_base&lt;R &gt;</definition>
-        <argsstring></argsstring>
-        <name>shared_state</name>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; R  &gt;::valid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>valid</name>
         <briefdescription>
+<para>Check whether this awaitable refers to a valid promise. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether this awaitable refers to a valid promise or not </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="212" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="212" bodyend="-1"/>
+        <location file="include/dpp/coro/awaitable.h" line="338" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="656" bodyend="658"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
       <memberdef kind="typedef" id="classdpp_1_1awaitable_1a41984e48e9df89627f052c27eb1a7be6" prot="protected" static="no">
         <type>R</type>
         <definition>using dpp::awaitable&lt; R  &gt;::result_type =  R</definition>
@@ -501,6 +488,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="218" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" prot="protected" static="no">
+        <type>detail::promise::promise_base&lt; R &gt;</type>
+        <definition>using dpp::awaitable&lt; R  &gt;::shared_state =  detail::promise::promise_base&lt;R &gt;</definition>
+        <argsstring></argsstring>
+        <name>shared_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="212" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="212" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">

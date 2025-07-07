@@ -5,20 +5,6 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; automod_action &gt;</basecompoundref>
     <includes local="no">automod.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1automod__action_1adab530731d417fba8771aaf40884caf9" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a3ad85ab5a039a0c7f46107a02440a14c" kindref="member">automod_action_type</ref></type>
-        <definition>automod_action_type dpp::automod_action::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-<para>Type of action to take. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="252" column="21" bodyfile="include/dpp/automod.h" bodystart="252" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__action_1a2ba5d6d68adc00b34c7d85d5880aca4d" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::automod_action::channel_id</definition>
@@ -61,6 +47,20 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="267" column="10" bodyfile="include/dpp/automod.h" bodystart="267" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__action_1adab530731d417fba8771aaf40884caf9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a3ad85ab5a039a0c7f46107a02440a14c" kindref="member">automod_action_type</ref></type>
+        <definition>automod_action_type dpp::automod_action::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of action to take. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="252" column="21" bodyfile="include/dpp/automod.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structdpp_1_1automod__action_1ac2a996f644692f79ea0bd8bb2b840d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -91,6 +91,29 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="277" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__action_1ae61c5cdd0f12361bdf1d0a5e6ab00d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string dpp::automod_action::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="292" column="21"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__action_1a65214b29f1473da8ad25871deea7a40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__action" kindref="compound">automod_action</ref> &amp;</type>
         <definition>automod_action &amp; dpp::automod_action::fill_from_json</definition>
@@ -120,29 +143,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/automod.h" line="285" column="16"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1automod__action_1ae61c5cdd0f12361bdf1d0a5e6ab00d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>virtual std::string dpp::automod_action::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="292" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

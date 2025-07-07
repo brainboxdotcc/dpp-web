@@ -24,21 +24,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1sku_1a7753ef8d043704fa9adb51db76ca51cc" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63" kindref="member">sku_type</ref></type>
-        <definition>sku_type dpp::sku::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <initializer>{sku_type::SUBSCRIPTION}</initializer>
-        <briefdescription>
-<para>The type of SKU. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sku.h" line="94" column="10" bodyfile="include/dpp/sku.h" bodystart="94" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1sku_1a6ecafe985aa6ca330911f096acb4785a" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::sku::application_id</definition>
@@ -53,6 +38,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sku.h" line="99" column="11" bodyfile="include/dpp/sku.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1sku_1a4cb8096993ee8a385d21e4bc785b5cdb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::sku::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Flags bitmap from <ref refid="namespacedpp_1a8976e5ec3bb1e3550f315a6472fa45d1" kindref="member">dpp::sku_flags</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sku.h" line="114" column="10" bodyfile="include/dpp/sku.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1sku_1a9f0209da072e1b806c01e60b69bda4e4" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -84,35 +99,20 @@
         </inbodydescription>
         <location file="include/dpp/sku.h" line="109" column="13" bodyfile="include/dpp/sku.h" bodystart="109" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1sku_1a4cb8096993ee8a385d21e4bc785b5cdb" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::sku::flags</definition>
+      <memberdef kind="variable" id="classdpp_1_1sku_1a7753ef8d043704fa9adb51db76ca51cc" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63" kindref="member">sku_type</ref></type>
+        <definition>sku_type dpp::sku::type</definition>
         <argsstring></argsstring>
-        <name>flags</name>
-        <initializer>{0}</initializer>
+        <name>type</name>
+        <initializer>{sku_type::SUBSCRIPTION}</initializer>
         <briefdescription>
-<para>Flags bitmap from <ref refid="namespacedpp_1a8976e5ec3bb1e3550f315a6472fa45d1" kindref="member">dpp::sku_flags</ref>. </para>
+<para>The type of SKU. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sku.h" line="114" column="10" bodyfile="include/dpp/sku.h" bodystart="114" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::managed::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
-        <initializer>= {}</initializer>
-        <briefdescription>
-<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+        <location file="include/dpp/sku.h" line="94" column="10" bodyfile="include/dpp/sku.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -240,6 +240,86 @@
         </inbodydescription>
         <location file="include/dpp/sku.h" line="126" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; sku  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1sku" kindref="compound">sku</ref> &amp;</type>
+        <definition>sku  &amp; dpp::json_interface&lt; sku  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1sku_1ab0727af9a3ff813df3cccc034b198156" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63" kindref="member">sku_type</ref></type>
         <definition>sku_type dpp::sku::get_type</definition>
@@ -308,22 +388,37 @@
         </inbodydescription>
         <location file="include/dpp/sku.h" line="154" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr double</type>
-        <definition>constexpr double dpp::managed::get_creation_time</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>get_creation_time</name>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
         <briefdescription>
-<para>Get the creation time of this object according to Discord. </para>
+<para>Comparison operator for comparing two managed objects by id. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -357,68 +452,6 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::managed::operator!=</definition>
-        <argsstring>(const managed &amp;other) const noexcept</argsstring>
-        <name>operator!=</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Comparison operator for comparing two managed objects by id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>other</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other object to compare against </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>true objects are not the same id </para>
-</simplesect>
-<simplesect kind="return"><para>false objects are the same id </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1sku" kindref="compound">sku</ref> &amp;</type>
-        <definition>sku  &amp; dpp::json_interface&lt; sku  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; sku  &gt;::to_json</definition>
@@ -451,39 +484,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; sku  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

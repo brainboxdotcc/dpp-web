@@ -5,19 +5,20 @@
     <basecompoundref refid="classdpp_1_1ssl__connection" prot="public" virt="non-virtual">dpp::ssl_connection</basecompoundref>
     <includes local="no">http_server_request.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a722013f3c3816d1a79c08106ce54d78a" prot="private" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::http_server_request::request_type</definition>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1ab621dec93545862492493b548c968ccf" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9758c1c5e9637e64e889b672ef62465b" kindref="member">http_server_request_event</ref></type>
+        <definition>http_server_request_event dpp::http_server_request::handler</definition>
         <argsstring></argsstring>
-        <name>request_type</name>
+        <name>handler</name>
+        <initializer>{}</initializer>
         <briefdescription>
-<para>The type of the request, e.g. GET, POST. </para>
+<para>Handler to handle the inbound request. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="51" column="13" bodyfile="include/dpp/http_server_request.h" bodystart="51" bodyend="-1"/>
+        <location file="include/dpp/http_server_request.h" line="81" column="27" bodyfile="include/dpp/http_server_request.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1http__server__request_1a5407aa8f4e713070c4fd7c145bbb5c09" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -61,48 +62,19 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="66" column="14" bodyfile="include/dpp/http_server_request.h" bodystart="66" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1aec9351973219e9cea8de6cd3e74ba550" prot="private" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::http_server_request::timeout</definition>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a722013f3c3816d1a79c08106ce54d78a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_server_request::request_type</definition>
         <argsstring></argsstring>
-        <name>timeout</name>
+        <name>request_type</name>
         <briefdescription>
-<para>Time at which the request should be abandoned. </para>
+<para>The type of the request, e.g. GET, POST. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="71" column="8" bodyfile="include/dpp/http_server_request.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a2b1e90d97d9d32f6285587b3b53e537d" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" kindref="member">http_headers</ref></type>
-        <definition>http_headers dpp::http_server_request::response_headers</definition>
-        <argsstring></argsstring>
-        <name>response_headers</name>
-        <briefdescription>
-<para>Headers for our response. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="76" column="14" bodyfile="include/dpp/http_server_request.h" bodystart="76" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1ab621dec93545862492493b548c968ccf" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a9758c1c5e9637e64e889b672ef62465b" kindref="member">http_server_request_event</ref></type>
-        <definition>http_server_request_event dpp::http_server_request::handler</definition>
-        <argsstring></argsstring>
-        <name>handler</name>
-        <initializer>{}</initializer>
-        <briefdescription>
-<para>Handler to handle the inbound request. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="81" column="27" bodyfile="include/dpp/http_server_request.h" bodystart="81" bodyend="-1"/>
+        <location file="include/dpp/http_server_request.h" line="51" column="13" bodyfile="include/dpp/http_server_request.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1http__server__request_1a21dbc858e2cc12d0834e468649ddf1ff" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -118,37 +90,36 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="86" column="13" bodyfile="include/dpp/http_server_request.h" bodystart="86" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a2b1e90d97d9d32f6285587b3b53e537d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" kindref="member">http_headers</ref></type>
+        <definition>http_headers dpp::http_server_request::response_headers</definition>
+        <argsstring></argsstring>
+        <name>response_headers</name>
+        <briefdescription>
+<para>Headers for our response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="76" column="14" bodyfile="include/dpp/http_server_request.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1aec9351973219e9cea8de6cd3e74ba550" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::http_server_request::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>Time at which the request should be abandoned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="71" column="8" bodyfile="include/dpp/http_server_request.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a505beeadc243ce7be7fd2deb557e5229" prot="protected" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
-        <definition>http_state dpp::http_server_request::state</definition>
-        <argsstring></argsstring>
-        <name>state</name>
-        <briefdescription>
-<para>Current connection state. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="93" column="12" bodyfile="include/dpp/http_server_request.h" bodystart="93" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a96b67a3962a47387d3ab04be693afad1" prot="protected" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::http_server_request::status</definition>
-        <argsstring></argsstring>
-        <name>status</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>HTTP status code for response. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="98" column="10" bodyfile="include/dpp/http_server_request.h" bodystart="98" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a4a8b48487e16cefed1f12821f64fa5e8" prot="protected" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::ssl_connection::buffer</definition>
@@ -163,6 +134,106 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="128" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="128" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a8715f4363a7c5ef7ddc5439d5ff2394a" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_connection::bytes_in</definition>
+        <argsstring></argsstring>
+        <name>bytes_in</name>
+        <briefdescription>
+<para>Bytes in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="183" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad9fccc5b66b4a5713b54d8ed1ab9c743" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_connection::bytes_out</definition>
+        <argsstring></argsstring>
+        <name>bytes_out</name>
+        <briefdescription>
+<para>Bytes out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="178" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0e0c14fe8f51c54ea280509c8c0e5140" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::cipher</definition>
+        <argsstring></argsstring>
+        <name>cipher</name>
+        <briefdescription>
+<para>SSL cipher in use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="148" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0d85356b40ea02323cc161af4f5467fc" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::ssl_connection::connect_retries</definition>
+        <argsstring></argsstring>
+        <name>connect_retries</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>How many times we retried <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="163" column="9" bodyfile="include/dpp/sslconnection.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1acf9eb0208d63e142a421f7f778b3a939" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_connection::connected</definition>
+        <argsstring></argsstring>
+        <name>connected</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>True if connection is completed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="193" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aedf42057136f2fae90424a18daddce51" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::hostname</definition>
+        <argsstring></argsstring>
+        <name>hostname</name>
+        <briefdescription>
+<para>Hostname connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="168" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a9494e0dd128b5415a96d6ff9d24789aa" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::ssl_connection::last_tick</definition>
+        <argsstring></argsstring>
+        <name>last_tick</name>
+        <briefdescription>
+<para>For timers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="153" column="8" bodyfile="include/dpp/sslconnection.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a80a568dbb2049f4727c0efdde185699e" prot="protected" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::ssl_connection::obuffer</definition>
@@ -176,6 +247,49 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="133" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1addf00646298eba9176a675bba7269f27" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_connection::plaintext</definition>
+        <argsstring></argsstring>
+        <name>plaintext</name>
+        <briefdescription>
+<para>True for a plain text connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="188" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a39851da532b2f7ee33570e3b1dafd097" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>Port connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="173" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a62161bc05909fc1d67f3a59c5fbf6e79" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_connection::raw_trace</definition>
+        <argsstring></argsstring>
+        <name>raw_trace</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Set this to true to log all IO to debug for this connection. This is an internal developer facility. Do not enable it unless you need to, as it will be very noisy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="230" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1abd9c3cf6150d3c7e2badd12829437207" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
@@ -205,34 +319,6 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="143" column="20" bodyfile="include/dpp/sslconnection.h" bodystart="143" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0e0c14fe8f51c54ea280509c8c0e5140" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_connection::cipher</definition>
-        <argsstring></argsstring>
-        <name>cipher</name>
-        <briefdescription>
-<para>SSL cipher in use. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="148" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="148" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a9494e0dd128b5415a96d6ff9d24789aa" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::ssl_connection::last_tick</definition>
-        <argsstring></argsstring>
-        <name>last_tick</name>
-        <briefdescription>
-<para>For timers. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="153" column="8" bodyfile="include/dpp/sslconnection.h" bodystart="153" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad694f10e342b640f5fa6e88119c86a17" prot="protected" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t dpp::ssl_connection::start</definition>
@@ -247,105 +333,34 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="158" column="8" bodyfile="include/dpp/sslconnection.h" bodystart="158" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a0d85356b40ea02323cc161af4f5467fc" prot="protected" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::ssl_connection::connect_retries</definition>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a505beeadc243ce7be7fd2deb557e5229" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
+        <definition>http_state dpp::http_server_request::state</definition>
         <argsstring></argsstring>
-        <name>connect_retries</name>
+        <name>state</name>
+        <briefdescription>
+<para>Current connection state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="93" column="12" bodyfile="include/dpp/http_server_request.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1a96b67a3962a47387d3ab04be693afad1" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::http_server_request::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
         <initializer>{0}</initializer>
         <briefdescription>
-<para>How many times we retried <ref refid="classdpp_1_1ssl__connection_1ab062ff5c67a4a3f8021b212bbd040aca" kindref="member">connect()</ref> </para>
+<para>HTTP status code for response. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="163" column="9" bodyfile="include/dpp/sslconnection.h" bodystart="163" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1aedf42057136f2fae90424a18daddce51" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_connection::hostname</definition>
-        <argsstring></argsstring>
-        <name>hostname</name>
-        <briefdescription>
-<para>Hostname connected to. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="168" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="168" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a39851da532b2f7ee33570e3b1dafd097" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_connection::port</definition>
-        <argsstring></argsstring>
-        <name>port</name>
-        <briefdescription>
-<para>Port connected to. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="173" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="173" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1ad9fccc5b66b4a5713b54d8ed1ab9c743" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_connection::bytes_out</definition>
-        <argsstring></argsstring>
-        <name>bytes_out</name>
-        <briefdescription>
-<para>Bytes out. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="178" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="178" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a8715f4363a7c5ef7ddc5439d5ff2394a" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_connection::bytes_in</definition>
-        <argsstring></argsstring>
-        <name>bytes_in</name>
-        <briefdescription>
-<para>Bytes in. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="183" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="183" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1addf00646298eba9176a675bba7269f27" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_connection::plaintext</definition>
-        <argsstring></argsstring>
-        <name>plaintext</name>
-        <briefdescription>
-<para>True for a plain text connection. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="188" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="188" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1acf9eb0208d63e142a421f7f778b3a939" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_connection::connected</definition>
-        <argsstring></argsstring>
-        <name>connected</name>
-        <initializer>{false}</initializer>
-        <briefdescription>
-<para>True if connection is completed. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="193" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="193" bodyend="-1"/>
+        <location file="include/dpp/http_server_request.h" line="98" column="10" bodyfile="include/dpp/http_server_request.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a69e9248f431daf428683b1152c05b1a6" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -390,37 +405,8 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="212" column="10" bodyfile="include/dpp/sslconnection.h" bodystart="212" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__connection_1a62161bc05909fc1d67f3a59c5fbf6e79" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_connection::raw_trace</definition>
-        <argsstring></argsstring>
-        <name>raw_trace</name>
-        <initializer>{false}</initializer>
-        <briefdescription>
-<para>Set this to true to log all IO to debug for this connection. This is an internal developer facility. Do not enable it unless you need to, as it will be very noisy. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="230" column="6" bodyfile="include/dpp/sslconnection.h" bodystart="230" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1http__server__request_1af0baab2d9dc60dc9f9d1c010cec3d049" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::http_server_request::timed_out</definition>
-        <argsstring></argsstring>
-        <name>timed_out</name>
-        <briefdescription>
-<para>If true the response timed out while waiting. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="131" column="6" bodyfile="include/dpp/http_server_request.h" bodystart="131" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1http__server__request_1a1f90e215a7ee75dc033fe781434280fd" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
         <definition>uint64_t dpp::http_server_request::content_length</definition>
@@ -492,6 +478,20 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="295" column="13" bodyfile="include/dpp/sslconnection.h" bodystart="295" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__server__request_1af0baab2d9dc60dc9f9d1c010cec3d049" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_server_request::timed_out</definition>
+        <argsstring></argsstring>
+        <name>timed_out</name>
+        <briefdescription>
+<para>If true the response timed out while waiting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="131" column="6" bodyfile="include/dpp/http_server_request.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classdpp_1_1http__server__request_1a148027378fa93a3d650d6e6b28684fad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -509,48 +509,33 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="103" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1a89070e1f8e6757223883f647a45d7813" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a74d9da0f1f0c5feb46ed0995bd7d2e05" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::http_server_request::on_buffer_drained</definition>
-        <argsstring>() override</argsstring>
-        <name>on_buffer_drained</name>
-        <reimplements refid="classdpp_1_1ssl__connection_1a4bdff78b127e920033d0d9f8fb58d456">on_buffer_drained</reimplements>
+        <definition>void dpp::ssl_connection::do_raw_trace</definition>
+        <argsstring>(const std::string &amp;message) const</argsstring>
+        <name>do_raw_trace</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
         <briefdescription>
-<para>Called when the output buffer is drained to empty. </para>
+<para>If raw_trace is set to true, log a debug message for this connection. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>debug message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="108" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1abaeb04ec5dc74da887635db5c010fdbb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::http_server_request::get_max_post_size</definition>
-        <argsstring>() const</argsstring>
-        <name>get_max_post_size</name>
-        <briefdescription>
-<para>Maximum size of POST body. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="113" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1ac0a516b0c87edbed7a5772854e798ca2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::http_server_request::get_max_header_size</definition>
-        <argsstring>() const</argsstring>
-        <name>get_max_header_size</name>
-        <briefdescription>
-<para>Maximum size of headers. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="118" column="11"/>
+        <location file="include/dpp/sslconnection.h" line="236" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1a9d9970cd0dc08f94503d346bfbb0ef51" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -592,104 +577,51 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="125" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a74d9da0f1f0c5feb46ed0995bd7d2e05" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::ssl_connection::do_raw_trace</definition>
-        <argsstring>(const std::string &amp;message) const</argsstring>
-        <name>do_raw_trace</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>message</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1ac0a516b0c87edbed7a5772854e798ca2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_server_request::get_max_header_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_max_header_size</name>
         <briefdescription>
-<para>If raw_trace is set to true, log a debug message for this connection. </para>
+<para>Maximum size of headers. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>message</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>debug message </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="236" column="6"/>
+        <location file="include/dpp/http_server_request.h" line="118" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1abaeb04ec5dc74da887635db5c010fdbb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_server_request::get_max_post_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_max_post_size</name>
+        <briefdescription>
+<para>Maximum size of POST body. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="113" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1a89070e1f8e6757223883f647a45d7813" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void dpp::http_server_request::on_buffer_drained</definition>
+        <argsstring>() override</argsstring>
+        <name>on_buffer_drained</name>
+        <reimplements refid="classdpp_1_1ssl__connection_1a4bdff78b127e920033d0d9f8fb58d456">on_buffer_drained</reimplements>
+        <briefdescription>
+<para>Called when the output buffer is drained to empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="108" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1af190f268bfbbef3dd33ce571aea9f724" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
-        <definition>http_state dpp::http_server_request::get_state</definition>
-        <argsstring>() const</argsstring>
-        <name>get_state</name>
-        <briefdescription>
-<para>Get request state. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>request state </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="137" column="12"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1ab27be4b58d0f3f3834436e1325aabe45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::http_server_request::get_response_body</definition>
-        <argsstring>() const</argsstring>
-        <name>get_response_body</name>
-        <briefdescription>
-<para>Get current response body. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>response body </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="143" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1a4c7c7a69b993eba559959cfae599a6f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::http_server_request::get_request_body</definition>
-        <argsstring>() const</argsstring>
-        <name>get_request_body</name>
-        <briefdescription>
-<para>Get current request body. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>request body </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="149" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1a99eeb4b81c8491fcde911cfd433394aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::http_server_request::get_status</definition>
-        <argsstring>() const</argsstring>
-        <name>get_status</name>
-        <briefdescription>
-<para>Get current status code. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>status code </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="155" column="10"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1ad7bef47951bbbed641480b9f13cc9359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::http_server_request::http_server_request</definition>
@@ -804,35 +736,6 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="179" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1a312827aaa48c1d7726efc9275ebd5cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
-        <definition>virtual bool dpp::http_server_request::handle_buffer</definition>
-        <argsstring>(std::string &amp;buffer) override</argsstring>
-        <name>handle_buffer</name>
-        <reimplements refid="classdpp_1_1ssl__connection_1a321015d761b174db3f4ffb2551bb2f99">handle_buffer</reimplements>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>buffer</declname>
-        </param>
-        <briefdescription>
-<para>Processes incoming data from the SSL socket input buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>buffer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="186" column="22"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1a187b7a0ffb65635d9f56591f400b6308" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void dpp::http_server_request::close</definition>
@@ -848,20 +751,99 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="191" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1ac04e231d1e3558a9231d066d54f7a2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1acdd1152134b624d18a9e82162e64bafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>virtual void dpp::http_server_request::one_second_timer</definition>
-        <argsstring>() override</argsstring>
-        <name>one_second_timer</name>
-        <reimplements refid="classdpp_1_1ssl__connection_1ada1465dbb409fb3c994f9529fabc3f2b">one_second_timer</reimplements>
+        <definition>void dpp::ssl_connection::complete_handshake</definition>
+        <argsstring>(const struct socket_events *ev)</argsstring>
+        <name>complete_handshake</name>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> *</type>
+          <declname>ev</declname>
+        </param>
         <briefdescription>
-<para>Fires every second from the underlying socket I/O loop, used for timeouts. </para>
+<para>Called while SSL handshake is in progress. If the handshake completes, the state of the socket is progressed to an established state. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Socket events for the socket </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="196" column="14"/>
+        <location file="include/dpp/sslconnection.h" line="365" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3f8164696a6ffedcf9db89b7b4a2ea6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::ssl_connection::enable_raw_tracing</definition>
+        <argsstring>()</argsstring>
+        <name>enable_raw_tracing</name>
+        <briefdescription>
+<para>For low-level debugging, calling this function will enable low level I/O logging for this connection to the logger. This can be very loud, and output a lot of data, so only enable it selectively where you need it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generally, you won&apos;t need this, it is a library development utility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="249" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a28c4296db4b541d99478c6db493f4b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_connection::get_bytes_in</definition>
+        <argsstring>()</argsstring>
+        <name>get_bytes_in</name>
+        <briefdescription>
+<para>Get total bytes received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t bytes received </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="261" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_connection::get_bytes_out</definition>
+        <argsstring>()</argsstring>
+        <name>get_bytes_out</name>
+        <briefdescription>
+<para>Get the bytes out objectGet total bytes sent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t bytes sent </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="255" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_connection::get_cipher</definition>
+        <argsstring>()</argsstring>
+        <name>get_cipher</name>
+        <briefdescription>
+<para>Get SSL cipher name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string ssl cipher name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="275" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1afd45991516d12aeee2c72718daf0d790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::string</type>
@@ -974,103 +956,22 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="230" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1aac1be92d137abece865a832a5a6a6873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
-        <definition>http_server_request &amp; dpp::http_server_request::set_response_header</definition>
-        <argsstring>(const std::string &amp;header, const std::string &amp;value)</argsstring>
-        <name>set_response_header</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>header</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>value</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1a4c7c7a69b993eba559959cfae599a6f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::http_server_request::get_request_body</definition>
+        <argsstring>() const</argsstring>
+        <name>get_request_body</name>
         <briefdescription>
-<para>Set a response header. </para>
+<para>Get current request body. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>header</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>header name </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>value</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>header value </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>ref to self </para>
+<para><simplesect kind="return"><para>request body </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="238" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1aaa8949dd0caab303dc3ec3300e865332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
-        <definition>http_server_request &amp; dpp::http_server_request::set_response_body</definition>
-        <argsstring>(const std::string &amp;new_content)</argsstring>
-        <name>set_response_body</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>new_content</declname>
-        </param>
-        <briefdescription>
-<para>Set the response content. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>new_content</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>response content </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="245" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__server__request_1a3d5596e2e6097addc26e3c6047cbd6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
-        <definition>http_server_request &amp; dpp::http_server_request::set_status</definition>
-        <argsstring>(uint16_t new_status)</argsstring>
-        <name>set_status</name>
-        <param>
-          <type>uint16_t</type>
-          <declname>new_status</declname>
-        </param>
-        <briefdescription>
-<para>Set the response HTTP status, e.g. 200 for OK, 404 for not found, 429 for rate limited etc. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>new_status</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>HTTP status </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/http_server_request.h" line="253" column="21"/>
+        <location file="include/dpp/http_server_request.h" line="149" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__server__request_1aa8eccc3346b34b751869e732975985c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1086,54 +987,56 @@
         </inbodydescription>
         <location file="include/dpp/http_server_request.h" line="258" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3f8164696a6ffedcf9db89b7b4a2ea6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::ssl_connection::enable_raw_tracing</definition>
-        <argsstring>()</argsstring>
-        <name>enable_raw_tracing</name>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1ab27be4b58d0f3f3834436e1325aabe45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::http_server_request::get_response_body</definition>
+        <argsstring>() const</argsstring>
+        <name>get_response_body</name>
         <briefdescription>
-<para>For low-level debugging, calling this function will enable low level I/O logging for this connection to the logger. This can be very loud, and output a lot of data, so only enable it selectively where you need it. </para>
+<para>Get current response body. </para>
         </briefdescription>
         <detaileddescription>
-<para>Generally, you won&apos;t need this, it is a library development utility. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="249" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ac69282a18c63bd1ddfaa87ba83410979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_connection::get_bytes_out</definition>
-        <argsstring>()</argsstring>
-        <name>get_bytes_out</name>
-        <briefdescription>
-<para>Get the bytes out objectGet total bytes sent. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>uint64_t bytes sent </para>
+<para><simplesect kind="return"><para>response body </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="255" column="10"/>
+        <location file="include/dpp/http_server_request.h" line="143" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a28c4296db4b541d99478c6db493f4b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_connection::get_bytes_in</definition>
-        <argsstring>()</argsstring>
-        <name>get_bytes_in</name>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1af190f268bfbbef3dd33ce571aea9f724" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
+        <definition>http_state dpp::http_server_request::get_state</definition>
+        <argsstring>() const</argsstring>
+        <name>get_state</name>
         <briefdescription>
-<para>Get total bytes received. </para>
+<para>Get request state. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>uint64_t bytes received </para>
+<para><simplesect kind="return"><para>request state </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="261" column="10"/>
+        <location file="include/dpp/http_server_request.h" line="137" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1a99eeb4b81c8491fcde911cfd433394aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::http_server_request::get_status</definition>
+        <argsstring>() const</argsstring>
+        <name>get_status</name>
+        <briefdescription>
+<para>Get current status code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>status code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="155" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a3cc296231589356506a103ad8c7eee74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1152,76 +1055,34 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="269" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ab2f2c18aff43ac8dfbfa58bc5dc71fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_connection::get_cipher</definition>
-        <argsstring>()</argsstring>
-        <name>get_cipher</name>
-        <briefdescription>
-<para>Get SSL cipher name. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string ssl cipher name </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="275" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::ssl_connection::read_loop</definition>
-        <argsstring>()</argsstring>
-        <name>read_loop</name>
-        <briefdescription>
-<para>Set up non blocking I/O and configure on_read, on_write and on_error. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername>std::exception</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Any std::exception (or derivative) thrown from <ref refid="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" kindref="member">read_loop()</ref> indicates setup failed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="325" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ae0fe670d8829bcfe600856a4c4adee00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::ssl_connection::socket_write</definition>
-        <argsstring>(const std::string_view data)</argsstring>
-        <name>socket_write</name>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1a312827aaa48c1d7726efc9275ebd5cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool dpp::http_server_request::handle_buffer</definition>
+        <argsstring>(std::string &amp;buffer) override</argsstring>
+        <name>handle_buffer</name>
+        <reimplements refid="classdpp_1_1ssl__connection_1a321015d761b174db3f4ffb2551bb2f99">handle_buffer</reimplements>
         <param>
-          <type>const std::string_view</type>
-          <declname>data</declname>
+          <type>std::string &amp;</type>
+          <declname>buffer</declname>
         </param>
         <briefdescription>
-<para>Write to the output buffer. </para>
+<para>Processes incoming data from the SSL socket input buffer. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>data</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Data to be written to the buffer. </para>
+<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>The data may not be written immediately and may be written at a later time to the socket. </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="345" column="6"/>
+        <location file="include/dpp/http_server_request.h" line="186" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1af7e21fef92907780581d04c8f98bf9b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1265,25 +1126,40 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="357" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1acdd1152134b624d18a9e82162e64bafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8732ae4599f38f41d27de3f4c1c7cae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::ssl_connection::complete_handshake</definition>
-        <argsstring>(const struct socket_events *ev)</argsstring>
-        <name>complete_handshake</name>
+        <definition>void dpp::ssl_connection::on_error</definition>
+        <argsstring>(dpp::socket fd, const struct dpp::socket_events &amp;, int error_code)</argsstring>
+        <name>on_error</name>
         <param>
-          <type>const struct <ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref> *</type>
-          <declname>ev</declname>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1socket__events" kindref="compound">dpp::socket_events</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>error_code</declname>
         </param>
         <briefdescription>
-<para>Called while SSL handshake is in progress. If the handshake completes, the state of the socket is progressed to an established state. </para>
+<para>Called when there is an error on the TCP socket. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>ev</parametername>
+<parametername>fd</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Socket events for the socket </para>
+<para>File descriptor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1291,7 +1167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="365" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8c50238080a887b09473c82bff8de817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1373,40 +1249,36 @@
         </inbodydescription>
         <location file="include/dpp/sslconnection.h" line="379" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__connection_1a8732ae4599f38f41d27de3f4c1c7cae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1ac04e231d1e3558a9231d066d54f7a2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void dpp::ssl_connection::on_error</definition>
-        <argsstring>(dpp::socket fd, const struct dpp::socket_events &amp;, int error_code)</argsstring>
-        <name>on_error</name>
-        <param>
-          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">dpp::socket</ref></type>
-          <declname>fd</declname>
-        </param>
-        <param>
-          <type>const struct <ref refid="structdpp_1_1socket__events" kindref="compound">dpp::socket_events</ref> &amp;</type>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>error_code</declname>
-        </param>
+        <definition>virtual void dpp::http_server_request::one_second_timer</definition>
+        <argsstring>() override</argsstring>
+        <name>one_second_timer</name>
+        <reimplements refid="classdpp_1_1ssl__connection_1ada1465dbb409fb3c994f9529fabc3f2b">one_second_timer</reimplements>
         <briefdescription>
-<para>Called when there is an error on the TCP socket. </para>
+<para>Fires every second from the underlying socket I/O loop, used for timeouts. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="196" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::ssl_connection::read_loop</definition>
+        <argsstring>()</argsstring>
+        <name>read_loop</name>
+        <briefdescription>
+<para>Set up non blocking I/O and configure on_read, on_write and on_error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>fd</parametername>
+<parametername>std::exception</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>File descriptor </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>error_code</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Error code </para>
+<para>Any std::exception (or derivative) thrown from <ref refid="classdpp_1_1ssl__connection_1aa29f339d46eb0d32ba74c341d25bbcb4" kindref="member">read_loop()</ref> indicates setup failed </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1414,7 +1286,135 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslconnection.h" line="386" column="6"/>
+        <location file="include/dpp/sslconnection.h" line="325" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1aaa8949dd0caab303dc3ec3300e865332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
+        <definition>http_server_request &amp; dpp::http_server_request::set_response_body</definition>
+        <argsstring>(const std::string &amp;new_content)</argsstring>
+        <name>set_response_body</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_content</declname>
+        </param>
+        <briefdescription>
+<para>Set the response content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>response content </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="245" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1aac1be92d137abece865a832a5a6a6873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
+        <definition>http_server_request &amp; dpp::http_server_request::set_response_header</definition>
+        <argsstring>(const std::string &amp;header, const std::string &amp;value)</argsstring>
+        <name>set_response_header</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a response header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ref to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="238" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__server__request_1a3d5596e2e6097addc26e3c6047cbd6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1http__server__request" kindref="compound">http_server_request</ref> &amp;</type>
+        <definition>http_server_request &amp; dpp::http_server_request::set_status</definition>
+        <argsstring>(uint16_t new_status)</argsstring>
+        <name>set_status</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>new_status</declname>
+        </param>
+        <briefdescription>
+<para>Set the response HTTP status, e.g. 200 for OK, 404 for not found, 429 for rate limited etc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP status </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/http_server_request.h" line="253" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__connection_1ae0fe670d8829bcfe600856a4c4adee00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::ssl_connection::socket_write</definition>
+        <argsstring>(const std::string_view data)</argsstring>
+        <name>socket_write</name>
+        <param>
+          <type>const std::string_view</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write to the output buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be written to the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The data may not be written immediately and may be written at a later time to the socket. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslconnection.h" line="345" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

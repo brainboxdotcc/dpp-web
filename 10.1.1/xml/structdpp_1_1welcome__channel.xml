@@ -23,6 +23,20 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a2483b713066063625a9906d14b4be646" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::welcome_channel::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>The channel&apos;s id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="732" column="11" bodyfile="include/dpp/guild.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a1bf6060401b61b022e0141bac0930e90" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::welcome_channel::description</definition>
@@ -36,6 +50,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/guild.h" line="720" column="13" bodyfile="include/dpp/guild.h" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a425043d875a90151082c78f96c239f07" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::welcome_channel::emoji_id</definition>
+        <argsstring></argsstring>
+        <name>emoji_id</name>
+        <briefdescription>
+<para>The emoji id, if the emoji is custom. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="737" column="11" bodyfile="include/dpp/guild.h" bodystart="737" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a12be2fe79425adc835689feecfa65009" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -53,34 +81,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/guild.h" line="727" column="13" bodyfile="include/dpp/guild.h" bodystart="727" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a2483b713066063625a9906d14b4be646" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::welcome_channel::channel_id</definition>
-        <argsstring></argsstring>
-        <name>channel_id</name>
-        <briefdescription>
-<para>The channel&apos;s id. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="732" column="11" bodyfile="include/dpp/guild.h" bodystart="732" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1welcome__channel_1a425043d875a90151082c78f96c239f07" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::welcome_channel::emoji_id</definition>
-        <argsstring></argsstring>
-        <name>emoji_id</name>
-        <briefdescription>
-<para>The emoji id, if the emoji is custom. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="737" column="11" bodyfile="include/dpp/guild.h" bodystart="737" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -175,6 +175,69 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="747" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; welcome_channel  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1welcome__channel" kindref="compound">welcome_channel</ref> &amp;</type>
+        <definition>welcome_channel  &amp; dpp::json_interface&lt; welcome_channel  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1welcome__channel_1a1debc4c9a4d60fdad52e9cac2f3cdd43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1welcome__channel" kindref="compound">welcome_channel</ref> &amp;</type>
         <definition>welcome_channel &amp; dpp::welcome_channel::set_channel_id</definition>
@@ -235,36 +298,6 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="763" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structdpp_1_1welcome__channel" kindref="compound">welcome_channel</ref> &amp;</type>
-        <definition>welcome_channel  &amp; dpp::json_interface&lt; welcome_channel  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; welcome_channel  &gt;::to_json</definition>
@@ -297,39 +330,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; welcome_channel  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

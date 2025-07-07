@@ -19,20 +19,6 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="280" column="11" bodyfile="include/dpp/slashcommand.h" bodystart="280" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1slashcommand_1aba1bc2d7cb8d9f67071aab5c16df964b" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::slashcommand::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <briefdescription>
-<para>Command name (1-32 chars) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="285" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="285" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1slashcommand_1a9bdfc4a4e6121349903f7ab28010691a" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::slashcommand::description</definition>
@@ -47,20 +33,6 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="290" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="290" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ad7bf348ca0d07ccd3416656f023d913e" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &gt;</type>
-        <definition>std::vector&lt;command_option&gt; dpp::slashcommand::options</definition>
-        <argsstring></argsstring>
-        <name>options</name>
-        <briefdescription>
-<para>Command options (parameters) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="295" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="295" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
@@ -74,6 +46,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1aba1bc2d7cb8d9f67071aab5c16df964b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Command name (1-32 chars) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="285" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ad7bf348ca0d07ccd3416656f023d913e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &gt;</type>
+        <definition>std::vector&lt;command_option&gt; dpp::slashcommand::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+<para>Command options (parameters) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="295" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="295" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -135,95 +135,36 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="313" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1slashcommand_1aba074557679db547ec1a7ae955cd8353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
-        <definition>slashcommand &amp; dpp::slashcommand::set_name</definition>
-        <argsstring>(const std::string &amp;n)</argsstring>
-        <name>set_name</name>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a540339915ce149aa7631d3977ea1882a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>n</declname>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
-<para>Set the name of the command. </para>
+<para>Build a json string for this object. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>n</parametername>
+<parametername>with_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>name of command </para>
+<para>True if to include the ID in the JSON </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+<simplesect kind="return"><para>std::string JSON string </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="321" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1slashcommand_1a50fc02275a4dcba70a5dacb4ecbd2085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
-        <definition>slashcommand &amp; dpp::slashcommand::set_description</definition>
-        <argsstring>(const std::string &amp;d)</argsstring>
-        <name>set_description</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>d</declname>
-        </param>
-        <briefdescription>
-<para>Set the description of the command. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>d</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>description </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="329" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1slashcommand_1a0b5e048d0df9f02f09ab1117328e0c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
-        <definition>slashcommand &amp; dpp::slashcommand::set_application_id</definition>
-        <argsstring>(snowflake i)</argsstring>
-        <name>set_application_id</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>i</declname>
-        </param>
-        <briefdescription>
-<para>Set the application id of the command. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>i</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>application id </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="337" column="14"/>
+        <location file="include/dpp/slashcommand.h" line="353" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1slashcommand_1a2295a43bd5defc3a87afa5f0cc0c36af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
@@ -255,36 +196,95 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="345" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1slashcommand_1a540339915ce149aa7631d3977ea1882a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::slashcommand::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a0b5e048d0df9f02f09ab1117328e0c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_application_id</definition>
+        <argsstring>(snowflake i)</argsstring>
+        <name>set_application_id</name>
         <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>i</declname>
         </param>
         <briefdescription>
-<para>Build a json string for this object. </para>
+<para>Set the application id of the command. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>with_id</parametername>
+<parametername>i</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>True if to include the ID in the JSON </para>
+<para>application id </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string JSON string </para>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="353" column="13"/>
+        <location file="include/dpp/slashcommand.h" line="337" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a50fc02275a4dcba70a5dacb4ecbd2085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_description</definition>
+        <argsstring>(const std::string &amp;d)</argsstring>
+        <name>set_description</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Set the description of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="329" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1aba074557679db547ec1a7ae955cd8353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_name</definition>
+        <argsstring>(const std::string &amp;n)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of command </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="321" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

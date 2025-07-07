@@ -9,20 +9,6 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classdpp_1_1event__router__t_1a098dd28774c2d35f85abd3de89fa8576" prot="private" static="no">
-        <type>std::function&lt; void(const T &amp;)&gt;</type>
-        <definition>using dpp::event_router_t&lt; T &gt;::regular_handler_t =  std::function&lt;void(const T&amp;)&gt;</definition>
-        <argsstring></argsstring>
-        <name>regular_handler_t</name>
-        <briefdescription>
-<para>Non-coro event handler type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="205" column="1" bodyfile="include/dpp/event_router.h" bodystart="205" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="classdpp_1_1event__router__t_1a1107be84d807d1289234c33da3eb93e9" prot="private" static="no">
         <type>std::variant&lt; regular_handler_t, std::function&lt; <ref refid="structdpp_1_1task__dummy" kindref="compound">task_dummy</ref>(T)&gt; &gt;</type>
         <definition>using dpp::event_router_t&lt; T &gt;::event_handler_abi_t =  std::variant&lt;regular_handler_t, std::function&lt;task_dummy(T)&gt; &gt;</definition>
@@ -51,6 +37,20 @@
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="222" column="1" bodyfile="include/dpp/event_router.h" bodystart="222" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="classdpp_1_1event__router__t_1a098dd28774c2d35f85abd3de89fa8576" prot="private" static="no">
+        <type>std::function&lt; void(const T &amp;)&gt;</type>
+        <definition>using dpp::event_router_t&lt; T &gt;::regular_handler_t =  std::function&lt;void(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>regular_handler_t</name>
+        <briefdescription>
+<para>Non-coro event handler type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="205" column="1" bodyfile="include/dpp/event_router.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -71,49 +71,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>event_handle dpp::event_router_t&lt; T &gt;::next_handle</definition>
-        <argsstring></argsstring>
-        <name>next_handle</name>
-        <initializer>= 1</initializer>
-        <briefdescription>
-<para>Identifier for the next event handler, will be given to the user on attaching a handler. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="226" column="14" bodyfile="include/dpp/event_router.h" bodystart="226" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a9c7ea2aa22b81b8e44712e78959ee367" prot="private" static="no" mutable="yes">
-        <type>std::shared_mutex</type>
-        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::mutex</definition>
-        <argsstring></argsstring>
-        <name>mutex</name>
-        <briefdescription>
-<para>Thread safety mutex. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="231" column="27" bodyfile="include/dpp/event_router.h" bodystart="231" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a26ba91e351b05c8723fce841c4419ab6" prot="private" static="no" mutable="no">
-        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, event_handler_t &gt;</type>
-        <definition>std::map&lt;event_handle, event_handler_t&gt; dpp::event_router_t&lt; T &gt;::dispatch_container</definition>
-        <argsstring></argsstring>
-        <name>dispatch_container</name>
-        <briefdescription>
-<para>Container of event listeners keyed by handle, as handles are handed out sequentially they will always be called in they order they are bound to the event as std::map is an ordered container. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="239" column="10" bodyfile="include/dpp/event_router.h" bodystart="239" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a95b640c1ec731278e9d7e0b479c23e0c" prot="private" static="no" mutable="no">
         <type><ref refid="structdpp_1_1utility_1_1dummy" kindref="compound">utility::dummy</ref>&lt; std::shared_mutex &gt;</type>
         <definition>utility::dummy&lt;std::shared_mutex&gt; dpp::event_router_t&lt; T &gt;::definitely_not_a_mutex</definition>
@@ -142,6 +99,49 @@
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="260" column="16" bodyfile="include/dpp/event_router.h" bodystart="260" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a26ba91e351b05c8723fce841c4419ab6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, event_handler_t &gt;</type>
+        <definition>std::map&lt;event_handle, event_handler_t&gt; dpp::event_router_t&lt; T &gt;::dispatch_container</definition>
+        <argsstring></argsstring>
+        <name>dispatch_container</name>
+        <briefdescription>
+<para>Container of event listeners keyed by handle, as handles are handed out sequentially they will always be called in they order they are bound to the event as std::map is an ordered container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="239" column="10" bodyfile="include/dpp/event_router.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a9c7ea2aa22b81b8e44712e78959ee367" prot="private" static="no" mutable="yes">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+<para>Thread safety mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="231" column="27" bodyfile="include/dpp/event_router.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::next_handle</definition>
+        <argsstring></argsstring>
+        <name>next_handle</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Identifier for the next event handler, will be given to the user on attaching a handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="226" column="14" bodyfile="include/dpp/event_router.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" static="no" mutable="no">
         <type>std::function&lt; void(const T &amp;)&gt;</type>
         <definition>std::function&lt;void(const T&amp;)&gt; dpp::event_router_t&lt; T &gt;::warning</definition>
@@ -158,6 +158,24 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a493534366b5897f60f37c61b9faf454e" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::handle</definition>
+        <argsstring>(const T &amp;event) const</argsstring>
+        <name>handle</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Handle an event. This function should only be used without coro enabled, otherwise use handle_coro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="288" column="6" bodyfile="include/dpp/event_router.h" bodystart="288" bodyend="303"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::event_router_t&lt; T &gt;::set_warning_callback</definition>
@@ -186,24 +204,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="281" column="6" bodyfile="include/dpp/event_router.h" bodystart="281" bodyend="283"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a493534366b5897f60f37c61b9faf454e" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::event_router_t&lt; T &gt;::handle</definition>
-        <argsstring>(const T &amp;event) const</argsstring>
-        <name>handle</name>
-        <param>
-          <type>const T &amp;</type>
-          <declname>event</declname>
-        </param>
-        <briefdescription>
-<para>Handle an event. This function should only be used without coro enabled, otherwise use handle_coro. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="288" column="6" bodyfile="include/dpp/event_router.h" bodystart="288" bodyend="303"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -244,6 +244,41 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="418" column="1" bodyfile="include/dpp/event_router.h" bodystart="418" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
+        <argsstring>(F &amp;&amp;fun)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T&amp;)</computeroutput> or <computeroutput>dpp::task&lt;void&gt;(const T&amp;)</computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callable to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="588" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -300,6 +335,53 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="456" column="6" bodyfile="include/dpp/event_router.h" bodystart="456" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_router_t&lt; T &gt;::detach</definition>
+        <argsstring>(const event_handle &amp;handle)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Detach a listener from the event using a previously obtained ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>You cannot call this within an event handler.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ID obtained from operator() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event was successfully detached </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID is invalid (possibly already detached, or does not exist) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="709" column="7" bodyfile="include/dpp/event_router.h" bodystart="709" bodyend="712"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -402,88 +484,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/event_router.h" line="575" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename F</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
-        <argsstring>(F &amp;&amp;fun)</argsstring>
-        <name>attach</name>
-        <param>
-          <type>F &amp;&amp;</type>
-          <declname>fun</declname>
-        </param>
-        <briefdescription>
-<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T&amp;)</computeroutput> or <computeroutput>dpp::task&lt;void&gt;(const T&amp;)</computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>fun</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Callable to attach to event </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="588" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::event_router_t&lt; T &gt;::detach</definition>
-        <argsstring>(const event_handle &amp;handle)</argsstring>
-        <name>detach</name>
-        <param>
-          <type>const <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref> &amp;</type>
-          <declname>handle</declname>
-        </param>
-        <briefdescription>
-<para>Detach a listener from the event using a previously obtained ID. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="warning"><para>You cannot call this within an event handler.</para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>handle</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An ID obtained from operator() </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>true</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The event was successfully detached </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>false</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The ID is invalid (possibly already detached, or does not exist) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="709" column="7" bodyfile="include/dpp/event_router.h" bodystart="709" bodyend="712"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

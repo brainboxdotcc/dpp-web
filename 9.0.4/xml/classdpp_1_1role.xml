@@ -5,33 +5,19 @@
     <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
     <includes local="no">role.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1role_1a6451e41576902faa14d0394d47d19934" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::role::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Role name </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="83" column="13" bodyfile="include/dpp/role.h" bodystart="83" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1ab831d734d6cfe3a88c54bb91b0f578ea" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1role_1ada5cb5675b012b2cf55d285d5b233df3" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::role::guild_id</definition>
+        <definition>snowflake dpp::role::bot_id</definition>
         <argsstring></argsstring>
-        <name>guild_id</name>
+        <name>bot_id</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Guild id </para>
+<para>Bot id if any (e.g. role is a bot&apos;s role created when it was invited) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="85" column="11" bodyfile="include/dpp/role.h" bodystart="85" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="97" column="11" bodyfile="include/dpp/role.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1a42f8b747f7a04cd1022ce3bc42e6a05b" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -47,34 +33,6 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="87" column="10" bodyfile="include/dpp/role.h" bodystart="87" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1a08996823fc9ba1eb8c95b1e2e855d958" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::role::position</definition>
-        <argsstring></argsstring>
-        <name>position</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Role position </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="89" column="9" bodyfile="include/dpp/role.h" bodystart="89" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1ad1d79b737f5e7d2cc71238068fc36ad4" prot="public" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::role::permissions</definition>
-        <argsstring></argsstring>
-        <name>permissions</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Role permissions bitmask values from <ref refid="namespacedpp_1a2b8b5573bf936e034d33a7238fe5604f" kindref="member">dpp::role_permissions</ref> </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="91" column="10" bodyfile="include/dpp/role.h" bodystart="91" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1a67fa7fe9f3650b5783cf4f5d2ed37de0" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t dpp::role::flags</definition>
@@ -88,6 +46,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/role.h" line="93" column="9" bodyfile="include/dpp/role.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1role_1ab831d734d6cfe3a88c54bb91b0f578ea" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::role::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guild id </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="85" column="11" bodyfile="include/dpp/role.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique ID of object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1aa44718ae47c00bcf2008366218646572" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -103,33 +89,47 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="95" column="11" bodyfile="include/dpp/role.h" bodystart="95" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1ada5cb5675b012b2cf55d285d5b233df3" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::role::bot_id</definition>
+      <memberdef kind="variable" id="classdpp_1_1role_1a6451e41576902faa14d0394d47d19934" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::role::name</definition>
         <argsstring></argsstring>
-        <name>bot_id</name>
+        <name>name</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Bot id if any (e.g. role is a bot&apos;s role created when it was invited) </para>
+<para>Role name </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="97" column="11" bodyfile="include/dpp/role.h" bodystart="97" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="83" column="13" bodyfile="include/dpp/role.h" bodystart="83" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::managed::id</definition>
+      <memberdef kind="variable" id="classdpp_1_1role_1ad1d79b737f5e7d2cc71238068fc36ad4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::role::permissions</definition>
         <argsstring></argsstring>
-        <name>id</name>
+        <name>permissions</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Unique ID of object </para>
+<para>Role permissions bitmask values from <ref refid="namespacedpp_1a2b8b5573bf936e034d33a7238fe5604f" kindref="member">dpp::role_permissions</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="91" column="10" bodyfile="include/dpp/role.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1role_1a08996823fc9ba1eb8c95b1e2e855d958" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::role::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="89" column="9" bodyfile="include/dpp/role.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -160,6 +160,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/role.h" line="103" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a704dd3aee9a7b3687f1556442144f62b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::role::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a json string from this object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the ID is to be included in the json text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The json of the role </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="116" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a5352cd2a40c1c2c430ec9448bd45723f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -202,119 +232,19 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="110" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a704dd3aee9a7b3687f1556442144f62b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::role::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Build a json string from this object. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>true if the ID is to be included in the json text </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The json of the role </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="116" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ae0cb040c022f08d210c885012bf47919" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a0e2683fd21c1743132eb29f8155c12a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::is_hoisted</definition>
+        <definition>bool dpp::role::has_add_reactions</definition>
         <argsstring>() const</argsstring>
-        <name>is_hoisted</name>
+        <name>has_add_reactions</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if the role is hoisted </para>
+<para>True if has the add reactions permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="119" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a1d5a026fa3773f52b9c2cee6c590509f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::is_mentionable</definition>
-        <argsstring>() const</argsstring>
-        <name>is_mentionable</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if the role is mentionable </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="121" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a479bc27fe486bb70dd3fc1376df3c5b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::is_managed</definition>
-        <argsstring>() const</argsstring>
-        <name>is_managed</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if the role is managed (belongs to a bot or application) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="123" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a7005a2a951c2917edb6f5ce189093234" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_create_instant_invite</definition>
-        <argsstring>() const</argsstring>
-        <name>has_create_instant_invite</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has create instant invite permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="125" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a7b76518e70c32391bbae2c80439a2a76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_kick_members</definition>
-        <argsstring>() const</argsstring>
-        <name>has_kick_members</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the kick members permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="127" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ac8eaec9aac9633c7d05cb208da7fc4d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_ban_members</definition>
-        <argsstring>() const</argsstring>
-        <name>has_ban_members</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the ban members permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="129" column="6"/>
+        <location file="include/dpp/role.h" line="137" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a3ffcaced8369d47cc3f954fa0978c40c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -330,160 +260,6 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="131" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a9630315e9c31cb53335e077140497ad7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_manage_channels</definition>
-        <argsstring>() const</argsstring>
-        <name>has_manage_channels</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the manage channels permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="133" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ad1de8e0ce44138225e9e7620b0834cb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_manage_guild</definition>
-        <argsstring>() const</argsstring>
-        <name>has_manage_guild</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the manage guild permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="135" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a0e2683fd21c1743132eb29f8155c12a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_add_reactions</definition>
-        <argsstring>() const</argsstring>
-        <name>has_add_reactions</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the add reactions permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="137" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a600d347d4f491ba32969a76d9d0cf3c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_view_audit_log</definition>
-        <argsstring>() const</argsstring>
-        <name>has_view_audit_log</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the view audit log permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="139" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a640358a9aa6e34c0e0b16020af176e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_priority_speaker</definition>
-        <argsstring>() const</argsstring>
-        <name>has_priority_speaker</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the priority speaker permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="141" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ae6173507d17a12012cf46da70929a49e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_stream</definition>
-        <argsstring>() const</argsstring>
-        <name>has_stream</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the stream permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="143" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1acbe56d5d1d54e9fea3a6b7acd66ef888" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_view_channel</definition>
-        <argsstring>() const</argsstring>
-        <name>has_view_channel</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the view channel permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="145" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a31d923d5f1020215b836db355991870b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_send_messages</definition>
-        <argsstring>() const</argsstring>
-        <name>has_send_messages</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the send messages permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="147" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1af54ea9f64ea035675a26b0d8e8b356f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_send_tts_messages</definition>
-        <argsstring>() const</argsstring>
-        <name>has_send_tts_messages</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the send TTS messages permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="149" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a1a28c7f8685b1c0287067665aecf6efb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_manage_messages</definition>
-        <argsstring>() const</argsstring>
-        <name>has_manage_messages</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the manage messages permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="151" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ae1dc87323b6ab2e499fee7c8bfa69d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_embed_links</definition>
-        <argsstring>() const</argsstring>
-        <name>has_embed_links</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the embed links permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="153" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a848a39ba5ff6b5c42c3246d041582d00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool dpp::role::has_attach_files</definition>
@@ -498,61 +274,33 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="155" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ac5f664643c59d7e24271bb790735c68f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1ac8eaec9aac9633c7d05cb208da7fc4d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_read_message_history</definition>
+        <definition>bool dpp::role::has_ban_members</definition>
         <argsstring>() const</argsstring>
-        <name>has_read_message_history</name>
+        <name>has_ban_members</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the read message history permission </para>
+<para>True if has the ban members permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="157" column="6"/>
+        <location file="include/dpp/role.h" line="129" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1aed437137a98c1f99d28942070c8ccf0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a2b158e7e37bb66c17a4ed412a71f7222" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_mention_everyone</definition>
+        <definition>bool dpp::role::has_change_nickname</definition>
         <argsstring>() const</argsstring>
-        <name>has_mention_everyone</name>
+        <name>has_change_nickname</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the mention @everyone and @here permission </para>
+<para>True if has the change nickname permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="159" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a363303c06726e049586b8ae4f3f6375e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_use_external_emojis</definition>
-        <argsstring>() const</argsstring>
-        <name>has_use_external_emojis</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the use external emojis permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="161" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ac71887da3f920e070d1fa743ea000d1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_view_guild_insights</definition>
-        <argsstring>() const</argsstring>
-        <name>has_view_guild_insights</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the view guild insights permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="163" column="6"/>
+        <location file="include/dpp/role.h" line="177" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0be98542c2299aa41829d69bf348b54d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -568,33 +316,19 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="165" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a92ce258f420bce887cc9c92ad006fe06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a7005a2a951c2917edb6f5ce189093234" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_speak</definition>
+        <definition>bool dpp::role::has_create_instant_invite</definition>
         <argsstring>() const</argsstring>
-        <name>has_speak</name>
+        <name>has_create_instant_invite</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the speak permission </para>
+<para>True if has create instant invite permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="167" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a504ae68edc2bfe1c21ffdb6745c1194c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::role::has_mute_members</definition>
-        <argsstring>() const</argsstring>
-        <name>has_mute_members</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if has the mute members permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="169" column="6"/>
+        <location file="include/dpp/role.h" line="125" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0a197983ea6fc5047c7873d804f7646a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -610,47 +344,89 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="171" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1ac9605d0d14e4fff0c0848e08682c6da5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1ae1dc87323b6ab2e499fee7c8bfa69d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_move_members</definition>
+        <definition>bool dpp::role::has_embed_links</definition>
         <argsstring>() const</argsstring>
-        <name>has_move_members</name>
+        <name>has_embed_links</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the move members permission </para>
+<para>True if has the embed links permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="173" column="6"/>
+        <location file="include/dpp/role.h" line="153" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a9ffd7c58994f9c3e0a38245462eb6766" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a7b76518e70c32391bbae2c80439a2a76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_use_vad</definition>
+        <definition>bool dpp::role::has_kick_members</definition>
         <argsstring>() const</argsstring>
-        <name>has_use_vad</name>
+        <name>has_kick_members</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has use voice activity detection permission </para>
+<para>True if has the kick members permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="175" column="6"/>
+        <location file="include/dpp/role.h" line="127" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a2b158e7e37bb66c17a4ed412a71f7222" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a9630315e9c31cb53335e077140497ad7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_change_nickname</definition>
+        <definition>bool dpp::role::has_manage_channels</definition>
         <argsstring>() const</argsstring>
-        <name>has_change_nickname</name>
+        <name>has_manage_channels</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the change nickname permission </para>
+<para>True if has the manage channels permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="177" column="6"/>
+        <location file="include/dpp/role.h" line="133" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a0540ccfbbd74713595fc97bc0360a8e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_manage_emojis</definition>
+        <argsstring>() const</argsstring>
+        <name>has_manage_emojis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the manage emojis permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="185" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1ad1de8e0ce44138225e9e7620b0834cb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_manage_guild</definition>
+        <argsstring>() const</argsstring>
+        <name>has_manage_guild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the manage guild permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="135" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a1a28c7f8685b1c0287067665aecf6efb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_manage_messages</definition>
+        <argsstring>() const</argsstring>
+        <name>has_manage_messages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the manage messages permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="151" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a80c8b573fc16edfd685294e0326b38d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -680,6 +456,20 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="181" column="6"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a032ce15247e135d733e6879bed928e7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_manage_threads</definition>
+        <argsstring>() const</argsstring>
+        <name>has_manage_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the manage threads permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="191" column="6"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a9ac39f8c39f870603f0e9d9760159ef9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool dpp::role::has_manage_webhooks</definition>
@@ -694,33 +484,75 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="183" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a0540ccfbbd74713595fc97bc0360a8e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1aed437137a98c1f99d28942070c8ccf0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_manage_emojis</definition>
+        <definition>bool dpp::role::has_mention_everyone</definition>
         <argsstring>() const</argsstring>
-        <name>has_manage_emojis</name>
+        <name>has_mention_everyone</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the manage emojis permission </para>
+<para>True if has the mention @everyone and @here permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="185" column="6"/>
+        <location file="include/dpp/role.h" line="159" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a25d1cfcb13ddb4f59c08c3cc4b65cfcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1ac9605d0d14e4fff0c0848e08682c6da5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_use_slash_commands</definition>
+        <definition>bool dpp::role::has_move_members</definition>
         <argsstring>() const</argsstring>
-        <name>has_use_slash_commands</name>
+        <name>has_move_members</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the use slash commands permission </para>
+<para>True if has the move members permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="187" column="6"/>
+        <location file="include/dpp/role.h" line="173" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a504ae68edc2bfe1c21ffdb6745c1194c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_mute_members</definition>
+        <argsstring>() const</argsstring>
+        <name>has_mute_members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the mute members permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="169" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a640358a9aa6e34c0e0b16020af176e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_priority_speaker</definition>
+        <argsstring>() const</argsstring>
+        <name>has_priority_speaker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the priority speaker permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="141" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1ac5f664643c59d7e24271bb790735c68f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_read_message_history</definition>
+        <argsstring>() const</argsstring>
+        <name>has_read_message_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the read message history permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="157" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a84cfa9cd3dc9526f3a6a04ae25d3c775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -736,19 +568,89 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="189" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a032ce15247e135d733e6879bed928e7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a31d923d5f1020215b836db355991870b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_manage_threads</definition>
+        <definition>bool dpp::role::has_send_messages</definition>
         <argsstring>() const</argsstring>
-        <name>has_manage_threads</name>
+        <name>has_send_messages</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the manage threads permission </para>
+<para>True if has the send messages permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="191" column="6"/>
+        <location file="include/dpp/role.h" line="147" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1af54ea9f64ea035675a26b0d8e8b356f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_send_tts_messages</definition>
+        <argsstring>() const</argsstring>
+        <name>has_send_tts_messages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the send TTS messages permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="149" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a92ce258f420bce887cc9c92ad006fe06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_speak</definition>
+        <argsstring>() const</argsstring>
+        <name>has_speak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the speak permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="167" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1ae6173507d17a12012cf46da70929a49e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_stream</definition>
+        <argsstring>() const</argsstring>
+        <name>has_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the stream permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="143" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a363303c06726e049586b8ae4f3f6375e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_use_external_emojis</definition>
+        <argsstring>() const</argsstring>
+        <name>has_use_external_emojis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the use external emojis permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="161" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a3285282c168bfbd5229d483e8661e43e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_use_private_threads</definition>
+        <argsstring>() const</argsstring>
+        <name>has_use_private_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the use private threads permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="195" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a112a6ef17f1729e874570bc4a8e24973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -764,19 +666,117 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="193" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a3285282c168bfbd5229d483e8661e43e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a25d1cfcb13ddb4f59c08c3cc4b65cfcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::role::has_use_private_threads</definition>
+        <definition>bool dpp::role::has_use_slash_commands</definition>
         <argsstring>() const</argsstring>
-        <name>has_use_private_threads</name>
+        <name>has_use_slash_commands</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if has the use private threads permission </para>
+<para>True if has the use slash commands permission </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="195" column="6"/>
+        <location file="include/dpp/role.h" line="187" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a9ffd7c58994f9c3e0a38245462eb6766" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_use_vad</definition>
+        <argsstring>() const</argsstring>
+        <name>has_use_vad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has use voice activity detection permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="175" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a600d347d4f491ba32969a76d9d0cf3c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_view_audit_log</definition>
+        <argsstring>() const</argsstring>
+        <name>has_view_audit_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the view audit log permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="139" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1acbe56d5d1d54e9fea3a6b7acd66ef888" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_view_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>has_view_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the view channel permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="145" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1ac71887da3f920e070d1fa743ea000d1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::has_view_guild_insights</definition>
+        <argsstring>() const</argsstring>
+        <name>has_view_guild_insights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if has the view guild insights permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="163" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1ae0cb040c022f08d210c885012bf47919" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::is_hoisted</definition>
+        <argsstring>() const</argsstring>
+        <name>is_hoisted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if the role is hoisted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="119" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a479bc27fe486bb70dd3fc1376df3c5b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::is_managed</definition>
+        <argsstring>() const</argsstring>
+        <name>is_managed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if the role is managed (belongs to a bot or application) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="123" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a1d5a026fa3773f52b9c2cee6c590509f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::role::is_mentionable</definition>
+        <argsstring>() const</argsstring>
+        <name>is_mentionable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if the role is mentionable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="121" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

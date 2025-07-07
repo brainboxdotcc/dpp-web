@@ -5,6 +5,76 @@
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a12befca9a8714c02ab5b2ea5551a7593" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1automod__action" kindref="compound">automod_action</ref></type>
+        <definition>automod_action dpp::automod_rule_execute_t::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+<para>the action which was executed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="287" column="15" bodyfile="include/dpp/dispatcher.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a40053b5c622fcba9288b4850e35a8c11" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::automod_rule_execute_t::alert_system_message_id</definition>
+        <argsstring></argsstring>
+        <name>alert_system_message_id</name>
+        <briefdescription>
+<para>Optional: the id of any system auto moderation messages posted as a result of this action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="293" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a1f953bb35d94f5749676a660dc06d363" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::automod_rule_execute_t::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>Optional: the id of the channel in which user content was posted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="291" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a27bd80bc2e23695ca02a05f5daa74df9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::automod_rule_execute_t::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+<para>the user generated text content </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="294" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="77" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a8e48264b714092fae15f6dafd2d3bcb1" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
         <definition>snowflake dpp::automod_rule_execute_t::guild_id</definition>
@@ -19,19 +89,61 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="286" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="286" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a12befca9a8714c02ab5b2ea5551a7593" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1automod__action" kindref="compound">automod_action</ref></type>
-        <definition>automod_action dpp::automod_rule_execute_t::action</definition>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a613ae99c2be35a95631bcab407febc54" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::automod_rule_execute_t::matched_content</definition>
         <argsstring></argsstring>
-        <name>action</name>
+        <name>matched_content</name>
         <briefdescription>
-<para>the action which was executed </para>
+<para>the substring in content that triggered the rule (may be empty) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="287" column="15" bodyfile="include/dpp/dispatcher.h" bodystart="287" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="296" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1afb80aeb2f486dfa796c3e7c88dd09228" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::automod_rule_execute_t::matched_keyword</definition>
+        <argsstring></argsstring>
+        <name>matched_keyword</name>
+        <briefdescription>
+<para>the word or phrase configured in the rule that triggered the rule (may be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="295" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a74b6763f5e471f9994876e3dc8af8972" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::automod_rule_execute_t::message_id</definition>
+        <argsstring></argsstring>
+        <name>message_id</name>
+        <briefdescription>
+<para>Optional: the id of any user message which content belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="292" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
+        <argsstring></argsstring>
+        <name>raw_event</name>
+        <briefdescription>
+<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="71" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1aa1622d5f4ea8d3766205901170a6e6ff" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -74,118 +186,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="290" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="290" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a1f953bb35d94f5749676a660dc06d363" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::automod_rule_execute_t::channel_id</definition>
-        <argsstring></argsstring>
-        <name>channel_id</name>
-        <briefdescription>
-<para>Optional: the id of the channel in which user content was posted. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="291" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="291" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a74b6763f5e471f9994876e3dc8af8972" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::automod_rule_execute_t::message_id</definition>
-        <argsstring></argsstring>
-        <name>message_id</name>
-        <briefdescription>
-<para>Optional: the id of any user message which content belongs to. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="292" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="292" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a40053b5c622fcba9288b4850e35a8c11" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::automod_rule_execute_t::alert_system_message_id</definition>
-        <argsstring></argsstring>
-        <name>alert_system_message_id</name>
-        <briefdescription>
-<para>Optional: the id of any system auto moderation messages posted as a result of this action. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="293" column="10" bodyfile="include/dpp/dispatcher.h" bodystart="293" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a27bd80bc2e23695ca02a05f5daa74df9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::automod_rule_execute_t::content</definition>
-        <argsstring></argsstring>
-        <name>content</name>
-        <briefdescription>
-<para>the user generated text content </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="294" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="294" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1afb80aeb2f486dfa796c3e7c88dd09228" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::automod_rule_execute_t::matched_keyword</definition>
-        <argsstring></argsstring>
-        <name>matched_keyword</name>
-        <briefdescription>
-<para>the word or phrase configured in the rule that triggered the rule (may be empty) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="295" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="295" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__rule__execute__t_1a613ae99c2be35a95631bcab407febc54" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::automod_rule_execute_t::matched_content</definition>
-        <argsstring></argsstring>
-        <name>matched_content</name>
-        <briefdescription>
-<para>the substring in content that triggered the rule (may be empty) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="296" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="296" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
-        <argsstring></argsstring>
-        <name>raw_event</name>
-        <briefdescription>
-<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="71" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
-        <argsstring></argsstring>
-        <name>from</name>
-        <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="77" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

@@ -34,20 +34,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1collector_1a6dc9d4da82d2fdc56975b5b08e40ed96" prot="private" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1timed__listener" kindref="compound">timed_listener</ref>&lt; <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; T &gt;, std::function&lt; void(const T &amp;)&gt; &gt; *</type>
-        <definition>timed_listener&lt;event_router_t&lt;T&gt;, std::function&lt;void(const T&amp;)&gt; &gt;* dpp::collector&lt; T, C &gt;::tl</definition>
-        <argsstring></argsstring>
-        <name>tl</name>
-        <briefdescription>
-<para>Timed listener. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3236" column="16" bodyfile="include/dpp/cluster.h" bodystart="3236" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1collector_1aa1a02c2207aa69fd71be817382e6c957" prot="private" static="no" mutable="no">
         <type>std::vector&lt; C &gt;</type>
         <definition>std::vector&lt;C&gt; dpp::collector&lt; T, C &gt;::stored</definition>
@@ -61,6 +47,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3238" column="13" bodyfile="include/dpp/cluster.h" bodystart="3238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1collector_1a6dc9d4da82d2fdc56975b5b08e40ed96" prot="private" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1timed__listener" kindref="compound">timed_listener</ref>&lt; <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; T &gt;, std::function&lt; void(const T &amp;)&gt; &gt; *</type>
+        <definition>timed_listener&lt;event_router_t&lt;T&gt;, std::function&lt;void(const T&amp;)&gt; &gt;* dpp::collector&lt; T, C &gt;::tl</definition>
+        <argsstring></argsstring>
+        <name>tl</name>
+        <briefdescription>
+<para>Timed listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3236" column="16" bodyfile="include/dpp/cluster.h" bodystart="3236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1collector_1a8a4b17c9a7360a9d77fbb6b983870847" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -131,6 +131,41 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3251" column="1" bodyfile="include/dpp/cluster.h" bodystart="3251" bodyend="3265"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1a24ad57bf7d5c9b7ed7f18f51d01a7dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::collector&lt; T, C &gt;::~collector</definition>
+        <argsstring>()</argsstring>
+        <name>~collector</name>
+        <briefdescription>
+<para>Destroy the collector object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3320" column="9" bodyfile="include/dpp/cluster.h" bodystart="3320" bodyend="3322"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::collector&lt; T, C &gt;::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Immediately cancels the collector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this if you have met the conditions for which you are collecting objects early, e.g. you were watching for a message containing &apos;yes&apos; or &apos;no&apos; and have received it before the time is up.</para>
+<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3311" column="14" bodyfile="include/dpp/cluster.h" bodystart="3311" bodyend="3314"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void dpp::collector&lt; T, C &gt;::completed</definition>
@@ -198,41 +233,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3300" column="17"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::collector&lt; T, C &gt;::cancel</definition>
-        <argsstring>()</argsstring>
-        <name>cancel</name>
-        <briefdescription>
-<para>Immediately cancels the collector. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Use this if you have met the conditions for which you are collecting objects early, e.g. you were watching for a message containing &apos;yes&apos; or &apos;no&apos; and have received it before the time is up.</para>
-<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3311" column="14" bodyfile="include/dpp/cluster.h" bodystart="3311" bodyend="3314"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1collector_1a24ad57bf7d5c9b7ed7f18f51d01a7dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type></type>
-        <definition>virtual dpp::collector&lt; T, C &gt;::~collector</definition>
-        <argsstring>()</argsstring>
-        <name>~collector</name>
-        <briefdescription>
-<para>Destroy the collector object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3320" column="9" bodyfile="include/dpp/cluster.h" bodystart="3320" bodyend="3322"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

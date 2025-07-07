@@ -5,6 +5,34 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; audit_entry &gt;</basecompoundref>
     <includes local="no">auditlog.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1audit__change" kindref="compound">audit_change</ref> &gt;</type>
+        <definition>std::vector&lt;audit_change&gt; dpp::audit_entry::changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <briefdescription>
+<para>Optional: changes made to the target_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="187" column="12" bodyfile="include/dpp/auditlog.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1abb76c66e3a5d4fa79d1753221119ab24" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structdpp_1_1audit__extra" kindref="compound">audit_extra</ref> &gt;</type>
+        <definition>std::optional&lt;audit_extra&gt; dpp::audit_entry::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+<para>Optional: additional info for certain action types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="190" column="14" bodyfile="include/dpp/auditlog.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::audit_entry::id</definition>
@@ -18,6 +46,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/auditlog.h" line="181" column="10" bodyfile="include/dpp/auditlog.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::audit_entry::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+<para>Optional: the reason for the change (1-512 characters) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="191" column="12" bodyfile="include/dpp/auditlog.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -35,34 +77,6 @@
         </inbodydescription>
         <location file="include/dpp/auditlog.h" line="186" column="10" bodyfile="include/dpp/auditlog.h" bodystart="186" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1audit__change" kindref="compound">audit_change</ref> &gt;</type>
-        <definition>std::vector&lt;audit_change&gt; dpp::audit_entry::changes</definition>
-        <argsstring></argsstring>
-        <name>changes</name>
-        <briefdescription>
-<para>Optional: changes made to the target_id. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="187" column="12" bodyfile="include/dpp/auditlog.h" bodystart="187" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::audit_entry::user_id</definition>
-        <argsstring></argsstring>
-        <name>user_id</name>
-        <briefdescription>
-<para>the user or app that made the changes (may be empty) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="188" column="10" bodyfile="include/dpp/auditlog.h" bodystart="188" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1a510a9fd92e9784491af63b7d8ac65344" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3d" kindref="member">audit_type</ref></type>
         <definition>audit_type dpp::audit_entry::type</definition>
@@ -77,33 +91,19 @@
         </inbodydescription>
         <location file="include/dpp/auditlog.h" line="189" column="11" bodyfile="include/dpp/auditlog.h" bodystart="189" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1audit__entry_1abb76c66e3a5d4fa79d1753221119ab24" prot="public" static="no" mutable="no">
-        <type>std::optional&lt; <ref refid="structdpp_1_1audit__extra" kindref="compound">audit_extra</ref> &gt;</type>
-        <definition>std::optional&lt;audit_extra&gt; dpp::audit_entry::extra</definition>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::user_id</definition>
         <argsstring></argsstring>
-        <name>extra</name>
+        <name>user_id</name>
         <briefdescription>
-<para>Optional: additional info for certain action types. </para>
+<para>the user or app that made the changes (may be empty) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="190" column="14" bodyfile="include/dpp/auditlog.h" bodystart="190" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::audit_entry::reason</definition>
-        <argsstring></argsstring>
-        <name>reason</name>
-        <briefdescription>
-<para>Optional: the reason for the change (1-512 characters) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="191" column="12" bodyfile="include/dpp/auditlog.h" bodystart="191" bodyend="-1"/>
+        <location file="include/dpp/auditlog.h" line="188" column="10" bodyfile="include/dpp/auditlog.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -135,35 +135,6 @@
         </inbodydescription>
         <location file="include/dpp/auditlog.h" line="197" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1audit__entry_1a850d542b05c0aaabbcef1d7c52aaae9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1audit__entry" kindref="compound">audit_entry</ref> &amp;</type>
-        <definition>audit_entry &amp; dpp::audit_entry::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Read class values from json object <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A json object to read from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="203" column="13"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
         <definition>virtual std::string dpp::json_interface&lt; audit_entry  &gt;::build_json</definition>
@@ -194,6 +165,35 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="57" column="21" bodyfile="include/dpp/json_interface.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1audit__entry_1a850d542b05c0aaabbcef1d7c52aaae9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1audit__entry" kindref="compound">audit_entry</ref> &amp;</type>
+        <definition>audit_entry &amp; dpp::audit_entry::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read class values from json object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A json object to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="203" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,20 +5,6 @@
     <includes local="no">message.h</includes>
     <innerclass refid="structdpp_1_1component_1_1inner__emoji" prot="public">dpp::component::inner_emoji</innerclass>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1component_1afdb70ec9968493ed54bab29135f8b8c6" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
-        <definition>component_type dpp::component::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Component type, either a button or action row </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="68" column="16" bodyfile="include/dpp/message.h" bodystart="68" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a51efd287b483b485f7019fb8263465ed" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classdpp_1_1component" kindref="compound">component</ref> &gt;</type>
         <definition>std::vector&lt;component&gt; dpp::component::components</definition>
@@ -32,6 +18,47 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="72" column="13" bodyfile="include/dpp/message.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a9d5ae2ba0812d8c8e7345b3271d75e71" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::component::custom_id</definition>
+        <argsstring></argsstring>
+        <name>custom_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Component id (for buttons). Maximum of 100 characters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="86" column="13" bodyfile="include/dpp/message.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1ad364b789494d7888666173079bdb48ad" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::component::disabled</definition>
+        <argsstring></argsstring>
+        <name>disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disabled flag (for buttons) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="95" column="6" bodyfile="include/dpp/message.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a259175c6c6da17af6d00765088fb73f6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdpp_1_1component_1_1inner__emoji" kindref="compound">dpp::component::inner_emoji</ref></type>
+        <definition>struct dpp::component::inner_emoji dpp::component::emoji</definition>
+        <argsstring></argsstring>
+        <name>emoji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="121" column="7"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a177a7e35e4b310e2028464787396b1b4" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -61,19 +88,19 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="81" column="17" bodyfile="include/dpp/message.h" bodystart="81" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a9d5ae2ba0812d8c8e7345b3271d75e71" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::component::custom_id</definition>
+      <memberdef kind="variable" id="classdpp_1_1component_1afdb70ec9968493ed54bab29135f8b8c6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
+        <definition>component_type dpp::component::type</definition>
         <argsstring></argsstring>
-        <name>custom_id</name>
+        <name>type</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Component id (for buttons). Maximum of 100 characters. </para>
+<para>Component type, either a button or action row </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="86" column="13" bodyfile="include/dpp/message.h" bodystart="86" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="68" column="16" bodyfile="include/dpp/message.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a79ad72fb0e31440e8f644e79a5870573" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -88,33 +115,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="91" column="13" bodyfile="include/dpp/message.h" bodystart="91" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1ad364b789494d7888666173079bdb48ad" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::component::disabled</definition>
-        <argsstring></argsstring>
-        <name>disabled</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Disabled flag (for buttons) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="95" column="6" bodyfile="include/dpp/message.h" bodystart="95" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a259175c6c6da17af6d00765088fb73f6" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1component_1_1inner__emoji" kindref="compound">dpp::component::inner_emoji</ref></type>
-        <definition>struct dpp::component::inner_emoji dpp::component::emoji</definition>
-        <argsstring></argsstring>
-        <name>emoji</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="121" column="7"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -146,25 +146,25 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="129" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1component_1a3707437be16cc7dfd5edcf321f8e842d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_type</definition>
-        <argsstring>(component_type ct)</argsstring>
-        <name>set_type</name>
+        <definition>component &amp; dpp::component::add_component</definition>
+        <argsstring>(const component &amp;c)</argsstring>
+        <name>add_component</name>
         <param>
-          <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
-          <declname>ct</declname>
+          <type>const <ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+          <declname>c</declname>
         </param>
         <briefdescription>
-<para>Set the type of the component. Button components (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>) should always be contained within an action row (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>). As described below, many of the other methods automatically set this to the correct type so usually you should not need to manually call <ref refid="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" kindref="member">component::set_type()</ref>. </para>
+<para>Add a sub-component, only valid for action rows. Adding subcomponents to a component will automatically set this component&apos;s type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>ct</parametername>
+<parametername>c</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The component type </para>
+<para>The sub-component to add </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -174,127 +174,52 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="142" column="11"/>
+        <location file="include/dpp/message.h" line="202" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a23955055e9d77383fca2a5738ae3a30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_label</definition>
-        <argsstring>(const std::string &amp;label)</argsstring>
-        <name>set_label</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>label</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1component_1aeb151fb676b55ec2728da90398844348" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::component::build_json</definition>
+        <argsstring>() const</argsstring>
+        <name>build_json</name>
         <briefdescription>
-<para>Set the label of the component, e.g. button text. For action rows, this field is ignored. Setting the label will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>label</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Label text to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
+<para>Build JSON from this object. <simplesect kind="return"><para>The JSON text of the invite </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="152" column="11"/>
+        <location file="include/dpp/message.h" line="232" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1af99f293166995b8273405e446d0efa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1component_1a993d0a0c899aca38b3f12161484a9f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_url</definition>
-        <argsstring>(const std::string &amp;url)</argsstring>
-        <name>set_url</name>
+        <definition>component &amp; dpp::component::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>url</declname>
+          <type><ref refid="namespacenlohmann_1a2bfd99e845a2e5cd90aeaf1b1431f474" kindref="member">nlohmann::json</ref> *</type>
+          <declname>j</declname>
         </param>
         <briefdescription>
-<para>Set the url for <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> types. Calling this function sets the style to <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> and the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>Read class values from json object <parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>url</parametername>
+<parametername>j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>URL to set, maximum length of 512 characters </para>
+<para>A json object to read from </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self. </para>
+<simplesect kind="return"><para>A reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="162" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a19213be82f2cd18748f669e53e1348a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_style</definition>
-        <argsstring>(component_style cs)</argsstring>
-        <name>set_style</name>
-        <param>
-          <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
-          <declname>cs</declname>
-        </param>
-        <briefdescription>
-<para>Set the style of the component, e.g. button colour. For action rows, this field is ignored. Setting the style will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>cs</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Component style to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="172" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a1bf3798669b015711df5d2621ff92d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_id</definition>
-        <argsstring>(const std::string &amp;id)</argsstring>
-        <name>set_id</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-<para>Set the id of the component. For action rows, this field is ignored. Setting the id will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Custom ID string to set. This ID will be sent for any on_button_click events related to the button. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="183" column="11"/>
+        <location file="include/dpp/message.h" line="227" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1component_1a48a2ab72eaf6e58073a1f5dc936877a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
@@ -325,36 +250,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="192" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a3707437be16cc7dfd5edcf321f8e842d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::add_component</definition>
-        <argsstring>(const component &amp;c)</argsstring>
-        <name>add_component</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Add a sub-component, only valid for action rows. Adding subcomponents to a component will automatically set this component&apos;s type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The sub-component to add </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="202" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1component_1a4fa1319e5119a258e3a80e028a4dff3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
@@ -412,50 +307,155 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="221" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a993d0a0c899aca38b3f12161484a9f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1component_1a1bf3798669b015711df5d2621ff92d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
+        <definition>component &amp; dpp::component::set_id</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>set_id</name>
         <param>
-          <type><ref refid="namespacenlohmann_1a2bfd99e845a2e5cd90aeaf1b1431f474" kindref="member">nlohmann::json</ref> *</type>
-          <declname>j</declname>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
         </param>
         <briefdescription>
+<para>Set the id of the component. For action rows, this field is ignored. Setting the id will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Read class values from json object <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>j</parametername>
+<parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A json object to read from </para>
+<para>Custom ID string to set. This ID will be sent for any on_button_click events related to the button. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="227" column="11"/>
+        <location file="include/dpp/message.h" line="183" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1aeb151fb676b55ec2728da90398844348" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::component::build_json</definition>
-        <argsstring>() const</argsstring>
-        <name>build_json</name>
+      <memberdef kind="function" id="classdpp_1_1component_1a23955055e9d77383fca2a5738ae3a30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_label</definition>
+        <argsstring>(const std::string &amp;label)</argsstring>
+        <name>set_label</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
         <briefdescription>
+<para>Set the label of the component, e.g. button text. For action rows, this field is ignored. Setting the label will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Build JSON from this object. <simplesect kind="return"><para>The JSON text of the invite </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Label text to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="232" column="13"/>
+        <location file="include/dpp/message.h" line="152" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a19213be82f2cd18748f669e53e1348a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_style</definition>
+        <argsstring>(component_style cs)</argsstring>
+        <name>set_style</name>
+        <param>
+          <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+<para>Set the style of the component, e.g. button colour. For action rows, this field is ignored. Setting the style will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component style to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="172" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_type</definition>
+        <argsstring>(component_type ct)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
+          <declname>ct</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the component. Button components (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>) should always be contained within an action row (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>). As described below, many of the other methods automatically set this to the correct type so usually you should not need to manually call <ref refid="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" kindref="member">component::set_type()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="142" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1af99f293166995b8273405e446d0efa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_url</definition>
+        <argsstring>(const std::string &amp;url)</argsstring>
+        <name>set_url</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Set the url for <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> types. Calling this function sets the style to <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> and the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to set, maximum length of 512 characters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="162" column="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

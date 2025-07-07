@@ -144,35 +144,38 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="538" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a0fd948515dcc032354a4bec5ee8f709b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
-        <definition>welcome_screen &amp; dpp::welcome_screen::set_description</definition>
-        <argsstring>(const std::string &amp;s)</argsstring>
-        <name>set_description</name>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; welcome_screen  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>s</declname>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
-<para>Set the server description for this welcome screen object shown in the welcome screen. </para>
+<para>Convert object to json string. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>s</parametername>
+<parametername>with_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>string The server description </para>
+<para>Whether to include the ID or not </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="546" column="16"/>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
@@ -203,6 +206,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a0fd948515dcc032354a4bec5ee8f709b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
+        <definition>welcome_screen &amp; dpp::welcome_screen::set_description</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>set_description</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set the server description for this welcome screen object shown in the welcome screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string The server description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="546" column="16"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -236,39 +269,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; welcome_screen  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

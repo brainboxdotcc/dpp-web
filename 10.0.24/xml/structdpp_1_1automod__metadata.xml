@@ -5,115 +5,6 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; automod_metadata &gt;</basecompoundref>
     <includes local="no">automod.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::keywords</definition>
-        <argsstring></argsstring>
-        <name>keywords</name>
-        <briefdescription>
-<para>Substrings which will be searched for in content (Maximum of 1000). </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 60 characters.</para>
-<para>Wildcard symbols (<computeroutput>*</computeroutput>) can be used to customize how each keyword will be matched.</para>
-<para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
-<para>Prefix - word must start with the keyword</para>
-<para><table rows="3" cols="2"><row>
-<entry thead="yes"><para>keyword   </para>
-</entry><entry thead="yes"><para>matches    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>cat*   </para>
-</entry><entry thead="no"><para><underline><bold>cat</bold></underline>ch, <underline><bold>Cat</bold></underline>apult, <underline><bold>CAt</bold></underline>tLE    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>the mat*   </para>
-</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>rix   </para>
-</entry></row>
-</table>
-</para>
-<para>Suffix - word must end with the keyword</para>
-<para><table rows="3" cols="2"><row>
-<entry thead="yes"><para>keyword   </para>
-</entry><entry thead="yes"><para>matches    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>*cat   </para>
-</entry><entry thead="no"><para>wild<underline><bold>cat</bold></underline>, copy<underline><bold>Cat</bold></underline>    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>*the mat   </para>
-</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>   </para>
-</entry></row>
-</table>
-</para>
-<para>Anywhere - keyword can appear anywhere in the content</para>
-<para><table rows="3" cols="2"><row>
-<entry thead="yes"><para>keyword   </para>
-</entry><entry thead="yes"><para>matches    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>*cat*   </para>
-</entry><entry thead="no"><para>lo<underline><bold>cat</bold></underline>ion, edu<underline><bold>Cat</bold></underline>ion    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>*the mat*   </para>
-</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>ter   </para>
-</entry></row>
-</table>
-</para>
-<para>Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</para>
-<para><table rows="3" cols="2"><row>
-<entry thead="yes"><para>keyword   </para>
-</entry><entry thead="yes"><para>matches    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>cat   </para>
-</entry><entry thead="no"><para><underline><bold>Cat</bold></underline>    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>the mat   </para>
-</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>   </para>
-</entry></row>
-</table>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="150" column="13" bodyfile="include/dpp/automod.h" bodystart="150" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a855c12dbe234d7cd0365256ac6db4dbe" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::regex_patterns</definition>
-        <argsstring></argsstring>
-        <name>regex_patterns</name>
-        <briefdescription>
-<para>Regular expression patterns which will be matched against content (Maximum of 10). </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Only Rust flavored regex is currently supported, which can be tested in online editors such as <ulink url="https://rustexp.lpil.uk/">Rustexp</ulink>. Each regex pattern can be up to 260 characters. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="158" column="13" bodyfile="include/dpp/automod.h" bodystart="158" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
-        <definition>std::vector&lt;automod_preset_type&gt; dpp::automod_metadata::presets</definition>
-        <argsstring></argsstring>
-        <name>presets</name>
-        <briefdescription>
-<para>Preset keyword list types to moderate. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="164" column="13" bodyfile="include/dpp/automod.h" bodystart="164" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
         <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::allow_list</definition>
@@ -191,19 +82,82 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="205" column="13" bodyfile="include/dpp/automod.h" bodystart="205" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::automod_metadata::mention_total_limit</definition>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::keywords</definition>
         <argsstring></argsstring>
-        <name>mention_total_limit</name>
+        <name>keywords</name>
         <briefdescription>
-<para>Total number of unique role and user mentions allowed per message (Maximum of 50) </para>
+<para>Substrings which will be searched for in content (Maximum of 1000). </para>
         </briefdescription>
         <detaileddescription>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 60 characters.</para>
+<para>Wildcard symbols (<computeroutput>*</computeroutput>) can be used to customize how each keyword will be matched.</para>
+<para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
+<para>Prefix - word must start with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat*   </para>
+</entry><entry thead="no"><para><underline><bold>cat</bold></underline>ch, <underline><bold>Cat</bold></underline>apult, <underline><bold>CAt</bold></underline>tLE    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat*   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>rix   </para>
+</entry></row>
+</table>
+</para>
+<para>Suffix - word must end with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat   </para>
+</entry><entry thead="no"><para>wild<underline><bold>cat</bold></underline>, copy<underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
+<para>Anywhere - keyword can appear anywhere in the content</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat*   </para>
+</entry><entry thead="no"><para>lo<underline><bold>cat</bold></underline>ion, edu<underline><bold>Cat</bold></underline>ion    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat*   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>ter   </para>
+</entry></row>
+</table>
+</para>
+<para>Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat   </para>
+</entry><entry thead="no"><para><underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="210" column="9" bodyfile="include/dpp/automod.h" bodystart="210" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="150" column="13" bodyfile="include/dpp/automod.h" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a7529859f52dd6c49cdb7e1f58e8f9127" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -218,6 +172,52 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/automod.h" line="215" column="6" bodyfile="include/dpp/automod.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::automod_metadata::mention_total_limit</definition>
+        <argsstring></argsstring>
+        <name>mention_total_limit</name>
+        <briefdescription>
+<para>Total number of unique role and user mentions allowed per message (Maximum of 50) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="210" column="9" bodyfile="include/dpp/automod.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
+        <definition>std::vector&lt;automod_preset_type&gt; dpp::automod_metadata::presets</definition>
+        <argsstring></argsstring>
+        <name>presets</name>
+        <briefdescription>
+<para>Preset keyword list types to moderate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="164" column="13" bodyfile="include/dpp/automod.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a855c12dbe234d7cd0365256ac6db4dbe" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::regex_patterns</definition>
+        <argsstring></argsstring>
+        <name>regex_patterns</name>
+        <briefdescription>
+<para>Regular expression patterns which will be matched against content (Maximum of 10). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only Rust flavored regex is currently supported, which can be tested in online editors such as <ulink url="https://rustexp.lpil.uk/">Rustexp</ulink>. Each regex pattern can be up to 260 characters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="158" column="13" bodyfile="include/dpp/automod.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -249,6 +249,29 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="225" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string dpp::automod_metadata::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="240" column="21"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
         <definition>automod_metadata &amp; dpp::automod_metadata::fill_from_json</definition>
@@ -278,29 +301,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/automod.h" line="233" column="18"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>virtual std::string dpp::automod_metadata::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="240" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

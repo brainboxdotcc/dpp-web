@@ -4,20 +4,6 @@
     <compoundname>dpp::confirmation_callback_t</compoundname>
     <includes local="no">cluster.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1aa34bb49cd6a7ccbe3e076df27b434e86" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::confirmation_callback_t::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Returned data type in confirmable_t, used to double check to avoid an exception if you wish </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="169" column="13" bodyfile="include/dpp/cluster.h" bodystart="169" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a97669d491cc60a5e76a248bae9ad7633" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref></type>
         <definition>http_request_completion_t dpp::confirmation_callback_t::http_info</definition>
@@ -31,6 +17,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="171" column="27" bodyfile="include/dpp/cluster.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1aa34bb49cd6a7ccbe3e076df27b434e86" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::confirmation_callback_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returned data type in confirmable_t, used to double check to avoid an exception if you wish </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="169" column="13" bodyfile="include/dpp/cluster.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a927bdab169583369b18fe3335dacbea3" kindref="member">confirmable_t</ref></type>
@@ -114,6 +114,23 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="187" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref></type>
+        <definition>error_info dpp::confirmation_callback_t::get_error</definition>
+        <argsstring>() const</argsstring>
+        <name>get_error</name>
+        <briefdescription>
+<para>Get the <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object. The <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object contains the details of any REST error, if there is an error (to find out if there is an error check <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> The details of the error message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="205" column="12"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool dpp::confirmation_callback_t::is_error</definition>
@@ -132,23 +149,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="196" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref></type>
-        <definition>error_info dpp::confirmation_callback_t::get_error</definition>
-        <argsstring>() const</argsstring>
-        <name>get_error</name>
-        <briefdescription>
-<para>Get the <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object. The <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object contains the details of any REST error, if there is an error (to find out if there is an error check <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref>) </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> The details of the error message </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="205" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

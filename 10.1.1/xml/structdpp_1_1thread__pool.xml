@@ -4,33 +4,19 @@
     <compoundname>dpp::thread_pool</compoundname>
     <includes local="no">thread_pool.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1thread__pool_1afa15f924c81060079ed922ffdb82536c" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::thread &gt;</type>
-        <definition>std::vector&lt;std::thread&gt; dpp::thread_pool::threads</definition>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1ad56b2c907ebbca9e1ca24cd47ab4d260" prot="public" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable dpp::thread_pool::cv</definition>
         <argsstring></argsstring>
-        <name>threads</name>
+        <name>cv</name>
         <briefdescription>
-<para>Threads that comprise the thread pool. </para>
+<para>Condition variable to notify for new tasks to run. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/thread_pool.h" line="76" column="13" bodyfile="include/dpp/thread_pool.h" bodystart="76" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1thread__pool_1a902c31b079ebcee2913179cfbcc8d04d" prot="public" static="no" mutable="no">
-        <type>std::priority_queue&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref>, std::vector&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref> &gt;, <ref refid="structdpp_1_1thread__pool__task__comparator" kindref="compound">thread_pool_task_comparator</ref> &gt;</type>
-        <definition>std::priority_queue&lt;thread_pool_task, std::vector&lt;thread_pool_task&gt;, thread_pool_task_comparator&gt; dpp::thread_pool::tasks</definition>
-        <argsstring></argsstring>
-        <name>tasks</name>
-        <briefdescription>
-<para>Priority queue of tasks to be executed. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/thread_pool.h" line="81" column="21" bodyfile="include/dpp/thread_pool.h" bodystart="81" bodyend="-1"/>
+        <location file="include/dpp/thread_pool.h" line="91" column="25" bodyfile="include/dpp/thread_pool.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1thread__pool_1a05e985ef2fa7b1bcc2aa38912a8a32f2" prot="public" static="no" mutable="no">
         <type>std::mutex</type>
@@ -46,20 +32,6 @@
         </inbodydescription>
         <location file="include/dpp/thread_pool.h" line="86" column="12" bodyfile="include/dpp/thread_pool.h" bodystart="86" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1thread__pool_1ad56b2c907ebbca9e1ca24cd47ab4d260" prot="public" static="no" mutable="no">
-        <type>std::condition_variable</type>
-        <definition>std::condition_variable dpp::thread_pool::cv</definition>
-        <argsstring></argsstring>
-        <name>cv</name>
-        <briefdescription>
-<para>Condition variable to notify for new tasks to run. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/thread_pool.h" line="91" column="25" bodyfile="include/dpp/thread_pool.h" bodystart="91" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1thread__pool_1a3eed4f7d3b14a29ca75aedc55af8535f" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool dpp::thread_pool::stop</definition>
@@ -74,6 +46,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/thread_pool.h" line="96" column="6" bodyfile="include/dpp/thread_pool.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1a902c31b079ebcee2913179cfbcc8d04d" prot="public" static="no" mutable="no">
+        <type>std::priority_queue&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref>, std::vector&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref> &gt;, <ref refid="structdpp_1_1thread__pool__task__comparator" kindref="compound">thread_pool_task_comparator</ref> &gt;</type>
+        <definition>std::priority_queue&lt;thread_pool_task, std::vector&lt;thread_pool_task&gt;, thread_pool_task_comparator&gt; dpp::thread_pool::tasks</definition>
+        <argsstring></argsstring>
+        <name>tasks</name>
+        <briefdescription>
+<para>Priority queue of tasks to be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="81" column="21" bodyfile="include/dpp/thread_pool.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1afa15f924c81060079ed922ffdb82536c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; dpp::thread_pool::threads</definition>
+        <argsstring></argsstring>
+        <name>threads</name>
+        <briefdescription>
+<para>Threads that comprise the thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="76" column="13" bodyfile="include/dpp/thread_pool.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

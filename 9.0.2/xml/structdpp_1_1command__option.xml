@@ -4,33 +4,19 @@
     <compoundname>dpp::command_option</compoundname>
     <includes local="no">slashcommand.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1command__option_1adbb960edfa14ae19545d64397a785ab3" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58" kindref="member">command_option_type</ref></type>
-        <definition>command_option_type dpp::command_option::type</definition>
+      <memberdef kind="variable" id="structdpp_1_1command__option_1a05f44f181203ed332696b789c4ef7c6f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
+        <definition>std::vector&lt;command_option_choice&gt; dpp::command_option::choices</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>choices</name>
         <briefdescription>
-<para>Option type (what type of value is accepted) </para>
+<para>List of choices for multiple choice command. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="104" column="21" bodyfile="include/dpp/slashcommand.h" bodystart="104" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__option_1ac2d487bd055fecbe1c566742def38bb7" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::command_option::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <briefdescription>
-<para>Option name (1-32 chars) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="105" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="105" bodyend="-1"/>
+        <location file="include/dpp/slashcommand.h" line="108" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__option_1a82debcf96e4265cf7d8ea6b2aa47e481" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -46,33 +32,19 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="106" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="106" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__option_1ad203ab30a75ce7508f565f5821301bdb" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::command_option::required</definition>
+      <memberdef kind="variable" id="structdpp_1_1command__option_1ac2d487bd055fecbe1c566742def38bb7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::command_option::name</definition>
         <argsstring></argsstring>
-        <name>required</name>
+        <name>name</name>
         <briefdescription>
-<para>True if this is a mandatory parameter. </para>
+<para>Option name (1-32 chars) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="107" column="6" bodyfile="include/dpp/slashcommand.h" bodystart="107" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__option_1a05f44f181203ed332696b789c4ef7c6f" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
-        <definition>std::vector&lt;command_option_choice&gt; dpp::command_option::choices</definition>
-        <argsstring></argsstring>
-        <name>choices</name>
-        <briefdescription>
-<para>List of choices for multiple choice command. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="108" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="108" bodyend="-1"/>
+        <location file="include/dpp/slashcommand.h" line="105" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__option_1a0f238f1e8bb393b2c37b47c6fb564952" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &gt;</type>
@@ -87,6 +59,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="109" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__option_1ad203ab30a75ce7508f565f5821301bdb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::command_option::required</definition>
+        <argsstring></argsstring>
+        <name>required</name>
+        <briefdescription>
+<para>True if this is a mandatory parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="107" column="6" bodyfile="include/dpp/slashcommand.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__option_1adbb960edfa14ae19545d64397a785ab3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58" kindref="member">command_option_type</ref></type>
+        <definition>command_option_type dpp::command_option::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Option type (what type of value is accepted) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="104" column="21" bodyfile="include/dpp/slashcommand.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

@@ -17,6 +17,27 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="489" column="11"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void httplib::Stream::get_remote_ip_and_port</definition>
+        <argsstring>(std::string &amp;ip, int &amp;port) const =0</argsstring>
+        <name>get_remote_ip_and_port</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="496" column="16"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_stream_1af0a78453c54817f8fc0de91f8b02c12c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
         <definition>virtual bool httplib::Stream::is_readable</definition>
@@ -64,6 +85,36 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="494" column="19"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1ad2ea435dea23ee5f89b0792f4cb2d742" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>socket_t</type>
+        <definition>virtual socket_t httplib::Stream::socket</definition>
+        <argsstring>() const =0</argsstring>
+        <name>socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="497" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const char *ptr)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="501" column="11"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>ssize_t</type>
         <definition>virtual ssize_t httplib::Stream::write</definition>
@@ -85,18 +136,14 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="495" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
-        <definition>virtual void httplib::Stream::get_remote_ip_and_port</definition>
-        <argsstring>(std::string &amp;ip, int &amp;port) const =0</argsstring>
-        <name>get_remote_ip_and_port</name>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>write</name>
         <param>
-          <type>std::string &amp;</type>
-          <declname>ip</declname>
-        </param>
-        <param>
-          <type>int &amp;</type>
-          <declname>port</declname>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -104,20 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="496" column="16"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_stream_1ad2ea435dea23ee5f89b0792f4cb2d742" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>socket_t</type>
-        <definition>virtual socket_t httplib::Stream::socket</definition>
-        <argsstring>() const =0</argsstring>
-        <name>socket</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="497" column="20"/>
+        <location file="include/dpp/httplib.h" line="502" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_stream_1a9892f60a65f59412ace397b7b6c4c93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -146,40 +180,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="500" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ssize_t</type>
-        <definition>ssize_t httplib::Stream::write</definition>
-        <argsstring>(const char *ptr)</argsstring>
-        <name>write</name>
-        <param>
-          <type>const char *</type>
-          <declname>ptr</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="501" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ssize_t</type>
-        <definition>ssize_t httplib::Stream::write</definition>
-        <argsstring>(const std::string &amp;s)</argsstring>
-        <name>write</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>s</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="502" column="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

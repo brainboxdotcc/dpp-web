@@ -4,47 +4,19 @@
     <compoundname>dpp::activity</compoundname>
     <includes local="no">presence.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1activity_1a1bc7b3fbd7cbf6ef7d520ef80ca223b1" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::activity::name</definition>
+      <memberdef kind="variable" id="classdpp_1_1activity_1aba3ef035ea27dde96a5d45a97a80a29b" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::activity::application_id</definition>
         <argsstring></argsstring>
-        <name>name</name>
+        <name>application_id</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Name of activity e.g. &quot;Fortnite&quot; </para>
+<para>Creating application (e.g. a linked account on the user&apos;s client) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="226" column="13" bodyfile="include/dpp/presence.h" bodystart="226" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1a6314c58d23a4301b3d7dabc91e472666" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::activity::state</definition>
-        <argsstring></argsstring>
-        <name>state</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>State of activity or the custom user status. e.g. &quot;Waiting in lobby&quot; </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="230" column="13" bodyfile="include/dpp/presence.h" bodystart="230" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1af12e911465278b93f67ee65ef5d7fb0e" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::activity::details</definition>
-        <argsstring></argsstring>
-        <name>details</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>What the player is currently doing </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="233" column="13" bodyfile="include/dpp/presence.h" bodystart="233" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="268" column="11" bodyfile="include/dpp/presence.h" bodystart="268" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1activity_1a5499464a59f18a8d098f4d7bab610691" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1activity__assets" kindref="compound">activity_assets</ref></type>
@@ -60,20 +32,6 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="236" column="17" bodyfile="include/dpp/presence.h" bodystart="236" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1ad1adda3efd20156e122a238c32fb58c6" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::activity::url</definition>
-        <argsstring></argsstring>
-        <name>url</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>URL. Only applicable for certain sites such a YouTube Alias: details </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="241" column="13" bodyfile="include/dpp/presence.h" bodystart="241" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1activity_1a65cb680cfef51d6b3d1796682c9c93c5" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1activity__button" kindref="compound">activity_button</ref> &gt;</type>
         <definition>std::vector&lt;activity_button&gt; dpp::activity::buttons</definition>
@@ -87,62 +45,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/presence.h" line="244" column="13" bodyfile="include/dpp/presence.h" bodystart="244" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1a4d73d6ac68ba16822b3c67554e24f3b1" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1emoji" kindref="compound">dpp::emoji</ref></type>
-        <definition>dpp::emoji dpp::activity::emoji</definition>
-        <argsstring></argsstring>
-        <name>emoji</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>The emoji used for the custom status </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="247" column="12" bodyfile="include/dpp/presence.h" bodystart="247" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1a7d76284f4a09615e6b93f97852420fca" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1activity__party" kindref="compound">activity_party</ref></type>
-        <definition>activity_party dpp::activity::party</definition>
-        <argsstring></argsstring>
-        <name>party</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Information of the current party if there is one </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="250" column="16" bodyfile="include/dpp/presence.h" bodystart="250" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1a13218ba01e1ceeb45b12f7774a73e9c1" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1activity__secrets" kindref="compound">activity_secrets</ref></type>
-        <definition>activity_secrets dpp::activity::secrets</definition>
-        <argsstring></argsstring>
-        <name>secrets</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Secrets for rich presence joining and spectating </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="253" column="18" bodyfile="include/dpp/presence.h" bodystart="253" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1aa796b39d22fb9e5083c820b6803285ba" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" kindref="member">activity_type</ref></type>
-        <definition>activity_type dpp::activity::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Activity type </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="256" column="15" bodyfile="include/dpp/presence.h" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1activity_1a0f393e44d64caee04effbd9821f13635" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -158,19 +60,33 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="259" column="8" bodyfile="include/dpp/presence.h" bodystart="259" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1a3ab31f2d396e1c16e3f5a2036a683c9f" prot="public" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::activity::start</definition>
+      <memberdef kind="variable" id="classdpp_1_1activity_1af12e911465278b93f67ee65ef5d7fb0e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::activity::details</definition>
         <argsstring></argsstring>
-        <name>start</name>
+        <name>details</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Start time. e.g. when game was started </para>
+<para>What the player is currently doing </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="262" column="8" bodyfile="include/dpp/presence.h" bodystart="262" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="233" column="13" bodyfile="include/dpp/presence.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a4d73d6ac68ba16822b3c67554e24f3b1" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1emoji" kindref="compound">dpp::emoji</ref></type>
+        <definition>dpp::emoji dpp::activity::emoji</definition>
+        <argsstring></argsstring>
+        <name>emoji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The emoji used for the custom status </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="247" column="12" bodyfile="include/dpp/presence.h" bodystart="247" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1activity_1a54cf821d1e457ca1834e53a7bf8de774" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -185,20 +101,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/presence.h" line="265" column="8" bodyfile="include/dpp/presence.h" bodystart="265" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1activity_1aba3ef035ea27dde96a5d45a97a80a29b" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::activity::application_id</definition>
-        <argsstring></argsstring>
-        <name>application_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Creating application (e.g. a linked account on the user&apos;s client) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="268" column="11" bodyfile="include/dpp/presence.h" bodystart="268" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1activity_1a6bd675ea3efb05b3d3906f1df87fd5c8" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -228,8 +130,183 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="274" column="6" bodyfile="include/dpp/presence.h" bodystart="274" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a1bc7b3fbd7cbf6ef7d520ef80ca223b1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::activity::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of activity e.g. &quot;Fortnite&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="226" column="13" bodyfile="include/dpp/presence.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a7d76284f4a09615e6b93f97852420fca" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1activity__party" kindref="compound">activity_party</ref></type>
+        <definition>activity_party dpp::activity::party</definition>
+        <argsstring></argsstring>
+        <name>party</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information of the current party if there is one </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="250" column="16" bodyfile="include/dpp/presence.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a13218ba01e1ceeb45b12f7774a73e9c1" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1activity__secrets" kindref="compound">activity_secrets</ref></type>
+        <definition>activity_secrets dpp::activity::secrets</definition>
+        <argsstring></argsstring>
+        <name>secrets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Secrets for rich presence joining and spectating </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="253" column="18" bodyfile="include/dpp/presence.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a3ab31f2d396e1c16e3f5a2036a683c9f" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::activity::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start time. e.g. when game was started </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="262" column="8" bodyfile="include/dpp/presence.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1a6314c58d23a4301b3d7dabc91e472666" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::activity::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of activity or the custom user status. e.g. &quot;Waiting in lobby&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="230" column="13" bodyfile="include/dpp/presence.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1aa796b39d22fb9e5083c820b6803285ba" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" kindref="member">activity_type</ref></type>
+        <definition>activity_type dpp::activity::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Activity type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="256" column="15" bodyfile="include/dpp/presence.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1activity_1ad1adda3efd20156e122a238c32fb58c6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::activity::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>URL. Only applicable for certain sites such a YouTube Alias: details </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="241" column="13" bodyfile="include/dpp/presence.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1activity_1a2515a27d5242d6b4f5ea6a835545c52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::activity::activity</definition>
+        <argsstring>()</argsstring>
+        <name>activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1activity_1a05dd85de62a60b6dc2dbce16583f8be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::activity::activity</definition>
+        <argsstring>(const activity_type typ, const std::string &amp;nam, const std::string &amp;stat, const std::string &amp;url_)</argsstring>
+        <name>activity</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" kindref="member">activity_type</ref></type>
+          <declname>typ</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>nam</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>stat</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>url_</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new activity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>activity type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the activity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the activity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>url_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>url of the activity, only works for certain sites, such as YouTube </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="310" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1activity_1a955b1ab2b2c3cbec1bfabb4253d9e94d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::activity::get_large_asset_url</definition>
@@ -321,83 +398,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/presence.h" line="298" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1activity_1a2515a27d5242d6b4f5ea6a835545c52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::activity::activity</definition>
-        <argsstring>()</argsstring>
-        <name>activity</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="300" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1activity_1a05dd85de62a60b6dc2dbce16583f8be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::activity::activity</definition>
-        <argsstring>(const activity_type typ, const std::string &amp;nam, const std::string &amp;stat, const std::string &amp;url_)</argsstring>
-        <name>activity</name>
-        <param>
-          <type>const <ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" kindref="member">activity_type</ref></type>
-          <declname>typ</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>nam</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>stat</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>url_</declname>
-        </param>
-        <briefdescription>
-<para>Construct a new activity. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>typ</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>activity type </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>nam</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Name of the activity </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>stat</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>State of the activity </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>url_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>url of the activity, only works for certain sites, such as YouTube </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="310" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

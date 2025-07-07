@@ -3,32 +3,33 @@
   <compounddef id="makedocs_8php" kind="file" language="PHP">
     <compoundname>makedocs.php</compoundname>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="makedocs_8php_1a0805d7a8aa4d0151c71bf49d5e664026" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="makedocs_8php_1abaa4216c852c51c380dd8f10d3cfe944" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>if(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</definition>
-        <argsstring>(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</argsstring>
-        <name>if</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/makedocs.php" line="4" column="1" bodyfile="docpages/makedocs.php" bodystart="4" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="makedocs_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$tags</definition>
+        <definition>$footer</definition>
         <argsstring></argsstring>
-        <name>$tags</name>
-        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <name>$footer</name>
+        <initializer>= file_get_contents(&quot;footer.template.html&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/makedocs.php" line="14" column="1" bodyfile="docpages/makedocs.php" bodystart="14" bodyend="-1"/>
+        <location file="docpages/makedocs.php" line="39" column="1" bodyfile="docpages/makedocs.php" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a4f44601f2b9dc8a1644bce53c94ce622" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$header</definition>
+        <argsstring></argsstring>
+        <name>$header</name>
+        <initializer>= str_replace(&quot;##VERSION_OPTIONS##&quot;, $opts, $template)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="37" column="1" bodyfile="docpages/makedocs.php" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="makedocs_8php_1a2fce6a9b8be45967a21c53a89d006eaf" prot="public" static="no" mutable="no">
         <type></type>
@@ -58,6 +59,20 @@
         </inbodydescription>
         <location file="docpages/makedocs.php" line="28" column="1" bodyfile="docpages/makedocs.php" bodystart="28" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$tags</definition>
+        <argsstring></argsstring>
+        <name>$tags</name>
+        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="14" column="1" bodyfile="docpages/makedocs.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="makedocs_8php_1acab205064e5579a0432a1a7b3e0aec01" prot="public" static="no" mutable="no">
         <type>foreach($tags as $tag)</type>
         <definition>foreach ( $tags as $tag) $template</definition>
@@ -72,34 +87,6 @@
         </inbodydescription>
         <location file="docpages/makedocs.php" line="36" column="1" bodyfile="docpages/makedocs.php" bodystart="36" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="makedocs_8php_1a4f44601f2b9dc8a1644bce53c94ce622" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$header</definition>
-        <argsstring></argsstring>
-        <name>$header</name>
-        <initializer>= str_replace(&quot;##VERSION_OPTIONS##&quot;, $opts, $template)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/makedocs.php" line="37" column="1" bodyfile="docpages/makedocs.php" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="makedocs_8php_1abaa4216c852c51c380dd8f10d3cfe944" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$footer</definition>
-        <argsstring></argsstring>
-        <name>$footer</name>
-        <initializer>= file_get_contents(&quot;footer.template.html&quot;)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/makedocs.php" line="39" column="1" bodyfile="docpages/makedocs.php" bodystart="39" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="makedocs_8php_1a39981fe8269ad9ba0f2404c2a89349fc" prot="public" static="no" mutable="no">
         <type></type>
         <definition>foreach($tags as $tag)</definition>
@@ -112,6 +99,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="docpages/makedocs.php" line="56" column="1" bodyfile="docpages/makedocs.php" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a0805d7a8aa4d0151c71bf49d5e664026" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>if(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</definition>
+        <argsstring>(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</argsstring>
+        <name>if</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="4" column="1" bodyfile="docpages/makedocs.php" bodystart="4" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

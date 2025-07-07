@@ -4,47 +4,19 @@
     <compoundname>dpp::gateway</compoundname>
     <includes local="no">restresults.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1gateway_1ada4935804b5b6fc7b48478c6e845f734" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::gateway::url</definition>
-        <argsstring></argsstring>
-        <name>url</name>
-        <briefdescription>
-<para>Gateway websocket url. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/restresults.h" line="84" column="13" bodyfile="include/dpp/restresults.h" bodystart="84" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1gateway_1aa51b1ff8814f325fa974b887108836b4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdpp_1_1gateway_1a34dcabe707a6ba554176fb80124962e9" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
-        <definition>uint32_t dpp::gateway::shards</definition>
+        <definition>uint32_t dpp::gateway::session_start_max_concurrency</definition>
         <argsstring></argsstring>
-        <name>shards</name>
+        <name>session_start_max_concurrency</name>
         <briefdescription>
-<para>Number of suggested shards to start. </para>
+<para>How many sessions can be started at the same time. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restresults.h" line="87" column="10" bodyfile="include/dpp/restresults.h" bodystart="87" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1gateway_1a64fe90aa1ef4e9f32e539b23fe0bf327" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::gateway::session_start_total</definition>
-        <argsstring></argsstring>
-        <name>session_start_total</name>
-        <briefdescription>
-<para>Total number of sessions that can be started. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/restresults.h" line="90" column="10" bodyfile="include/dpp/restresults.h" bodystart="90" bodyend="-1"/>
+        <location file="include/dpp/restresults.h" line="99" column="10" bodyfile="include/dpp/restresults.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1gateway_1ada9225b2a8f91500e7b5d1107a0acd46" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -74,22 +46,64 @@
         </inbodydescription>
         <location file="include/dpp/restresults.h" line="96" column="10" bodyfile="include/dpp/restresults.h" bodystart="96" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1gateway_1a34dcabe707a6ba554176fb80124962e9" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdpp_1_1gateway_1a64fe90aa1ef4e9f32e539b23fe0bf327" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
-        <definition>uint32_t dpp::gateway::session_start_max_concurrency</definition>
+        <definition>uint32_t dpp::gateway::session_start_total</definition>
         <argsstring></argsstring>
-        <name>session_start_max_concurrency</name>
+        <name>session_start_total</name>
         <briefdescription>
-<para>How many sessions can be started at the same time. </para>
+<para>Total number of sessions that can be started. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restresults.h" line="99" column="10" bodyfile="include/dpp/restresults.h" bodystart="99" bodyend="-1"/>
+        <location file="include/dpp/restresults.h" line="90" column="10" bodyfile="include/dpp/restresults.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1gateway_1aa51b1ff8814f325fa974b887108836b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::gateway::shards</definition>
+        <argsstring></argsstring>
+        <name>shards</name>
+        <briefdescription>
+<para>Number of suggested shards to start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="87" column="10" bodyfile="include/dpp/restresults.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1gateway_1ada4935804b5b6fc7b48478c6e845f734" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::gateway::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+<para>Gateway websocket url. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="84" column="13" bodyfile="include/dpp/restresults.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1gateway_1ae69dc349334c34bc50c57cd604313114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::gateway::gateway</definition>
+        <argsstring>()</argsstring>
+        <name>gateway</name>
+        <briefdescription>
+<para>Construct a new gateway object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="111" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1gateway_1ac5bf9ef5d953c0d944d31d98696f03f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::gateway::gateway</definition>
@@ -117,20 +131,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/restresults.h" line="106" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1gateway_1ae69dc349334c34bc50c57cd604313114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::gateway::gateway</definition>
-        <argsstring>()</argsstring>
-        <name>gateway</name>
-        <briefdescription>
-<para>Construct a new gateway object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/restresults.h" line="111" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1gateway_1a723c2ce70baebdd682a325ee827ce2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref> &amp;</type>

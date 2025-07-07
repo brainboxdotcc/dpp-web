@@ -4,34 +4,19 @@
     <compoundname>dpp::http_request_completion_t</compoundname>
     <includes local="no">queues.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1aca6bb7b51b265b5303d1ff9ad940b130" prot="public" static="no" mutable="no">
-        <type>std::map&lt; std::string, std::string &gt;</type>
-        <definition>std::map&lt;std::string, std::string&gt; dpp::http_request_completion_t::headers</definition>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1ac14ffa7060df12797e238f2619153ef9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request_completion_t::body</definition>
         <argsstring></argsstring>
-        <name>headers</name>
+        <name>body</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>HTTP headers of response </para>
+<para>Reply body </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="82" column="10" bodyfile="include/dpp/queues.h" bodystart="82" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a43d0cd80d26f3e1aa23c5539e4f984e0" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::http_request_completion_t::status</definition>
-        <argsstring></argsstring>
-        <name>status</name>
-        <initializer>= 0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>HTTP status, e.g. 200 = OK, 404 = Not found, 429 = Rate limited </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="84" column="10" bodyfile="include/dpp/queues.h" bodystart="84" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="100" column="13" bodyfile="include/dpp/queues.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a6e8e54c80c5b439ddfd0ddb6f9e4039b" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1ae525add0ec39d647375aabe5ce455449" kindref="member">http_error</ref></type>
@@ -48,6 +33,34 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="86" column="12" bodyfile="include/dpp/queues.h" bodystart="86" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1aca6bb7b51b265b5303d1ff9ad940b130" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; dpp::http_request_completion_t::headers</definition>
+        <argsstring></argsstring>
+        <name>headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP headers of response </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="82" column="10" bodyfile="include/dpp/queues.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1aa39b263a9671e1b106429c6e440faaad" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dpp::http_request_completion_t::latency</definition>
+        <argsstring></argsstring>
+        <name>latency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ping latency </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="102" column="8" bodyfile="include/dpp/queues.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1abc9d39c408cb5a3f43960854084d9165" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::http_request_completion_t::ratelimit_bucket</definition>
@@ -61,6 +74,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="88" column="13" bodyfile="include/dpp/queues.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a56ffdd4e2660564d3360e28d34bccc64" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_request_completion_t::ratelimit_global</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_global</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if this request has caused us to be globally rate limited </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="98" column="6" bodyfile="include/dpp/queues.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a75ce533196be655ba6b95fac23122a41" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -122,48 +150,20 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="96" column="10" bodyfile="include/dpp/queues.h" bodystart="96" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a56ffdd4e2660564d3360e28d34bccc64" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::http_request_completion_t::ratelimit_global</definition>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a43d0cd80d26f3e1aa23c5539e4f984e0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::http_request_completion_t::status</definition>
         <argsstring></argsstring>
-        <name>ratelimit_global</name>
-        <initializer>= false</initializer>
+        <name>status</name>
+        <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>True if this request has caused us to be globally rate limited </para>
+<para>HTTP status, e.g. 200 = OK, 404 = Not found, 429 = Rate limited </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="98" column="6" bodyfile="include/dpp/queues.h" bodystart="98" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1ac14ffa7060df12797e238f2619153ef9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::http_request_completion_t::body</definition>
-        <argsstring></argsstring>
-        <name>body</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Reply body </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="100" column="13" bodyfile="include/dpp/queues.h" bodystart="100" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1aa39b263a9671e1b106429c6e440faaad" prot="public" static="no" mutable="no">
-        <type>double</type>
-        <definition>double dpp::http_request_completion_t::latency</definition>
-        <argsstring></argsstring>
-        <name>latency</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Ping latency </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="102" column="8" bodyfile="include/dpp/queues.h" bodystart="102" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="84" column="10" bodyfile="include/dpp/queues.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

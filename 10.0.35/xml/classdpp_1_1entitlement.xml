@@ -24,22 +24,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a01ae035f91a97c993b74ab87bd40b3b8" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::sku_id</definition>
-        <argsstring></argsstring>
-        <name>sku_id</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>ID of the entitlement event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Not sure if this remains constant, it does not relate to the SKU, user, guild or subscription. Do not use it for anything except state tracking. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="131" column="11" bodyfile="include/dpp/entitlement.h" bodystart="131" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1ac2d87bd3cdc5272eaf41f24ef50c5a5f" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::entitlement::application_id</definition>
@@ -54,118 +38,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/entitlement.h" line="136" column="11" bodyfile="include/dpp/entitlement.h" bodystart="136" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1affa676fb9f3d11c9e8f635491f63edea" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::subscription_id</definition>
-        <argsstring></argsstring>
-        <name>subscription_id</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Subscription ID. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This is a unique identifier of the user or guilds subscription to the SKU. It won&apos;t ever change. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="144" column="11" bodyfile="include/dpp/entitlement.h" bodystart="144" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1af3f2420eb12fdf427b49dbe0bf04b2da" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::promotion_id</definition>
-        <argsstring></argsstring>
-        <name>promotion_id</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Promotion id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>These are undocumented but given in examples in the docs. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="151" column="11" bodyfile="include/dpp/entitlement.h" bodystart="151" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a1cc323ff15797e4b99d8a6538c535508" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::entitlement::gift_code_flags</definition>
-        <argsstring></argsstring>
-        <name>gift_code_flags</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Gift Code Flags (undocumented) </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Undocumented, but given in examples in the docs. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="158" column="9" bodyfile="include/dpp/entitlement.h" bodystart="158" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1ac88672adf248523c2ec8c38583ff8432" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::user_id</definition>
-        <argsstring></argsstring>
-        <name>user_id</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="163" column="11" bodyfile="include/dpp/entitlement.h" bodystart="163" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a0cf590530cb5e4e88398300ab4a471ac" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>If a guild is provided, according to the examples the user who triggered the purchase will also be passed in the user ID. The presence of a non-zero guild id snowflake is indication it is a guild subscription. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="172" column="11" bodyfile="include/dpp/entitlement.h" bodystart="172" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a7fa8c5d7cf387201728d52cc5219cf6e" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0fd6672429865506411af5a83d065ab0" kindref="member">entitlement_type</ref></type>
-        <definition>entitlement_type dpp::entitlement::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <initializer>= entitlement_type::APPLICATION_SUBSCRIPTION</initializer>
-        <briefdescription>
-<para>The type of entitlement. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="177" column="18" bodyfile="include/dpp/entitlement.h" bodystart="177" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a8e5dc8e52f1b086c267284216166a1b6" prot="public" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::entitlement::starts_at</definition>
-        <argsstring></argsstring>
-        <name>starts_at</name>
-        <initializer>{0}</initializer>
-        <briefdescription>
-<para>Optional: Start date at which the entitlement is valid. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Not present when using test entitlements. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="184" column="8" bodyfile="include/dpp/entitlement.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1ab0368a98989b1333310cad3bd4a91dc2" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -200,6 +72,38 @@
         </inbodydescription>
         <location file="include/dpp/entitlement.h" line="196" column="10" bodyfile="include/dpp/entitlement.h" bodystart="196" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a1cc323ff15797e4b99d8a6538c535508" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::entitlement::gift_code_flags</definition>
+        <argsstring></argsstring>
+        <name>gift_code_flags</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Gift Code Flags (undocumented) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undocumented, but given in examples in the docs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="158" column="9" bodyfile="include/dpp/entitlement.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a0cf590530cb5e4e88398300ab4a471ac" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a guild is provided, according to the examples the user who triggered the purchase will also be passed in the user ID. The presence of a non-zero guild id snowflake is indication it is a guild subscription. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="172" column="11" bodyfile="include/dpp/entitlement.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
@@ -214,6 +118,102 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1af3f2420eb12fdf427b49dbe0bf04b2da" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::promotion_id</definition>
+        <argsstring></argsstring>
+        <name>promotion_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Promotion id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These are undocumented but given in examples in the docs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="151" column="11" bodyfile="include/dpp/entitlement.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a01ae035f91a97c993b74ab87bd40b3b8" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::sku_id</definition>
+        <argsstring></argsstring>
+        <name>sku_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>ID of the entitlement event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not sure if this remains constant, it does not relate to the SKU, user, guild or subscription. Do not use it for anything except state tracking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="131" column="11" bodyfile="include/dpp/entitlement.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a8e5dc8e52f1b086c267284216166a1b6" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::entitlement::starts_at</definition>
+        <argsstring></argsstring>
+        <name>starts_at</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Optional: Start date at which the entitlement is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Not present when using test entitlements. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="184" column="8" bodyfile="include/dpp/entitlement.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1affa676fb9f3d11c9e8f635491f63edea" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::subscription_id</definition>
+        <argsstring></argsstring>
+        <name>subscription_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Subscription ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a unique identifier of the user or guilds subscription to the SKU. It won&apos;t ever change. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="144" column="11" bodyfile="include/dpp/entitlement.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a7fa8c5d7cf387201728d52cc5219cf6e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0fd6672429865506411af5a83d065ab0" kindref="member">entitlement_type</ref></type>
+        <definition>entitlement_type dpp::entitlement::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= entitlement_type::APPLICATION_SUBSCRIPTION</initializer>
+        <briefdescription>
+<para>The type of entitlement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="177" column="18" bodyfile="include/dpp/entitlement.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1ac88672adf248523c2ec8c38583ff8432" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="163" column="11" bodyfile="include/dpp/entitlement.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -373,6 +373,86 @@
         </inbodydescription>
         <location file="include/dpp/entitlement.h" line="212" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; entitlement  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1entitlement" kindref="compound">entitlement</ref> &amp;</type>
+        <definition>entitlement  &amp; dpp::json_interface&lt; entitlement  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1entitlement_1ab654a9578a6e16bb91a3d25717ffbdbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0fd6672429865506411af5a83d065ab0" kindref="member">entitlement_type</ref></type>
         <definition>entitlement_type dpp::entitlement::get_type</definition>
@@ -425,22 +505,37 @@
         </inbodydescription>
         <location file="include/dpp/entitlement.h" line="237" column="7"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr double</type>
-        <definition>constexpr double dpp::managed::get_creation_time</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>get_creation_time</name>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
         <briefdescription>
-<para>Get the creation time of this object according to Discord. </para>
+<para>Comparison operator for comparing two managed objects by id. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -474,68 +569,6 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::managed::operator!=</definition>
-        <argsstring>(const managed &amp;other) const noexcept</argsstring>
-        <name>operator!=</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Comparison operator for comparing two managed objects by id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>other</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other object to compare against </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>true objects are not the same id </para>
-</simplesect>
-<simplesect kind="return"><para>false objects are the same id </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1entitlement" kindref="compound">entitlement</ref> &amp;</type>
-        <definition>entitlement  &amp; dpp::json_interface&lt; entitlement  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; entitlement  &gt;::to_json</definition>
@@ -568,39 +601,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; entitlement  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

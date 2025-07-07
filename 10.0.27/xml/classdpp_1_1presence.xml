@@ -23,33 +23,19 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::presence::user_id</definition>
+      <memberdef kind="variable" id="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &gt;</type>
+        <definition>std::vector&lt;activity&gt; dpp::presence::activities</definition>
         <argsstring></argsstring>
-        <name>user_id</name>
+        <name>activities</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The user the presence applies to </para>
+<para>List of activities </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="340" column="10" bodyfile="include/dpp/presence.h" bodystart="340" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::presence::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Guild ID. Apparently, Discord supports this internally but the client doesn&apos;t... </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/presence.h" line="343" column="17" bodyfile="include/dpp/presence.h" bodystart="343" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="349" column="13" bodyfile="include/dpp/presence.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1presence_1ab29149dcde2872002715212b8a6ff951" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -65,19 +51,33 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="346" column="8" bodyfile="include/dpp/presence.h" bodystart="346" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &gt;</type>
-        <definition>std::vector&lt;activity&gt; dpp::presence::activities</definition>
+      <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::presence::guild_id</definition>
         <argsstring></argsstring>
-        <name>activities</name>
+        <name>guild_id</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>List of activities </para>
+<para>Guild ID. Apparently, Discord supports this internally but the client doesn&apos;t... </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="349" column="13" bodyfile="include/dpp/presence.h" bodystart="349" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="343" column="17" bodyfile="include/dpp/presence.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::presence::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user the presence applies to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="340" column="10" bodyfile="include/dpp/presence.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -265,6 +265,39 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="372" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; presence  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1presence_1a63177953eddc1a1425721110a6469042" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
         <definition>presence_status dpp::presence::desktop_status</definition>
@@ -281,21 +314,35 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="377" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
-        <definition>presence_status dpp::presence::web_status</definition>
-        <argsstring>() const</argsstring>
-        <name>web_status</name>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &amp;</type>
+        <definition>presence  &amp; dpp::json_interface&lt; presence  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
         <briefdescription>
+<para>Convert object from nlohmann::json. </para>
         </briefdescription>
         <detaileddescription>
-<para>The user&apos;s status on web <simplesect kind="return"><para>The user&apos;s status on web </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="382" column="17"/>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1presence_1abf5fafbf7c71764f540b1d26c03b0607" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
@@ -362,68 +409,21 @@
         </inbodydescription>
         <location file="include/dpp/presence.h" line="403" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &amp;</type>
-        <definition>presence  &amp; dpp::json_interface&lt; presence  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::web_status</definition>
+        <argsstring>() const</argsstring>
+        <name>web_status</name>
         <briefdescription>
-<para>Convert object from nlohmann::json. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+<para>The user&apos;s status on web <simplesect kind="return"><para>The user&apos;s status on web </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; presence  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
+        <location file="include/dpp/presence.h" line="382" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,138 +5,44 @@
     <includes local="no">httplib.h</includes>
     <innerclass refid="structhttplib_1_1_client_impl_1_1_socket" prot="protected">httplib::ClientImpl::Socket</innerclass>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a49e213217f1d417f5db8e2a6eab15ed2" prot="protected" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string httplib::ClientImpl::host_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a5da67860d3127963342200e6bb46b6f7" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::basic_auth_password_</definition>
         <argsstring></argsstring>
-        <name>host_</name>
+        <name>basic_auth_password_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1037" column="21" bodyfile="include/dpp/httplib.h" bodystart="1037" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1066" column="15" bodyfile="include/dpp/httplib.h" bodystart="1066" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ad64c12a51237a6ad849c044b6ccede90" prot="protected" static="no" mutable="no">
-        <type>const int</type>
-        <definition>const int httplib::ClientImpl::port_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1af5a16149e2b0e9e004de9d652844d0be" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::basic_auth_username_</definition>
         <argsstring></argsstring>
-        <name>port_</name>
+        <name>basic_auth_username_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1038" column="13" bodyfile="include/dpp/httplib.h" bodystart="1038" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1065" column="15" bodyfile="include/dpp/httplib.h" bodystart="1065" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a868454acc688c095b410f7fa8c936d53" prot="protected" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string httplib::ClientImpl::host_and_port_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a6b87babec803c7cf41a5615a83d263e0" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::bearer_token_auth_token_</definition>
         <argsstring></argsstring>
-        <name>host_and_port_</name>
+        <name>bearer_token_auth_token_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1039" column="21" bodyfile="include/dpp/httplib.h" bodystart="1039" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a3c38080a076013321438247bbdc0e29c" prot="protected" static="no" mutable="no">
-        <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref></type>
-        <definition>Socket httplib::ClientImpl::socket_</definition>
-        <argsstring></argsstring>
-        <name>socket_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1042" column="10" bodyfile="include/dpp/httplib.h" bodystart="1042" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1af16a89e681c3cccc96a499a7a3bcd010" prot="protected" static="no" mutable="yes">
-        <type>std::mutex</type>
-        <definition>std::mutex httplib::ClientImpl::socket_mutex_</definition>
-        <argsstring></argsstring>
-        <name>socket_mutex_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1043" column="22" bodyfile="include/dpp/httplib.h" bodystart="1043" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1acfed65641de736dbebb70573fa001512" prot="protected" static="no" mutable="no">
-        <type>std::recursive_mutex</type>
-        <definition>std::recursive_mutex httplib::ClientImpl::request_mutex_</definition>
-        <argsstring></argsstring>
-        <name>request_mutex_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1044" column="24" bodyfile="include/dpp/httplib.h" bodystart="1044" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a28371096fe802c65674290c2c2c63356" prot="protected" static="no" mutable="no">
-        <type>size_t</type>
-        <definition>size_t httplib::ClientImpl::socket_requests_in_flight_</definition>
-        <argsstring></argsstring>
-        <name>socket_requests_in_flight_</name>
-        <initializer>= 0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1047" column="10" bodyfile="include/dpp/httplib.h" bodystart="1047" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ab1ab8b437a242078ad41a2fbdbcda3c8" prot="protected" static="no" mutable="no">
-        <type>std::thread::id</type>
-        <definition>std::thread::id httplib::ClientImpl::socket_requests_are_from_thread_</definition>
-        <argsstring></argsstring>
-        <name>socket_requests_are_from_thread_</name>
-        <initializer>= std::thread::id()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1048" column="19" bodyfile="include/dpp/httplib.h" bodystart="1048" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ae8421cb5d2e38a8c39d90ce65af4603e" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::socket_should_be_closed_when_request_is_done_</definition>
-        <argsstring></argsstring>
-        <name>socket_should_be_closed_when_request_is_done_</name>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1049" column="8" bodyfile="include/dpp/httplib.h" bodystart="1049" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a951113dcfd3b68cb8638e9c33ce064e4" prot="protected" static="no" mutable="no">
-        <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
-        <definition>Headers httplib::ClientImpl::default_headers_</definition>
-        <argsstring></argsstring>
-        <name>default_headers_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1052" column="11" bodyfile="include/dpp/httplib.h" bodystart="1052" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1067" column="15" bodyfile="include/dpp/httplib.h" bodystart="1067" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a9d67458e6d33ec592f996ffec5291629" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -163,6 +69,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1056" column="15" bodyfile="include/dpp/httplib.h" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ab5c7b0e1e66b8a3d6cce285cb3d4a7ea" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::compress_</definition>
+        <argsstring></argsstring>
+        <name>compress_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1079" column="8" bodyfile="include/dpp/httplib.h" bodystart="1079" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a3e718f0fb785538cc9524116cb766c5e" prot="protected" static="no" mutable="no">
         <type>time_t</type>
@@ -192,114 +112,32 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1059" column="10" bodyfile="include/dpp/httplib.h" bodystart="1059" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a26342fa5c5c2ef0372904a4e7c0314b2" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::ClientImpl::read_timeout_sec_</definition>
-        <argsstring></argsstring>
-        <name>read_timeout_sec_</name>
-        <initializer>=  5</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1060" column="10" bodyfile="include/dpp/httplib.h" bodystart="1060" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a505650f012e277b9cd50631de01acaa5" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::ClientImpl::read_timeout_usec_</definition>
-        <argsstring></argsstring>
-        <name>read_timeout_usec_</name>
-        <initializer>=  0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1061" column="10" bodyfile="include/dpp/httplib.h" bodystart="1061" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a0d7f571cceaf34271b94b381b3872706" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::ClientImpl::write_timeout_sec_</definition>
-        <argsstring></argsstring>
-        <name>write_timeout_sec_</name>
-        <initializer>=  5</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1062" column="10" bodyfile="include/dpp/httplib.h" bodystart="1062" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ac7f8e4488a040d51cbfe0d62a766b2dd" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t httplib::ClientImpl::write_timeout_usec_</definition>
-        <argsstring></argsstring>
-        <name>write_timeout_usec_</name>
-        <initializer>=  0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1063" column="10" bodyfile="include/dpp/httplib.h" bodystart="1063" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1af5a16149e2b0e9e004de9d652844d0be" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::basic_auth_username_</definition>
-        <argsstring></argsstring>
-        <name>basic_auth_username_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1065" column="15" bodyfile="include/dpp/httplib.h" bodystart="1065" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a5da67860d3127963342200e6bb46b6f7" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::basic_auth_password_</definition>
-        <argsstring></argsstring>
-        <name>basic_auth_password_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1066" column="15" bodyfile="include/dpp/httplib.h" bodystart="1066" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a6b87babec803c7cf41a5615a83d263e0" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::bearer_token_auth_token_</definition>
-        <argsstring></argsstring>
-        <name>bearer_token_auth_token_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1067" column="15" bodyfile="include/dpp/httplib.h" bodystart="1067" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aec0bcabcd572a6bebb13cf160f61ac34" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a1bcef3b2e3a5cbf620fd8448fee4bbbd" prot="protected" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool httplib::ClientImpl::keep_alive_</definition>
+        <definition>bool httplib::ClientImpl::decompress_</definition>
         <argsstring></argsstring>
-        <name>keep_alive_</name>
-        <initializer>= false</initializer>
+        <name>decompress_</name>
+        <initializer>= true</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1073" column="8" bodyfile="include/dpp/httplib.h" bodystart="1073" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1080" column="8" bodyfile="include/dpp/httplib.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a951113dcfd3b68cb8638e9c33ce064e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
+        <definition>Headers httplib::ClientImpl::default_headers_</definition>
+        <argsstring></argsstring>
+        <name>default_headers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1052" column="11" bodyfile="include/dpp/httplib.h" bodystart="1052" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a4005b35112db92b2f62fc603cc13e8eb" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -315,61 +153,31 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1074" column="8" bodyfile="include/dpp/httplib.h" bodystart="1074" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a493f0b3244303aac28f833906ae7e3d5" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::tcp_nodelay_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a49e213217f1d417f5db8e2a6eab15ed2" prot="protected" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string httplib::ClientImpl::host_</definition>
         <argsstring></argsstring>
-        <name>tcp_nodelay_</name>
-        <initializer>=  false</initializer>
+        <name>host_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1076" column="8" bodyfile="include/dpp/httplib.h" bodystart="1076" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1037" column="21" bodyfile="include/dpp/httplib.h" bodystart="1037" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ae67fe9eb4d0e01126921525f2184af4a" prot="protected" static="no" mutable="no">
-        <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
-        <definition>SocketOptions httplib::ClientImpl::socket_options_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a868454acc688c095b410f7fa8c936d53" prot="protected" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string httplib::ClientImpl::host_and_port_</definition>
         <argsstring></argsstring>
-        <name>socket_options_</name>
-        <initializer>= nullptr</initializer>
+        <name>host_and_port_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1077" column="17" bodyfile="include/dpp/httplib.h" bodystart="1077" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ab5c7b0e1e66b8a3d6cce285cb3d4a7ea" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::compress_</definition>
-        <argsstring></argsstring>
-        <name>compress_</name>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1079" column="8" bodyfile="include/dpp/httplib.h" bodystart="1079" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a1bcef3b2e3a5cbf620fd8448fee4bbbd" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::decompress_</definition>
-        <argsstring></argsstring>
-        <name>decompress_</name>
-        <initializer>= true</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1080" column="8" bodyfile="include/dpp/httplib.h" bodystart="1080" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1039" column="21" bodyfile="include/dpp/httplib.h" bodystart="1039" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a8e8b99a68512b46c46aa99307f8978d7" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -383,6 +191,85 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1082" column="15" bodyfile="include/dpp/httplib.h" bodystart="1082" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aec0bcabcd572a6bebb13cf160f61ac34" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::keep_alive_</definition>
+        <argsstring></argsstring>
+        <name>keep_alive_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1073" column="8" bodyfile="include/dpp/httplib.h" bodystart="1073" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aaafda13c6544379ac485ae4639877fab" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
+        <definition>Logger httplib::ClientImpl::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1099" column="10" bodyfile="include/dpp/httplib.h" bodystart="1099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ad64c12a51237a6ad849c044b6ccede90" prot="protected" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int httplib::ClientImpl::port_</definition>
+        <argsstring></argsstring>
+        <name>port_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1038" column="13" bodyfile="include/dpp/httplib.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ac9eea291a60877a7e2b6bfee51606b58" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::proxy_basic_auth_password_</definition>
+        <argsstring></argsstring>
+        <name>proxy_basic_auth_password_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1088" column="15" bodyfile="include/dpp/httplib.h" bodystart="1088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aa4d412f05411638d9b4136ad25bc9339" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::proxy_basic_auth_username_</definition>
+        <argsstring></argsstring>
+        <name>proxy_basic_auth_username_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1087" column="15" bodyfile="include/dpp/httplib.h" bodystart="1087" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a316b3c3502a1b78cf73b01e4aee81798" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::ClientImpl::proxy_bearer_token_auth_token_</definition>
+        <argsstring></argsstring>
+        <name>proxy_bearer_token_auth_token_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1089" column="15" bodyfile="include/dpp/httplib.h" bodystart="1089" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a51c59b7a4d65cbaa023de65a3495e76b" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -411,57 +298,170 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1085" column="7" bodyfile="include/dpp/httplib.h" bodystart="1085" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aa4d412f05411638d9b4136ad25bc9339" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::proxy_basic_auth_username_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a26342fa5c5c2ef0372904a4e7c0314b2" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::ClientImpl::read_timeout_sec_</definition>
         <argsstring></argsstring>
-        <name>proxy_basic_auth_username_</name>
+        <name>read_timeout_sec_</name>
+        <initializer>=  5</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1087" column="15" bodyfile="include/dpp/httplib.h" bodystart="1087" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1060" column="10" bodyfile="include/dpp/httplib.h" bodystart="1060" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ac9eea291a60877a7e2b6bfee51606b58" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::proxy_basic_auth_password_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a505650f012e277b9cd50631de01acaa5" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::ClientImpl::read_timeout_usec_</definition>
         <argsstring></argsstring>
-        <name>proxy_basic_auth_password_</name>
+        <name>read_timeout_usec_</name>
+        <initializer>=  0</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1088" column="15" bodyfile="include/dpp/httplib.h" bodystart="1088" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1061" column="10" bodyfile="include/dpp/httplib.h" bodystart="1061" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a316b3c3502a1b78cf73b01e4aee81798" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string httplib::ClientImpl::proxy_bearer_token_auth_token_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1acfed65641de736dbebb70573fa001512" prot="protected" static="no" mutable="no">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex httplib::ClientImpl::request_mutex_</definition>
         <argsstring></argsstring>
-        <name>proxy_bearer_token_auth_token_</name>
+        <name>request_mutex_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1089" column="15" bodyfile="include/dpp/httplib.h" bodystart="1089" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1044" column="24" bodyfile="include/dpp/httplib.h" bodystart="1044" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1aaafda13c6544379ac485ae4639877fab" prot="protected" static="no" mutable="no">
-        <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
-        <definition>Logger httplib::ClientImpl::logger_</definition>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a3c38080a076013321438247bbdc0e29c" prot="protected" static="no" mutable="no">
+        <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref></type>
+        <definition>Socket httplib::ClientImpl::socket_</definition>
         <argsstring></argsstring>
-        <name>logger_</name>
+        <name>socket_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1099" column="10" bodyfile="include/dpp/httplib.h" bodystart="1099" bodyend="-1"/>
+        <location file="include/dpp/httplib.h" line="1042" column="10" bodyfile="include/dpp/httplib.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1af16a89e681c3cccc96a499a7a3bcd010" prot="protected" static="no" mutable="yes">
+        <type>std::mutex</type>
+        <definition>std::mutex httplib::ClientImpl::socket_mutex_</definition>
+        <argsstring></argsstring>
+        <name>socket_mutex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1043" column="22" bodyfile="include/dpp/httplib.h" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ae67fe9eb4d0e01126921525f2184af4a" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
+        <definition>SocketOptions httplib::ClientImpl::socket_options_</definition>
+        <argsstring></argsstring>
+        <name>socket_options_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1077" column="17" bodyfile="include/dpp/httplib.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ab1ab8b437a242078ad41a2fbdbcda3c8" prot="protected" static="no" mutable="no">
+        <type>std::thread::id</type>
+        <definition>std::thread::id httplib::ClientImpl::socket_requests_are_from_thread_</definition>
+        <argsstring></argsstring>
+        <name>socket_requests_are_from_thread_</name>
+        <initializer>= std::thread::id()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1048" column="19" bodyfile="include/dpp/httplib.h" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a28371096fe802c65674290c2c2c63356" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t httplib::ClientImpl::socket_requests_in_flight_</definition>
+        <argsstring></argsstring>
+        <name>socket_requests_in_flight_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1047" column="10" bodyfile="include/dpp/httplib.h" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ae8421cb5d2e38a8c39d90ce65af4603e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::socket_should_be_closed_when_request_is_done_</definition>
+        <argsstring></argsstring>
+        <name>socket_should_be_closed_when_request_is_done_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1049" column="8" bodyfile="include/dpp/httplib.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a493f0b3244303aac28f833906ae7e3d5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::tcp_nodelay_</definition>
+        <argsstring></argsstring>
+        <name>tcp_nodelay_</name>
+        <initializer>=  false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1076" column="8" bodyfile="include/dpp/httplib.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1a0d7f571cceaf34271b94b381b3872706" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::ClientImpl::write_timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>write_timeout_sec_</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1062" column="10" bodyfile="include/dpp/httplib.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_client_impl_1ac7f8e4488a040d51cbfe0d62a766b2dd" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::ClientImpl::write_timeout_usec_</definition>
+        <argsstring></argsstring>
+        <name>write_timeout_usec_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1063" column="10" bodyfile="include/dpp/httplib.h" bodystart="1063" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -545,18 +545,159 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="838" column="11" bodyfile="include/dpp/httplib.h" bodystart="5153" bodyend="5153"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afbe91bdb3eb3b30f37aad3c49ae3285d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::is_valid</definition>
-        <argsstring>() const</argsstring>
-        <name>is_valid</name>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a4b7a1587fad8c845f331ee3c31f09b90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="840" column="16" bodyfile="include/dpp/httplib.h" bodystart="5155" bodyend="5155"/>
+        <location file="include/dpp/httplib.h" line="941" column="10" bodyfile="include/dpp/httplib.h" bodystart="6183" bodyend="6185"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aef580939c8a5bfaac988b3bff3fae7ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="943" column="10" bodyfile="include/dpp/httplib.h" bodystart="6191" bodyend="6195"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9f4a13d4e92c0fe395dc0a7f544d70a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path, const Headers &amp;headers)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="942" column="10" bodyfile="include/dpp/httplib.h" bodystart="6187" bodyend="6189"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a286bc568ba3f1f3bd7a8a94935c40fef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="945" column="10" bodyfile="include/dpp/httplib.h" bodystart="6197" bodyend="6209"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a174fcafcf3d1ce3841d79e0979b3061b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="949" column="10" bodyfile="include/dpp/httplib.h" bodystart="6216" bodyend="6220"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6aa336c8777cad2042b744a63aa32fc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Delete</definition>
+        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="947" column="10" bodyfile="include/dpp/httplib.h" bodystart="6211" bodyend="6214"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1aaebe6b952d2980f95805b58e2d18660b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -596,73 +737,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="843" column="10" bodyfile="include/dpp/httplib.h" bodystart="5823" bodyend="5825"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a888162ec352dad12127c3b50606af625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, Progress progress)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
-          <declname>progress</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="844" column="10" bodyfile="include/dpp/httplib.h" bodystart="5819" bodyend="5821"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae21ba59eb62664e6874bf44abcbcf869" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, Progress progress)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
-          <declname>progress</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="845" column="10" bodyfile="include/dpp/httplib.h" bodystart="5827" bodyend="5836"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a97d4b46cbcd833755e1405c8827d512a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, ContentReceiver content_receiver)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>content_receiver</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="846" column="10" bodyfile="include/dpp/httplib.h" bodystart="5838" bodyend="5841"/>
-      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a7beebef0adf8099f77b547cee5e50dd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Get</definition>
@@ -687,31 +761,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="847" column="10" bodyfile="include/dpp/httplib.h" bodystart="5850" bodyend="5853"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a2ce6332abe62805180b6785d60c59708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, ContentReceiver content_receiver, Progress progress)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>content_receiver</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
-          <declname>progress</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="849" column="10" bodyfile="include/dpp/httplib.h" bodystart="5843" bodyend="5848"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1acb1d2a69c011f121430f818971316c4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -742,22 +791,22 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="851" column="10" bodyfile="include/dpp/httplib.h" bodystart="5855" bodyend="5860"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a27f8d62fc3d7267ee587a8bd2554b195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae21ba59eb62664e6874bf44abcbcf869" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, ResponseHandler response_handler, ContentReceiver content_receiver)</argsstring>
+        <argsstring>(const char *path, const Headers &amp;headers, Progress progress)</argsstring>
         <name>Get</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type><ref refid="namespacehttplib_1ad81ce13409edba1589c0b076b2dfab74" kindref="member">ResponseHandler</ref></type>
-          <declname>response_handler</declname>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
         </param>
         <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>content_receiver</declname>
+          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
+          <declname>progress</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -765,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="853" column="10" bodyfile="include/dpp/httplib.h" bodystart="5862" bodyend="5867"/>
+        <location file="include/dpp/httplib.h" line="845" column="10" bodyfile="include/dpp/httplib.h" bodystart="5827" bodyend="5836"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a3f9f4a1af0733de4b99293eb7872d94b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -795,35 +844,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="855" column="10" bodyfile="include/dpp/httplib.h" bodystart="5869" bodyend="5874"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a806edcad1c792e7824e32c42fa14b269" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, ResponseHandler response_handler, ContentReceiver content_receiver, Progress progress)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad81ce13409edba1589c0b076b2dfab74" kindref="member">ResponseHandler</ref></type>
-          <declname>response_handler</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
-          <declname>content_receiver</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
-          <declname>progress</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="858" column="10" bodyfile="include/dpp/httplib.h" bodystart="5876" bodyend="5882"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1aaff6db25e69f92f0520414ba9cca2df6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -858,36 +878,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="860" column="10" bodyfile="include/dpp/httplib.h" bodystart="5884" bodyend="5901"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a545502f046fb822619594d6ef0f290da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Get</definition>
-        <argsstring>(const char *path, const Params &amp;params, const Headers &amp;headers, Progress progress=nullptr)</argsstring>
-        <name>Get</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
-          <declname>params</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
-          <declname>progress</declname>
-          <defval>nullptr</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="864" column="10" bodyfile="include/dpp/httplib.h" bodystart="5903" bodyend="5909"/>
-      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1af1cfd38cd87fd9dc46468facf1b67f54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Get</definition>
@@ -921,6 +911,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="866" column="10" bodyfile="include/dpp/httplib.h" bodystart="5911" bodyend="5916"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a545502f046fb822619594d6ef0f290da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, const Params &amp;params, const Headers &amp;headers, Progress progress=nullptr)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="864" column="10" bodyfile="include/dpp/httplib.h" bodystart="5903" bodyend="5909"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa91449a67937a2cce04701d92b907550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -960,6 +980,127 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="868" column="10" bodyfile="include/dpp/httplib.h" bodystart="5918" bodyend="5930"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a97d4b46cbcd833755e1405c8827d512a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, ContentReceiver content_receiver)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>content_receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="846" column="10" bodyfile="include/dpp/httplib.h" bodystart="5838" bodyend="5841"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a2ce6332abe62805180b6785d60c59708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, ContentReceiver content_receiver, Progress progress)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>content_receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="849" column="10" bodyfile="include/dpp/httplib.h" bodystart="5843" bodyend="5848"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a888162ec352dad12127c3b50606af625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, Progress progress)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="844" column="10" bodyfile="include/dpp/httplib.h" bodystart="5819" bodyend="5821"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a27f8d62fc3d7267ee587a8bd2554b195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, ResponseHandler response_handler, ContentReceiver content_receiver)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad81ce13409edba1589c0b076b2dfab74" kindref="member">ResponseHandler</ref></type>
+          <declname>response_handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>content_receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="853" column="10" bodyfile="include/dpp/httplib.h" bodystart="5862" bodyend="5867"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a806edcad1c792e7824e32c42fa14b269" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Get</definition>
+        <argsstring>(const char *path, ResponseHandler response_handler, ContentReceiver content_receiver, Progress progress)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad81ce13409edba1589c0b076b2dfab74" kindref="member">ResponseHandler</ref></type>
+          <declname>response_handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>content_receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" kindref="member">Progress</ref></type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="858" column="10" bodyfile="include/dpp/httplib.h" bodystart="5876" bodyend="5882"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a210c79fb8e8916d1433f05e2fe149840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Head</definition>
@@ -998,11 +1139,37 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="873" column="10" bodyfile="include/dpp/httplib.h" bodystart="5936" bodyend="5943"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a48fd5e770ed2f8ce9f1ed0354e1c83fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1adb81f18287fc15afae42574b8964ae6f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t httplib::ClientImpl::is_socket_open</definition>
+        <argsstring>() const</argsstring>
+        <name>is_socket_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="958" column="10" bodyfile="include/dpp/httplib.h" bodystart="6235" bodyend="6238"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afbe91bdb3eb3b30f37aad3c49ae3285d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::is_valid</definition>
+        <argsstring>() const</argsstring>
+        <name>is_valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="840" column="16" bodyfile="include/dpp/httplib.h" bodystart="5155" bodyend="5155"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa543a495d5a298a8657b62d2c7ec0c2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
+        <definition>Result httplib::ClientImpl::Options</definition>
         <argsstring>(const char *path)</argsstring>
-        <name>Post</name>
+        <name>Options</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -1013,42 +1180,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="875" column="10" bodyfile="include/dpp/httplib.h" bodystart="5945" bodyend="5947"/>
+        <location file="include/dpp/httplib.h" line="952" column="10" bodyfile="include/dpp/httplib.h" bodystart="6222" bodyend="6224"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1af69df9ab6c50bd2d05492b23f57aa8d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ad6e966cab8e452a4780f3de7a760ed91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="876" column="10" bodyfile="include/dpp/httplib.h" bodystart="5949" bodyend="5953"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a83cd8c2fb0be4d3dc8599dfa230162bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Post</name>
+        <definition>Result httplib::ClientImpl::Options</definition>
+        <argsstring>(const char *path, const Headers &amp;headers)</argsstring>
+        <name>Options</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -1057,611 +1195,13 @@
           <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
           <declname>headers</declname>
         </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="878" column="10" bodyfile="include/dpp/httplib.h" bodystart="5955" bodyend="5960"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9fec044768c5e3958b152f33d1bc52a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="880" column="10" bodyfile="include/dpp/httplib.h" bodystart="5962" bodyend="5965"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a2c357040fb7e6cafd5cf5bca99a5c27d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="882" column="10" bodyfile="include/dpp/httplib.h" bodystart="5967" bodyend="5973"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9ec2fcfc57a22991f2bd5a8db81bbf4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="884" column="10" bodyfile="include/dpp/httplib.h" bodystart="5979" bodyend="5984"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8be6427e01060d8cfb785361576cf532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="886" column="10" bodyfile="include/dpp/httplib.h" bodystart="5986" bodyend="5990"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a257f1fd9073f98e99f0060618c973ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="888" column="10" bodyfile="include/dpp/httplib.h" bodystart="5992" bodyend="5999"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aeeb3b867a5100e86fd84dc70e9dd5628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="890" column="10" bodyfile="include/dpp/httplib.h" bodystart="6001" bodyend="6006"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a7f2f85acad80e361572b26ce251bf2d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Params &amp;params)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
-          <declname>params</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="893" column="10" bodyfile="include/dpp/httplib.h" bodystart="5975" bodyend="5977"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ad352129791c9351a2da99535e05780cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const Params &amp;params)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
-          <declname>params</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="894" column="10" bodyfile="include/dpp/httplib.h" bodystart="6008" bodyend="6012"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a131900a9e30be8fcf2bab671f9cb1be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const MultipartFormDataItems &amp;items)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
-          <declname>items</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="895" column="10" bodyfile="include/dpp/httplib.h" bodystart="6014" bodyend="6017"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a18c6b5c256c7df2a6810e6dffdcdbb04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const MultipartFormDataItems &amp;items)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
-          <declname>items</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="896" column="10" bodyfile="include/dpp/httplib.h" bodystart="6019" bodyend="6022"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab2c2dae97d8672ed539a21cfe7477fed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Post</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const MultipartFormDataItems &amp;items, const std::string &amp;boundary)</argsstring>
-        <name>Post</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
-          <declname>items</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>boundary</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="898" column="10" bodyfile="include/dpp/httplib.h" bodystart="6023" bodyend="6053"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8d09defd3a260962b40692d434954adc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="901" column="10" bodyfile="include/dpp/httplib.h" bodystart="6055" bodyend="6057"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a51f2d52ca9f051ff82f03fc6d0c5401c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="902" column="10" bodyfile="include/dpp/httplib.h" bodystart="6059" bodyend="6062"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afdff68dbfeb59c6d0460470aa01a65e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="904" column="10" bodyfile="include/dpp/httplib.h" bodystart="6064" bodyend="6069"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a3e09fd1464f6720aae6809538a0d7e2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="906" column="10" bodyfile="include/dpp/httplib.h" bodystart="6071" bodyend="6074"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a87783fb2f19d4ce33da2fb4a4b075853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="908" column="10" bodyfile="include/dpp/httplib.h" bodystart="6076" bodyend="6082"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a0cf5172c8789aaf32d1ecff7f67a83f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="910" column="10" bodyfile="include/dpp/httplib.h" bodystart="6084" bodyend="6089"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a3d5b1a43439b5e18989e4a193a3286f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="912" column="10" bodyfile="include/dpp/httplib.h" bodystart="6091" bodyend="6095"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab455ebc489935598d867c8963d22cb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="914" column="10" bodyfile="include/dpp/httplib.h" bodystart="6097" bodyend="6104"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a1d9bc63e0caa1411a3d3c59c38049256" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="916" column="10" bodyfile="include/dpp/httplib.h" bodystart="6106" bodyend="6111"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6ac5351cc80054039d6f54450fd949b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Params &amp;params)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
-          <declname>params</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="919" column="10" bodyfile="include/dpp/httplib.h" bodystart="6113" bodyend="6115"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a74deeaf4d84f59ca77005ab5d2c3a53b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Put</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const Params &amp;params)</argsstring>
-        <name>Put</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
-          <declname>params</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="920" column="10" bodyfile="include/dpp/httplib.h" bodystart="6117" bodyend="6121"/>
+        <location file="include/dpp/httplib.h" line="953" column="10" bodyfile="include/dpp/httplib.h" bodystart="6226" bodyend="6233"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab3a10b857c4c528c01ad5cd3da111f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -1742,31 +1282,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="925" column="10" bodyfile="include/dpp/httplib.h" bodystart="6133" bodyend="6139"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a917d3ddf73cd2e392ba851b4aa880341" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Patch</definition>
-        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="927" column="10" bodyfile="include/dpp/httplib.h" bodystart="6141" bodyend="6144"/>
-      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a32f28b2f8b69b89c5f4cb2ea77a05a0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Patch</definition>
@@ -1796,43 +1311,18 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="929" column="10" bodyfile="include/dpp/httplib.h" bodystart="6146" bodyend="6152"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a306975fa9755b2cc7d055b60c6b93938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afcdc72a012c6ac6203af6f1b5533b80e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Patch</definition>
-        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
         <name>Patch</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="931" column="10" bodyfile="include/dpp/httplib.h" bodystart="6154" bodyend="6159"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a99f5b99e2c92581d97820c3615701ea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Patch</definition>
-        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
-        <name>Patch</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
         </param>
         <param>
           <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
@@ -1848,7 +1338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="933" column="10" bodyfile="include/dpp/httplib.h" bodystart="6161" bodyend="6165"/>
+        <location file="include/dpp/httplib.h" line="937" column="10" bodyfile="include/dpp/httplib.h" bodystart="6176" bodyend="6181"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a092214715691e2b777017ede1593d8b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -1883,11 +1373,277 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="935" column="10" bodyfile="include/dpp/httplib.h" bodystart="6167" bodyend="6174"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afcdc72a012c6ac6203af6f1b5533b80e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a917d3ddf73cd2e392ba851b4aa880341" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
         <definition>Result httplib::ClientImpl::Patch</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
         <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="927" column="10" bodyfile="include/dpp/httplib.h" bodystart="6141" bodyend="6144"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a99f5b99e2c92581d97820c3615701ea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Patch</definition>
+        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="933" column="10" bodyfile="include/dpp/httplib.h" bodystart="6161" bodyend="6165"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a306975fa9755b2cc7d055b60c6b93938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Patch</definition>
+        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <name>Patch</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="931" column="10" bodyfile="include/dpp/httplib.h" bodystart="6154" bodyend="6159"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a48fd5e770ed2f8ce9f1ed0354e1c83fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="875" column="10" bodyfile="include/dpp/httplib.h" bodystart="5945" bodyend="5947"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1af69df9ab6c50bd2d05492b23f57aa8d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="876" column="10" bodyfile="include/dpp/httplib.h" bodystart="5949" bodyend="5953"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a83cd8c2fb0be4d3dc8599dfa230162bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="878" column="10" bodyfile="include/dpp/httplib.h" bodystart="5955" bodyend="5960"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a18c6b5c256c7df2a6810e6dffdcdbb04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const MultipartFormDataItems &amp;items)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="896" column="10" bodyfile="include/dpp/httplib.h" bodystart="6019" bodyend="6022"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab2c2dae97d8672ed539a21cfe7477fed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const MultipartFormDataItems &amp;items, const std::string &amp;boundary)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="898" column="10" bodyfile="include/dpp/httplib.h" bodystart="6023" bodyend="6053"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ad352129791c9351a2da99535e05780cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const Params &amp;params)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="894" column="10" bodyfile="include/dpp/httplib.h" bodystart="6008" bodyend="6012"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a2c357040fb7e6cafd5cf5bca99a5c27d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="882" column="10" bodyfile="include/dpp/httplib.h" bodystart="5967" bodyend="5973"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aeeb3b867a5100e86fd84dc70e9dd5628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <name>Post</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -1910,30 +1666,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="937" column="10" bodyfile="include/dpp/httplib.h" bodystart="6176" bodyend="6181"/>
+        <location file="include/dpp/httplib.h" line="890" column="10" bodyfile="include/dpp/httplib.h" bodystart="6001" bodyend="6006"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a4b7a1587fad8c845f331ee3c31f09b90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a257f1fd9073f98e99f0060618c973ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
-        <argsstring>(const char *path)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="941" column="10" bodyfile="include/dpp/httplib.h" bodystart="6183" bodyend="6185"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9f4a13d4e92c0fe395dc0a7f544d70a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
-        <argsstring>(const char *path, const Headers &amp;headers)</argsstring>
-        <name>Delete</name>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <name>Post</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -1942,30 +1681,13 @@
           <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
           <declname>headers</declname>
         </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="942" column="10" bodyfile="include/dpp/httplib.h" bodystart="6187" bodyend="6189"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aef580939c8a5bfaac988b3bff3fae7ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
-        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Delete</name>
-        <param>
-          <type>const char *</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
         <param>
           <type>size_t</type>
           <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
         </param>
         <param>
           <type>const char *</type>
@@ -1977,32 +1699,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="943" column="10" bodyfile="include/dpp/httplib.h" bodystart="6191" bodyend="6195"/>
+        <location file="include/dpp/httplib.h" line="888" column="10" bodyfile="include/dpp/httplib.h" bodystart="5992" bodyend="5999"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a286bc568ba3f1f3bd7a8a94935c40fef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a131900a9e30be8fcf2bab671f9cb1be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
-        <name>Delete</name>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const MultipartFormDataItems &amp;items)</argsstring>
+        <name>Post</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
+          <type>const <ref refid="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" kindref="member">MultipartFormDataItems</ref> &amp;</type>
+          <declname>items</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2010,13 +1720,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="945" column="10" bodyfile="include/dpp/httplib.h" bodystart="6197" bodyend="6209"/>
+        <location file="include/dpp/httplib.h" line="895" column="10" bodyfile="include/dpp/httplib.h" bodystart="6014" bodyend="6017"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6aa336c8777cad2042b744a63aa32fc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a7f2f85acad80e361572b26ce251bf2d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, const Params &amp;params)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="893" column="10" bodyfile="include/dpp/httplib.h" bodystart="5975" bodyend="5977"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9fec044768c5e3958b152f33d1bc52a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Post</definition>
         <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Delete</name>
+        <name>Post</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -2035,24 +1766,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="947" column="10" bodyfile="include/dpp/httplib.h" bodystart="6211" bodyend="6214"/>
+        <location file="include/dpp/httplib.h" line="880" column="10" bodyfile="include/dpp/httplib.h" bodystart="5962" bodyend="5965"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a174fcafcf3d1ce3841d79e0979b3061b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8be6427e01060d8cfb785361576cf532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Delete</definition>
-        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
-        <name>Delete</name>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <name>Post</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
-          <declname>headers</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>body</declname>
+          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
+          <declname>content_provider</declname>
         </param>
         <param>
           <type>const char *</type>
@@ -2064,13 +1791,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="949" column="10" bodyfile="include/dpp/httplib.h" bodystart="6216" bodyend="6220"/>
+        <location file="include/dpp/httplib.h" line="886" column="10" bodyfile="include/dpp/httplib.h" bodystart="5986" bodyend="5990"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa543a495d5a298a8657b62d2c7ec0c2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9ec2fcfc57a22991f2bd5a8db81bbf4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Options</definition>
+        <definition>Result httplib::ClientImpl::Post</definition>
+        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="884" column="10" bodyfile="include/dpp/httplib.h" bodystart="5979" bodyend="5984"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8d09defd3a260962b40692d434954adc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
         <argsstring>(const char *path)</argsstring>
-        <name>Options</name>
+        <name>Put</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -2081,13 +1837,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="952" column="10" bodyfile="include/dpp/httplib.h" bodystart="6222" bodyend="6224"/>
+        <location file="include/dpp/httplib.h" line="901" column="10" bodyfile="include/dpp/httplib.h" bodystart="6055" bodyend="6057"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ad6e966cab8e452a4780f3de7a760ed91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a51f2d52ca9f051ff82f03fc6d0c5401c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::Options</definition>
-        <argsstring>(const char *path, const Headers &amp;headers)</argsstring>
-        <name>Options</name>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="902" column="10" bodyfile="include/dpp/httplib.h" bodystart="6059" bodyend="6062"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afdff68dbfeb59c6d0460470aa01a65e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const char *body, size_t content_length, const char *content_type)</argsstring>
+        <name>Put</name>
         <param>
           <type>const char *</type>
           <declname>path</declname>
@@ -2096,13 +1881,258 @@
           <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
           <declname>headers</declname>
         </param>
+        <param>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="953" column="10" bodyfile="include/dpp/httplib.h" bodystart="6226" bodyend="6233"/>
+        <location file="include/dpp/httplib.h" line="904" column="10" bodyfile="include/dpp/httplib.h" bodystart="6064" bodyend="6069"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a74deeaf4d84f59ca77005ab5d2c3a53b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const Params &amp;params)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="920" column="10" bodyfile="include/dpp/httplib.h" bodystart="6117" bodyend="6121"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a87783fb2f19d4ce33da2fb4a4b075853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, const std::string &amp;body, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="908" column="10" bodyfile="include/dpp/httplib.h" bodystart="6076" bodyend="6082"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a1d9bc63e0caa1411a3d3c59c38049256" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="916" column="10" bodyfile="include/dpp/httplib.h" bodystart="6106" bodyend="6111"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab455ebc489935598d867c8963d22cb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Headers &amp;headers, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref> &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="914" column="10" bodyfile="include/dpp/httplib.h" bodystart="6097" bodyend="6104"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6ac5351cc80054039d6f54450fd949b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const Params &amp;params)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" kindref="member">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="919" column="10" bodyfile="include/dpp/httplib.h" bodystart="6113" bodyend="6115"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a3e09fd1464f6720aae6809538a0d7e2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, const std::string &amp;body, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="906" column="10" bodyfile="include/dpp/httplib.h" bodystart="6071" bodyend="6074"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a3d5b1a43439b5e18989e4a193a3286f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, ContentProviderWithoutLength content_provider, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="912" column="10" bodyfile="include/dpp/httplib.h" bodystart="6091" bodyend="6095"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a0cf5172c8789aaf32d1ecff7f67a83f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::Put</definition>
+        <argsstring>(const char *path, size_t content_length, ContentProvider content_provider, const char *content_type)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="910" column="10" bodyfile="include/dpp/httplib.h" bodystart="6084" bodyend="6089"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa1995d934c9d883aff1d8d37bcf67f85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::send</definition>
+        <argsstring>(const Request &amp;req)</argsstring>
+        <name>send</name>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="956" column="10" bodyfile="include/dpp/httplib.h" bodystart="5372" bodyend="5375"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a618895e4b137663691fdc41fd998b843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -2128,166 +2158,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="955" column="8" bodyfile="include/dpp/httplib.h" bodystart="5284" bodyend="5370"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa1995d934c9d883aff1d8d37bcf67f85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::send</definition>
-        <argsstring>(const Request &amp;req)</argsstring>
-        <name>send</name>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="956" column="10" bodyfile="include/dpp/httplib.h" bodystart="5372" bodyend="5375"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1adb81f18287fc15afae42574b8964ae6f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>size_t</type>
-        <definition>size_t httplib::ClientImpl::is_socket_open</definition>
-        <argsstring>() const</argsstring>
-        <name>is_socket_open</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="958" column="10" bodyfile="include/dpp/httplib.h" bodystart="6235" bodyend="6238"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a4612a28562001509a2bf104eae2857fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::stop</definition>
-        <argsstring>()</argsstring>
-        <name>stop</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="960" column="8" bodyfile="include/dpp/httplib.h" bodystart="6240" bodyend="6261"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1addeb1f64c38e4cda19e5451c272ca1be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_default_headers</definition>
-        <argsstring>(Headers headers)</argsstring>
-        <name>set_default_headers</name>
-        <param>
-          <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
-          <declname>headers</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="962" column="8" bodyfile="include/dpp/httplib.h" bodystart="6300" bodyend="6302"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a591aea4aada21b8218834413d7813041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_tcp_nodelay</definition>
-        <argsstring>(bool on)</argsstring>
-        <name>set_tcp_nodelay</name>
-        <param>
-          <type>bool</type>
-          <declname>on</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="964" column="8" bodyfile="include/dpp/httplib.h" bodystart="6304" bodyend="6304"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a0a087b6cd44581d336e57437d41e873a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_socket_options</definition>
-        <argsstring>(SocketOptions socket_options)</argsstring>
-        <name>set_socket_options</name>
-        <param>
-          <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
-          <declname>socket_options</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="965" column="8" bodyfile="include/dpp/httplib.h" bodystart="6306" bodyend="6308"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6b30b21c8fca1b0e754e6b036caa209e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_connection_timeout</definition>
-        <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_connection_timeout</name>
-        <param>
-          <type>time_t</type>
-          <declname>sec</declname>
-        </param>
-        <param>
-          <type>time_t</type>
-          <declname>usec</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="967" column="8" bodyfile="include/dpp/httplib.h" bodystart="6263" bodyend="6266"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afd34346aeef526240cb74d03d2aec94d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_read_timeout</definition>
-        <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_read_timeout</name>
-        <param>
-          <type>time_t</type>
-          <declname>sec</declname>
-        </param>
-        <param>
-          <type>time_t</type>
-          <declname>usec</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="968" column="8" bodyfile="include/dpp/httplib.h" bodystart="6268" bodyend="6271"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ac9f654584555b68002d9a0f2a33ffb3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_write_timeout</definition>
-        <argsstring>(time_t sec, time_t usec=0)</argsstring>
-        <name>set_write_timeout</name>
-        <param>
-          <type>time_t</type>
-          <declname>sec</declname>
-        </param>
-        <param>
-          <type>time_t</type>
-          <declname>usec</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="969" column="8" bodyfile="include/dpp/httplib.h" bodystart="6273" bodyend="6276"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a7e51dca63892b47995ce1d1bb3c31c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2327,40 +2197,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="972" column="8" bodyfile="include/dpp/httplib.h" bodystart="6284" bodyend="6286"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae77e3fe3a8e4b58b3b1ef9edb23725db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_keep_alive</definition>
-        <argsstring>(bool on)</argsstring>
-        <name>set_keep_alive</name>
-        <param>
-          <type>bool</type>
-          <declname>on</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="977" column="8" bodyfile="include/dpp/httplib.h" bodystart="6296" bodyend="6296"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae546b72b358ade787eafa8c269fd4336" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::set_follow_location</definition>
-        <argsstring>(bool on)</argsstring>
-        <name>set_follow_location</name>
-        <param>
-          <type>bool</type>
-          <declname>on</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="978" column="8" bodyfile="include/dpp/httplib.h" bodystart="6298" bodyend="6298"/>
-      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a780c337d2d68b12c24622e8ad52d62e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void httplib::ClientImpl::set_compress</definition>
@@ -2377,6 +2213,28 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="980" column="8" bodyfile="include/dpp/httplib.h" bodystart="6310" bodyend="6310"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6b30b21c8fca1b0e754e6b036caa209e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_connection_timeout</definition>
+        <argsstring>(time_t sec, time_t usec=0)</argsstring>
+        <name>set_connection_timeout</name>
+        <param>
+          <type>time_t</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>usec</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="967" column="8" bodyfile="include/dpp/httplib.h" bodystart="6263" bodyend="6266"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a353b840ec57d6d6cad61c732999148d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2395,6 +2253,40 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="982" column="8" bodyfile="include/dpp/httplib.h" bodystart="6312" bodyend="6312"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1addeb1f64c38e4cda19e5451c272ca1be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_default_headers</definition>
+        <argsstring>(Headers headers)</argsstring>
+        <name>set_default_headers</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" kindref="member">Headers</ref></type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="962" column="8" bodyfile="include/dpp/httplib.h" bodystart="6300" bodyend="6302"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae546b72b358ade787eafa8c269fd4336" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_follow_location</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>set_follow_location</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="978" column="8" bodyfile="include/dpp/httplib.h" bodystart="6298" bodyend="6298"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a9a11f06a507e1696a2bca5cbd8d9ca40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void httplib::ClientImpl::set_interface</definition>
@@ -2411,6 +2303,40 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="984" column="8" bodyfile="include/dpp/httplib.h" bodystart="6314" bodyend="6314"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae77e3fe3a8e4b58b3b1ef9edb23725db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_keep_alive</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>set_keep_alive</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="977" column="8" bodyfile="include/dpp/httplib.h" bodystart="6296" bodyend="6296"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a74dbba2ec7e7b269b76bdcf02e8b6010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_logger</definition>
+        <argsstring>(Logger logger)</argsstring>
+        <name>set_logger</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="997" column="8" bodyfile="include/dpp/httplib.h" bodystart="6345" bodyend="6347"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a201a06668188531b31e2ac0186a1eea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2471,14 +2397,19 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="988" column="8" bodyfile="include/dpp/httplib.h" bodystart="6327" bodyend="6329"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a74dbba2ec7e7b269b76bdcf02e8b6010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1afd34346aeef526240cb74d03d2aec94d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void httplib::ClientImpl::set_logger</definition>
-        <argsstring>(Logger logger)</argsstring>
-        <name>set_logger</name>
+        <definition>void httplib::ClientImpl::set_read_timeout</definition>
+        <argsstring>(time_t sec, time_t usec=0)</argsstring>
+        <name>set_read_timeout</name>
         <param>
-          <type><ref refid="namespacehttplib_1a45a8a23366055bec6273922974cff156" kindref="member">Logger</ref></type>
-          <declname>logger</declname>
+          <type>time_t</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>usec</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2486,18 +2417,87 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="997" column="8" bodyfile="include/dpp/httplib.h" bodystart="6345" bodyend="6347"/>
+        <location file="include/dpp/httplib.h" line="968" column="8" bodyfile="include/dpp/httplib.h" bodystart="6268" bodyend="6271"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a0a087b6cd44581d336e57437d41e873a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_socket_options</definition>
+        <argsstring>(SocketOptions socket_options)</argsstring>
+        <name>set_socket_options</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" kindref="member">SocketOptions</ref></type>
+          <declname>socket_options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="965" column="8" bodyfile="include/dpp/httplib.h" bodystart="6306" bodyend="6308"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a591aea4aada21b8218834413d7813041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_tcp_nodelay</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>set_tcp_nodelay</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="964" column="8" bodyfile="include/dpp/httplib.h" bodystart="6304" bodyend="6304"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ac9f654584555b68002d9a0f2a33ffb3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::set_write_timeout</definition>
+        <argsstring>(time_t sec, time_t usec=0)</argsstring>
+        <name>set_write_timeout</name>
+        <param>
+          <type>time_t</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>usec</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="969" column="8" bodyfile="include/dpp/httplib.h" bodystart="6273" bodyend="6276"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a4612a28562001509a2bf104eae2857fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="960" column="8" bodyfile="include/dpp/httplib.h" bodystart="6240" bodyend="6261"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab81f0f3ff5031d8bb231928318cd95ff" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
-        <definition>Result httplib::ClientImpl::send_</definition>
-        <argsstring>(Request &amp;&amp;req)</argsstring>
-        <name>send_</name>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a30ceda93ba451534d2bcd06d1952881b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::close_socket</definition>
+        <argsstring>(Socket &amp;socket)</argsstring>
+        <name>close_socket</name>
         <param>
-          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;&amp;</type>
-          <declname>req</declname>
+          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
+          <declname>socket</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2505,7 +2505,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1009" column="10" bodyfile="include/dpp/httplib.h" bodystart="5377" bodyend="5382"/>
+        <location file="include/dpp/httplib.h" line="1022" column="8" bodyfile="include/dpp/httplib.h" bodystart="5226" bodyend="5243"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1acb828963469210a9a533cb5f22ca6a4e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::copy_settings</definition>
+        <argsstring>(const ClientImpl &amp;rhs)</argsstring>
+        <name>copy_settings</name>
+        <param>
+          <type>const <ref refid="classhttplib_1_1_client_impl" kindref="compound">ClientImpl</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1034" column="8" bodyfile="include/dpp/httplib.h" bodystart="5157" bodyend="5192"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1af913333c2fa8a53332f96574e113dc8f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -2527,61 +2544,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1011" column="16" bodyfile="include/dpp/httplib.h" bodystart="5205" bodyend="5211"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6a20a9e9d9336b81373b8f6c5dd9f827" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::shutdown_ssl</definition>
-        <argsstring>(Socket &amp;socket, bool shutdown_gracefully)</argsstring>
-        <name>shutdown_ssl</name>
-        <param>
-          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
-          <declname>socket</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>shutdown_gracefully</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1020" column="16" bodyfile="include/dpp/httplib.h" bodystart="5213" bodyend="5219"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a41674a67f42574238be63c78eca9e5e0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::shutdown_socket</definition>
-        <argsstring>(Socket &amp;socket)</argsstring>
-        <name>shutdown_socket</name>
-        <param>
-          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
-          <declname>socket</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1021" column="8" bodyfile="include/dpp/httplib.h" bodystart="5221" bodyend="5224"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a30ceda93ba451534d2bcd06d1952881b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::close_socket</definition>
-        <argsstring>(Socket &amp;socket)</argsstring>
-        <name>close_socket</name>
-        <param>
-          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
-          <declname>socket</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1022" column="8" bodyfile="include/dpp/httplib.h" bodystart="5226" bodyend="5243"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1ac0a3b3f119e1b68bb39eab5e7254d5f2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2629,6 +2591,61 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1028" column="8" bodyfile="include/dpp/httplib.h" bodystart="5728" bodyend="5803"/>
       </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ab81f0f3ff5031d8bb231928318cd95ff" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
+        <definition>Result httplib::ClientImpl::send_</definition>
+        <argsstring>(Request &amp;&amp;req)</argsstring>
+        <name>send_</name>
+        <param>
+          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;&amp;</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1009" column="10" bodyfile="include/dpp/httplib.h" bodystart="5377" bodyend="5382"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a41674a67f42574238be63c78eca9e5e0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::shutdown_socket</definition>
+        <argsstring>(Socket &amp;socket)</argsstring>
+        <name>shutdown_socket</name>
+        <param>
+          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1021" column="8" bodyfile="include/dpp/httplib.h" bodystart="5221" bodyend="5224"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a6a20a9e9d9336b81373b8f6c5dd9f827" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void httplib::ClientImpl::shutdown_ssl</definition>
+        <argsstring>(Socket &amp;socket, bool shutdown_gracefully)</argsstring>
+        <name>shutdown_ssl</name>
+        <param>
+          <type><ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>shutdown_gracefully</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1020" column="16" bodyfile="include/dpp/httplib.h" bodystart="5213" bodyend="5219"/>
+      </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1ac969a59de46fc276e56f9e453f675842" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool httplib::ClientImpl::write_content_with_provider</definition>
@@ -2654,23 +2671,6 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1031" column="8" bodyfile="include/dpp/httplib.h" bodystart="5497" bodyend="5520"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1acb828963469210a9a533cb5f22ca6a4e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void httplib::ClientImpl::copy_settings</definition>
-        <argsstring>(const ClientImpl &amp;rhs)</argsstring>
-        <name>copy_settings</name>
-        <param>
-          <type>const <ref refid="classhttplib_1_1_client_impl" kindref="compound">ClientImpl</ref> &amp;</type>
-          <declname>rhs</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1034" column="8" bodyfile="include/dpp/httplib.h" bodystart="5157" bodyend="5192"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1a2235b51fb0ca763c902fe8b7a8669f67" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
@@ -2689,85 +2689,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1102" column="12" bodyfile="include/dpp/httplib.h" bodystart="5194" bodyend="5203"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aafde6eb070da220eabaf06a04b745250" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::read_response_line</definition>
-        <argsstring>(Stream &amp;strm, const Request &amp;req, Response &amp;res)</argsstring>
-        <name>read_response_line</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1103" column="8" bodyfile="include/dpp/httplib.h" bodystart="5252" bodyend="5282"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae7d812295ccea2c875e2d97328446fa6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::write_request</definition>
-        <argsstring>(Stream &amp;strm, Request &amp;req, bool close_connection, Error &amp;error)</argsstring>
-        <name>write_request</name>
-        <param>
-          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
-          <declname>strm</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>close_connection</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
-          <declname>error</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1104" column="8" bodyfile="include/dpp/httplib.h" bodystart="5522" bodyend="5618"/>
-      </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1abb62c3620df77b2acedc94ae161b21f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::redirect</definition>
-        <argsstring>(Request &amp;req, Response &amp;res, Error &amp;error)</argsstring>
-        <name>redirect</name>
-        <param>
-          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
-          <declname>req</declname>
-        </param>
-        <param>
-          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
-          <declname>error</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1106" column="8" bodyfile="include/dpp/httplib.h" bodystart="5445" bodyend="5495"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1ac4e30af906067369892520eccd85c038" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -2802,34 +2723,77 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1107" column="8" bodyfile="include/dpp/httplib.h" bodystart="5384" bodyend="5443"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8ba5d8fe6eb815d177b854ec24b6ccdd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::unique_ptr&lt; <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &gt;</type>
-        <definition>std::unique_ptr&lt; Response &gt; httplib::ClientImpl::send_with_content_provider</definition>
-        <argsstring>(Request &amp;req, const char *body, size_t content_length, ContentProvider content_provider, ContentProviderWithoutLength content_provider_without_length, const char *content_type, Error &amp;error)</argsstring>
-        <name>send_with_content_provider</name>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a97baaca9b83724052db0897f306ca8a9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::is_ssl</definition>
+        <argsstring>() const</argsstring>
+        <name>is_ssl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1123" column="16" bodyfile="include/dpp/httplib.h" bodystart="5813" bodyend="5813"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aaba7f80149281b266cec006e79f8e78a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::process_socket</definition>
+        <argsstring>(const Socket &amp;socket, std::function&lt; bool(Stream &amp;strm)&gt; callback)</argsstring>
+        <name>process_socket</name>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;strm)&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1121" column="16" bodyfile="include/dpp/httplib.h" bodystart="5806" bodyend="5811"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aafde6eb070da220eabaf06a04b745250" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::read_response_line</definition>
+        <argsstring>(Stream &amp;strm, const Request &amp;req, Response &amp;res)</argsstring>
+        <name>read_response_line</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="1103" column="8" bodyfile="include/dpp/httplib.h" bodystart="5252" bodyend="5282"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1abb62c3620df77b2acedc94ae161b21f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::ClientImpl::redirect</definition>
+        <argsstring>(Request &amp;req, Response &amp;res, Error &amp;error)</argsstring>
+        <name>redirect</name>
         <param>
           <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
           <declname>req</declname>
         </param>
         <param>
-          <type>const char *</type>
-          <declname>body</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>content_length</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
-          <declname>content_provider</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
-          <declname>content_provider_without_length</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>content_type</declname>
+          <type><ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;</type>
+          <declname>res</declname>
         </param>
         <param>
           <type><ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
@@ -2841,7 +2805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1109" column="19" bodyfile="include/dpp/httplib.h" bodystart="5620" bodyend="5705"/>
+        <location file="include/dpp/httplib.h" line="1106" column="8" bodyfile="include/dpp/httplib.h" bodystart="5445" bodyend="5495"/>
       </memberdef>
       <memberdef kind="function" id="classhttplib_1_1_client_impl_1aa9b74774bab6d205c5537fb7560db7a1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhttplib_1_1_result" kindref="compound">Result</ref></type>
@@ -2888,18 +2852,38 @@
         </inbodydescription>
         <location file="include/dpp/httplib.h" line="1115" column="10" bodyfile="include/dpp/httplib.h" bodystart="5707" bodyend="5726"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1aaba7f80149281b266cec006e79f8e78a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>bool</type>
-        <definition>bool httplib::ClientImpl::process_socket</definition>
-        <argsstring>(const Socket &amp;socket, std::function&lt; bool(Stream &amp;strm)&gt; callback)</argsstring>
-        <name>process_socket</name>
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a8ba5d8fe6eb815d177b854ec24b6ccdd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; Response &gt; httplib::ClientImpl::send_with_content_provider</definition>
+        <argsstring>(Request &amp;req, const char *body, size_t content_length, ContentProvider content_provider, ContentProviderWithoutLength content_provider_without_length, const char *content_type, Error &amp;error)</argsstring>
+        <name>send_with_content_provider</name>
         <param>
-          <type>const <ref refid="structhttplib_1_1_client_impl_1_1_socket" kindref="compound">Socket</ref> &amp;</type>
-          <declname>socket</declname>
+          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
         </param>
         <param>
-          <type>std::function&lt; bool(<ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;strm)&gt;</type>
-          <declname>callback</declname>
+          <type>const char *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>content_length</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" kindref="member">ContentProvider</ref></type>
+          <declname>content_provider</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" kindref="member">ContentProviderWithoutLength</ref></type>
+          <declname>content_provider_without_length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>content_type</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
+          <declname>error</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2907,20 +2891,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1121" column="16" bodyfile="include/dpp/httplib.h" bodystart="5806" bodyend="5811"/>
+        <location file="include/dpp/httplib.h" line="1109" column="19" bodyfile="include/dpp/httplib.h" bodystart="5620" bodyend="5705"/>
       </memberdef>
-      <memberdef kind="function" id="classhttplib_1_1_client_impl_1a97baaca9b83724052db0897f306ca8a9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classhttplib_1_1_client_impl_1ae7d812295ccea2c875e2d97328446fa6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool httplib::ClientImpl::is_ssl</definition>
-        <argsstring>() const</argsstring>
-        <name>is_ssl</name>
+        <definition>bool httplib::ClientImpl::write_request</definition>
+        <argsstring>(Stream &amp;strm, Request &amp;req, bool close_connection, Error &amp;error)</argsstring>
+        <name>write_request</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type><ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>close_connection</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httplib.h" line="1123" column="16" bodyfile="include/dpp/httplib.h" bodystart="5813" bodyend="5813"/>
+        <location file="include/dpp/httplib.h" line="1104" column="8" bodyfile="include/dpp/httplib.h" bodystart="5522" bodyend="5618"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

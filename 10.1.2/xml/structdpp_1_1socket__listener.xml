@@ -13,19 +13,19 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a3fed071f1108cd751b3381876175943a" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref></type>
-        <definition>raii_socket dpp::socket_listener&lt; T, typename &gt;::fd</definition>
+      <memberdef kind="variable" id="structdpp_1_1socket__listener_1afa52fd464901a764d39060c7ea640acd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::socket_listener&lt; T, typename &gt;::close_event</definition>
         <argsstring></argsstring>
-        <name>fd</name>
+        <name>close_event</name>
         <briefdescription>
-<para>The listening socket for incoming connections. </para>
+<para>Event to handle socket removal from the connection map. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="51" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="51" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="81" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a23171433eef1f1955dd881427ad8683a" prot="public" static="no" mutable="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref>, std::unique_ptr&lt; T &gt; &gt;</type>
@@ -55,6 +55,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/socket_listener.h" line="61" column="9" bodyfile="include/dpp/socket_listener.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a4c98537155766c325a8d417d873e2017" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref></type>
+        <definition>socket_events dpp::socket_listener&lt; T, typename &gt;::events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <briefdescription>
+<para>Socket events for listen socket in the socket engine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket_listener.h" line="86" column="15" bodyfile="include/dpp/socket_listener.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a3fed071f1108cd751b3381876175943a" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref></type>
+        <definition>raii_socket dpp::socket_listener&lt; T, typename &gt;::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+<para>The listening socket for incoming connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket_listener.h" line="51" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a0e6f31168b3302c71a1334dd7a65a0ab" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -98,34 +126,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/socket_listener.h" line="76" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="76" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1socket__listener_1afa52fd464901a764d39060c7ea640acd" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>event_handle dpp::socket_listener&lt; T, typename &gt;::close_event</definition>
-        <argsstring></argsstring>
-        <name>close_event</name>
-        <briefdescription>
-<para>Event to handle socket removal from the connection map. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="81" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="81" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a4c98537155766c325a8d417d873e2017" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref></type>
-        <definition>socket_events dpp::socket_listener&lt; T, typename &gt;::events</definition>
-        <argsstring></argsstring>
-        <name>events</name>
-        <briefdescription>
-<para>Socket events for listen socket in the socket engine. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="86" column="15" bodyfile="include/dpp/socket_listener.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -243,6 +243,35 @@
         </inbodydescription>
         <location file="include/dpp/socket_listener.h" line="129" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="129" bodyend="131"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1socket__listener_1ad4a3c8e33a7e71067b47e3b00bc53e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dpp::socket_listener&lt; T, typename &gt;::emplace</definition>
+        <argsstring>(socket newfd)=0</argsstring>
+        <name>emplace</name>
+        <reimplementedby refid="structdpp_1_1http__server_1ae343e1e2425664d6263b2e0e836b6671">emplace</reimplementedby>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
+          <declname>newfd</declname>
+        </param>
+        <briefdescription>
+<para>Emplace a new connection into the connection map for the server. This is a factory function which must be implemented by the deriving class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newfd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File descriptor for new connection </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket_listener.h" line="151" column="14"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1socket__listener_1a1a3d7791b273a8056f306ae1874c2a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
         <definition>virtual void dpp::socket_listener&lt; T, typename &gt;::handle_accept</definition>
@@ -282,35 +311,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/socket_listener.h" line="139" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="139" bodyend="144"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1socket__listener_1ad4a3c8e33a7e71067b47e3b00bc53e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
-        <definition>virtual void dpp::socket_listener&lt; T, typename &gt;::emplace</definition>
-        <argsstring>(socket newfd)=0</argsstring>
-        <name>emplace</name>
-        <reimplementedby refid="structdpp_1_1http__server_1ae343e1e2425664d6263b2e0e836b6671">emplace</reimplementedby>
-        <param>
-          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
-          <declname>newfd</declname>
-        </param>
-        <briefdescription>
-<para>Emplace a new connection into the connection map for the server. This is a factory function which must be implemented by the deriving class. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>newfd</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>File descriptor for new connection </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="151" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

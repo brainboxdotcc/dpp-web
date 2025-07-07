@@ -45,6 +45,66 @@
         </inbodydescription>
         <location file="include/dpp/dpp.h" line="261" column="1" bodyfile="include/dpp/dpp.h" bodystart="261" bodyend="261"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1thread__collector_1a1b7118fa62b675678814a3e24b3c5ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::thread_collector::~thread_collector</definition>
+        <argsstring>()=default</argsstring>
+        <name>~thread_collector</name>
+        <briefdescription>
+<para>Destroy the thread collector object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dpp.h" line="283" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::collector&lt; T, C &gt;::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Immediately cancels the collector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this if you have met the conditions for which you are collecting objects early, e.g. you were watching for a message containing &apos;yes&apos; or &apos;no&apos; and have received it before the time is up.</para>
+<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3691" column="14" bodyfile="include/dpp/cluster.h" bodystart="3691" bodyend="3694"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dpp::collector&lt; T, C &gt;::completed</definition>
+        <argsstring>(const std::vector&lt; C &gt; &amp;list)=0</argsstring>
+        <name>completed</name>
+        <param>
+          <type>const std::vector&lt; C &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>You must implement this function to receive the completed list of captured objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of captured objects in captured order </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3652" column="14"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1thread__collector_1aaf1444416d6171c283763fd6185c0a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void dpp::thread_collector::completed</definition>
@@ -103,48 +163,6 @@
         </inbodydescription>
         <location file="include/dpp/dpp.h" line="278" column="27" bodyfile="include/dpp/dpp.h" bodystart="278" bodyend="278"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1thread__collector_1a1b7118fa62b675678814a3e24b3c5ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type></type>
-        <definition>virtual dpp::thread_collector::~thread_collector</definition>
-        <argsstring>()=default</argsstring>
-        <name>~thread_collector</name>
-        <briefdescription>
-<para>Destroy the thread collector object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dpp.h" line="283" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
-        <definition>virtual void dpp::collector&lt; T, C &gt;::completed</definition>
-        <argsstring>(const std::vector&lt; C &gt; &amp;list)=0</argsstring>
-        <name>completed</name>
-        <param>
-          <type>const std::vector&lt; C &gt; &amp;</type>
-          <declname>list</declname>
-        </param>
-        <briefdescription>
-<para>You must implement this function to receive the completed list of captured objects. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>list</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The list of captured objects in captured order </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3652" column="14"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>const C *</type>
         <definition>virtual const C * dpp::collector&lt; T, C &gt;::filter</definition>
@@ -184,24 +202,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3680" column="17"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::collector&lt; T, C &gt;::cancel</definition>
-        <argsstring>()</argsstring>
-        <name>cancel</name>
-        <briefdescription>
-<para>Immediately cancels the collector. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Use this if you have met the conditions for which you are collecting objects early, e.g. you were watching for a message containing &apos;yes&apos; or &apos;no&apos; and have received it before the time is up.</para>
-<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3691" column="14" bodyfile="include/dpp/cluster.h" bodystart="3691" bodyend="3694"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">

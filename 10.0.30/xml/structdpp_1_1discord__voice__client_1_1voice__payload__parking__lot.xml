@@ -4,18 +4,20 @@
     <compoundname>dpp::discord_voice_client::voice_payload_parking_lot</compoundname>
     <innerclass refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" prot="public">dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</innerclass>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1ae770b6b3f06389a844bc203e63cd6bd1" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" kindref="compound">dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</ref></type>
-        <definition>struct dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t dpp::discord_voice_client::voice_payload_parking_lot::range</definition>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1afd907ca64d8833d6062f15d922967b2a" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; OpusDecoder &gt;</type>
+        <definition>std::shared_ptr&lt;OpusDecoder&gt; dpp::discord_voice_client::voice_payload_parking_lot::decoder</definition>
         <argsstring></argsstring>
-        <name>range</name>
+        <name>decoder</name>
         <briefdescription>
+<para>libopus decoder </para>
         </briefdescription>
         <detaileddescription>
+<para>Shared with the voice courier thread that does the decoding. This is not protected by a mutex because only the courier thread uses the decoder. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="231" column="7"/>
+        <location file="include/dpp/discordvoiceclient.h" line="254" column="17" bodyfile="include/dpp/discordvoiceclient.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1acb176698802c94628884cbf2dec9e8c4" prot="public" static="no" mutable="no">
         <type>std::priority_queue&lt; voice_payload &gt;</type>
@@ -46,20 +48,18 @@
         </inbodydescription>
         <location file="include/dpp/discordvoiceclient.h" line="245" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="245" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1afd907ca64d8833d6062f15d922967b2a" prot="public" static="no" mutable="no">
-        <type>std::shared_ptr&lt; OpusDecoder &gt;</type>
-        <definition>std::shared_ptr&lt;OpusDecoder&gt; dpp::discord_voice_client::voice_payload_parking_lot::decoder</definition>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1ae770b6b3f06389a844bc203e63cd6bd1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" kindref="compound">dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</ref></type>
+        <definition>struct dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t dpp::discord_voice_client::voice_payload_parking_lot::range</definition>
         <argsstring></argsstring>
-        <name>decoder</name>
+        <name>range</name>
         <briefdescription>
-<para>libopus decoder </para>
         </briefdescription>
         <detaileddescription>
-<para>Shared with the voice courier thread that does the decoding. This is not protected by a mutex because only the courier thread uses the decoder. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="254" column="17" bodyfile="include/dpp/discordvoiceclient.h" bodystart="254" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="231" column="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -23,6 +23,20 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1voiceregion_1af3068a533a8396614c48401c1049c374" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::voiceregion::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Flags bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/voiceregion.h" line="87" column="9" bodyfile="include/dpp/voiceregion.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1voiceregion_1a36b5334ed5fd4a4b2781140ca33ab543" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::voiceregion::id</definition>
@@ -50,20 +64,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/voiceregion.h" line="82" column="13" bodyfile="include/dpp/voiceregion.h" bodystart="82" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1voiceregion_1af3068a533a8396614c48401c1049c374" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::voiceregion::flags</definition>
-        <argsstring></argsstring>
-        <name>flags</name>
-        <briefdescription>
-<para>Flags bitmap. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="87" column="9" bodyfile="include/dpp/voiceregion.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -158,56 +158,38 @@
         </inbodydescription>
         <location file="include/dpp/voiceregion.h" line="97" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceregion_1ad8cc77b8def50a189e2b2c636fd6927e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::voiceregion::is_optimal</definition>
-        <argsstring>() const</argsstring>
-        <name>is_optimal</name>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; voiceregion  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
-<para>True if is the optimal voice server. </para>
+<para>Convert object to json string. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if optimal </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="104" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceregion_1af29355f165f2ee1aeed095f79136c039" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::voiceregion::is_deprecated</definition>
-        <argsstring>() const</argsstring>
-        <name>is_deprecated</name>
-        <briefdescription>
-<para>True if is a deprecated voice server. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if deprecated </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="111" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceregion_1a2acea0a6fa26f8713e7ff712c21626b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::voiceregion::is_custom</definition>
-        <argsstring>() const</argsstring>
-        <name>is_custom</name>
-        <briefdescription>
-<para>True if is a custom voice server. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if custom </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="118" column="6"/>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref> &amp;</type>
@@ -238,6 +220,57 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1voiceregion_1a2acea0a6fa26f8713e7ff712c21626b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::voiceregion::is_custom</definition>
+        <argsstring>() const</argsstring>
+        <name>is_custom</name>
+        <briefdescription>
+<para>True if is a custom voice server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if custom </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/voiceregion.h" line="118" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1voiceregion_1af29355f165f2ee1aeed095f79136c039" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::voiceregion::is_deprecated</definition>
+        <argsstring>() const</argsstring>
+        <name>is_deprecated</name>
+        <briefdescription>
+<para>True if is a deprecated voice server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if deprecated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/voiceregion.h" line="111" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1voiceregion_1ad8cc77b8def50a189e2b2c636fd6927e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::voiceregion::is_optimal</definition>
+        <argsstring>() const</argsstring>
+        <name>is_optimal</name>
+        <briefdescription>
+<para>True if is the optimal voice server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if optimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/voiceregion.h" line="104" column="6"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -271,39 +304,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; voiceregion  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

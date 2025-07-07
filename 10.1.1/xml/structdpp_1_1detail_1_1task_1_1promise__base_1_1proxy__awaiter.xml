@@ -9,20 +9,6 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1ac419c3790a58676dcd322939f68b2707" prot="public" static="no" mutable="no">
-        <type>const <ref refid="structdpp_1_1detail_1_1task_1_1promise__base" kindref="compound">promise_base</ref> &amp;</type>
-        <definition>const promise_base&amp; dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::promise</definition>
-        <argsstring></argsstring>
-        <name>promise</name>
-        <briefdescription>
-<para>The <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">promise_t</ref> object bound to this proxy. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="273" column="20" bodyfile="include/dpp/coro/task.h" bodystart="273" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a9e267f181213ddac7ea4ffc33fc0da25" prot="public" static="no" mutable="no">
         <type>A</type>
         <definition>A dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::awaitable</definition>
@@ -36,6 +22,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="276" column="3" bodyfile="include/dpp/coro/task.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1ac419c3790a58676dcd322939f68b2707" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdpp_1_1detail_1_1task_1_1promise__base" kindref="compound">promise_base</ref> &amp;</type>
+        <definition>const promise_base&amp; dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::promise</definition>
+        <argsstring></argsstring>
+        <name>promise</name>
+        <briefdescription>
+<para>The <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">promise_t</ref> object bound to this proxy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="273" column="20" bodyfile="include/dpp/coro/task.h" bodystart="273" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -52,29 +52,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="279" column="7" bodyfile="include/dpp/coro/task.h" bodystart="279" bodyend="281"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aa0cace4b54601738842b09c475f0df79" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>decltype(auto)</type>
-        <definition>decltype(auto) dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_suspend</definition>
-        <argsstring>(T &amp;&amp;handle) noexcept(noexcept(awaitable.await_suspend(std::forward&lt; T &gt;(handle))))</argsstring>
-        <name>await_suspend</name>
-        <param>
-          <type>T &amp;&amp;</type>
-          <declname>handle</declname>
-        </param>
-        <briefdescription>
-<para>Wrapper for the awaitable&apos;s await_suspend. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="285" column="11" bodyfile="include/dpp/coro/task.h" bodystart="285" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a6f13eee3023713febc9671eda380ef06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>decltype(auto)</type>
@@ -99,6 +76,29 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="294" column="10" bodyfile="include/dpp/coro/task.h" bodystart="294" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aa0cace4b54601738842b09c475f0df79" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_suspend</definition>
+        <argsstring>(T &amp;&amp;handle) noexcept(noexcept(awaitable.await_suspend(std::forward&lt; T &gt;(handle))))</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper for the awaitable&apos;s await_suspend. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="285" column="11" bodyfile="include/dpp/coro/task.h" bodystart="285" bodyend="287"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

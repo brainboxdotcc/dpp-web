@@ -4,6 +4,20 @@
     <compoundname>dpp::request_queue</compoundname>
     <includes local="no">queues.h</includes>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1adb1de27950315b417ca5369442982474" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
+        <definition>std::map&lt;std::string, bucket_t&gt; dpp::request_queue::buckets</definition>
+        <argsstring></argsstring>
+        <name>buckets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ratelimit bucket counters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="264" column="10" bodyfile="include/dpp/queues.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="private" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
         <definition>class cluster* dpp::request_queue::creator</definition>
@@ -17,6 +31,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="243" column="15" bodyfile="include/dpp/queues.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::request_queue::globally_limited_for</definition>
+        <argsstring></argsstring>
+        <name>globally_limited_for</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How many seconds we are globally rate limited for, if globally_ratelimited is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="282" column="10" bodyfile="include/dpp/queues.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::request_queue::globally_ratelimited</definition>
+        <argsstring></argsstring>
+        <name>globally_ratelimited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if globally rate limited - makes the entire request thread wait </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="279" column="6" bodyfile="include/dpp/queues.h" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1aca09e205a264d822cc94c01b9dc057fc" prot="private" static="no" mutable="no">
         <type>std::mutex</type>
@@ -32,19 +74,19 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="246" column="12" bodyfile="include/dpp/queues.h" bodystart="246" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::request_queue::out_mutex</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1abaeb87b838ae1e51cd289c374aa2c588" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable dpp::request_queue::in_ready</definition>
         <argsstring></argsstring>
-        <name>out_mutex</name>
+        <name>in_ready</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Outbound queue mutex thread safety </para>
+<para>Inbound queue condition, signalled when there are requests to fulfill </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="249" column="12" bodyfile="include/dpp/queues.h" bodystart="249" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="258" column="25" bodyfile="include/dpp/queues.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1aec6d4566eb6b683a13a87612b01fa6a3" prot="private" static="no" mutable="no">
         <type>std::thread *</type>
@@ -60,33 +102,19 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="252" column="13" bodyfile="include/dpp/queues.h" bodystart="252" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="private" static="no" mutable="no">
-        <type>std::thread *</type>
-        <definition>std::thread* dpp::request_queue::out_thread</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::request_queue::out_mutex</definition>
         <argsstring></argsstring>
-        <name>out_thread</name>
+        <name>out_mutex</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Outbound queue thread </para>
+<para>Outbound queue mutex thread safety </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="255" column="13" bodyfile="include/dpp/queues.h" bodystart="255" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1abaeb87b838ae1e51cd289c374aa2c588" prot="private" static="no" mutable="no">
-        <type>std::condition_variable</type>
-        <definition>std::condition_variable dpp::request_queue::in_ready</definition>
-        <argsstring></argsstring>
-        <name>in_ready</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Inbound queue condition, signalled when there are requests to fulfill </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="258" column="25" bodyfile="include/dpp/queues.h" bodystart="258" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="249" column="12" bodyfile="include/dpp/queues.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" prot="private" static="no" mutable="no">
         <type>std::condition_variable</type>
@@ -102,19 +130,19 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="261" column="25" bodyfile="include/dpp/queues.h" bodystart="261" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1adb1de27950315b417ca5369442982474" prot="private" static="no" mutable="no">
-        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
-        <definition>std::map&lt;std::string, bucket_t&gt; dpp::request_queue::buckets</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="private" static="no" mutable="no">
+        <type>std::thread *</type>
+        <definition>std::thread* dpp::request_queue::out_thread</definition>
         <argsstring></argsstring>
-        <name>buckets</name>
+        <name>out_thread</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Ratelimit bucket counters </para>
+<para>Outbound queue thread </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="264" column="10" bodyfile="include/dpp/queues.h" bodystart="264" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="255" column="13" bodyfile="include/dpp/queues.h" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1af96e872986a6844f4735b0c2da1e43b1" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, std::vector&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> * &gt; &gt;</type>
@@ -171,34 +199,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="276" column="6" bodyfile="include/dpp/queues.h" bodystart="276" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::request_queue::globally_ratelimited</definition>
-        <argsstring></argsstring>
-        <name>globally_ratelimited</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if globally rate limited - makes the entire request thread wait </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="279" column="6" bodyfile="include/dpp/queues.h" bodystart="279" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="private" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::request_queue::globally_limited_for</definition>
-        <argsstring></argsstring>
-        <name>globally_limited_for</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>How many seconds we are globally rate limited for, if globally_ratelimited is true </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="282" column="10" bodyfile="include/dpp/queues.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">

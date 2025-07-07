@@ -4,6 +4,20 @@
     <compoundname>dpp::request_queue</compoundname>
     <includes local="no">queues.h</includes>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1adb1de27950315b417ca5369442982474" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
+        <definition>std::map&lt;std::string, bucket_t&gt; dpp::request_queue::buckets</definition>
+        <argsstring></argsstring>
+        <name>buckets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ratelimit bucket counters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="195" column="10" bodyfile="include/dpp/queues.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a17ed1a8618f3f334cb7118545e14a00a" prot="private" static="no" mutable="no">
         <type>const class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
         <definition>const class cluster* dpp::request_queue::creator</definition>
@@ -17,6 +31,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="187" column="21" bodyfile="include/dpp/queues.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::request_queue::globally_limited_for</definition>
+        <argsstring></argsstring>
+        <name>globally_limited_for</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How many seconds we are globally rate limited for, if globally_ratelimited is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="208" column="10" bodyfile="include/dpp/queues.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::request_queue::globally_ratelimited</definition>
+        <argsstring></argsstring>
+        <name>globally_ratelimited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if globally rate limited - makes the entire request thread wait </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="206" column="6" bodyfile="include/dpp/queues.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1aca09e205a264d822cc94c01b9dc057fc" prot="private" static="no" mutable="no">
         <type>std::mutex</type>
@@ -32,18 +74,45 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="189" column="12" bodyfile="include/dpp/queues.h" bodystart="189" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::request_queue::out_mutex</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a854d6f1a7d9575c123b3ce10e32f6682" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::in_queue_connect_sock</definition>
         <argsstring></argsstring>
-        <name>out_mutex</name>
+        <name>in_queue_connect_sock</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="190" column="12" bodyfile="include/dpp/queues.h" bodystart="190" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="218" column="5" bodyfile="include/dpp/queues.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9cf9232a8e61e10a9d940ec9fe7b38f1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::in_queue_listen_sock</definition>
+        <argsstring></argsstring>
+        <name>in_queue_listen_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="217" column="5" bodyfile="include/dpp/queues.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9601f19768f92156e38dff4b4b8065da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::in_queue_port</definition>
+        <argsstring></argsstring>
+        <name>in_queue_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ports for notifications of request completion. Why are we using sockets here instead of std::condition_variable? Because in the future we will want to notify across clusters of completion and state, and we can&apos;t do this across processes with condition variables. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="215" column="5" bodyfile="include/dpp/queues.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1aec6d4566eb6b683a13a87612b01fa6a3" prot="private" static="no" mutable="no">
         <type>std::thread *</type>
@@ -59,6 +128,58 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="192" column="13" bodyfile="include/dpp/queues.h" bodystart="192" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::request_queue::out_mutex</definition>
+        <argsstring></argsstring>
+        <name>out_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="190" column="12" bodyfile="include/dpp/queues.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a2af0796c0022f49f228a1376cc2422c8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::out_queue_connect_sock</definition>
+        <argsstring></argsstring>
+        <name>out_queue_connect_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="220" column="5" bodyfile="include/dpp/queues.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a1343856c133b25cbaee1d99897ef5fff" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::out_queue_listen_sock</definition>
+        <argsstring></argsstring>
+        <name>out_queue_listen_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="219" column="5" bodyfile="include/dpp/queues.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a071327479b81c2c5f98c2c2bf1e3125f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::request_queue::out_queue_port</definition>
+        <argsstring></argsstring>
+        <name>out_queue_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="216" column="5" bodyfile="include/dpp/queues.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="private" static="no" mutable="no">
         <type>std::thread *</type>
         <definition>std::thread* dpp::request_queue::out_thread</definition>
@@ -71,20 +192,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="193" column="13" bodyfile="include/dpp/queues.h" bodystart="193" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1adb1de27950315b417ca5369442982474" prot="private" static="no" mutable="no">
-        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
-        <definition>std::map&lt;std::string, bucket_t&gt; dpp::request_queue::buckets</definition>
-        <argsstring></argsstring>
-        <name>buckets</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Ratelimit bucket counters </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="195" column="10" bodyfile="include/dpp/queues.h" bodystart="195" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1af96e872986a6844f4735b0c2da1e43b1" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, std::vector&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> * &gt; &gt;</type>
@@ -142,142 +249,8 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="204" column="6" bodyfile="include/dpp/queues.h" bodystart="204" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::request_queue::globally_ratelimited</definition>
-        <argsstring></argsstring>
-        <name>globally_ratelimited</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>True if globally rate limited - makes the entire request thread wait </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="206" column="6" bodyfile="include/dpp/queues.h" bodystart="206" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="private" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::request_queue::globally_limited_for</definition>
-        <argsstring></argsstring>
-        <name>globally_limited_for</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>How many seconds we are globally rate limited for, if globally_ratelimited is true </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="208" column="10" bodyfile="include/dpp/queues.h" bodystart="208" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9601f19768f92156e38dff4b4b8065da" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::in_queue_port</definition>
-        <argsstring></argsstring>
-        <name>in_queue_port</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Ports for notifications of request completion. Why are we using sockets here instead of std::condition_variable? Because in the future we will want to notify across clusters of completion and state, and we can&apos;t do this across processes with condition variables. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="215" column="5" bodyfile="include/dpp/queues.h" bodystart="215" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a071327479b81c2c5f98c2c2bf1e3125f" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::out_queue_port</definition>
-        <argsstring></argsstring>
-        <name>out_queue_port</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="216" column="5" bodyfile="include/dpp/queues.h" bodystart="216" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9cf9232a8e61e10a9d940ec9fe7b38f1" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::in_queue_listen_sock</definition>
-        <argsstring></argsstring>
-        <name>in_queue_listen_sock</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="217" column="5" bodyfile="include/dpp/queues.h" bodystart="217" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a854d6f1a7d9575c123b3ce10e32f6682" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::in_queue_connect_sock</definition>
-        <argsstring></argsstring>
-        <name>in_queue_connect_sock</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="218" column="5" bodyfile="include/dpp/queues.h" bodystart="218" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a1343856c133b25cbaee1d99897ef5fff" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::out_queue_listen_sock</definition>
-        <argsstring></argsstring>
-        <name>out_queue_listen_sock</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="219" column="5" bodyfile="include/dpp/queues.h" bodystart="219" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a2af0796c0022f49f228a1376cc2422c8" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dpp::request_queue::out_queue_connect_sock</definition>
-        <argsstring></argsstring>
-        <name>out_queue_connect_sock</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="220" column="5" bodyfile="include/dpp/queues.h" bodystart="220" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classdpp_1_1request__queue_1a88f8d5a05b3f235c07ccccd8bef10a2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::request_queue::in_loop</definition>
-        <argsstring>()</argsstring>
-        <name>in_loop</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Thread loop functions </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="223" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::request_queue::out_loop</definition>
-        <argsstring>()</argsstring>
-        <name>out_loop</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/queues.h" line="224" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1ac90e4a0fab29368c3eb416447b58ab23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::request_queue::emit_in_queue_signal</definition>
@@ -305,6 +278,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/queues.h" line="230" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__queue_1a88f8d5a05b3f235c07ccccd8bef10a2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::request_queue::in_loop</definition>
+        <argsstring>()</argsstring>
+        <name>in_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thread loop functions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="223" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::request_queue::out_loop</definition>
+        <argsstring>()</argsstring>
+        <name>out_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="224" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

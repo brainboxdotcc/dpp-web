@@ -47,20 +47,6 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="651" column="13" bodyfile="include/dpp/appcommand.h" bodystart="651" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__interaction_1a7974cc6a20dcd24f8c25f1bdba549812" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fb" kindref="member">slashcommand_contextmenu_type</ref></type>
-        <definition>slashcommand_contextmenu_type dpp::command_interaction::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-<para>type of the command interaction </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="652" column="31" bodyfile="include/dpp/appcommand.h" bodystart="652" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__interaction_1ad2d15a9d27143f74556eb34ddb2bf6ce" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
         <definition>dpp::snowflake dpp::command_interaction::target_id</definition>
@@ -75,8 +61,41 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="653" column="16" bodyfile="include/dpp/appcommand.h" bodystart="653" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__interaction_1a7974cc6a20dcd24f8c25f1bdba549812" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fb" kindref="member">slashcommand_contextmenu_type</ref></type>
+        <definition>slashcommand_contextmenu_type dpp::command_interaction::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>type of the command interaction </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="652" column="31" bodyfile="include/dpp/appcommand.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1command__interaction_1a52a8e3ebf0b6fafffe920b52b56e840f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::command_interaction::get_mention</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mention</name>
+        <briefdescription>
+<para>Return a ping/mention for the slash command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string mention. e.g. <computeroutput>&lt;/airhorn:816437322781949972&gt;</computeroutput> </para>
+</simplesect>
+<simplesect kind="note"><para>If you want a mention for a subcommand or subcommand group, you can use <ref refid="namespacedpp_1_1utility_1ab5e15dbccb96fdcd2ac075bf530290e1" kindref="member">dpp::utility::slashcommand_mention</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="672" column="13"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__interaction_1a23a82b95593d4f06b8819773c65454d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -120,25 +139,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="662" column="15" bodyfile="include/dpp/appcommand.h" bodystart="662" bodyend="664"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1command__interaction_1a52a8e3ebf0b6fafffe920b52b56e840f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::command_interaction::get_mention</definition>
-        <argsstring>() const</argsstring>
-        <name>get_mention</name>
-        <briefdescription>
-<para>Return a ping/mention for the slash command. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string mention. e.g. <computeroutput>&lt;/airhorn:816437322781949972&gt;</computeroutput> </para>
-</simplesect>
-<simplesect kind="note"><para>If you want a mention for a subcommand or subcommand group, you can use <ref refid="namespacedpp_1_1utility_1ab5e15dbccb96fdcd2ac075bf530290e1" kindref="member">dpp::utility::slashcommand_mention</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="672" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

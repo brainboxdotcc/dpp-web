@@ -23,34 +23,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1onboarding_1a97bfd107f1a88e30349357f67da8aa7e" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::onboarding::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-<para>ID of the guild this onboarding is part of. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="1958" column="11" bodyfile="include/dpp/guild.h" bodystart="1958" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1onboarding_1a85cfd0e143a04b9e8de2bbb9dbbaac7a" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1onboarding__prompt" kindref="compound">onboarding_prompt</ref> &gt;</type>
-        <definition>std::vector&lt;onboarding_prompt&gt; dpp::onboarding::prompts</definition>
-        <argsstring></argsstring>
-        <name>prompts</name>
-        <briefdescription>
-<para>Prompts shown during onboarding and in customize community. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="1963" column="13" bodyfile="include/dpp/guild.h" bodystart="1963" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1onboarding_1ab6c12c371f98f4fedb7eff02b9a2a5b7" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt;</type>
         <definition>std::vector&lt;snowflake&gt; dpp::onboarding::default_channel_ids</definition>
@@ -64,6 +36,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/guild.h" line="1968" column="13" bodyfile="include/dpp/guild.h" bodystart="1968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1onboarding_1aa93c4e0e285417bea2a430be79894044" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::onboarding::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+<para>Whether onboarding is enabled in the guild. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="1978" column="6" bodyfile="include/dpp/guild.h" bodystart="1978" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1onboarding_1a97bfd107f1a88e30349357f67da8aa7e" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::onboarding::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>ID of the guild this onboarding is part of. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="1958" column="11" bodyfile="include/dpp/guild.h" bodystart="1958" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1onboarding_1ae3d9e7cc64867f0b586fc157c37aaeb5" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a33441226d2ef32001d99891aa9ed5a20" kindref="member">onboarding_mode</ref></type>
@@ -79,19 +79,19 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="1973" column="17" bodyfile="include/dpp/guild.h" bodystart="1973" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1onboarding_1aa93c4e0e285417bea2a430be79894044" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::onboarding::enabled</definition>
+      <memberdef kind="variable" id="structdpp_1_1onboarding_1a85cfd0e143a04b9e8de2bbb9dbbaac7a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1onboarding__prompt" kindref="compound">onboarding_prompt</ref> &gt;</type>
+        <definition>std::vector&lt;onboarding_prompt&gt; dpp::onboarding::prompts</definition>
         <argsstring></argsstring>
-        <name>enabled</name>
+        <name>prompts</name>
         <briefdescription>
-<para>Whether onboarding is enabled in the guild. </para>
+<para>Prompts shown during onboarding and in customize community. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1978" column="6" bodyfile="include/dpp/guild.h" bodystart="1978" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="1963" column="13" bodyfile="include/dpp/guild.h" bodystart="1963" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -186,6 +186,99 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="1988" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; onboarding  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
+        <definition>onboarding  &amp; dpp::json_interface&lt; onboarding  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1onboarding_1a6b81ac0ced323104c0e5d2bc6bb04590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
+        <definition>onboarding &amp; dpp::onboarding::set_enabled</definition>
+        <argsstring>(const bool is_enabled)</argsstring>
+        <name>set_enabled</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Set the enabling of this onboarding object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool Whether onboarding is enabled in the guild </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="2012" column="12"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1onboarding_1a3ed0704a28c75b1d5527c95ace0203b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
         <definition>onboarding &amp; dpp::onboarding::set_guild_id</definition>
@@ -246,66 +339,6 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="2004" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1onboarding_1a6b81ac0ced323104c0e5d2bc6bb04590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
-        <definition>onboarding &amp; dpp::onboarding::set_enabled</definition>
-        <argsstring>(const bool is_enabled)</argsstring>
-        <name>set_enabled</name>
-        <param>
-          <type>const bool</type>
-          <declname>is_enabled</declname>
-        </param>
-        <briefdescription>
-<para>Set the enabling of this onboarding object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>is_enabled</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>bool Whether onboarding is enabled in the guild </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="2012" column="12"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
-        <definition>onboarding  &amp; dpp::json_interface&lt; onboarding  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; onboarding  &gt;::to_json</definition>
@@ -338,39 +371,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; onboarding  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

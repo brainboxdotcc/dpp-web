@@ -6,21 +6,6 @@
     <templateparamlist>
     </templateparamlist>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1aeeaed95e9a7431e792e0480882b85cd3" prot="public" static="no" mutable="no">
-        <type>std_coroutine::coroutine_handle</type>
-        <definition>std_coroutine::coroutine_handle dpp::detail::coroutine::promise_t&lt; void &gt;::parent</definition>
-        <argsstring></argsstring>
-        <name>parent</name>
-        <initializer>{nullptr}</initializer>
-        <briefdescription>
-<para>Handle of the coroutine co_await-ing this coroutine. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/coroutine.h" line="344" column="2" bodyfile="include/dpp/coro/coroutine.h" bodystart="344" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1a8b41556f8399485887c3b9c145299c51" prot="public" static="no" mutable="no">
         <type>std::exception_ptr</type>
         <definition>std::exception_ptr dpp::detail::coroutine::promise_t&lt; void &gt;::exception</definition>
@@ -35,6 +20,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/coroutine.h" line="349" column="20" bodyfile="include/dpp/coro/coroutine.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1aeeaed95e9a7431e792e0480882b85cd3" prot="public" static="no" mutable="no">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::coroutine::promise_t&lt; void &gt;::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+<para>Handle of the coroutine co_await-ing this coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="344" column="2" bodyfile="include/dpp/coro/coroutine.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,6 +55,20 @@
         </inbodydescription>
         <location file="include/dpp/coro/coroutine.h" line="356" column="16" bodyfile="include/dpp/coro/coroutine.h" bodystart="356" bodyend="358"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1ad37d405d32b99c5ac1c5e4b72fbf71e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1coroutine" kindref="compound">dpp::coroutine</ref>&lt; void &gt;</type>
+        <definition>dpp::coroutine&lt; void &gt; dpp::detail::coroutine::promise_t&lt; void &gt;::get_return_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_return_object</name>
+        <briefdescription>
+<para>Function called to get the coroutine object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="386" column="17" bodyfile="include/dpp/coro/coroutine.h" bodystart="386" bodyend="388"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1a8df3e928027c5530d1d8e5ec849419f1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>std_coroutine::suspend_always</type>
         <definition>std_coroutine::suspend_always dpp::detail::coroutine::promise_t&lt; void &gt;::initial_suspend</definition>
@@ -74,21 +88,6 @@
         </inbodydescription>
         <location file="include/dpp/coro/coroutine.h" line="365" column="32" bodyfile="include/dpp/coro/coroutine.h" bodystart="365" bodyend="367"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1abd8e7e16b084f7a2c44c97a4840817f4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::detail::coroutine::promise_t&lt; void &gt;::unhandled_exception</definition>
-        <argsstring>() noexcept</argsstring>
-        <name>unhandled_exception</name>
-        <briefdescription>
-<para>Function called when an exception escapes the coroutine. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Stores the exception to throw to the co_await-er </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/coroutine.h" line="374" column="6" bodyfile="include/dpp/coro/coroutine.h" bodystart="374" bodyend="376"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1a323cfe33eea2d31f6dca538b7e376843" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::detail::coroutine::promise_t&lt; void &gt;::return_void</definition>
@@ -103,19 +102,20 @@
         </inbodydescription>
         <location file="include/dpp/coro/coroutine.h" line="381" column="6" bodyfile="include/dpp/coro/coroutine.h" bodystart="381" bodyend="381"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1ad37d405d32b99c5ac1c5e4b72fbf71e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1coroutine" kindref="compound">dpp::coroutine</ref>&lt; void &gt;</type>
-        <definition>dpp::coroutine&lt; void &gt; dpp::detail::coroutine::promise_t&lt; void &gt;::get_return_object</definition>
-        <argsstring>()</argsstring>
-        <name>get_return_object</name>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4_1abd8e7e16b084f7a2c44c97a4840817f4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::coroutine::promise_t&lt; void &gt;::unhandled_exception</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>unhandled_exception</name>
         <briefdescription>
-<para>Function called to get the coroutine object. </para>
+<para>Function called when an exception escapes the coroutine. </para>
         </briefdescription>
         <detaileddescription>
+<para>Stores the exception to throw to the co_await-er </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/coroutine.h" line="386" column="17" bodyfile="include/dpp/coro/coroutine.h" bodystart="386" bodyend="388"/>
+        <location file="include/dpp/coro/coroutine.h" line="374" column="6" bodyfile="include/dpp/coro/coroutine.h" bodystart="374" bodyend="376"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

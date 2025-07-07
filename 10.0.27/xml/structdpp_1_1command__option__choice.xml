@@ -37,20 +37,6 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="107" column="13" bodyfile="include/dpp/appcommand.h" bodystart="107" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1command__option__choice_1a70021160d60b6403a353b302d97123ff" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref></type>
-        <definition>command_value dpp::command_option_choice::value</definition>
-        <argsstring></argsstring>
-        <name>value</name>
-        <briefdescription>
-<para>Option value. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="108" column="15" bodyfile="include/dpp/appcommand.h" bodystart="108" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1command__option__choice_1aed622e9d49129719f72e4ab6a9622eff" prot="public" static="no" mutable="no">
         <type>std::map&lt; std::string, std::string &gt;</type>
         <definition>std::map&lt;std::string, std::string&gt; dpp::command_option_choice::name_localizations</definition>
@@ -64,6 +50,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="109" column="10" bodyfile="include/dpp/appcommand.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__option__choice_1a70021160d60b6403a353b302d97123ff" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref></type>
+        <definition>command_value dpp::command_option_choice::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Option value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="108" column="15" bodyfile="include/dpp/appcommand.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -112,6 +112,46 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1command__option__choice_1a2bb4415c9d27246156e8cc368d131767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::command_option_choice::command_option_choice</definition>
+        <argsstring>(const std::string &amp;n, command_value v)</argsstring>
+        <name>command_option_choice</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new command option choice object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to initialise with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to initialise with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="133" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__option__choice_1a449db6e29c6b6cc272dfdd3e58dc68f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -170,45 +210,38 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="125" column="23"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1command__option__choice_1a2bb4415c9d27246156e8cc368d131767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::command_option_choice::command_option_choice</definition>
-        <argsstring>(const std::string &amp;n, command_value v)</argsstring>
-        <name>command_option_choice</name>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; command_option_choice  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>n</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref></type>
-          <declname>v</declname>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
-<para>Construct a new command option choice object. </para>
+<para>Convert object to json string. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>n</parametername>
+<parametername>with_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>name to initialise with </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>value to initialise with </para>
+<para>Whether to include the ID or not </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="133" column="1"/>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &amp;</type>
@@ -272,39 +305,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; command_option_choice  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,19 +5,47 @@
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a1af4c9392721323617f909e2d74d85cb" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
-        <definition>guild* dpp::typing_start_t::typing_guild</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
         <argsstring></argsstring>
-        <name>typing_guild</name>
+        <name>from</name>
         <briefdescription>
-<para>guild user is typing on </para>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="808" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="808" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="76" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
+        <argsstring></argsstring>
+        <name>raw_event</name>
+        <briefdescription>
+<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="70" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a9bd3028990dec19b65e046d918074676" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::typing_start_t::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of typing event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="826" column="8" bodyfile="include/dpp/dispatcher.h" bodystart="826" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a0803971e8cf5e1d411ebbc521c68d046" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> *</type>
@@ -32,6 +60,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="812" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a1af4c9392721323617f909e2d74d85cb" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
+        <definition>guild* dpp::typing_start_t::typing_guild</definition>
+        <argsstring></argsstring>
+        <name>typing_guild</name>
+        <briefdescription>
+<para>guild user is typing on </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="808" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="808" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a9faffa3da5cb3907651ad92613a11a35" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
@@ -60,48 +102,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="822" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="822" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1typing__start__t_1a9bd3028990dec19b65e046d918074676" prot="public" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::typing_start_t::timestamp</definition>
-        <argsstring></argsstring>
-        <name>timestamp</name>
-        <briefdescription>
-<para>Time of typing event. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="826" column="8" bodyfile="include/dpp/dispatcher.h" bodystart="826" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
-        <argsstring></argsstring>
-        <name>raw_event</name>
-        <briefdescription>
-<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="70" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
-        <argsstring></argsstring>
-        <name>from</name>
-        <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="76" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

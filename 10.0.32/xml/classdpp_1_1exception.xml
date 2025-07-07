@@ -13,20 +13,6 @@
     <derivedcompoundref refid="classdpp_1_1voice__exception" prot="public" virt="non-virtual">dpp::voice_exception</derivedcompoundref>
     <includes local="no">exception.h</includes>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::exception::msg</definition>
-        <argsstring></argsstring>
-        <name>msg</name>
-        <briefdescription>
-<para>Exception message. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/exception.h" line="392" column="13" bodyfile="include/dpp/exception.h" bodystart="392" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1exception_1a95b63eb01e1d8ea5fc8a0d13b1be7167" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1" kindref="member">exception_error_code</ref></type>
         <definition>exception_error_code dpp::exception::error_code</definition>
@@ -40,6 +26,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/exception.h" line="397" column="22" bodyfile="include/dpp/exception.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::exception::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>Exception message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/exception.h" line="392" column="13" bodyfile="include/dpp/exception.h" bodystart="392" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -85,46 +85,6 @@
         </inbodydescription>
         <location file="include/dpp/exception.h" line="413" column="10" bodyfile="include/dpp/exception.h" bodystart="413" bodyend="413"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1exception_1a7867e60b3fd670c46207882473479f2f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>dpp::exception::exception</definition>
-        <argsstring>(exception_error_code code, const char *what)</argsstring>
-        <name>exception</name>
-        <param>
-          <type><ref refid="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1" kindref="member">exception_error_code</ref></type>
-          <declname>code</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>what</declname>
-        </param>
-        <briefdescription>
-<para>Construct a new exception object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>what</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>reason message </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>code</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Exception code </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/exception.h" line="421" column="10" bodyfile="include/dpp/exception.h" bodystart="421" bodyend="421"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1a369458d8db837316c84256bfed913426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::exception::exception</definition>
@@ -165,6 +125,23 @@
         </inbodydescription>
         <location file="include/dpp/exception.h" line="429" column="1" bodyfile="include/dpp/exception.h" bodystart="429" bodyend="429"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1exception_1a1e8f1486c898e2ab6c513c7844221a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::exception::exception</definition>
+        <argsstring>(const exception &amp;)=default</argsstring>
+        <name>exception</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1exception" kindref="compound">exception</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Construct a new exception object (copy constructor) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/exception.h" line="464" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1aa59a84a3a233186cc130fc9e8ff8a271" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::exception::exception</definition>
@@ -192,6 +169,63 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/exception.h" line="436" column="10" bodyfile="include/dpp/exception.h" bodystart="436" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1exception_1a269a23dc033395e0266a6c3c41b9ffb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::exception::exception</definition>
+        <argsstring>(exception &amp;&amp;)=default</argsstring>
+        <name>exception</name>
+        <param>
+          <type><ref refid="classdpp_1_1exception" kindref="compound">exception</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Construct a new exception object (move constructor) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/exception.h" line="469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1exception_1a7867e60b3fd670c46207882473479f2f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::exception::exception</definition>
+        <argsstring>(exception_error_code code, const char *what)</argsstring>
+        <name>exception</name>
+        <param>
+          <type><ref refid="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1" kindref="member">exception_error_code</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new exception object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reason message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception code </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/exception.h" line="421" column="10" bodyfile="include/dpp/exception.h" bodystart="421" bodyend="421"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1a911beed4d86b938c782e137acee973ec" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -233,34 +267,6 @@
         </inbodydescription>
         <location file="include/dpp/exception.h" line="444" column="10" bodyfile="include/dpp/exception.h" bodystart="444" bodyend="444"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1exception_1a0365ae0f3b8cfbf193d08b427e79271f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>dpp::exception::exception</definition>
-        <argsstring>(std::string &amp;&amp;what)</argsstring>
-        <name>exception</name>
-        <param>
-          <type>std::string &amp;&amp;</type>
-          <declname>what</declname>
-        </param>
-        <briefdescription>
-<para>Construct a new exception object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>what</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>reason message </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/exception.h" line="451" column="10" bodyfile="include/dpp/exception.h" bodystart="451" bodyend="451"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1a4fe759e0ced7d5cbdf9aafdf64b1d80a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::exception::exception</definition>
@@ -301,39 +307,33 @@
         </inbodydescription>
         <location file="include/dpp/exception.h" line="459" column="10" bodyfile="include/dpp/exception.h" bodystart="459" bodyend="459"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1exception_1a1e8f1486c898e2ab6c513c7844221a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1exception_1a0365ae0f3b8cfbf193d08b427e79271f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::exception::exception</definition>
-        <argsstring>(const exception &amp;)=default</argsstring>
+        <argsstring>(std::string &amp;&amp;what)</argsstring>
         <name>exception</name>
         <param>
-          <type>const <ref refid="classdpp_1_1exception" kindref="compound">exception</ref> &amp;</type>
+          <type>std::string &amp;&amp;</type>
+          <declname>what</declname>
         </param>
         <briefdescription>
-<para>Construct a new exception object (copy constructor) </para>
+<para>Construct a new exception object. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reason message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/exception.h" line="464" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1exception_1a269a23dc033395e0266a6c3c41b9ffb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::exception::exception</definition>
-        <argsstring>(exception &amp;&amp;)=default</argsstring>
-        <name>exception</name>
-        <param>
-          <type><ref refid="classdpp_1_1exception" kindref="compound">exception</ref> &amp;&amp;</type>
-        </param>
-        <briefdescription>
-<para>Construct a new exception object (move constructor) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/exception.h" line="469" column="1"/>
+        <location file="include/dpp/exception.h" line="451" column="10" bodyfile="include/dpp/exception.h" bodystart="451" bodyend="451"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1afe7dc4002e1d4c812192f5afb4bed1d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -348,23 +348,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/exception.h" line="474" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1exception_1a010588e4eec074c113ff36c82dde74f9" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * dpp::exception::what</definition>
-        <argsstring>() const noexcept override</argsstring>
-        <name>what</name>
-        <briefdescription>
-<para>Get exception message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>const char* error message </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/exception.h" line="495" column="13" bodyfile="include/dpp/exception.h" bodystart="495" bodyend="495"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1exception_1a33e02b5616dd5e375b38aa7edfa93002" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1aacfd9dabf035bd86026220ba73d36ba1" kindref="member">exception_error_code</ref></type>
@@ -382,6 +365,23 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/exception.h" line="502" column="23" bodyfile="include/dpp/exception.h" bodystart="502" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1exception_1a010588e4eec074c113ff36c82dde74f9" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * dpp::exception::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <briefdescription>
+<para>Get exception message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* error message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/exception.h" line="495" column="13" bodyfile="include/dpp/exception.h" bodystart="495" bodyend="495"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

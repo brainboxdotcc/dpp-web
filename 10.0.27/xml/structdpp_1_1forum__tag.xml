@@ -24,20 +24,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1forum__tag_1a8bbde0d80e3da450a6e20373d9a092ca" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::forum_tag::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>The name of the tag (0-20 characters) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="224" column="13" bodyfile="include/dpp/channel.h" bodystart="224" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1forum__tag_1a46a1b609377b1443a31df24e18d20cf1" prot="public" static="no" mutable="no">
         <type>std::variant&lt; std::monostate, <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, std::string &gt;</type>
         <definition>std::variant&lt;std::monostate, snowflake, std::string&gt; dpp::forum_tag::emoji</definition>
@@ -51,20 +37,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/channel.h" line="226" column="14" bodyfile="include/dpp/channel.h" bodystart="226" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1forum__tag_1a7972bcf99906645f329540f8e09ccf45" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::forum_tag::moderated</definition>
-        <argsstring></argsstring>
-        <name>moderated</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Whether this tag can only be added to or removed from threads by a member with the <computeroutput>MANAGE_THREADS</computeroutput> permission </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="228" column="6" bodyfile="include/dpp/channel.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -80,6 +52,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1forum__tag_1a7972bcf99906645f329540f8e09ccf45" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::forum_tag::moderated</definition>
+        <argsstring></argsstring>
+        <name>moderated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether this tag can only be added to or removed from threads by a member with the <computeroutput>MANAGE_THREADS</computeroutput> permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="228" column="6" bodyfile="include/dpp/channel.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1forum__tag_1a8bbde0d80e3da450a6e20373d9a092ca" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::forum_tag::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of the tag (0-20 characters) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="224" column="13" bodyfile="include/dpp/channel.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -202,37 +202,68 @@
         </inbodydescription>
         <location file="include/dpp/channel.h" line="241" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1forum__tag_1a5179430d74c31b0e7366edd4f39036aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
-        <definition>forum_tag &amp; dpp::forum_tag::set_name</definition>
-        <argsstring>(const std::string &amp;name)</argsstring>
-        <name>set_name</name>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; forum_tag  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>name</declname>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
-<para>Set name of this <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> object. </para>
+<para>Convert object to json string. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>with_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Name to set </para>
+<para>Whether to include the ID or not </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to self, so these method calls may be chained</para>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
 </simplesect>
-<simplesect kind="note"><para>name will be truncated to 20 chars, if longer </para>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="251" column="11"/>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
+        <definition>forum_tag  &amp; dpp::json_interface&lt; forum_tag  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -250,38 +281,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::managed::operator==</definition>
-        <argsstring>(const managed &amp;other) const noexcept</argsstring>
-        <name>operator==</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Comparison operator for comparing two managed objects by id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>other</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other object to compare against </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>true objects are the same id </para>
-</simplesect>
-<simplesect kind="return"><para>false objects are not the same id </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -315,35 +314,69 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
-        <definition>forum_tag  &amp; dpp::json_interface&lt; forum_tag  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
         <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
         </param>
         <briefdescription>
-<para>Convert object from nlohmann::json. </para>
+<para>Comparison operator for comparing two managed objects by id. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>j</parametername>
+<parametername>other</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>nlohmann::json object </para>
+<para>Other object to compare against </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1forum__tag_1a5179430d74c31b0e7366edd4f39036aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
+        <definition>forum_tag &amp; dpp::forum_tag::set_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set name of this <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained</para>
+</simplesect>
+<simplesect kind="note"><para>name will be truncated to 20 chars, if longer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="251" column="11"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -377,39 +410,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; forum_tag  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

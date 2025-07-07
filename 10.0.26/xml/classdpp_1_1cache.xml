@@ -9,6 +9,20 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1cache_1af05540682d77589f50cc5bd54665ac18" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, T * &gt; *</type>
+        <definition>std::unordered_map&lt;snowflake, T*&gt;* dpp::cache&lt; T &gt;::cache_map</definition>
+        <argsstring></argsstring>
+        <name>cache_map</name>
+        <briefdescription>
+<para>Container of pointers to cached items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="62" column="20" bodyfile="include/dpp/cache.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cache_1a6a77ce300428f922964d0f1f7b85816f" prot="private" static="no" mutable="no">
         <type>std::shared_mutex</type>
         <definition>std::shared_mutex dpp::cache&lt; T &gt;::cache_mutex</definition>
@@ -23,20 +37,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cache.h" line="57" column="19" bodyfile="include/dpp/cache.h" bodystart="57" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1cache_1af05540682d77589f50cc5bd54665ac18" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, T * &gt; *</type>
-        <definition>std::unordered_map&lt;snowflake, T*&gt;* dpp::cache&lt; T &gt;::cache_map</definition>
-        <argsstring></argsstring>
-        <name>cache_map</name>
-        <briefdescription>
-<para>Container of pointers to cached items. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cache.h" line="62" column="20" bodyfile="include/dpp/cache.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -72,66 +72,40 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="79" column="1" bodyfile="include/dpp/cache.h" bodystart="79" bodyend="82"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1ab2aa9a2fbf0cb47d49d4bba05c2e2039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::cache&lt; T &gt;::store</definition>
-        <argsstring>(T *object)</argsstring>
-        <name>store</name>
-        <param>
-          <type>T *</type>
-          <declname>object</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t dpp::cache&lt; T &gt;::bytes</definition>
+        <argsstring>()</argsstring>
+        <name>bytes</name>
         <briefdescription>
-<para>Store an object in the cache. Passing a nullptr will have no effect. </para>
+<para>Get &quot;real&quot; size in RAM of the cached objects. </para>
         </briefdescription>
         <detaileddescription>
-<para>The object must be derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> and should be allocated on the heap. Generally this is done via <computeroutput>new</computeroutput>. Once stored in the cache the lifetime of the stored object is managed by the cache class unless the cache is deleted (at which point responsibility for deleting the object returns to its allocator). Objects stored are removed when the <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> method is called by placing them into a garbage collection queue for deletion within the next 60 seconds, which are then deleted in bulk for efficiency and to aid thread safety.</para>
-<para><simplesect kind="note"><para>Adding an object to the cache with an ID which already exists replaces that entry. The previously entered cache item is inserted into the garbage collection queue for deletion similarly to if <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> was called first.</para>
+<para>This does not include metadata used to maintain the unordered map itself.</para>
+<para><simplesect kind="return"><para>size_t size of cache in bytes </para>
 </simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>object</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>object to store. Storing a pointer to the cache relinquishes ownership to the cache object. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="101" column="6" bodyfile="include/dpp/cache.h" bodystart="101" bodyend="115"/>
+        <location file="include/dpp/cache.h" line="251" column="8" bodyfile="include/dpp/cache.h" bodystart="251" bodyend="254"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::cache&lt; T &gt;::remove</definition>
-        <argsstring>(T *object)</argsstring>
-        <name>remove</name>
-        <param>
-          <type>T *</type>
-          <declname>object</declname>
-        </param>
+      <memberdef kind="function" id="classdpp_1_1cache_1a63fb9389314371ca017647db2aad53f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::cache&lt; T &gt;::count</definition>
+        <argsstring>()</argsstring>
+        <name>count</name>
         <briefdescription>
-<para>Remove an object from the cache. </para>
+<para>Return a count of the number of items in the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>The cache class takes ownership of the pointer, and calling this method will cause deletion of the object within the next 60 seconds by means of a garbage collection queue. This queue aids in efficiency by freeing memory in bulk, and assists in thread safety by ensuring that all deletions can be locked and freed at the same time.</para>
+<para>This is used by the library e.g. to count guilds, users, and roles stored within caches. get <simplesect kind="return"><para>uint64_t count of items in the cache </para>
 </simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>object</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>object to remove. Passing a nullptr will have no effect. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="128" column="6" bodyfile="include/dpp/cache.h" bodystart="128" bodyend="139"/>
+        <location file="include/dpp/cache.h" line="171" column="10" bodyfile="include/dpp/cache.h" bodystart="171" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1abf1e2911e8e1559fa15a36c5f90454d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T *</type>
@@ -166,22 +140,26 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="154" column="3" bodyfile="include/dpp/cache.h" bodystart="154" bodyend="161"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a63fb9389314371ca017647db2aad53f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::cache&lt; T &gt;::count</definition>
+      <memberdef kind="function" id="classdpp_1_1cache_1ab7647df5af8f7bf01826bf650b157aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; dpp::cache&lt; T &gt;::get_container</definition>
         <argsstring>()</argsstring>
-        <name>count</name>
+        <name>get_container</name>
         <briefdescription>
-<para>Return a count of the number of items in the cache. </para>
+<para>Get the container unordered map. </para>
         </briefdescription>
         <detaileddescription>
-<para>This is used by the library e.g. to count guilds, users, and roles stored within caches. get <simplesect kind="return"><para>uint64_t count of items in the cache </para>
+<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes!</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex</ref></para>
+</simplesect>
+<simplesect kind="return"><para>A reference to the cache&apos;s container map </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="171" column="10" bodyfile="include/dpp/cache.h" bodystart="171" bodyend="174"/>
+        <location file="include/dpp/cache.h" line="216" column="7" bodyfile="include/dpp/cache.h" bodystart="216" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::shared_mutex &amp;</type>
@@ -212,27 +190,6 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="201" column="19" bodyfile="include/dpp/cache.h" bodystart="201" bodyend="203"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1ab7647df5af8f7bf01826bf650b157aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>auto &amp;</type>
-        <definition>auto &amp; dpp::cache&lt; T &gt;::get_container</definition>
-        <argsstring>()</argsstring>
-        <name>get_container</name>
-        <briefdescription>
-<para>Get the container unordered map. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes!</para>
-</simplesect>
-<simplesect kind="see"><para><ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex</ref></para>
-</simplesect>
-<simplesect kind="return"><para>A reference to the cache&apos;s container map </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cache.h" line="216" column="7" bodyfile="include/dpp/cache.h" bodystart="216" bodyend="218"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1af1c53b4d84ae2d1c1fbf8d540d884034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cache&lt; T &gt;::rehash</definition>
@@ -251,23 +208,66 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="233" column="6" bodyfile="include/dpp/cache.h" bodystart="233" bodyend="242"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>size_t</type>
-        <definition>size_t dpp::cache&lt; T &gt;::bytes</definition>
-        <argsstring>()</argsstring>
-        <name>bytes</name>
+      <memberdef kind="function" id="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cache&lt; T &gt;::remove</definition>
+        <argsstring>(T *object)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>T *</type>
+          <declname>object</declname>
+        </param>
         <briefdescription>
-<para>Get &quot;real&quot; size in RAM of the cached objects. </para>
+<para>Remove an object from the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para>This does not include metadata used to maintain the unordered map itself.</para>
-<para><simplesect kind="return"><para>size_t size of cache in bytes </para>
+<para><simplesect kind="note"><para>The cache class takes ownership of the pointer, and calling this method will cause deletion of the object within the next 60 seconds by means of a garbage collection queue. This queue aids in efficiency by freeing memory in bulk, and assists in thread safety by ensuring that all deletions can be locked and freed at the same time.</para>
 </simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to remove. Passing a nullptr will have no effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="251" column="8" bodyfile="include/dpp/cache.h" bodystart="251" bodyend="254"/>
+        <location file="include/dpp/cache.h" line="128" column="6" bodyfile="include/dpp/cache.h" bodystart="128" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cache_1ab2aa9a2fbf0cb47d49d4bba05c2e2039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cache&lt; T &gt;::store</definition>
+        <argsstring>(T *object)</argsstring>
+        <name>store</name>
+        <param>
+          <type>T *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Store an object in the cache. Passing a nullptr will have no effect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The object must be derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> and should be allocated on the heap. Generally this is done via <computeroutput>new</computeroutput>. Once stored in the cache the lifetime of the stored object is managed by the cache class unless the cache is deleted (at which point responsibility for deleting the object returns to its allocator). Objects stored are removed when the <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> method is called by placing them into a garbage collection queue for deletion within the next 60 seconds, which are then deleted in bulk for efficiency and to aid thread safety.</para>
+<para><simplesect kind="note"><para>Adding an object to the cache with an ID which already exists replaces that entry. The previously entered cache item is inserted into the garbage collection queue for deletion similarly to if <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> was called first.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to store. Storing a pointer to the cache relinquishes ownership to the cache object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="101" column="6" bodyfile="include/dpp/cache.h" bodystart="101" bodyend="115"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

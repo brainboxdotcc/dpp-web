@@ -6,19 +6,19 @@
     <derivedcompoundref refid="structdpp_1_1interaction__modal__response" prot="public" virt="non-virtual">dpp::interaction_modal_response</derivedcompoundref>
     <includes local="no">appcommand.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
-        <definition>interaction_response_type dpp::interaction_response::type</definition>
+      <memberdef kind="variable" id="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
+        <definition>std::vector&lt;command_option_choice&gt; dpp::interaction_response::autocomplete_choices</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>autocomplete_choices</name>
         <briefdescription>
-<para>Response type from <ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">dpp::interaction_response_type</ref>. Should be one of ir_pong, ir_channel_message_with_source, or ir_deferred_channel_message_with_source. </para>
+<para>Array of up to 25 autocomplete choices. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="298" column="27" bodyfile="include/dpp/appcommand.h" bodystart="298" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="309" column="13" bodyfile="include/dpp/appcommand.h" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1afa292ebb598e2ecbb1d8eb089f415493" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message" kindref="compound">message</ref> *</type>
@@ -34,19 +34,19 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="304" column="15" bodyfile="include/dpp/appcommand.h" bodystart="304" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
-        <definition>std::vector&lt;command_option_choice&gt; dpp::interaction_response::autocomplete_choices</definition>
+      <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
+        <definition>interaction_response_type dpp::interaction_response::type</definition>
         <argsstring></argsstring>
-        <name>autocomplete_choices</name>
+        <name>type</name>
         <briefdescription>
-<para>Array of up to 25 autocomplete choices. </para>
+<para>Response type from <ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">dpp::interaction_response_type</ref>. Should be one of ir_pong, ir_channel_message_with_source, or ir_deferred_channel_message_with_source. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="309" column="13" bodyfile="include/dpp/appcommand.h" bodystart="309" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="298" column="27" bodyfile="include/dpp/appcommand.h" bodystart="298" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -63,6 +63,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1a09635e2f99305125f42a926f1813a9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::interaction_response::interaction_response</definition>
+        <argsstring>(interaction_response_type t)</argsstring>
+        <name>interaction_response</name>
+        <param>
+          <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new interaction response object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of reply </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="329" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a50e33b74f32d9e100db207c1ae5f3b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -104,87 +132,19 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="322" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1a09635e2f99305125f42a926f1813a9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1addd5f67c5aafee91c91904d20bc4716b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
-        <definition>dpp::interaction_response::interaction_response</definition>
-        <argsstring>(interaction_response_type t)</argsstring>
-        <name>interaction_response</name>
-        <param>
-          <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
-          <declname>t</declname>
-        </param>
+        <definition>virtual dpp::interaction_response::~interaction_response</definition>
+        <argsstring>()</argsstring>
+        <name>~interaction_response</name>
         <briefdescription>
-<para>Construct a new interaction response object. </para>
+<para>Destroy the interaction response object. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>t</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type of reply </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="329" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
-        <definition>interaction_response &amp; dpp::interaction_response::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Fill object properties from JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON to fill from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="337" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1a3c7f8c051a6c85c63dab1b4534b27c89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>virtual std::string dpp::interaction_response::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <reimplementedby refid="structdpp_1_1interaction__modal__response_1a02877ed5cdf3179ebd9948dd9d245091">build_json</reimplementedby>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="344" column="21"/>
+        <location file="include/dpp/appcommand.h" line="357" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1aba47b23a0d825ab443c0f91711a94c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
@@ -216,19 +176,59 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="352" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1addd5f67c5aafee91c91904d20bc4716b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type></type>
-        <definition>virtual dpp::interaction_response::~interaction_response</definition>
-        <argsstring>()</argsstring>
-        <name>~interaction_response</name>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1a3c7f8c051a6c85c63dab1b4534b27c89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string dpp::interaction_response::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <reimplementedby refid="structdpp_1_1interaction__modal__response_1a02877ed5cdf3179ebd9948dd9d245091">build_json</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
-<para>Destroy the interaction response object. </para>
+<para>Build a json string for this object. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="357" column="9"/>
+        <location file="include/dpp/appcommand.h" line="344" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
+        <definition>interaction_response &amp; dpp::interaction_response::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="337" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,6 +5,48 @@
     <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
     <includes local="no">emoji.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1emoji_1aa022607f3828123364721c6420b57f2f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::emoji::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Flags for the emoji from <ref refid="namespacedpp_1a3fbd576f42eaeb1c0d425b969de340b8" kindref="member">dpp::emoji_flags</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/emoji.h" line="59" column="9" bodyfile="include/dpp/emoji.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique ID of object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1emoji_1a2ca8d99b2fbca47818c7b2a442858de8" prot="public" static="no" mutable="no">
+        <type>std::string *</type>
+        <definition>std::string* dpp::emoji::image_data</definition>
+        <argsstring></argsstring>
+        <name>image_data</name>
+        <briefdescription>
+<para>Image data for the emoji if uploading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/emoji.h" line="63" column="13" bodyfile="include/dpp/emoji.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1emoji_1a54f464b7094256975294cfd3ed9efcc1" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::emoji::name</definition>
@@ -32,48 +74,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="55" column="11" bodyfile="include/dpp/emoji.h" bodystart="55" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1emoji_1aa022607f3828123364721c6420b57f2f" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::emoji::flags</definition>
-        <argsstring></argsstring>
-        <name>flags</name>
-        <briefdescription>
-<para>Flags for the emoji from <ref refid="namespacedpp_1a3fbd576f42eaeb1c0d425b969de340b8" kindref="member">dpp::emoji_flags</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/emoji.h" line="59" column="9" bodyfile="include/dpp/emoji.h" bodystart="59" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1emoji_1a2ca8d99b2fbca47818c7b2a442858de8" prot="public" static="no" mutable="no">
-        <type>std::string *</type>
-        <definition>std::string* dpp::emoji::image_data</definition>
-        <argsstring></argsstring>
-        <name>image_data</name>
-        <briefdescription>
-<para>Image data for the emoji if uploading. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/emoji.h" line="63" column="13" bodyfile="include/dpp/emoji.h" bodystart="63" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::managed::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Unique ID of object </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -157,36 +157,6 @@
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="82" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1emoji_1a01f1788797bbf2bde2b8856f50c280f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &amp;</type>
-        <definition>emoji &amp; dpp::emoji::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type><ref refid="namespacenlohmann_1a2bfd99e845a2e5cd90aeaf1b1431f474" kindref="member">nlohmann::json</ref> *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Read class values from json object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A json object to read from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/emoji.h" line="90" column="7"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1ade185b8cd672f2cc8aea02d80935a111" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::emoji::build_json</definition>
@@ -218,43 +188,52 @@
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="98" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1emoji_1a8e664abe1d5e91ea6b34677cf2206fcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::emoji::requires_colons</definition>
-        <argsstring>() const</argsstring>
-        <name>requires_colons</name>
+      <memberdef kind="function" id="classdpp_1_1emoji_1a01f1788797bbf2bde2b8856f50c280f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &amp;</type>
+        <definition>emoji &amp; dpp::emoji::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type><ref refid="namespacenlohmann_1a2bfd99e845a2e5cd90aeaf1b1431f474" kindref="member">nlohmann::json</ref> *</type>
+          <declname>j</declname>
+        </param>
         <briefdescription>
-<para>Emoji requires colons. </para>
+<para>Read class values from json object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true Requires colons </para>
-</simplesect>
-<simplesect kind="return"><para>false Does not require colons </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A json object to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="106" column="6"/>
+        <location file="include/dpp/emoji.h" line="90" column="7"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1emoji_1ae92572e9263cf62cc3e1cc826d98f5ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::emoji::is_managed</definition>
+      <memberdef kind="function" id="classdpp_1_1emoji_1a180ce7e313d6ac86277798012e3b7ece" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::emoji::format</definition>
         <argsstring>() const</argsstring>
-        <name>is_managed</name>
+        <name>format</name>
         <briefdescription>
-<para>Emoji is managed. </para>
+<para>Format to name if unicode, name:id if has id or a:name:id if animated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true Is managed </para>
-</simplesect>
-<simplesect kind="return"><para>false Is not managed </para>
+<para><simplesect kind="return"><para>Formatted name for reactions </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="114" column="6"/>
+        <location file="include/dpp/emoji.h" line="146" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1a0ae9784ca14fe91f695d88e5734058ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -293,6 +272,25 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="130" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1emoji_1ae92572e9263cf62cc3e1cc826d98f5ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::emoji::is_managed</definition>
+        <argsstring>() const</argsstring>
+        <name>is_managed</name>
+        <briefdescription>
+<para>Emoji is managed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true Is managed </para>
+</simplesect>
+<simplesect kind="return"><para>false Is not managed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/emoji.h" line="114" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1abc20d1f03cc624b82251780cd534c085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &amp;</type>
@@ -336,22 +334,24 @@
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="139" column="7"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1emoji_1a180ce7e313d6ac86277798012e3b7ece" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::emoji::format</definition>
+      <memberdef kind="function" id="classdpp_1_1emoji_1a8e664abe1d5e91ea6b34677cf2206fcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::emoji::requires_colons</definition>
         <argsstring>() const</argsstring>
-        <name>format</name>
+        <name>requires_colons</name>
         <briefdescription>
-<para>Format to name if unicode, name:id if has id or a:name:id if animated. </para>
+<para>Emoji requires colons. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Formatted name for reactions </para>
+<para><simplesect kind="return"><para>true Requires colons </para>
+</simplesect>
+<simplesect kind="return"><para>false Does not require colons </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="146" column="13"/>
+        <location file="include/dpp/emoji.h" line="106" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

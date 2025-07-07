@@ -4,6 +4,20 @@
     <compoundname>dpp::commandhandler</compoundname>
     <includes local="no">commandhandler.h</includes>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1commandhandler_1aa77b113d11ae040d9eb32a462bd88a7c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::commandhandler::app_id</definition>
+        <argsstring></argsstring>
+        <name>app_id</name>
+        <briefdescription>
+<para>Application ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="212" column="11" bodyfile="include/dpp/commandhandler.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1commandhandler_1aaeb676a799cda302d4b08106f898a867" prot="private" static="no" mutable="no">
         <type>std::unordered_map&lt; std::string, <ref refid="structdpp_1_1command__info__t" kindref="compound">command_info_t</ref> &gt;</type>
         <definition>std::unordered_map&lt;std::string, command_info_t&gt; dpp::commandhandler::commands</definition>
@@ -17,6 +31,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="192" column="20" bodyfile="include/dpp/commandhandler.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1commandhandler_1a81203fb77ae98d8cfe81d95bf714fcf0" prot="private" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>class cluster* dpp::commandhandler::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>Cluster we are attached to for issuing REST calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="207" column="15" bodyfile="include/dpp/commandhandler.h" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1commandhandler_1acbbac80b9d8fd5b3f82fd5bfc919f9bc" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -45,34 +73,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="202" column="6" bodyfile="include/dpp/commandhandler.h" bodystart="202" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1commandhandler_1a81203fb77ae98d8cfe81d95bf714fcf0" prot="private" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-        <definition>class cluster* dpp::commandhandler::owner</definition>
-        <argsstring></argsstring>
-        <name>owner</name>
-        <briefdescription>
-<para>Cluster we are attached to for issuing REST calls. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="207" column="15" bodyfile="include/dpp/commandhandler.h" bodystart="207" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1commandhandler_1aa77b113d11ae040d9eb32a462bd88a7c" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::commandhandler::app_id</definition>
-        <argsstring></argsstring>
-        <name>app_id</name>
-        <briefdescription>
-<para>Application ID. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="212" column="11" bodyfile="include/dpp/commandhandler.h" bodystart="212" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -178,64 +178,6 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="241" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1a8640d327288a6dd1c5fdbde85726e7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
-        <definition>commandhandler &amp; dpp::commandhandler::set_owner</definition>
-        <argsstring>(class cluster *o)</argsstring>
-        <name>set_owner</name>
-        <param>
-          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-          <declname>o</declname>
-        </param>
-        <briefdescription>
-<para>Set the application id after construction. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>o</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Owning cluster to attach to </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="248" column="16"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1a69ce2bb96adb1a658b3a29c37274f2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
-        <definition>commandhandler &amp; dpp::commandhandler::add_prefix</definition>
-        <argsstring>(const std::string &amp;prefix)</argsstring>
-        <name>add_prefix</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>prefix</declname>
-        </param>
-        <briefdescription>
-<para>Add a prefix to the command handler. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>prefix</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Prefix to be handled by the command handler </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>commandhandler&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="256" column="16"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1commandhandler_1a791ed0c75ef77306af84be30ded619f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
         <definition>commandhandler &amp; dpp::commandhandler::add_command</definition>
@@ -300,6 +242,76 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="270" column="16"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a69ce2bb96adb1a658b3a29c37274f2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
+        <definition>commandhandler &amp; dpp::commandhandler::add_prefix</definition>
+        <argsstring>(const std::string &amp;prefix)</argsstring>
+        <name>add_prefix</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>Add a prefix to the command handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix to be handled by the command handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>commandhandler&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="256" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a09893dbf101b7d0082b0a13e801a9db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::commandhandler::reply</definition>
+        <argsstring>(const dpp::message &amp;m, command_source source)</argsstring>
+        <name>reply</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref></type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Reply to a command. You should use this method rather than <ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to reply with. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source of the command </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="300" column="6"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1commandhandler_1acecd44c69a7cee36d1d12aa5b0354d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::commandhandler::route</definition>
@@ -356,37 +368,25 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="288" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1a09893dbf101b7d0082b0a13e801a9db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::commandhandler::reply</definition>
-        <argsstring>(const dpp::message &amp;m, command_source source)</argsstring>
-        <name>reply</name>
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a8640d327288a6dd1c5fdbde85726e7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
+        <definition>commandhandler &amp; dpp::commandhandler::set_owner</definition>
+        <argsstring>(class cluster *o)</argsstring>
+        <name>set_owner</name>
         <param>
-          <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
-          <declname>m</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref></type>
-          <declname>source</declname>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>o</declname>
         </param>
         <briefdescription>
-<para>Reply to a command. You should use this method rather than <ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds. </para>
+<para>Set the application id after construction. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>m</parametername>
+<parametername>o</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>message to reply with. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>source</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>source of the command </para>
+<para>Owning cluster to attach to </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="300" column="6"/>
+        <location file="include/dpp/commandhandler.h" line="248" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1commandhandler_1a4ad7a740213d2daf06bf182ba1afc13e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

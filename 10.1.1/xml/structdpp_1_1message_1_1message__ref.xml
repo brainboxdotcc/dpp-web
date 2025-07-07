@@ -4,35 +4,6 @@
     <compoundname>dpp::message::message_ref</compoundname>
     <includes local="no">message.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a70db48f7034612c2493799bb59a39dcb" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a1c541a98114325f4c6c0f138887a8eac" kindref="member">message_ref_type</ref></type>
-        <definition>message_ref_type dpp::message::message_ref::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <initializer>{mrt_default}</initializer>
-        <briefdescription>
-<para>Message reference type, set to 1 to forward a message. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="2470" column="18" bodyfile="include/dpp/message.h" bodystart="2470" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a0f2a2c6c106eea456bfc14ab354faa02" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::message::message_ref::message_id</definition>
-        <argsstring></argsstring>
-        <name>message_id</name>
-        <briefdescription>
-<para>ID of the originating message. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="2474" column="11" bodyfile="include/dpp/message.h" bodystart="2474" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1ad00fb23855b0cfd3210e6211efc5be4f" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::message::message_ref::channel_id</definition>
@@ -46,6 +17,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="2479" column="11" bodyfile="include/dpp/message.h" bodystart="2479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1abb2fb1eabf7743c00876cc103741c9e7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::message::message_ref::fail_if_not_exists</definition>
+        <argsstring></argsstring>
+        <name>fail_if_not_exists</name>
+        <briefdescription>
+<para>when sending, whether to error if the referenced message doesn&apos;t exist instead of sending as a normal (non-reply) message. Default true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="2490" column="6" bodyfile="include/dpp/message.h" bodystart="2490" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a37a6962e6a12721f65c3e7226aecd77b" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -61,19 +46,34 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2484" column="11" bodyfile="include/dpp/message.h" bodystart="2484" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1abb2fb1eabf7743c00876cc103741c9e7" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::message::message_ref::fail_if_not_exists</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a0f2a2c6c106eea456bfc14ab354faa02" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::message::message_ref::message_id</definition>
         <argsstring></argsstring>
-        <name>fail_if_not_exists</name>
+        <name>message_id</name>
         <briefdescription>
-<para>when sending, whether to error if the referenced message doesn&apos;t exist instead of sending as a normal (non-reply) message. Default true. </para>
+<para>ID of the originating message. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2490" column="6" bodyfile="include/dpp/message.h" bodystart="2490" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2474" column="11" bodyfile="include/dpp/message.h" bodystart="2474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a70db48f7034612c2493799bb59a39dcb" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a1c541a98114325f4c6c0f138887a8eac" kindref="member">message_ref_type</ref></type>
+        <definition>message_ref_type dpp::message::message_ref::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>{mrt_default}</initializer>
+        <briefdescription>
+<para>Message reference type, set to 1 to forward a message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="2470" column="18" bodyfile="include/dpp/message.h" bodystart="2470" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

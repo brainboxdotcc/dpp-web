@@ -5,33 +5,19 @@
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1guild__role__update__t_1ad8b4d6f395bd1a489e8b961e1ba0a827" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
-        <definition>guild* dpp::guild_role_update_t::updating_guild</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
         <argsstring></argsstring>
-        <name>updating_guild</name>
+        <name>from</name>
         <briefdescription>
-<para>guild where roles are being updated </para>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="928" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="928" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1guild__role__update__t_1ac9d31e61c8f77d7a8108b6a2652f41cd" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
-        <definition>role* dpp::guild_role_update_t::updated</definition>
-        <argsstring></argsstring>
-        <name>updated</name>
-        <briefdescription>
-<para>the role being updated </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="932" column="6" bodyfile="include/dpp/dispatcher.h" bodystart="932" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="75" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -47,19 +33,33 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="69" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="69" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+      <memberdef kind="variable" id="structdpp_1_1guild__role__update__t_1ac9d31e61c8f77d7a8108b6a2652f41cd" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
+        <definition>role* dpp::guild_role_update_t::updated</definition>
         <argsstring></argsstring>
-        <name>from</name>
+        <name>updated</name>
         <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
+<para>the role being updated </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="75" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="75" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="932" column="6" bodyfile="include/dpp/dispatcher.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1guild__role__update__t_1ad8b4d6f395bd1a489e8b961e1ba0a827" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
+        <definition>guild* dpp::guild_role_update_t::updating_guild</definition>
+        <argsstring></argsstring>
+        <name>updating_guild</name>
+        <briefdescription>
+<para>guild where roles are being updated </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="928" column="7" bodyfile="include/dpp/dispatcher.h" bodystart="928" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

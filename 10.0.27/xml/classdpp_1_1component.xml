@@ -24,19 +24,19 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1component_1afdb70ec9968493ed54bab29135f8b8c6" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
-        <definition>component_type dpp::component::type</definition>
+      <memberdef kind="variable" id="classdpp_1_1component_1a8acea6badb01425ea51dc50f0c8ab87c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; dpp::component::channel_types</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>channel_types</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Component type, either a button or action row </para>
+<para>List of channel types (<ref refid="namespacedpp_1a732e832861149a278f27ea7840b8e4ca" kindref="member">dpp::channel_type</ref>) to include in the channel select component (<ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" kindref="member">dpp::cot_channel_selectmenu</ref>) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="263" column="16" bodyfile="include/dpp/message.h" bodystart="263" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="321" column="13" bodyfile="include/dpp/message.h" bodystart="321" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a51efd287b483b485f7019fb8263465ed" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classdpp_1_1component" kindref="compound">component</ref> &gt;</type>
@@ -52,48 +52,6 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="267" column="13" bodyfile="include/dpp/message.h" bodystart="267" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a177a7e35e4b310e2028464787396b1b4" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::component::label</definition>
-        <argsstring></argsstring>
-        <name>label</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Component label (for buttons, text inputs). Maximum of 80 characters. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="272" column="13" bodyfile="include/dpp/message.h" bodystart="272" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a114f858c5c2bcdc1067cb26a14e578af" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
-        <definition>component_style dpp::component::style</definition>
-        <argsstring></argsstring>
-        <name>style</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Component style (for buttons) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="276" column="17" bodyfile="include/dpp/message.h" bodystart="276" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a69a2c73574bfb36961fee1df8f6ff771" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a284d405e6b10bc80ec459ff2505edbb3" kindref="member">text_style_type</ref></type>
-        <definition>text_style_type dpp::component::text_style</definition>
-        <argsstring></argsstring>
-        <name>text_style</name>
-        <briefdescription>
-<para>Text style (for text inputs) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="281" column="17" bodyfile="include/dpp/message.h" bodystart="281" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a9d5ae2ba0812d8c8e7345b3271d75e71" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::component::custom_id</definition>
@@ -107,118 +65,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="286" column="13" bodyfile="include/dpp/message.h" bodystart="286" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a79ad72fb0e31440e8f644e79a5870573" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::component::url</definition>
-        <argsstring></argsstring>
-        <name>url</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>URL for link types (<ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref>). Maximum of 512 characters. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="291" column="13" bodyfile="include/dpp/message.h" bodystart="291" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a4fe9d95b2fd61a38269c3368db4c17ce" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::component::placeholder</definition>
-        <argsstring></argsstring>
-        <name>placeholder</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Placeholder text for select menus and text inputs (max 150 characters) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="295" column="13" bodyfile="include/dpp/message.h" bodystart="295" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a2278f6585edfa07f2b7711aaf31cf5a3" prot="public" static="no" mutable="no">
-        <type>int32_t</type>
-        <definition>int32_t dpp::component::min_values</definition>
-        <argsstring></argsstring>
-        <name>min_values</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Minimum number of items that must be chosen for a select menu (0-25). Default is -1 to not set this </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="300" column="9" bodyfile="include/dpp/message.h" bodystart="300" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a35895913793b44ca33d039e4042afc25" prot="public" static="no" mutable="no">
-        <type>int32_t</type>
-        <definition>int32_t dpp::component::max_values</definition>
-        <argsstring></argsstring>
-        <name>max_values</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Maximum number of items that can be chosen for a select menu (0-25). Default is -1 to not set this </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="305" column="9" bodyfile="include/dpp/message.h" bodystart="305" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a35e8a8aabfd66a0f23ece038591e4747" prot="public" static="no" mutable="no">
-        <type>int32_t</type>
-        <definition>int32_t dpp::component::min_length</definition>
-        <argsstring></argsstring>
-        <name>min_length</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Minimum length for text input (0-4000) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="309" column="9" bodyfile="include/dpp/message.h" bodystart="309" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1aa0a71bbf2f4cac7d87a53ad1ec89da37" prot="public" static="no" mutable="no">
-        <type>int32_t</type>
-        <definition>int32_t dpp::component::max_length</definition>
-        <argsstring></argsstring>
-        <name>max_length</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Maximum length for text input (1-4000) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="313" column="9" bodyfile="include/dpp/message.h" bodystart="313" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1ad4f47e82e57e28a1aac48027e43b2fd9" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1select__option" kindref="compound">select_option</ref> &gt;</type>
-        <definition>std::vector&lt;select_option&gt; dpp::component::options</definition>
-        <argsstring></argsstring>
-        <name>options</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Select options for select menus. Only required and available for select menus of type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f" kindref="member">dpp::cot_selectmenu</ref> </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="317" column="13" bodyfile="include/dpp/message.h" bodystart="317" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a8acea6badb01425ea51dc50f0c8ab87c" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; uint8_t &gt;</type>
-        <definition>std::vector&lt;uint8_t&gt; dpp::component::channel_types</definition>
-        <argsstring></argsstring>
-        <name>channel_types</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>List of channel types (<ref refid="namespacedpp_1a732e832861149a278f27ea7840b8e4ca" kindref="member">dpp::channel_type</ref>) to include in the channel select component (<ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" kindref="member">dpp::cot_channel_selectmenu</ref>) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="321" column="13" bodyfile="include/dpp/message.h" bodystart="321" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1acdecdf829c343e1b3aa826e50b3019e3" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1component__default__value" kindref="compound">component_default_value</ref> &gt;</type>
@@ -251,6 +97,117 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="332" column="6" bodyfile="include/dpp/message.h" bodystart="332" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a259175c6c6da17af6d00765088fb73f6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdpp_1_1component_1_1inner__emoji" kindref="compound">dpp::component::inner_emoji</ref></type>
+        <definition>struct dpp::component::inner_emoji dpp::component::emoji</definition>
+        <argsstring></argsstring>
+        <name>emoji</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="367" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a177a7e35e4b310e2028464787396b1b4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::component::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Component label (for buttons, text inputs). Maximum of 80 characters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="272" column="13" bodyfile="include/dpp/message.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1aa0a71bbf2f4cac7d87a53ad1ec89da37" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t dpp::component::max_length</definition>
+        <argsstring></argsstring>
+        <name>max_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum length for text input (1-4000) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="313" column="9" bodyfile="include/dpp/message.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a35895913793b44ca33d039e4042afc25" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t dpp::component::max_values</definition>
+        <argsstring></argsstring>
+        <name>max_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of items that can be chosen for a select menu (0-25). Default is -1 to not set this </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="305" column="9" bodyfile="include/dpp/message.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a35e8a8aabfd66a0f23ece038591e4747" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t dpp::component::min_length</definition>
+        <argsstring></argsstring>
+        <name>min_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum length for text input (0-4000) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="309" column="9" bodyfile="include/dpp/message.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a2278f6585edfa07f2b7711aaf31cf5a3" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t dpp::component::min_values</definition>
+        <argsstring></argsstring>
+        <name>min_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum number of items that must be chosen for a select menu (0-25). Default is -1 to not set this </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="300" column="9" bodyfile="include/dpp/message.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1ad4f47e82e57e28a1aac48027e43b2fd9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1select__option" kindref="compound">select_option</ref> &gt;</type>
+        <definition>std::vector&lt;select_option&gt; dpp::component::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select options for select menus. Only required and available for select menus of type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f" kindref="member">dpp::cot_selectmenu</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="317" column="13" bodyfile="include/dpp/message.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a4fe9d95b2fd61a38269c3368db4c17ce" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::component::placeholder</definition>
+        <argsstring></argsstring>
+        <name>placeholder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Placeholder text for select menus and text inputs (max 150 characters) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="295" column="13" bodyfile="include/dpp/message.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1a6a6312c0c598466aa87541745d2f7bff" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool dpp::component::required</definition>
@@ -265,6 +222,62 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="336" column="6" bodyfile="include/dpp/message.h" bodystart="336" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a114f858c5c2bcdc1067cb26a14e578af" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
+        <definition>component_style dpp::component::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Component style (for buttons) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="276" column="17" bodyfile="include/dpp/message.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a69a2c73574bfb36961fee1df8f6ff771" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a284d405e6b10bc80ec459ff2505edbb3" kindref="member">text_style_type</ref></type>
+        <definition>text_style_type dpp::component::text_style</definition>
+        <argsstring></argsstring>
+        <name>text_style</name>
+        <briefdescription>
+<para>Text style (for text inputs) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="281" column="17" bodyfile="include/dpp/message.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1afdb70ec9968493ed54bab29135f8b8c6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
+        <definition>component_type dpp::component::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Component type, either a button or action row </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="263" column="16" bodyfile="include/dpp/message.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1component_1a79ad72fb0e31440e8f644e79a5870573" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::component::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>URL for link types (<ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref>). Maximum of 512 characters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="291" column="13" bodyfile="include/dpp/message.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1component_1aea6ebd38924644607081d88d0a32213c" prot="public" static="no" mutable="no">
         <type>std::variant&lt; std::monostate, std::string, int64_t, double &gt;</type>
         <definition>std::variant&lt;std::monostate, std::string, int64_t, double&gt; dpp::component::value</definition>
@@ -278,19 +291,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="341" column="14" bodyfile="include/dpp/message.h" bodystart="341" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1component_1a259175c6c6da17af6d00765088fb73f6" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1component_1_1inner__emoji" kindref="compound">dpp::component::inner_emoji</ref></type>
-        <definition>struct dpp::component::inner_emoji dpp::component::emoji</definition>
-        <argsstring></argsstring>
-        <name>emoji</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="367" column="7"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -383,460 +383,6 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="383" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_type</definition>
-        <argsstring>(component_type ct)</argsstring>
-        <name>set_type</name>
-        <param>
-          <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
-          <declname>ct</declname>
-        </param>
-        <briefdescription>
-<para>Set the type of the component. Button components (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>) should always be contained within an action row (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>). As described below, many of the other methods automatically set this to the correct type so usually you should not need to manually call <ref refid="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" kindref="member">component::set_type()</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ct</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The component type </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="396" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a4d2cd2b2c6169c31b4b3e41ce8698afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_text_style</definition>
-        <argsstring>(text_style_type ts)</argsstring>
-        <name>set_text_style</name>
-        <param>
-          <type><ref refid="namespacedpp_1a284d405e6b10bc80ec459ff2505edbb3" kindref="member">text_style_type</ref></type>
-          <declname>ts</declname>
-        </param>
-        <briefdescription>
-<para>Set the text style of a text component. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Sets type to <computeroutput>cot_text</computeroutput></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ts</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text style type to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="405" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a23955055e9d77383fca2a5738ae3a30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_label</definition>
-        <argsstring>(const std::string &amp;label)</argsstring>
-        <name>set_label</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>label</declname>
-        </param>
-        <briefdescription>
-<para>Set the label of the component, e.g. button text. For action rows, this field is ignored. Setting the label will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>label</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Label text to set. It will be truncated to the maximum length of 80 UTF-8 characters. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="415" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a3dfa5aa884cf00962250401fb41995e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_default_value</definition>
-        <argsstring>(const std::string &amp;val)</argsstring>
-        <name>set_default_value</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>val</declname>
-        </param>
-        <briefdescription>
-<para>Set the default value of the text input component. For action rows, this field is ignored. Setting the value will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b" kindref="member">dpp::cot_text</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>val</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Value text to set. It will be truncated to the maximum length of 4000 UTF-8 characters. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="425" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1af99f293166995b8273405e446d0efa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_url</definition>
-        <argsstring>(const std::string &amp;url)</argsstring>
-        <name>set_url</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>url</declname>
-        </param>
-        <briefdescription>
-<para>Set the url for <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> types. Calling this function sets the style to <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> and the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>url</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>URL to set. It will be truncated to the maximum length of 512 UTF-8 characters. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="435" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a19213be82f2cd18748f669e53e1348a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_style</definition>
-        <argsstring>(component_style cs)</argsstring>
-        <name>set_style</name>
-        <param>
-          <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
-          <declname>cs</declname>
-        </param>
-        <briefdescription>
-<para>Set the style of the component, e.g. button colour. For action rows, this field is ignored. Setting the style will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>cs</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Component style to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="445" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a1bf3798669b015711df5d2621ff92d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_id</definition>
-        <argsstring>(const std::string &amp;id)</argsstring>
-        <name>set_id</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-<para>Set the id of the component. For action rows, this field is ignored. Setting the id will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Custom ID string to set. This ID will be sent for any on_button_click events related to the button. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>The maximum length of the Custom ID is 100 UTF-8 codepoints. If your Custom ID is longer than this, it will be truncated. </para>
-</simplesect>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="458" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a48a2ab72eaf6e58073a1f5dc936877a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_disabled</definition>
-        <argsstring>(bool disable)</argsstring>
-        <name>set_disabled</name>
-        <param>
-          <type>bool</type>
-          <declname>disable</declname>
-        </param>
-        <briefdescription>
-<para>Set the component to disabled. Defaults to false on all created components. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>disable</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>True to disable, false to disable. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="467" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1ad75a96f7fb63cc2721a605e7d61cc477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_required</definition>
-        <argsstring>(bool require)</argsstring>
-        <name>set_required</name>
-        <param>
-          <type>bool</type>
-          <declname>require</declname>
-        </param>
-        <briefdescription>
-<para>Set if this component is required. Defaults to false on all created components. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>require</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>True to require this, false to make it optional. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="476" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1ae364c7cfdbf5422444a53b6d9789f772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_placeholder</definition>
-        <argsstring>(const std::string &amp;placeholder)</argsstring>
-        <name>set_placeholder</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>placeholder</declname>
-        </param>
-        <briefdescription>
-<para>Set the placeholder. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>placeholder</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>placeholder string. It will be truncated to the maximum length of 150 UTF-8 characters for select menus, and 100 UTF-8 characters for modals. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="486" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a39de811904ed62eb0fa2d37be2918503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_min_values</definition>
-        <argsstring>(uint32_t min_values)</argsstring>
-        <name>set_min_values</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>min_values</declname>
-        </param>
-        <briefdescription>
-<para>Set the minimum number of items that must be chosen for a select menu. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>min_values</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>min value to set (0-25) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="494" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a94aa64e7a19c975953ab40c2b7f34573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_max_values</definition>
-        <argsstring>(uint32_t max_values)</argsstring>
-        <name>set_max_values</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>max_values</declname>
-        </param>
-        <briefdescription>
-<para>Set the maximum number of items that can be chosen for a select menu. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>max_values</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>max value to set (0-25) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="502" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1aa23287b8b438eb808b2106c50421235b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_min_length</definition>
-        <argsstring>(uint32_t min_l)</argsstring>
-        <name>set_min_length</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>min_l</declname>
-        </param>
-        <briefdescription>
-<para>Set the minimum input length for a text input. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>min_l</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>min length to set (0-4000) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="510" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1a3778e0e45c429697f799ca431bb383ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::set_max_length</definition>
-        <argsstring>(uint32_t max_l)</argsstring>
-        <name>set_max_length</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>max_l</declname>
-        </param>
-        <briefdescription>
-<para>Set the maximum input length for a text input. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>max_l</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>max length to set (1-4000) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="518" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1component_1ad39a99a7bb31f43bf3d2764aa3c24243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component &amp; dpp::component::add_select_option</definition>
-        <argsstring>(const select_option &amp;option)</argsstring>
-        <name>add_select_option</name>
-        <param>
-          <type>const <ref refid="structdpp_1_1select__option" kindref="compound">select_option</ref> &amp;</type>
-          <declname>option</declname>
-        </param>
-        <briefdescription>
-<para>Add a select option. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>option</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>option to add </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>component&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="526" column="11"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1component_1a3707437be16cc7dfd5edcf321f8e842d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
         <definition>component &amp; dpp::component::add_component</definition>
@@ -907,6 +453,159 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="544" column="11"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1ad39a99a7bb31f43bf3d2764aa3c24243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::add_select_option</definition>
+        <argsstring>(const select_option &amp;option)</argsstring>
+        <name>add_select_option</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1select__option" kindref="compound">select_option</ref> &amp;</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+<para>Add a select option. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="526" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; component  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component  &amp; dpp::json_interface&lt; component  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a3dfa5aa884cf00962250401fb41995e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_default_value</definition>
+        <argsstring>(const std::string &amp;val)</argsstring>
+        <name>set_default_value</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the default value of the text input component. For action rows, this field is ignored. Setting the value will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b" kindref="member">dpp::cot_text</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value text to set. It will be truncated to the maximum length of 4000 UTF-8 characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="425" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a48a2ab72eaf6e58073a1f5dc936877a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_disabled</definition>
+        <argsstring>(bool disable)</argsstring>
+        <name>set_disabled</name>
+        <param>
+          <type>bool</type>
+          <declname>disable</declname>
+        </param>
+        <briefdescription>
+<para>Set the component to disabled. Defaults to false on all created components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to disable, false to disable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="467" column="11"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1component_1a4fa1319e5119a258e3a80e028a4dff3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
         <definition>component &amp; dpp::component::set_emoji</definition>
@@ -963,35 +662,369 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="563" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1component_1a1bf3798669b015711df5d2621ff92d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-        <definition>component  &amp; dpp::json_interface&lt; component  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
+        <definition>component &amp; dpp::component::set_id</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>set_id</name>
         <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
         </param>
         <briefdescription>
-<para>Convert object from nlohmann::json. </para>
+<para>Set the id of the component. For action rows, this field is ignored. Setting the id will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>j</parametername>
+<parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>nlohmann::json object </para>
+<para>Custom ID string to set. This ID will be sent for any on_button_click events related to the button. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+<simplesect kind="note"><para>The maximum length of the Custom ID is 100 UTF-8 codepoints. If your Custom ID is longer than this, it will be truncated. </para>
+</simplesect>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+        <location file="include/dpp/message.h" line="458" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a23955055e9d77383fca2a5738ae3a30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_label</definition>
+        <argsstring>(const std::string &amp;label)</argsstring>
+        <name>set_label</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Set the label of the component, e.g. button text. For action rows, this field is ignored. Setting the label will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Label text to set. It will be truncated to the maximum length of 80 UTF-8 characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="415" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a3778e0e45c429697f799ca431bb383ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_max_length</definition>
+        <argsstring>(uint32_t max_l)</argsstring>
+        <name>set_max_length</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_l</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum input length for a text input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max length to set (1-4000) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="518" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a94aa64e7a19c975953ab40c2b7f34573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_max_values</definition>
+        <argsstring>(uint32_t max_values)</argsstring>
+        <name>set_max_values</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_values</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum number of items that can be chosen for a select menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max value to set (0-25) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="502" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1aa23287b8b438eb808b2106c50421235b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_min_length</definition>
+        <argsstring>(uint32_t min_l)</argsstring>
+        <name>set_min_length</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>min_l</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum input length for a text input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min length to set (0-4000) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="510" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a39de811904ed62eb0fa2d37be2918503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_min_values</definition>
+        <argsstring>(uint32_t min_values)</argsstring>
+        <name>set_min_values</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>min_values</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum number of items that must be chosen for a select menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min value to set (0-25) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="494" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1ae364c7cfdbf5422444a53b6d9789f772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_placeholder</definition>
+        <argsstring>(const std::string &amp;placeholder)</argsstring>
+        <name>set_placeholder</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>placeholder</declname>
+        </param>
+        <briefdescription>
+<para>Set the placeholder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>placeholder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>placeholder string. It will be truncated to the maximum length of 150 UTF-8 characters for select menus, and 100 UTF-8 characters for modals. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="486" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1ad75a96f7fb63cc2721a605e7d61cc477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_required</definition>
+        <argsstring>(bool require)</argsstring>
+        <name>set_required</name>
+        <param>
+          <type>bool</type>
+          <declname>require</declname>
+        </param>
+        <briefdescription>
+<para>Set if this component is required. Defaults to false on all created components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>require</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to require this, false to make it optional. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="476" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a19213be82f2cd18748f669e53e1348a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_style</definition>
+        <argsstring>(component_style cs)</argsstring>
+        <name>set_style</name>
+        <param>
+          <type><ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" kindref="member">component_style</ref></type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+<para>Set the style of the component, e.g. button colour. For action rows, this field is ignored. Setting the style will auto-set the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component style to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="445" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a4d2cd2b2c6169c31b4b3e41ce8698afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_text_style</definition>
+        <argsstring>(text_style_type ts)</argsstring>
+        <name>set_text_style</name>
+        <param>
+          <type><ref refid="namespacedpp_1a284d405e6b10bc80ec459ff2505edbb3" kindref="member">text_style_type</ref></type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>Set the text style of a text component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Sets type to <computeroutput>cot_text</computeroutput></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text style type to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="405" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_type</definition>
+        <argsstring>(component_type ct)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7" kindref="member">component_type</ref></type>
+          <declname>ct</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the component. Button components (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>) should always be contained within an action row (type <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" kindref="member">dpp::cot_action_row</ref>). As described below, many of the other methods automatically set this to the correct type so usually you should not need to manually call <ref refid="classdpp_1_1component_1a281e39d6b8c65b1fd301d195a835e703" kindref="member">component::set_type()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="396" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1component_1af99f293166995b8273405e446d0efa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
+        <definition>component &amp; dpp::component::set_url</definition>
+        <argsstring>(const std::string &amp;url)</argsstring>
+        <name>set_url</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Set the url for <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> types. Calling this function sets the style to <ref refid="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" kindref="member">dpp::cos_link</ref> and the type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to set. It will be truncated to the maximum length of 512 UTF-8 characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>component&amp; reference to self. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="435" column="11"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -1025,39 +1058,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; component  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

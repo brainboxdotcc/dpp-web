@@ -20,6 +20,20 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::permission::permission</definition>
+        <argsstring>()</argsstring>
+        <name>permission</name>
+        <briefdescription>
+<para>Construct a permission object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/permissions.h" line="99" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1permission_1a9cb26c5c69dc104aeb82955545b7e29a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::permission::permission</definition>
@@ -47,104 +61,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/permissions.h" line="94" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::permission::permission</definition>
-        <argsstring>()</argsstring>
-        <name>permission</name>
-        <briefdescription>
-<para>Construct a permission object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/permissions.h" line="99" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1permission_1ac6ef5597dc1f21da58745fb19c7217db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::permission::operator uint64_t</definition>
-        <argsstring>() const</argsstring>
-        <name>operator uint64_t</name>
-        <briefdescription>
-<para>For acting like an integer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The permission bitmask value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/permissions.h" line="105" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1permission_1a535d715d759dedcc9b9c1053ef5978be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::permission::operator uint64_t &amp;</definition>
-        <argsstring>()</argsstring>
-        <name>operator uint64_t &amp;</name>
-        <briefdescription>
-<para>For acting like an integer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A reference to the permission bitmask value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/permissions.h" line="111" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1permission_1a349f7b93214a0dd1fbf35f7d0135e649" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename...</type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>bool</type>
-        <definition>bool dpp::permission::has</definition>
-        <argsstring>(T... values) const</argsstring>
-        <name>has</name>
-        <param>
-          <type>T...</type>
-          <declname>values</declname>
-        </param>
-        <briefdescription>
-<para>Check for permission flags set. It uses the Bitwise AND operator. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>one or more uint64_t permission bits </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>values</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The permissions (from <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>) to check for</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<bold>Example:</bold></para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_mod<sp/>=<sp/><ref refid="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" kindref="member">permission</ref>.has(<ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ae57cb8bf1870f74f2820f84255ca8104" kindref="member">dpp::p_kick_members</ref>,<sp/><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a6c9849fc7380edaf4ab8f169c2f4cc82" kindref="member">dpp::p_ban_members</ref>);</highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>if<sp/>the<sp/>permission<sp/>bitmask<sp/>contains<sp/>p_kick_members<sp/>and<sp/>p_ban_members</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="return"><para>bool True if it has all the given permissions </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/permissions.h" line="134" column="6" bodyfile="include/dpp/permissions.h" bodystart="134" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1permission_1abe213e71a521ef0ce7b8fa81c4c65468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -196,7 +112,7 @@
         </inbodydescription>
         <location file="include/dpp/permissions.h" line="154" column="1" bodyfile="include/dpp/permissions.h" bodystart="154" bodyend="157"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1permission_1adf735bcb50c46fcdfb7fd20c9c999f4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1permission_1a349f7b93214a0dd1fbf35f7d0135e649" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename...</type>
@@ -204,16 +120,16 @@
             <defname>T</defname>
           </param>
         </templateparamlist>
-        <type>std::enable_if&lt;(std::is_convertible&lt; T, uint64_t &gt;::<ref refid="classdpp_1_1permission_1a351c22a0d447069a6833c9cb1b72fbbd" kindref="member">value</ref> &amp;&amp;...), <ref refid="classdpp_1_1permission" kindref="compound">permission</ref> &amp; &gt;::type</type>
-        <definition>std::enable_if&lt;(std::is_convertible&lt; T, uint64_t &gt;::value &amp;&amp;...), permission &amp; &gt;::type dpp::permission::set</definition>
-        <argsstring>(T... values)</argsstring>
-        <name>set</name>
+        <type>bool</type>
+        <definition>bool dpp::permission::has</definition>
+        <argsstring>(T... values) const</argsstring>
+        <name>has</name>
         <param>
           <type>T...</type>
           <declname>values</declname>
         </param>
         <briefdescription>
-<para>Assign a permission. This will reset the bitmask to the new value. </para>
+<para>Check for permission flags set. It uses the Bitwise AND operator. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="templateparam"><parameteritem>
@@ -230,20 +146,55 @@
 <parametername>values</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The permissions (from <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>) to set</para>
+<para>The permissions (from <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>) to check for</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
 <bold>Example:</bold></para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" kindref="member">permission</ref>.set(<ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a5ca9e89b32af806f7c0c179c3bdfb1ad" kindref="member">dpp::p_view_channel</ref>,<sp/><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79" kindref="member">dpp::p_send_messages</ref>);</highlight></codeline>
+<para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_mod<sp/>=<sp/><ref refid="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" kindref="member">permission</ref>.has(<ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ae57cb8bf1870f74f2820f84255ca8104" kindref="member">dpp::p_kick_members</ref>,<sp/><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a6c9849fc7380edaf4ab8f169c2f4cc82" kindref="member">dpp::p_ban_members</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>if<sp/>the<sp/>permission<sp/>bitmask<sp/>contains<sp/>p_kick_members<sp/>and<sp/>p_ban_members</highlight></codeline>
 </programlisting></para>
-<para><simplesect kind="return"><para>permission&amp; reference to self for chaining </para>
+<para><simplesect kind="return"><para>bool True if it has all the given permissions </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/permissions.h" line="174" column="1" bodyfile="include/dpp/permissions.h" bodystart="174" bodyend="177"/>
+        <location file="include/dpp/permissions.h" line="134" column="6" bodyfile="include/dpp/permissions.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1permission_1ac6ef5597dc1f21da58745fb19c7217db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::permission::operator uint64_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator uint64_t</name>
+        <briefdescription>
+<para>For acting like an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The permission bitmask value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/permissions.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1permission_1a535d715d759dedcc9b9c1053ef5978be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::permission::operator uint64_t &amp;</definition>
+        <argsstring>()</argsstring>
+        <name>operator uint64_t &amp;</name>
+        <briefdescription>
+<para>For acting like an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the permission bitmask value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/permissions.h" line="111" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1permission_1ae74df0b609e893683acaaebb4c8ebc18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -294,6 +245,55 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/permissions.h" line="195" column="1" bodyfile="include/dpp/permissions.h" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1permission_1adf735bcb50c46fcdfb7fd20c9c999f4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;(std::is_convertible&lt; T, uint64_t &gt;::<ref refid="classdpp_1_1permission_1a351c22a0d447069a6833c9cb1b72fbbd" kindref="member">value</ref> &amp;&amp;...), <ref refid="classdpp_1_1permission" kindref="compound">permission</ref> &amp; &gt;::type</type>
+        <definition>std::enable_if&lt;(std::is_convertible&lt; T, uint64_t &gt;::value &amp;&amp;...), permission &amp; &gt;::type dpp::permission::set</definition>
+        <argsstring>(T... values)</argsstring>
+        <name>set</name>
+        <param>
+          <type>T...</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Assign a permission. This will reset the bitmask to the new value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one or more uint64_t permission bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permissions (from <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>) to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<bold>Example:</bold></para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="classdpp_1_1permission_1ab888bf9619d2af4614863026e863fdbc" kindref="member">permission</ref>.set(<ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a5ca9e89b32af806f7c0c179c3bdfb1ad" kindref="member">dpp::p_view_channel</ref>,<sp/><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79" kindref="member">dpp::p_send_messages</ref>);</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="return"><para>permission&amp; reference to self for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/permissions.h" line="174" column="1" bodyfile="include/dpp/permissions.h" bodystart="174" bodyend="177"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

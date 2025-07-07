@@ -34,20 +34,6 @@
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="69" column="11" bodyfile="include/dpp/discordclient.h" bodystart="69" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1voiceconn_1a9c0868d279364472bf0c86a4b5ae8f1b" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::voiceconn::websocket_hostname</definition>
-        <argsstring></argsstring>
-        <name>websocket_hostname</name>
-        <briefdescription>
-<para>Websocket hostname for status. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="74" column="13" bodyfile="include/dpp/discordclient.h" bodystart="74" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1voiceconn_1aaaae5391243bb862501088170037b041" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::voiceconn::session_id</definition>
@@ -89,6 +75,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="89" column="28" bodyfile="include/dpp/discordclient.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1voiceconn_1a9c0868d279364472bf0c86a4b5ae8f1b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::voiceconn::websocket_hostname</definition>
+        <argsstring></argsstring>
+        <name>websocket_hostname</name>
+        <briefdescription>
+<para>Websocket hostname for status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="74" column="13" bodyfile="include/dpp/discordclient.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -160,40 +160,6 @@
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="107" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceconn_1a7dd6504b406b5e08f9fd9337a275568d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::voiceconn::is_ready</definition>
-        <argsstring>()</argsstring>
-        <name>is_ready</name>
-        <briefdescription>
-<para>return true if the connection is ready to connect (has hostname, token and session id) </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if ready to connect </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="115" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceconn_1a8bb23d980d80e0d61c1cadc61bacf278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::voiceconn::is_active</definition>
-        <argsstring>()</argsstring>
-        <name>is_active</name>
-        <briefdescription>
-<para>return true if the connection is active (websocket exists) </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if has an active websocket </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="122" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1ae8751945fb4ef1938e4b45f119aa49c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> &amp;</type>
         <definition>voiceconn &amp; dpp::voiceconn::connect</definition>
@@ -242,6 +208,40 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="139" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1voiceconn_1a8bb23d980d80e0d61c1cadc61bacf278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::voiceconn::is_active</definition>
+        <argsstring>()</argsstring>
+        <name>is_active</name>
+        <briefdescription>
+<para>return true if the connection is active (websocket exists) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if has an active websocket </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="122" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1voiceconn_1a7dd6504b406b5e08f9fd9337a275568d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::voiceconn::is_ready</definition>
+        <argsstring>()</argsstring>
+        <name>is_ready</name>
+        <briefdescription>
+<para>return true if the connection is ready to connect (has hostname, token and session id) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if ready to connect </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="115" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

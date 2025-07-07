@@ -62,36 +62,6 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="52" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1a69ce2bb96adb1a658b3a29c37274f2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
-        <definition>commandhandler &amp; dpp::commandhandler::add_prefix</definition>
-        <argsstring>(const std::string &amp;prefix)</argsstring>
-        <name>add_prefix</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>prefix</declname>
-        </param>
-        <briefdescription>
-<para>Add a prefix to the command handler. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>prefix</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Prefix to be handled by the command handler </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>commandhandler&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="60" column="16"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1commandhandler_1a5a8476c0aa4f626dd81bcdf30572431d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
         <definition>commandhandler &amp; dpp::commandhandler::add_command</definition>
@@ -134,25 +104,55 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="72" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1acecd44c69a7cee36d1d12aa5b0354d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::commandhandler::route</definition>
-        <argsstring>(const class dpp::message &amp;msg)</argsstring>
-        <name>route</name>
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a69ce2bb96adb1a658b3a29c37274f2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1commandhandler" kindref="compound">commandhandler</ref> &amp;</type>
+        <definition>commandhandler &amp; dpp::commandhandler::add_prefix</definition>
+        <argsstring>(const std::string &amp;prefix)</argsstring>
+        <name>add_prefix</name>
         <param>
-          <type>const class <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
-          <declname>msg</declname>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
         </param>
         <briefdescription>
-<para>Route a command from the on_message_create function. Call this method from within your on_message_create with the received <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object. </para>
+<para>Add a prefix to the command handler. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>msg</parametername>
+<parametername>prefix</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>message to parse </para>
+<para>Prefix to be handled by the command handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>commandhandler&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="60" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a0a1135844039bb1a28e1656023be9692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::commandhandler::reply</definition>
+        <argsstring>(const dpp::message &amp;m)</argsstring>
+        <name>reply</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Reply to a message. You should use this method rather than <ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to reply with. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="81" column="6"/>
+        <location file="include/dpp/commandhandler.h" line="99" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1commandhandler_1a2ccd8d92a255ec95563b45c6102d192e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -190,25 +190,25 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="90" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1a0a1135844039bb1a28e1656023be9692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1acecd44c69a7cee36d1d12aa5b0354d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::commandhandler::reply</definition>
-        <argsstring>(const dpp::message &amp;m)</argsstring>
-        <name>reply</name>
+        <definition>void dpp::commandhandler::route</definition>
+        <argsstring>(const class dpp::message &amp;msg)</argsstring>
+        <name>route</name>
         <param>
-          <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
-          <declname>m</declname>
+          <type>const class <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
+          <declname>msg</declname>
         </param>
         <briefdescription>
-<para>Reply to a message. You should use this method rather than <ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. </para>
+<para>Route a command from the on_message_create function. Call this method from within your on_message_create with the received <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>m</parametername>
+<parametername>msg</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>message to reply with. </para>
+<para>message to parse </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="99" column="6"/>
+        <location file="include/dpp/commandhandler.h" line="81" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -4,62 +4,6 @@
     <compoundname>dpp::guild_member</compoundname>
     <includes local="no">guild.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1guild__member_1af305ded317e0fb05fc67d15713549efa" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::guild_member::nickname</definition>
-        <argsstring></argsstring>
-        <name>nickname</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Nickname, or empty string if they don&apos;t have a nickname on this guild </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="160" column="13" bodyfile="include/dpp/guild.h" bodystart="160" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1guild__member_1ae9419048b9b5a143f1b705e4dff83a93" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
-        <definition>std::vector&lt;snowflake&gt; dpp::guild_member::roles</definition>
-        <argsstring></argsstring>
-        <name>roles</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>List of roles this user has on this guild </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="162" column="13" bodyfile="include/dpp/guild.h" bodystart="162" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1guild__member_1abc1c9039f54691ae4e8938c2768ccf84" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::guild_member::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Guild id </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="164" column="11" bodyfile="include/dpp/guild.h" bodystart="164" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1guild__member_1a127de740430a1f3ce4e793e21f94ce97" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::guild_member::user_id</definition>
-        <argsstring></argsstring>
-        <name>user_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>User id </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="166" column="11" bodyfile="include/dpp/guild.h" bodystart="166" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1guild__member_1aeb9413ebe5540ebd625a35166f5ad799" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
         <definition>utility::iconhash dpp::guild_member::avatar</definition>
@@ -88,6 +32,34 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="170" column="8" bodyfile="include/dpp/guild.h" bodystart="170" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1a11636d9baaca59361c22ac163b09fd7c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::guild_member::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A set of flags built from the bitmask defined by <ref refid="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30" kindref="member">dpp::guild_member_flags</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="176" column="9" bodyfile="include/dpp/guild.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1abc1c9039f54691ae4e8938c2768ccf84" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_member::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guild id </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="164" column="11" bodyfile="include/dpp/guild.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1guild__member_1aae2dfc2f98671c98704db1fa4295b05f" prot="public" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t dpp::guild_member::joined_at</definition>
@@ -101,6 +73,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/guild.h" line="172" column="8" bodyfile="include/dpp/guild.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1af305ded317e0fb05fc67d15713549efa" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::nickname</definition>
+        <argsstring></argsstring>
+        <name>nickname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nickname, or empty string if they don&apos;t have a nickname on this guild </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="160" column="13" bodyfile="include/dpp/guild.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1guild__member_1ae262a3f3d68a9728a92654e2f5b9c758" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -116,19 +102,33 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="174" column="8" bodyfile="include/dpp/guild.h" bodystart="174" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1guild__member_1a11636d9baaca59361c22ac163b09fd7c" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::guild_member::flags</definition>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1ae9419048b9b5a143f1b705e4dff83a93" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::guild_member::roles</definition>
         <argsstring></argsstring>
-        <name>flags</name>
+        <name>roles</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>A set of flags built from the bitmask defined by <ref refid="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30" kindref="member">dpp::guild_member_flags</ref> </para>
+<para>List of roles this user has on this guild </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="176" column="9" bodyfile="include/dpp/guild.h" bodystart="176" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="162" column="13" bodyfile="include/dpp/guild.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1a127de740430a1f3ce4e793e21f94ce97" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_member::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User id </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="166" column="11" bodyfile="include/dpp/guild.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -145,6 +145,37 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/guild.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a7495a6d80ae68d276344d015c9345206" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json string for the member object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Add ID to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string json string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="195" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a8388b6feb3be3972fa50d4665b461611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -199,36 +230,74 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="187" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1a7495a6d80ae68d276344d015c9345206" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a849e4b4b20febc4bd1d32d8aaca11127" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
-        <definition>std::string dpp::guild_member::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
+        <definition>std::string dpp::guild_member::get_avatar_url</definition>
+        <argsstring>(uint16_t size=0) const</argsstring>
+        <name>get_avatar_url</name>
         <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
-<para>Build json string for the member object. </para>
+<para>Returns the members per guild avatar if they have one, otherwise returns an empty string. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="note"><para>per-server avatar is a nitro only feature so it might be not set. If you need the real user avatar, use <ref refid="classdpp_1_1user_1adddc16b840a409119b9bda1af4e39e42" kindref="member">user::get_avatar_url</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>with_id</parametername>
+<parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Add ID to output </para>
+<para>The size of the avatar in pixels. It can be any power of two between 16 and 4096. If not specified, the default sized avatar is returned. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string json string </para>
+<simplesect kind="return"><para>std::string avatar url or empty string </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="195" column="13"/>
+        <location file="include/dpp/guild.h" line="245" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::get_mention</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mention</name>
+        <briefdescription>
+<para>Return a ping/mention for the user by nickname. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string mention </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="288" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1ad785209b6ad322555a800510a5b4356c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_animated_guild_avatar</definition>
+        <argsstring>() const</argsstring>
+        <name>has_animated_guild_avatar</name>
+        <briefdescription>
+<para>Returns true if the user&apos;s per-guild custom avatar is animated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user&apos;s custom avatar is animated </para>
+</simplesect>
+<simplesect kind="return"><para>false user&apos;s custom avatar is not animated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="235" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a5f914350fd3720e72e4857cc3075e09f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -306,77 +375,25 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="227" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1ad785209b6ad322555a800510a5b4356c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::guild_member::has_animated_guild_avatar</definition>
-        <argsstring>() const</argsstring>
-        <name>has_animated_guild_avatar</name>
-        <briefdescription>
-<para>Returns true if the user&apos;s per-guild custom avatar is animated. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true user&apos;s custom avatar is animated </para>
-</simplesect>
-<simplesect kind="return"><para>false user&apos;s custom avatar is not animated </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="235" column="6"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1a849e4b4b20febc4bd1d32d8aaca11127" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::guild_member::get_avatar_url</definition>
-        <argsstring>(uint16_t size=0) const</argsstring>
-        <name>get_avatar_url</name>
-        <param>
-          <type>uint16_t</type>
-          <declname>size</declname>
-          <defval>0</defval>
-        </param>
-        <briefdescription>
-<para>Returns the members per guild avatar if they have one, otherwise returns an empty string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>per-server avatar is a nitro only feature so it might be not set. If you need the real user avatar, use <ref refid="classdpp_1_1user_1adddc16b840a409119b9bda1af4e39e42" kindref="member">user::get_avatar_url</ref>.</para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>size</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The size of the avatar in pixels. It can be any power of two between 16 and 4096. If not specified, the default sized avatar is returned. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string avatar url or empty string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="245" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1adf919401f5e69225fb9fee91de8b7983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a5f8cb5390378a011a1d7fe36f5ab3441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
-        <definition>guild_member &amp; dpp::guild_member::set_nickname</definition>
-        <argsstring>(const std::string &amp;nick)</argsstring>
-        <name>set_nickname</name>
+        <definition>guild_member &amp; dpp::guild_member::set_communication_disabled_until</definition>
+        <argsstring>(const time_t timestamp)</argsstring>
+        <name>set_communication_disabled_until</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>nick</declname>
+          <type>const time_t</type>
+          <declname>timestamp</declname>
         </param>
         <briefdescription>
-<para>Set the nickname. </para>
+<para>Set communication_disabled_until. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>nick</parametername>
+<parametername>timestamp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Nickname to set</para>
+<para>timestamp until communication is disabled</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -386,37 +403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="254" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1a91cf849628af76ad3fb4c58c8d54efab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
-        <definition>guild_member &amp; dpp::guild_member::set_mute</definition>
-        <argsstring>(const bool is_muted)</argsstring>
-        <name>set_mute</name>
-        <param>
-          <type>const bool</type>
-          <declname>is_muted</declname>
-        </param>
-        <briefdescription>
-<para>Set whether the user is muted in voice channels. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>is_muted</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>value to set, true if mute in voice channels</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="263" column="14"/>
+        <location file="include/dpp/guild.h" line="281" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a51764b5c1960619ddc073224d2791ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -448,25 +435,25 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="272" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1a5f8cb5390378a011a1d7fe36f5ab3441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a91cf849628af76ad3fb4c58c8d54efab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
-        <definition>guild_member &amp; dpp::guild_member::set_communication_disabled_until</definition>
-        <argsstring>(const time_t timestamp)</argsstring>
-        <name>set_communication_disabled_until</name>
+        <definition>guild_member &amp; dpp::guild_member::set_mute</definition>
+        <argsstring>(const bool is_muted)</argsstring>
+        <name>set_mute</name>
         <param>
-          <type>const time_t</type>
-          <declname>timestamp</declname>
+          <type>const bool</type>
+          <declname>is_muted</declname>
         </param>
         <briefdescription>
-<para>Set communication_disabled_until. </para>
+<para>Set whether the user is muted in voice channels. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>timestamp</parametername>
+<parametername>is_muted</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>timestamp until communication is disabled</para>
+<para>value to set, true if mute in voice channels</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -476,24 +463,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="281" column="14"/>
+        <location file="include/dpp/guild.h" line="263" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::guild_member::get_mention</definition>
-        <argsstring>() const</argsstring>
-        <name>get_mention</name>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1adf919401f5e69225fb9fee91de8b7983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_nickname</definition>
+        <argsstring>(const std::string &amp;nick)</argsstring>
+        <name>set_nickname</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>nick</declname>
+        </param>
         <briefdescription>
-<para>Return a ping/mention for the user by nickname. </para>
+<para>Set the nickname. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string mention </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nickname to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="288" column="13"/>
+        <location file="include/dpp/guild.h" line="254" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

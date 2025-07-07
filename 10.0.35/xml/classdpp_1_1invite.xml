@@ -23,6 +23,54 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1invite_1a1eeea3785ede65e9a93640352674a6c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::invite::approximate_member_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_member_count</name>
+        <briefdescription>
+<para>Approximate number of total users online and offline. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only returned from <ref refid="classdpp_1_1cluster_1a6dbddcf4f753ced02d8ec693dcaf583c" kindref="member">cluster::invite_get</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="139" column="10" bodyfile="include/dpp/invite.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1a76dac8c741c2315e6be8733d12856b43" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::invite::approximate_presence_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_presence_count</name>
+        <briefdescription>
+<para>Approximate number of online users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only returned from <ref refid="classdpp_1_1cluster_1a6dbddcf4f753ced02d8ec693dcaf583c" kindref="member">cluster::invite_get</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="133" column="10" bodyfile="include/dpp/invite.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1aedc01d96281305a15b3d23a994927a5c" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::invite::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>Channel ID this invite is for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="100" column="11" bodyfile="include/dpp/invite.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a26f76de18e3f4d24574d49ec96163170" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::invite::code</definition>
@@ -36,6 +84,54 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/invite.h" line="78" column="13" bodyfile="include/dpp/invite.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1ad079d418c2ad52e5d1e980c3e3fc66a5" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::invite::created_at</definition>
+        <argsstring></argsstring>
+        <name>created_at</name>
+        <briefdescription>
+<para>Timestamp at which the invite was created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="179" column="8" bodyfile="include/dpp/invite.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1ab5a3f567aed0644f3252a88511006fa3" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref></type>
+        <definition>channel dpp::invite::destination_channel</definition>
+        <argsstring></argsstring>
+        <name>destination_channel</name>
+        <briefdescription>
+<para>The partial channel this invite is for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only filled in retrieved invites. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="106" column="9" bodyfile="include/dpp/invite.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1af28d5be957fad9b504a3b926c8d2f42e" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
+        <definition>guild dpp::invite::destination_guild</definition>
+        <argsstring></argsstring>
+        <name>destination_guild</name>
+        <briefdescription>
+<para>The partial guild this invite is for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only filled in retrieved invites. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="95" column="7" bodyfile="include/dpp/invite.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a58eb1d4ad8f76fa8f21f00ab7b2e0253" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -68,53 +164,19 @@
         </inbodydescription>
         <location file="include/dpp/invite.h" line="89" column="11" bodyfile="include/dpp/invite.h" bodystart="89" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1af28d5be957fad9b504a3b926c8d2f42e" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
-        <definition>guild dpp::invite::destination_guild</definition>
+      <memberdef kind="variable" id="classdpp_1_1invite_1ac1894b3222c890276ae410832a2426dd" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::invite::inviter</definition>
         <argsstring></argsstring>
-        <name>destination_guild</name>
+        <name>inviter</name>
         <briefdescription>
-<para>The partial guild this invite is for. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Only filled in retrieved invites. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="95" column="7" bodyfile="include/dpp/invite.h" bodystart="95" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1aedc01d96281305a15b3d23a994927a5c" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::invite::channel_id</definition>
-        <argsstring></argsstring>
-        <name>channel_id</name>
-        <briefdescription>
-<para>Channel ID this invite is for. </para>
+<para>User who created this invite. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/invite.h" line="100" column="11" bodyfile="include/dpp/invite.h" bodystart="100" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1ab5a3f567aed0644f3252a88511006fa3" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref></type>
-        <definition>channel dpp::invite::destination_channel</definition>
-        <argsstring></argsstring>
-        <name>destination_channel</name>
-        <briefdescription>
-<para>The partial channel this invite is for. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Only filled in retrieved invites. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="106" column="9" bodyfile="include/dpp/invite.h" bodystart="106" bodyend="-1"/>
+        <location file="include/dpp/invite.h" line="117" column="6" bodyfile="include/dpp/invite.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a6142074754432a855a7e37d731a52f88" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -131,82 +193,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/invite.h" line="112" column="11" bodyfile="include/dpp/invite.h" bodystart="112" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1ac1894b3222c890276ae410832a2426dd" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
-        <definition>user dpp::invite::inviter</definition>
-        <argsstring></argsstring>
-        <name>inviter</name>
-        <briefdescription>
-<para>User who created this invite. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="117" column="6" bodyfile="include/dpp/invite.h" bodystart="117" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1ad9a3073a99b276032dce0e850b21a955" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::invite::target_user_id</definition>
-        <argsstring></argsstring>
-        <name>target_user_id</name>
-        <briefdescription>
-<para>The user ID whose stream to display for this voice channel stream invite. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="122" column="11" bodyfile="include/dpp/invite.h" bodystart="122" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1a32f6cbfefeba83e7e6b5e8b2093bdf43" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a7744393c99f4267d89195749406eed3b" kindref="member">invite_target_t</ref></type>
-        <definition>invite_target_t dpp::invite::target_type</definition>
-        <argsstring></argsstring>
-        <name>target_type</name>
-        <briefdescription>
-<para>Target type for this voice channel invite. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="127" column="17" bodyfile="include/dpp/invite.h" bodystart="127" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1a76dac8c741c2315e6be8733d12856b43" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::invite::approximate_presence_count</definition>
-        <argsstring></argsstring>
-        <name>approximate_presence_count</name>
-        <briefdescription>
-<para>Approximate number of online users. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Only returned from <ref refid="classdpp_1_1cluster_1a6dbddcf4f753ced02d8ec693dcaf583c" kindref="member">cluster::invite_get</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="133" column="10" bodyfile="include/dpp/invite.h" bodystart="133" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1a1eeea3785ede65e9a93640352674a6c3" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::invite::approximate_member_count</definition>
-        <argsstring></argsstring>
-        <name>approximate_member_count</name>
-        <briefdescription>
-<para>Approximate number of total users online and offline. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>Only returned from <ref refid="classdpp_1_1cluster_1a6dbddcf4f753ced02d8ec693dcaf583c" kindref="member">cluster::invite_get</ref>. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="139" column="10" bodyfile="include/dpp/invite.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1af48b1a919db49531f09a01f8e8115f64" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -241,6 +227,51 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/invite.h" line="153" column="9" bodyfile="include/dpp/invite.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1a95bda6b60159f20163f6953806e06d08" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref></type>
+        <definition>stage_instance dpp::invite::stage</definition>
+        <argsstring></argsstring>
+        <name>stage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The stage instance data if there is a public stage instance in the stage channel this invite is for. </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000241"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="174" column="16" bodyfile="include/dpp/invite.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1a32f6cbfefeba83e7e6b5e8b2093bdf43" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a7744393c99f4267d89195749406eed3b" kindref="member">invite_target_t</ref></type>
+        <definition>invite_target_t dpp::invite::target_type</definition>
+        <argsstring></argsstring>
+        <name>target_type</name>
+        <briefdescription>
+<para>Target type for this voice channel invite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="127" column="17" bodyfile="include/dpp/invite.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1invite_1ad9a3073a99b276032dce0e850b21a955" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::invite::target_user_id</definition>
+        <argsstring></argsstring>
+        <name>target_user_id</name>
+        <briefdescription>
+<para>The user ID whose stream to display for this voice channel stream invite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="122" column="11" bodyfile="include/dpp/invite.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a3cbbaea6f39490617d8e6b2e452a4db5" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -283,37 +314,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/invite.h" line="168" column="10" bodyfile="include/dpp/invite.h" bodystart="168" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1a95bda6b60159f20163f6953806e06d08" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref></type>
-        <definition>stage_instance dpp::invite::stage</definition>
-        <argsstring></argsstring>
-        <name>stage</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>The stage instance data if there is a public stage instance in the stage channel this invite is for. </para>
-</simplesect>
-<xrefsect id="deprecated_1_deprecated000241"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated </para>
-</xrefdescription></xrefsect></para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="174" column="16" bodyfile="include/dpp/invite.h" bodystart="174" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1invite_1ad079d418c2ad52e5d1e980c3e3fc66a5" prot="public" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::invite::created_at</definition>
-        <argsstring></argsstring>
-        <name>created_at</name>
-        <briefdescription>
-<para>Timestamp at which the invite was created. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="179" column="8" bodyfile="include/dpp/invite.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -406,6 +406,69 @@
         </inbodydescription>
         <location file="include/dpp/invite.h" line="189" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; invite  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
+        <definition>invite  &amp; dpp::json_interface&lt; invite  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1invite_1a5b326e237960271455ea965b6cd46207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
         <definition>invite &amp; dpp::invite::set_max_age</definition>
@@ -466,36 +529,6 @@
         </inbodydescription>
         <location file="include/dpp/invite.h" line="205" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1invite_1a207f972e251808bc43ba532a5dd5260e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
-        <definition>invite &amp; dpp::invite::set_target_user_id</definition>
-        <argsstring>(const snowflake user_id)</argsstring>
-        <name>set_target_user_id</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-          <declname>user_id</declname>
-        </param>
-        <briefdescription>
-<para>Set the target user id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>user_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The user ID whose stream to display for this voice channel stream invite </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>invite&amp; reference to self for chaining of calls </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/invite.h" line="213" column="8"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1invite_1a158f07d5fc6eaaeebabb7d7bb22b0998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
         <definition>invite &amp; dpp::invite::set_target_type</definition>
@@ -525,6 +558,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/invite.h" line="221" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1invite_1a207f972e251808bc43ba532a5dd5260e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
+        <definition>invite &amp; dpp::invite::set_target_user_id</definition>
+        <argsstring>(const snowflake user_id)</argsstring>
+        <name>set_target_user_id</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>user_id</declname>
+        </param>
+        <briefdescription>
+<para>Set the target user id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user ID whose stream to display for this voice channel stream invite </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invite&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/invite.h" line="213" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1invite_1a8d9e3fe14122f887bbeaac1b91144d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
@@ -586,36 +649,6 @@
         </inbodydescription>
         <location file="include/dpp/invite.h" line="237" column="8"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &amp;</type>
-        <definition>invite  &amp; dpp::json_interface&lt; invite  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; invite  &gt;::to_json</definition>
@@ -648,39 +681,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; invite  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

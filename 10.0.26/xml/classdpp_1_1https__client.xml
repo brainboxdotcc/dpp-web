@@ -5,33 +5,75 @@
     <basecompoundref refid="classdpp_1_1ssl__client" prot="public" virt="non-virtual">dpp::ssl_client</basecompoundref>
     <includes local="no">httpsclient.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1https__client_1ad987631fa443685b10b7b46c3e9472d5" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
-        <definition>http_state dpp::https_client::state</definition>
-        <argsstring></argsstring>
-        <name>state</name>
-        <briefdescription>
-<para>Current connection state. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="138" column="12" bodyfile="include/dpp/httpsclient.h" bodystart="138" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1a899530fc5452a27010b3ea4a5e745e83" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1https__client_1a8c7302f1e9384a125f8a1f757b4329b3" prot="private" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::https_client::request_type</definition>
+        <definition>std::string dpp::https_client::body</definition>
         <argsstring></argsstring>
-        <name>request_type</name>
+        <name>body</name>
         <briefdescription>
-<para>The type of the request, e.g. GET, POST. </para>
+<para>The response body, e.g. file content or JSON. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="143" column="13" bodyfile="include/dpp/httpsclient.h" bodystart="143" bodyend="-1"/>
+        <location file="include/dpp/httpsclient.h" line="158" column="13" bodyfile="include/dpp/httpsclient.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1a7c1571db23c5f1c8b711a11edfd03c90" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dpp::https_client::chunk_receive</definition>
+        <argsstring></argsstring>
+        <name>chunk_receive</name>
+        <briefdescription>
+<para>Number of bytes received in current chunk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="196" column="8" bodyfile="include/dpp/httpsclient.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1ac3eb2f3a3d044fc3151dd43fdf883c3a" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dpp::https_client::chunk_size</definition>
+        <argsstring></argsstring>
+        <name>chunk_size</name>
+        <briefdescription>
+<para>Size of current chunk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="191" column="8" bodyfile="include/dpp/httpsclient.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1a463fe015fba652aa875a7d604413b8d2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::https_client::chunked</definition>
+        <argsstring></argsstring>
+        <name>chunked</name>
+        <briefdescription>
+<para>If true the content is chunked encoding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="186" column="6" bodyfile="include/dpp/httpsclient.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1aebb96d5bc879c002d7d824e04d2a78e7" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::https_client::content_length</definition>
+        <argsstring></argsstring>
+        <name>content_length</name>
+        <briefdescription>
+<para>The reported length of the content. If this is UULONG_MAX, then no length was reported by the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="164" column="10" bodyfile="include/dpp/httpsclient.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1https__client_1a189161c0e29555a46af0d7afe7bf61e1" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -61,34 +103,6 @@
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="153" column="13" bodyfile="include/dpp/httpsclient.h" bodystart="153" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1a8c7302f1e9384a125f8a1f757b4329b3" prot="private" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::https_client::body</definition>
-        <argsstring></argsstring>
-        <name>body</name>
-        <briefdescription>
-<para>The response body, e.g. file content or JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="158" column="13" bodyfile="include/dpp/httpsclient.h" bodystart="158" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1aebb96d5bc879c002d7d824e04d2a78e7" prot="private" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::https_client::content_length</definition>
-        <argsstring></argsstring>
-        <name>content_length</name>
-        <briefdescription>
-<para>The reported length of the content. If this is UULONG_MAX, then no length was reported by the server. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="164" column="10" bodyfile="include/dpp/httpsclient.h" bodystart="164" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1https__client_1a5a7a9866a0f7cb682256400cfebe6015" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" kindref="member">http_headers</ref></type>
         <definition>http_headers dpp::https_client::request_headers</definition>
@@ -102,6 +116,48 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="169" column="14" bodyfile="include/dpp/httpsclient.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1a899530fc5452a27010b3ea4a5e745e83" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::https_client::request_type</definition>
+        <argsstring></argsstring>
+        <name>request_type</name>
+        <briefdescription>
+<para>The type of the request, e.g. GET, POST. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="143" column="13" bodyfile="include/dpp/httpsclient.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1af4ee11452af6dc6baa3c095a3c915281" prot="private" static="no" mutable="no">
+        <type>std::multimap&lt; std::string, std::string &gt;</type>
+        <definition>std::multimap&lt;std::string, std::string&gt; dpp::https_client::response_headers</definition>
+        <argsstring></argsstring>
+        <name>response_headers</name>
+        <briefdescription>
+<para>Headers from the server&apos;s response, e.g. RateLimit headers, cookies, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="202" column="15" bodyfile="include/dpp/httpsclient.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1https__client_1ad987631fa443685b10b7b46c3e9472d5" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kindref="member">http_state</ref></type>
+        <definition>http_state dpp::https_client::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Current connection state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="138" column="12" bodyfile="include/dpp/httpsclient.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1https__client_1ad8d80fde390cd6307e0c5008c0ad45d5" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
@@ -130,62 +186,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="181" column="8" bodyfile="include/dpp/httpsclient.h" bodystart="181" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1a463fe015fba652aa875a7d604413b8d2" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::https_client::chunked</definition>
-        <argsstring></argsstring>
-        <name>chunked</name>
-        <briefdescription>
-<para>If true the content is chunked encoding. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="186" column="6" bodyfile="include/dpp/httpsclient.h" bodystart="186" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1ac3eb2f3a3d044fc3151dd43fdf883c3a" prot="private" static="no" mutable="no">
-        <type>size_t</type>
-        <definition>size_t dpp::https_client::chunk_size</definition>
-        <argsstring></argsstring>
-        <name>chunk_size</name>
-        <briefdescription>
-<para>Size of current chunk. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="191" column="8" bodyfile="include/dpp/httpsclient.h" bodystart="191" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1a7c1571db23c5f1c8b711a11edfd03c90" prot="private" static="no" mutable="no">
-        <type>size_t</type>
-        <definition>size_t dpp::https_client::chunk_receive</definition>
-        <argsstring></argsstring>
-        <name>chunk_receive</name>
-        <briefdescription>
-<para>Number of bytes received in current chunk. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="196" column="8" bodyfile="include/dpp/httpsclient.h" bodystart="196" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1https__client_1af4ee11452af6dc6baa3c095a3c915281" prot="private" static="no" mutable="no">
-        <type>std::multimap&lt; std::string, std::string &gt;</type>
-        <definition>std::multimap&lt;std::string, std::string&gt; dpp::https_client::response_headers</definition>
-        <argsstring></argsstring>
-        <name>response_headers</name>
-        <briefdescription>
-<para>Headers from the server&apos;s response, e.g. RateLimit headers, cookies, etc. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="202" column="15" bodyfile="include/dpp/httpsclient.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -391,35 +391,6 @@
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="252" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1https__client_1ab81b63e6837b5eccbf124804d040e93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
-        <definition>virtual bool dpp::https_client::handle_buffer</definition>
-        <argsstring>(std::string &amp;buffer)</argsstring>
-        <name>handle_buffer</name>
-        <reimplements refid="classdpp_1_1ssl__client_1a0100372dd4c32d9faddaf69fffda7cfc">handle_buffer</reimplements>
-        <param>
-          <type>std::string &amp;</type>
-          <declname>buffer</declname>
-        </param>
-        <briefdescription>
-<para>Processes incoming data from the SSL socket input buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>buffer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="270" column="22"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1a4f0f5052e8c71e201e6537f7ce82d5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void dpp::https_client::close</definition>
@@ -435,20 +406,73 @@
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="275" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1https__client_1af37e3ada25e6243867bee042d2eb222c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::https_client::one_second_timer</definition>
+      <memberdef kind="function" id="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_client::get_bytes_in</definition>
         <argsstring>()</argsstring>
-        <name>one_second_timer</name>
-        <reimplements refid="classdpp_1_1ssl__client_1a5028e720508fcb82533ce838dcea5f2e">one_second_timer</reimplements>
+        <name>get_bytes_in</name>
         <briefdescription>
-<para>Fires every second from the underlying socket I/O loop, used for timeouts. </para>
+<para>Get total bytes received. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t bytes received </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="280" column="14"/>
+        <location file="include/dpp/sslclient.h" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_client::get_bytes_out</definition>
+        <argsstring>()</argsstring>
+        <name>get_bytes_out</name>
+        <briefdescription>
+<para>Get the bytes out objectGet total bytes sent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t bytes sent </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_client::get_cipher</definition>
+        <argsstring>()</argsstring>
+        <name>get_cipher</name>
+        <briefdescription>
+<para>Get SSL cipher name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string ssl cipher name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="174" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1https__client_1affac629e0843afcdc9a77351a550d6be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string dpp::https_client::get_content</definition>
+        <argsstring>() const</argsstring>
+        <name>get_content</name>
+        <briefdescription>
+<para>Get the response content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>response content </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="322" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1a58d8ae5c9949d7b066dbbc6fb2c13a77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::string</type>
@@ -561,23 +585,6 @@
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="315" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1https__client_1affac629e0843afcdc9a77351a550d6be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::string</type>
-        <definition>const std::string dpp::https_client::get_content</definition>
-        <argsstring>() const</argsstring>
-        <name>get_content</name>
-        <briefdescription>
-<para>Get the response content. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>response content </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="322" column="19"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1aad457d811e2b8655eef18d2f3b76e076" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
         <definition>uint16_t dpp::https_client::get_status</definition>
@@ -595,56 +602,91 @@
         </inbodydescription>
         <location file="include/dpp/httpsclient.h" line="331" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::get_bytes_out</definition>
-        <argsstring>()</argsstring>
-        <name>get_bytes_out</name>
+      <memberdef kind="function" id="classdpp_1_1https__client_1ab81b63e6837b5eccbf124804d040e93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool dpp::https_client::handle_buffer</definition>
+        <argsstring>(std::string &amp;buffer)</argsstring>
+        <name>handle_buffer</name>
+        <reimplements refid="classdpp_1_1ssl__client_1a0100372dd4c32d9faddaf69fffda7cfc">handle_buffer</reimplements>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>buffer</declname>
+        </param>
         <briefdescription>
-<para>Get the bytes out objectGet total bytes sent. </para>
+<para>Processes incoming data from the SSL socket input buffer. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>uint64_t bytes sent </para>
-</simplesect>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer contents. Can modify this value removing the head elements when processed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="162" column="10"/>
+        <location file="include/dpp/httpsclient.h" line="270" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::get_bytes_in</definition>
-        <argsstring>()</argsstring>
-        <name>get_bytes_in</name>
+      <memberdef kind="function" id="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::ssl_client::log</definition>
+        <argsstring>(dpp::loglevel severity, const std::string &amp;msg) const</argsstring>
+        <name>log</name>
+        <reimplementedby refid="classdpp_1_1discord__client_1a9a7beefc8a761885205fc1a8d0e0954f">log</reimplementedby>
+        <reimplementedby refid="classdpp_1_1discord__voice__client_1a7339b4ace2616cd9d251e4f7ed6b9476">log</reimplementedby>
+        <param>
+          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
         <briefdescription>
-<para>Get total bytes received. </para>
+<para>Log a message. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>uint64_t bytes received </para>
-</simplesect>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>severity of log message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log message to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="168" column="10"/>
+        <location file="include/dpp/sslclient.h" line="256" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_client::get_cipher</definition>
+      <memberdef kind="function" id="classdpp_1_1https__client_1af37e3ada25e6243867bee042d2eb222c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::https_client::one_second_timer</definition>
         <argsstring>()</argsstring>
-        <name>get_cipher</name>
+        <name>one_second_timer</name>
+        <reimplements refid="classdpp_1_1ssl__client_1a5028e720508fcb82533ce838dcea5f2e">one_second_timer</reimplements>
         <briefdescription>
-<para>Get SSL cipher name. </para>
+<para>Fires every second from the underlying socket I/O loop, used for timeouts. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string ssl cipher name </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="174" column="13"/>
+        <location file="include/dpp/httpsclient.h" line="280" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -700,48 +742,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="244" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::ssl_client::log</definition>
-        <argsstring>(dpp::loglevel severity, const std::string &amp;msg) const</argsstring>
-        <name>log</name>
-        <reimplementedby refid="classdpp_1_1discord__client_1a9a7beefc8a761885205fc1a8d0e0954f">log</reimplementedby>
-        <reimplementedby refid="classdpp_1_1discord__voice__client_1a7339b4ace2616cd9d251e4f7ed6b9476">log</reimplementedby>
-        <param>
-          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
-          <declname>severity</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <briefdescription>
-<para>Log a message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>severity</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>severity of log message </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Log message to send </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="256" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -861,19 +861,89 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="83" column="13" bodyfile="include/dpp/sslclient.h" bodystart="83" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_client::obuffer</definition>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_client::bytes_in</definition>
         <argsstring></argsstring>
-        <name>obuffer</name>
+        <name>bytes_in</name>
         <briefdescription>
-<para>Output buffer for sending to socket. </para>
+<para>Bytes in. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="88" column="13" bodyfile="include/dpp/sslclient.h" bodystart="88" bodyend="-1"/>
+        <location file="include/dpp/sslclient.h" line="134" column="10" bodyfile="include/dpp/sslclient.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::ssl_client::bytes_out</definition>
+        <argsstring></argsstring>
+        <name>bytes_out</name>
+        <briefdescription>
+<para>Bytes out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="129" column="10" bodyfile="include/dpp/sslclient.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_client::cipher</definition>
+        <argsstring></argsstring>
+        <name>cipher</name>
+        <briefdescription>
+<para>SSL cipher in use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="109" column="13" bodyfile="include/dpp/sslclient.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_client::hostname</definition>
+        <argsstring></argsstring>
+        <name>hostname</name>
+        <briefdescription>
+<para>Hostname connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="119" column="13" bodyfile="include/dpp/sslclient.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::ssl_client::last_tick</definition>
+        <argsstring></argsstring>
+        <name>last_tick</name>
+        <briefdescription>
+<para>For timers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="114" column="8" bodyfile="include/dpp/sslclient.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_client::make_new</definition>
+        <argsstring></argsstring>
+        <name>make_new</name>
+        <briefdescription>
+<para>True if we are establishing a new connection, false if otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="144" column="6" bodyfile="include/dpp/sslclient.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1a1486b3df6780a842552442a25634fcc9" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -888,6 +958,48 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="94" column="6" bodyfile="include/dpp/sslclient.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_client::obuffer</definition>
+        <argsstring></argsstring>
+        <name>obuffer</name>
+        <briefdescription>
+<para>Output buffer for sending to socket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="88" column="13" bodyfile="include/dpp/sslclient.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_client::plaintext</definition>
+        <argsstring></argsstring>
+        <name>plaintext</name>
+        <briefdescription>
+<para>True for a plain text connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="139" column="6" bodyfile="include/dpp/sslclient.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a53cda56d5d61e3371bd7be2424e7ff07" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::ssl_client::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>Port connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="124" column="13" bodyfile="include/dpp/sslclient.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1a423ca70d4046067ebe219f85c7baa540" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a51156024d6211aef2731770340cfe452" kindref="member">dpp::socket</ref></type>
@@ -917,118 +1029,6 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="104" column="20" bodyfile="include/dpp/sslclient.h" bodystart="104" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_client::cipher</definition>
-        <argsstring></argsstring>
-        <name>cipher</name>
-        <briefdescription>
-<para>SSL cipher in use. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="109" column="13" bodyfile="include/dpp/sslclient.h" bodystart="109" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::ssl_client::last_tick</definition>
-        <argsstring></argsstring>
-        <name>last_tick</name>
-        <briefdescription>
-<para>For timers. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="114" column="8" bodyfile="include/dpp/sslclient.h" bodystart="114" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_client::hostname</definition>
-        <argsstring></argsstring>
-        <name>hostname</name>
-        <briefdescription>
-<para>Hostname connected to. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="119" column="13" bodyfile="include/dpp/sslclient.h" bodystart="119" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a53cda56d5d61e3371bd7be2424e7ff07" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::ssl_client::port</definition>
-        <argsstring></argsstring>
-        <name>port</name>
-        <briefdescription>
-<para>Port connected to. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="124" column="13" bodyfile="include/dpp/sslclient.h" bodystart="124" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::bytes_out</definition>
-        <argsstring></argsstring>
-        <name>bytes_out</name>
-        <briefdescription>
-<para>Bytes out. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="129" column="10" bodyfile="include/dpp/sslclient.h" bodystart="129" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::ssl_client::bytes_in</definition>
-        <argsstring></argsstring>
-        <name>bytes_in</name>
-        <briefdescription>
-<para>Bytes in. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="134" column="10" bodyfile="include/dpp/sslclient.h" bodystart="134" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_client::plaintext</definition>
-        <argsstring></argsstring>
-        <name>plaintext</name>
-        <briefdescription>
-<para>True for a plain text connection. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="139" column="6" bodyfile="include/dpp/sslclient.h" bodystart="139" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_client::make_new</definition>
-        <argsstring></argsstring>
-        <name>make_new</name>
-        <briefdescription>
-<para>True if we are establishing a new connection, false if otherwise. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="144" column="6" bodyfile="include/dpp/sslclient.h" bodystart="144" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" prot="public" static="no" mutable="no">
@@ -1046,6 +1046,20 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="182" column="19" bodyfile="include/dpp/sslclient.h" bodystart="182" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
+        <definition>socket_notification_t dpp::ssl_client::custom_readable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_readable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can read from the custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="196" column="23" bodyfile="include/dpp/sslclient.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
         <definition>socket_callback_t dpp::ssl_client::custom_writeable_fd</definition>
@@ -1060,20 +1074,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="191" column="19" bodyfile="include/dpp/sslclient.h" bodystart="191" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
-        <definition>socket_notification_t dpp::ssl_client::custom_readable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can read from the custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="196" column="23" bodyfile="include/dpp/sslclient.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>

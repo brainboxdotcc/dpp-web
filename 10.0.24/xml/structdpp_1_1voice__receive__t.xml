@@ -23,20 +23,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1aa843a6b21c4dc8742960abec208e7fa5" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
-        <definition>class discord_voice_client* dpp::voice_receive_t::voice_client</definition>
-        <argsstring></argsstring>
-        <name>voice_client</name>
-        <briefdescription>
-<para>Voice client. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1726" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1726" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1abe0062119471690caacc95d849274413" prot="public" static="no" mutable="no">
         <type>uint8_t *</type>
         <definition>uint8_t* dpp::voice_receive_t::audio</definition>
@@ -53,6 +39,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="1731" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1a6d6f1d1be9a65fa8b428fab5230dce6d" prot="public" static="no" mutable="no">
+        <type>std::basic_string&lt; uint8_t &gt;</type>
+        <definition>std::basic_string&lt;uint8_t&gt; dpp::voice_receive_t::audio_data</definition>
+        <argsstring></argsstring>
+        <name>audio_data</name>
+        <briefdescription>
+<para>Audio data, encoded as 48kHz stereo PCM or Opus,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1740" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="1740" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1abdc253b2799cb504caa9bd030838f668" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -71,33 +71,19 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="1736" column="8" bodyfile="include/dpp/dispatcher.h" bodystart="1736" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1a6d6f1d1be9a65fa8b428fab5230dce6d" prot="public" static="no" mutable="no">
-        <type>std::basic_string&lt; uint8_t &gt;</type>
-        <definition>std::basic_string&lt;uint8_t&gt; dpp::voice_receive_t::audio_data</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
         <argsstring></argsstring>
-        <name>audio_data</name>
+        <name>from</name>
         <briefdescription>
-<para>Audio data, encoded as 48kHz stereo PCM or Opus,. </para>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1740" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="1740" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::voice_receive_t::user_id</definition>
-        <argsstring></argsstring>
-        <name>user_id</name>
-        <briefdescription>
-<para>User ID of speaker (zero if unknown) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1744" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1744" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="78" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -113,19 +99,33 @@
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="72" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="72" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::voice_receive_t::user_id</definition>
         <argsstring></argsstring>
-        <name>from</name>
+        <name>user_id</name>
         <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
+<para>User ID of speaker (zero if unknown) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="78" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="78" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1744" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1aa843a6b21c4dc8742960abec208e7fa5" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
+        <definition>class discord_voice_client* dpp::voice_receive_t::voice_client</definition>
+        <argsstring></argsstring>
+        <name>voice_client</name>
+        <briefdescription>
+<para>Voice client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1726" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1726" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

@@ -5,6 +5,21 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; automod_metadata &gt;</basecompoundref>
     <includes local="no">automod.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::allow_list</definition>
+        <argsstring></argsstring>
+        <name>allow_list</name>
+        <briefdescription>
+<para>Substrings which will be exempt from triggering the <ref refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" kindref="member">automod_metadata::presets</ref> trigger type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="160" column="13" bodyfile="include/dpp/automod.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
         <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::keywords</definition>
@@ -82,6 +97,20 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="147" column="13" bodyfile="include/dpp/automod.h" bodystart="147" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::automod_metadata::mention_total_limit</definition>
+        <argsstring></argsstring>
+        <name>mention_total_limit</name>
+        <briefdescription>
+<para>Total number of unique role and user mentions allowed per message (Maximum of 50) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="165" column="9" bodyfile="include/dpp/automod.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
         <definition>std::vector&lt;automod_preset_type&gt; dpp::automod_metadata::presets</definition>
@@ -98,35 +127,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/automod.h" line="153" column="13" bodyfile="include/dpp/automod.h" bodystart="153" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::allow_list</definition>
-        <argsstring></argsstring>
-        <name>allow_list</name>
-        <briefdescription>
-<para>Substrings which will be exempt from triggering the <ref refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" kindref="member">automod_metadata::presets</ref> trigger type. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="160" column="13" bodyfile="include/dpp/automod.h" bodystart="160" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::automod_metadata::mention_total_limit</definition>
-        <argsstring></argsstring>
-        <name>mention_total_limit</name>
-        <briefdescription>
-<para>Total number of unique role and user mentions allowed per message (Maximum of 50) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="165" column="9" bodyfile="include/dpp/automod.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -158,6 +158,29 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="175" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string dpp::automod_metadata::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="190" column="21"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
         <definition>automod_metadata &amp; dpp::automod_metadata::fill_from_json</definition>
@@ -187,29 +210,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/automod.h" line="183" column="18"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>virtual std::string dpp::automod_metadata::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/automod.h" line="190" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

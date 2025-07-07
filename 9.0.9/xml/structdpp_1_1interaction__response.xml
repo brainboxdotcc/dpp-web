@@ -4,20 +4,6 @@
     <compoundname>dpp::interaction_response</compoundname>
     <includes local="no">slashcommand.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
-        <definition>interaction_response_type dpp::interaction_response::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-<para>Response type from <ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">dpp::interaction_response_type</ref>. Should be one of ir_pong, ir_channel_message_with_source, or ir_deferred_channel_message_with_source. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="199" column="27" bodyfile="include/dpp/slashcommand.h" bodystart="199" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1afa292ebb598e2ecbb1d8eb089f415493" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message" kindref="compound">message</ref> *</type>
         <definition>struct message* dpp::interaction_response::msg</definition>
@@ -31,6 +17,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="205" column="15" bodyfile="include/dpp/slashcommand.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
+        <definition>interaction_response_type dpp::interaction_response::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Response type from <ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">dpp::interaction_response_type</ref>. Should be one of ir_pong, ir_channel_message_with_source, or ir_deferred_channel_message_with_source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="199" column="27" bodyfile="include/dpp/slashcommand.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -88,6 +88,37 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="218" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::interaction_response::~interaction_response</definition>
+        <argsstring>()</argsstring>
+        <name>~interaction_response</name>
+        <briefdescription>
+<para>Destroy the interaction response object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::interaction_response::build_json</definition>
+        <argsstring>() const</argsstring>
+        <name>build_json</name>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="233" column="13"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
         <definition>interaction_response &amp; dpp::interaction_response::fill_from_json</definition>
@@ -117,37 +148,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="226" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::interaction_response::build_json</definition>
-        <argsstring>() const</argsstring>
-        <name>build_json</name>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="233" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::interaction_response::~interaction_response</definition>
-        <argsstring>()</argsstring>
-        <name>~interaction_response</name>
-        <briefdescription>
-<para>Destroy the interaction response object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="238" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

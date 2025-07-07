@@ -23,6 +23,34 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1thread__member_1a840e99fdb640dfa0cda1d853360e1836" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::thread_member::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Any user-thread settings, currently only used for notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="337" column="10" bodyfile="include/dpp/channel.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__member_1a1b8e07233ef58b4a0b765b0e1e54e000" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::thread_member::joined</definition>
+        <argsstring></argsstring>
+        <name>joined</name>
+        <briefdescription>
+<para>The time when user last joined the thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="332" column="8" bodyfile="include/dpp/channel.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1thread__member_1a17dfbcbeb25bdcf2d0d6040ba51df1b0" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::thread_member::thread_id</definition>
@@ -50,34 +78,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/channel.h" line="327" column="11" bodyfile="include/dpp/channel.h" bodystart="327" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1thread__member_1a1b8e07233ef58b4a0b765b0e1e54e000" prot="public" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::thread_member::joined</definition>
-        <argsstring></argsstring>
-        <name>joined</name>
-        <briefdescription>
-<para>The time when user last joined the thread. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="332" column="8" bodyfile="include/dpp/channel.h" bodystart="332" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1thread__member_1a840e99fdb640dfa0cda1d853360e1836" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::thread_member::flags</definition>
-        <argsstring></argsstring>
-        <name>flags</name>
-        <briefdescription>
-<para>Any user-thread settings, currently only used for notifications. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="337" column="10" bodyfile="include/dpp/channel.h" bodystart="337" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -113,6 +113,39 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; thread_member  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref> &amp;</type>
         <definition>thread_member  &amp; dpp::json_interface&lt; thread_member  &gt;::fill_from_json</definition>
@@ -175,39 +208,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; thread_member  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

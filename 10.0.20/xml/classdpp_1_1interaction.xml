@@ -6,6 +6,20 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; interaction &gt;</basecompoundref>
     <includes local="no">appcommand.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a1a91af243ab4d765ecadc025958a8a85" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
+        <definition>permission dpp::interaction::app_permissions</definition>
+        <argsstring></argsstring>
+        <name>app_permissions</name>
+        <briefdescription>
+<para>Permissions of the bot in the channel/guild where this command was issued. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="695" column="12" bodyfile="include/dpp/appcommand.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1interaction_1a2575444b8e918c947fb4ffc30c442201" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::interaction::application_id</definition>
@@ -20,19 +34,33 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="689" column="11" bodyfile="include/dpp/appcommand.h" bodystart="689" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1ae1df9ec5826bac923ee92e2037bf17cc" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::interaction::type</definition>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1abc6027911679c409058e1ff4904154cc" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1cache__policy__t" kindref="compound">cache_policy_t</ref></type>
+        <definition>cache_policy_t dpp::interaction::cache_policy</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>cache_policy</name>
         <briefdescription>
-<para>the type of interaction </para>
+<para>Cache policy from cluster. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="690" column="8" bodyfile="include/dpp/appcommand.h" bodystart="690" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="704" column="16" bodyfile="include/dpp/appcommand.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a8062f778758ef53d0ea4e40f62ff4015" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::interaction::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>Optional: the channel it was sent from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="693" column="11" bodyfile="include/dpp/appcommand.h" bodystart="693" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1interaction_1a04d74cfb07306fdf8bc540ee5a7e2f4e" prot="public" static="no" mutable="no">
         <type>std::variant&lt; <ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref>, <ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref>, <ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> &gt;</type>
@@ -62,131 +90,33 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="692" column="11" bodyfile="include/dpp/appcommand.h" bodystart="692" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a8062f778758ef53d0ea4e40f62ff4015" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::interaction::channel_id</definition>
-        <argsstring></argsstring>
-        <name>channel_id</name>
-        <briefdescription>
-<para>Optional: the channel it was sent from. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="693" column="11" bodyfile="include/dpp/appcommand.h" bodystart="693" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a5101b493d82a15b9fa3aca68a6386e39" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::interaction::message_id</definition>
-        <argsstring></argsstring>
-        <name>message_id</name>
-        <briefdescription>
-<para>Originating message id for context menu actions. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="694" column="11" bodyfile="include/dpp/appcommand.h" bodystart="694" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a1a91af243ab4d765ecadc025958a8a85" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
-        <definition>permission dpp::interaction::app_permissions</definition>
-        <argsstring></argsstring>
-        <name>app_permissions</name>
-        <briefdescription>
-<para>Permissions of the bot in the channel/guild where this command was issued. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="695" column="12" bodyfile="include/dpp/appcommand.h" bodystart="695" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a41e250dd231a840c82276e14bc4ffb86" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
-        <definition>message dpp::interaction::msg</definition>
-        <argsstring></argsstring>
-        <name>msg</name>
-        <briefdescription>
-<para>Originating message for context menu actions. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="696" column="9" bodyfile="include/dpp/appcommand.h" bodystart="696" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a8d1cc9b3f5ccab6fc206c1adb864ac06" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
-        <definition>guild_member dpp::interaction::member</definition>
-        <argsstring></argsstring>
-        <name>member</name>
-        <briefdescription>
-<para>Optional: guild member data for the invoking user, including permissions. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="697" column="14" bodyfile="include/dpp/appcommand.h" bodystart="697" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1af42be274f0c532e1b227d6725f25ecd3" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
-        <definition>user dpp::interaction::usr</definition>
-        <argsstring></argsstring>
-        <name>usr</name>
-        <briefdescription>
-<para>User object for the invoking user. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="698" column="6" bodyfile="include/dpp/appcommand.h" bodystart="698" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a3d20499cf0b8b93c655b904847622085" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1interaction_1af73bc2d172724c5fe2ce9b3dc34c4eb8" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string dpp::interaction::token</definition>
+        <definition>std::string dpp::interaction::guild_locale</definition>
         <argsstring></argsstring>
-        <name>token</name>
+        <name>guild_locale</name>
         <briefdescription>
-<para>a continuation token for responding to the interaction </para>
+<para>Guild&apos;s locale (language) - for guild interactions only. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="699" column="13" bodyfile="include/dpp/appcommand.h" bodystart="699" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="703" column="13" bodyfile="include/dpp/appcommand.h" bodystart="703" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1a326c799b4b9d813f44f5462dae01e027" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::interaction::version</definition>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
-        <name>version</name>
+        <name>id</name>
         <briefdescription>
-<para>read-only property, always 1 </para>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="700" column="9" bodyfile="include/dpp/appcommand.h" bodystart="700" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1aaa88ba118d0a7b5b32090a844610d7e7" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1command__resolved" kindref="compound">command_resolved</ref></type>
-        <definition>command_resolved dpp::interaction::resolved</definition>
-        <argsstring></argsstring>
-        <name>resolved</name>
-        <briefdescription>
-<para>Resolved user/role etc. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="701" column="18" bodyfile="include/dpp/appcommand.h" bodystart="701" bodyend="-1"/>
+        <location file="include/dpp/managed.h" line="38" column="11" bodyfile="include/dpp/managed.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1interaction_1ae3578a171f1c351ccca8b178ec4a9314" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -202,47 +132,117 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="702" column="13" bodyfile="include/dpp/appcommand.h" bodystart="702" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1af73bc2d172724c5fe2ce9b3dc34c4eb8" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::interaction::guild_locale</definition>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a8d1cc9b3f5ccab6fc206c1adb864ac06" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
+        <definition>guild_member dpp::interaction::member</definition>
         <argsstring></argsstring>
-        <name>guild_locale</name>
+        <name>member</name>
         <briefdescription>
-<para>Guild&apos;s locale (language) - for guild interactions only. </para>
+<para>Optional: guild member data for the invoking user, including permissions. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="703" column="13" bodyfile="include/dpp/appcommand.h" bodystart="703" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="697" column="14" bodyfile="include/dpp/appcommand.h" bodystart="697" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1interaction_1abc6027911679c409058e1ff4904154cc" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1cache__policy__t" kindref="compound">cache_policy_t</ref></type>
-        <definition>cache_policy_t dpp::interaction::cache_policy</definition>
-        <argsstring></argsstring>
-        <name>cache_policy</name>
-        <briefdescription>
-<para>Cache policy from cluster. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="704" column="16" bodyfile="include/dpp/appcommand.h" bodystart="704" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a5101b493d82a15b9fa3aca68a6386e39" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::managed::id</definition>
+        <definition>snowflake dpp::interaction::message_id</definition>
         <argsstring></argsstring>
-        <name>id</name>
+        <name>message_id</name>
         <briefdescription>
-<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+<para>Originating message id for context menu actions. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="38" column="11" bodyfile="include/dpp/managed.h" bodystart="38" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="694" column="11" bodyfile="include/dpp/appcommand.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a41e250dd231a840c82276e14bc4ffb86" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
+        <definition>message dpp::interaction::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>Originating message for context menu actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="696" column="9" bodyfile="include/dpp/appcommand.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1aaa88ba118d0a7b5b32090a844610d7e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1command__resolved" kindref="compound">command_resolved</ref></type>
+        <definition>command_resolved dpp::interaction::resolved</definition>
+        <argsstring></argsstring>
+        <name>resolved</name>
+        <briefdescription>
+<para>Resolved user/role etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="701" column="18" bodyfile="include/dpp/appcommand.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a3d20499cf0b8b93c655b904847622085" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::interaction::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+<para>a continuation token for responding to the interaction </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="699" column="13" bodyfile="include/dpp/appcommand.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1ae1df9ec5826bac923ee92e2037bf17cc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::interaction::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>the type of interaction </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="690" column="8" bodyfile="include/dpp/appcommand.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1af42be274f0c532e1b227d6725f25ecd3" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::interaction::usr</definition>
+        <argsstring></argsstring>
+        <name>usr</name>
+        <briefdescription>
+<para>User object for the invoking user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="698" column="6" bodyfile="include/dpp/appcommand.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1interaction_1a326c799b4b9d813f44f5462dae01e027" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::interaction::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>read-only property, always 1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="700" column="9" bodyfile="include/dpp/appcommand.h" bodystart="700" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -352,44 +352,93 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="714" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1ac2a20671ce5da9458c69b2a26d914217" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref> &amp;</type>
-        <definition>const dpp::user &amp; dpp::interaction::get_resolved_user</definition>
-        <argsstring>(snowflake id) const</argsstring>
-        <name>get_resolved_user</name>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a4ee649c8fe2a79e51fffd95315a0cae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::interaction::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
         <param>
-          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-          <declname>id</declname>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
-<para>Get a user associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
+<para>Build a json string for this object. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>id</parametername>
+<parametername>with_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>User snowflake ID to find </para>
+<para>True if to include the ID in the JSON </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>const <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref>&amp; user </para>
+<simplesect kind="return"><para>std::string JSON string </para>
 </simplesect>
-<parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>on object not found in resolved set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="725" column="17"/>
+        <location file="include/dpp/appcommand.h" line="873" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a23ff816e36c44d2afa51c34a1121a124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref> &amp;</type>
+        <definition>interaction &amp; dpp::interaction::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>interaction&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="865" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1ae0c4f92722e07cf8815a8a899381e657" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref></type>
+        <definition>autocomplete_interaction dpp::interaction::get_autocomplete_interaction</definition>
+        <argsstring>() const</argsstring>
+        <name>get_autocomplete_interaction</name>
+        <briefdescription>
+<para>Get the autocomplete interaction object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the interaction is not for an autocomplete</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="849" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1interaction_1a2b09ae67bedffaeb0e6d0ae4a091d29f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref> &amp;</type>
@@ -416,6 +465,109 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="733" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1ad75f1efe3900962422b2bf643bd654f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref></type>
+        <definition>command_interaction dpp::interaction::get_command_interaction</definition>
+        <argsstring>() const</argsstring>
+        <name>get_command_interaction</name>
+        <briefdescription>
+<para>Get the command interaction object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the interaction is not for a command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="831" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::interaction::get_command_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_command_name</name>
+        <briefdescription>
+<para>Get the command name for a command interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string command interaction, or empty string if the interaction is not for a command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="857" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1acb48f4602b96d1a2a289422ae1813753" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref></type>
+        <definition>component_interaction dpp::interaction::get_component_interaction</definition>
+        <argsstring>() const</argsstring>
+        <name>get_component_interaction</name>
+        <briefdescription>
+<para>Get the component interaction object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the interaction is not for a component</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="840" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a938144b8f0c521668a938c138fc77f6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
+        <definition>const dpp::message &amp; dpp::interaction::get_context_message</definition>
+        <argsstring>() const</argsstring>
+        <name>get_context_message</name>
+        <briefdescription>
+<para>Get the message this action refers to if it is a context menu command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>&amp; context menu message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="755" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpp::managed::get_creation_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="55" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1interaction_1a90e73abe72b0c15c594f27c96c1b5663" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classdpp_1_1guild" kindref="compound">dpp::guild</ref> &amp;</type>
@@ -460,34 +612,17 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="748" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a938144b8f0c521668a938c138fc77f6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
-        <definition>const dpp::message &amp; dpp::interaction::get_context_message</definition>
-        <argsstring>() const</argsstring>
-        <name>get_context_message</name>
-        <briefdescription>
-<para>Get the message this action refers to if it is a context menu command. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>&amp; context menu message </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="755" column="20"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a5c94b68ec3e174a9bfd8b16a64dd0fa3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref> &amp;</type>
-        <definition>const dpp::role &amp; dpp::interaction::get_resolved_role</definition>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a3f89d8774aad40fc50bf1b245ffaca79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdpp_1_1attachment" kindref="compound">dpp::attachment</ref> &amp;</type>
+        <definition>const dpp::attachment &amp; dpp::interaction::get_resolved_attachment</definition>
         <argsstring>(snowflake id) const</argsstring>
-        <name>get_resolved_role</name>
+        <name>get_resolved_attachment</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>Get a role associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
+<para>Get an uploaded attachment associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -495,11 +630,11 @@
 <parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Role snowflake ID to find </para>
+<para>Attachment snowflake ID to find </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>const <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>&amp; role </para>
+<simplesect kind="return"><para>const <ref refid="structdpp_1_1attachment" kindref="compound">dpp::attachment</ref>&amp; file attachment </para>
 </simplesect>
 <parameterlist kind="exception"><parameteritem>
 <parameternamelist>
@@ -514,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="766" column="17"/>
+        <location file="include/dpp/appcommand.h" line="822" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1interaction_1ae042d9e744e3f2089f1fed575e2d4787" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref> &amp;</type>
@@ -594,45 +729,6 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="788" column="25"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a89ef384ef9f2c2f7bf99c2b5ba0844c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> &amp;</type>
-        <definition>const dpp::permission &amp; dpp::interaction::get_resolved_permission</definition>
-        <argsstring>(snowflake id) const</argsstring>
-        <name>get_resolved_permission</name>
-        <param>
-          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-<para>Get a permission associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User snowflake ID to find </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>const <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref>&amp; permissions for the user including overrides on the channel where the command was issued. </para>
-</simplesect>
-<parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>on object not found in resolved set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="800" column="23"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1interaction_1a0c721701103dbac51de5dda49ada848c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> &amp;</type>
         <definition>const dpp::message &amp; dpp::interaction::get_resolved_message</definition>
@@ -672,17 +768,17 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="811" column="20"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a3f89d8774aad40fc50bf1b245ffaca79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="structdpp_1_1attachment" kindref="compound">dpp::attachment</ref> &amp;</type>
-        <definition>const dpp::attachment &amp; dpp::interaction::get_resolved_attachment</definition>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a89ef384ef9f2c2f7bf99c2b5ba0844c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> &amp;</type>
+        <definition>const dpp::permission &amp; dpp::interaction::get_resolved_permission</definition>
         <argsstring>(snowflake id) const</argsstring>
-        <name>get_resolved_attachment</name>
+        <name>get_resolved_permission</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>Get an uploaded attachment associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
+<para>Get a permission associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -690,11 +786,11 @@
 <parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Attachment snowflake ID to find </para>
+<para>User snowflake ID to find </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>const <ref refid="structdpp_1_1attachment" kindref="compound">dpp::attachment</ref>&amp; file attachment </para>
+<simplesect kind="return"><para>const <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref>&amp; permissions for the user including overrides on the channel where the command was issued. </para>
 </simplesect>
 <parameterlist kind="exception"><parameteritem>
 <parameternamelist>
@@ -709,213 +805,85 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="822" column="23"/>
+        <location file="include/dpp/appcommand.h" line="800" column="23"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1ad75f1efe3900962422b2bf643bd654f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref></type>
-        <definition>command_interaction dpp::interaction::get_command_interaction</definition>
-        <argsstring>() const</argsstring>
-        <name>get_command_interaction</name>
-        <briefdescription>
-<para>Get the command interaction object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if the interaction is not for a command</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> object </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="831" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1acb48f4602b96d1a2a289422ae1813753" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref></type>
-        <definition>component_interaction dpp::interaction::get_component_interaction</definition>
-        <argsstring>() const</argsstring>
-        <name>get_component_interaction</name>
-        <briefdescription>
-<para>Get the component interaction object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if the interaction is not for a component</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> object </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="840" column="23"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1ae0c4f92722e07cf8815a8a899381e657" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref></type>
-        <definition>autocomplete_interaction dpp::interaction::get_autocomplete_interaction</definition>
-        <argsstring>() const</argsstring>
-        <name>get_autocomplete_interaction</name>
-        <briefdescription>
-<para>Get the autocomplete interaction object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if the interaction is not for an autocomplete</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> object </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="849" column="26"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::interaction::get_command_name</definition>
-        <argsstring>() const</argsstring>
-        <name>get_command_name</name>
-        <briefdescription>
-<para>Get the command name for a command interaction. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string command interaction, or empty string if the interaction is not for a command. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="857" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a23ff816e36c44d2afa51c34a1121a124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref> &amp;</type>
-        <definition>interaction &amp; dpp::interaction::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
+      <memberdef kind="function" id="classdpp_1_1interaction_1a5c94b68ec3e174a9bfd8b16a64dd0fa3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref> &amp;</type>
+        <definition>const dpp::role &amp; dpp::interaction::get_resolved_role</definition>
+        <argsstring>(snowflake id) const</argsstring>
+        <name>get_resolved_role</name>
         <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>id</declname>
         </param>
         <briefdescription>
-<para>Fill object properties from JSON. </para>
+<para>Get a role associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>j</parametername>
+<parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>JSON to fill from </para>
+<para>Role snowflake ID to find </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>interaction&amp; Reference to self </para>
+<simplesect kind="return"><para>const <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>&amp; role </para>
 </simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on object not found in resolved set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="865" column="13"/>
+        <location file="include/dpp/appcommand.h" line="766" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1interaction_1a4ee649c8fe2a79e51fffd95315a0cae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::interaction::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+      <memberdef kind="function" id="classdpp_1_1interaction_1ac2a20671ce5da9458c69b2a26d914217" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref> &amp;</type>
+        <definition>const dpp::user &amp; dpp::interaction::get_resolved_user</definition>
+        <argsstring>(snowflake id) const</argsstring>
+        <name>get_resolved_user</name>
         <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>id</declname>
         </param>
         <briefdescription>
-<para>Build a json string for this object. </para>
+<para>Get a user associated with the slash command from the resolved list. The resolved list contains associated structures for this command and does not use the cache or require any extra API calls. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>with_id</parametername>
+<parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>True if to include the ID in the JSON </para>
+<para>User snowflake ID to find </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string JSON string </para>
+<simplesect kind="return"><para>const <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref>&amp; user </para>
 </simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="873" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double dpp::managed::get_creation_time</definition>
-        <argsstring>() const</argsstring>
-        <name>get_creation_time</name>
-        <briefdescription>
-<para>Get the creation time of this object according to Discord. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="55" column="8"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::managed::operator==</definition>
-        <argsstring>(const managed &amp;other) const noexcept</argsstring>
-        <name>operator==</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Comparison operator for comparing two managed objects by id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>other</parametername>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Other object to compare against </para>
+<para>on object not found in resolved set </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>true objects are the same id </para>
-</simplesect>
-<simplesect kind="return"><para>false objects are not the same id </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="64" column="6"/>
+        <location file="include/dpp/appcommand.h" line="725" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -948,6 +916,38 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/managed.h" line="73" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="64" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

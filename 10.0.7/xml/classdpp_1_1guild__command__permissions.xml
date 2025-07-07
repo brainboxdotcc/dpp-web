@@ -5,20 +5,6 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; guild_command_permissions &gt;</basecompoundref>
     <includes local="no">appcommand.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1guild__command__permissions_1a91a4e85c841f1aa33c384a878d538bd1" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::guild_command_permissions::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
-        <briefdescription>
-<para>the id of the command </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="771" column="11" bodyfile="include/dpp/appcommand.h" bodystart="771" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1guild__command__permissions_1a50db0da47083c2f875ef797d6dd5effb" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
         <definition>snowflake dpp::guild_command_permissions::application_id</definition>
@@ -46,6 +32,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="773" column="11" bodyfile="include/dpp/appcommand.h" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__command__permissions_1a91a4e85c841f1aa33c384a878d538bd1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_command_permissions::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>the id of the command </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="771" column="11" bodyfile="include/dpp/appcommand.h" bodystart="771" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1guild__command__permissions_1adcd2d742e57c1645c51d206ddc4c350c" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> &gt;</type>
@@ -90,36 +90,6 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="781" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__command__permissions_1a784c456adbe4c058864804f5099c43fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> &amp;</type>
-        <definition>guild_command_permissions &amp; dpp::guild_command_permissions::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Fill object properties from JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON to fill from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref>&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="789" column="27"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
         <definition>virtual std::string dpp::json_interface&lt; guild_command_permissions  &gt;::build_json</definition>
@@ -150,6 +120,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="52" column="21" bodyfile="include/dpp/json_interface.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__command__permissions_1a784c456adbe4c058864804f5099c43fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> &amp;</type>
+        <definition>guild_command_permissions &amp; dpp::guild_command_permissions::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="789" column="27"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

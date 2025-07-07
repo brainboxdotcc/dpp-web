@@ -24,19 +24,56 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1webhook_1a2b988a9005bc38b8eebd99dabdf1ecbe" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::webhook::type</definition>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::webhook::application_id</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>application_id</name>
         <briefdescription>
-<para>Type of the webhook from <ref refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0" kindref="member">dpp::webhook_type</ref>. </para>
+<para>The bot/OAuth2 application that created this webhook. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/webhook.h" line="72" column="9" bodyfile="include/dpp/webhook.h" bodystart="72" bodyend="-1"/>
+        <location file="include/dpp/webhook.h" line="115" column="11" bodyfile="include/dpp/webhook.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1aa9b4dd133a65bc6d575f749a58fd77d9" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::webhook::avatar</definition>
+        <argsstring></argsstring>
+        <name>avatar</name>
+        <briefdescription>
+<para>The default avatar of the webhook. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="103" column="19" bodyfile="include/dpp/webhook.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::webhook::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>The channel id this webhook is for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="84" column="11" bodyfile="include/dpp/webhook.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -55,13 +92,45 @@
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="78" column="11" bodyfile="include/dpp/webhook.h" bodystart="78" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::webhook::channel_id</definition>
+        <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
-        <name>channel_id</name>
+        <name>id</name>
+        <initializer>= {}</initializer>
         <briefdescription>
-<para>The channel id this webhook is for. </para>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a67866c51ecb586471139d5539ce9c835" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::image_data</definition>
+        <argsstring></argsstring>
+        <name>image_data</name>
+        <briefdescription>
+<para>base64 encoded image data if uploading a new image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>You should only ever read data from here. If you want to set the data, use <ref refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" kindref="member">dpp::webhook::load_image</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="138" column="13" bodyfile="include/dpp/webhook.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The default name of the webhook. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>This may be empty. </para>
@@ -70,7 +139,86 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/webhook.h" line="84" column="11" bodyfile="include/dpp/webhook.h" bodystart="84" bodyend="-1"/>
+        <location file="include/dpp/webhook.h" line="97" column="13" bodyfile="include/dpp/webhook.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1ad02d00ed53119e5f4c622f793fe35d49" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref></type>
+        <definition>channel dpp::webhook::source_channel</definition>
+        <argsstring></argsstring>
+        <name>source_channel</name>
+        <briefdescription>
+<para>The channel that this webhook is following (only for Channel Follower Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="127" column="8" bodyfile="include/dpp/webhook.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a8a56d2b84cddfeb2f2d707a869e2b6f2" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
+        <definition>guild dpp::webhook::source_guild</definition>
+        <argsstring></argsstring>
+        <name>source_guild</name>
+        <briefdescription>
+<para>The guild of the channel that this webhook is following (only for Channel Follower Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="121" column="7" bodyfile="include/dpp/webhook.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+<para>The secure token of the webhook (returned for Incoming Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This field is optional. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="109" column="13" bodyfile="include/dpp/webhook.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a2b988a9005bc38b8eebd99dabdf1ecbe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::webhook::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of the webhook from <ref refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0" kindref="member">dpp::webhook_type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="72" column="9" bodyfile="include/dpp/webhook.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1add569486c4ad5f4cf7880ef164b9298a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+<para>The url used for executing the webhook (returned by the webhooks OAuth2 flow). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="132" column="13" bodyfile="include/dpp/webhook.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1ad4c5750fd7038864b04a8c3daf2efa16" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
@@ -90,154 +238,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="91" column="6" bodyfile="include/dpp/webhook.h" bodystart="91" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::webhook::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <briefdescription>
-<para>The default name of the webhook. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>This may be empty. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="97" column="13" bodyfile="include/dpp/webhook.h" bodystart="97" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1aa9b4dd133a65bc6d575f749a58fd77d9" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
-        <definition>utility::iconhash dpp::webhook::avatar</definition>
-        <argsstring></argsstring>
-        <name>avatar</name>
-        <briefdescription>
-<para>The default avatar of the webhook. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>This may be empty. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="103" column="19" bodyfile="include/dpp/webhook.h" bodystart="103" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::webhook::token</definition>
-        <argsstring></argsstring>
-        <name>token</name>
-        <briefdescription>
-<para>The secure token of the webhook (returned for Incoming Webhooks). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>This field is optional. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="109" column="13" bodyfile="include/dpp/webhook.h" bodystart="109" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::webhook::application_id</definition>
-        <argsstring></argsstring>
-        <name>application_id</name>
-        <briefdescription>
-<para>The bot/OAuth2 application that created this webhook. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="note"><para>This may be empty. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="115" column="11" bodyfile="include/dpp/webhook.h" bodystart="115" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1a8a56d2b84cddfeb2f2d707a869e2b6f2" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
-        <definition>guild dpp::webhook::source_guild</definition>
-        <argsstring></argsstring>
-        <name>source_guild</name>
-        <briefdescription>
-<para>The guild of the channel that this webhook is following (only for Channel Follower Webhooks). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="121" column="7" bodyfile="include/dpp/webhook.h" bodystart="121" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1ad02d00ed53119e5f4c622f793fe35d49" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref></type>
-        <definition>channel dpp::webhook::source_channel</definition>
-        <argsstring></argsstring>
-        <name>source_channel</name>
-        <briefdescription>
-<para>The channel that this webhook is following (only for Channel Follower Webhooks). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="127" column="8" bodyfile="include/dpp/webhook.h" bodystart="127" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1add569486c4ad5f4cf7880ef164b9298a" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::webhook::url</definition>
-        <argsstring></argsstring>
-        <name>url</name>
-        <briefdescription>
-<para>The url used for executing the webhook (returned by the webhooks OAuth2 flow). </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="132" column="13" bodyfile="include/dpp/webhook.h" bodystart="132" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1webhook_1a67866c51ecb586471139d5539ce9c835" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::webhook::image_data</definition>
-        <argsstring></argsstring>
-        <name>image_data</name>
-        <briefdescription>
-<para>base64 encoded image data if uploading a new image. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="warning"><para>You should only ever read data from here. If you want to set the data, use <ref refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" kindref="member">dpp::webhook::load_image</ref>. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="138" column="13" bodyfile="include/dpp/webhook.h" bodystart="138" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::managed::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
-        <initializer>= {}</initializer>
-        <briefdescription>
-<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -318,43 +318,6 @@
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="143" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1webhook_1a50c826b1dfd536f839f2a71ddf60bedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::webhook::webhook</definition>
-        <argsstring>(const std::string &amp;webhook_url)</argsstring>
-        <name>webhook</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>webhook_url</declname>
-        </param>
-        <briefdescription>
-<para>Construct a new webhook object using the Webhook URL provided by Discord. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>webhook_url</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>a fully qualified web address of an existing webhook </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if the webhook url could not be parsed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/webhook.h" line="151" column="1"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1webhook_1a4e3d93a96dace41ced1a91474847403d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::webhook::webhook</definition>
@@ -394,6 +357,123 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1webhook_1a50c826b1dfd536f839f2a71ddf60bedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::webhook::webhook</definition>
+        <argsstring>(const std::string &amp;webhook_url)</argsstring>
+        <name>webhook</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>webhook_url</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new webhook object using the Webhook URL provided by Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>webhook_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a fully qualified web address of an existing webhook </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the webhook url could not be parsed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; webhook  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
+        <definition>webhook  &amp; dpp::json_interface&lt; webhook  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
@@ -459,22 +539,37 @@
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="170" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr double</type>
-        <definition>constexpr double dpp::managed::get_creation_time</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>get_creation_time</name>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
         <briefdescription>
-<para>Get the creation time of this object according to Discord. </para>
+<para>Comparison operator for comparing two managed objects by id. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -508,68 +603,6 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::managed::operator!=</definition>
-        <argsstring>(const managed &amp;other) const noexcept</argsstring>
-        <name>operator!=</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Comparison operator for comparing two managed objects by id. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>other</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other object to compare against </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>true objects are not the same id </para>
-</simplesect>
-<simplesect kind="return"><para>false objects are the same id </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
-        <definition>webhook  &amp; dpp::json_interface&lt; webhook  &gt;::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Convert object from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>nlohmann::json object </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
-      </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto dpp::json_interface&lt; webhook  &gt;::to_json</definition>
@@ -602,39 +635,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::json_interface&lt; webhook  &gt;::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Convert object to json string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to include the ID or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
-</simplesect>
-<simplesect kind="return"><para>std::string Json built from the structure </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

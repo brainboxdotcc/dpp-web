@@ -19,19 +19,89 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="41" column="13" bodyfile="include/dpp/sslclient.h" bodystart="41" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a171dadd1d1afc362a632edbbcaa25150" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::obuffer</definition>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1af169f1ac00c59f2a749919d4dfb978bf" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::bytes_in</definition>
         <argsstring></argsstring>
-        <name>obuffer</name>
+        <name>bytes_in</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Output buffer for sending to openssl </para>
+<para>Bytes in </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="44" column="13" bodyfile="include/dpp/sslclient.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/sslclient.h" line="76" column="10" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a2678852573957846f9282be968085deb" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::bytes_out</definition>
+        <argsstring></argsstring>
+        <name>bytes_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bytes out </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="73" column="10" bodyfile="include/dpp/sslclient.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac3a430041c3a03d88411616567cb5a30" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::cipher</definition>
+        <argsstring></argsstring>
+        <name>cipher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSL cipher in use </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="61" column="13" bodyfile="include/dpp/sslclient.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae14b2dfb6828c49d7e88e404b8ce56e5" prot="protected" static="no" mutable="no">
+        <type>SSL_CTX *</type>
+        <definition>SSL_CTX* dpp::SSLClient::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OpenSSL context </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="58" column="9" bodyfile="include/dpp/sslclient.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ad53f1295dc277729511a4653c122cff3" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::hostname</definition>
+        <argsstring></argsstring>
+        <name>hostname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hostname connected to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="67" column="13" bodyfile="include/dpp/sslclient.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae9fdbc996fe0003160b1096329b9c8ba" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::SSLClient::last_tick</definition>
+        <argsstring></argsstring>
+        <name>last_tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For timers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="64" column="8" bodyfile="include/dpp/sslclient.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a5a7c0ad6978157507c525d2076b97244" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -46,6 +116,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="49" column="6" bodyfile="include/dpp/sslclient.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a171dadd1d1afc362a632edbbcaa25150" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::obuffer</definition>
+        <argsstring></argsstring>
+        <name>obuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output buffer for sending to openssl </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="44" column="13" bodyfile="include/dpp/sslclient.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1aa2ac4fae7d67004791e1a2af25d087e1" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::SSLClient::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port connected to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="70" column="13" bodyfile="include/dpp/sslclient.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a55eab8288050b982ec0741efe58381b9" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -75,104 +173,6 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="55" column="5" bodyfile="include/dpp/sslclient.h" bodystart="55" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae14b2dfb6828c49d7e88e404b8ce56e5" prot="protected" static="no" mutable="no">
-        <type>SSL_CTX *</type>
-        <definition>SSL_CTX* dpp::SSLClient::ctx</definition>
-        <argsstring></argsstring>
-        <name>ctx</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>OpenSSL context </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="58" column="9" bodyfile="include/dpp/sslclient.h" bodystart="58" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac3a430041c3a03d88411616567cb5a30" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::cipher</definition>
-        <argsstring></argsstring>
-        <name>cipher</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>SSL cipher in use </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="61" column="13" bodyfile="include/dpp/sslclient.h" bodystart="61" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ae9fdbc996fe0003160b1096329b9c8ba" prot="protected" static="no" mutable="no">
-        <type>time_t</type>
-        <definition>time_t dpp::SSLClient::last_tick</definition>
-        <argsstring></argsstring>
-        <name>last_tick</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>For timers </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="64" column="8" bodyfile="include/dpp/sslclient.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ad53f1295dc277729511a4653c122cff3" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::hostname</definition>
-        <argsstring></argsstring>
-        <name>hostname</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Hostname connected to </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="67" column="13" bodyfile="include/dpp/sslclient.h" bodystart="67" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1aa2ac4fae7d67004791e1a2af25d087e1" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::SSLClient::port</definition>
-        <argsstring></argsstring>
-        <name>port</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Port connected to </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="70" column="13" bodyfile="include/dpp/sslclient.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a2678852573957846f9282be968085deb" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::bytes_out</definition>
-        <argsstring></argsstring>
-        <name>bytes_out</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Bytes out </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="73" column="10" bodyfile="include/dpp/sslclient.h" bodystart="73" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1af169f1ac00c59f2a749919d4dfb978bf" prot="protected" static="no" mutable="no">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::bytes_in</definition>
-        <argsstring></argsstring>
-        <name>bytes_in</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Bytes in </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="76" column="10" bodyfile="include/dpp/sslclient.h" bodystart="76" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ac6292cb6c5074d4bfdcfda12fe15997b" prot="public" static="no" mutable="no">
@@ -190,6 +190,20 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="96" column="15" bodyfile="include/dpp/sslclient.h" bodystart="96" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a9122566a8d8306a3b1e17eec6cba1584" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_readable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_readable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can read from the custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="110" column="15" bodyfile="include/dpp/sslclient.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1ab89687d0e40aac259389a22a1c900444" prot="public" static="no" mutable="no">
         <type>std::function&lt; int()&gt;</type>
         <definition>std::function&lt;int()&gt; dpp::SSLClient::custom_writeable_fd</definition>
@@ -204,20 +218,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="105" column="15" bodyfile="include/dpp/sslclient.h" bodystart="105" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1a9122566a8d8306a3b1e17eec6cba1584" prot="public" static="no" mutable="no">
-        <type>std::function&lt; void()&gt;</type>
-        <definition>std::function&lt;void()&gt; dpp::SSLClient::custom_readable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can read from the custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="110" column="15" bodyfile="include/dpp/sslclient.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1_s_s_l_client_1acbb60605bfc2a132df49ec23a062bb7c" prot="public" static="no" mutable="no">
         <type>std::function&lt; void()&gt;</type>
@@ -235,6 +235,21 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a59203374735f25a44c4cda1d35e04b94" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::SSLClient::Connect</definition>
+        <argsstring>()</argsstring>
+        <name>Connect</name>
+        <reimplementedby refid="classdpp_1_1_w_s_client_1ac8364158676f7f65dc219ca9a9d21e09">Connect</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start connection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="82" column="14"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a7cac59e2f5b38bb1acfd0c1fd0a7a0e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void dpp::SSLClient::OneSecondTimer</definition>
@@ -252,51 +267,8 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="79" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a59203374735f25a44c4cda1d35e04b94" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::SSLClient::Connect</definition>
-        <argsstring>()</argsstring>
-        <name>Connect</name>
-        <reimplementedby refid="classdpp_1_1_w_s_client_1ac8364158676f7f65dc219ca9a9d21e09">Connect</reimplementedby>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Start connection </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="82" column="14"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1af9abd52051cee90fd27e3bcff8d674d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::GetBytesOut</definition>
-        <argsstring>()</argsstring>
-        <name>GetBytesOut</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Get total bytes sent </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="85" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a86c883435a97b87d43017332333b2a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::SSLClient::GetBytesIn</definition>
-        <argsstring>()</argsstring>
-        <name>GetBytesIn</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Get total bytes received </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="88" column="10"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1acab97910ee108e6577ab1205eba9a8dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::SSLClient::SSLClient</definition>
@@ -338,20 +310,6 @@
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="122" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a6c1ea74cfc2543f7e682f3181ff8215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::SSLClient::ReadLoop</definition>
-        <argsstring>()</argsstring>
-        <name>ReadLoop</name>
-        <briefdescription>
-<para>Nonblocking I/O loop. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="127" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a052b2f1c3b14e8ec067904b78b3e2ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>virtual dpp::SSLClient::~SSLClient</definition>
@@ -365,6 +323,49 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="132" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1aab00ea04e3a83786c0b428f8f8746b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::SSLClient::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <reimplementedby refid="classdpp_1_1_w_s_client_1aaf200086f214a78e0d3b83519b892519">close</reimplementedby>
+        <briefdescription>
+<para>Close SSL connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="149" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a86c883435a97b87d43017332333b2a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::GetBytesIn</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytesIn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get total bytes received </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1af9abd52051cee90fd27e3bcff8d674d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::SSLClient::GetBytesOut</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytesOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get total bytes sent </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="85" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a2f4314c11b623d94504625274304c83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -394,50 +395,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="138" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a639fc0fa2335f4ff10a27344ffc2ebca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::SSLClient::write</definition>
-        <argsstring>(const std::string &amp;data)</argsstring>
-        <name>write</name>
-        <reimplementedby refid="classdpp_1_1_w_s_client_1a18e3e2d3771d3a6ea17401a8caf36b04">write</reimplementedby>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>data</declname>
-        </param>
-        <briefdescription>
-<para>Write to the output buffer. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Data to be written to the buffer </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="144" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1aab00ea04e3a83786c0b428f8f8746b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>virtual void dpp::SSLClient::close</definition>
-        <argsstring>()</argsstring>
-        <name>close</name>
-        <reimplementedby refid="classdpp_1_1_w_s_client_1aaf200086f214a78e0d3b83519b892519">close</reimplementedby>
-        <briefdescription>
-<para>Close SSL connection. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="149" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a6fe20ba9e2466d73d29d5d110ff9303f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -479,6 +436,49 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="157" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a6c1ea74cfc2543f7e682f3181ff8215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::SSLClient::ReadLoop</definition>
+        <argsstring>()</argsstring>
+        <name>ReadLoop</name>
+        <briefdescription>
+<para>Nonblocking I/O loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="127" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1_s_s_l_client_1a639fc0fa2335f4ff10a27344ffc2ebca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::SSLClient::write</definition>
+        <argsstring>(const std::string &amp;data)</argsstring>
+        <name>write</name>
+        <reimplementedby refid="classdpp_1_1_w_s_client_1a18e3e2d3771d3a6ea17401a8caf36b04">write</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write to the output buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be written to the buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="144" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

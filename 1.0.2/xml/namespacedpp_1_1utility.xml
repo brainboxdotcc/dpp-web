@@ -20,6 +20,93 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a84b01aa8d5a72a0ce43055cc5942ce23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::bytes</definition>
+        <argsstring>(uint64_t c)</argsstring>
+        <name>bytes</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Convert a byte count to display value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string display value suffixed with M, G, T where neccessary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="173" column="13" declfile="include/dpp/discord.h" declline="173" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a20db200cd842b93cb65767bf78b36bf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::current_date_time</definition>
+        <argsstring>()</argsstring>
+        <name>current_date_time</name>
+        <briefdescription>
+<para>Returns urrent date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Current date and time </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="94" column="13" declfile="include/dpp/discord.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a0ad0c8794eb053266d79258eb7339124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::utility::debug_dump</definition>
+        <argsstring>(uint8_t *data, size_t length)</argsstring>
+        <name>debug_dump</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Output hex values of a section of memory for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start of the data to display </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of data to display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="226" column="6" declfile="include/dpp/discord.h" declline="226" declcolumn="6"/>
+      </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a329ced24b62e56f2f137e2db637497f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::utility::exec</definition>
@@ -78,22 +165,22 @@
         </inbodydescription>
         <location file="include/dpp/discord.h" line="87" column="6" declfile="include/dpp/discord.h" declline="87" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a20db200cd842b93cb65767bf78b36bf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::utility::current_date_time</definition>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a67c39c1d585e4efc89518e643c4ca112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::utility::has_voice</definition>
         <argsstring>()</argsstring>
-        <name>current_date_time</name>
+        <name>has_voice</name>
         <briefdescription>
-<para>Returns urrent date and time. </para>
+<para>Returns true if D++ was built with voice support. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string Current date and time </para>
+<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discord.h" line="94" column="13" declfile="include/dpp/discord.h" declline="94" declcolumn="13"/>
+        <location file="include/dpp/discord.h" line="165" column="6" declfile="include/dpp/discord.h" declline="165" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a67c212540ecc5258241898a8973caebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -124,93 +211,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discord.h" line="101" column="13" declfile="include/dpp/discord.h" declline="101" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a67c39c1d585e4efc89518e643c4ca112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::utility::has_voice</definition>
-        <argsstring>()</argsstring>
-        <name>has_voice</name>
-        <briefdescription>
-<para>Returns true if D++ was built with voice support. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discord.h" line="165" column="6" declfile="include/dpp/discord.h" declline="165" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a84b01aa8d5a72a0ce43055cc5942ce23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::utility::bytes</definition>
-        <argsstring>(uint64_t c)</argsstring>
-        <name>bytes</name>
-        <param>
-          <type>uint64_t</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Convert a byte count to display value. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>number of bytes </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string display value suffixed with M, G, T where neccessary </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discord.h" line="173" column="13" declfile="include/dpp/discord.h" declline="173" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a0ad0c8794eb053266d79258eb7339124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::utility::debug_dump</definition>
-        <argsstring>(uint8_t *data, size_t length)</argsstring>
-        <name>debug_dump</name>
-        <param>
-          <type>uint8_t *</type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>length</declname>
-        </param>
-        <briefdescription>
-<para>Output hex values of a section of memory for debugging. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The start of the data to display </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The length of data to display </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discord.h" line="226" column="6" declfile="include/dpp/discord.h" declline="226" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a915b95a9f5efa3bcde16540cd3a08d3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
