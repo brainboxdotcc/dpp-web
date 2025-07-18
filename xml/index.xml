@@ -1808,7 +1808,7 @@
     <member refid="classdpp_1_1discord__client_1aab3808d0e5f68c28d305efa8d1cde6af" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a341e5371571a63f1a20ef4f1b0015cb8" kind="variable"><name>zlib</name></member>
     <member refid="classdpp_1_1discord__client_1a72a08a27b0d61b82e88ceb92b557cb8e" kind="variable"><name>zlib_mutex</name></member>
-    <member refid="classdpp_1_1discord__client_1ac254a3401c868ed2ad29adebab0ecf3c" kind="variable"><name>connecting_voice_channels</name></member>
+    <member refid="classdpp_1_1discord__client_1a61e37b18366c9b93d66ea09c614bf26f" kind="variable"><name>connecting_voice_channels</name></member>
     <member refid="classdpp_1_1discord__client_1afed78d2e1b09e006ede8b4690895a866" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__client_1a62f72c7433043cbb61fe1917efabd2f7" kind="variable"><name>heartbeat_interval</name></member>
     <member refid="classdpp_1_1discord__client_1acdea0fb06605d44be0161991c5d68e58" kind="variable"><name>intents</name></member>
@@ -1939,6 +1939,7 @@
     <member refid="classdpp_1_1ssl__connection_1a3ae20842849f8c2f0174902dc70d7e97" kind="variable"><name>owner</name></member>
     <member refid="classdpp_1_1ssl__connection_1aa8cfa2e6c511022b67dbd97cc57f0731" kind="variable"><name>private_key_file</name></member>
     <member refid="classdpp_1_1ssl__connection_1ad7feee672079e07699e25f7250021c66" kind="variable"><name>public_key_file</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a9152e29fb01320a9eb16ec7116449ec1" kind="variable"><name>reconnection_callback</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aeb92c5a0a80eb5f0e4d4e987ec11432d" kind="variable"><name>send_audio_type</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac1d99be8bb3a89a43e5f5b368fe63f7d" kind="variable"><name>server_id</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a8f011c857ff968e44a8e5ddf818a9160" kind="variable"><name>sessionid</name></member>
@@ -1957,7 +1958,7 @@
     <member refid="classdpp_1_1discord__voice__client_1aba1326f21394c3aa1e566510b1cbf51f" kind="function"><name>update_ratchets</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a88eb8bcc0d54ce5d600a9c2a1e690e01" kind="function"><name>write_ready</name></member>
     <member refid="classdpp_1_1discord__voice__client_1af5e73016b4f404a690a224827561b01f" kind="function"><name>voice_courier_loop</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a631da143d224aed3051ccc649fd248c0" kind="function"><name>discord_voice_client</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1adcab57bcaf929d78c68dc7bbafd1f4b2" kind="function"><name>discord_voice_client</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a9b06226881ba97a22d142c8fe4f5cbe9" kind="function"><name>~discord_voice_client</name></member>
     <member refid="classdpp_1_1websocket__client_1ab872768661dc89d54f0381b0fff5b674" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1ssl__connection_1acdd1152134b624d18a9e82162e64bafe" kind="function"><name>complete_handshake</name></member>
@@ -6164,20 +6165,22 @@
   </compound>
   <compound refid="classdpp_1_1voiceconn" kind="class"><name>dpp::voiceconn</name>
     <member refid="classdpp_1_1voiceconn_1a5db744340876d4b586756ea519d5db8a" kind="variable"><name>creator</name></member>
+    <member refid="classdpp_1_1voiceconn_1af87a2cd4f62934aa7f42b538a16afae4" kind="variable"><name>request_callback</name></member>
     <member refid="classdpp_1_1voiceconn_1a9ae04af7ba5f3ed36e248ece6f2ad25b" kind="variable"><name>channel_id</name></member>
     <member refid="classdpp_1_1voiceconn_1a0bc9cf608a4830f31f317066a28c5dcb" kind="variable"><name>dave</name></member>
+    <member refid="classdpp_1_1voiceconn_1abe1551bd33ef12327bc070f12341a02f" kind="variable"><name>guild_id</name></member>
     <member refid="classdpp_1_1voiceconn_1aaaae5391243bb862501088170037b041" kind="variable"><name>session_id</name></member>
     <member refid="classdpp_1_1voiceconn_1a9c4ef16e1fb1c077f6adb18ce5ac9a41" kind="variable"><name>token</name></member>
-    <member refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kind="variable"><name>voiceclient</name></member>
+    <member refid="classdpp_1_1voiceconn_1abfd122ef3aafa2e91e470fa0f6753a74" kind="variable"><name>voiceclient</name></member>
     <member refid="classdpp_1_1voiceconn_1a9c0868d279364472bf0c86a4b5ae8f1b" kind="variable"><name>websocket_hostname</name></member>
-    <member refid="classdpp_1_1voiceconn_1a2238afc107e4e97daa0693c81fe150fd" kind="function"><name>voiceconn</name></member>
-    <member refid="classdpp_1_1voiceconn_1af8abb717548b593bda59b9f124fb2328" kind="function"><name>voiceconn</name></member>
+    <member refid="classdpp_1_1voiceconn_1a32e6d3057b673c6c621ac6c3fa6b307a" kind="function"><name>voiceconn</name></member>
     <member refid="classdpp_1_1voiceconn_1a5200c6bba0b6219a0cdd29c6590d0c98" kind="function"><name>~voiceconn</name></member>
-    <member refid="classdpp_1_1voiceconn_1ae8751945fb4ef1938e4b45f119aa49c3" kind="function"><name>connect</name></member>
+    <member refid="classdpp_1_1voiceconn_1a2644838b6481cedd1d855f144567404c" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1voiceconn_1a05b4745343840f96e585ece0456bd831" kind="function"><name>disconnect</name></member>
     <member refid="classdpp_1_1voiceconn_1a6d8f549df84d36594f34c6ef1470f1c9" kind="function"><name>is_active</name></member>
     <member refid="classdpp_1_1voiceconn_1aa63caa0d55507984cb064dddd209908d" kind="function"><name>is_ready</name></member>
     <member refid="classdpp_1_1voiceconn_1ad35026714c668e2dea3711d82cb29ae8" kind="function"><name>reassign_owner</name></member>
+    <member refid="classdpp_1_1voiceconn_1a80569dbf39def9be0a16085a8d315e2a" kind="function"><name>request</name></member>
   </compound>
   <compound refid="classdpp_1_1voiceregion" kind="class"><name>dpp::voiceregion</name>
     <member refid="classdpp_1_1voiceregion_1a853f4ca945dfd5a9a433362e8ab70d79" kind="friend"><name>json_interface&lt; voiceregion &gt;</name></member>
@@ -7518,6 +7521,7 @@
     <member refid="namespacedpp_1a6a417d5030786dd8921fa3a480ddac25" kind="typedef"><name>entitlement_map</name></member>
     <member refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kind="typedef"><name>event_handle</name></member>
     <member refid="namespacedpp_1a912d2a5c3a763ffc462dfb7c4c7a0562" kind="typedef"><name>event_member_map</name></member>
+    <member refid="namespacedpp_1a76d82cbd3ee9c6cd9fb600d97e3e5f16" kind="typedef"><name>full_reconnection_callback_t</name></member>
     <member refid="namespacedpp_1a855d4fbe3b9026d08b31561a61a82e92" kind="typedef"><name>guild_command_permissions_map</name></member>
     <member refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kind="typedef"><name>guild_map</name></member>
     <member refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kind="typedef"><name>guild_member_map</name></member>
@@ -7563,6 +7567,7 @@
     <member refid="namespacedpp_1a555c45a82cfc92384477899e67a86183" kind="typedef"><name>timer_next_t</name></member>
     <member refid="namespacedpp_1ac9e8be057c39e90fcffe752ce430cd23" kind="typedef"><name>timers_deleted_t</name></member>
     <member refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kind="typedef"><name>user_map</name></member>
+    <member refid="namespacedpp_1a3fd7704763e9ba9cb6f5bf568e3ba118" kind="typedef"><name>voice_connection_gateway_request_callback_t</name></member>
     <member refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kind="typedef"><name>voiceregion_map</name></member>
     <member refid="namespacedpp_1aacfd609f0e027752b093141bc1739282" kind="typedef"><name>voicestate_map</name></member>
     <member refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kind="typedef"><name>webhook_map</name></member>

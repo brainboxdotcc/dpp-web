@@ -5,7 +5,7 @@ var classdpp_1_1discord__voice__client =
       [ "satype_live_audio", "classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219", null ],
       [ "satype_overlap_audio", "classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a", null ]
     ] ],
-    [ "discord_voice_client", "classdpp_1_1discord__voice__client.html#a631da143d224aed3051ccc649fd248c0", null ],
+    [ "discord_voice_client", "classdpp_1_1discord__voice__client.html#adcab57bcaf929d78c68dc7bbafd1f4b2", null ],
     [ "~discord_voice_client", "classdpp_1_1discord__voice__client.html#a9b06226881ba97a22d142c8fe4f5cbe9", null ],
     [ "close", "classdpp_1_1discord__voice__client.html#ab872768661dc89d54f0381b0fff5b674", null ],
     [ "complete_handshake", "classdpp_1_1discord__voice__client.html#acdd1152134b624d18a9e82162e64bafe", null ],
@@ -91,6 +91,7 @@ var classdpp_1_1discord__voice__client =
     [ "private_key_file", "classdpp_1_1discord__voice__client.html#aa8cfa2e6c511022b67dbd97cc57f0731", null ],
     [ "public_key_file", "classdpp_1_1discord__voice__client.html#ad7feee672079e07699e25f7250021c66", null ],
     [ "raw_trace", "classdpp_1_1discord__voice__client.html#a62161bc05909fc1d67f3a59c5fbf6e79", null ],
+    [ "reconnection_callback", "classdpp_1_1discord__voice__client.html#a9152e29fb01320a9eb16ec7116449ec1", null ],
     [ "send_audio_type", "classdpp_1_1discord__voice__client.html#aeb92c5a0a80eb5f0e4d4e987ec11432d", null ],
     [ "server_id", "classdpp_1_1discord__voice__client.html#ac1d99be8bb3a89a43e5f5b368fe63f7d", null ],
     [ "sessionid", "classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160", null ],

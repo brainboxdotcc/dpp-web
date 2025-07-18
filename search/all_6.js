@@ -547,7 +547,8 @@ var searchData=
   ['fuelpump_544',['fuelpump',['../namespacedpp_1_1unicode__emoji.html#a1cf0f865b756366411133e71e1026707',1,'dpp::unicode_emoji']]],
   ['full_5fmoon_545',['full_moon',['../namespacedpp_1_1unicode__emoji.html#a4fb2057723bf33249e00bbb3fd4bfc72',1,'dpp::unicode_emoji']]],
   ['full_5fmoon_5fwith_5fface_546',['full_moon_with_face',['../namespacedpp_1_1unicode__emoji.html#ab939c0f17b310874722f26dfd96970ba',1,'dpp::unicode_emoji']]],
-  ['func_547',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]],
-  ['function_548',['function',['../structdpp_1_1thread__pool__task.html#a4d5f2936734e19608b632d30ab504c95',1,'dpp::thread_pool_task']]],
-  ['funeral_5furn_549',['funeral_urn',['../namespacedpp_1_1unicode__emoji.html#ae74926f86eb0102f02cc477d8d0b8b18',1,'dpp::unicode_emoji']]]
+  ['full_5freconnection_5fcallback_5ft_547',['full_reconnection_callback_t',['../namespacedpp.html#a76d82cbd3ee9c6cd9fb600d97e3e5f16',1,'dpp']]],
+  ['func_548',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]],
+  ['function_549',['function',['../structdpp_1_1thread__pool__task.html#a4d5f2936734e19608b632d30ab504c95',1,'dpp::thread_pool_task']]],
+  ['funeral_5furn_550',['funeral_urn',['../namespacedpp_1_1unicode__emoji.html#ae74926f86eb0102f02cc477d8d0b8b18',1,'dpp::unicode_emoji']]]
 ];

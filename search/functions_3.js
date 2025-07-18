@@ -18,7 +18,7 @@ var searchData=
   ['disconnect_5fvoice_15',['disconnect_voice',['../classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78',1,'dpp::discord_client']]],
   ['disconnect_5fvoice_5finternal_16',['disconnect_voice_internal',['../classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71',1,'dpp::discord_client']]],
   ['discord_5fclient_17',['discord_client',['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client::discord_client(dpp::cluster *_cluster, uint32_t _shard_id, uint32_t _max_shards, const std::string &amp;_token, uint32_t intents=0, bool compressed=true, websocket_protocol_t ws_protocol=ws_json)'],['../classdpp_1_1discord__client.html#a3351021cf4eb96a90a7f0da8e1125af5',1,'dpp::discord_client::discord_client(discord_client &amp;old, uint64_t sequence, const std::string &amp;session_id)']]],
-  ['discord_5fvoice_5fclient_18',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a631da143d224aed3051ccc649fd248c0',1,'dpp::discord_voice_client']]],
+  ['discord_5fvoice_5fclient_18',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#adcab57bcaf929d78c68dc7bbafd1f4b2',1,'dpp::discord_voice_client']]],
   ['discord_5fwebhook_5fserver_19',['discord_webhook_server',['../structdpp_1_1discord__webhook__server.html#a547acdd5e1997cc970b72807a183e9bd',1,'dpp::discord_webhook_server']]],
   ['discover_5fip_20',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
   ['do_5fraw_5ftrace_21',['do_raw_trace',['../classdpp_1_1ssl__connection.html#a74d9da0f1f0c5feb46ed0995bd7d2e05',1,'dpp::ssl_connection']]],

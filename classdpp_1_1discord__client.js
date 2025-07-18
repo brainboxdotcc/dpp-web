@@ -53,7 +53,7 @@ var classdpp_1_1discord__client =
     [ "cipher", "classdpp_1_1discord__client.html#a0e0c14fe8f51c54ea280509c8c0e5140", null ],
     [ "connect_retries", "classdpp_1_1discord__client.html#a0d85356b40ea02323cc161af4f5467fc", null ],
     [ "connected", "classdpp_1_1discord__client.html#acf9eb0208d63e142a421f7f778b3a939", null ],
-    [ "connecting_voice_channels", "classdpp_1_1discord__client.html#ac254a3401c868ed2ad29adebab0ecf3c", null ],
+    [ "connecting_voice_channels", "classdpp_1_1discord__client.html#a61e37b18366c9b93d66ea09c614bf26f", null ],
     [ "creator", "classdpp_1_1discord__client.html#afed78d2e1b09e006ede8b4690895a866", null ],
     [ "heartbeat_interval", "classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7", null ],
     [ "hostname", "classdpp_1_1discord__client.html#aedf42057136f2fae90424a18daddce51", null ],

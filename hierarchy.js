@@ -78,6 +78,9 @@ var hierarchy =
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
     [ "dpp::detail::promise::empty", "structdpp_1_1detail_1_1promise_1_1empty.html", null ],
     [ "dpp::detail::when_any::empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ],
+    [ "std::enable_shared_from_this", null, [
+      [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ]
+    ] ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
     [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
@@ -527,7 +530,6 @@ var hierarchy =
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
-    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ],
     [ "dpp::detail::wrapped_ssl_ctx", "structdpp_1_1detail_1_1wrapped__ssl__ctx.html", null ],
     [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]

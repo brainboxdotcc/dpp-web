@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['webhook_5fmap_0',['webhook_map',['../namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca',1,'dpp']]],
-  ['work_5funit_1',['work_unit',['../namespacedpp.html#aef4c7438f07bccdcf3af16492e4fc627',1,'dpp']]]
+  ['voice_5fconnection_5fgateway_5frequest_5fcallback_5ft_0',['voice_connection_gateway_request_callback_t',['../namespacedpp.html#a3fd7704763e9ba9cb6f5bf568e3ba118',1,'dpp']]],
+  ['voiceregion_5fmap_1',['voiceregion_map',['../namespacedpp.html#ae90871830444cab0316109a1824fc0b8',1,'dpp']]],
+  ['voicestate_5fmap_2',['voicestate_map',['../namespacedpp.html#aacfd609f0e027752b093141bc1739282',1,'dpp']]]
 ];

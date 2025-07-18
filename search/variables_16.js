@@ -54,7 +54,7 @@ var searchData=
   ['voice_5fmembers_51',['voice_members',['../classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f',1,'dpp::guild']]],
   ['voice_5fmutex_52',['voice_mutex',['../classdpp_1_1discord__client.html#ac0f38f917182d7b847c8cabeed029e42',1,'dpp::discord_client']]],
   ['voice_5fprotocol_5fversion_53',['voice_protocol_version',['../namespacedpp.html#afbbdf6864ee7fd1a425a854a76584917',1,'dpp']]],
-  ['voiceclient_54',['voiceclient',['../classdpp_1_1voiceconn.html#a812e4cdee1fc7ed2a024d78161c84f86',1,'dpp::voiceconn']]],
+  ['voiceclient_54',['voiceclient',['../classdpp_1_1voiceconn.html#abfd122ef3aafa2e91e470fa0f6753a74',1,'dpp::voiceconn']]],
   ['volcano_55',['volcano',['../namespacedpp_1_1unicode__emoji.html#ade251965752fcbaf63d4ae4f85e753c0',1,'dpp::unicode_emoji']]],
   ['volleyball_56',['volleyball',['../namespacedpp_1_1unicode__emoji.html#a750a1e1cd28bfd6cbf6c773a7b4e292e',1,'dpp::unicode_emoji']]],
   ['vs_57',['vs',['../namespacedpp_1_1unicode__emoji.html#a5cb603822e427a51eb6e232537bfced8',1,'dpp::unicode_emoji']]],
