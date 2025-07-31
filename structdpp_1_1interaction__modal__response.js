@@ -2,6 +2,8 @@ var structdpp_1_1interaction__modal__response =
 [
     [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html#aa9b6ffe9f81f1a7c80366951dbd0e883", null ],
     [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html#aa7474d9c22a43b75d92a18b40d6fa42d", null ],
+    [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html#a6f65b164e325e23b5aebc372cadab497", null ],
+    [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html#a2f52ba66ae074c8ebc7defb712b393bc", null ],
     [ "~interaction_modal_response", "structdpp_1_1interaction__modal__response.html#ac35d013903ea4a8a90e0079ad82553ad", null ],
     [ "add_autocomplete_choice", "structdpp_1_1interaction__modal__response.html#aba47b23a0d825ab443c0f91711a94c9a", null ],
     [ "add_component", "structdpp_1_1interaction__modal__response.html#a0d65fe1381b216c4be6de01a4a522ef1", null ],
@@ -11,6 +13,8 @@ var structdpp_1_1interaction__modal__response =
     [ "fill_from_json", "structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json", "structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1interaction__modal__response.html#a78a3a4495eef7f723d76be0f42a6537f", null ],
+    [ "operator=", "structdpp_1_1interaction__modal__response.html#a938c3f03be4f8d1a59c61eed5c67c932", null ],
+    [ "operator=", "structdpp_1_1interaction__modal__response.html#a2bc8272ddba47313ed701a587e6061b4", null ],
     [ "set_custom_id", "structdpp_1_1interaction__modal__response.html#a4eafdde2472ba66f54455dedea51e95a", null ],
     [ "set_title", "structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235", null ],
     [ "to_json", "structdpp_1_1interaction__modal__response.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
