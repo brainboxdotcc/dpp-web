@@ -3,9 +3,7 @@
   <compounddef id="socket_8h" kind="file" language="C++">
     <compoundname>socket.h</compoundname>
     <includes refid="export_8h" local="no">dpp/export.h</includes>
-    <includes local="no">netinet/in.h</includes>
-    <includes local="no">sys/socket.h</includes>
-    <includes local="no">arpa/inet.h</includes>
+    <includes refid="compat_8h" local="no">dpp/compat.h</includes>
     <includes local="no">string_view</includes>
     <includes local="no">cstdint</includes>
     <includedby refid="discordvoiceclient_8h" local="no">discordvoiceclient.h</includedby>
@@ -14,6 +12,17 @@
     <includedby refid="socketengine_8h" local="no">socketengine.h</includedby>
     <includedby refid="sslconnection_8h" local="no">sslconnection.h</includedby>
     <incdepgraph>
+      <node id="3">
+        <label>dpp/compat.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>dpp/export.h</label>
       </node>
@@ -24,28 +33,27 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>arpa/inet.h</label>
       </node>
       <node id="7">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="9">
         <label>cstdint</label>
       </node>
-      <node id="3">
+      <node id="5">
         <label>netinet/in.h</label>
       </node>
-      <node id="6">
+      <node id="4">
+        <label>poll.h</label>
+      </node>
+      <node id="8">
         <label>string_view</label>
       </node>
-      <node id="4">
+      <node id="6">
         <label>sys/socket.h</label>
       </node>
     </incdepgraph>
@@ -254,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="63" column="9" bodyfile="include/dpp/socket.h" bodystart="63" bodyend="-1"/>
+        <location file="include/dpp/socket.h" line="54" column="9" bodyfile="include/dpp/socket.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="socket_8h_1a633b0396ff93d336a088412a190a5072" prot="public" static="no">
         <name>SOCKET_ERROR</name>
@@ -266,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket.h" line="56" column="9" bodyfile="include/dpp/socket.h" bodystart="56" bodyend="-1"/>
+        <location file="include/dpp/socket.h" line="47" column="9" bodyfile="include/dpp/socket.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -711,6 +711,7 @@ var namespacedpp =
       [ "yellow_orange", "namespacedpp_1_1colors.html#a1685b158dfb57b79981ce92ff9d0ed7c", null ],
       [ "zombie_green", "namespacedpp_1_1colors.html#a9786cfa44906aa349ed3c66fceece1c5", null ]
     ] ],
+    [ "compat", "namespacedpp_1_1compat.html", null ],
     [ "dave", "namespacedpp_1_1dave.html", "namespacedpp_1_1dave" ],
     [ "detail", "namespacedpp_1_1detail.html", "namespacedpp_1_1detail" ],
     [ "embed_type", "namespacedpp_1_1embed__type.html", [
