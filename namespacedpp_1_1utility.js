@@ -4,6 +4,7 @@ var namespacedpp_1_1utility =
     [ "icon", "structdpp_1_1utility_1_1icon.html", "structdpp_1_1utility_1_1icon" ],
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "image_data", "structdpp_1_1utility_1_1image__data.html", "structdpp_1_1utility_1_1image__data" ],
+    [ "primaryguild", "structdpp_1_1utility_1_1primaryguild.html", "structdpp_1_1utility_1_1primaryguild" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
     [ "avx_type_t", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699", [

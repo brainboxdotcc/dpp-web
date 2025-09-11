@@ -12,11 +12,12 @@ var searchData=
   ['presence_9',['presence',['../classdpp_1_1presence.html',1,'dpp']]],
   ['presence_5fupdate_10',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events']]],
   ['presence_5fupdate_5ft_11',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp']]],
-  ['promise_12',['promise',['../structdpp_1_1detail_1_1job_1_1promise.html',1,'dpp::detail::job']]],
-  ['promise_5fbase_13',['promise_base',['../classdpp_1_1detail_1_1promise_1_1promise__base.html',1,'dpp::detail::promise::promise_base&lt; T &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__base.html',1,'dpp::detail::task::promise_base&lt; R &gt;']]],
-  ['promise_5fbase_3c_20void_20_3e_14',['promise_base&lt; void &gt;',['../structdpp_1_1detail_1_1task_1_1promise__base.html',1,'dpp::detail::task']]],
-  ['promise_5ft_15',['promise_t',['../structdpp_1_1detail_1_1coroutine_1_1promise__t.html',1,'dpp::detail::coroutine::promise_t&lt; R &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__t.html',1,'dpp::detail::task::promise_t&lt; R &gt;']]],
-  ['promise_5ft_3c_20void_20_3e_16',['promise_t&lt; void &gt;',['../structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html',1,'dpp::detail::coroutine::promise_t&lt; void &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html',1,'dpp::detail::task::promise_t&lt; void &gt;']]],
-  ['proxy_5fawaiter_17',['proxy_awaiter',['../structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html',1,'dpp::detail::task::promise_base']]],
-  ['prune_18',['prune',['../structdpp_1_1prune.html',1,'dpp']]]
+  ['primaryguild_12',['primaryguild',['../structdpp_1_1utility_1_1primaryguild.html',1,'dpp::utility']]],
+  ['promise_13',['promise',['../structdpp_1_1detail_1_1job_1_1promise.html',1,'dpp::detail::job']]],
+  ['promise_5fbase_14',['promise_base',['../classdpp_1_1detail_1_1promise_1_1promise__base.html',1,'dpp::detail::promise::promise_base&lt; T &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__base.html',1,'dpp::detail::task::promise_base&lt; R &gt;']]],
+  ['promise_5fbase_3c_20void_20_3e_15',['promise_base&lt; void &gt;',['../structdpp_1_1detail_1_1task_1_1promise__base.html',1,'dpp::detail::task']]],
+  ['promise_5ft_16',['promise_t',['../structdpp_1_1detail_1_1coroutine_1_1promise__t.html',1,'dpp::detail::coroutine::promise_t&lt; R &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__t.html',1,'dpp::detail::task::promise_t&lt; R &gt;']]],
+  ['promise_5ft_3c_20void_20_3e_17',['promise_t&lt; void &gt;',['../structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html',1,'dpp::detail::coroutine::promise_t&lt; void &gt;'],['../structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html',1,'dpp::detail::task::promise_t&lt; void &gt;']]],
+  ['proxy_5fawaiter_18',['proxy_awaiter',['../structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html',1,'dpp::detail::task::promise_base']]],
+  ['prune_19',['prune',['../structdpp_1_1prune.html',1,'dpp']]]
 ];

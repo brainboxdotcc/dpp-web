@@ -57,6 +57,7 @@ var classdpp_1_1user__identified =
     [ "global_name", "classdpp_1_1user__identified.html#a2411b17e9e910111283c405d78bb25f9", null ],
     [ "id", "classdpp_1_1user__identified.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "locale", "classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b", null ],
+    [ "primary_guild", "classdpp_1_1user__identified.html#ab52231a681ca925085b80414ceba6b73", null ],
     [ "refcount", "classdpp_1_1user__identified.html#a68d336b1fc0b592ea970c11eaf9f2048", null ],
     [ "username", "classdpp_1_1user__identified.html#a4e72b2e5ac7d5539fdae64be6e01246c", null ],
     [ "verified", "classdpp_1_1user__identified.html#a351cc6902117ad39c86539a41e1c23cd", null ]

@@ -32,6 +32,7 @@ var classdpp_1_1interaction =
     [ "json_interface< interaction >", "classdpp_1_1interaction.html#adbf86946f0d3c7a7551b05c19510b4f1", null ],
     [ "app_permissions", "classdpp_1_1interaction.html#a1a91af243ab4d765ecadc025958a8a85", null ],
     [ "application_id", "classdpp_1_1interaction.html#a2575444b8e918c947fb4ffc30c442201", null ],
+    [ "attachment_size_limit", "classdpp_1_1interaction.html#a1b68c99a17e482d2f819c06b7c332acd", null ],
     [ "authorizing_integration_owners", "classdpp_1_1interaction.html#a940be1aea86c5e09328426d8dcdf4a68", null ],
     [ "cache_policy", "classdpp_1_1interaction.html#abc6027911679c409058e1ff4904154cc", null ],
     [ "channel", "classdpp_1_1interaction.html#a40bc62124a16f911fe27ac2a010f73fa", null ],

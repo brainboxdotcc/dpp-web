@@ -477,6 +477,7 @@ var hierarchy =
     [ "dpp::poll_answer", "structdpp_1_1poll__answer.html", null ],
     [ "dpp::poll_media", "structdpp_1_1poll__media.html", null ],
     [ "dpp::poll_results", "structdpp_1_1poll__results.html", null ],
+    [ "dpp::utility::primaryguild", "structdpp_1_1utility_1_1primaryguild.html", null ],
     [ "dpp::detail::job::promise< Args >", "structdpp_1_1detail_1_1job_1_1promise.html", null ],
     [ "dpp::detail::promise::promise_base< T >", "classdpp_1_1detail_1_1promise_1_1promise__base.html", [
       [ "dpp::basic_promise< R >", "classdpp_1_1basic__promise.html", [
