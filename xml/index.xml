@@ -1021,6 +1021,7 @@
     <member refid="classdpp_1_1cluster_1a5e3f97577e5948896b38836fd293cefd" kind="function"><name>channel_invite_create</name></member>
     <member refid="classdpp_1_1cluster_1aa03a0da5c8e6801dc56bda258265da04" kind="function"><name>channel_invites_get</name></member>
     <member refid="classdpp_1_1cluster_1a553bfda3b4f1671e75c5713275b781bd" kind="function"><name>channel_pins_get</name></member>
+    <member refid="classdpp_1_1cluster_1a8476950cb9fc5a470c96fcc85d1aa0b8" kind="function"><name>channel_pins_get</name></member>
     <member refid="classdpp_1_1cluster_1a71bc078e39cf968613ee15d3ea37de6e" kind="function"><name>channel_set_voice_status</name></member>
     <member refid="classdpp_1_1cluster_1aff1ad5764f2878eec2e7cbed3a231bbe" kind="function"><name>channel_typing</name></member>
     <member refid="classdpp_1_1cluster_1aac0f01d11e06168e68b0e798ef7ce61b" kind="function"><name>channel_typing</name></member>
@@ -4126,6 +4127,23 @@
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a69bd295380f5f5395bdb0cb21dcf9111" kind="variable"><name>type</name></member>
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a5c04b0bdf214a00f07d24f8ced952525" kind="variable"><name>usr</name></member>
   </compound>
+  <compound refid="classdpp_1_1message__pin" kind="class"><name>dpp::message_pin</name>
+    <member refid="classdpp_1_1message__pin_1a3956bf9cc0f7e6de6d4f91a73fc1e4c3" kind="friend"><name>json_interface&lt; message_pin &gt;</name></member>
+    <member refid="classdpp_1_1message__pin_1a858a4e915c5c2b741c555d1f7297ad36" kind="variable"><name>pinned_at</name></member>
+    <member refid="classdpp_1_1message__pin_1ab21d8d165be312ab0bca1299bc8146cc" kind="variable"><name>pinned_message</name></member>
+    <member refid="classdpp_1_1message__pin_1ace32a3f3ead04a5892e7c4337cec7430" kind="function"><name>fill_from_json_impl</name></member>
+    <member refid="classdpp_1_1message__pin_1a79ff2b3bdcd2b3badb5de90135a0a75c" kind="function"><name>to_json</name></member>
+    <member refid="classdpp_1_1message__pin_1a84d63eb40beb117287a3bbb252a04a4d" kind="function"><name>message_pin</name></member>
+    <member refid="classdpp_1_1message__pin_1aac509817221df4fec0d2788992cbf13a" kind="function"><name>message_pin</name></member>
+    <member refid="classdpp_1_1message__pin_1a9c19b013b3be8dd15c379305924ee8f3" kind="function"><name>message_pin</name></member>
+    <member refid="classdpp_1_1message__pin_1a68d4c1bdca0b15e6705ebf306784708f" kind="function"><name>message_pin</name></member>
+    <member refid="classdpp_1_1message__pin_1aee4be91915dce092d922a3448f06a5f2" kind="function"><name>~message_pin</name></member>
+    <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" kind="function"><name>fill_from_json</name></member>
+    <member refid="classdpp_1_1message__pin_1a7a9656a527ab2f545afe985be744ee9f" kind="function"><name>operator=</name></member>
+    <member refid="classdpp_1_1message__pin_1a8c4c516e6c8578bd94a14a170e7de00b" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" kind="function"><name>to_json</name></member>
+  </compound>
   <compound refid="classdpp_1_1events_1_1message__poll__vote__add" kind="class"><name>dpp::events::message_poll_vote_add</name>
     <member refid="classdpp_1_1events_1_1message__poll__vote__add_1af92a061e3180bd67f7cc320b23ac7bc7" kind="function"><name>handle</name></member>
   </compound>
@@ -4843,6 +4861,7 @@
     <member refid="classdpp_1_1role_1a12d4fba5e5a0a02425c923234dd486bf" kind="function"><name>has_moderate_members</name></member>
     <member refid="classdpp_1_1role_1ac9605d0d14e4fff0c0848e08682c6da5" kind="function"><name>has_move_members</name></member>
     <member refid="classdpp_1_1role_1a504ae68edc2bfe1c21ffdb6745c1194c" kind="function"><name>has_mute_members</name></member>
+    <member refid="classdpp_1_1role_1a2d2505749dc22fe91918c31676c8591f" kind="function"><name>has_pin_messages</name></member>
     <member refid="classdpp_1_1role_1a640358a9aa6e34c0e0b16020af176e55" kind="function"><name>has_priority_speaker</name></member>
     <member refid="classdpp_1_1role_1ac5f664643c59d7e24271bb790735c68f" kind="function"><name>has_read_message_history</name></member>
     <member refid="classdpp_1_1role_1a84cfa9cd3dc9526f3a6a04ae25d3c775" kind="function"><name>has_request_to_speak</name></member>
@@ -7358,6 +7377,7 @@
     <member refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ac6404354f63e4d854be8f2cd1022ff36" kind="enumvalue"><name>p_use_external_sounds</name></member>
     <member refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9" kind="enumvalue"><name>p_send_voice_messages</name></member>
     <member refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2" kind="enumvalue"><name>p_use_clyde_ai</name></member>
+    <member refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ab2372ff3248ba10c94ac4bddebe27a28" kind="enumvalue"><name>p_pin_messages</name></member>
     <member refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" kind="enum"><name>poll_layout_type</name></member>
     <member refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6" kind="enumvalue"><name>pl_default</name></member>
     <member refid="namespacedpp_1a953f1484a5140481ffab2b248618fb22" kind="enum"><name>presence_flags</name></member>
@@ -7569,7 +7589,7 @@
     <member refid="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" kind="typedef"><name>command_parameter</name></member>
     <member refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kind="typedef"><name>command_value</name></member>
     <member refid="namespacedpp_1a409d609e310268e04782e398a38f7c06" kind="typedef"><name>component_emoji</name></member>
-    <member refid="namespacedpp_1ab9d3c7966f425ceea724a1dcd4218bc4" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1a2d27bb375e7e419a1fad56100a9c27f7" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kind="typedef"><name>connection_map</name></member>
     <member refid="namespacedpp_1ae85e1c4be79e3284d57af6eb20f52d14" kind="typedef"><name>dns_cache_t</name></member>
     <member refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kind="typedef"><name>dtemplate_map</name></member>
@@ -7592,6 +7612,7 @@
     <member refid="namespacedpp_1a674dfd30e37779538e80d95fcb13770f" kind="typedef"><name>members_container</name></member>
     <member refid="namespacedpp_1a51b63457959e1729f307f1e943ebf00d" kind="typedef"><name>message_collector_t</name></member>
     <member refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kind="typedef"><name>message_map</name></member>
+    <member refid="namespacedpp_1af72aca7e3ad78c552e0acec8def61850" kind="typedef"><name>message_pin_map</name></member>
     <member refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kind="typedef"><name>parameter_list_t</name></member>
     <member refid="namespacedpp_1a6daf230da747f01eeaa36fd3d5e51a65" kind="typedef"><name>parameter_registration_t</name></member>
     <member refid="namespacedpp_1aa71f7e347422516d1022707f1d3e5b1c" kind="typedef"><name>presence_map</name></member>

@@ -369,6 +369,9 @@ var hierarchy =
     [ "dpp::json_interface< message >", "structdpp_1_1json__interface.html", [
       [ "dpp::message", "structdpp_1_1message.html", null ]
     ] ],
+    [ "dpp::json_interface< message_pin >", "structdpp_1_1json__interface.html", [
+      [ "dpp::message_pin", "classdpp_1_1message__pin.html", null ]
+    ] ],
     [ "dpp::json_interface< onboarding >", "structdpp_1_1json__interface.html", [
       [ "dpp::onboarding", "structdpp_1_1onboarding.html", null ]
     ] ],

@@ -212,6 +212,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a553bfda3b4f1671e75c5713275b781bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a553bfda3b4f1671e75c5713275b781bd">channel_pins_get</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a553bfda3b4f1671e75c5713275b781bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a channel's pins.  <a href="classdpp_1_1cluster.html#a553bfda3b4f1671e75c5713275b781bd">More...</a><br /></td></tr>
 <tr class="separator:a553bfda3b4f1671e75c5713275b781bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8476950cb9fc5a470c96fcc85d1aa0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a8476950cb9fc5a470c96fcc85d1aa0b8">channel_pins_get</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, std::optional&lt; time_t &gt; before, std::optional&lt; uint64_t &gt; limit, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a8476950cb9fc5a470c96fcc85d1aa0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a channel's pins.  <a href="classdpp_1_1cluster.html#a8476950cb9fc5a470c96fcc85d1aa0b8">More...</a><br /></td></tr>
+<tr class="separator:a8476950cb9fc5a470c96fcc85d1aa0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71bc078e39cf968613ee15d3ea37de6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a71bc078e39cf968613ee15d3ea37de6e">channel_set_voice_status</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, const std::string &amp;status, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a71bc078e39cf968613ee15d3ea37de6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the status of a voice channel.  <a href="classdpp_1_1cluster.html#a71bc078e39cf968613ee15d3ea37de6e">More...</a><br /></td></tr>
 <tr class="separator:a71bc078e39cf968613ee15d3ea37de6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2997,7 +3000,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a553bfda3b4f1671e75c5713275b781bd" name="a553bfda3b4f1671e75c5713275b781bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a553bfda3b4f1671e75c5713275b781bd">&#9670;&nbsp;</a></span>channel_pins_get()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a553bfda3b4f1671e75c5713275b781bd">&#9670;&nbsp;</a></span>channel_pins_get() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3027,7 +3030,59 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel ID to get pins for </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708" title="A group of messages.">dpp::message_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463" title="Value returned, wrapped in variant.">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#af72aca7e3ad78c552e0acec8def61850" title="A group of pinned messages.">dpp::message_pin_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463" title="Value returned, wrapped in variant.">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8476950cb9fc5a470c96fcc85d1aa0b8" name="a8476950cb9fc5a470c96fcc85d1aa0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8476950cb9fc5a470c96fcc85d1aa0b8">&#9670;&nbsp;</a></span>channel_pins_get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::channel_pins_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; time_t &gt;&#160;</td>
+          <td class="paramname"><em>before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; uint64_t &gt;&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a channel's pins. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-pinned-messages">https://discord.com/developers/docs/resources/channel#get-pinned-messages</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Channel ID to get pins for </td></tr>
+    <tr><td class="paramname">before</td><td>Get messages pinned before this timestamp. </td></tr>
+    <tr><td class="paramname">limit</td><td>Max number of pins to return (1-50). Defaults to 50 if not set. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#af72aca7e3ad78c552e0acec8def61850" title="A group of pinned messages.">dpp::message_pin_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463" title="Value returned, wrapped in variant.">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>

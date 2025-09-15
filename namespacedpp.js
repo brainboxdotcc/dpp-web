@@ -6607,6 +6607,7 @@ var namespacedpp =
     [ "message_delete_bulk_t", "structdpp_1_1message__delete__bulk__t.html", "structdpp_1_1message__delete__bulk__t" ],
     [ "message_delete_t", "structdpp_1_1message__delete__t.html", "structdpp_1_1message__delete__t" ],
     [ "message_file_data", "structdpp_1_1message__file__data.html", "structdpp_1_1message__file__data" ],
+    [ "message_pin", "classdpp_1_1message__pin.html", "classdpp_1_1message__pin" ],
     [ "message_poll_vote_add_t", "structdpp_1_1message__poll__vote__add__t.html", "structdpp_1_1message__poll__vote__add__t" ],
     [ "message_poll_vote_remove_t", "structdpp_1_1message__poll__vote__remove__t.html", "structdpp_1_1message__poll__vote__remove__t" ],
     [ "message_reaction_add_t", "structdpp_1_1message__reaction__add__t.html", "structdpp_1_1message__reaction__add__t" ],
@@ -6726,7 +6727,7 @@ var namespacedpp =
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
     [ "component_emoji", "namespacedpp.html#a409d609e310268e04782e398a38f7c06", null ],
-    [ "confirmable_t", "namespacedpp.html#ab9d3c7966f425ceea724a1dcd4218bc4", null ],
+    [ "confirmable_t", "namespacedpp.html#a2d27bb375e7e419a1fad56100a9c27f7", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dns_cache_t", "namespacedpp.html#ae85e1c4be79e3284d57af6eb20f52d14", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
@@ -6749,6 +6750,7 @@ var namespacedpp =
     [ "members_container", "namespacedpp.html#a674dfd30e37779538e80d95fcb13770f", null ],
     [ "message_collector_t", "namespacedpp.html#a51b63457959e1729f307f1e943ebf00d", null ],
     [ "message_map", "namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708", null ],
+    [ "message_pin_map", "namespacedpp.html#af72aca7e3ad78c552e0acec8def61850", null ],
     [ "parameter_list_t", "namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1", null ],
     [ "parameter_registration_t", "namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65", null ],
     [ "presence_map", "namespacedpp.html#aa71f7e347422516d1022707f1d3e5b1c", null ],
@@ -7748,7 +7750,8 @@ var namespacedpp =
       [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ],
       [ "p_use_external_sounds", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ac6404354f63e4d854be8f2cd1022ff36", null ],
       [ "p_send_voice_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9", null ],
-      [ "p_use_clyde_ai", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2", null ]
+      [ "p_use_clyde_ai", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2", null ],
+      [ "p_pin_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ab2372ff3248ba10c94ac4bddebe27a28", null ]
     ] ],
     [ "poll_layout_type", "namespacedpp.html#ae5ffe09f834e517ee9574f04cb7b8cc8", [
       [ "pl_default", "namespacedpp.html#ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6", null ]

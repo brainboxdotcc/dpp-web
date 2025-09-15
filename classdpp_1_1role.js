@@ -38,6 +38,7 @@ var classdpp_1_1role =
     [ "has_moderate_members", "classdpp_1_1role.html#a12d4fba5e5a0a02425c923234dd486bf", null ],
     [ "has_move_members", "classdpp_1_1role.html#ac9605d0d14e4fff0c0848e08682c6da5", null ],
     [ "has_mute_members", "classdpp_1_1role.html#a504ae68edc2bfe1c21ffdb6745c1194c", null ],
+    [ "has_pin_messages", "classdpp_1_1role.html#a2d2505749dc22fe91918c31676c8591f", null ],
     [ "has_priority_speaker", "classdpp_1_1role.html#a640358a9aa6e34c0e0b16020af176e55", null ],
     [ "has_read_message_history", "classdpp_1_1role.html#ac5f664643c59d7e24271bb790735c68f", null ],
     [ "has_request_to_speak", "classdpp_1_1role.html#a84cfa9cd3dc9526f3a6a04ae25d3c775", null ],
