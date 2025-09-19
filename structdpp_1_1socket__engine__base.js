@@ -3,7 +3,7 @@ var structdpp_1_1socket__engine__base =
     [ "socket_engine_base", "structdpp_1_1socket__engine__base.html#a3177d7e1f55655d1b0256b3c401b8640", null ],
     [ "socket_engine_base", "structdpp_1_1socket__engine__base.html#ab41f58817f27a5a20633e9aa14d5f074", null ],
     [ "socket_engine_base", "structdpp_1_1socket__engine__base.html#a68b43e48f602124007d21e472466bcdc", null ],
-    [ "~socket_engine_base", "structdpp_1_1socket__engine__base.html#a08a48b2da040d807140eb34edc42f653", null ],
+    [ "~socket_engine_base", "structdpp_1_1socket__engine__base.html#ad7b7d42cd2c86b1caaefa5590d02de5f", null ],
     [ "delete_socket", "structdpp_1_1socket__engine__base.html#af90ba41a8ef7292e81d44c053f28470f", null ],
     [ "get_fd", "structdpp_1_1socket__engine__base.html#a8c1fa27742dd26974355590fe5c5e5c8", null ],
     [ "get_stats", "structdpp_1_1socket__engine__base.html#a73e1a6b45637f08955137ded7e825155", null ],

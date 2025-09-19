@@ -66,7 +66,7 @@ var searchData=
   ['_7escheduled_5fevent_5fcollector_63',['~scheduled_event_collector',['../classdpp_1_1scheduled__event__collector.html#a47ee6f70a6a24979632072b6df069b09',1,'dpp::scheduled_event_collector']]],
   ['_7eselect_5foption_64',['~select_option',['../structdpp_1_1select__option.html#a4386959efc6c72b0e302e8644aec42af',1,'dpp::select_option']]],
   ['_7eslashcommand_65',['~slashcommand',['../classdpp_1_1slashcommand.html#af9b1e4bd5318905d499b318789a41587',1,'dpp::slashcommand']]],
-  ['_7esocket_5fengine_5fbase_66',['~socket_engine_base',['../structdpp_1_1socket__engine__base.html#a08a48b2da040d807140eb34edc42f653',1,'dpp::socket_engine_base']]],
+  ['_7esocket_5fengine_5fbase_66',['~socket_engine_base',['../structdpp_1_1socket__engine__base.html#ad7b7d42cd2c86b1caaefa5590d02de5f',1,'dpp::socket_engine_base']]],
   ['_7esocket_5flistener_67',['~socket_listener',['../structdpp_1_1socket__listener.html#ada36ac97c4b68ace8653394fb94f6107',1,'dpp::socket_listener']]],
   ['_7essl_5fconnection_68',['~ssl_connection',['../classdpp_1_1ssl__connection.html#a23c94174be8ca86f9d4e30931bd4ff12',1,'dpp::ssl_connection']]],
   ['_7estage_5finstance_69',['~stage_instance',['../structdpp_1_1stage__instance.html#a88af3a5f8cead59a98c9ae7a695695a7',1,'dpp::stage_instance']]],
