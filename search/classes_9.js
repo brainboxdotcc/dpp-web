@@ -51,9 +51,10 @@ var searchData=
   ['json_5finterface_3c_20thread_5fmember_20_3e_48',['json_interface&lt; thread_member &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
   ['json_5finterface_3c_20user_20_3e_49',['json_interface&lt; user &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
   ['json_5finterface_3c_20user_5fidentified_20_3e_50',['json_interface&lt; user_identified &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20voiceregion_20_3e_51',['json_interface&lt; voiceregion &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20voicestate_20_3e_52',['json_interface&lt; voicestate &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20webhook_20_3e_53',['json_interface&lt; webhook &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20welcome_5fchannel_20_3e_54',['json_interface&lt; welcome_channel &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20welcome_5fscreen_20_3e_55',['json_interface&lt; welcome_screen &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]]
+  ['json_5finterface_3c_20voice_5fchannel_5feffect_20_3e_51',['json_interface&lt; voice_channel_effect &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20voiceregion_20_3e_52',['json_interface&lt; voiceregion &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20voicestate_20_3e_53',['json_interface&lt; voicestate &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20webhook_20_3e_54',['json_interface&lt; webhook &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20welcome_5fchannel_20_3e_55',['json_interface&lt; welcome_channel &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20welcome_5fscreen_20_3e_56',['json_interface&lt; welcome_screen &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]]
 ];

@@ -974,6 +974,7 @@
     <member refid="classdpp_1_1cluster_1a7798d46a55b89e79d7674430f76f1baa" kind="variable"><name>on_user_context_menu</name></member>
     <member refid="classdpp_1_1cluster_1a832e978df105033f7d3ea8ca0d0573cb" kind="variable"><name>on_user_update</name></member>
     <member refid="classdpp_1_1cluster_1a4b702b26b73692e0aab0743f4ed07ef9" kind="variable"><name>on_voice_buffer_send</name></member>
+    <member refid="classdpp_1_1cluster_1a7d82e1210e8d9e5549f21e7953881b11" kind="variable"><name>on_voice_channel_effect_send</name></member>
     <member refid="classdpp_1_1cluster_1ad0a97571a6609c6c6a7fb4393972eaed" kind="variable"><name>on_voice_client_disconnect</name></member>
     <member refid="classdpp_1_1cluster_1a31655ceaf4c8c589c770cd6287dc604f" kind="variable"><name>on_voice_client_platform</name></member>
     <member refid="classdpp_1_1cluster_1a64e8359d2f739a06f9a522c340ac38f5" kind="variable"><name>on_voice_client_speaking</name></member>
@@ -6049,6 +6050,45 @@
     <member refid="structdpp_1_1voice__buffer__send__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
     <member refid="structdpp_1_1voice__buffer__send__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
   </compound>
+  <compound refid="classdpp_1_1voice__channel__effect" kind="class"><name>dpp::voice_channel_effect</name>
+    <member refid="classdpp_1_1voice__channel__effect_1a633dfc52f77c900e6ccbea89342d1815" kind="friend"><name>json_interface&lt; voice_channel_effect &gt;</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a99428d0b76f678d8701410529e067d98" kind="variable"><name>animation_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a86ac172eee0d19378942887de50c6d11" kind="variable"><name>animation_type</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1aa56f20cbbed95607afc102285e63fb14" kind="variable"><name>channel_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a7386d88ec74d1b4b9f234fad640f8769" kind="variable"><name>emoji</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1af8e71b7843b6a2c45447b06ea99e68b9" kind="variable"><name>guild_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a0f3a72a54a492f03b1ad65475ad8b28a" kind="variable"><name>shard_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a571e5f9130d9bd1a4ae88095d9148939" kind="variable"><name>sound_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1af899df8e5b4e45704a7a3fe7981ffcc3" kind="variable"><name>sound_volume</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a79bfbc43a8c4ab9f2faf3b4103072e47" kind="variable"><name>user_id</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a1e05f4f761c04b040b6c78fd18c35eab" kind="function"><name>fill_from_json_impl</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1ad133d46dde38abde5c0da85efcc2c7bf" kind="function"><name>voice_channel_effect</name></member>
+    <member refid="classdpp_1_1voice__channel__effect_1a42474d60bbee5825d7ff4ac28bc923e1" kind="function"><name>~voice_channel_effect</name></member>
+    <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" kind="function"><name>to_json</name></member>
+  </compound>
+  <compound refid="classdpp_1_1events_1_1voice__channel__effect__send" kind="class"><name>dpp::events::voice_channel_effect_send</name>
+    <member refid="classdpp_1_1events_1_1voice__channel__effect__send_1ab09cca6afb7113a61d03c457ceaf7d20" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="structdpp_1_1voice__channel__effect__send__t" kind="struct"><name>dpp::voice_channel_effect_send_t</name>
+    <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1ad59be91d3793a285688f6ec69550bfc7" kind="variable"><name>effect</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a8a87dcb222d9e2444a50b4df5caa28d4" kind="variable"><name>owner</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5c277ee79a8ef31736dc3795dbfc8d3f" kind="variable"><name>shard</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1ad761e8dec36073665f520aaa13fbe6dc" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1ae250d3a1ee0ad2e90ad075e1aead5478" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1a143ee2c836c05740204e3d90f26d148b" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1a1fa0821763f9cd81e1bc4935cda31204" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1aae35038ecb874c46e355fac3863615d0" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a7ef6731ea526ef76928c459e19723fbb" kind="function"><name>from</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1voice__channel__effect__send__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
+  </compound>
   <compound refid="structdpp_1_1voice__client__disconnect__t" kind="struct"><name>dpp::voice_client_disconnect_t</name>
     <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a8a87dcb222d9e2444a50b4df5caa28d4" kind="variable"><name>owner</name></member>
@@ -6493,6 +6533,9 @@
     <member refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b" kind="enumvalue"><name>at_watching</name></member>
     <member refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400" kind="enumvalue"><name>at_custom</name></member>
     <member refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72" kind="enumvalue"><name>at_competing</name></member>
+    <member refid="namespacedpp_1aa2eb65bbbd720fcbcb91d874f376b862" kind="enum"><name>animation_types</name></member>
+    <member refid="namespacedpp_1aa2eb65bbbd720fcbcb91d874f376b862a48b912dab0556bb2aba2695e0ae56a54" kind="enumvalue"><name>at_premium</name></member>
+    <member refid="namespacedpp_1aa2eb65bbbd720fcbcb91d874f376b862a3d5fe52becf56b2325be1567e207dd63" kind="enumvalue"><name>at_basic</name></member>
     <member refid="namespacedpp_1a0166b78eade2324d2a3da9c0dd38ebd8" kind="enum"><name>application_event_webhook_status</name></member>
     <member refid="namespacedpp_1a0166b78eade2324d2a3da9c0dd38ebd8a2280f4cf476dacb975fe000e62ab006e" kind="enumvalue"><name>ews_disabled</name></member>
     <member refid="namespacedpp_1a0166b78eade2324d2a3da9c0dd38ebd8ae31cf64ce532b56971c5b274f40cbb8e" kind="enumvalue"><name>ews_enabled</name></member>
@@ -14790,6 +14833,8 @@
     <member refid="version_8h_1a4f5347ebf0489aa747df0ef27e0fb41e" kind="define"><name>DPP_VERSION_PATCH</name></member>
     <member refid="version_8h_1a3cdbc05fe7a7b6ac29081f60ee136c94" kind="define"><name>DPP_VERSION_SHORT</name></member>
     <member refid="version_8h_1ad66bbff10f1e81ed6d3422805d81028d" kind="define"><name>DPP_VERSION_TEXT</name></member>
+  </compound>
+  <compound refid="voice__channel__effect_8h" kind="file"><name>voice_channel_effect.h</name>
   </compound>
   <compound refid="voiceregion_8h" kind="file"><name>voiceregion.h</name>
   </compound>

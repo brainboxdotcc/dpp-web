@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('separate-events.html',''); initResizab
 <div class="line">    <span class="keyword">static</span> <span class="keywordtype">void</span> on_message_create(<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a>&amp; event);</div>
 <div class="line"> </div>
 <div class="line">};</div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1739</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1746</div></div>
 </div><!-- fragment --><p >Then we need to add our code for what should happen when this event fires. We do this in the <code>message_listener.cpp</code>, like so:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;message_listener.h&quot;</span></div>
 <div class="line"> </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('separate-events.html',''); initResizab
 <div class="line">    <span class="keyword">event</span>.reply(<span class="stringliteral">&quot;That is not allowed here. Please, mind your language!&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html_a02298492087c0ba68eeb4ea8e42833b4"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">dpp::message_create_t::msg</a></div><div class="ttdeci">message msg</div><div class="ttdoc">message that was created (sent).</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1746</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a02298492087c0ba68eeb4ea8e42833b4"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">dpp::message_create_t::msg</a></div><div class="ttdeci">message msg</div><div class="ttdoc">message that was created (sent).</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1753</div></div>
 <div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdoc">Contents of the message.</div><div class="ttdef"><b>Definition:</b> message.h:2385</div></div>
 </div><!-- fragment --><p >Now, you'll have a nice area where you can easily see the code, without scrolling through all of your <code>main.cpp</code> file just to get to this event!</p>
 <p >However, we've not finished yet! If you thought "How does the `main.cpp` file actually know to call this?" then, 10 points to you! It doesn't know! We need to go do that now. So, let's do exactly that.</p>

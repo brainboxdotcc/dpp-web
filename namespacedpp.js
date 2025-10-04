@@ -6693,6 +6693,8 @@ var namespacedpp =
     [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
+    [ "voice_channel_effect", "classdpp_1_1voice__channel__effect.html", "classdpp_1_1voice__channel__effect" ],
+    [ "voice_channel_effect_send_t", "structdpp_1_1voice__channel__effect__send__t.html", "structdpp_1_1voice__channel__effect__send__t" ],
     [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
     [ "voice_client_platform_t", "structdpp_1_1voice__client__platform__t.html", "structdpp_1_1voice__client__platform__t" ],
     [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],
@@ -6805,6 +6807,10 @@ var namespacedpp =
       [ "at_watching", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b", null ],
       [ "at_custom", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400", null ],
       [ "at_competing", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72", null ]
+    ] ],
+    [ "animation_types", "namespacedpp.html#aa2eb65bbbd720fcbcb91d874f376b862", [
+      [ "at_premium", "namespacedpp.html#aa2eb65bbbd720fcbcb91d874f376b862a48b912dab0556bb2aba2695e0ae56a54", null ],
+      [ "at_basic", "namespacedpp.html#aa2eb65bbbd720fcbcb91d874f376b862a3d5fe52becf56b2325be1567e207dd63", null ]
     ] ],
     [ "application_event_webhook_status", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8", [
       [ "ews_disabled", "namespacedpp.html#a0166b78eade2324d2a3da9c0dd38ebd8a2280f4cf476dacb975fe000e62ab006e", null ],

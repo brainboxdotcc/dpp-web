@@ -150,6 +150,7 @@ var hierarchy =
       [ "dpp::events::thread_update", "classdpp_1_1events_1_1thread__update.html", null ],
       [ "dpp::events::typing_start", "classdpp_1_1events_1_1typing__start.html", null ],
       [ "dpp::events::user_update", "classdpp_1_1events_1_1user__update.html", null ],
+      [ "dpp::events::voice_channel_effect_send", "classdpp_1_1events_1_1voice__channel__effect__send.html", null ],
       [ "dpp::events::voice_server_update", "classdpp_1_1events_1_1voice__server__update.html", null ],
       [ "dpp::events::voice_state_update", "classdpp_1_1events_1_1voice__state__update.html", null ],
       [ "dpp::events::webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", null ]
@@ -231,6 +232,7 @@ var hierarchy =
       [ "dpp::typing_start_t", "structdpp_1_1typing__start__t.html", null ],
       [ "dpp::user_update_t", "structdpp_1_1user__update__t.html", null ],
       [ "dpp::voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", null ],
+      [ "dpp::voice_channel_effect_send_t", "structdpp_1_1voice__channel__effect__send__t.html", null ],
       [ "dpp::voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", null ],
       [ "dpp::voice_client_platform_t", "structdpp_1_1voice__client__platform__t.html", null ],
       [ "dpp::voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", null ],
@@ -424,6 +426,9 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< user_identified >", "structdpp_1_1json__interface.html", [
       [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
+    ] ],
+    [ "dpp::json_interface< voice_channel_effect >", "structdpp_1_1json__interface.html", [
+      [ "dpp::voice_channel_effect", "classdpp_1_1voice__channel__effect.html", null ]
     ] ],
     [ "dpp::json_interface< voiceregion >", "structdpp_1_1json__interface.html", [
       [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ]

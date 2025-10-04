@@ -104,6 +104,7 @@ var annotated_dup =
         [ "thread_update", "classdpp_1_1events_1_1thread__update.html", "classdpp_1_1events_1_1thread__update" ],
         [ "typing_start", "classdpp_1_1events_1_1typing__start.html", "classdpp_1_1events_1_1typing__start" ],
         [ "user_update", "classdpp_1_1events_1_1user__update.html", "classdpp_1_1events_1_1user__update" ],
+        [ "voice_channel_effect_send", "classdpp_1_1events_1_1voice__channel__effect__send.html", "classdpp_1_1events_1_1voice__channel__effect__send" ],
         [ "voice_server_update", "classdpp_1_1events_1_1voice__server__update.html", "classdpp_1_1events_1_1voice__server__update" ],
         [ "voice_state_update", "classdpp_1_1events_1_1voice__state__update.html", "classdpp_1_1events_1_1voice__state__update" ],
         [ "webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", "classdpp_1_1events_1_1webhooks__update" ]
@@ -361,6 +362,8 @@ var annotated_dup =
       [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
       [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
       [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
+      [ "voice_channel_effect", "classdpp_1_1voice__channel__effect.html", "classdpp_1_1voice__channel__effect" ],
+      [ "voice_channel_effect_send_t", "structdpp_1_1voice__channel__effect__send__t.html", "structdpp_1_1voice__channel__effect__send__t" ],
       [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
       [ "voice_client_platform_t", "structdpp_1_1voice__client__platform__t.html", "structdpp_1_1voice__client__platform__t" ],
       [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],

@@ -77,13 +77,14 @@ var searchData=
   ['_7etimed_5flistener_74',['~timed_listener',['../classdpp_1_1timed__listener.html#a60aecf4b71039950d7965adca65dc7d7',1,'dpp::timed_listener']]],
   ['_7euser_75',['~user',['../classdpp_1_1user.html#ab10c88f47447a074038417d2a8867288',1,'dpp::user']]],
   ['_7euser_5fidentified_76',['~user_identified',['../classdpp_1_1user__identified.html#ad6dd7b948db3b2f469be27e45303169d',1,'dpp::user_identified']]],
-  ['_7evoiceconn_77',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
-  ['_7evoiceregion_78',['~voiceregion',['../classdpp_1_1voiceregion.html#a9617792a8ad16a03a2ce0d8c281c048f',1,'dpp::voiceregion']]],
-  ['_7evoicestate_79',['~voicestate',['../classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6',1,'dpp::voicestate']]],
-  ['_7ewebsocket_5fclient_80',['~websocket_client',['../classdpp_1_1websocket__client.html#a32f422f3a5a7a1aeb35a273be5c66d17',1,'dpp::websocket_client']]],
-  ['_7ewelcome_5fchannel_81',['~welcome_channel',['../structdpp_1_1welcome__channel.html#a61b137ecb835591f27cbd3667c72d4fe',1,'dpp::welcome_channel']]],
-  ['_7ewelcome_5fscreen_82',['~welcome_screen',['../structdpp_1_1welcome__screen.html#a3816482fdccc1630b4e21f3765c6c344',1,'dpp::welcome_screen']]],
-  ['_7ewhen_5fany_83',['~when_any',['../classdpp_1_1when__any.html#afd5177c85419c2cb85458f83d8281862',1,'dpp::when_any']]],
-  ['_7ewrapped_5fssl_5fctx_84',['~wrapped_ssl_ctx',['../structdpp_1_1detail_1_1wrapped__ssl__ctx.html#a2772e6f01fd9c46ca759c75ac92522ac',1,'dpp::detail::wrapped_ssl_ctx']]],
-  ['_7ezlibcontext_85',['~zlibcontext',['../classdpp_1_1zlibcontext.html#a8c2d6b0e54a1c7f1f563549b49cbf8f6',1,'dpp::zlibcontext']]]
+  ['_7evoice_5fchannel_5feffect_77',['~voice_channel_effect',['../classdpp_1_1voice__channel__effect.html#a42474d60bbee5825d7ff4ac28bc923e1',1,'dpp::voice_channel_effect']]],
+  ['_7evoiceconn_78',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
+  ['_7evoiceregion_79',['~voiceregion',['../classdpp_1_1voiceregion.html#a9617792a8ad16a03a2ce0d8c281c048f',1,'dpp::voiceregion']]],
+  ['_7evoicestate_80',['~voicestate',['../classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6',1,'dpp::voicestate']]],
+  ['_7ewebsocket_5fclient_81',['~websocket_client',['../classdpp_1_1websocket__client.html#a32f422f3a5a7a1aeb35a273be5c66d17',1,'dpp::websocket_client']]],
+  ['_7ewelcome_5fchannel_82',['~welcome_channel',['../structdpp_1_1welcome__channel.html#a61b137ecb835591f27cbd3667c72d4fe',1,'dpp::welcome_channel']]],
+  ['_7ewelcome_5fscreen_83',['~welcome_screen',['../structdpp_1_1welcome__screen.html#a3816482fdccc1630b4e21f3765c6c344',1,'dpp::welcome_screen']]],
+  ['_7ewhen_5fany_84',['~when_any',['../classdpp_1_1when__any.html#afd5177c85419c2cb85458f83d8281862',1,'dpp::when_any']]],
+  ['_7ewrapped_5fssl_5fctx_85',['~wrapped_ssl_ctx',['../structdpp_1_1detail_1_1wrapped__ssl__ctx.html#a2772e6f01fd9c46ca759c75ac92522ac',1,'dpp::detail::wrapped_ssl_ctx']]],
+  ['_7ezlibcontext_86',['~zlibcontext',['../classdpp_1_1zlibcontext.html#a8c2d6b0e54a1c7f1f563549b49cbf8f6',1,'dpp::zlibcontext']]]
 ];

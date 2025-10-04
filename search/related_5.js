@@ -48,9 +48,10 @@ var searchData=
   ['json_5finterface_3c_20thread_5fmember_20_3e_45',['json_interface&lt; thread_member &gt;',['../structdpp_1_1thread__member.html#aeebfb5590fa5759ece20c551bf5b7991',1,'dpp::thread_member']]],
   ['json_5finterface_3c_20user_20_3e_46',['json_interface&lt; user &gt;',['../classdpp_1_1user.html#aa624dfda001a6d91df033da280c2b9e1',1,'dpp::user']]],
   ['json_5finterface_3c_20user_5fidentified_20_3e_47',['json_interface&lt; user_identified &gt;',['../classdpp_1_1user__identified.html#aa0200646d29a957644d489d036bc948c',1,'dpp::user_identified']]],
-  ['json_5finterface_3c_20voiceregion_20_3e_48',['json_interface&lt; voiceregion &gt;',['../classdpp_1_1voiceregion.html#a853f4ca945dfd5a9a433362e8ab70d79',1,'dpp::voiceregion']]],
-  ['json_5finterface_3c_20voicestate_20_3e_49',['json_interface&lt; voicestate &gt;',['../classdpp_1_1voicestate.html#a4e0266b7f1315426bc2ac3def6dd0dc5',1,'dpp::voicestate']]],
-  ['json_5finterface_3c_20webhook_20_3e_50',['json_interface&lt; webhook &gt;',['../classdpp_1_1webhook.html#a99a6a96973afd054fc8632fc84970f15',1,'dpp::webhook']]],
-  ['json_5finterface_3c_20welcome_5fchannel_20_3e_51',['json_interface&lt; welcome_channel &gt;',['../structdpp_1_1welcome__channel.html#a5a0da85e9a9ce71994691175e55a6482',1,'dpp::welcome_channel']]],
-  ['json_5finterface_3c_20welcome_5fscreen_20_3e_52',['json_interface&lt; welcome_screen &gt;',['../structdpp_1_1welcome__screen.html#a620f81c84b8afbd54d548346645f446e',1,'dpp::welcome_screen']]]
+  ['json_5finterface_3c_20voice_5fchannel_5feffect_20_3e_48',['json_interface&lt; voice_channel_effect &gt;',['../classdpp_1_1voice__channel__effect.html#a633dfc52f77c900e6ccbea89342d1815',1,'dpp::voice_channel_effect']]],
+  ['json_5finterface_3c_20voiceregion_20_3e_49',['json_interface&lt; voiceregion &gt;',['../classdpp_1_1voiceregion.html#a853f4ca945dfd5a9a433362e8ab70d79',1,'dpp::voiceregion']]],
+  ['json_5finterface_3c_20voicestate_20_3e_50',['json_interface&lt; voicestate &gt;',['../classdpp_1_1voicestate.html#a4e0266b7f1315426bc2ac3def6dd0dc5',1,'dpp::voicestate']]],
+  ['json_5finterface_3c_20webhook_20_3e_51',['json_interface&lt; webhook &gt;',['../classdpp_1_1webhook.html#a99a6a96973afd054fc8632fc84970f15',1,'dpp::webhook']]],
+  ['json_5finterface_3c_20welcome_5fchannel_20_3e_52',['json_interface&lt; welcome_channel &gt;',['../structdpp_1_1welcome__channel.html#a5a0da85e9a9ce71994691175e55a6482',1,'dpp::welcome_channel']]],
+  ['json_5finterface_3c_20welcome_5fscreen_20_3e_53',['json_interface&lt; welcome_screen &gt;',['../structdpp_1_1welcome__screen.html#a620f81c84b8afbd54d548346645f446e',1,'dpp::welcome_screen']]]
 ];
