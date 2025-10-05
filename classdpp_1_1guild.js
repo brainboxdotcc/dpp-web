@@ -5,7 +5,7 @@ var classdpp_1_1guild =
     [ "base_permissions", "classdpp_1_1guild.html#abd799f5cbe1907c46b86937bda124bee", null ],
     [ "base_permissions", "classdpp_1_1guild.html#ad7e3b4418671873df7f59fccfc49dec4", null ],
     [ "build_json", "classdpp_1_1guild.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
-    [ "connect_member_voice", "classdpp_1_1guild.html#a6da6cce69156fcbfb6bb44f7d5c5b648", null ],
+    [ "connect_member_voice", "classdpp_1_1guild.html#ac056730eb7049ee15ee87cc2f4f89c26", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#af180ee5682802b64c79d2dc8abc7c9cd", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1guild.html#a10822b090bfa992012dea488a61310f1", null ],

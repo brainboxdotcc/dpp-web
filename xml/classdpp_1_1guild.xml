@@ -766,10 +766,10 @@
         </inbodydescription>
         <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild_1a6da6cce69156fcbfb6bb44f7d5c5b648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1guild_1ac056730eb7049ee15ee87cc2f4f89c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool dpp::guild::connect_member_voice</definition>
-        <argsstring>(const cluster &amp;owner, snowflake user_id, bool self_mute=false, bool self_deaf=false, bool dave=false)</argsstring>
+        <argsstring>(const cluster &amp;owner, snowflake user_id, bool self_mute=false, bool self_deaf=false, bool dave=true)</argsstring>
         <name>connect_member_voice</name>
         <param>
           <type>const <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> &amp;</type>
@@ -792,7 +792,7 @@
         <param>
           <type>bool</type>
           <declname>dave</declname>
-          <defval>false</defval>
+          <defval>true</defval>
         </param>
         <briefdescription>
 <para>Connect to a voice channel another guild member is in. </para>
@@ -839,8 +839,6 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="warning"><para>DAVE is EXPERIMENTAL and subject to change. </para>
-</simplesect>
 <simplesect kind="return"><para>True if the user specified is in a vc, false if they aren&apos;t </para>
 </simplesect>
 <simplesect kind="note"><para>This is NOT a synchronous blocking call! The bot isn&apos;t instantly ready to send or listen for audio, as we have to wait for the connection to the voice server to be established! e.g. wait for <ref refid="classdpp_1_1cluster_1a8f2f865ac3492196a8167a319261ffb6" kindref="member">dpp::cluster::on_voice_ready</ref> event, and then send the audio within that event. </para>
@@ -849,7 +847,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1300" column="6"/>
+        <location file="include/dpp/guild.h" line="1299" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1af180ee5682802b64c79d2dc8abc7c9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -977,7 +975,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1313" column="13"/>
+        <location file="include/dpp/guild.h" line="1312" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -1038,7 +1036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1323" column="13"/>
+        <location file="include/dpp/guild.h" line="1322" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ae4ec3933e358da2036b547952b6758c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1095,7 +1093,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1336" column="13"/>
+        <location file="include/dpp/guild.h" line="1335" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1aa9e79b8daf552f520262339d60df9a2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1139,7 +1137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1346" column="13"/>
+        <location file="include/dpp/guild.h" line="1345" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a5e06bd5f262e0a321bb959f25a7dddf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1156,7 +1154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1541" column="6"/>
+        <location file="include/dpp/guild.h" line="1540" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a8791d8112a042ab32fd8b5a54cd8f607" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1173,7 +1171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1607" column="6"/>
+        <location file="include/dpp/guild.h" line="1606" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a46cf6e3821d628027553641c0623df34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1190,7 +1188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1571" column="6"/>
+        <location file="include/dpp/guild.h" line="1570" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a019d630e2b5aeb708b48d6f8fbb420de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1207,7 +1205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1601" column="6"/>
+        <location file="include/dpp/guild.h" line="1600" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a62a651b5bafb7757b20a6bb3303d3542" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1224,7 +1222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1547" column="6"/>
+        <location file="include/dpp/guild.h" line="1546" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a6ec058ad4e9fde64b0a043287c3f6a73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1241,7 +1239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1577" column="6"/>
+        <location file="include/dpp/guild.h" line="1576" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ac432abc8b361b3c7f20d74650a63f730" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1259,7 +1257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1659" column="6"/>
+        <location file="include/dpp/guild.h" line="1658" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a0596e28c2513f8ffe2944835117b2f49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1276,7 +1274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1626" column="6"/>
+        <location file="include/dpp/guild.h" line="1625" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1aace41d0c42c5ab41b605dee6268f03fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1293,7 +1291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1481" column="6"/>
+        <location file="include/dpp/guild.h" line="1480" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a0f3290f777b14686194756a4a4f91e67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1310,7 +1308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1671" column="6"/>
+        <location file="include/dpp/guild.h" line="1670" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a96af802a7e704276a86043d11feace1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1327,7 +1325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1589" column="6"/>
+        <location file="include/dpp/guild.h" line="1588" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a75d864d601d0795c35f2fc3acc08a4a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1344,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1614" column="6"/>
+        <location file="include/dpp/guild.h" line="1613" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a986436ee2749583102be956b863929ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1361,7 +1359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1620" column="6"/>
+        <location file="include/dpp/guild.h" line="1619" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a6dbec232c0e25a769569dd23715f574f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1378,7 +1376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1523" column="6"/>
+        <location file="include/dpp/guild.h" line="1522" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a9b59643b640847d541844f0b2eb2a98d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1395,7 +1393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1665" column="6"/>
+        <location file="include/dpp/guild.h" line="1664" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a8aaa556870af360ec85ba05ac680098b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1412,7 +1410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1565" column="6"/>
+        <location file="include/dpp/guild.h" line="1564" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a73a3dcb37facc18aecdb78393bf96206" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1429,7 +1427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1632" column="6"/>
+        <location file="include/dpp/guild.h" line="1631" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a95e5f5d04c51a86afa750b0dc2bfaa45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1446,7 +1444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1517" column="6"/>
+        <location file="include/dpp/guild.h" line="1516" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ad769b8ca16e90bd837b52bd155086bb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1463,7 +1461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1559" column="6"/>
+        <location file="include/dpp/guild.h" line="1558" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ac98d9e2481862ca19ba7c2115e5f0b2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1481,7 +1479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1639" column="6"/>
+        <location file="include/dpp/guild.h" line="1638" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a7e36811aef081391cfed101eaad2328e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1498,7 +1496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1553" column="6"/>
+        <location file="include/dpp/guild.h" line="1552" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a9be0dcb6ed82faac52d0072aed61b69c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1516,7 +1514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1646" column="6"/>
+        <location file="include/dpp/guild.h" line="1645" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a5b436fb2cc0bbb1a2e9c4c86b483949c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1533,7 +1531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1652" column="6"/>
+        <location file="include/dpp/guild.h" line="1651" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ac57481c6e6036db6545fcd5a592abee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1550,7 +1548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1493" column="6"/>
+        <location file="include/dpp/guild.h" line="1492" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a41a4d225e7ad466e1cba1a5352270075" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1567,7 +1565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1487" column="6"/>
+        <location file="include/dpp/guild.h" line="1486" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1aaf353ec02bc9a4fe25544ec78ee93a8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1584,7 +1582,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1511" column="6"/>
+        <location file="include/dpp/guild.h" line="1510" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a6123f35315e5fbb8c6ee0dfaeb61300e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1601,7 +1599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1529" column="6"/>
+        <location file="include/dpp/guild.h" line="1528" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ad8b3e4ddcc5fb4fbfd717ac275ffc2a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1618,7 +1616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1535" column="6"/>
+        <location file="include/dpp/guild.h" line="1534" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ab345901eb0418b58344b72dbe21d40a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1635,7 +1633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1463" column="6"/>
+        <location file="include/dpp/guild.h" line="1462" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a02e42564118a777e6da228de14a0aae2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1652,7 +1650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1505" column="6"/>
+        <location file="include/dpp/guild.h" line="1504" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a6415e9e4dec10710bd3486c1dae76fdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1669,7 +1667,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1595" column="6"/>
+        <location file="include/dpp/guild.h" line="1594" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ab7b956f6c07d48e1184cb4b6c727af21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1686,7 +1684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1469" column="6"/>
+        <location file="include/dpp/guild.h" line="1468" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1af79641512c0342d3082174afa2e636e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1703,7 +1701,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1499" column="6"/>
+        <location file="include/dpp/guild.h" line="1498" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a7d1ad4ac2b329f47948c91fe4277932e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1720,7 +1718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1583" column="6"/>
+        <location file="include/dpp/guild.h" line="1582" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -1917,7 +1915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1361" column="7"/>
+        <location file="include/dpp/guild.h" line="1360" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a1fbf98dc00400bd08488e615d087bca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -1934,7 +1932,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1388" column="7"/>
+        <location file="include/dpp/guild.h" line="1387" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a8823e6fdd084db73a92ae24fb5a2ad0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -1951,7 +1949,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1438" column="7"/>
+        <location file="include/dpp/guild.h" line="1437" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a3031bf16c8790662a8cc63c9c6512e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -1968,7 +1966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1413" column="7"/>
+        <location file="include/dpp/guild.h" line="1412" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a1276d7e57c2ed8e3a002a46fcc3edfad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2022,7 +2020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1382" column="7"/>
+        <location file="include/dpp/guild.h" line="1381" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1affa8edf95b8588a59a37da5bda306689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2064,7 +2062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1371" column="7"/>
+        <location file="include/dpp/guild.h" line="1370" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a59d50372738849bec8ba02235f26e602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2118,7 +2116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1407" column="7"/>
+        <location file="include/dpp/guild.h" line="1406" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1afa18f67376c93735752a575a636a0f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2160,7 +2158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1397" column="7"/>
+        <location file="include/dpp/guild.h" line="1396" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a9ab11b6c42dddcf210adc2050cf05d27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2214,7 +2212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1457" column="7"/>
+        <location file="include/dpp/guild.h" line="1456" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1aa658df6cafd492aaf97af4738b32160f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2256,7 +2254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1447" column="7"/>
+        <location file="include/dpp/guild.h" line="1446" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a2aa137d0bad0143fc22c0e9b45df2540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2295,7 +2293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1355" column="7"/>
+        <location file="include/dpp/guild.h" line="1354" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1a15551f8682b5d1394a68d78ccfe5ecf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2349,7 +2347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1432" column="7"/>
+        <location file="include/dpp/guild.h" line="1431" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild_1ad6125f72b8dae1a627b56e77f28b7450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &amp;</type>
@@ -2391,7 +2389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1422" column="7"/>
+        <location file="include/dpp/guild.h" line="1421" column="7"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -2441,7 +2439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1475" column="6"/>
+        <location file="include/dpp/guild.h" line="1474" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2728,7 +2726,7 @@
         <label>verification_level_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/guild.h" line="999" column="1" bodyfile="include/dpp/guild.h" bodystart="999" bodyend="1672"/>
+    <location file="include/dpp/guild.h" line="999" column="1" bodyfile="include/dpp/guild.h" bodystart="999" bodyend="1671"/>
     <listofallmembers>
       <member refid="classdpp_1_1guild_1afe32f37c1ac7dcde9933ba48e7b27130" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>afk_channel_id</name></member>
       <member refid="classdpp_1_1guild_1ad10c23d452ceab28023eace3bc072ad2" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>afk_timeout</name></member>
@@ -2738,7 +2736,7 @@
       <member refid="classdpp_1_1guild_1ad7e3b4418671873df7f59fccfc49dec4" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>base_permissions</name></member>
       <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>build_json</name></member>
       <member refid="classdpp_1_1guild_1a0995288cfbf8ae64973bbf0181d1789a" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>channels</name></member>
-      <member refid="classdpp_1_1guild_1a6da6cce69156fcbfb6bb44f7d5c5b648" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>connect_member_voice</name></member>
+      <member refid="classdpp_1_1guild_1ac056730eb7049ee15ee87cc2f4f89c26" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>connect_member_voice</name></member>
       <member refid="classdpp_1_1guild_1aac31cabeec4cc88bd75b2ec97731779f" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>default_message_notifications</name></member>
       <member refid="classdpp_1_1guild_1ade8a95b5a41929f92e1fbc079cedb86e" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>description</name></member>
       <member refid="classdpp_1_1guild_1ada4fe51e21c9c98e7084e3d3ceee7cda" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>discovery_splash</name></member>

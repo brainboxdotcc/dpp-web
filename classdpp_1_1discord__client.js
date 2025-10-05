@@ -7,7 +7,7 @@ var classdpp_1_1discord__client =
     [ "close", "classdpp_1_1discord__client.html#ab872768661dc89d54f0381b0fff5b674", null ],
     [ "complete_handshake", "classdpp_1_1discord__client.html#acdd1152134b624d18a9e82162e64bafe", null ],
     [ "connect", "classdpp_1_1discord__client.html#abce54f634a3b43f4b9b5bac5d1e99702", null ],
-    [ "connect_voice", "classdpp_1_1discord__client.html#a4aa6d61b499be3e88138e25bcf5209b0", null ],
+    [ "connect_voice", "classdpp_1_1discord__client.html#a4df1b00db5b251a4653d9682cd760e18", null ],
     [ "disconnect_voice", "classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78", null ],
     [ "disconnect_voice_internal", "classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71", null ],
     [ "do_raw_trace", "classdpp_1_1discord__client.html#a74d9da0f1f0c5feb46ed0995bd7d2e05", null ],
