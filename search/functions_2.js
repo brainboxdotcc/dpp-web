@@ -58,7 +58,7 @@ var searchData=
   ['co_5fchannel_5fget_55',['co_channel_get',['../classdpp_1_1cluster.html#aebd4fea6c8087065108610546d2d7ce8',1,'dpp::cluster']]],
   ['co_5fchannel_5finvite_5fcreate_56',['co_channel_invite_create',['../classdpp_1_1cluster.html#aa42692d4a1acee3126b4c917b73f9c1f',1,'dpp::cluster']]],
   ['co_5fchannel_5finvites_5fget_57',['co_channel_invites_get',['../classdpp_1_1cluster.html#a566977c5d61d0596ce805e84a9dbe5b1',1,'dpp::cluster']]],
-  ['co_5fchannel_5fpins_5fget_58',['co_channel_pins_get',['../classdpp_1_1cluster.html#ad842325e9583a6b32c94865e139cedf6',1,'dpp::cluster']]],
+  ['co_5fchannel_5fpins_5fget_58',['co_channel_pins_get',['../classdpp_1_1cluster.html#ad3f9a53a459eb2fc9225589339c2f62f',1,'dpp::cluster::co_channel_pins_get(snowflake channel_id, std::optional&lt; time_t &gt; before, std::optional&lt; uint64_t &gt; limit)'],['../classdpp_1_1cluster.html#ad842325e9583a6b32c94865e139cedf6',1,'dpp::cluster::co_channel_pins_get(snowflake channel_id)']]],
   ['co_5fchannel_5fset_5fvoice_5fstatus_59',['co_channel_set_voice_status',['../classdpp_1_1cluster.html#a0ab55336bbd2c854f4dd543784221f5d',1,'dpp::cluster']]],
   ['co_5fchannel_5ftyping_60',['co_channel_typing',['../classdpp_1_1cluster.html#a14d47f8eb8c59209b9c06ed67a6c5ccd',1,'dpp::cluster::co_channel_typing(const class channel &amp;c)'],['../classdpp_1_1cluster.html#a3e51c984fc44e6347d9993e78292a7f0',1,'dpp::cluster::co_channel_typing(snowflake cid)']]],
   ['co_5fchannels_5fget_61',['co_channels_get',['../classdpp_1_1cluster.html#a2845de229ea00966b0f00b674d54b6c5',1,'dpp::cluster']]],

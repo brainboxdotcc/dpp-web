@@ -60,6 +60,7 @@ var classdpp_1_1cluster =
     [ "co_channel_invite_create", "classdpp_1_1cluster.html#aa42692d4a1acee3126b4c917b73f9c1f", null ],
     [ "co_channel_invites_get", "classdpp_1_1cluster.html#a566977c5d61d0596ce805e84a9dbe5b1", null ],
     [ "co_channel_pins_get", "classdpp_1_1cluster.html#ad842325e9583a6b32c94865e139cedf6", null ],
+    [ "co_channel_pins_get", "classdpp_1_1cluster.html#ad3f9a53a459eb2fc9225589339c2f62f", null ],
     [ "co_channel_set_voice_status", "classdpp_1_1cluster.html#a0ab55336bbd2c854f4dd543784221f5d", null ],
     [ "co_channel_typing", "classdpp_1_1cluster.html#a14d47f8eb8c59209b9c06ed67a6c5ccd", null ],
     [ "co_channel_typing", "classdpp_1_1cluster.html#a3e51c984fc44e6347d9993e78292a7f0", null ],
