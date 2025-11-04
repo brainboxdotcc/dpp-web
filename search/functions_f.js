@@ -9,7 +9,7 @@ var searchData=
   ['reassign_6',['reassign',['../structdpp_1_1voice__receive__t.html#a1d9d89f6baa1473bbfa16db073806529',1,'dpp::voice_receive_t']]],
   ['reassign_5fowner_7',['reassign_owner',['../classdpp_1_1voiceconn.html#ad35026714c668e2dea3711d82cb29ae8',1,'dpp::voiceconn']]],
   ['recover_5ffrom_5finvalid_5fcommit_5fwelcome_8',['recover_from_invalid_commit_welcome',['../classdpp_1_1discord__voice__client.html#ae7b192cad8f1c6a215999ffb2faa4f26',1,'dpp::discord_voice_client']]],
-  ['register_5fcommand_9',['register_command',['../classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711',1,'dpp::cluster::register_command(const std::string &amp;name, const slashcommand_handler_t handler)'],['../classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)']]],
+  ['register_5fcommand_9',['register_command',['../classdpp_1_1cluster.html#acb7b73536f793da2a2955d70baa991f1',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)'],['../classdpp_1_1cluster.html#a18b118b0413edbcf0ecca6692d62b9f6',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)']]],
   ['register_5fsocket_10',['register_socket',['../structdpp_1_1socket__engine__base.html#ad230cedabf8ed9503b0df60e3e6afc89',1,'dpp::socket_engine_base']]],
   ['rehash_11',['rehash',['../classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034',1,'dpp::cache']]],
   ['rehash_5fmembers_12',['rehash_members',['../classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac',1,'dpp::guild']]],

@@ -183,7 +183,7 @@ var searchData=
   ['regional_5findicator_5fx_180',['regional_indicator_x',['../namespacedpp_1_1unicode__emoji.html#a5f4ed01ef4caa0e7072ba36f0b109cc7',1,'dpp::unicode_emoji']]],
   ['regional_5findicator_5fy_181',['regional_indicator_y',['../namespacedpp_1_1unicode__emoji.html#a1e38e529dcaba36d115319b6f00fb3f6',1,'dpp::unicode_emoji']]],
   ['regional_5findicator_5fz_182',['regional_indicator_z',['../namespacedpp_1_1unicode__emoji.html#a2cef06fe097ead33fb0180fd33104aec',1,'dpp::unicode_emoji']]],
-  ['register_5fcommand_183',['register_command',['../classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711',1,'dpp::cluster::register_command(const std::string &amp;name, const slashcommand_handler_t handler)'],['../classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)']]],
+  ['register_5fcommand_183',['register_command',['../classdpp_1_1cluster.html#acb7b73536f793da2a2955d70baa991f1',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)'],['../classdpp_1_1cluster.html#a18b118b0413edbcf0ecca6692d62b9f6',1,'dpp::cluster::register_command(const std::string &amp;name, F &amp;&amp;handler)']]],
   ['register_5fsocket_184',['register_socket',['../structdpp_1_1socket__engine__base.html#ad230cedabf8ed9503b0df60e3e6afc89',1,'dpp::socket_engine_base']]],
   ['registered_185',['registered',['../namespacedpp_1_1unicode__emoji.html#aa56b9b73af5c441b655f0f7ad1503d4a',1,'dpp::unicode_emoji']]],
   ['rehash_186',['rehash',['../classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034',1,'dpp::cache']]],
