@@ -7754,9 +7754,13 @@ var namespacedpp =
       [ "p_moderate_members", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2", null ],
       [ "p_view_creator_monetization_analytics", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422", null ],
       [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ],
+      [ "p_create_guild_expressions", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a42e90996cc79a8aac214b301211b108a", null ],
+      [ "p_create_events", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a59e6479a44e0453eed55961446fc11b0", null ],
       [ "p_use_external_sounds", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ac6404354f63e4d854be8f2cd1022ff36", null ],
       [ "p_send_voice_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9", null ],
       [ "p_use_clyde_ai", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2", null ],
+      [ "p_send_polls", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a12c9e81f7643266697916aab6d79d475", null ],
+      [ "p_use_external_apps", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af0a7493afc1d152fe6f6431b515980c3", null ],
       [ "p_pin_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ab2372ff3248ba10c94ac4bddebe27a28", null ]
     ] ],
     [ "poll_layout_type", "namespacedpp.html#ae5ffe09f834e517ee9574f04cb7b8cc8", [

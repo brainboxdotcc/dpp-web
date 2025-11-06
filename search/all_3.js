@@ -369,7 +369,7 @@ var searchData=
   ['co_5fguild_5fcommands_5fget_5fpermissions_366',['co_guild_commands_get_permissions',['../classdpp_1_1cluster.html#ae32039cc1ae9fd09428b73e991484028',1,'dpp::cluster']]],
   ['co_5fguild_5fcreate_367',['co_guild_create',['../classdpp_1_1cluster.html#afc556903538e3b3dcf66cebd1abcf217',1,'dpp::cluster']]],
   ['co_5fguild_5fcreate_5ffrom_5ftemplate_368',['co_guild_create_from_template',['../classdpp_1_1cluster.html#ad61625a41a1fc5dff29e976f3742ca3b',1,'dpp::cluster']]],
-  ['co_5fguild_5fcurrent_5fmember_5fedit_369',['co_guild_current_member_edit',['../classdpp_1_1cluster.html#a77e1f28445fb2ce3c52d940286e6c334',1,'dpp::cluster']]],
+  ['co_5fguild_5fcurrent_5fmember_5fedit_369',['co_guild_current_member_edit',['../classdpp_1_1cluster.html#a659c5600d0bd5874e1edb4cd7b4a4661',1,'dpp::cluster']]],
   ['co_5fguild_5fdelete_370',['co_guild_delete',['../classdpp_1_1cluster.html#a138cb826f27bb7cbd1b16bf146d75a38',1,'dpp::cluster']]],
   ['co_5fguild_5fdelete_5fintegration_371',['co_guild_delete_integration',['../classdpp_1_1cluster.html#a56b6b7061df4463c399e8477149b9a63',1,'dpp::cluster']]],
   ['co_5fguild_5fedit_372',['co_guild_edit',['../classdpp_1_1cluster.html#a7e428ca24e5538ace5cb3090ccae818b',1,'dpp::cluster']]],

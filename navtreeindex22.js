@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[9,0,0,271,10],
+"classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[9,0,0,271,2],
+"classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[11,0,0,265,2],
+"classdpp_1_1websocket__client.html#abce54f634a3b43f4b9b5bac5d1e99702":[9,0,0,271,4],
+"classdpp_1_1websocket__client.html#abce54f634a3b43f4b9b5bac5d1e99702":[11,0,0,265,4],
+"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[9,0,0,271,7],
+"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[11,0,0,265,7],
+"classdpp_1_1websocket__client.html#abd9c3cf6150d3c7e2badd12829437207":[11,0,0,265,43],
 "classdpp_1_1websocket__client.html#abd9c3cf6150d3c7e2badd12829437207":[9,0,0,271,43],
 "classdpp_1_1websocket__client.html#ac69282a18c63bd1ddfaa87ba83410979":[11,0,0,265,9],
 "classdpp_1_1websocket__client.html#ac69282a18c63bd1ddfaa87ba83410979":[9,0,0,271,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,399],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414":[9,0,0,399,15],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a311a6b6f7fc320d4c03ae72a851dce5c":[9,0,0,399,6],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a39ad4150b19142aad7ff4867e9ec9b69":[9,0,0,399,7],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a414f0f169996a09f8fd1d423517dc0d0":[9,0,0,399,1],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a4278f54e9f1f408d43be33f7e0beac88":[9,0,0,399,2],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f":[9,0,0,399,19],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a5cdd239960ca917f44bab7be89625ae6":[9,0,0,399,13],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a74dfa109a39b058dc814bed431911dcc":[9,0,0,399,9],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d":[9,0,0,399,21],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a78fe83dd74ee3a92448dc0142c168220":[9,0,0,399,22],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a86d9d5b3a2c86a240cdbd69e75f4b20b":[9,0,0,399,10]
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a39ad4150b19142aad7ff4867e9ec9b69":[9,0,0,399,7]
 };

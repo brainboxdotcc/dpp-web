@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"classdpp_1_1voice__channel__effect.html#aa56f20cbbed95607afc102285e63fb14":[11,0,0,248,9],
+"classdpp_1_1voice__channel__effect.html#ad133d46dde38abde5c0da85efcc2c7bf":[9,0,0,254,0],
+"classdpp_1_1voice__channel__effect.html#ad133d46dde38abde5c0da85efcc2c7bf":[11,0,0,248,0],
+"classdpp_1_1voice__channel__effect.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,254,2],
+"classdpp_1_1voice__channel__effect.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,248,2],
+"classdpp_1_1voice__channel__effect.html#ae169e4231b77955fc1b43a3b7be9770c":[9,0,0,254,5],
+"classdpp_1_1voice__channel__effect.html#ae169e4231b77955fc1b43a3b7be9770c":[11,0,0,248,5],
+"classdpp_1_1voice__channel__effect.html#af899df8e5b4e45704a7a3fe7981ffcc3":[9,0,0,254,14],
 "classdpp_1_1voice__channel__effect.html#af899df8e5b4e45704a7a3fe7981ffcc3":[11,0,0,248,14],
 "classdpp_1_1voice__channel__effect.html#af8e71b7843b6a2c45447b06ea99e68b9":[9,0,0,254,11],
 "classdpp_1_1voice__channel__effect.html#af8e71b7843b6a2c45447b06ea99e68b9":[11,0,0,248,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "classdpp_1_1websocket__client.html#aa8cfa2e6c511022b67dbd97cc57f0731":[11,0,0,265,40],
 "classdpp_1_1websocket__client.html#aaba3255abd8ec8e94d1781771cfc9acb":[11,0,0,265,34],
 "classdpp_1_1websocket__client.html#aaba3255abd8ec8e94d1781771cfc9acb":[9,0,0,271,34],
-"classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[11,0,0,265,10],
-"classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[9,0,0,271,10],
-"classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[9,0,0,271,2],
-"classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[11,0,0,265,2],
-"classdpp_1_1websocket__client.html#abce54f634a3b43f4b9b5bac5d1e99702":[9,0,0,271,4],
-"classdpp_1_1websocket__client.html#abce54f634a3b43f4b9b5bac5d1e99702":[11,0,0,265,4],
-"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[9,0,0,271,7],
-"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[11,0,0,265,7],
-"classdpp_1_1websocket__client.html#abd9c3cf6150d3c7e2badd12829437207":[11,0,0,265,43]
+"classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[11,0,0,265,10]
 };
