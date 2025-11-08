@@ -77,7 +77,7 @@
         </inbodydescription>
         <location file="include/dpp/coro/task.h" line="294" column="10" bodyfile="include/dpp/coro/task.h" bodystart="294" bodyend="299"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aa0cace4b54601738842b09c475f0df79" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aca723b244bf7ea46c3dec242781f5c7c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -85,10 +85,10 @@
         </templateparamlist>
         <type>decltype(auto)</type>
         <definition>decltype(auto) dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_suspend</definition>
-        <argsstring>(T &amp;&amp;handle) noexcept(noexcept(awaitable.await_suspend(std::forward&lt; T &gt;(handle))))</argsstring>
+        <argsstring>(T handle) noexcept(noexcept(awaitable.await_suspend(std::move(handle))))</argsstring>
         <name>await_suspend</name>
         <param>
-          <type>T &amp;&amp;</type>
+          <type>T</type>
           <declname>handle</declname>
         </param>
         <briefdescription>
@@ -187,7 +187,7 @@
     <listofallmembers>
       <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a5ab772b4f9d350bacd97ff4f1735c995" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_ready</name></member>
       <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a6f13eee3023713febc9671eda380ef06" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_resume</name></member>
-      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aa0cace4b54601738842b09c475f0df79" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aca723b244bf7ea46c3dec242781f5c7c" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_suspend</name></member>
       <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a9e267f181213ddac7ea4ffc33fc0da25" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>awaitable</name></member>
       <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1ac419c3790a58676dcd322939f68b2707" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>promise</name></member>
     </listofallmembers>
