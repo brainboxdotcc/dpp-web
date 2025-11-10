@@ -7014,7 +7014,9 @@ var namespacedpp =
       [ "cot_file", "namespacedpp.html#afce43206033521b990e3a72bb87481b7aef6eba8b3437774bc0222e22c36f3085", null ],
       [ "cot_separator", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a316c89bc30b7ba5e80269fd61940316d", null ],
       [ "cot_content_inventory_entry", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ab08451a5d0de05f7392aca6d43f9ef08", null ],
-      [ "cot_container", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154", null ]
+      [ "cot_container", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154", null ],
+      [ "cot_label", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a3dfec413250c8a8ecace59334ab5757d", null ],
+      [ "cot_file_upload", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a46b14f5313695913d5e1f919d03e2daa", null ]
     ] ],
     [ "dave_version_t", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0a", [
       [ "dave_version_none", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83", null ],
