@@ -3,13 +3,13 @@
   <compounddef id="classdpp_1_1bignumber" kind="class" language="C++" prot="public">
     <compoundname>dpp::bignumber</compoundname>
     <includes local="no">bignum.h</includes>
+    <innerclass refid="structdpp_1_1bignumber_1_1bn__deleter" prot="private">dpp::bignumber::bn_deleter</innerclass>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1bignumber_1aef88acb42d4a82dc543ff5270c69f7e3" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; openssl_bignum &gt;</type>
-        <definition>std::shared_ptr&lt;openssl_bignum&gt; dpp::bignumber::ssl_bn</definition>
+      <memberdef kind="variable" id="classdpp_1_1bignumber_1acc85d2ba02cbb7bb9321a2056183dc22" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; openssl_bignum, bn_deleter &gt;</type>
+        <definition>std::unique_ptr&lt;openssl_bignum, bn_deleter&gt; dpp::bignumber::ssl_bn</definition>
         <argsstring></argsstring>
         <name>ssl_bn</name>
-        <initializer>{nullptr}</initializer>
         <briefdescription>
 <para>Internal opaque struct to contain OpenSSL things. </para>
         </briefdescription>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="50" column="17" bodyfile="include/dpp/bignum.h" bodystart="50" bodyend="-1"/>
+        <location file="include/dpp/bignum.h" line="67" column="17" bodyfile="include/dpp/bignum.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="55" column="1"/>
+        <location file="include/dpp/bignum.h" line="73" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1a20ea7c898a60a24e854fb5b202298ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="65" column="1"/>
+        <location file="include/dpp/bignum.h" line="83" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1a922a2de70e336ec76d20dfc72950ff20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="74" column="1"/>
+        <location file="include/dpp/bignum.h" line="92" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1a1ae739c6efff033ab01e46635ba004ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="79" column="1"/>
+        <location file="include/dpp/bignum.h" line="97" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1a6143b31a5316dd69c553862d61a740da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; uint64_t &gt;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="98" column="14"/>
+        <location file="include/dpp/bignum.h" line="116" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1bignumber_1afc549f17451dad0c21640407e4de7826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/bignum.h" line="88" column="14"/>
+        <location file="include/dpp/bignum.h" line="106" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -164,14 +164,14 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="include/dpp/bignum.h" line="46" column="1" bodyfile="include/dpp/bignum.h" bodystart="46" bodyend="99"/>
+    <location file="include/dpp/bignum.h" line="46" column="1" bodyfile="include/dpp/bignum.h" bodystart="46" bodyend="117"/>
     <listofallmembers>
       <member refid="classdpp_1_1bignumber_1aa1db5d3d5dce166f182b2da591f7004e" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>bignumber</name></member>
       <member refid="classdpp_1_1bignumber_1a20ea7c898a60a24e854fb5b202298ede" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>bignumber</name></member>
       <member refid="classdpp_1_1bignumber_1a922a2de70e336ec76d20dfc72950ff20" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>bignumber</name></member>
       <member refid="classdpp_1_1bignumber_1a6143b31a5316dd69c553862d61a740da" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>get_binary</name></member>
       <member refid="classdpp_1_1bignumber_1afc549f17451dad0c21640407e4de7826" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>get_number</name></member>
-      <member refid="classdpp_1_1bignumber_1aef88acb42d4a82dc543ff5270c69f7e3" prot="private" virt="non-virtual"><scope>dpp::bignumber</scope><name>ssl_bn</name></member>
+      <member refid="classdpp_1_1bignumber_1acc85d2ba02cbb7bb9321a2056183dc22" prot="private" virt="non-virtual"><scope>dpp::bignumber</scope><name>ssl_bn</name></member>
       <member refid="classdpp_1_1bignumber_1a1ae739c6efff033ab01e46635ba004ae" prot="public" virt="non-virtual"><scope>dpp::bignumber</scope><name>~bignumber</name></member>
     </listofallmembers>
   </compounddef>
