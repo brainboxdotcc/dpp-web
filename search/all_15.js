@@ -42,7 +42,7 @@ var searchData=
   ['unamused_5fface_39',['unamused_face',['../namespacedpp_1_1unicode__emoji.html#a3f89cec589b27db4b7624a75d99977fe',1,'dpp::unicode_emoji']]],
   ['unbanned_40',['unbanned',['../structdpp_1_1guild__ban__remove__t.html#abe971ff5e9717d7c5226304e8e43e92c',1,'dpp::guild_ban_remove_t']]],
   ['unbanning_5fguild_41',['unbanning_guild',['../structdpp_1_1guild__ban__remove__t.html#a16256bfd666dde37e23fe46ea6229ad9',1,'dpp::guild_ban_remove_t']]],
-  ['unbleached_5fsilk_42',['unbleached_silk',['../namespacedpp_1_1colors.html#a66ec7260feb777853c5193f87d6b205e',1,'dpp::colors']]],
+  ['unbleached_5fsilk_42',['unbleached_silk',['../namespacedpp_1_1colors.html#aada6b73e6717a9460c36500a4a734ab0',1,'dpp::colors']]],
   ['underage_43',['underage',['../namespacedpp_1_1unicode__emoji.html#a72d83572d82777ab3307111d926566ac',1,'dpp::unicode_emoji']]],
   ['unhandled_5fexception_44',['unhandled_exception',['../structdpp_1_1detail_1_1coroutine_1_1promise__t.html#a4ddf143847ba21d653fee5233450c315',1,'dpp::detail::coroutine::promise_t::unhandled_exception()'],['../structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html#abd8e7e16b084f7a2c44c97a4840817f4',1,'dpp::detail::coroutine::promise_t&lt; void &gt;::unhandled_exception()'],['../structdpp_1_1detail_1_1job_1_1promise.html#a3c7c522ce5a0e5a6231970100b6be4fd',1,'dpp::detail::job::promise::unhandled_exception()'],['../structdpp_1_1detail_1_1task_1_1promise__base.html#a7e0acbc2f985cceb4b6af1329df73d61',1,'dpp::detail::task::promise_base::unhandled_exception()']]],
   ['unicode_5femoji_45',['unicode_emoji',['../classdpp_1_1role.html#ad84006ea16f3dc59cfd67559a60c5d10',1,'dpp::role']]],

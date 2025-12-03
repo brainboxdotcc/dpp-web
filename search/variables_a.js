@@ -1,20 +1,20 @@
 var searchData=
 [
   ['jack_5fo_5flantern_0',['jack_o_lantern',['../namespacedpp_1_1unicode__emoji.html#adea851f4344d30a81dbd8e0c7455be7c',1,'dpp::unicode_emoji']]],
-  ['jade_1',['jade',['../namespacedpp_1_1colors.html#a86759bd0ec5a2cbeff907e72b6121382',1,'dpp::colors']]],
-  ['jade_5fgreen_2',['jade_green',['../namespacedpp_1_1colors.html#aba98f37640fe6422e0bd132b894b6987',1,'dpp::colors']]],
+  ['jade_1',['jade',['../namespacedpp_1_1colors.html#a7a99fb8aa5fe0bd3d61fbf43a7fa14ed',1,'dpp::colors']]],
+  ['jade_5fgreen_2',['jade_green',['../namespacedpp_1_1colors.html#a5d7e8aa939efe6eca3a3f01c85abd560',1,'dpp::colors']]],
   ['japan_3',['japan',['../namespacedpp_1_1unicode__emoji.html#a234ef00190c12fb76c87c81bfd3aa440',1,'dpp::unicode_emoji']]],
   ['japanese_5fcastle_4',['japanese_castle',['../namespacedpp_1_1unicode__emoji.html#adbe832042e69f368be9b5a7890304308',1,'dpp::unicode_emoji']]],
   ['japanese_5fgoblin_5',['japanese_goblin',['../namespacedpp_1_1unicode__emoji.html#a00a4a004c302a1bd79bf0f2fc45a70af',1,'dpp::unicode_emoji']]],
   ['japanese_5fogre_6',['japanese_ogre',['../namespacedpp_1_1unicode__emoji.html#a1a69d218e1d8a7817c8ef30bdbcf59eb',1,'dpp::unicode_emoji']]],
   ['jar_7',['jar',['../namespacedpp_1_1unicode__emoji.html#ac9880020970500143a2eb73d0f4e1024',1,'dpp::unicode_emoji']]],
-  ['jasmine_5fpurple_8',['jasmine_purple',['../namespacedpp_1_1colors.html#ae8a22e6732e110b354dd8ebd2ef73c6f',1,'dpp::colors']]],
-  ['jazzberry_5fjam_9',['jazzberry_jam',['../namespacedpp_1_1colors.html#a139eafceafb34a9c839bf6009d24a20d',1,'dpp::colors']]],
+  ['jasmine_5fpurple_8',['jasmine_purple',['../namespacedpp_1_1colors.html#a46ee70db0f1760d450f05a6345659a85',1,'dpp::colors']]],
+  ['jazzberry_5fjam_9',['jazzberry_jam',['../namespacedpp_1_1colors.html#a3d1298afe924e813dcfd0f399d5b8768',1,'dpp::colors']]],
   ['jeans_10',['jeans',['../namespacedpp_1_1unicode__emoji.html#a7507124ba803b0f9de285874c0189531',1,'dpp::unicode_emoji']]],
-  ['jeans_5fblue_11',['jeans_blue',['../namespacedpp_1_1colors.html#a40b5c1c4fd89e62c3c79126022aa01d5',1,'dpp::colors']]],
-  ['jellyfish_12',['jellyfish',['../namespacedpp_1_1unicode__emoji.html#ab6baf917fe1535ad46f962f19bbaf702',1,'dpp::unicode_emoji::jellyfish()'],['../namespacedpp_1_1colors.html#a7078832b0f6f90c3668cbe0aa2e75661',1,'dpp::colors::jellyfish()']]],
-  ['jet_5fgray_13',['jet_gray',['../namespacedpp_1_1colors.html#a12430a349e18ea469aaa4775a31a1c17',1,'dpp::colors']]],
-  ['jet_5fgrey_14',['jet_grey',['../namespacedpp_1_1colors.html#a9da25adab5b75e4c83ebba3948393e9f',1,'dpp::colors']]],
+  ['jeans_5fblue_11',['jeans_blue',['../namespacedpp_1_1colors.html#a96f833eb80c211c6c72b5ddf89c155a2',1,'dpp::colors']]],
+  ['jellyfish_12',['jellyfish',['../namespacedpp_1_1unicode__emoji.html#ab6baf917fe1535ad46f962f19bbaf702',1,'dpp::unicode_emoji::jellyfish()'],['../namespacedpp_1_1colors.html#a1634662ab3f61d8a6871f2b412c3a174',1,'dpp::colors::jellyfish()']]],
+  ['jet_5fgray_13',['jet_gray',['../namespacedpp_1_1colors.html#a57a1209598f8e9353907d97423543d36',1,'dpp::colors']]],
+  ['jet_5fgrey_14',['jet_grey',['../namespacedpp_1_1colors.html#afa5a7ee7e7523a0d195c88fd16084c29',1,'dpp::colors']]],
   ['jigsaw_15',['jigsaw',['../namespacedpp_1_1unicode__emoji.html#a73ba3436102da8027ce220a91ff7d9f2',1,'dpp::unicode_emoji']]],
   ['join_16',['join',['../structdpp_1_1activity__secrets.html#a09c5858de71722bf7c8cb43c68b1f23a',1,'dpp::activity_secrets']]],
   ['joined_17',['joined',['../structdpp_1_1thread__member.html#a1b8e07233ef58b4a0b765b0e1e54e000',1,'dpp::thread_member']]],
@@ -46,5 +46,5 @@ var searchData=
   ['juggling_5ftone3_43',['juggling_tone3',['../namespacedpp_1_1unicode__emoji.html#aeebca1eddfd8f019f9246652f362db2c',1,'dpp::unicode_emoji']]],
   ['juggling_5ftone4_44',['juggling_tone4',['../namespacedpp_1_1unicode__emoji.html#a1a5a31547a7f338889a9a5f0e3ef8046',1,'dpp::unicode_emoji']]],
   ['juggling_5ftone5_45',['juggling_tone5',['../namespacedpp_1_1unicode__emoji.html#ac5147d50cfe73698aaef23562bfb26be',1,'dpp::unicode_emoji']]],
-  ['jungle_5fgreen_46',['jungle_green',['../namespacedpp_1_1colors.html#a9c7759e8c7666f55d138defec8896cbe',1,'dpp::colors']]]
+  ['jungle_5fgreen_46',['jungle_green',['../namespacedpp_1_1colors.html#a2a027d90ead2939b8e5c710f7734d042',1,'dpp::colors']]]
 ];

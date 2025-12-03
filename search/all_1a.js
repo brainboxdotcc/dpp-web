@@ -8,6 +8,6 @@ var searchData=
   ['zipper_5fmouth_5fface_5',['zipper_mouth_face',['../namespacedpp_1_1unicode__emoji.html#a34cd6e866f5dcc9892df54582b1f7bb1',1,'dpp::unicode_emoji']]],
   ['zlibcontext_6',['zlibcontext',['../classdpp_1_1zlibcontext.html',1,'dpp::zlibcontext'],['../classdpp_1_1zlibcontext.html#a2e3adac71668a999db65a30802111834',1,'dpp::zlibcontext::zlibcontext()']]],
   ['zombie_7',['zombie',['../namespacedpp_1_1unicode__emoji.html#a17c8016366ac6376990aa1c7a196775d',1,'dpp::unicode_emoji']]],
-  ['zombie_5fgreen_8',['zombie_green',['../namespacedpp_1_1colors.html#a9786cfa44906aa349ed3c66fceece1c5',1,'dpp::colors']]],
+  ['zombie_5fgreen_8',['zombie_green',['../namespacedpp_1_1colors.html#a67fb615b0e1b66d54d3a2d232d8007cd',1,'dpp::colors']]],
   ['zzz_9',['zzz',['../namespacedpp_1_1unicode__emoji.html#a311d56c3f6ec2623f0a73ff751349a3d',1,'dpp::unicode_emoji']]]
 ];
