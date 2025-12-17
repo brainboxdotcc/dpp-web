@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::detail::task::promise_base::proxy_awaiter</compoundname>
+    <includes local="no">task.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a9e267f181213ddac7ea4ffc33fc0da25" prot="public" static="no" mutable="no">
+        <type>A</type>
+        <definition>A dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::awaitable</definition>
+        <argsstring></argsstring>
+        <name>awaitable</name>
+        <briefdescription>
+<para>The inner awaitable being awaited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="276" column="3" bodyfile="include/dpp/coro/task.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1ac419c3790a58676dcd322939f68b2707" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdpp_1_1detail_1_1task_1_1promise__base" kindref="compound">promise_base</ref> &amp;</type>
+        <definition>const promise_base&amp; dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::promise</definition>
+        <argsstring></argsstring>
+        <name>promise</name>
+        <briefdescription>
+<para>The <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">promise_t</ref> object bound to this proxy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="273" column="20" bodyfile="include/dpp/coro/task.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a5ab772b4f9d350bacd97ff4f1735c995" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_ready</definition>
+        <argsstring>() noexcept(noexcept(awaitable.await_ready()))</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>Wrapper for the awaitable&apos;s await_ready. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="279" column="7" bodyfile="include/dpp/coro/task.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a6f13eee3023713febc9671eda380ef06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Wrapper for the awaitable&apos;s await_resume, throws if the task is cancelled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the task was cancelled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="294" column="10" bodyfile="include/dpp/coro/task.h" bodystart="294" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aca723b244bf7ea46c3dec242781f5c7c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;::await_suspend</definition>
+        <argsstring>(T handle) noexcept(noexcept(awaitable.await_suspend(std::move(handle))))</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>T</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper for the awaitable&apos;s await_suspend. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="285" column="11" bodyfile="include/dpp/coro/task.h" bodystart="285" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Proxy awaitable that wraps any co_await inside the task and checks for cancellation on resumption. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structdpp_1_1detail_1_1task_1_1promise__base_1afae29aacdf3cc3cb043ee6124ac17fb0" kindref="member">await_transform</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>A</label>
+      </node>
+      <node id="3">
+        <label>dpp::basic_promise&lt; R &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; R &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::basic_promise&lt; T &gt;</label>
+        <link refid="classdpp_1_1basic__promise"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::detail::promise::promise_base&lt; T &gt;</label>
+        <link refid="classdpp_1_1detail_1_1promise_1_1promise__base"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>awaiter</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp::detail::promise::promise_base&lt; T &gt;</label>
+        <link refid="classdpp_1_1detail_1_1promise_1_1promise__base"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>awaiter</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::detail::task::promise_base&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cancelled</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::detail::task::promise_base&lt; R &gt;::proxy_awaiter&lt; A &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>promise</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>awaitable</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>result_t&lt; T &gt;</label>
+      </node>
+      <node id="6">
+        <label>atomic&lt;</label>
+      </node>
+      <node id="7">
+        <label>coroutine_handle</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/task.h" line="271" column="1" bodyfile="include/dpp/coro/task.h" bodystart="271" bodyend="300"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a5ab772b4f9d350bacd97ff4f1735c995" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a6f13eee3023713febc9671eda380ef06" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1aca723b244bf7ea46c3dec242781f5c7c" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1a9e267f181213ddac7ea4ffc33fc0da25" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>awaitable</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter_1ac419c3790a58676dcd322939f68b2707" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base::proxy_awaiter</scope><name>promise</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1detail_1_1async_1_1callback" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::detail::async::callback</compoundname>
+    <includes local="no">async.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1async_1_1callback_1a6e9ad69b1730eac08233c316cefedfda" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classdpp_1_1basic__promise" kindref="compound">basic_promise</ref>&lt; R &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;basic_promise&lt;R&gt; &gt; dpp::detail::async::callback&lt; R &gt;::promise</definition>
+        <argsstring></argsstring>
+        <name>promise</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+<para>Promise object to set the result into. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="59" column="17" bodyfile="include/dpp/coro/async.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1async_1_1callback_1afad1dc3865edd6ac8cc0711e1804b107" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::async::callback&lt; R &gt;::operator()</definition>
+        <argsstring>() const</argsstring>
+        <name>operator()</name>
+    <requiresclause>(std::is_void_v&lt;R&gt;)    </requiresclause>
+        <briefdescription>
+<para>Call operator, sets the value in the promise and notifies any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="84" column="6" bodyfile="include/dpp/coro/async.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1async_1_1callback_1a87d85c3064e52b835f32244ae3403436" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+            <defval>R</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::detail::async::callback&lt; R &gt;::operator()</definition>
+        <argsstring>(const U &amp;v) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>v</declname>
+        </param>
+    <requiresclause>(std::convertible_to&lt;const U&amp;, R&gt;)    </requiresclause>
+        <briefdescription>
+<para>Call operator, sets the value in the promise and notifies any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="67" column="6" bodyfile="include/dpp/coro/async.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1async_1_1callback_1afe98175cd69f741f63121cc44efb7459" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+            <defval>R</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::detail::async::callback&lt; R &gt;::operator()</definition>
+        <argsstring>(U &amp;&amp;v) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>U &amp;&amp;</type>
+          <declname>v</declname>
+        </param>
+    <requiresclause>(std::convertible_to&lt;U&amp;&amp;, R&gt;)    </requiresclause>
+        <briefdescription>
+<para>Call operator, sets the value in the promise and notifies any awaiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="77" column="6" bodyfile="include/dpp/coro/async.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Shared state of the async and its callback, to be used across threads. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::detail::async::callback&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1async_1_1callback"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>promise</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>shared_ptr&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/async.h" line="55" column="1" bodyfile="include/dpp/coro/async.h" bodystart="55" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1detail_1_1async_1_1callback_1a87d85c3064e52b835f32244ae3403436" prot="public" virt="non-virtual"><scope>dpp::detail::async::callback</scope><name>operator()</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1callback_1afe98175cd69f741f63121cc44efb7459" prot="public" virt="non-virtual"><scope>dpp::detail::async::callback</scope><name>operator()</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1callback_1afad1dc3865edd6ac8cc0711e1804b107" prot="public" virt="non-virtual"><scope>dpp::detail::async::callback</scope><name>operator()</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1callback_1a6e9ad69b1730eac08233c316cefedfda" prot="public" virt="non-virtual"><scope>dpp::detail::async::callback</scope><name>promise</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

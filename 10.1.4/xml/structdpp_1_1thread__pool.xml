@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1thread__pool" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::thread_pool</compoundname>
+    <includes local="no">thread_pool.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1ad56b2c907ebbca9e1ca24cd47ab4d260" prot="public" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable dpp::thread_pool::cv</definition>
+        <argsstring></argsstring>
+        <name>cv</name>
+        <briefdescription>
+<para>Condition variable to notify for new tasks to run. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="91" column="25" bodyfile="include/dpp/thread_pool.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1a05e985ef2fa7b1bcc2aa38912a8a32f2" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::thread_pool::queue_mutex</definition>
+        <argsstring></argsstring>
+        <name>queue_mutex</name>
+        <briefdescription>
+<para>Mutex for accessing the priority queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="86" column="12" bodyfile="include/dpp/thread_pool.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1a3eed4f7d3b14a29ca75aedc55af8535f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::thread_pool::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>True if the thread pool is due to stop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="96" column="6" bodyfile="include/dpp/thread_pool.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1a902c31b079ebcee2913179cfbcc8d04d" prot="public" static="no" mutable="no">
+        <type>std::priority_queue&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref>, std::vector&lt; <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref> &gt;, <ref refid="structdpp_1_1thread__pool__task__comparator" kindref="compound">thread_pool_task_comparator</ref> &gt;</type>
+        <definition>std::priority_queue&lt;thread_pool_task, std::vector&lt;thread_pool_task&gt;, thread_pool_task_comparator&gt; dpp::thread_pool::tasks</definition>
+        <argsstring></argsstring>
+        <name>tasks</name>
+        <briefdescription>
+<para>Priority queue of tasks to be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="81" column="21" bodyfile="include/dpp/thread_pool.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1thread__pool_1afa15f924c81060079ed922ffdb82536c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; dpp::thread_pool::threads</definition>
+        <argsstring></argsstring>
+        <name>threads</name>
+        <briefdescription>
+<para>Threads that comprise the thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="76" column="13" bodyfile="include/dpp/thread_pool.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1thread__pool_1ac927a88f60f30ac549209a297eb97684" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::thread_pool::thread_pool</definition>
+        <argsstring>(class cluster *creator, size_t num_threads=std::thread::hardware_concurrency())</argsstring>
+        <name>thread_pool</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_threads</declname>
+          <defval>std::thread::hardware_concurrency()</defval>
+        </param>
+        <briefdescription>
+<para>Create a new priority thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>creating cluster (for logging) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_threads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of threads in the pool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1thread__pool_1a6d87521e755ceadf6611102cbe27fc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::thread_pool::~thread_pool</definition>
+        <argsstring>()</argsstring>
+        <name>~thread_pool</name>
+        <briefdescription>
+<para>Destroy the thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1thread__pool_1a6847cb3c0911ed402c1eb48756ab8d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::thread_pool::enqueue</definition>
+        <argsstring>(thread_pool_task task)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type><ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Enqueue a new task to the thread pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task to enqueue </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread_pool.h" line="114" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A thread pool contains 1 or more worker threads which accept <ref refid="structdpp_1_1thread__pool__task" kindref="compound">thread_pool_task</ref> lambadas into a queue, which is processed in-order by whichever thread is free. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::thread_pool</label>
+        <link refid="structdpp_1_1thread__pool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>threads</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tasks</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>queue_mutex</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cv</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>stop</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>condition_variable</label>
+      </node>
+      <node id="4">
+        <label>std::mutex</label>
+      </node>
+      <node id="3">
+        <label>priority_queue&lt;</label>
+      </node>
+      <node id="2">
+        <label>vector&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/thread_pool.h" line="71" column="1" bodyfile="include/dpp/thread_pool.h" bodystart="71" bodyend="115"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1thread__pool_1ad56b2c907ebbca9e1ca24cd47ab4d260" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>cv</name></member>
+      <member refid="structdpp_1_1thread__pool_1a6847cb3c0911ed402c1eb48756ab8d97" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>enqueue</name></member>
+      <member refid="structdpp_1_1thread__pool_1a05e985ef2fa7b1bcc2aa38912a8a32f2" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>queue_mutex</name></member>
+      <member refid="structdpp_1_1thread__pool_1a3eed4f7d3b14a29ca75aedc55af8535f" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>stop</name></member>
+      <member refid="structdpp_1_1thread__pool_1a902c31b079ebcee2913179cfbcc8d04d" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>tasks</name></member>
+      <member refid="structdpp_1_1thread__pool_1ac927a88f60f30ac549209a297eb97684" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>thread_pool</name></member>
+      <member refid="structdpp_1_1thread__pool_1afa15f924c81060079ed922ffdb82536c" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>threads</name></member>
+      <member refid="structdpp_1_1thread__pool_1a6d87521e755ceadf6611102cbe27fc54" prot="public" virt="non-virtual"><scope>dpp::thread_pool</scope><name>~thread_pool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

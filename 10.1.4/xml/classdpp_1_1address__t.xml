@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1address__t" kind="class" language="C++" prot="public">
+    <compoundname>dpp::address_t</compoundname>
+    <includes local="no">socket.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1address__t_1aab0913bae63f05c737d99fdffbd8d78e" prot="private" static="no" mutable="no">
+        <type>sockaddr</type>
+        <definition>sockaddr dpp::address_t::socket_addr</definition>
+        <argsstring></argsstring>
+        <name>socket_addr</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Internal sockaddr struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="67" column="10" bodyfile="include/dpp/socket.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1address__t_1a81cd546960f4f466af81aa97cea2f987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::address_t::address_t</definition>
+        <argsstring>(const std::string_view ip=&quot;0.0.0.0&quot;, uint16_t port=0)</argsstring>
+        <name>address_t</name>
+        <param>
+          <type>const std::string_view</type>
+          <declname>ip</declname>
+          <defval>&quot;0.0.0.0&quot;</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="classdpp_1_1address__t" kindref="compound">address_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPv4 address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Leave both as defaults to create a default bind-to-any setting </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1address__t_1a99574755cbe173ee09678dda099490d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::address_t::get_port</definition>
+        <argsstring>(socket fd)</argsstring>
+        <name>get_port</name>
+        <param>
+          <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+<para>Get the port bound to a file descriptor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File descriptor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Port number, or 0 if no port bound </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="98" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1address__t_1a536fc2ed0707c6edfa0e54680867e4af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sockaddr *</type>
+        <definition>sockaddr * dpp::address_t::get_socket_address</definition>
+        <argsstring>()</argsstring>
+        <name>get_socket_address</name>
+        <briefdescription>
+<para>Get sockaddr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sockaddr pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="83" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1address__t_1a3e417d086cc24400f71903a00daba084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t dpp::address_t::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns size of sockaddr_in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sockaddr_in size </para>
+</simplesect>
+<simplesect kind="note"><para>It is important the size this returns is sizeof(sockaddr_in) not sizeof(sockaddr), this is NOT a bug but requirement of C socket functions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/socket.h" line="91" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an IPv4 address for use with socket functions such as bind(). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Avoids type punning with C style casts from sockaddr_in to sockaddr pointers. </para>
+    </detaileddescription>
+    <location file="include/dpp/socket.h" line="63" column="1" bodyfile="include/dpp/socket.h" bodystart="63" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1address__t_1a81cd546960f4f466af81aa97cea2f987" prot="public" virt="non-virtual"><scope>dpp::address_t</scope><name>address_t</name></member>
+      <member refid="classdpp_1_1address__t_1a99574755cbe173ee09678dda099490d1" prot="public" virt="non-virtual"><scope>dpp::address_t</scope><name>get_port</name></member>
+      <member refid="classdpp_1_1address__t_1a536fc2ed0707c6edfa0e54680867e4af" prot="public" virt="non-virtual"><scope>dpp::address_t</scope><name>get_socket_address</name></member>
+      <member refid="classdpp_1_1address__t_1a3e417d086cc24400f71903a00daba084" prot="public" virt="non-virtual"><scope>dpp::address_t</scope><name>size</name></member>
+      <member refid="classdpp_1_1address__t_1aab0913bae63f05c737d99fdffbd8d78e" prot="private" virt="non-virtual"><scope>dpp::address_t</scope><name>socket_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

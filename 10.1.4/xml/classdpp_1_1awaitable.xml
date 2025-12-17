@@ -1,0 +1,602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1awaitable" kind="class" language="C++" prot="public">
+    <compoundname>dpp::awaitable</compoundname>
+    <basecompoundref refid="classdpp_1_1basic__awaitable" prot="public" virt="non-virtual">dpp::basic_awaitable&lt; awaitable&lt; T &gt; &gt;</basecompoundref>
+    <includes local="no">awaitable.h</includes>
+    <innerclass refid="structdpp_1_1awaitable_1_1awaiter" prot="protected">dpp::awaitable::awaiter</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classdpp_1_1awaitable_1a41984e48e9df89627f052c27eb1a7be6" prot="protected" static="no">
+        <type>T</type>
+        <definition>using dpp::awaitable&lt; T &gt;::result_type =  T</definition>
+        <argsstring></argsstring>
+        <name>result_type</name>
+        <briefdescription>
+<para>The type of the result produced by this task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="218" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" prot="protected" static="no">
+        <type>detail::promise::promise_base&lt; T &gt;</type>
+        <definition>using dpp::awaitable&lt; T &gt;::shared_state =  detail::promise::promise_base&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>shared_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="212" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdpp_1_1awaitable_1a187e3c1460de31c7278c7593790684cf" prot="protected" static="no">
+        <type>detail::promise::state_flags</type>
+        <definition>using dpp::awaitable&lt; T &gt;::state_flags =  detail::promise::state_flags</definition>
+        <argsstring></argsstring>
+        <name>state_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="213" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1awaitable_1a47d319b0c42b25dcb8cc3758e130b694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class detail::promise::promise_base&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>detail::promise::promise_base&lt; T &gt;</name>
+        <param>
+          <type>detail::promise::promise_base&lt; T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="189" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdpp_1_1awaitable_1ade34044099fbae9872352bc04a3a7a68" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdpp_1_1awaitable_1_1awaiter" kindref="compound">awaiter</ref>&lt; Derived &amp;&amp; &gt;</type>
+        <definition>awaiter&lt; Derived &amp;&amp; &gt; operator co_await</definition>
+        <argsstring>(Derived &amp;&amp;obj) noexcept</argsstring>
+        <name>operator co_await</name>
+        <param>
+          <type>Derived &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+    <requiresclause>(std::is_base_of_v&lt;awaitable, std::remove_cv_t&lt;Derived&gt;&gt;)    </requiresclause>
+        <briefdescription>
+<para>Overload of the co_await operator. Returns an <ref refid="structdpp_1_1awaitable_1_1awaiter" kindref="compound">awaiter</ref> referencing this awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns an <ref refid="structdpp_1_1awaitable_1_1awaiter" kindref="compound">awaiter</ref> referencing this awaitable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="365" column="16" bodyfile="include/dpp/coro/awaitable.h" bodystart="365" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdpp_1_1awaitable_1aeb553165649b279947b7af66f2511332" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdpp_1_1awaitable_1_1awaiter" kindref="compound">awaiter</ref>&lt; Derived &amp; &gt;</type>
+        <definition>awaiter&lt; Derived &amp; &gt; operator co_await</definition>
+        <argsstring>(Derived &amp;obj) noexcept</argsstring>
+        <name>operator co_await</name>
+        <param>
+          <type>Derived &amp;</type>
+          <declname>obj</declname>
+        </param>
+    <requiresclause>(std::is_base_of_v&lt;awaitable, std::remove_cv_t&lt;Derived&gt;&gt;)    </requiresclause>
+        <briefdescription>
+<para>Overload of the co_await operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns an <ref refid="structdpp_1_1awaitable_1_1awaiter" kindref="compound">awaiter</ref> referencing this awaitable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="354" column="16" bodyfile="include/dpp/coro/awaitable.h" bodystart="354" bodyend="356"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1awaitable_1ada827bdde416f47b2164d245b0bae838" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" kindref="member">shared_state</ref> *</type>
+        <definition>shared_state* dpp::awaitable&lt; T &gt;::state_ptr</definition>
+        <argsstring></argsstring>
+        <name>state_ptr</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Non-owning pointer to the promise, which must be kept alive for the entire lifetime of the awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="223" column="14" bodyfile="include/dpp/coro/awaitable.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a239fbebf6b93a3e1ed8f8718f19d875b" prot="protected" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(shared_state *promise) noexcept</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type><ref refid="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" kindref="member">shared_state</ref> *</type>
+          <declname>promise</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a promise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>promise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The promise to refer to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="230" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a7d8e184c4b06848b3e46c780a8bfa5a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>auto dpp::awaitable&lt; T &gt;::abandon</definition>
+        <argsstring>()</argsstring>
+        <name>abandon</name>
+        <briefdescription>
+<para>Abandons the promise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the promise&apos;s state to broken and unlinks this awaitable.</para>
+<para><simplesect kind="return"><para>uint8_t Flags previously held before setting them to broken </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="239" column="9" bodyfile="include/dpp/coro/awaitable.h" bodystart="641" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ad920651cfc75f83e7977a8dcd6f32a85" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; awaitable&lt; T &gt;  &gt;::sync_wait_impl</definition>
+        <argsstring>(auto &amp;&amp;do_wait)</argsstring>
+        <name>sync_wait_impl</name>
+        <param>
+          <type>auto &amp;&amp;</type>
+          <declname>do_wait</declname>
+        </param>
+        <briefdescription>
+<para>Implementation for sync_wait. This is code used by sync_wait, sync_wait_for, sync_wait_until. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Timed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the wait function times out or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>do_wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to do the actual wait on the cv </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="120" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="120" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a634f541ee4d28b9f31f638cadd4b81a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>()=default</argsstring>
+        <name>awaitable</name>
+        <briefdescription>
+<para>Construct an empty awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Such an awaitable must be assigned a promise before it can be awaited. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1aa20d8bcec589fad037e374e76a3ff1a0" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(awaitable &amp;&amp;rhs) noexcept</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move from another awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The awaitable to move from, left in an unspecified state after this. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="297" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="297" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a725b917774e7460e254a8939a28710c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy construction is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1abc3db69c3b3103409793d093bbef5782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; T &gt;::~awaitable</definition>
+        <argsstring>()</argsstring>
+        <name>~awaitable</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>May signal to the promise that it was destroyed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="314" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="651" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a1e16ffda1db2dcc811334a2ba0c59be3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; T &gt;::await_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether we already have the result or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="345" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="661" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a2e8ac296160fcb2a4f9c9b17f05c19d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::awaitable&lt; T &gt;::if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</definition>
+        <argsstring>()</argsstring>
+        <name>if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</name>
+        <briefdescription>
+<para>Title :) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>We use this in the destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="305" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a0f3794a44b94a3df90c1f2c3903af349" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::awaitable&lt; T &gt;::operator=</definition>
+        <argsstring>(awaitable &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move from another awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The awaitable to move from, left in an unspecified state after this. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>*this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="327" column="11" bodyfile="include/dpp/coro/awaitable.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a0cf608ecf0b6b06e18e249f01f7721d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::awaitable&lt; T &gt;::operator=</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="319" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ae532f5a8ec60af0b49e7c02780f36f0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; awaitable&lt; T &gt;  &gt;::sync_wait</definition>
+        <argsstring>()</argsstring>
+        <name>sync_wait</name>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="155" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1a44c9ff53eb87f550aaba04ab7d92c183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; awaitable&lt; T &gt;  &gt;::sync_wait_for</definition>
+        <argsstring>(const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</argsstring>
+        <name>sync_wait_for</name>
+        <param>
+          <type>const std::chrono::duration&lt; Rep, Period &gt; &amp;</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum duration to wait for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="172" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="172" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1a39fe143781a89b19052b6e4d35d30ffe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; awaitable&lt; T &gt;  &gt;::sync_wait_until</definition>
+        <argsstring>(const std::chrono::time_point&lt; Clock, Duration &gt; &amp;time)</argsstring>
+        <name>sync_wait_until</name>
+        <param>
+          <type>const std::chrono::time_point&lt; Clock, Duration &gt; &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time point to wait for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="189" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="189" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; T &gt;::valid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>valid</name>
+        <briefdescription>
+<para>Check whether this awaitable refers to a valid promise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether this awaitable refers to a valid promise or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="338" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="656" bodyend="658"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic awaitable class, represents a future value that can be co_await-ed on. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Roughly equivalent of std::future for coroutines, with the crucial distinction that the future does not own a reference to a &quot;shared state&quot;. It holds a non-owning reference to the promise, which must be kept alive for the entire lifetime of the awaitable.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the asynchronous value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacedpp_1acd398eef0974f7504e37176b97157dfe" kindref="member">promise</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>dpp::awaitable&lt; R &gt;</label>
+        <link refid="classdpp_1_1awaitable"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; R &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::basic_awaitable&lt; awaitable&lt; T &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; awaitable&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::async&lt; R &gt;</label>
+        <link refid="classdpp_1_1async"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::awaitable&lt; T &gt;</label>
+        <link refid="classdpp_1_1awaitable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::basic_awaitable&lt; Derived &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+      </node>
+      <node id="6">
+        <label>dpp::task&lt; R &gt;</label>
+        <link refid="classdpp_1_1task"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dpp::basic_awaitable&lt; awaitable&lt; T &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; awaitable&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::awaitable&lt; T &gt;</label>
+        <link refid="classdpp_1_1awaitable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::basic_awaitable&lt; Derived &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+      </node>
+      <node id="4">
+        <label>shared_state *</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/awaitable.h" line="208" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="208" bodyend="368"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1awaitable_1a7d8e184c4b06848b3e46c780a8bfa5a2" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>abandon</name></member>
+      <member refid="classdpp_1_1awaitable_1a1e16ffda1db2dcc811334a2ba0c59be3" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>await_ready</name></member>
+      <member refid="classdpp_1_1awaitable_1a239fbebf6b93a3e1ed8f8718f19d875b" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1a634f541ee4d28b9f31f638cadd4b81a9" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1a725b917774e7460e254a8939a28710c5" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1aa20d8bcec589fad037e374e76a3ff1a0" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1a47d319b0c42b25dcb8cc3758e130b694" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>detail::promise::promise_base&lt; T &gt;</name></member>
+      <member refid="classdpp_1_1awaitable_1a2e8ac296160fcb2a4f9c9b17f05c19d0" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</name></member>
+      <member refid="classdpp_1_1awaitable_1aeb553165649b279947b7af66f2511332" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1awaitable_1ade34044099fbae9872352bc04a3a7a68" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1awaitable_1a0cf608ecf0b6b06e18e249f01f7721d2" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1awaitable_1a0f3794a44b94a3df90c1f2c3903af349" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1awaitable_1a41984e48e9df89627f052c27eb1a7be6" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>result_type</name></member>
+      <member refid="classdpp_1_1awaitable_1a9419b84ca1372b18abc65303f6055826" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>shared_state</name></member>
+      <member refid="classdpp_1_1awaitable_1a187e3c1460de31c7278c7593790684cf" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>state_flags</name></member>
+      <member refid="classdpp_1_1awaitable_1ada827bdde416f47b2164d245b0bae838" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>state_ptr</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1ae532f5a8ec60af0b49e7c02780f36f0d" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>sync_wait</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1a44c9ff53eb87f550aaba04ab7d92c183" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>sync_wait_for</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1ad920651cfc75f83e7977a8dcd6f32a85" prot="protected" virt="non-virtual"><scope>dpp::awaitable</scope><name>sync_wait_impl</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1a39fe143781a89b19052b6e4d35d30ffe" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>sync_wait_until</name></member>
+      <member refid="classdpp_1_1awaitable_1af5a9d38341cd3290adf06dabf74fc86e" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>valid</name></member>
+      <member refid="classdpp_1_1awaitable_1abc3db69c3b3103409793d093bbef5782" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>~awaitable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

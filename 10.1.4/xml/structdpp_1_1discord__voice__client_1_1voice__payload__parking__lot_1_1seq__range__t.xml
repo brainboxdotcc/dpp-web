@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</compoundname>
+    <includes local="no">discordvoiceclient.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a810e5e9a2ef3ccfd47c55202a8c5c120" prot="public" static="no" mutable="no">
+        <type>rtp_seq_t</type>
+        <definition>rtp_seq_t dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t::max_seq</definition>
+        <argsstring></argsstring>
+        <name>max_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="366" column="19" bodyfile="include/dpp/discordvoiceclient.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a06d537d652c468f6843891d849818e5a" prot="public" static="no" mutable="no">
+        <type>rtp_timestamp_t</type>
+        <definition>rtp_timestamp_t dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t::max_timestamp</definition>
+        <argsstring></argsstring>
+        <name>max_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="367" column="31" bodyfile="include/dpp/discordvoiceclient.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a8bdc4e658e02cd662cbe48650fdd1632" prot="public" static="no" mutable="no">
+        <type>rtp_seq_t</type>
+        <definition>rtp_seq_t dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t::min_seq</definition>
+        <argsstring></argsstring>
+        <name>min_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="366" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a6bc269dee0c9c71039a5c879a4e65ed8" prot="public" static="no" mutable="no">
+        <type>rtp_timestamp_t</type>
+        <definition>rtp_timestamp_t dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t::min_timestamp</definition>
+        <argsstring></argsstring>
+        <name>min_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="367" column="17" bodyfile="include/dpp/discordvoiceclient.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The range of RTP packet sequence number and timestamp in the lot. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The minimum is used to drop packets that arrive too late. Packets less than the minimum have been delivered to voice handlers and there is no going back. Unfortunately we just have to drop them.</para>
+<para>The maximum is used, at flush time, to calculate the minimum for the next batch. The maximum is also updated every time we receive an RTP packet with a larger value. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</label>
+        <link refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>max_seq</edgelabel>
+          <edgelabel>min_seq</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>max_timestamp</edgelabel>
+          <edgelabel>min_timestamp</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>uint16_t</label>
+      </node>
+      <node id="3">
+        <label>uint32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/discordvoiceclient.h" line="365" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="365" bodyend="368"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a810e5e9a2ef3ccfd47c55202a8c5c120" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</scope><name>max_seq</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a06d537d652c468f6843891d849818e5a" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</scope><name>max_timestamp</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a8bdc4e658e02cd662cbe48650fdd1632" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</scope><name>min_seq</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a6bc269dee0c9c71039a5c879a4e65ed8" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</scope><name>min_timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
