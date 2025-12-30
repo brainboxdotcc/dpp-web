@@ -7588,6 +7588,8 @@ var namespacedpp =
       [ "i_guild_scheduled_events", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ae8e1fccd9f13d710f2221ad8064f45e2", null ],
       [ "i_auto_moderation_configuration", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5af495c258f332d75a27b64cc5a9b7d302", null ],
       [ "i_auto_moderation_execution", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5abbd9494f63b45f5d7a0723cf18ad65cb", null ],
+      [ "i_guild_message_polls", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5abb1543efdb41d1b0bee0baa8569951ed", null ],
+      [ "i_direct_message_polls", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a424428f98ae576dd80f9d70a4a1c30c4", null ],
       [ "i_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f", null ],
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
       [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ],
