@@ -1,0 +1,23 @@
+digraph "dpp::async&lt; R &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="dpp::async\< R \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A co_await-able object handling an API call in parallel with the caller."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dpp::awaitable\< R \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1awaitable.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dpp::basic_awaitable\l\< awaitable\< R \> \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__awaitable.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< awaitable\< R \> \>" ,fontname="Helvetica"];
+  Node4 [label="dpp::basic_awaitable\l\< Derived \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__awaitable.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state_ptr" ,fontname="Helvetica"];
+  Node5 [label="shared_state *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< R \>" ,fontname="Helvetica"];
+  Node6 [label="dpp::awaitable\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1awaitable.html",tooltip="Generic awaitable class, represents a future value that can be co_await-ed on."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dpp::basic_awaitable\l\< awaitable\< T \> \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__awaitable.html",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< awaitable\< T \> \>" ,fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state_ptr" ,fontname="Helvetica"];
+}

@@ -6,5 +6,19 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="dpp::event_member",height=0.2,width=0.4,color="black",URL="$structdpp_1_1event__member.html",tooltip="Represents a guild member/user who has registered interest in an event."];
+  Node0 [label="dpp::detail::promise\l::promise_base\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1detail_1_1promise_1_1promise__base.html",tooltip="Base class defining logic common to all promise types, aka the \"write\" end of an awaitable."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="dpp::basic_promise\< R \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__promise.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dpp::detail::task::\lpromise_base\< R \>",height=0.2,width=0.4,color="black",URL="$structdpp_1_1detail_1_1task_1_1promise__base.html",tooltip="Base implementation of task::promise_t, without the logic that would depend on the return type...."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dpp::detail::task::\lpromise_t\< R \>",height=0.2,width=0.4,color="black",URL="$structdpp_1_1detail_1_1task_1_1promise__t.html",tooltip="A task's promise_t type, with special logic for handling nested tasks."];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="dpp::basic_promise\l\< void \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__promise.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dpp::detail::task::\lpromise_base\< void \>",height=0.2,width=0.4,color="black",URL="$structdpp_1_1detail_1_1task_1_1promise__base.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="dpp::detail::task::\lpromise_t\< void \>",height=0.2,width=0.4,color="black",URL="$structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html",tooltip="Implementation of task::promise_t for void return type."];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dpp::basic_promise\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__promise.html",tooltip="Generic promise class, represents the owning potion of an asynchronous value."];
 }

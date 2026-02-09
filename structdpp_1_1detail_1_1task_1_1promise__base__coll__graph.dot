@@ -1,0 +1,27 @@
+digraph "dpp::detail::task::promise_base&lt; R &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="dpp::detail::task::\lpromise_base\< R \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base implementation of task::promise_t, without the logic that would depend on the return type...."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dpp::basic_promise\< R \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__promise.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dpp::detail::promise\l::promise_base\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1detail_1_1promise_1_1promise__base.html",tooltip="Base class defining logic common to all promise types, aka the \"write\" end of an awaitable."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node4 [label="result_t\< T \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ,fontname="Helvetica"];
+  Node5 [label="atomic\<",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" awaiter" ,fontname="Helvetica"];
+  Node6 [label="coroutine_handle",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< R \>" ,fontname="Helvetica"];
+  Node7 [label="dpp::basic_promise\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1basic__promise.html",tooltip="Generic promise class, represents the owning potion of an asynchronous value."];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="dpp::detail::promise\l::promise_base\< T \>",height=0.2,width=0.4,color="black",URL="$classdpp_1_1detail_1_1promise_1_1promise__base.html",tooltip="Base class defining logic common to all promise types, aka the \"write\" end of an awaitable."];
+  Node4 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node5 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ,fontname="Helvetica"];
+  Node6 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" awaiter" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cancelled" ,fontname="Helvetica"];
+}
