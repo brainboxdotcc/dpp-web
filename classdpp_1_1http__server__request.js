@@ -17,6 +17,7 @@ var classdpp_1_1http__server__request =
     [ "get_headers", "classdpp_1_1http__server__request.html#a3a435a70b9b0d729073c3dec38e8c20e", null ],
     [ "get_max_header_size", "classdpp_1_1http__server__request.html#ac0a516b0c87edbed7a5772854e798ca2", null ],
     [ "get_max_post_size", "classdpp_1_1http__server__request.html#abaeb04ec5dc74da887635db5c010fdbb", null ],
+    [ "get_path", "classdpp_1_1http__server__request.html#aa845f5a5674049b487804095402ce968", null ],
     [ "get_request_body", "classdpp_1_1http__server__request.html#a4c7c7a69b993eba559959cfae599a6f1", null ],
     [ "get_response", "classdpp_1_1http__server__request.html#aa8eccc3346b34b751869e732975985c5", null ],
     [ "get_response_body", "classdpp_1_1http__server__request.html#ab27be4b58d0f3f3834436e1325aabe45", null ],
