@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classdpp_1_1timed__listener.html#a60aecf4b71039950d7965adca65dc7d7":[9,0,0,245,1],
+"classdpp_1_1timed__listener.html#a8557fea6b073b1cce59dae3582b8cdba":[11,0,0,239,0],
 "classdpp_1_1timed__listener.html#a8557fea6b073b1cce59dae3582b8cdba":[9,0,0,245,0],
 "classdpp_1_1user.html":[11,0,0,243],
 "classdpp_1_1user.html":[9,0,0,249],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "classdpp_1_1voice__channel__effect.html#a86ac172eee0d19378942887de50c6d11":[11,0,0,248,8],
 "classdpp_1_1voice__channel__effect.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,254,3],
 "classdpp_1_1voice__channel__effect.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,248,3],
-"classdpp_1_1voice__channel__effect.html#a99428d0b76f678d8701410529e067d98":[9,0,0,254,7],
-"classdpp_1_1voice__channel__effect.html#a99428d0b76f678d8701410529e067d98":[11,0,0,248,7],
-"classdpp_1_1voice__channel__effect.html#aa56f20cbbed95607afc102285e63fb14":[9,0,0,254,9]
+"classdpp_1_1voice__channel__effect.html#a99428d0b76f678d8701410529e067d98":[9,0,0,254,7]
 };

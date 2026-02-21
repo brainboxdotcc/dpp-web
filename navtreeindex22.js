@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classdpp_1_1websocket__client.html#aaba3255abd8ec8e94d1781771cfc9acb":[9,0,0,271,34],
+"classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[11,0,0,265,10],
 "classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[9,0,0,271,10],
 "classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[9,0,0,271,2],
 "classdpp_1_1websocket__client.html#ab872768661dc89d54f0381b0fff5b674":[11,0,0,265,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "music-and-audio.html":[5,2],
 "namespacedpp.html":[9,0,0],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,399],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414":[9,0,0,399,15],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a311a6b6f7fc320d4c03ae72a851dce5c":[9,0,0,399,6],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a39ad4150b19142aad7ff4867e9ec9b69":[9,0,0,399,7]
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414":[9,0,0,399,15]
 };
