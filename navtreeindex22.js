@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classdpp_1_1websocket__client.html#aa8cfa2e6c511022b67dbd97cc57f0731":[11,0,0,265,40],
+"classdpp_1_1websocket__client.html#aaba3255abd8ec8e94d1781771cfc9acb":[11,0,0,265,34],
 "classdpp_1_1websocket__client.html#aaba3255abd8ec8e94d1781771cfc9acb":[9,0,0,271,34],
 "classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[11,0,0,265,10],
 "classdpp_1_1websocket__client.html#ab2f2c18aff43ac8dfbfa58bc5dc71fa1":[9,0,0,271,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "misc.html":[5,4],
 "modal-dialog-interactions.html":[5,1,5],
 "music-and-audio.html":[5,2],
-"namespacedpp.html":[9,0,0],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,399],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414":[9,0,0,399,15]
+"namespacedpp.html":[9,0,0]
 };

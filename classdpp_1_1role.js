@@ -17,6 +17,7 @@ var classdpp_1_1role =
     [ "has_administrator", "classdpp_1_1role.html#a3ffcaced8369d47cc3f954fa0978c40c", null ],
     [ "has_attach_files", "classdpp_1_1role.html#a848a39ba5ff6b5c42c3246d041582d00", null ],
     [ "has_ban_members", "classdpp_1_1role.html#ac8eaec9aac9633c7d05cb208da7fc4d9", null ],
+    [ "has_bypass_slowmode", "classdpp_1_1role.html#ac20fb779c2eb81a963b6038d774b3b26", null ],
     [ "has_change_nickname", "classdpp_1_1role.html#a2b158e7e37bb66c17a4ed412a71f7222", null ],
     [ "has_connect", "classdpp_1_1role.html#a0be98542c2299aa41829d69bf348b54d", null ],
     [ "has_create_events", "classdpp_1_1role.html#aa06bc68e2e594610c19ad05264463fc9", null ],

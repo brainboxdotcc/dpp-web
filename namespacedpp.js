@@ -7765,7 +7765,8 @@ var namespacedpp =
       [ "p_use_clyde_ai", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2", null ],
       [ "p_send_polls", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a12c9e81f7643266697916aab6d79d475", null ],
       [ "p_use_external_apps", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af0a7493afc1d152fe6f6431b515980c3", null ],
-      [ "p_pin_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ab2372ff3248ba10c94ac4bddebe27a28", null ]
+      [ "p_pin_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ab2372ff3248ba10c94ac4bddebe27a28", null ],
+      [ "p_bypass_slowmode", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1f388a65dc147c98c66aa5ae9b085661", null ]
     ] ],
     [ "poll_layout_type", "namespacedpp.html#ae5ffe09f834e517ee9574f04cb7b8cc8", [
       [ "pl_default", "namespacedpp.html#ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6", null ]
