@@ -26,10 +26,12 @@ var searchData=
   ['message_5freaction_5fremove_5femoji_5ft_23',['message_reaction_remove_emoji_t',['../structdpp_1_1message__reaction__remove__emoji__t.html',1,'dpp']]],
   ['message_5freaction_5fremove_5ft_24',['message_reaction_remove_t',['../structdpp_1_1message__reaction__remove__t.html',1,'dpp']]],
   ['message_5fref_25',['message_ref',['../structdpp_1_1message_1_1message__ref.html',1,'dpp::message']]],
-  ['message_5fsnapshot_26',['message_snapshot',['../structdpp_1_1message__snapshot.html',1,'dpp']]],
-  ['message_5fupdate_27',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
-  ['message_5fupdate_5ft_28',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]],
-  ['moveable_5fpromise_29',['moveable_promise',['../classdpp_1_1moveable__promise.html',1,'dpp']]],
-  ['moving_5faverager_30',['moving_averager',['../structdpp_1_1moving__averager.html',1,'dpp']]],
-  ['multipart_5fcontent_31',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]]
+  ['message_5fsearch_5fparams_26',['message_search_params',['../structdpp_1_1message__search__params.html',1,'dpp']]],
+  ['message_5fsearch_5fresult_27',['message_search_result',['../structdpp_1_1message__search__result.html',1,'dpp']]],
+  ['message_5fsnapshot_28',['message_snapshot',['../structdpp_1_1message__snapshot.html',1,'dpp']]],
+  ['message_5fupdate_29',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
+  ['message_5fupdate_5ft_30',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]],
+  ['moveable_5fpromise_31',['moveable_promise',['../classdpp_1_1moveable__promise.html',1,'dpp']]],
+  ['moving_5faverager_32',['moving_averager',['../structdpp_1_1moving__averager.html',1,'dpp']]],
+  ['multipart_5fcontent_33',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]]
 ];

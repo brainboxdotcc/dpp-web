@@ -6614,6 +6614,8 @@ var namespacedpp =
     [ "message_reaction_remove_all_t", "structdpp_1_1message__reaction__remove__all__t.html", "structdpp_1_1message__reaction__remove__all__t" ],
     [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
     [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
+    [ "message_search_params", "structdpp_1_1message__search__params.html", "structdpp_1_1message__search__params" ],
+    [ "message_search_result", "structdpp_1_1message__search__result.html", "structdpp_1_1message__search__result" ],
     [ "message_snapshot", "structdpp_1_1message__snapshot.html", "structdpp_1_1message__snapshot" ],
     [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
     [ "moveable_promise", "classdpp_1_1moveable__promise.html", "classdpp_1_1moveable__promise" ],
@@ -6729,7 +6731,7 @@ var namespacedpp =
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
     [ "component_emoji", "namespacedpp.html#a409d609e310268e04782e398a38f7c06", null ],
-    [ "confirmable_t", "namespacedpp.html#a2d27bb375e7e419a1fad56100a9c27f7", null ],
+    [ "confirmable_t", "namespacedpp.html#a965a68f1c294ccefb1c145cda0bbfb03", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dns_cache_t", "namespacedpp.html#ae85e1c4be79e3284d57af6eb20f52d14", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
@@ -7650,6 +7652,25 @@ var namespacedpp =
       [ "m_is_voice_message", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8", null ],
       [ "m_has_snapshot", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a9824311104c50758aa4918c31dbc76c8", null ],
       [ "m_using_components_v2", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a3aa022e7258c60abd50c9b0b28cad538", null ]
+    ] ],
+    [ "message_search_has", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35d", [
+      [ "has_image", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35daa07009891d572011b0a7ec94b6c994d7", null ],
+      [ "has_sound", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35dab07d573c98edf22cbccdc0d2e2f7d801", null ],
+      [ "has_video", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35da655dafdd6a706d1c31612193fae1d362", null ],
+      [ "has_file", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35da8c1b72cbdb7be7a420f23b5d179cd11f", null ],
+      [ "has_sticker", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35da390ee54a31acb627d416b125d7664a7a", null ],
+      [ "has_embed", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35da0da93835961d6b44027880e46649b93f", null ],
+      [ "has_link", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35daae94a43a94e019be809366e4555d9396", null ],
+      [ "has_poll", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35da2f3252bf699a4bd5a531df559f436c47", null ],
+      [ "has_snapshot", "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35daad46824d25d5a60da61e7b8af5d159d4", null ]
+    ] ],
+    [ "message_search_order", "namespacedpp.html#a2c678eda5db95d7810cd6c746337c062", [
+      [ "sort_desc", "namespacedpp.html#a2c678eda5db95d7810cd6c746337c062a551656c047efd0826fdee0e93321d7be", null ],
+      [ "sort_asc", "namespacedpp.html#a2c678eda5db95d7810cd6c746337c062a9412006365d341c1271bd889d6f842c5", null ]
+    ] ],
+    [ "message_search_sort", "namespacedpp.html#a6e6b6ddd2acffec76618fda08bebf586", [
+      [ "sort_timestamp", "namespacedpp.html#a6e6b6ddd2acffec76618fda08bebf586a260410380f7dde51ac26ac156cf5209e", null ],
+      [ "sort_relevance", "namespacedpp.html#a6e6b6ddd2acffec76618fda08bebf586a895a472c167bf207c06fa8ef36a70347", null ]
     ] ],
     [ "message_type", "namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11db", [
       [ "mt_default", "namespacedpp.html#a9e6278f6006cf4ab45d64dd1fc3a11dbac7573c73d464b30ffd2fee74f8618152", null ],

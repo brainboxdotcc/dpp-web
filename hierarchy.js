@@ -374,6 +374,9 @@ var hierarchy =
     [ "dpp::json_interface< message_pin >", "structdpp_1_1json__interface.html", [
       [ "dpp::message_pin", "classdpp_1_1message__pin.html", null ]
     ] ],
+    [ "dpp::json_interface< message_search_result >", "structdpp_1_1json__interface.html", [
+      [ "dpp::message_search_result", "structdpp_1_1message__search__result.html", null ]
+    ] ],
     [ "dpp::json_interface< onboarding >", "structdpp_1_1json__interface.html", [
       [ "dpp::onboarding", "structdpp_1_1onboarding.html", null ]
     ] ],
@@ -472,6 +475,7 @@ var hierarchy =
     [ "dpp::message_file_data", "structdpp_1_1message__file__data.html", null ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
+    [ "dpp::message_search_params", "structdpp_1_1message__search__params.html", null ],
     [ "dpp::message_snapshot< T >", "structdpp_1_1message__snapshot.html", null ],
     [ "dpp::moveable_promise< T >", "classdpp_1_1moveable__promise.html", null ],
     [ "dpp::moving_averager", "structdpp_1_1moving__averager.html", null ],
