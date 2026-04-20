@@ -1415,11 +1415,11 @@ requires (utility::callable_returns&lt;F, <a class="el" href="classdpp_1_1task.h
 <tr class="memitem:a51ef65c943c76edd7abd7c8e21e34416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416">start</a> (<a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">start_type</a> return_after=<a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">st_wait</a>)</td></tr>
 <tr class="memdesc:a51ef65c943c76edd7abd7c8e21e34416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the cluster, connecting all its shards.  <a href="classdpp_1_1cluster.html#a51ef65c943c76edd7abd7c8e21e34416">More...</a><br /></td></tr>
 <tr class="separator:a51ef65c943c76edd7abd7c8e21e34416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a692bd74ddb15e61b2fabfc4d5d32d"><td class="memTemplParams" colspan="2">template&lt;std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; T, std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; U = std::function&lt;void(timer)&gt;&gt; <br />
-requires (<a class="el" href="conceptdpp_1_1awaitable__type.html">dpp::awaitable_type</a>&lt;typename std::invoke_result&lt;T, <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&gt;::type&gt;)</td></tr>
-<tr class="memitem:a83a692bd74ddb15e61b2fabfc4d5d32d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a83a692bd74ddb15e61b2fabfc4d5d32d">start_timer</a> (T &amp;&amp;on_tick, uint64_t frequency, U &amp;&amp;on_stop={})</td></tr>
-<tr class="memdesc:a83a692bd74ddb15e61b2fabfc4d5d32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a coroutine timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#a83a692bd74ddb15e61b2fabfc4d5d32d">More...</a><br /></td></tr>
-<tr class="separator:a83a692bd74ddb15e61b2fabfc4d5d32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e69fac26da3d681badc70320509c8f7"><td class="memTemplParams" colspan="2">template&lt;std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; T, std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; U = std::function&lt;void(timer)&gt;&gt; <br />
+requires ( <a class="el" href="conceptdpp_1_1awaitable__type.html">dpp::awaitable_type</a>&lt;typename std::invoke_result&lt;T, <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&gt;::type&gt; &amp;&amp; std::copy_constructible&lt;std::decay_t&lt;T&gt;&gt; &amp;&amp; // N4988 [func.wrap.func.con]/10.1 - std::function requires a copy constructible argument std::copy_constructible&lt;std::decay_t&lt;U&gt;&gt; )</td></tr>
+<tr class="memitem:a2e69fac26da3d681badc70320509c8f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2e69fac26da3d681badc70320509c8f7">start_timer</a> (T &amp;&amp;on_tick, uint64_t frequency, U &amp;&amp;on_stop={})</td></tr>
+<tr class="memdesc:a2e69fac26da3d681badc70320509c8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a coroutine timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#a2e69fac26da3d681badc70320509c8f7">More...</a><br /></td></tr>
+<tr class="separator:a2e69fac26da3d681badc70320509c8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5">start_timer</a> (<a class="el" href="namespacedpp.html#ad4658c417b9af90d3021253375580a61">timer_callback_t</a> on_tick, uint64_t frequency, <a class="el" href="namespacedpp.html#ad4658c417b9af90d3021253375580a61">timer_callback_t</a> on_stop={})</td></tr>
 <tr class="memdesc:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5">More...</a><br /></td></tr>
 <tr class="separator:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -19554,14 +19554,14 @@ requires (utility::callable_returns&lt;F, <a class="el" href="classdpp_1_1task.h
 
 </div>
 </div>
-<a id="a83a692bd74ddb15e61b2fabfc4d5d32d" name="a83a692bd74ddb15e61b2fabfc4d5d32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a692bd74ddb15e61b2fabfc4d5d32d">&#9670;&nbsp;</a></span>start_timer() <span class="overload">[1/2]</span></h2>
+<a id="a2e69fac26da3d681badc70320509c8f7" name="a2e69fac26da3d681badc70320509c8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e69fac26da3d681badc70320509c8f7">&#9670;&nbsp;</a></span>start_timer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; T, std::invocable&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> &gt; U = std::function&lt;void(timer)&gt;&gt; <br />
-requires (<a class="el" href="conceptdpp_1_1awaitable__type.html">dpp::awaitable_type</a>&lt;typename std::invoke_result&lt;T, <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&gt;::type&gt;)</div>
+requires ( <a class="el" href="conceptdpp_1_1awaitable__type.html">dpp::awaitable_type</a>&lt;typename std::invoke_result&lt;T, <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&gt;::type&gt; &amp;&amp; std::copy_constructible&lt;std::decay_t&lt;T&gt;&gt; &amp;&amp; // N4988 [func.wrap.func.con]/10.1 - std::function requires a copy constructible argument std::copy_constructible&lt;std::decay_t&lt;U&gt;&gt; )</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
