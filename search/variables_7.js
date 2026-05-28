@@ -28,7 +28,7 @@ var searchData=
   ['glasses_25',['glasses',['../namespacedpp_1_1unicode__emoji.html#a9f00f1192e45f01e85c6d41e3154a269',1,'dpp::unicode_emoji']]],
   ['global_5fname_26',['global_name',['../classdpp_1_1user.html#a2411b17e9e910111283c405d78bb25f9',1,'dpp::user']]],
   ['globally_5flimited_5funtil_27',['globally_limited_until',['../classdpp_1_1request__queue.html#a4afc7b0771639f50b8c8c3ac29811d5c',1,'dpp::request_queue']]],
-  ['globally_5fratelimited_28',['globally_ratelimited',['../classdpp_1_1request__queue.html#a72a95ae8742f8d76d69ffbf63993b383',1,'dpp::request_queue']]],
+  ['globally_5fratelimited_28',['globally_ratelimited',['../classdpp_1_1request__queue.html#adda4dc40aeb46fa046649ced8355f8dd',1,'dpp::request_queue']]],
   ['globe_5fwith_5fmeridians_29',['globe_with_meridians',['../namespacedpp_1_1unicode__emoji.html#a48b47b77336912697eaf8394d30c65af',1,'dpp::unicode_emoji']]],
   ['gloves_30',['gloves',['../namespacedpp_1_1unicode__emoji.html#a7b8267c3cdcb47f376a4efd15f25a620',1,'dpp::unicode_emoji']]],
   ['glowing_5fstar_31',['glowing_star',['../namespacedpp_1_1unicode__emoji.html#adccd3f2d7e22086b9a58ea4205fee765',1,'dpp::unicode_emoji']]],

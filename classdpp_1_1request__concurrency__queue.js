@@ -10,6 +10,7 @@ var classdpp_1_1request__concurrency__queue =
     [ "in_index", "classdpp_1_1request__concurrency__queue.html#a7978dcb49759ecf4ddf3ae4309aefb1e", null ],
     [ "in_mutex", "classdpp_1_1request__concurrency__queue.html#a33f08478684fae201d8ace29810fa2c8", null ],
     [ "in_timer", "classdpp_1_1request__concurrency__queue.html#ae90d8254414082070925fc7ba2956337", null ],
+    [ "rem_mutex", "classdpp_1_1request__concurrency__queue.html#ab207f7e9bc73d10a912c28bc55641b65", null ],
     [ "removals", "classdpp_1_1request__concurrency__queue.html#a9119a439aa50b6ad4e3882a69fdcbae5", null ],
     [ "requests", "classdpp_1_1request__concurrency__queue.html#a0e19bde512eee94b60709182a2ad81c2", null ],
     [ "requests_in", "classdpp_1_1request__concurrency__queue.html#ab417c5ee846fc04b9e9bf7bf0712508c", null ],

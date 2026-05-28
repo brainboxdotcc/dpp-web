@@ -154,6 +154,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae90d8254414082070925fc7ba2956337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">dpp::timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__concurrency__queue.html#ae90d8254414082070925fc7ba2956337">in_timer</a></td></tr>
 <tr class="memdesc:ae90d8254414082070925fc7ba2956337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inbound queue timer. The timer is called every second, and when it wakes up it checks for requests pending to be sent in the queue. If there are any requests and we are not waiting on rate limit, it will send them, else it will wait for the rate limit to expire.  <a href="classdpp_1_1request__concurrency__queue.html#ae90d8254414082070925fc7ba2956337">More...</a><br /></td></tr>
 <tr class="separator:ae90d8254414082070925fc7ba2956337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab207f7e9bc73d10a912c28bc55641b65"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__concurrency__queue.html#ab207f7e9bc73d10a912c28bc55641b65">rem_mutex</a></td></tr>
+<tr class="memdesc:ab207f7e9bc73d10a912c28bc55641b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removals queue mutex thread safety.  <a href="classdpp_1_1request__concurrency__queue.html#ab207f7e9bc73d10a912c28bc55641b65">More...</a><br /></td></tr>
+<tr class="separator:ab207f7e9bc73d10a912c28bc55641b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9119a439aa50b6ad4e3882a69fdcbae5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__concurrency__queue.html#a9119a439aa50b6ad4e3882a69fdcbae5">removals</a></td></tr>
 <tr class="memdesc:a9119a439aa50b6ad4e3882a69fdcbae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests to remove after a set amount of time has passed.  <a href="classdpp_1_1request__concurrency__queue.html#a9119a439aa50b6ad4e3882a69fdcbae5">More...</a><br /></td></tr>
 <tr class="separator:a9119a439aa50b6ad4e3882a69fdcbae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,6 +386,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inbound queue timer. The timer is called every second, and when it wakes up it checks for requests pending to be sent in the queue. If there are any requests and we are not waiting on rate limit, it will send them, else it will wait for the rate limit to expire. </p>
+
+</div>
+</div>
+<a id="ab207f7e9bc73d10a912c28bc55641b65" name="ab207f7e9bc73d10a912c28bc55641b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab207f7e9bc73d10a912c28bc55641b65">&#9670;&nbsp;</a></span>rem_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex dpp::request_concurrency_queue::rem_mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removals queue mutex thread safety. </p>
 
 </div>
 </div>

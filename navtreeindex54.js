@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"namespacedpp_1_1unicode__emoji.html#afe7bc76d2ca1dc903b0627e334a51496":[9,0,0,7,5435],
+"namespacedpp_1_1unicode__emoji.html#afe8365687a50daea0e7c8cffb4f46ba5":[9,0,0,7,2836],
 "namespacedpp_1_1unicode__emoji.html#afe8699e1afdfb3851c30e21198821aba":[9,0,0,7,936],
 "namespacedpp_1_1unicode__emoji.html#afea16116160eb383f772b1ba23b6f95f":[9,0,0,7,5480],
 "namespacedpp_1_1unicode__emoji.html#afea8e0dde92b2875323f36dbee8b2f96":[9,0,0,7,2039],
@@ -133,8 +135,8 @@ var NAVTREEINDEX54 =
 "namespacemembers_d.html":[9,1,0,4],
 "namespacemembers_e.html":[9,1,0,5],
 "namespacemembers_enum.html":[9,1,4],
-"namespacemembers_eval.html":[9,1,5],
 "namespacemembers_eval.html":[9,1,5,0],
+"namespacemembers_eval.html":[9,1,5],
 "namespacemembers_eval_c.html":[9,1,5,1],
 "namespacemembers_eval_d.html":[9,1,5,2],
 "namespacemembers_eval_e.html":[9,1,5,3],
@@ -224,10 +226,10 @@ var NAVTREEINDEX54 =
 "structdpp_1_1active__thread__info.html":[9,0,0,9],
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[11,0,0,3,0],
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[9,0,0,9,0],
-"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[11,0,0,3,1],
 "structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[9,0,0,9,1],
-"structdpp_1_1activity__assets.html":[11,0,0,5],
+"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[11,0,0,3,1],
 "structdpp_1_1activity__assets.html":[9,0,0,11],
+"structdpp_1_1activity__assets.html":[11,0,0,5],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[11,0,0,5,4],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[9,0,0,11,4],
 "structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[11,0,0,5,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c":[9,0,0,12,2],
 "structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c":[11,0,0,6,2],
 "structdpp_1_1activity__party.html":[9,0,0,13],
-"structdpp_1_1activity__party.html":[11,0,0,7],
-"structdpp_1_1activity__party.html#a029b85cb9a791a89a9f63515ad70c274":[11,0,0,7,2],
-"structdpp_1_1activity__party.html#a029b85cb9a791a89a9f63515ad70c274":[9,0,0,13,2]
+"structdpp_1_1activity__party.html":[11,0,0,7]
 };
