@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1poll__answer" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::poll_answer</compoundname>
+    <includes local="no">message.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1poll__answer_1a54046a19649c8fccf18562ffaa936be9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::poll_answer::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>ID of the answer. Only sent by the Discord API, this is a dead field when creating a poll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>@warn At the time of writing the Discord API warns users not to rely on anything regarding sequence or &quot;first value&quot; of this field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1739" column="10" bodyfile="include/dpp/message.h" bodystart="1739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll__answer_1a9788db4dad2dbd406e8a2d7f18fbd5d0" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1poll__media" kindref="compound">poll_media</ref></type>
+        <definition>poll_media dpp::poll_answer::media</definition>
+        <argsstring></argsstring>
+        <name>media</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Data of the answer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structdpp_1_1poll__media" kindref="compound">poll_media</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1746" column="12" bodyfile="include/dpp/message.h" bodystart="1746" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an answer in a poll. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll#poll-answer-object-poll-answer-object-structure">https://discord.com/developers/docs/resources/poll#poll-answer-object-poll-answer-object-structure</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>bool</label>
+      </node>
+      <node id="6">
+        <label>dpp::partial_emoji</label>
+        <link refid="structdpp_1_1partial__emoji"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>animated</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::poll_answer</label>
+        <link refid="structdpp_1_1poll__answer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>media</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::poll_media</label>
+        <link refid="structdpp_1_1poll__media"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>emoji</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>uint32_t</label>
+      </node>
+      <node id="8">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/message.h" line="1733" column="1" bodyfile="include/dpp/message.h" bodystart="1733" bodyend="1747"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1poll__answer_1a54046a19649c8fccf18562ffaa936be9" prot="public" virt="non-virtual"><scope>dpp::poll_answer</scope><name>id</name></member>
+      <member refid="structdpp_1_1poll__answer_1a9788db4dad2dbd406e8a2d7f18fbd5d0" prot="public" virt="non-virtual"><scope>dpp::poll_answer</scope><name>media</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

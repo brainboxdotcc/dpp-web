@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1message__search__result" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::message_search_result</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; message_search_result &gt;</basecompoundref>
+    <includes local="no">message.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1message__search__result_1a8f6872275cf687dccf6a8b4d17ddeda6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; message_search_result &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; message_search_result &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1message__search__result" kindref="compound">message_search_result</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3253" column="13" bodyfile="include/dpp/message.h" bodystart="3262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1message__search__result_1a4787ab7681a81a90b01f3a3d0189a423" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; uint32_t &gt;</type>
+        <definition>std::optional&lt;uint32_t&gt; dpp::message_search_result::documents_indexed</definition>
+        <argsstring></argsstring>
+        <name>documents_indexed</name>
+        <briefdescription>
+<para>Number of documents indexed so far (only present during deep indexing) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3287" column="15" bodyfile="include/dpp/message.h" bodystart="3287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1message__search__result_1a5864e004f2c4f52a28dfe6452da036ae" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::message_search_result::doing_deep_historical_index</definition>
+        <argsstring></argsstring>
+        <name>doing_deep_historical_index</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Whether a deep historical index is being performed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3282" column="6" bodyfile="include/dpp/message.h" bodystart="3282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1message__search__result_1acd0cfe25cbb84a417db59ac04fb15d1e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structdpp_1_1message" kindref="compound">message</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;message&gt; &gt; dpp::message_search_result::messages</definition>
+        <argsstring></argsstring>
+        <name>messages</name>
+        <briefdescription>
+<para>Matched messages grouped by context. Each inner vector contains the matched message followed by context messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3293" column="13" bodyfile="include/dpp/message.h" bodystart="3293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1message__search__result_1aad7c045109fc4b5ea031a8aae7e75cf6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::message_search_result::total_results</definition>
+        <argsstring></argsstring>
+        <name>total_results</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Total number of results matching the query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3277" column="10" bodyfile="include/dpp/message.h" bodystart="3277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1message__search__result_1a07d2b82b899fdcf278d4165ad891c98d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1message__search__result" kindref="compound">message_search_result</ref> &amp;</type>
+        <definition>message_search_result &amp; dpp::message_search_result::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3269" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1message__search__result_1a5584f6ff4e03ca78fd801feaaacdf1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::message_search_result::message_search_result</definition>
+        <argsstring>()=default</argsstring>
+        <name>message_search_result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="3272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; message_search_result  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1message__search__result" kindref="compound">message_search_result</ref> &amp;</type>
+        <definition>message_search_result  &amp; dpp::json_interface&lt; message_search_result  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; message_search_result  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the result of a guild message search. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/message#search-guild-messages">https://discord.com/developers/docs/resources/message#search-guild-messages</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="1">
+        <label>dpp::message_search_result</label>
+        <link refid="structdpp_1_1message__search__result"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; message_search_result &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; message_search_result &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="1">
+        <label>dpp::message_search_result</label>
+        <link refid="structdpp_1_1message__search__result"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>total_results</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>doing_deep_historical_index</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>documents_indexed</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>messages</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; message_search_result &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; message_search_result &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>optional&lt;</label>
+      </node>
+      <node id="7">
+        <label>vector&lt;</label>
+      </node>
+      <node id="4">
+        <label>uint32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/message.h" line="3260" column="1" bodyfile="include/dpp/message.h" bodystart="3260" bodyend="3294"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1message__search__result_1a4787ab7681a81a90b01f3a3d0189a423" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>documents_indexed</name></member>
+      <member refid="structdpp_1_1message__search__result_1a5864e004f2c4f52a28dfe6452da036ae" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>doing_deep_historical_index</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1message__search__result_1a07d2b82b899fdcf278d4165ad891c98d" prot="protected" virt="non-virtual"><scope>dpp::message_search_result</scope><name>fill_from_json_impl</name></member>
+      <member refid="structdpp_1_1message__search__result_1a8f6872275cf687dccf6a8b4d17ddeda6" prot="protected" virt="non-virtual"><scope>dpp::message_search_result</scope><name>json_interface&lt; message_search_result &gt;</name></member>
+      <member refid="structdpp_1_1message__search__result_1a5584f6ff4e03ca78fd801feaaacdf1ef" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>message_search_result</name></member>
+      <member refid="structdpp_1_1message__search__result_1acd0cfe25cbb84a417db59ac04fb15d1e" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>messages</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1message__search__result_1aad7c045109fc4b5ea031a8aae7e75cf6" prot="public" virt="non-virtual"><scope>dpp::message_search_result</scope><name>total_results</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

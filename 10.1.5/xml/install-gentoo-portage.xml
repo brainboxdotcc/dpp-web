@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-gentoo-portage" kind="page">
+    <compoundname>install-gentoo-portage</compoundname>
+    <title>Installing with Portage (Gentoo)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>D++ is available on <ulink url="https://wiki.gentoo.org/wiki/Project:GURU">GURU</ulink>. To install D++, you must first enable the GURU repository. To do so, execute the following commands (as root):</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">emerge<sp/>--ask<sp/>app-eselect/eselect-repository</highlight></codeline>
+<codeline><highlight class="normal">eselect<sp/>repository<sp/>enable<sp/>guru</highlight></codeline>
+<codeline><highlight class="normal">emaint<sp/>sync<sp/>--repo<sp/>guru</highlight></codeline>
+</programlisting></para>
+<para>This enables the GURU repository, which consists of user-contributed packages, such as D++!</para>
+<para>If you wish, you may enable coroutine and voice support through USE flags. To do so, using your text editor of choice, add the following line to <computeroutput>/etc/portage/package.use/dpp</computeroutput> (as root):</para>
+<para><programlisting><codeline><highlight class="normal">dev-cpp/dpp<sp/>voice<sp/>coro</highlight></codeline>
+</programlisting> <blockquote><para>You may choose between voice, coro, or both, just pick and choose! </para>
+</blockquote>You will now be able to use D++ by including its library on the command line:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">g++<sp/>mybot.cpp<sp/>-o<sp/>mybot<sp/>-ldpp</highlight></codeline>
+</programlisting></para>
+<para><para><simplesect kind="note"><para>Compiling your bot with a raw <computeroutput>g++</computeroutput> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <ref refid="buildcmake" kindref="compound">Building a Discord Bot Using CMake (UNIX)</ref> or if you have not yet created a token for your bot, <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref> - If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</ulink>.</para>
+</simplesect>
+</para>
+ </para>
+    </detaileddescription>
+    <location file="docpages/install/install-gentoo-portage.md"/>
+  </compounddef>
+</doxygen>

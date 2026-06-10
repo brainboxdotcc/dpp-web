@@ -1,0 +1,1185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1scheduled__event" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::scheduled_event</compoundname>
+    <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; scheduled_event &gt;</basecompoundref>
+    <includes local="no">scheduled_event.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1scheduled__event_1af6c0d43dc196a87c11fee5d34aa7e875" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; scheduled_event &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; scheduled_event &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="117" column="27" bodyfile="include/dpp/scheduled_event.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a5b6b7c91848c8723141950f370eec2ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::scheduled_event::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>The channel ID in which the scheduled event will be hosted, or null if scheduled entity type is EXTERNAL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="153" column="11" bodyfile="include/dpp/scheduled_event.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a00779228a1511d4d256156c68fc058a5" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::scheduled_event::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <briefdescription>
+<para>Optional: The creator of the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="223" column="6" bodyfile="include/dpp/scheduled_event.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1aef4360786203c65703c19fc44ad6ed02" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::scheduled_event::creator_id</definition>
+        <argsstring></argsstring>
+        <name>creator_id</name>
+        <briefdescription>
+<para>Optional: The ID of the user that created the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="158" column="11" bodyfile="include/dpp/scheduled_event.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1ae88e5cc19ae2dcd72b30461e313527ff" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::scheduled_event::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>Optional: The description of the scheduled event (1-1000 characters). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="168" column="13" bodyfile="include/dpp/scheduled_event.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1aa9a1f15d3f9ab7fa82747a0576629598" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::scheduled_event::entity_id</definition>
+        <argsstring></argsstring>
+        <name>entity_id</name>
+        <briefdescription>
+<para>Any additional ID of the hosting entity associated with event. e.g. stage instance ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="211" column="11" bodyfile="include/dpp/scheduled_event.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1aacfd8d3b0bb171ea11f6613a334d0a73" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1event__entities" kindref="compound">event_entities</ref></type>
+        <definition>event_entities dpp::scheduled_event::entity_metadata</definition>
+        <argsstring></argsstring>
+        <name>entity_metadata</name>
+        <briefdescription>
+<para>The entity metadata for the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="218" column="16" bodyfile="include/dpp/scheduled_event.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1afd4d1b9be6926956b7631eba31ea81f7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834" kindref="member">event_entity_type</ref></type>
+        <definition>event_entity_type dpp::scheduled_event::entity_type</definition>
+        <argsstring></argsstring>
+        <name>entity_type</name>
+        <briefdescription>
+<para>The type of hosting entity associated with a scheduled event. e.g. voice channel or stage channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="203" column="19" bodyfile="include/dpp/scheduled_event.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a5872e40ff1f2bf3599d5403ec6fe6599" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::scheduled_event::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>The guild ID which the scheduled event belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="146" column="11" bodyfile="include/dpp/scheduled_event.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a3015f8189580ba15446317fda3df6041" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1icon" kindref="compound">utility::icon</ref></type>
+        <definition>utility::icon dpp::scheduled_event::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+<para>The image of the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="175" column="15" bodyfile="include/dpp/scheduled_event.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a3e15cff6d8e5466e5ef90c952fc249de" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::scheduled_event::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="163" column="13" bodyfile="include/dpp/scheduled_event.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a52f6049445ba9debcbdb1ec896c0fcb1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bd" kindref="member">event_privacy_level</ref></type>
+        <definition>event_privacy_level dpp::scheduled_event::privacy_level</definition>
+        <argsstring></argsstring>
+        <name>privacy_level</name>
+        <briefdescription>
+<para>The privacy level of the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="192" column="21" bodyfile="include/dpp/scheduled_event.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1aaf52978adc48f65eb63a3871dd1c784c" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::scheduled_event::scheduled_end_time</definition>
+        <argsstring></argsstring>
+        <name>scheduled_end_time</name>
+        <briefdescription>
+<para>The time the scheduled event will end, or null if the event does not have a scheduled time to end. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="187" column="8" bodyfile="include/dpp/scheduled_event.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a796cb34ccf0fcb1d92579be2d1132048" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::scheduled_event::scheduled_start_time</definition>
+        <argsstring></argsstring>
+        <name>scheduled_start_time</name>
+        <briefdescription>
+<para>The time the scheduled event will start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="180" column="8" bodyfile="include/dpp/scheduled_event.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a16187b13721a0181c365f15d087295b6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60" kindref="member">event_status</ref></type>
+        <definition>event_status dpp::scheduled_event::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>The status of the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="197" column="14" bodyfile="include/dpp/scheduled_event.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a58b45b0ca4be45bde0a2c58a56dfb22f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::scheduled_event::user_count</definition>
+        <argsstring></argsstring>
+        <name>user_count</name>
+        <briefdescription>
+<para>Optional: The number of users subscribed to the scheduled event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="228" column="10" bodyfile="include/dpp/scheduled_event.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a772cb1260c9dd2a0f156a3a821390305" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::fill_from_json_impl</definition>
+        <argsstring>(const nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>const nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Serialise a <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> object from json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; a reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="132" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a54f6e7f10c0bdc9c77f6ee10d659c7d1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::scheduled_event::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Include id field in json</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string Json of this object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="140" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a4b4a32d20426b9a559e4ec0b86e049d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::scheduled_event::scheduled_event</definition>
+        <argsstring>()</argsstring>
+        <name>scheduled_event</name>
+        <briefdescription>
+<para>Create a <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; scheduled_event  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a9d315ff12641d8318989556769269c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::clear_description</definition>
+        <argsstring>()</argsstring>
+        <name>clear_description</name>
+        <briefdescription>
+<para>Clear the description of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="257" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event  &amp; dpp::json_interface&lt; scheduled_event  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1ae68e2b723024e8b728f9ff5e08167278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::load_image</definition>
+        <argsstring>(const std::byte *data, uint32_t size, const image_type type)</argsstring>
+        <name>load_image</name>
+        <param>
+          <type>const std::byte *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load an image for the event cover. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image binary data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of image. It can be one of <computeroutput>i_gif</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>emoji&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="325" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a7242a3f02f5c3b6f9320be74999d6703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::load_image</definition>
+        <argsstring>(std::string_view image_blob, const image_type type)</argsstring>
+        <name>load_image</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>image_blob</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load an image for the event cover. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_blob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image binary data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of image. It can be one of <computeroutput>i_gif</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>emoji&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="315" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1aa421c31223c1b130c0c4889e7bb99155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_channel_id</definition>
+        <argsstring>(snowflake c)</argsstring>
+        <name>set_channel_id</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Set the voice channel id of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>clears location </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="275" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a8e85a36227a167e5811f0073effcea8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_creator_id</definition>
+        <argsstring>(snowflake c)</argsstring>
+        <name>set_creator_id</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Set the creator id of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>creator user ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="282" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a8c74e5634eb4c33ee81d823026e61b44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_description</definition>
+        <argsstring>(const std::string &amp;d)</argsstring>
+        <name>set_description</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Set the description of the event. Minimum length: 1 (if set), Maximum length: 100. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>dpp::length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if length &lt; 1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="251" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1aacb90a20a3a486118dbed4a3da70cfb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_end_time</definition>
+        <argsstring>(time_t t)</argsstring>
+        <name>set_end_time</name>
+        <param>
+          <type>time_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Set the end time of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ending time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>dpp::length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if time is before now </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="306" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a16de78ef83e5f17ed753e5ca33783f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_location</definition>
+        <argsstring>(const std::string &amp;l)</argsstring>
+        <name>set_location</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Set the location of the event. Minimum length: 1, Maximum length: 1000. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Clears channel_id </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event location </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>dpp::length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if length &lt; 1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="267" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1ae1608ca79998c00779c44ad6c3c0af97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_name</definition>
+        <argsstring>(const std::string &amp;n)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the event. Minimum length: 1, Maximum length: 100. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>dpp::length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if length &lt; 1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="242" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a619918a42a53610c81a86865b5f33d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_start_time</definition>
+        <argsstring>(time_t t)</argsstring>
+        <name>set_start_time</name>
+        <param>
+          <type>time_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Set the start time of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>starting time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>dpp::length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if time is before now </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="298" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a7a12e9b5bc3fa270f7ef97590aec737e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event &amp; dpp::scheduled_event::set_status</definition>
+        <argsstring>(event_status s)</argsstring>
+        <name>set_status</name>
+        <param>
+          <type><ref refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60" kindref="member">event_status</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Set the status of the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>status to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if status change is not valid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="290" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; scheduled_event  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A scheduled event. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+      </node>
+      <node id="1">
+        <label>dpp::scheduled_event</label>
+        <link refid="structdpp_1_1scheduled__event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; scheduled_event &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; scheduled_event &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>bool</label>
+      </node>
+      <node id="15">
+        <label>dpp::event_entities</label>
+        <link refid="structdpp_1_1event__entities"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::scheduled_event</label>
+        <link refid="structdpp_1_1scheduled__event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>creator_id</edgelabel>
+          <edgelabel>entity_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>scheduled_end_time</edgelabel>
+          <edgelabel>scheduled_start_time</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>privacy_level</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>entity_type</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>entity_metadata</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>user_count</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>avatar</edgelabel>
+          <edgelabel>avatar_decoration</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>primary_guild</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp::utility::icon</label>
+        <link refid="structdpp_1_1utility_1_1icon"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>hash_or_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp::utility::primaryguild</label>
+        <link refid="structdpp_1_1utility_1_1primaryguild"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>enabled</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tag</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>badge</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>event_entity_type</label>
+      </node>
+      <node id="12">
+        <label>event_privacy_level</label>
+      </node>
+      <node id="13">
+        <label>event_status</label>
+      </node>
+      <node id="5">
+        <label>dpp::json_interface&lt; scheduled_event &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; scheduled_event &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>variant&lt;</label>
+      </node>
+      <node id="11">
+        <label>time_t</label>
+      </node>
+      <node id="22">
+        <label>uint16_t</label>
+      </node>
+      <node id="21">
+        <label>uint32_t</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+      <node id="23">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/scheduled_event.h" line="123" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="123" bodyend="326"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a5b6b7c91848c8723141950f370eec2ee" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>channel_id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a9d315ff12641d8318989556769269c4a" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>clear_description</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a00779228a1511d4d256156c68fc058a5" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>creator</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aef4360786203c65703c19fc44ad6ed02" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>creator_id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1ae88e5cc19ae2dcd72b30461e313527ff" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>description</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aa9a1f15d3f9ab7fa82747a0576629598" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>entity_id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aacfd8d3b0bb171ea11f6613a334d0a73" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>entity_metadata</name></member>
+      <member refid="structdpp_1_1scheduled__event_1afd4d1b9be6926956b7631eba31ea81f7" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>entity_type</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a772cb1260c9dd2a0f156a3a821390305" prot="protected" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>fill_from_json_impl</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>get_creation_time</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a5872e40ff1f2bf3599d5403ec6fe6599" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a3015f8189580ba15446317fda3df6041" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>image</name></member>
+      <member refid="structdpp_1_1scheduled__event_1af6c0d43dc196a87c11fee5d34aa7e875" prot="protected" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>json_interface&lt; scheduled_event &gt;</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a7242a3f02f5c3b6f9320be74999d6703" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>load_image</name></member>
+      <member refid="structdpp_1_1scheduled__event_1ae68e2b723024e8b728f9ff5e08167278" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1ac7a876ad1764b89f0568a1f1bc6bf640" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>managed</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a3e15cff6d8e5466e5ef90c952fc249de" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>name</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>operator==</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a52f6049445ba9debcbdb1ec896c0fcb1" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>privacy_level</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aaf52978adc48f65eb63a3871dd1c784c" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>scheduled_end_time</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a4b4a32d20426b9a559e4ec0b86e049d1" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>scheduled_event</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a796cb34ccf0fcb1d92579be2d1132048" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>scheduled_start_time</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aa421c31223c1b130c0c4889e7bb99155" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_channel_id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a8e85a36227a167e5811f0073effcea8e" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_creator_id</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a8c74e5634eb4c33ee81d823026e61b44" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_description</name></member>
+      <member refid="structdpp_1_1scheduled__event_1aacb90a20a3a486118dbed4a3da70cfb1" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_end_time</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a16de78ef83e5f17ed753e5ca33783f48" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_location</name></member>
+      <member refid="structdpp_1_1scheduled__event_1ae1608ca79998c00779c44ad6c3c0af97" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_name</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a619918a42a53610c81a86865b5f33d56" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_start_time</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a7a12e9b5bc3fa270f7ef97590aec737e" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>set_status</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a16187b13721a0181c365f15d087295b6" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>status</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a54f6e7f10c0bdc9c77f6ee10d659c7d1" prot="protected" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>to_json_impl</name></member>
+      <member refid="structdpp_1_1scheduled__event_1a58b45b0ca4be45bde0a2c58a56dfb22f" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>user_count</name></member>
+      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::scheduled_event</scope><name>~managed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

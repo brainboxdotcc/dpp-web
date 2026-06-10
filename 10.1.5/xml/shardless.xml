@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="shardless" kind="page">
+    <compoundname>shardless</compoundname>
+    <title>Shardless Cluster: Events via Webhooks</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="shardless_1autotoc_md86">
+<title>What are shardless clusters?</title>
+<para>D++ gives you two ways to handle Discord events: sharding via websockets (the default) and webhooks. Websocket shards connect to Discord, handle up to 2,500 servers each, and process events asynchronously via a REST API call. Webhooks, on the other hand, let Discord push events straight to your bot, skipping the extra API call and making responses instant. WebSockets are great for most bots, but webhooks are super efficient for massive bots, using fewer resources while handling tons of traffic. The recommended setup is to run Nginx or Apache as a reverse proxy in front of your D++ bot, ensuring security and scalability. Enabling webhooks is simple—just call a method in your bot to activate them. We’ll guide you through setting it up step by step.</para>
+<para>A simple summary of this process and how it differs is shown below:</para>
+<para><dot>
+digraph DPP_Event_Delivery {
+    rankdir=TB;
+    node [shape=rect, style=&quot;filled, rounded&quot;, fontcolor=black, fontsize=10, fontname=&quot;Sans&quot;, width=3.0, height=0];
+
+    subgraph cluster_websocket {
+        label=&quot;Shard WebSockets Method&quot;;
+        fontname=&quot;Sans&quot;;
+        color=skyblue;
+        style=filled;
+        fillcolor=lightskyblue;
+
+        websocket [label=&quot;WebSocket Shard connects to Discord\n- Each shard handles up to 2500 guilds&quot;, fillcolor=lightcoral];
+        receive_event [label=&quot;Events received from Discord\n- Incoming events from multiple guilds arrive&quot;, fillcolor=salmon];
+        dispatch_pool [label=&quot;Events dispatched to thread pool\n- Events are assigned to worker threads&quot;, fillcolor=lightgoldenrodyellow];
+        user_process [label=&quot;User processes event asynchronously\n- Application logic handles event&quot;, fillcolor=yellowgreen];
+        rest_api [label=&quot;User sends separate REST API request to\nDiscord - This confirms the event was\nprocessed.&quot;, fillcolor=mediumseagreen];
+
+        websocket -&gt; receive_event -&gt; dispatch_pool -&gt; user_process -&gt; rest_api;
+    }
+
+    subgraph cluster_webhook {
+        label=&quot;Webhook Method&quot;;
+        fontname=&quot;Sans&quot;;
+        color=skyblue;
+        style=filled;
+        fillcolor=lightskyblue;
+
+        https_listener [label=&quot;HTTPS Listener waits for Discord webhooks\n- Server listens for incoming HTTP requests&quot;, fillcolor=lightcoral];
+        webhook_event [label=&quot;Discord sends event via webhook\n- Event data sent in HTTP POST request&quot;, fillcolor=salmon];
+        dispatch_webhook [label=&quot;Event dispatched to thread pool\n- Assigned to a worker thread&quot;, fillcolor=lightgoldenrodyellow];
+        user_process_webhook [label=&quot;User processes the event\n- Application logic handles event&quot;, fillcolor=yellowgreen];
+        respond_webhook [label=&quot;Response sent immediately in HTTPS\nresponse - No additional REST API request\nneeded&quot;, fillcolor=mediumseagreen];
+
+        https_listener -&gt; webhook_event -&gt; dispatch_webhook -&gt; user_process_webhook -&gt; respond_webhook;
+    }
+}
+</dot>
+</para>
+<para>There are advantages and disadvantages to a shardless webhook bot, the main ones are:</para>
+<para><table rows="2" cols="2"><row>
+<entry thead="yes"><para>Advantages </para>
+</entry><entry thead="yes"><para>Disadvantages  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>✅ Scales without restarts, any cluster can service any request <linebreak/>
+ ✅ Can be highly scalable on demand using a load balancer <linebreak/>
+ ✅ Can be scaled and proxied by cloudflare and other free services <linebreak/>
+ ✅ No need to keep shards connected, saving resources <linebreak/>
+  </para>
+</entry><entry thead="no"><para>❎ Only slash commands and other components interactions can be used as entry points to the bot. Other events do not fire. <linebreak/>
+ ❎ Special consideration needs to be given to request/response flow. <linebreak/>
+ ❎ Without shards you don&apos;t have cache, so must rely entirely on resolved data and API calls. <linebreak/>
+   </para>
+</entry></row>
+</table>
+</para>
+</sect2>
+<sect2 id="shardless_1autotoc_md87">
+<title>Creating the Discord bot</title>
+<para>The first step is actually the easiest; enabling websocket event support in D++ is as simple as one method call, and specific parameters when initialising the cluster.bot</para>
+<para>Please see the example below:</para>
+<para><programlisting filename="shardless.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>must<sp/>use<sp/>the<sp/>special<sp/>constant<sp/>NO_SHARDS<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;TOKEN&quot;</highlight><highlight class="normal">,<sp/>0,<sp/><ref refid="namespacedpp_1a0734e9859548186679ec55f37faf57f0" kindref="member">dpp::NO_SHARDS</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>ready)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>discord<sp/>interactions<sp/>endpoint<sp/>on<sp/>port<sp/>3000</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>NOTE:<sp/>PUT<sp/>YOUR<sp/>OWN<sp/>PUBLIC<sp/>KEY<sp/>HERE<sp/>FOR<sp/>THE<sp/>FIRST<sp/>PARAMETER.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>You<sp/>can<sp/>find<sp/>this<sp/>on<sp/>the<sp/>same<sp/>page<sp/>where<sp/>you<sp/>entered<sp/>the<sp/>Discord<sp/>Interaction<sp/>URL.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Do<sp/>not<sp/>use<sp/>your<sp/>Discord<sp/>bot<sp/>token<sp/>in<sp/>this<sp/>field!</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.enable_webhook_server(</highlight><highlight class="stringliteral">&quot;f8032a386dc1903787be887cd66d126e83eb3d481455aca509a4b8cbc526cafe&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;0.0.0.0&quot;</highlight><highlight class="normal">,<sp/>3000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>a<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(<ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;hello&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Greets<sp/>you&quot;</highlight><highlight class="normal">,<sp/>bot.me.id));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.reply(</highlight><highlight class="stringliteral">&quot;hello<sp/>to<sp/>you<sp/>too&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Note that you can get the public key from your application settings in the Discord Developer Portal. It is <bold>not</bold> your bot token!</para>
+<para><simplesect kind="warning"><para>It is important that if your bot works via webhook events, you do not delay in responding. You must respond as fast as possible to the request, with an <computeroutput>event.reply()</computeroutput>. You can always acknowledge the response with <computeroutput>event.thinking()</computeroutput> and edit the interaction later, but this must be done in a separate flow, NOT within the slashcommand event. This is because when you are in the event handler you are directly building a HTTP response that is directly sent back to Discord in an established HTTP request. You can follow up with other API calls if you wish later on. Each request is placed into D++&apos;s thread pool, so you don&apos;t have to worry too much about blocking for a little while but remember users expect snappy responses and Discord have a 3 second hard limit on replies!</para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="shardless_1autotoc_md88">
+<title>Setting Up a reverse proxy to route to your bot</title>
+<para>Next, you should set up a reverse proxy using <bold>Nginx</bold> or <bold>Apache</bold> to forward requests from a public-facing HTTPS endpoint to a Discord bot listening on <computeroutput>localhost:3000</computeroutput>. Discord mandates that all webhook endpoints for interactions must be HTTPS with a valid non self-signed certificate.</para>
+<para>We will use a free <bold>Let&apos;s Encrypt</bold> certificate for SSL on the proxy, while allowing the bot itself to run using plaintext or self-signed SSL.</para>
+<sect3 id="shardless_1autotoc_md89">
+<title>Prerequisites</title>
+<para><itemizedlist>
+<listitem><para>A <bold>Linux server</bold></para>
+</listitem><listitem><para><bold>Nginx</bold> or <bold>Apache</bold> installed</para>
+</listitem><listitem><para>A domain name (<computeroutput>example.com</computeroutput>) pointing to your server</para>
+</listitem><listitem><para>A Discord bot running on <bold>port 3000</bold></para>
+</listitem><listitem><para><computeroutput>certbot</computeroutput> installed for Let&apos;s Encrypt SSL</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+</sect2>
+<sect2 id="shardless_1autotoc_md90">
+<title>Option 1: Setting Up Nginx as a Reverse Proxy</title>
+<sect3 id="shardless_1autotoc_md91">
+<title>Install Nginx</title>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>nginx<sp/>-y</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="shardless_1autotoc_md92">
+<title>Configure Nginx</title>
+<para>Create a new configuration file: <programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>nano<sp/>/etc/nginx/sites-available/discord_bot</highlight></codeline>
+</programlisting></para>
+<para>Paste the following for <bold>plaintext (http)</bold> bot communication: <programlisting filename=".nginx"><codeline><highlight class="normal">server<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>listen<sp/>80;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>server_name<sp/>example.com;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>location<sp/>/<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxy_pass<sp/>http://localhost:3000;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxy_set_header<sp/>Host<sp/>$host;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxy_set_header<sp/>X-Real-IP<sp/>$remote_addr;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxy_set_header<sp/>X-Forwarded-For<sp/>$proxy_add_x_forwarded_for;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>If the bot uses <bold>self-signed SSL</bold>, modify <computeroutput>proxy_pass</computeroutput>: <programlisting filename=".nginx"><codeline><highlight class="normal">location<sp/>/<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>proxy_pass<sp/>https://localhost:3000;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>proxy_ssl_verify<sp/>off;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Enable the site and restart Nginx: <programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>ln<sp/>-s<sp/>/etc/nginx/sites-available/discord_bot<sp/>/etc/nginx/sites-enabled/</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>systemctl<sp/>restart<sp/>nginx</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="shardless_1autotoc_md93">
+<title>Enable Let&apos;s Encrypt SSL</title>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>certbot<sp/>--nginx<sp/>-d<sp/>example.com</highlight></codeline>
+</programlisting> Certbot will automatically update the Nginx configuration for HTTPS.</para>
+</sect3>
+</sect2>
+<sect2 id="shardless_1autotoc_md94">
+<title>Option 2: Setting Up Apache as a Reverse Proxy</title>
+<sect3 id="shardless_1autotoc_md95">
+<title>Install Apache and Modules</title>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>apache2<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>a2enmod<sp/>proxy<sp/>proxy_http<sp/>ssl</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>systemctl<sp/>restart<sp/>apache2</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="shardless_1autotoc_md96">
+<title>Configure Apache Virtual Host</title>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>nano<sp/>/etc/apache2/sites-available/discord_bot.conf</highlight></codeline>
+</programlisting></para>
+<para>Paste the following for <bold>plaintext (http)</bold> bot communication: <programlisting filename=".apache"><codeline><highlight class="normal">&lt;VirtualHost<sp/>*:80&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ServerName<sp/>example.com</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ProxyPass<sp/>&quot;/&quot;<sp/>&quot;http://localhost:3000/&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ProxyPassReverse<sp/>&quot;/&quot;<sp/>&quot;http://localhost:3000/&quot;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/VirtualHost&gt;</highlight></codeline>
+</programlisting></para>
+<para>If the bot uses <bold>self-signed SSL</bold>, update it as follows: <programlisting filename=".apache"><codeline><highlight class="normal">&lt;VirtualHost<sp/>*:80&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ServerName<sp/>example.com</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ProxyPass<sp/>&quot;/&quot;<sp/>&quot;https://localhost:3000/&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ProxyPassReverse<sp/>&quot;/&quot;<sp/>&quot;https://localhost:3000/&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SSLProxyEngine<sp/>on</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SSLProxyVerify<sp/>none</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SSLProxyCheckPeerCN<sp/>off</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SSLProxyCheckPeerName<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">&lt;/VirtualHost&gt;</highlight></codeline>
+</programlisting></para>
+<para>Enable the site and restart Apache: <programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>a2ensite<sp/>discord_bot.conf</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>systemctl<sp/>restart<sp/>apache2</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="shardless_1autotoc_md97">
+<title>Enable Let&apos;s Encrypt SSL</title>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">sudo<sp/>certbot<sp/>--apache<sp/>-d<sp/>example.com</highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect2>
+<sect2 id="shardless_1autotoc_md98">
+<title>Configuring Your Public URL in the Discord Developer Portal</title>
+<para>Finally, to enable your Discord bot to receive interactions such as slash commands, you need to update Discord with the URL you set up above.</para>
+<para>This involves configuring the <bold>Interactions Endpoint URL</bold> in your Discord application&apos;s settings.</para>
+<sect3 id="shardless_1autotoc_md99">
+<title>Steps to Configure the Interactions Endpoint URL</title>
+<para><orderedlist>
+<listitem><para><bold>Access the Discord Developer Portal</bold>:<itemizedlist>
+<listitem><para>Navigate to the <ulink url="https://discord.com/developers/applications">Discord Developer Portal</ulink>.</para>
+</listitem><listitem><para>Log in with your Discord account.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Select Your Application</bold>:<itemizedlist>
+<listitem><para>In the <bold>Applications</bold> section, click on your bot&apos;s application to open its settings.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Navigate to the &quot;General Information&quot; Tab</bold>:<itemizedlist>
+<listitem><para>On the left sidebar, select <bold>General Information</bold>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Set the Interactions Endpoint URL</bold>:<itemizedlist>
+<listitem><para>Locate the <bold>Interactions Endpoint URL</bold> field.</para>
+</listitem><listitem><para>Enter your public URL (e.g., <computeroutput><ulink url="https://example.com/interactions">https://example.com/interactions</ulink></computeroutput>).</para>
+</listitem><listitem><para>Ensure this URL points to the endpoint you&apos;ve set up to handle Discord&apos;s interaction payloads.</para>
+</listitem><listitem><para>Take note of the <bold>public key</bold> for use in your bot</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Save Changes</bold>:<itemizedlist>
+<listitem><para>Scroll to the bottom of the page and click <bold>Save Changes</bold>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="webhook-app.png"></image>
+</para>
+</sect3>
+<sect3 id="shardless_1autotoc_md100">
+<title>Important Considerations</title>
+<para><itemizedlist>
+<listitem><para><bold>Public Accessibility</bold>: Ensure that the URL you provide is publicly accessible over the internet. Discord needs to reach this endpoint to send interaction events.</para>
+</listitem><listitem><para><bold>SSL/TLS Encryption</bold>: As outlined above in the section on setting up your reverse proxy, the URL must use HTTPS, meaning you need a valid SSL/TLS certificate for your domain. If you followed the guide properly, this should be working.</para>
+</listitem><listitem><para><bold>Endpoint Validation</bold>: Upon setting the Interactions Endpoint URL, Discord will send a <computeroutput>PING</computeroutput> request to verify the endpoint. D++ will ensure your bot replies appropriately.</para>
+</listitem></itemizedlist>
+</para>
+<para>You can find even more information on Discord&apos;s official documentation on <ulink url="https://discord.com/developers/docs/getting-started#setting-up-an-interaction-endpoint">Setting Up an Interaction Endpoint</ulink>.</para>
+</sect3>
+</sect2>
+<sect2 id="shardless_1autotoc_md101">
+<title>Further reading/Related pages</title>
+<para><itemizedlist>
+<listitem><para><ref refid="classdpp_1_1cluster_1a954c7dce3dab2786d482890c6c9ad009" kindref="member">dpp::cluster::enable_webhook_server</ref></para>
+</listitem><listitem><para><ref refid="structdpp_1_1discord__webhook__server" kindref="compound">dpp::discord_webhook_server</ref></para>
+</listitem><listitem><para><ref refid="structdpp_1_1http__server" kindref="compound">dpp::http_server</ref></para>
+</listitem><listitem><para><ref refid="classdpp_1_1http__server__request" kindref="compound">dpp::http_server_request</ref></para>
+</listitem><listitem><para><ref refid="structdpp_1_1socket__listener" kindref="compound">dpp::socket_listener</ref> </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/shardless-webhook-events.md"/>
+  </compounddef>
+</doxygen>
