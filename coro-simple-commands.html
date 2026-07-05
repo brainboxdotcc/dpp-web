@@ -204,7 +204,7 @@ I heard you liked tasks</h3>
 <div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) -&gt; <a class="code hl_class" href="classdpp_1_1task.html">dpp::task&lt;void&gt;</a> {</div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;avatar&quot;</span>) {</div>
 <div class="line">            <span class="comment">// Make a nested coroutine to fetch the guild member requested, that returns it as an optional</span></div>
-<div class="line">            constexpr auto resolve_member = [](const dpp::slashcommand_t &amp;event) -&gt; dpp::task&lt;std::optional&lt;dpp::guild_member&gt;&gt; {</div>
+<div class="line">            constexpr auto resolve_member = [](const dpp::slashcommand_t&amp; event) -&gt; dpp::task&lt;std::optional&lt;dpp::guild_member&gt;&gt; {</div>
 <div class="line">                const dpp::command_value &amp;user_param = event.get_parameter(<span class="stringliteral">&quot;user&quot;</span>);</div>
 <div class="line">                dpp::snowflake user_id;</div>
 <div class="line">                if (std::holds_alternative&lt;std::monostate&gt;(user_param)) {</div>

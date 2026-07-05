@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('components2.html',''); initResizable()
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
-<div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">        <span class="comment">/* Check which command they ran */</span></div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;math&quot;</span>) {</div>
 <div class="line"> </div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('components2.html',''); initResizable()
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    bot.on_button_click([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1button__click__t.html">dpp::button_click_t</a> &amp; event) {</div>
+<div class="line">    bot.on_button_click([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1button__click__t.html">dpp::button_click_t</a>&amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8">custom_id</a> == <span class="stringliteral">&quot;10&quot;</span>) {</div>
 <div class="line">            event.reply(dpp::message(<span class="stringliteral">&quot;You got it right!&quot;</span>).set_flags(dpp::m_ephemeral));</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>

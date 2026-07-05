@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('expiring-buttons.html',''); initResiza
 <div class="line">            <span class="keyword">co_await</span> event.<a class="code hl_function" href="structdpp_1_1interaction__create__t.html#aef38626cd24d2212b00ab866509b4d59">co_reply</a>(m);</div>
 <div class="line"> </div>
 <div class="line">            <span class="keyword">auto</span> result = <span class="keyword">co_await</span> <a class="code hl_class" href="classdpp_1_1when__any.html">dpp::when_any</a>{ <span class="comment">// Whichever completes first...</span></div>
-<div class="line">                event.owner-&gt;on_button_click.when([&amp;id](const dpp::button_click_t &amp;b) { <span class="comment">// Button clicked</span></div>
+<div class="line">                event.owner-&gt;on_button_click.when([&amp;id](const dpp::button_click_t&amp; b) { <span class="comment">// Button clicked</span></div>
 <div class="line">                    return b.custom_id == id;</div>
 <div class="line">                }),</div>
 <div class="line">                <span class="keyword">event</span>.owner-&gt;co_sleep(5) <span class="comment">// Or sleep 5 seconds</span></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('expiring-buttons.html',''); initResiza
 <div class="line">            <span class="comment">// Note!! Due to a bug in g++11 and g++12, id must be captured as a reference above or the compiler will destroy it twice. This is fixed in g++13</span></div>
 <div class="line">            <span class="keywordflow">if</span> (result.index() == 0) { <span class="comment">// Awaitable #0 completed first, that is the button click event</span></div>
 <div class="line">                <span class="comment">// Acknowledge the click and edit the original response, removing the button</span></div>
-<div class="line">                <span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1button__click__t.html">dpp::button_click_t</a> &amp;click_event = result.get&lt;0&gt;();</div>
+<div class="line">                <span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1button__click__t.html">dpp::button_click_t</a>&amp; click_event = result.get&lt;0&gt;();</div>
 <div class="line">                click_event.<a class="code hl_function" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">reply</a>();</div>
 <div class="line">                <span class="keyword">event</span>.edit_original_response(<a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>{<span class="stringliteral">&quot;You clicked the button with the id &quot;</span> + click_event.<a class="code hl_variable" href="structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8">custom_id</a>});</div>
 <div class="line">            } <span class="keywordflow">else</span> { <span class="comment">// Here index() is 1, the timer expired</span></div>
