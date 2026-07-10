@@ -1,5 +1,17 @@
 var NAVTREEINDEX23 =
 {
+"install-gentoo-portage.html":[3,5],
+"install-linux-deb.html":[3,0],
+"install-linux-rpm.html":[3,1],
+"install-vcpkg.html":[3,2],
+"install-void-xbps.html":[3,4],
+"install-windows-clion-vcpkg.html":[4,3],
+"install-windows-vs-zip.html":[3,6],
+"install-xmake.html":[3,7],
+"installing.html":[3],
+"interactions-and-components.html":[5,1],
+"joinvc.html":[5,2,4],
+"lambdas-and-locals.html":[6,6],
 "making_a_http_request.html":[5,4,0],
 "making_threads.html":[5,4,3],
 "misc.html":[5,4],
@@ -66,7 +78,6 @@ var NAVTREEINDEX23 =
 "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522a55d9fc605a432262deb345fd89af929b":[9,0,0,417,1],
 "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5":[9,0,0,417,0],
 "namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572":[9,0,0,536],
-"namespacedpp.html#a13c4d4e6238396245b349e6a637897e0":[9,0,0,328],
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85":[9,0,0,441],
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a40641216d07d139fe3c2744f2318f75f":[9,0,0,441,0],
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a637cb88d1e072ae739f24ea01982c456":[9,0,0,441,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX23 =
 "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bc":[9,0,0,387],
 "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcaa5334b0ac4307ad529b69e1379690726":[9,0,0,387,1],
 "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcad45bc2cdf8f7f4fc2cc8235e57413659":[9,0,0,387,2],
-"namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcadcc413fd0eba14440a29f3a3d748f187":[9,0,0,387,0],
-"namespacedpp.html#a4788a37ace2799b30444c02f55110b78":[9,0,0,457],
-"namespacedpp.html#a47df59fd5325a437251e77878c629532":[9,0,0,431],
-"namespacedpp.html#a47df59fd5325a437251e77878c629532a1c83b59af3999c038f504a1d3d95c3c6":[9,0,0,431,0],
-"namespacedpp.html#a47df59fd5325a437251e77878c629532a63cc533f5b1ea918237986c32043cdca":[9,0,0,431,3],
-"namespacedpp.html#a47df59fd5325a437251e77878c629532aa241480d535becbf71ce30a563152984":[9,0,0,431,2],
-"namespacedpp.html#a47df59fd5325a437251e77878c629532ac383effb0deb89e855e80bae99826ffc":[9,0,0,431,1],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[9,0,0,389],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3":[9,0,0,389,2],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce":[9,0,0,389,1],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479":[9,0,0,389,0],
-"namespacedpp.html#a494de7d152ac533c1283a759f5e7e344":[9,0,0,504]
+"namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcadcc413fd0eba14440a29f3a3d748f187":[9,0,0,387,0]
 };

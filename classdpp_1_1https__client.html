@@ -296,6 +296,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a61cccaa18278dabe8eae3eafbf8dd1e7"><td class="memItemLeft" align="right" valign="top">openssl_connection *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a61cccaa18278dabe8eae3eafbf8dd1e7">ssl</a></td></tr>
 <tr class="memdesc:a61cccaa18278dabe8eae3eafbf8dd1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Openssl opaque contexts.  <a href="classdpp_1_1ssl__connection.html#a61cccaa18278dabe8eae3eafbf8dd1e7">More...</a><br /></td></tr>
 <tr class="separator:a61cccaa18278dabe8eae3eafbf8dd1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f64dfa0944eb241301b570ae469b5a3"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#a9f64dfa0944eb241301b570ae469b5a3">ssl_close_mutex</a></td></tr>
+<tr class="memdesc:a9f64dfa0944eb241301b570ae469b5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protects openssl opaque contexts when closing.  <a href="classdpp_1_1ssl__connection.html#a9f64dfa0944eb241301b570ae469b5a3">More...</a><br /></td></tr>
+<tr class="separator:a9f64dfa0944eb241301b570ae469b5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad694f10e342b640f5fa6e88119c86a17"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__connection.html#ad694f10e342b640f5fa6e88119c86a17">start</a></td></tr>
 <tr class="memdesc:ad694f10e342b640f5fa6e88119c86a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start time of connection.  <a href="classdpp_1_1ssl__connection.html#ad694f10e342b640f5fa6e88119c86a17">More...</a><br /></td></tr>
 <tr class="separator:ad694f10e342b640f5fa6e88119c86a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1830,6 +1833,31 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Openssl opaque contexts. </p>
+
+</div>
+</div>
+<a id="a9f64dfa0944eb241301b570ae469b5a3" name="a9f64dfa0944eb241301b570ae469b5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f64dfa0944eb241301b570ae469b5a3">&#9670;&nbsp;</a></span>ssl_close_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex dpp::ssl_connection::ssl_close_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Protects openssl opaque contexts when closing. </p>
+<p >There's data races when reconnecting severed connection. This makes sure we don't double free our contexts. </p>
 
 </div>
 </div>

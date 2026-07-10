@@ -81,6 +81,7 @@ var classdpp_1_1discord__client =
     [ "sfd", "classdpp_1_1discord__client.html#abd9c3cf6150d3c7e2badd12829437207", null ],
     [ "shard_id", "classdpp_1_1discord__client.html#aa11253c28f842aad3939e9d3138a0c6d", null ],
     [ "ssl", "classdpp_1_1discord__client.html#a61cccaa18278dabe8eae3eafbf8dd1e7", null ],
+    [ "ssl_close_mutex", "classdpp_1_1discord__client.html#a9f64dfa0944eb241301b570ae469b5a3", null ],
     [ "start", "classdpp_1_1discord__client.html#ad694f10e342b640f5fa6e88119c86a17", null ],
     [ "tcp_connect_done", "classdpp_1_1discord__client.html#a69e9248f431daf428683b1152c05b1a6", null ],
     [ "timed_out", "classdpp_1_1discord__client.html#a0d8399d578f3dc811f3ef5a663a2064b", null ],

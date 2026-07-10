@@ -6767,7 +6767,7 @@ var namespacedpp =
     [ "role_permissions", "namespacedpp.html#a6d9fe4e502a90f9ffec8b90888a587e6", null ],
     [ "scheduled_event_collector_t", "namespacedpp.html#a45736823a51be6eb7910f036b30397b2", null ],
     [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
-    [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
+    [ "shard_list", "namespacedpp.html#a5aa5aff46815666cca6461d249ed5814", null ],
     [ "sku_map", "namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
     [ "socket", "namespacedpp.html#acfb6805855456fe93068c474c8f977c7", null ],

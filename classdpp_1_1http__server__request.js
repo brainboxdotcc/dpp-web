@@ -58,6 +58,7 @@ var classdpp_1_1http__server__request =
     [ "request_type", "classdpp_1_1http__server__request.html#a722013f3c3816d1a79c08106ce54d78a", null ],
     [ "sfd", "classdpp_1_1http__server__request.html#abd9c3cf6150d3c7e2badd12829437207", null ],
     [ "ssl", "classdpp_1_1http__server__request.html#a61cccaa18278dabe8eae3eafbf8dd1e7", null ],
+    [ "ssl_close_mutex", "classdpp_1_1http__server__request.html#a9f64dfa0944eb241301b570ae469b5a3", null ],
     [ "start", "classdpp_1_1http__server__request.html#ad694f10e342b640f5fa6e88119c86a17", null ],
     [ "state", "classdpp_1_1http__server__request.html#a505beeadc243ce7be7fd2deb557e5229", null ],
     [ "status", "classdpp_1_1http__server__request.html#a96b67a3962a47387d3ab04be693afad1", null ],
