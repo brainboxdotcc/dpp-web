@@ -6739,7 +6739,7 @@ var namespacedpp =
     [ "entitlement_map", "namespacedpp.html#a6a417d5030786dd8921fa3a480ddac25", null ],
     [ "event_handle", "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e", null ],
     [ "event_member_map", "namespacedpp.html#a912d2a5c3a763ffc462dfb7c4c7a0562", null ],
-    [ "full_reconnection_callback_t", "namespacedpp.html#a76d82cbd3ee9c6cd9fb600d97e3e5f16", null ],
+    [ "full_reconnection_callback_t", "namespacedpp.html#a19c8c6a0c51316a9eb54889fceb71339", null ],
     [ "guild_command_permissions_map", "namespacedpp.html#a855d4fbe3b9026d08b31561a61a82e92", null ],
     [ "guild_map", "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7", null ],
     [ "guild_member_map", "namespacedpp.html#a219aedbe5bf37835c4a65115fccba278", null ],

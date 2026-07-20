@@ -103,7 +103,7 @@ var NAVTREEINDEX =
 "classdpp_1_1voice__channel__effect.html#a0f3a72a54a492f03b1ad65475ad8b28a",
 "classdpp_1_1websocket__client.html#a74d9da0f1f0c5feb46ed0995bd7d2e05",
 "install-gentoo-portage.html",
-"namespacedpp.html#a4788a37ace2799b30444c02f55110b78",
+"namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcadcc413fd0eba14440a29f3a3d748f187",
 "namespacedpp.html#a7eb3392a6dac5d909967fec8c80df35daa07009891d572011b0a7ec94b6c994d7",
 "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a1aa3105b00dbb44d8b8d68865c49144c",
 "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1adad7f7f1384e741a3fa3dc99f06117d2",
