@@ -1,7 +1,7 @@
 var classdpp_1_1discord__client =
 [
     [ "discord_client", "classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082", null ],
-    [ "discord_client", "classdpp_1_1discord__client.html#a3351021cf4eb96a90a7f0da8e1125af5", null ],
+    [ "discord_client", "classdpp_1_1discord__client.html#aaf2d67661a2bfc2bfd9fa4e8d2d419e0", null ],
     [ "~discord_client", "classdpp_1_1discord__client.html#a9938e74fa80b973beb1630063b6fc4ac", null ],
     [ "clear_queue", "classdpp_1_1discord__client.html#a0ea5213ee46a61afc7c901c66051db3f", null ],
     [ "close", "classdpp_1_1discord__client.html#ab872768661dc89d54f0381b0fff5b674", null ],

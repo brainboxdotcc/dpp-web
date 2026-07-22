@@ -88,7 +88,7 @@ var NAVTREEINDEX =
 "classdpp_1_1cluster.html#ab4ed64619f058ac4b71a90066e7aac73",
 "classdpp_1_1cluster.html#aeffb7f4f32ca342886a79692ed8fb416",
 "classdpp_1_1component.html#ae713c971fb3811ab6766480bb1a6b92b",
-"classdpp_1_1discord__client.html#aa8cfa2e6c511022b67dbd97cc57f0731",
+"classdpp_1_1discord__client.html#aaba3255abd8ec8e94d1781771cfc9acb",
 "classdpp_1_1discord__voice__client.html#ad9fccc5b66b4a5713b54d8ed1ab9c743",
 "classdpp_1_1events_1_1automod__rule__update.html",
 "classdpp_1_1events_1_1voice__channel__effect__send.html#ab09cca6afb7113a61d03c457ceaf7d20",
