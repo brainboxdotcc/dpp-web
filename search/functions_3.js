@@ -14,7 +14,7 @@ var searchData=
   ['dialog_11',['dialog',['../structdpp_1_1interaction__create__t.html#a63076b1d3b1fc2e1c3f97384f1fe8b4b',1,'dpp::interaction_create_t']]],
   ['direct_5fmessage_5fcreate_12',['direct_message_create',['../classdpp_1_1cluster.html#aa88bbdcc5005da82928497545e9455bc',1,'dpp::cluster']]],
   ['disable_5fdefault_5fpermissions_13',['disable_default_permissions',['../classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0',1,'dpp::slashcommand']]],
-  ['disconnect_14',['disconnect',['../classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831',1,'dpp::voiceconn']]],
+  ['disconnect_14',['disconnect',['../classdpp_1_1voiceconn.html#a7510d8d7e47c2e87667fea369789da4c',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice_15',['disconnect_voice',['../classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78',1,'dpp::discord_client']]],
   ['disconnect_5fvoice_5finternal_16',['disconnect_voice_internal',['../classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71',1,'dpp::discord_client']]],
   ['discord_5fclient_17',['discord_client',['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client::discord_client(dpp::cluster *_cluster, uint32_t _shard_id, uint32_t _max_shards, const std::string &amp;_token, uint32_t intents=0, bool compressed=true, websocket_protocol_t ws_protocol=ws_json)'],['../classdpp_1_1discord__client.html#aaf2d67661a2bfc2bfd9fa4e8d2d419e0',1,'dpp::discord_client::discord_client(discord_client &amp;old)']]],

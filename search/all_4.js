@@ -206,7 +206,7 @@ var searchData=
   ['disabled_203',['disabled',['../classdpp_1_1component.html#ad364b789494d7888666173079bdb48ad',1,'dpp::component']]],
   ['disappointed_204',['disappointed',['../namespacedpp_1_1unicode__emoji.html#acd02cd1497aeb29b488acc4a122765c4',1,'dpp::unicode_emoji']]],
   ['disappointed_5frelieved_205',['disappointed_relieved',['../namespacedpp_1_1unicode__emoji.html#ab8f9836c9893a5bad8d4e858fb98e2a9',1,'dpp::unicode_emoji']]],
-  ['disconnect_206',['disconnect',['../classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831',1,'dpp::voiceconn']]],
+  ['disconnect_206',['disconnect',['../classdpp_1_1voiceconn.html#a7510d8d7e47c2e87667fea369789da4c',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice_207',['disconnect_voice',['../classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78',1,'dpp::discord_client']]],
   ['disconnect_5fvoice_5finternal_208',['disconnect_voice_internal',['../classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71',1,'dpp::discord_client']]],
   ['discord_5fblack_209',['discord_black',['../namespacedpp_1_1colors.html#add5a176918fd71b32df9538d43331465',1,'dpp::colors']]],

@@ -3,7 +3,7 @@ var classdpp_1_1voiceconn =
     [ "voiceconn", "classdpp_1_1voiceconn.html#a32e6d3057b673c6c621ac6c3fa6b307a", null ],
     [ "~voiceconn", "classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98", null ],
     [ "connect", "classdpp_1_1voiceconn.html#a2644838b6481cedd1d855f144567404c", null ],
-    [ "disconnect", "classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831", null ],
+    [ "disconnect", "classdpp_1_1voiceconn.html#a7510d8d7e47c2e87667fea369789da4c", null ],
     [ "is_active", "classdpp_1_1voiceconn.html#a6d8f549df84d36594f34c6ef1470f1c9", null ],
     [ "is_ready", "classdpp_1_1voiceconn.html#aa63caa0d55507984cb064dddd209908d", null ],
     [ "reassign_owner", "classdpp_1_1voiceconn.html#ad35026714c668e2dea3711d82cb29ae8", null ],
