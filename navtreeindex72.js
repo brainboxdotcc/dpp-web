@@ -1,5 +1,13 @@
 var NAVTREEINDEX72 =
 {
+"structdpp_1_1presence__update__t.html":[9,0,0,196],
+"structdpp_1_1presence__update__t.html":[11,0,0,190],
+"structdpp_1_1presence__update__t.html#a143ee2c836c05740204e3d90f26d148b":[9,0,0,196,4],
+"structdpp_1_1presence__update__t.html#a143ee2c836c05740204e3d90f26d148b":[11,0,0,190,4],
+"structdpp_1_1presence__update__t.html#a1fa0821763f9cd81e1bc4935cda31204":[9,0,0,196,5],
+"structdpp_1_1presence__update__t.html#a1fa0821763f9cd81e1bc4935cda31204":[11,0,0,190,5],
+"structdpp_1_1presence__update__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[9,0,0,196,9],
+"structdpp_1_1presence__update__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[11,0,0,190,9],
 "structdpp_1_1presence__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,190,13],
 "structdpp_1_1presence__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,196,13],
 "structdpp_1_1presence__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[11,0,0,190,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX72 =
 "structdpp_1_1scheduled__event.html#aa9a1f15d3f9ab7fa82747a0576629598":[9,0,0,209,25],
 "structdpp_1_1scheduled__event.html#aa9a1f15d3f9ab7fa82747a0576629598":[11,0,0,203,25],
 "structdpp_1_1scheduled__event.html#aacb90a20a3a486118dbed4a3da70cfb1":[9,0,0,209,13],
-"structdpp_1_1scheduled__event.html#aacb90a20a3a486118dbed4a3da70cfb1":[11,0,0,203,13],
-"structdpp_1_1scheduled__event.html#aacfd8d3b0bb171ea11f6613a334d0a73":[9,0,0,209,26],
-"structdpp_1_1scheduled__event.html#aacfd8d3b0bb171ea11f6613a334d0a73":[11,0,0,203,26],
-"structdpp_1_1scheduled__event.html#aaf52978adc48f65eb63a3871dd1c784c":[11,0,0,203,33],
-"structdpp_1_1scheduled__event.html#aaf52978adc48f65eb63a3871dd1c784c":[9,0,0,209,33],
-"structdpp_1_1scheduled__event.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,203,1],
-"structdpp_1_1scheduled__event.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,209,1],
-"structdpp_1_1scheduled__event.html#ae1608ca79998c00779c44ad6c3c0af97":[11,0,0,203,15],
-"structdpp_1_1scheduled__event.html#ae1608ca79998c00779c44ad6c3c0af97":[9,0,0,209,15]
+"structdpp_1_1scheduled__event.html#aacb90a20a3a486118dbed4a3da70cfb1":[11,0,0,203,13]
 };

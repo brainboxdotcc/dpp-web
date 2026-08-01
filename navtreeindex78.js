@@ -1,5 +1,13 @@
 var NAVTREEINDEX78 =
 {
+"structdpp_1_1voice__buffer__send__t.html#a5afbcd36109734ad0fca14ec848b73b7":[9,0,0,255,1],
+"structdpp_1_1voice__buffer__send__t.html#a5afbcd36109734ad0fca14ec848b73b7":[11,0,0,249,1],
+"structdpp_1_1voice__buffer__send__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f":[11,0,0,249,16],
+"structdpp_1_1voice__buffer__send__t.html#a5c277ee79a8ef31736dc3795dbfc8d3f":[9,0,0,255,16],
+"structdpp_1_1voice__buffer__send__t.html#a5cb7cd0835a7a26001f4c650619eff0e":[9,0,0,255,17],
+"structdpp_1_1voice__buffer__send__t.html#a5cb7cd0835a7a26001f4c650619eff0e":[11,0,0,249,17],
+"structdpp_1_1voice__buffer__send__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,249,12],
+"structdpp_1_1voice__buffer__send__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,255,12],
 "structdpp_1_1voice__buffer__send__t.html#a6e4bf43cf13569896414aa5de576ab99":[11,0,0,249,14],
 "structdpp_1_1voice__buffer__send__t.html#a6e4bf43cf13569896414aa5de576ab99":[9,0,0,255,14],
 "structdpp_1_1voice__buffer__send__t.html#a7ef6731ea526ef76928c459e19723fbb":[9,0,0,255,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX78 =
 "structdpp_1_1voice__receive__t.html#abc4e53e79731117ca95bca977baef820":[11,0,0,258,14],
 "structdpp_1_1voice__receive__t.html#abc4e53e79731117ca95bca977baef820":[9,0,0,264,14],
 "structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668":[11,0,0,258,17],
-"structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668":[9,0,0,264,17],
-"structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413":[9,0,0,264,15],
-"structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413":[11,0,0,258,15],
-"structdpp_1_1voice__receive__t.html#aca2880114f69b7ba62eb5137824c1432":[11,0,0,258,10],
-"structdpp_1_1voice__receive__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,264,10],
-"structdpp_1_1voice__receive__t.html#ad761e8dec36073665f520aaa13fbe6dc":[9,0,0,264,4],
-"structdpp_1_1voice__receive__t.html#ad761e8dec36073665f520aaa13fbe6dc":[11,0,0,258,4],
-"structdpp_1_1voice__receive__t.html#ade0405f3d317e90c7d6248d1715abac8":[11,0,0,258,0],
-"structdpp_1_1voice__receive__t.html#ade0405f3d317e90c7d6248d1715abac8":[9,0,0,264,0]
+"structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668":[9,0,0,264,17]
 };

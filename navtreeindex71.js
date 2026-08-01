@@ -1,5 +1,13 @@
 var NAVTREEINDEX71 =
 {
+"structdpp_1_1message__update__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,172,11],
+"structdpp_1_1message__update__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,178,11],
+"structdpp_1_1message__update__t.html#a7ef6731ea526ef76928c459e19723fbb":[9,0,0,178,7],
+"structdpp_1_1message__update__t.html#a7ef6731ea526ef76928c459e19723fbb":[11,0,0,172,7],
+"structdpp_1_1message__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4":[11,0,0,172,13],
+"structdpp_1_1message__update__t.html#a8a87dcb222d9e2444a50b4df5caa28d4":[9,0,0,178,13],
+"structdpp_1_1message__update__t.html#aae35038ecb874c46e355fac3863615d0":[11,0,0,172,6],
+"structdpp_1_1message__update__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,178,6],
 "structdpp_1_1message__update__t.html#aaf51a7a90fa2121dc8dd77be424a8d81":[9,0,0,178,12],
 "structdpp_1_1message__update__t.html#aaf51a7a90fa2121dc8dd77be424a8d81":[11,0,0,172,12],
 "structdpp_1_1message__update__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,178,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX71 =
 "structdpp_1_1poll__results_1_1answer__count.html#a5971e77d2fc3a5e2277897f4ea49ab66":[11,0,0,188,0,1],
 "structdpp_1_1poll__results_1_1answer__count.html#a5971e77d2fc3a5e2277897f4ea49ab66":[9,0,0,194,0,1],
 "structdpp_1_1poll__results_1_1answer__count.html#aa6b5293f259a4be52ce7062c21600f18":[11,0,0,188,0,2],
-"structdpp_1_1poll__results_1_1answer__count.html#aa6b5293f259a4be52ce7062c21600f18":[9,0,0,194,0,2],
-"structdpp_1_1presence__update__t.html":[9,0,0,196],
-"structdpp_1_1presence__update__t.html":[11,0,0,190],
-"structdpp_1_1presence__update__t.html#a143ee2c836c05740204e3d90f26d148b":[9,0,0,196,4],
-"structdpp_1_1presence__update__t.html#a143ee2c836c05740204e3d90f26d148b":[11,0,0,190,4],
-"structdpp_1_1presence__update__t.html#a1fa0821763f9cd81e1bc4935cda31204":[9,0,0,196,5],
-"structdpp_1_1presence__update__t.html#a1fa0821763f9cd81e1bc4935cda31204":[11,0,0,190,5],
-"structdpp_1_1presence__update__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[9,0,0,196,9],
-"structdpp_1_1presence__update__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[11,0,0,190,9]
+"structdpp_1_1poll__results_1_1answer__count.html#aa6b5293f259a4be52ce7062c21600f18":[9,0,0,194,0,2]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX22 =
 {
+"classdpp_1_1websocket__client.html#a62161bc05909fc1d67f3a59c5fbf6e79":[9,0,0,273,42],
+"classdpp_1_1websocket__client.html#a69e9248f431daf428683b1152c05b1a6":[11,0,0,267,47],
+"classdpp_1_1websocket__client.html#a69e9248f431daf428683b1152c05b1a6":[9,0,0,273,47],
+"classdpp_1_1websocket__client.html#a74d9da0f1f0c5feb46ed0995bd7d2e05":[9,0,0,273,5],
 "classdpp_1_1websocket__client.html#a74d9da0f1f0c5feb46ed0995bd7d2e05":[11,0,0,267,5],
 "classdpp_1_1websocket__client.html#a80a568dbb2049f4727c0efdde185699e":[11,0,0,267,36],
 "classdpp_1_1websocket__client.html#a80a568dbb2049f4727c0efdde185699e":[9,0,0,273,36],
@@ -245,9 +249,5 @@ var NAVTREEINDEX22 =
 "index.html#autotoc_md175":[0,3,4],
 "index.html#autotoc_md176":[0,4],
 "index.html#autotoc_md177":[0,5],
-"index.html#autotoc_md178":[0,6],
-"install-arch-aur.html":[3,3],
-"install-brew.html":[3,8],
-"install-conan.html":[3,9],
-"install-from-source.html":[3,10]
+"index.html#autotoc_md178":[0,6]
 };

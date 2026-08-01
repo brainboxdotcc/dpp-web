@@ -1,5 +1,9 @@
 var NAVTREEINDEX54 =
 {
+"namespacedpp_1_1unicode__emoji.html#afda6d9cee3ac303d629c6d4f34c5d60a":[9,0,0,7,2380],
+"namespacedpp_1_1unicode__emoji.html#afdacb90f71f231ecd543742c8b3b1ad0":[9,0,0,7,5225],
+"namespacedpp_1_1unicode__emoji.html#afdaf9478918bf4c11005f4fdd0044c16":[9,0,0,7,3187],
+"namespacedpp_1_1unicode__emoji.html#afdb4c6fbc4f8ad1cf3b18d70b8bb4a51":[9,0,0,7,4741],
 "namespacedpp_1_1unicode__emoji.html#afdd666bdb3858981a6d3464a0d9930cf":[9,0,0,7,4478],
 "namespacedpp_1_1unicode__emoji.html#afddd2464c2118aec75a2c89f12651a26":[9,0,0,7,332],
 "namespacedpp_1_1unicode__emoji.html#afdfa717120d1fc3cd83c8033d8f9c97f":[9,0,0,7,4237],
@@ -238,16 +242,12 @@ var NAVTREEINDEX54 =
 "structdpp_1_1active__thread__info.html":[9,0,0,9],
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[11,0,0,3,0],
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[9,0,0,9,0],
-"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[9,0,0,9,1],
 "structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[11,0,0,3,1],
+"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[9,0,0,9,1],
 "structdpp_1_1activity__assets.html":[11,0,0,5],
 "structdpp_1_1activity__assets.html":[9,0,0,11],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[11,0,0,5,4],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[9,0,0,11,4],
 "structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[11,0,0,5,3],
-"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[9,0,0,11,3],
-"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[11,0,0,5,1],
-"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[9,0,0,11,1],
-"structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[11,0,0,5,2],
-"structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[9,0,0,11,2]
+"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[9,0,0,11,3]
 };
