@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1discord__voice__client_1_1voice__payload" kind="struct" language="C++" prot="private">
+    <compoundname>dpp::discord_voice_client::voice_payload</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload_1a3c559dd04e7f4c802f67a1607a5faab3" prot="public" static="no" mutable="no">
+        <type>rtp_seq_t</type>
+        <definition>rtp_seq_t dpp::discord_voice_client::voice_payload::seq</definition>
+        <argsstring></argsstring>
+        <name>seq</name>
+        <briefdescription>
+<para>The sequence number of the RTP packet that generated this voice payload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="329" column="11" bodyfile="include/dpp/discordvoiceclient.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload_1ac8fbbeb9a6bc21014bf7e11cff436607" prot="public" static="no" mutable="no">
+        <type>rtp_timestamp_t</type>
+        <definition>rtp_timestamp_t dpp::discord_voice_client::voice_payload::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>The timestamp of the RTP packet that generated this voice payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The timestamp is used to detect the order around where sequence number wraps around. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="338" column="17" bodyfile="include/dpp/discordvoiceclient.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1voice__payload_1a0e0e08c9dc7a0b7f4625cc0575e1a3b9" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structdpp_1_1voice__receive__t" kindref="compound">voice_receive_t</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;voice_receive_t&gt; dpp::discord_voice_client::voice_payload::vr</definition>
+        <argsstring></argsstring>
+        <name>vr</name>
+        <briefdescription>
+<para>The event payload that voice handlers receive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="343" column="17" bodyfile="include/dpp/discordvoiceclient.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1discord__voice__client_1_1voice__payload_1a7dc8bb42cb13d4386d3ab554d07a36e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::discord_voice_client::voice_payload::operator&lt;</definition>
+        <argsstring>(const voice_payload &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const voice_payload &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>For priority_queue sorting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if &quot;this&quot; has lower priority that &quot;other&quot;, i.e. appears later in the queue; false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="350" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Keeps track of the voice payload to deliver to voice handlers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::discord_voice_client::voice_payload</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>seq</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>timestamp</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>vr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unique_ptr&lt;</label>
+      </node>
+      <node id="2">
+        <label>uint16_t</label>
+      </node>
+      <node id="3">
+        <label>uint32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/discordvoiceclient.h" line="324" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="324" bodyend="351"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a7dc8bb42cb13d4386d3ab554d07a36e0" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload</scope><name>operator&lt;</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a3c559dd04e7f4c802f67a1607a5faab3" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload</scope><name>seq</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1ac8fbbeb9a6bc21014bf7e11cff436607" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload</scope><name>timestamp</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a0e0e08c9dc7a0b7f4625cc0575e1a3b9" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::voice_payload</scope><name>vr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

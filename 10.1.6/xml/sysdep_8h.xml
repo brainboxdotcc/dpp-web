@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="sysdep_8h" kind="file" language="C++">
+    <compoundname>sysdep.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">arpa/inet.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>sysdep.h</label>
+        <link refid="sysdep_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sysdep_8h_1a25c46c075890625fec5c2f92a369ab21" prot="public" static="no">
+        <name>__LITTLE_ENDIAN__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="48" column="9" bodyfile="include/dpp/sysdep.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1a155fe2ff938e89918650ec124faa830c" prot="public" static="no">
+        <name>etf_byte_order_16</name>
+        <param><defname>x</defname></param>
+        <initializer>ntohs(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="70" column="12" bodyfile="include/dpp/sysdep.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1aca08e3884be59b0def5a461867a32ef3" prot="public" static="no">
+        <name>etf_byte_order_32</name>
+        <param><defname>x</defname></param>
+        <initializer>ntohl(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="86" column="12" bodyfile="include/dpp/sysdep.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1ab3ca41370de624be670d3a2c41a30d88" prot="public" static="no">
+        <name>etf_byte_order_64</name>
+        <param><defname>x</defname></param>
+        <initializer>    ( ((((uint64_t)x) &lt;&lt; 56)                         ) | \
+      ((((uint64_t)x) &lt;&lt; 40) &amp; 0x00ff000000000000ULL ) | \
+      ((((uint64_t)x) &lt;&lt; 24) &amp; 0x0000ff0000000000ULL ) | \
+      ((((uint64_t)x) &lt;&lt;  8) &amp; 0x000000ff00000000ULL ) | \
+      ((((uint64_t)x) &gt;&gt;  8) &amp; 0x00000000ff000000ULL ) | \
+      ((((uint64_t)x) &gt;&gt; 24) &amp; 0x0000000000ff0000ULL ) | \
+      ((((uint64_t)x) &gt;&gt; 40) &amp; 0x000000000000ff00ULL ) | \
+      ((((uint64_t)x) &gt;&gt; 56)                         ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="98" column="12" bodyfile="include/dpp/sysdep.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1a9319ec1d4c84b19f610cb21d6a7767a4" prot="public" static="no">
+        <name>store_16_bits</name>
+        <param><defname>to</defname></param>
+        <param><defname>num</defname></param>
+        <initializer>    do { uint16_t val = etf_byte_order_16(num); memcpy(to, &amp;val, 2); } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="115" column="9" bodyfile="include/dpp/sysdep.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1a2a26373ec11f93cd075ae437118c3580" prot="public" static="no">
+        <name>store_32_bits</name>
+        <param><defname>to</defname></param>
+        <param><defname>num</defname></param>
+        <initializer>    do { uint32_t val = etf_byte_order_32(num); memcpy(to, &amp;val, 4); } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="117" column="9" bodyfile="include/dpp/sysdep.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sysdep_8h_1a4798ad8a29746ad210d55b18bfccd543" prot="public" static="no">
+        <name>store_64_bits</name>
+        <param><defname>to</defname></param>
+        <param><defname>num</defname></param>
+        <initializer>    do { uint64_t val = etf_byte_order_64(num); memcpy(to, &amp;val, 8); } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sysdep.h" line="119" column="9" bodyfile="include/dpp/sysdep.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/sysdep.h"/>
+  </compounddef>
+</doxygen>

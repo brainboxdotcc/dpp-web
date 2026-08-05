@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-conan" kind="page">
+    <compoundname>install-conan</compoundname>
+    <title>Installing with Conan</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To install D++ into a project using conan 2.0 and cmake:</para>
+<para><itemizedlist>
+<listitem><para>Ensure conan is correctly installed, the most popular method is with pip.</para>
+</listitem><listitem><para>Create a conanfile.txt in the root of the project.</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename=".conanfile"><codeline><highlight class="normal">[requires]</highlight></codeline>
+<codeline><highlight class="normal">dpp/10.0.34</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[generators]</highlight></codeline>
+<codeline><highlight class="normal">CMakeDeps</highlight></codeline>
+<codeline><highlight class="normal">CMakeToolchain</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>You may now use the library within a <computeroutput>CMake</computeroutput> based project by adding instructions such as these to your <computeroutput>CMakeLists.txt</computeroutput>:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename=".cmake"><codeline><highlight class="normal">set(CMAKE_PREFIX_PATH<sp/><sp/>&quot;${CMAKE_CURRENT_LIST_DIR}/build&quot;)</highlight></codeline>
+<codeline><highlight class="normal">find_package(dpp<sp/>CONFIG<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}<sp/>dpp::dpp)</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>If you recieve any errors about CXX version you may need to set it</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">set(CMAKE_CXX_STANDARD<sp/>17)</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>You will then also want to set your build type to match what you will be using in conan(Debug or Release)</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">set(CMAKE_BUILD_TYPE<sp/>Debug)</highlight></codeline>
+</programlisting></para>
+<para>OR</para>
+<para><programlisting><codeline><highlight class="normal">set(CMAKE_BUILD_TYPE<sp/>Release)</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>Now run the following commands</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">conan<sp/>install<sp/>.<sp/>--output-folder=build<sp/>--build=missing<sp/>-s<sp/>build_type=Release</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_TOOLCHAIN_FILE=&quot;conan_toolchain.cmake&quot;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>build<sp/>--config<sp/>Release</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>NOTE: build_type= needs to match whatever was set in your CMake or you will get linker issues. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="docpages/install/install-conan.md"/>
+  </compounddef>
+</doxygen>

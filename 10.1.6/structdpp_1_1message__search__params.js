@@ -1,0 +1,28 @@
+var structdpp_1_1message__search__params =
+[
+    [ "build_url_params", "structdpp_1_1message__search__params.html#af0755f3069fc824760c7fc2b91ce419b", null ],
+    [ "attachment_extension", "structdpp_1_1message__search__params.html#a6575b076b3672ceefb4815cd0a1462a9", null ],
+    [ "attachment_filename", "structdpp_1_1message__search__params.html#a89a11ae2d1b4bf912b488a9f31d5f8bf", null ],
+    [ "author_id", "structdpp_1_1message__search__params.html#a4bace334df48f27fb91528588260d5b6", null ],
+    [ "author_type", "structdpp_1_1message__search__params.html#a7fbdc0801911000e54236f1cd6c8d05a", null ],
+    [ "channel_id", "structdpp_1_1message__search__params.html#abd2c0bdc1f2c0d16b03db1660747eb6c", null ],
+    [ "content", "structdpp_1_1message__search__params.html#a62a043134e79c7640ed3dad7431466a1", null ],
+    [ "embed_provider", "structdpp_1_1message__search__params.html#ab64da48e108827818b8d8ae13dc33b32", null ],
+    [ "embed_type", "structdpp_1_1message__search__params.html#a4ca7f6b82dfc38402bbdfa05388e1618", null ],
+    [ "has", "structdpp_1_1message__search__params.html#a104907d8b3f0c1ffd70456a4472eae96", null ],
+    [ "include_nsfw", "structdpp_1_1message__search__params.html#aa9e5a12a43d616c87be58d7531161d77", null ],
+    [ "limit", "structdpp_1_1message__search__params.html#afdb6b638ea86fc2d533509feb9b5f3af", null ],
+    [ "link_hostname", "structdpp_1_1message__search__params.html#a17864f045c211883bf4298429fb70791", null ],
+    [ "max_id", "structdpp_1_1message__search__params.html#ac749ca5acc6917bc0a9950b2e3545099", null ],
+    [ "mention_everyone", "structdpp_1_1message__search__params.html#a3b35ee0435143c063a0e755898907c3e", null ],
+    [ "mentions", "structdpp_1_1message__search__params.html#a97d5ef8a3243f059eebe60ef7c3babda", null ],
+    [ "mentions_role_id", "structdpp_1_1message__search__params.html#ad9e7ae3fd42d86bc2f67781a85ba2f3b", null ],
+    [ "min_id", "structdpp_1_1message__search__params.html#a1fe201e436c10b66f0d46c5b78c05ef6", null ],
+    [ "offset", "structdpp_1_1message__search__params.html#a29e72980c4b66f45ecca7a88c62d4610", null ],
+    [ "pinned", "structdpp_1_1message__search__params.html#afee4e1b867629d059c2ab98a2f5fc271", null ],
+    [ "replied_to_message_id", "structdpp_1_1message__search__params.html#a610b3e1bec5d67c1a0536cec4c0efdc9", null ],
+    [ "replied_to_user_id", "structdpp_1_1message__search__params.html#a5b088399975a441c82e0ceb62b62ffa0", null ],
+    [ "slop", "structdpp_1_1message__search__params.html#a4e3f54801351bcf20db518c67c60aa7d", null ],
+    [ "sort_by", "structdpp_1_1message__search__params.html#aac22a7eafff4296d5f38e2c8cc5ea145", null ],
+    [ "sort_order", "structdpp_1_1message__search__params.html#a2b802eb4e68b0d83f6d2a05a45dea1d3", null ]
+];

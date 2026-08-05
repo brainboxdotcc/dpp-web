@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptdpp_1_1awaitable__type" kind="concept">
+    <compoundname>dpp::awaitable_type</compoundname>
+    <includes local="no">coro.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptdpp_1_1awaitable__type" kindref="compound">dpp::awaitable_type</ref> =  requires (T expr) { detail::co_await_resolve(expr).await_ready(); }    </initializer>
+    <briefdescription>
+<para>Concept to check if a type can be used with co_await. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/coro/coro.h" line="174" column="1"/>
+  </compounddef>
+</doxygen>

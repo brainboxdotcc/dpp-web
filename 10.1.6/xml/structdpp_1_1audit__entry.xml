@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1audit__entry" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::audit_entry</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; audit_entry &gt;</basecompoundref>
+    <includes local="no">auditlog.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1audit__entry_1a019234368cb378f3af53d21ea367dec0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; audit_entry &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; audit_entry &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1audit__entry" kindref="compound">audit_entry</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="395" column="11" bodyfile="include/dpp/auditlog.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1audit__change" kindref="compound">audit_change</ref> &gt;</type>
+        <definition>std::vector&lt;audit_change&gt; dpp::audit_entry::changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <briefdescription>
+<para>Optional: changes made to the target_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="426" column="13" bodyfile="include/dpp/auditlog.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1abb76c66e3a5d4fa79d1753221119ab24" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structdpp_1_1audit__extra" kindref="compound">audit_extra</ref> &gt;</type>
+        <definition>std::optional&lt;audit_extra&gt; dpp::audit_entry::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+<para>Optional: additional info for certain action types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="441" column="15" bodyfile="include/dpp/auditlog.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>ID of the entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="415" column="11" bodyfile="include/dpp/auditlog.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::audit_entry::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+<para>Optional: the reason for the change (1-512 characters). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="446" column="13" bodyfile="include/dpp/auditlog.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::target_id</definition>
+        <argsstring></argsstring>
+        <name>target_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of the affected entity (webhook, user, role, etc.) (may be empty) <simplesect kind="note"><para>For dpp::audit_type::aut_appcommand_permission_update updates, it&apos;s the command ID or the app ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="421" column="11" bodyfile="include/dpp/auditlog.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a510a9fd92e9784491af63b7d8ac65344" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3d" kindref="member">audit_type</ref></type>
+        <definition>audit_type dpp::audit_entry::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of action that occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="436" column="12" bodyfile="include/dpp/auditlog.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+<para>The user or app that made the changes (may be empty). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="431" column="11" bodyfile="include/dpp/auditlog.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1audit__entry_1a0cad076e43a0ba199528819233912b44" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1audit__entry" kindref="compound">audit_entry</ref> &amp;</type>
+        <definition>audit_entry &amp; dpp::audit_entry::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read class values from json object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A json object to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="409" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1audit__entry_1a1372fee4f854af8c3bb49d45a6d7b148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::audit_entry::audit_entry</definition>
+        <argsstring>()</argsstring>
+        <name>audit_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="449" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1audit__entry_1a51cfae74433253d02173fa923936b960" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::audit_entry::~audit_entry</definition>
+        <argsstring>()=default</argsstring>
+        <name>~audit_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="452" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; audit_entry  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1audit__entry" kindref="compound">audit_entry</ref> &amp;</type>
+        <definition>audit_entry  &amp; dpp::json_interface&lt; audit_entry  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; audit_entry  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An individual audit log entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::audit_entry</label>
+        <link refid="structdpp_1_1audit__entry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; audit_entry &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; audit_entry &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>audit_type</label>
+      </node>
+      <node id="1">
+        <label>dpp::audit_entry</label>
+        <link refid="structdpp_1_1audit__entry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+          <edgelabel>target_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>changes</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>extra</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>reason</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; audit_entry &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; audit_entry &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="8">
+        <label>optional&lt;</label>
+      </node>
+      <node id="9">
+        <label>std::string</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector&lt;</label>
+      </node>
+      <node id="5">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/auditlog.h" line="401" column="1" bodyfile="include/dpp/auditlog.h" bodystart="401" bodyend="453"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1audit__entry_1a1372fee4f854af8c3bb49d45a6d7b148" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>audit_entry</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>changes</name></member>
+      <member refid="structdpp_1_1audit__entry_1abb76c66e3a5d4fa79d1753221119ab24" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>extra</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1audit__entry_1a0cad076e43a0ba199528819233912b44" prot="protected" virt="non-virtual"><scope>dpp::audit_entry</scope><name>fill_from_json_impl</name></member>
+      <member refid="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>id</name></member>
+      <member refid="structdpp_1_1audit__entry_1a019234368cb378f3af53d21ea367dec0" prot="protected" virt="non-virtual"><scope>dpp::audit_entry</scope><name>json_interface&lt; audit_entry &gt;</name></member>
+      <member refid="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>reason</name></member>
+      <member refid="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>target_id</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1audit__entry_1a510a9fd92e9784491af63b7d8ac65344" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>type</name></member>
+      <member refid="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>user_id</name></member>
+      <member refid="structdpp_1_1audit__entry_1a51cfae74433253d02173fa923936b960" prot="public" virt="virtual"><scope>dpp::audit_entry</scope><name>~audit_entry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

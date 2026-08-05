@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1coroutine_1_1awaiter" kind="struct" language="C++" prot="private">
+    <compoundname>dpp::coroutine::awaiter</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1coroutine_1_1awaiter_1abba1b29f335f43f51a0968aef6175634" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1coroutine" kindref="compound">coroutine</ref> &amp;</type>
+        <definition>coroutine&amp; dpp::coroutine&lt; R &gt;::awaiter::coro</definition>
+        <argsstring></argsstring>
+        <name>coro</name>
+        <briefdescription>
+<para>Reference to the coroutine object being awaited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="93" column="11" bodyfile="include/dpp/coro/coroutine.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1coroutine_1_1awaiter_1a957e98e4e5d4c4cab63cae365d26b520" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::coroutine&lt; R &gt;::awaiter::await_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when the coroutine is co_await-ed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>invalid_operation_exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the coroutine is empty or finished. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether the coroutine is done </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="102" column="7" bodyfile="include/dpp/coro/coroutine.h" bodystart="102" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1coroutine_1_1awaiter_1a0f41ffe721e9648afbd19db1793ae495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>R dpp::coroutine&lt; R &gt;::awaiter::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Final function called by the standard library when the coroutine is co_await-ed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pops the coroutine&apos;s result and returns it. <simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="129" column="3" bodyfile="include/dpp/coro/coroutine.h" bodystart="129" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1coroutine_1_1awaiter_1a0dc309426150da9ad09b9707d9929c2b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacedpp_1_1detail_1_1coroutine_1a8277dc2e5b05c0232a9237b4a5894e0f" kindref="member">detail::coroutine::handle_t</ref>&lt; R &gt;</type>
+        <definition>detail::coroutine::handle_t&lt; R &gt; dpp::coroutine&lt; R &gt;::awaiter::await_suspend</definition>
+        <argsstring>(detail::std_coroutine::coroutine_handle&lt; T &gt; caller) noexcept</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>detail::std_coroutine::coroutine_handle&lt; T &gt;</type>
+          <declname>caller</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when the coroutine is co_await-ed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores the calling coroutine in the promise to resume when this coroutine suspends.</para>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The calling coroutine, now suspended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="118" column="30" bodyfile="include/dpp/coro/coroutine.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>dpp::basic_awaitable&lt; coroutine&lt; R &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; coroutine&lt; R &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::basic_awaitable&lt; Derived &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+      </node>
+      <node id="2">
+        <label>dpp::coroutine&lt; R &gt;</label>
+        <link refid="classdpp_1_1coroutine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::coroutine&lt; R &gt;::awaiter</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coro</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/coroutine.h" line="89" column="1" bodyfile="include/dpp/coro/coroutine.h" bodystart="89" bodyend="140"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1coroutine_1_1awaiter_1a957e98e4e5d4c4cab63cae365d26b520" prot="public" virt="non-virtual"><scope>dpp::coroutine::awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1coroutine_1_1awaiter_1a0f41ffe721e9648afbd19db1793ae495" prot="public" virt="non-virtual"><scope>dpp::coroutine::awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1coroutine_1_1awaiter_1a0dc309426150da9ad09b9707d9929c2b" prot="public" virt="non-virtual"><scope>dpp::coroutine::awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1coroutine_1_1awaiter_1abba1b29f335f43f51a0968aef6175634" prot="public" virt="non-virtual"><scope>dpp::coroutine::awaiter</scope><name>coro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
