@@ -1,0 +1,24 @@
+var NAVTREEINDEX80 =
+{
+"thinking.html":[5,1,7],
+"thread-model.html":[6,1],
+"todo.html":[8],
+"unit-tests.html":[6,5],
+"user-applications.html":[5,1,2],
+"user-applications.html#autotoc_md132":[5,1,2,0],
+"user-applications.html#autotoc_md133":[5,1,2,1],
+"user-applications.html#autotoc_md134":[5,1,2,2],
+"user-applications.html#autotoc_md135":[5,1,2,3],
+"user-applications.html#autotoc_md136":[5,1,2,3,0],
+"user-applications.html#autotoc_md137":[5,1,2,4],
+"user-only-messages.html":[5,1,1],
+"using-cache.html":[5,0,6],
+"using-coroutines.html":[5,3],
+"using-emojis.html":[5,4,9],
+"using_timers.html":[5,4,10],
+"voice-model.html":[6,2],
+"voice-model.html#autotoc_md104":[6,2,0],
+"voice-model.html#autotoc_md105":[6,2,1],
+"webhooks.html":[5,0,4],
+"":[9,0,1]
+};
