@@ -1,7 +1,6 @@
 var classdpp_1_1application =
 [
     [ "application", "classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044", null ],
-    [ "~application", "classdpp_1_1application.html#ae9c07959319bada770b8288157c319e6", null ],
     [ "build_json", "classdpp_1_1application.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1application.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1application.html#a3bb5c744a5dc43f844edfe8c80fda1f2", null ],

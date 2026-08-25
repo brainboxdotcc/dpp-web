@@ -1,7 +1,6 @@
 var structdpp_1_1stage__instance =
 [
     [ "stage_instance", "structdpp_1_1stage__instance.html#a5ef48a926a1e604a0bcf8f53d27521c3", null ],
-    [ "~stage_instance", "structdpp_1_1stage__instance.html#a88af3a5f8cead59a98c9ae7a695695a7", null ],
     [ "build_json", "structdpp_1_1stage__instance.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1stage__instance.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1stage__instance.html#a1bfdf0874fb6ebaefe542227e6eac4bd", null ],

@@ -1,7 +1,6 @@
 var classdpp_1_1automod__rule =
 [
     [ "automod_rule", "classdpp_1_1automod__rule.html#a10845bc9238341fd681979b158d8d875", null ],
-    [ "~automod_rule", "classdpp_1_1automod__rule.html#a8dac36f14022bfe0b7652f31d82fe64a", null ],
     [ "build_json", "classdpp_1_1automod__rule.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1automod__rule.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1automod__rule.html#a369f8d658d8cea4065a13d4f9bf7a517", null ],

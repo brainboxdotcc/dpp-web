@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ban_0',['ban',['../classdpp_1_1ban.html#ad892633726780283e88837a404953351',1,'dpp::ban']]],
+  ['ban_0',['ban',['../classdpp_1_1ban.html#ad40c3862ce1ff5d8f17c40b29962b323',1,'dpp::ban::ban(const ban &amp;)=default'],['../classdpp_1_1ban.html#a1f1ef674bb96852f770d604a7da7524b',1,'dpp::ban::ban(ban &amp;&amp;)=default'],['../classdpp_1_1ban.html#ad892633726780283e88837a404953351',1,'dpp::ban::ban()']]],
   ['base64_5fencode_1',['base64_encode',['../structdpp_1_1utility_1_1image__data.html#a564d0dbfd98bbf88bdd8b4f2c4e57066',1,'dpp::utility::image_data::base64_encode()'],['../namespacedpp.html#a89cd418696847bc940940dd84163d482',1,'dpp::base64_encode()']]],
   ['base_5fpermissions_2',['base_permissions',['../classdpp_1_1guild.html#abd799f5cbe1907c46b86937bda124bee',1,'dpp::guild::base_permissions(const class user *user) const'],['../classdpp_1_1guild.html#ad7e3b4418671873df7f59fccfc49dec4',1,'dpp::guild::base_permissions(const guild_member &amp;member) const']]],
   ['bignumber_3',['bignumber',['../classdpp_1_1bignumber.html#aa1db5d3d5dce166f182b2da591f7004e',1,'dpp::bignumber::bignumber()=default'],['../classdpp_1_1bignumber.html#a20ea7c898a60a24e854fb5b202298ede',1,'dpp::bignumber::bignumber(const std::string &amp;number_string)'],['../classdpp_1_1bignumber.html#a922a2de70e336ec76d20dfc72950ff20',1,'dpp::bignumber::bignumber(std::vector&lt; uint64_t &gt; bits)']]],

@@ -1,7 +1,9 @@
 var classdpp_1_1interaction =
 [
     [ "interaction", "classdpp_1_1interaction.html#a633cfd684b67c14cbaf747b5ce181eda", null ],
-    [ "~interaction", "classdpp_1_1interaction.html#aded41ecda9d55bcaa1650f34068dada7", null ],
+    [ "interaction", "classdpp_1_1interaction.html#a57a6d2e3e1d1285034c673d2bcde70e7", null ],
+    [ "interaction", "classdpp_1_1interaction.html#a60340410b2b9f16c602e3e0ae87e1010", null ],
+    [ "~interaction", "classdpp_1_1interaction.html#a429e2073cabfda7db03f0fb9a973bd73", null ],
     [ "build_json", "classdpp_1_1interaction.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1interaction.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1interaction.html#a0cdf4d4c39248eae902a5781f105656d", null ],
@@ -26,6 +28,8 @@ var classdpp_1_1interaction =
     [ "is_guild_interaction", "classdpp_1_1interaction.html#a98d337ebf0ecef5d263098c4a1cd5d7a", null ],
     [ "is_user_app_interaction", "classdpp_1_1interaction.html#ae8022b4e58f5bafcf28427a4cdac71ed", null ],
     [ "operator!=", "classdpp_1_1interaction.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
+    [ "operator=", "classdpp_1_1interaction.html#aba26950efc7e2dce19d047cefe80e167", null ],
+    [ "operator=", "classdpp_1_1interaction.html#ae537cf716e62c99d7f438944a9580bf9", null ],
     [ "operator==", "classdpp_1_1interaction.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
     [ "to_json", "classdpp_1_1interaction.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1interaction.html#afacf39c58da074d5d1be99176cf41b62", null ],

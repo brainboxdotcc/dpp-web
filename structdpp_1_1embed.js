@@ -2,8 +2,12 @@ var structdpp_1_1embed =
 [
     [ "embed", "structdpp_1_1embed.html#a6f60eea0421da23a22032bd317dd9b10", null ],
     [ "embed", "structdpp_1_1embed.html#a03bbf47ebfcdb5a267fae660232c9577", null ],
+    [ "embed", "structdpp_1_1embed.html#a194b2a738392591ebb191a7df541fca4", null ],
+    [ "embed", "structdpp_1_1embed.html#aeb8deeb0889dd7bac759e0d86f399b16", null ],
     [ "~embed", "structdpp_1_1embed.html#a9d43c2e1648e03cf5aa28825f600391f", null ],
     [ "add_field", "structdpp_1_1embed.html#a98adc094802dfc85bacc6666dd753c18", null ],
+    [ "operator=", "structdpp_1_1embed.html#a929b8e642cd9d64141101316f70c0c73", null ],
+    [ "operator=", "structdpp_1_1embed.html#adfe47b38951e2edb3b8359405ff6d104", null ],
     [ "set_author", "structdpp_1_1embed.html#a1191592fd154b5cd29aad3b361ec3e9e", null ],
     [ "set_author", "structdpp_1_1embed.html#a5a26ead1fad0e85b4fab4a27ee852369", null ],
     [ "set_color", "structdpp_1_1embed.html#a3bcc6f23d8d16c347139f624569e61e1", null ],

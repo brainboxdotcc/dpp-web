@@ -1,7 +1,9 @@
 var classdpp_1_1channel =
 [
     [ "channel", "classdpp_1_1channel.html#a53bbf494148ceea48e3b78716d7a8b07", null ],
-    [ "~channel", "classdpp_1_1channel.html#a019dcc538ed619ab255f60e69f716ae3", null ],
+    [ "channel", "classdpp_1_1channel.html#a4e5cee74074180d776e0412311ffe1e1", null ],
+    [ "channel", "classdpp_1_1channel.html#afcdf844066660802c48131d35a0eb269", null ],
+    [ "~channel", "classdpp_1_1channel.html#a592e24f71e5ae5484557cd07c53ef1a1", null ],
     [ "add_flag", "classdpp_1_1channel.html#a189a5d675001b810199274201b15ea38", null ],
     [ "add_permission_overwrite", "classdpp_1_1channel.html#a386c8434a670e7ae1400c5a4bf07e688", null ],
     [ "build_json", "classdpp_1_1channel.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
@@ -36,6 +38,8 @@ var classdpp_1_1channel =
     [ "is_video_auto", "classdpp_1_1channel.html#afb783f82a86a5ed6f247aaa213164854", null ],
     [ "is_voice_channel", "classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916", null ],
     [ "operator!=", "classdpp_1_1channel.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
+    [ "operator=", "classdpp_1_1channel.html#a87c0d00c3069f447b83f8e778e5ae7fd", null ],
+    [ "operator=", "classdpp_1_1channel.html#ab01e494cbfbef2e90056320d15f310e7", null ],
     [ "operator==", "classdpp_1_1channel.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
     [ "remove_flag", "classdpp_1_1channel.html#a20f076ea45f524f1673137d1b7817f6f", null ],
     [ "remove_permission_overwrite", "classdpp_1_1channel.html#a1b1b5b5907316b2efc2dd325b5810b46", null ],

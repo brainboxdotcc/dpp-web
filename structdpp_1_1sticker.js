@@ -1,7 +1,6 @@
 var structdpp_1_1sticker =
 [
     [ "sticker", "structdpp_1_1sticker.html#a0d0f399bc06d635cab0fc0cab9603b6f", null ],
-    [ "~sticker", "structdpp_1_1sticker.html#abc2bd8f112ccdff020bef2a3df98f8cf", null ],
     [ "build_json", "structdpp_1_1sticker.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1sticker.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1sticker.html#a545e190bb391640dcc7492bf3b374006", null ],

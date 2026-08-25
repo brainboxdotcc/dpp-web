@@ -1,7 +1,9 @@
 var classdpp_1_1component =
 [
     [ "component", "classdpp_1_1component.html#a69b9e60742f6a1f1622b264cd7712660", null ],
-    [ "~component", "classdpp_1_1component.html#a790334ad68b127e95923c5f6cdb727a7", null ],
+    [ "component", "classdpp_1_1component.html#ab5acfa5de30f7ecf3fea571f01c6b8ef", null ],
+    [ "component", "classdpp_1_1component.html#a31c5415962046f8033b43178014ccb9b", null ],
+    [ "~component", "classdpp_1_1component.html#a52dddac6db48a6c02f1984c433d955a8", null ],
     [ "add_channel_type", "classdpp_1_1component.html#af83f1098e87ce1dd11e475dfd4740b16", null ],
     [ "add_component", "classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d", null ],
     [ "add_component_v2", "classdpp_1_1component.html#a14d9c43752bf5aa4ca163fe4cf5846a6", null ],
@@ -12,6 +14,8 @@ var classdpp_1_1component =
     [ "build_json", "classdpp_1_1component.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1component.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1component.html#acb23c977bd82051cd5fdc982a69070e4", null ],
+    [ "operator=", "classdpp_1_1component.html#a888091efa71ff1c79bf65df8b6afab67", null ],
+    [ "operator=", "classdpp_1_1component.html#a9a7b8ae34b8a1734819d9e99212aae84", null ],
     [ "set_accent", "classdpp_1_1component.html#ae713c971fb3811ab6766480bb1a6b92b", null ],
     [ "set_accessory", "classdpp_1_1component.html#a20be300c776ba8358c07a89e6c5b6706", null ],
     [ "set_content", "classdpp_1_1component.html#a08c117e831d21686ee49ed11ca1d786f", null ],

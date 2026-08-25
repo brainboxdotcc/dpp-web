@@ -1,7 +1,9 @@
 var classdpp_1_1guild =
 [
     [ "guild", "classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc", null ],
-    [ "~guild", "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14", null ],
+    [ "guild", "classdpp_1_1guild.html#ad97c258b63877e2aacbe94e265e0dff6", null ],
+    [ "guild", "classdpp_1_1guild.html#ab399b4cf3092ba65ddcf509f28023466", null ],
+    [ "~guild", "classdpp_1_1guild.html#a3a84831c017de02206980665923a989a", null ],
     [ "base_permissions", "classdpp_1_1guild.html#abd799f5cbe1907c46b86937bda124bee", null ],
     [ "base_permissions", "classdpp_1_1guild.html#ad7e3b4418671873df7f59fccfc49dec4", null ],
     [ "build_json", "classdpp_1_1guild.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
@@ -49,6 +51,8 @@ var classdpp_1_1guild =
     [ "is_verified", "classdpp_1_1guild.html#af79641512c0342d3082174afa2e636e8", null ],
     [ "is_welcome_screen_enabled", "classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e", null ],
     [ "operator!=", "classdpp_1_1guild.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
+    [ "operator=", "classdpp_1_1guild.html#a98b0163a2912c8833d554fe1103d211a", null ],
+    [ "operator=", "classdpp_1_1guild.html#a4bf3480f377646822f9b2bbd84c600a9", null ],
     [ "operator==", "classdpp_1_1guild.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
     [ "permission_overwrites", "classdpp_1_1guild.html#a9688339669113aae291c5987beee9f24", null ],
     [ "permission_overwrites", "classdpp_1_1guild.html#ad33639446c930d418139a976c9c1a071", null ],

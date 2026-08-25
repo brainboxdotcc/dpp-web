@@ -1,10 +1,14 @@
 var structdpp_1_1automod__metadata =
 [
     [ "automod_metadata", "structdpp_1_1automod__metadata.html#a1d341f6dd7507da28acf9c9add164803", null ],
+    [ "automod_metadata", "structdpp_1_1automod__metadata.html#a1c6128ca82d0980b1c8d2eb4c0abbc1c", null ],
+    [ "automod_metadata", "structdpp_1_1automod__metadata.html#a0556ed985778a316c6490d495a174b37", null ],
     [ "~automod_metadata", "structdpp_1_1automod__metadata.html#a2671a8e5afaf01085b585ed350376809", null ],
     [ "build_json", "structdpp_1_1automod__metadata.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1automod__metadata.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1automod__metadata.html#a94fb57e5fc51507b08c7cb34e0151c0d", null ],
+    [ "operator=", "structdpp_1_1automod__metadata.html#a2d675f9525500e29d6af08c1d2172db0", null ],
+    [ "operator=", "structdpp_1_1automod__metadata.html#ad6f7af178268561bfe17522e34cc0e4a", null ],
     [ "to_json", "structdpp_1_1automod__metadata.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "structdpp_1_1automod__metadata.html#a970b89e22d0aea49900550d3df34da02", null ],
     [ "json_interface< automod_metadata >", "structdpp_1_1automod__metadata.html#a7f5a3314f849c04df1e3605551b9ef9c", null ],

@@ -1,7 +1,6 @@
 var classdpp_1_1integration =
 [
     [ "integration", "classdpp_1_1integration.html#a20e94fa7dad14b30b905854379de1258", null ],
-    [ "~integration", "classdpp_1_1integration.html#a7132ef9a2ab58a12ea681b3afe6fe552", null ],
     [ "build_json", "classdpp_1_1integration.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "emoticons_enabled", "classdpp_1_1integration.html#a71c1fe98428f12efef492f8469c9c68c", null ],
     [ "expiry_kicks_user", "classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07", null ],

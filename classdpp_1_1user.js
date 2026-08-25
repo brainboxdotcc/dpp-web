@@ -1,7 +1,9 @@
 var classdpp_1_1user =
 [
     [ "user", "classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b", null ],
-    [ "~user", "classdpp_1_1user.html#ab10c88f47447a074038417d2a8867288", null ],
+    [ "user", "classdpp_1_1user.html#ac4c368e928595cc0dab4456f01b95ea7", null ],
+    [ "user", "classdpp_1_1user.html#a2475a5ac8be2c239f99c318325539640", null ],
+    [ "~user", "classdpp_1_1user.html#a926409969f91887aef6808d42248f031", null ],
     [ "build_json", "classdpp_1_1user.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1user.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1user.html#a6307b0d247e5029d15e6f40ec7029ab8", null ],
@@ -37,6 +39,8 @@ var classdpp_1_1user =
     [ "is_verified_bot", "classdpp_1_1user.html#a9aabc6989097e79dc8e3e8d00d7a0c5f", null ],
     [ "is_verified_bot_dev", "classdpp_1_1user.html#abe54bbcf190f3aba2aeaf8c2d6287152", null ],
     [ "operator!=", "classdpp_1_1user.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
+    [ "operator=", "classdpp_1_1user.html#a2e0fc582f6dafe18eb7363acf40d6e5e", null ],
+    [ "operator=", "classdpp_1_1user.html#aefa32971f8828c821aeb6ac75cb8d625", null ],
     [ "operator==", "classdpp_1_1user.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
     [ "to_json", "classdpp_1_1user.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1user.html#a3c5935a9ecd220d9d0693da53882adc1", null ],

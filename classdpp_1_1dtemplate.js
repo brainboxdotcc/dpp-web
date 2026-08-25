@@ -1,10 +1,14 @@
 var classdpp_1_1dtemplate =
 [
     [ "dtemplate", "classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812", null ],
+    [ "dtemplate", "classdpp_1_1dtemplate.html#ab20b7a87b95adefebb9f27ec876456ad", null ],
+    [ "dtemplate", "classdpp_1_1dtemplate.html#ab9fde9847f24007c86f24eccef0c9bdf", null ],
     [ "~dtemplate", "classdpp_1_1dtemplate.html#a2d9d0617218d8be51ca2a6e67ee940fd", null ],
     [ "build_json", "classdpp_1_1dtemplate.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1dtemplate.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1dtemplate.html#af1646520662fa6a26d4a539eac258fe6", null ],
+    [ "operator=", "classdpp_1_1dtemplate.html#afc17043c6994f4b569545b32b5e68ba0", null ],
+    [ "operator=", "classdpp_1_1dtemplate.html#a0fc4063864c313e1e23c45339c205450", null ],
     [ "to_json", "classdpp_1_1dtemplate.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1dtemplate.html#a00c95ed2e546791747acaf0640aae2da", null ],
     [ "json_interface< dtemplate >", "classdpp_1_1dtemplate.html#a7848f6a254844157a5faed450e512b23", null ],

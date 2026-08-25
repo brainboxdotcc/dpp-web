@@ -1,7 +1,9 @@
 var structdpp_1_1command__option =
 [
     [ "command_option", "structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50", null ],
-    [ "~command_option", "structdpp_1_1command__option.html#a25237e95f4c70a653459a69b3d2aba4f", null ],
+    [ "command_option", "structdpp_1_1command__option.html#adf30dd5a3119778d7014f3941ae5b543", null ],
+    [ "command_option", "structdpp_1_1command__option.html#a821fc4532c1cdc03471d494bc7798511", null ],
+    [ "~command_option", "structdpp_1_1command__option.html#a7f9c91a3c041f94b991eaea3ba89476f", null ],
     [ "command_option", "structdpp_1_1command__option.html#a7059a6049828707b2eda2c5a649aeb79", null ],
     [ "add_channel_type", "structdpp_1_1command__option.html#a2ecddb11870c0c32a61be196f48c3ebf", null ],
     [ "add_choice", "structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026", null ],
@@ -11,6 +13,8 @@ var structdpp_1_1command__option =
     [ "build_json", "structdpp_1_1command__option.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1command__option.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1command__option.html#a6d70b6f0ba011cb131ffe05806feb715", null ],
+    [ "operator=", "structdpp_1_1command__option.html#a7996b2d5f727e66d4654058a3401ac0c", null ],
+    [ "operator=", "structdpp_1_1command__option.html#a26265124a0c4244de95dd50f13715677", null ],
     [ "set_auto_complete", "structdpp_1_1command__option.html#a397ec7aa607abc775e45a14237e3299a", null ],
     [ "set_max_length", "structdpp_1_1command__option.html#a7555f4a8cc883bdaa08053f4513262a9", null ],
     [ "set_max_value", "structdpp_1_1command__option.html#a15b3a6c2a2a1d5f6e19956e2215e3f0d", null ],

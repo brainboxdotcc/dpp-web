@@ -1,6 +1,8 @@
 var classdpp_1_1voicestate =
 [
     [ "voicestate", "classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895", null ],
+    [ "voicestate", "classdpp_1_1voicestate.html#a663315ef7587b1fce72344ab63497b76", null ],
+    [ "voicestate", "classdpp_1_1voicestate.html#a3e17f05635d4d50987111d1a747450e6", null ],
     [ "~voicestate", "classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6", null ],
     [ "build_json", "classdpp_1_1voicestate.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1voicestate.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
@@ -10,6 +12,8 @@ var classdpp_1_1voicestate =
     [ "is_self_deaf", "classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db", null ],
     [ "is_self_mute", "classdpp_1_1voicestate.html#a1ade333534ab9fe0cb18485269ced203", null ],
     [ "is_suppressed", "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3", null ],
+    [ "operator=", "classdpp_1_1voicestate.html#ac188dafe9e96597ad82a03ca280f8bdf", null ],
+    [ "operator=", "classdpp_1_1voicestate.html#ad64d5a67cd445073fd7a596fed8bbce6", null ],
     [ "self_stream", "classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2", null ],
     [ "self_video", "classdpp_1_1voicestate.html#a6d2114f152b6170f039c096f8a200219", null ],
     [ "to_json", "classdpp_1_1voicestate.html#ae169e4231b77955fc1b43a3b7be9770c", null ],

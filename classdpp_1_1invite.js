@@ -1,10 +1,14 @@
 var classdpp_1_1invite =
 [
     [ "invite", "classdpp_1_1invite.html#ad3c1ed34b2256dcbf2dce82436071f8b", null ],
+    [ "invite", "classdpp_1_1invite.html#a2606e3fd2c53f187efbacf4240076af6", null ],
+    [ "invite", "classdpp_1_1invite.html#a79c4030cecd283231118d146daea0807", null ],
     [ "~invite", "classdpp_1_1invite.html#a9342a04153b6a12d19f726b351acdb55", null ],
     [ "build_json", "classdpp_1_1invite.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1invite.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1invite.html#ab5f4bb5570946f35048cba1069d9b5bc", null ],
+    [ "operator=", "classdpp_1_1invite.html#ab0d47bc6ad84e1d871fef9962bce88ce", null ],
+    [ "operator=", "classdpp_1_1invite.html#ab7435ad5db43a8e52bd18fddbabd1b61", null ],
     [ "set_max_age", "classdpp_1_1invite.html#a5b326e237960271455ea965b6cd46207", null ],
     [ "set_max_uses", "classdpp_1_1invite.html#a3d4a72f89fdb7aa8c4719ff951d6a410", null ],
     [ "set_target_type", "classdpp_1_1invite.html#a158f07d5fc6eaaeebabb7d7bb22b0998", null ],

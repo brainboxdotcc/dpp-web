@@ -1,10 +1,14 @@
 var classdpp_1_1application__role__connection__metadata =
 [
     [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html#ab76742865aa3007525012f161d700fab", null ],
+    [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html#af22cfa86c8523c14bcafcb2da9509154", null ],
+    [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html#ad8c3b7a5b2cb9a132840af69e26f2c02", null ],
     [ "~application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html#a60353e0ca9b810b2fe375d9d8c88b424", null ],
     [ "build_json", "classdpp_1_1application__role__connection__metadata.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1application__role__connection__metadata.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1application__role__connection__metadata.html#a2f6765e448e07e18bbb1cf8a922902a5", null ],
+    [ "operator=", "classdpp_1_1application__role__connection__metadata.html#a12e7b5cfca84e71e83c118c9c8253b3c", null ],
+    [ "operator=", "classdpp_1_1application__role__connection__metadata.html#ab7c23a942443900a336b6317ef418014", null ],
     [ "to_json", "classdpp_1_1application__role__connection__metadata.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1application__role__connection__metadata.html#a10d84f94bcd95123c13bf0065b016608", null ],
     [ "json_interface< application_role_connection_metadata >", "classdpp_1_1application__role__connection__metadata.html#acc699707b1220cb5f4088d0318b3526c", null ],

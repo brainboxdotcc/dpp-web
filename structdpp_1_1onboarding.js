@@ -1,10 +1,14 @@
 var structdpp_1_1onboarding =
 [
     [ "onboarding", "structdpp_1_1onboarding.html#a9b582f07cc56795deac91093a559a9be", null ],
+    [ "onboarding", "structdpp_1_1onboarding.html#afefee7e698673cb80116025df9f2ef6b", null ],
+    [ "onboarding", "structdpp_1_1onboarding.html#a7f2693a537c8088d465420aa022c04f1", null ],
     [ "~onboarding", "structdpp_1_1onboarding.html#a5a4688b856b7b078071baf1378010841", null ],
     [ "build_json", "structdpp_1_1onboarding.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1onboarding.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1onboarding.html#a8e45110306b2a2370a7d0cef5c150381", null ],
+    [ "operator=", "structdpp_1_1onboarding.html#abdcf7ce782eda9be840f22ed60595a23", null ],
+    [ "operator=", "structdpp_1_1onboarding.html#a265c10bf9699a463ba751c364470ea40", null ],
     [ "set_enabled", "structdpp_1_1onboarding.html#a6b81ac0ced323104c0e5d2bc6bb04590", null ],
     [ "set_guild_id", "structdpp_1_1onboarding.html#a3ed0704a28c75b1d5527c95ace0203b7", null ],
     [ "set_mode", "structdpp_1_1onboarding.html#a3bad9082e8ffb79595f40072ef32108c", null ],

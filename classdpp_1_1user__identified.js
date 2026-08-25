@@ -2,7 +2,6 @@ var classdpp_1_1user__identified =
 [
     [ "user_identified", "classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255", null ],
     [ "user_identified", "classdpp_1_1user__identified.html#a1ceaae69857a8459a1a170313e214252", null ],
-    [ "~user_identified", "classdpp_1_1user__identified.html#ad6dd7b948db3b2f469be27e45303169d", null ],
     [ "build_json", "classdpp_1_1user__identified.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "build_json", "classdpp_1_1user__identified.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1user__identified.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
