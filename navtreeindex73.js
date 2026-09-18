@@ -1,5 +1,9 @@
 var NAVTREEINDEX73 =
 {
+"structdpp_1_1prune.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,197,4],
+"structdpp_1_1prune.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,191,4],
+"structdpp_1_1prune.html#ad9984941820be06ad4f734979c9501f1":[11,0,0,191,2],
+"structdpp_1_1prune.html#ad9984941820be06ad4f734979c9501f1":[9,0,0,197,2],
 "structdpp_1_1prune.html#ae517322018f4dd7c1e400388163c90b2":[11,0,0,191,9],
 "structdpp_1_1prune.html#ae517322018f4dd7c1e400388163c90b2":[9,0,0,197,9],
 "structdpp_1_1raii__socket.html":[11,0,0,192],
@@ -236,18 +240,14 @@ var NAVTREEINDEX73 =
 "structdpp_1_1select__click__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[11,0,0,205,33],
 "structdpp_1_1select__click__t.html#a274aaa562766588128c2e3699b515b41":[9,0,0,211,20],
 "structdpp_1_1select__click__t.html#a274aaa562766588128c2e3699b515b41":[11,0,0,205,20],
-"structdpp_1_1select__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,211,49],
 "structdpp_1_1select__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,205,49],
+"structdpp_1_1select__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,211,49],
 "structdpp_1_1select__click__t.html#a34f374b358f8d2d49fa93bfe5a2c0493":[9,0,0,211,35],
 "structdpp_1_1select__click__t.html#a34f374b358f8d2d49fa93bfe5a2c0493":[11,0,0,205,35],
-"structdpp_1_1select__click__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[11,0,0,205,17],
 "structdpp_1_1select__click__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[9,0,0,211,17],
+"structdpp_1_1select__click__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[11,0,0,205,17],
 "structdpp_1_1select__click__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,211,34],
 "structdpp_1_1select__click__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[11,0,0,205,34],
-"structdpp_1_1select__click__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,211,0],
 "structdpp_1_1select__click__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,205,0],
-"structdpp_1_1select__click__t.html#a5638e046acca0e77f749483f885803eb":[11,0,0,205,2],
-"structdpp_1_1select__click__t.html#a5638e046acca0e77f749483f885803eb":[9,0,0,211,2],
-"structdpp_1_1select__click__t.html#a56c5b18e31d5042ce01c814620013d2d":[9,0,0,211,37],
-"structdpp_1_1select__click__t.html#a56c5b18e31d5042ce01c814620013d2d":[11,0,0,205,37]
+"structdpp_1_1select__click__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,211,0]
 };

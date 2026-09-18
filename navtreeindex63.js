@@ -1,5 +1,9 @@
 var NAVTREEINDEX63 =
 {
+"structdpp_1_1forum__tag.html#a46a1b609377b1443a31df24e18d20cf1":[11,0,0,98,13],
+"structdpp_1_1forum__tag.html#a46a1b609377b1443a31df24e18d20cf1":[9,0,0,104,13],
+"structdpp_1_1forum__tag.html#a5179430d74c31b0e7366edd4f39036aa":[11,0,0,98,9],
+"structdpp_1_1forum__tag.html#a5179430d74c31b0e7366edd4f39036aa":[9,0,0,104,9],
 "structdpp_1_1forum__tag.html#a792557eef74925dcef618d4e0886a418":[9,0,0,104,2],
 "structdpp_1_1forum__tag.html#a792557eef74925dcef618d4e0886a418":[11,0,0,98,2],
 "structdpp_1_1forum__tag.html#a7972bcf99906645f329540f8e09ccf45":[11,0,0,98,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX63 =
 "structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,107,14],
 "structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,113,14],
 "structdpp_1_1guild__emojis__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[11,0,0,107,10],
-"structdpp_1_1guild__emojis__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,113,10],
-"structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19":[11,0,0,107,12],
-"structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19":[9,0,0,113,12],
-"structdpp_1_1guild__emojis__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,107,0],
-"structdpp_1_1guild__emojis__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,113,0]
+"structdpp_1_1guild__emojis__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,113,10]
 };
