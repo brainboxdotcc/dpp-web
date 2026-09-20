@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"classdpp_1_1voicestate.html#a2805d3a80083db939934bcc41c1b9f8e":[11,0,0,264,23],
+"classdpp_1_1voicestate.html#a2a56a68ec5590ac218711f72893013fd":[9,0,0,270,24],
+"classdpp_1_1voicestate.html#a2a56a68ec5590ac218711f72893013fd":[11,0,0,264,24],
+"classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895":[9,0,0,270,0],
+"classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895":[11,0,0,264,0],
+"classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed":[9,0,0,270,7],
+"classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed":[11,0,0,264,7],
+"classdpp_1_1voicestate.html#a3e17f05635d4d50987111d1a747450e6":[9,0,0,270,2],
 "classdpp_1_1voicestate.html#a3e17f05635d4d50987111d1a747450e6":[11,0,0,264,2],
 "classdpp_1_1voicestate.html#a4e0266b7f1315426bc2ac3def6dd0dc5":[9,0,0,270,17],
 "classdpp_1_1voicestate.html#a4e0266b7f1315426bc2ac3def6dd0dc5":[11,0,0,264,17],
@@ -241,13 +249,5 @@ var NAVTREEINDEX22 =
 "classdpp_1_1when__any_1_1result.html#ab8ea8e8124b0060395d6f2838453c4a5":[9,0,0,276,1,1],
 "classdpp_1_1when__any_1_1result.html#adc6cc3f393c8fe44735c9bcd4421abbf":[11,0,0,270,1,4],
 "classdpp_1_1when__any_1_1result.html#adc6cc3f393c8fe44735c9bcd4421abbf":[9,0,0,276,1,4],
-"classdpp_1_1when__any_1_1result.html#adcc8fe2ce406b5dedaeaa75524bf6c61":[11,0,0,270,1,0],
-"classdpp_1_1when__any_1_1result.html#adcc8fe2ce406b5dedaeaa75524bf6c61":[9,0,0,276,1,0],
-"classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9":[11,0,0,270,1,6],
-"classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9":[9,0,0,276,1,6],
-"classdpp_1_1when__any_1_1result.html#aed1762a4eb6128fba265982a4bded407":[11,0,0,270,1,9],
-"classdpp_1_1when__any_1_1result.html#aed1762a4eb6128fba265982a4bded407":[9,0,0,276,1,9],
-"classdpp_1_1zlibcontext.html":[9,0,0,277],
-"classdpp_1_1zlibcontext.html":[11,0,0,271],
-"classdpp_1_1zlibcontext.html#a2e3adac71668a999db65a30802111834":[9,0,0,277,0]
+"classdpp_1_1when__any_1_1result.html#adcc8fe2ce406b5dedaeaa75524bf6c61":[11,0,0,270,1,0]
 };

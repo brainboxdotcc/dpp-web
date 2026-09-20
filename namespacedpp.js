@@ -6494,6 +6494,7 @@ var namespacedpp =
     [ "channel_delete_t", "structdpp_1_1channel__delete__t.html", "structdpp_1_1channel__delete__t" ],
     [ "channel_pins_update_t", "structdpp_1_1channel__pins__update__t.html", "structdpp_1_1channel__pins__update__t" ],
     [ "channel_update_t", "structdpp_1_1channel__update__t.html", "structdpp_1_1channel__update__t" ],
+    [ "choice_option", "structdpp_1_1choice__option.html", "structdpp_1_1choice__option" ],
     [ "cluster", "classdpp_1_1cluster.html", "classdpp_1_1cluster" ],
     [ "collected_reaction", "classdpp_1_1collected__reaction.html", "classdpp_1_1collected__reaction" ],
     [ "collector", "classdpp_1_1collector.html", "classdpp_1_1collector" ],
@@ -6651,7 +6652,6 @@ var namespacedpp =
     [ "scheduled_event", "structdpp_1_1scheduled__event.html", "structdpp_1_1scheduled__event" ],
     [ "scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", "classdpp_1_1scheduled__event__collector" ],
     [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
-    [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "signature_verifier", "classdpp_1_1signature__verifier.html", "classdpp_1_1signature__verifier" ],
     [ "sku", "classdpp_1_1sku.html", "classdpp_1_1sku" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
@@ -6767,6 +6767,7 @@ var namespacedpp =
     [ "role_permissions", "namespacedpp.html#a6d9fe4e502a90f9ffec8b90888a587e6", null ],
     [ "scheduled_event_collector_t", "namespacedpp.html#a45736823a51be6eb7910f036b30397b2", null ],
     [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
+    [ "select_option", "namespacedpp.html#aef4dfe1d243133238e3f9e0560fa304d", null ],
     [ "shard_list", "namespacedpp.html#a5aa5aff46815666cca6461d249ed5814", null ],
     [ "sku_map", "namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
@@ -7018,7 +7019,10 @@ var namespacedpp =
       [ "cot_content_inventory_entry", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ab08451a5d0de05f7392aca6d43f9ef08", null ],
       [ "cot_container", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ad0475a52523141c581ea3a2def87c154", null ],
       [ "cot_label", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a3dfec413250c8a8ecace59334ab5757d", null ],
-      [ "cot_file_upload", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a46b14f5313695913d5e1f919d03e2daa", null ]
+      [ "cot_file_upload", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a46b14f5313695913d5e1f919d03e2daa", null ],
+      [ "cot_radio_group", "namespacedpp.html#afce43206033521b990e3a72bb87481b7ad8e3ff309b36b6e35c617fbfb1de0845", null ],
+      [ "cot_checkbox_group", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a3aa8c54e4409bd04a5a42056dc7d9b9f", null ],
+      [ "cot_checkbox", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a01dca04306968f9abd0468e67de70374", null ]
     ] ],
     [ "dave_version_t", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0a", [
       [ "dave_version_none", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83", null ],

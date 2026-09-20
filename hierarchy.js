@@ -309,6 +309,9 @@ var hierarchy =
         [ "dpp::thread", "classdpp_1_1thread.html", null ]
       ] ]
     ] ],
+    [ "dpp::json_interface< choice_option >", "structdpp_1_1json__interface.html", [
+      [ "dpp::choice_option", "structdpp_1_1choice__option.html", null ]
+    ] ],
     [ "dpp::json_interface< command_option >", "structdpp_1_1json__interface.html", [
       [ "dpp::command_option", "structdpp_1_1command__option.html", null ]
     ] ],
@@ -397,9 +400,6 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< scheduled_event >", "structdpp_1_1json__interface.html", [
       [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ]
-    ] ],
-    [ "dpp::json_interface< select_option >", "structdpp_1_1json__interface.html", [
-      [ "dpp::select_option", "structdpp_1_1select__option.html", null ]
     ] ],
     [ "dpp::json_interface< sku >", "structdpp_1_1json__interface.html", [
       [ "dpp::sku", "classdpp_1_1sku.html", null ]

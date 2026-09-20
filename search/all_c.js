@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lab_5fcoat_0',['lab_coat',['../namespacedpp_1_1unicode__emoji.html#a1d3be092ff768e5abccc5089cfd5cb11',1,'dpp::unicode_emoji']]],
-  ['label_1',['label',['../structdpp_1_1select__option.html#a9b69bce92e58e606f37964d60c99c799',1,'dpp::select_option::label()'],['../classdpp_1_1component.html#a177a7e35e4b310e2028464787396b1b4',1,'dpp::component::label()'],['../structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d',1,'dpp::activity_button::label()'],['../namespacedpp_1_1unicode__emoji.html#a2a928990e25b42ac6a149b3312a836d3',1,'dpp::unicode_emoji::label()']]],
+  ['label_1',['label',['../structdpp_1_1choice__option.html#aaaed7d610ea734df1d3b73d1adcf575c',1,'dpp::choice_option::label()'],['../classdpp_1_1component.html#a177a7e35e4b310e2028464787396b1b4',1,'dpp::component::label()'],['../structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d',1,'dpp::activity_button::label()'],['../namespacedpp_1_1unicode__emoji.html#a2a928990e25b42ac6a149b3312a836d3',1,'dpp::unicode_emoji::label()']]],
   ['lacrosse_2',['lacrosse',['../namespacedpp_1_1unicode__emoji.html#a4ac17462746b17f6c23477102687f179',1,'dpp::unicode_emoji']]],
   ['ladder_3',['ladder',['../namespacedpp_1_1unicode__emoji.html#a6c9e75d2e410fce8fb6a2e432df101e4',1,'dpp::unicode_emoji']]],
   ['lady_5fbeetle_4',['lady_beetle',['../namespacedpp_1_1unicode__emoji.html#a1ecedd5858efeaaadeafec7d52060c71',1,'dpp::unicode_emoji']]],

@@ -10,6 +10,7 @@ var classdpp_1_1component =
     [ "add_default_value", "classdpp_1_1component.html#a9ebca146649e8cff20a1b6e2479300c5", null ],
     [ "add_file_type", "classdpp_1_1component.html#a748417782e1b3fbc8c869e4b318cf43c", null ],
     [ "add_media_gallery_item", "classdpp_1_1component.html#a9d89b77d3379c4d48a45ff7b913a31a9", null ],
+    [ "add_option", "classdpp_1_1component.html#a0c1ac1dbee4fc6e204457202418d3f54", null ],
     [ "add_select_option", "classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243", null ],
     [ "build_json", "classdpp_1_1component.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1component.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
@@ -20,6 +21,7 @@ var classdpp_1_1component =
     [ "set_accessory", "classdpp_1_1component.html#a20be300c776ba8358c07a89e6c5b6706", null ],
     [ "set_component_id", "classdpp_1_1component.html#a670a14dacdf6586c64067545d39575af", null ],
     [ "set_content", "classdpp_1_1component.html#a08c117e831d21686ee49ed11ca1d786f", null ],
+    [ "set_default", "classdpp_1_1component.html#ab7a7e92fd38c672e6635e1073ebbae12", null ],
     [ "set_default_value", "classdpp_1_1component.html#af68cc0f09b37f0cbd4a29b083c701904", null ],
     [ "set_description", "classdpp_1_1component.html#a6c66fb2d559a8012a9ab06605f429f90", null ],
     [ "set_disabled", "classdpp_1_1component.html#a48a2ab72eaf6e58073a1f5dc936877a3", null ],
@@ -57,6 +59,7 @@ var classdpp_1_1component =
     [ "emoji", "classdpp_1_1component.html#ab6c5409437d791bbf7524ff1f10fe20f", null ],
     [ "file", "classdpp_1_1component.html#a52131c9e83bfcb9dce72f76adbff5d3a", null ],
     [ "file_types", "classdpp_1_1component.html#aee75b3e15acc8e6cb5654478b7cb2822", null ],
+    [ "is_default", "classdpp_1_1component.html#a99c82e93ca43f493271b49d1c9d6122d", null ],
     [ "is_divider", "classdpp_1_1component.html#a741d859b416cdf8e47381eba8f04f26f", null ],
     [ "label", "classdpp_1_1component.html#a177a7e35e4b310e2028464787396b1b4", null ],
     [ "max_length", "classdpp_1_1component.html#aa0a71bbf2f4cac7d87a53ad1ec89da37", null ],
@@ -64,7 +67,7 @@ var classdpp_1_1component =
     [ "media_gallery_items", "classdpp_1_1component.html#a953932a1b259d1d70c33cb8c17edb2ba", null ],
     [ "min_length", "classdpp_1_1component.html#a35e8a8aabfd66a0f23ece038591e4747", null ],
     [ "min_values", "classdpp_1_1component.html#a2278f6585edfa07f2b7711aaf31cf5a3", null ],
-    [ "options", "classdpp_1_1component.html#ad4f47e82e57e28a1aac48027e43b2fd9", null ],
+    [ "options", "classdpp_1_1component.html#a1eacdabdc18948f333b32fd4eac68a17", null ],
     [ "placeholder", "classdpp_1_1component.html#a4fe9d95b2fd61a38269c3368db4c17ce", null ],
     [ "required", "classdpp_1_1component.html#a6a6312c0c598466aa87541745d2f7bff", null ],
     [ "sku_id", "classdpp_1_1component.html#abb844cd70be8763ce5570b1e9de40f9b", null ],
@@ -75,5 +78,6 @@ var classdpp_1_1component =
     [ "thumbnail", "classdpp_1_1component.html#a1a4d30c797b66f2818c54ee5d3264558", null ],
     [ "type", "classdpp_1_1component.html#afdb70ec9968493ed54bab29135f8b8c6", null ],
     [ "url", "classdpp_1_1component.html#a79ad72fb0e31440e8f644e79a5870573", null ],
-    [ "value", "classdpp_1_1component.html#aea6ebd38924644607081d88d0a32213c", null ]
+    [ "value", "classdpp_1_1component.html#a9627c6de66f16d795ff130e38832ef43", null ],
+    [ "values", "classdpp_1_1component.html#af51bf1ec479162e1531fc716185ae2a4", null ]
 ];
