@@ -8119,7 +8119,7 @@ var namespacedpp =
     [ "DISCORD_HOST", "namespacedpp.html#a243e725d7b20f89395b3cce1215421ea", null ],
     [ "DPP_BUFSIZE", "namespacedpp.html#a6321a697903a4e58f7b38e268f54658d", null ],
     [ "ERROR_STATUS", "namespacedpp.html#a75b92dd2787f4e2c1d11e4ffe94a0ffc", null ],
-    [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
+    [ "FORMAT_VERSION", "namespacedpp.html#a0ac488d9c382f7627195789e242d59ba", null ],
     [ "http_version", "namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34", null ],
     [ "is_valid_config", "namespacedpp.html#ae5545dbc7d5791902c0f940ad125b672", null ],
     [ "MAX_AVATAR_SIZE", "namespacedpp.html#ae876818464d49870905285dd988de870", null ],

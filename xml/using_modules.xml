@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="using_modules" kind="page">
+    <compoundname>using_modules</compoundname>
+    <title>Using D++ with C++ modules</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><para><simplesect kind="warning"><para>D++ modules are currently experimental and are only supported by D++ on g++ 15, clang/LLVM 17, and MSVC 17.6 or above. Additionally, your program has to support C++20. </para>
+</simplesect>
+</para>
+</para>
+<para>D++ is offered as a C++ module, which offers improved compile times over a traditional header.</para>
+<para>In order to enable support, you must use C++20 (or later) with any module-supporting compiler. To activate the feature, pass the <computeroutput>DPP_MODULES</computeroutput> flag to CMake. Ensure that the generated build system supports modules (for CMake, this is usually Ninja; note CMake does not currently support modules with Makefile).</para>
+<para>The module interface unit is attached to the D++ library target itself, and <computeroutput>find_package</computeroutput> exports that target under a namespace. This means that your bot must link against <computeroutput>dpp::dpp</computeroutput>, and not a bare <computeroutput>dpp</computeroutput>:</para>
+<para><programlisting filename=".cmake"><codeline><highlight class="normal">#<sp/>Module<sp/>support<sp/>requires<sp/>CMake<sp/>3.28<sp/>or<sp/>above.</highlight></codeline>
+<codeline><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.28)</highlight></codeline>
+<codeline><highlight class="normal">project(discord-bot)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">find_package(dpp<sp/>REQUIRED)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">add_executable(${PROJECT_NAME}<sp/>src/main.cpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>dpp::dpp<sp/>carries<sp/>the<sp/>module<sp/>interface<sp/>unit<sp/>along<sp/>with<sp/>it.<sp/>A<sp/>bare<sp/>dpp<sp/>does<sp/>not!</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}<sp/>PRIVATE<sp/>dpp::dpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">set_target_properties(${PROJECT_NAME}<sp/>PROPERTIES</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>20</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD_REQUIRED<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_EXTENSIONS<sp/>OFF</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_SCAN_FOR_MODULES<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="warning"><para>Writing a bare <computeroutput>dpp</computeroutput> instead of <computeroutput>dpp::dpp</computeroutput> will <bold>not</bold> give you an error from CMake. A name is only treated as a target if it contains <computeroutput>::</computeroutput>, so a plain <computeroutput>dpp</computeroutput> is quietly handed to the linker as <computeroutput>-ldpp</computeroutput> instead. Your build will then fail later on with an error saying that the module <computeroutput>dpp</computeroutput> cannot be found, because your compiler was never told where the module interface unit lives.</para>
+</simplesect>
+The other properties in the example above are just as important as the link line:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>CXX_SCAN_FOR_MODULES</computeroutput> tells CMake to scan your sources for <computeroutput>import</computeroutput> statements. Without it, CMake never notices that your bot depends on the D++ module at all.</para>
+</listitem><listitem><para>We set <computeroutput>CXX_EXTENSIONS OFF</computeroutput>, as compilers will refuse to load a module with extensions enabled on another module without extensions enabled.</para>
+</listitem></itemizedlist>
+</para>
+<para>Once this is done, simply <computeroutput>import dpp;</computeroutput> and we&apos;re good to go!</para>
+<para><programlisting filename="using_modules.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacedpp" kindref="compound">dpp</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;YOUR_BOT_TOKEN_HERE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref>&amp;<sp/>event)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(</highlight><highlight class="stringliteral">&quot;Pong!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>event)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ping<sp/>pong!&quot;</highlight><highlight class="normal">,<sp/>bot.me.id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(dpp::start_type::st_wait);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/misc/using_modules.md"/>
+  </compounddef>
+</doxygen>
