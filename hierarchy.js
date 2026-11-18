@@ -79,6 +79,7 @@ var hierarchy =
     [ "dpp::detail::promise::empty", "structdpp_1_1detail_1_1promise_1_1empty.html", null ],
     [ "dpp::detail::when_any::empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ],
     [ "std::enable_shared_from_this", null, [
+      [ "dpp::http_server_request", "classdpp_1_1http__server__request.html", null ],
       [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ]
     ] ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],

@@ -7,7 +7,7 @@ var structdpp_1_1discord__webhook__server =
     [ "handle_request", "structdpp_1_1discord__webhook__server.html#ad24895dc4d725254f1f4b1214f0a8f8f", null ],
     [ "bound_port", "structdpp_1_1discord__webhook__server.html#ae7393791211c60ba31911346f5cc1a02", null ],
     [ "close_event", "structdpp_1_1discord__webhook__server.html#afa52fd464901a764d39060c7ea640acd", null ],
-    [ "connections", "structdpp_1_1discord__webhook__server.html#a23171433eef1f1955dd881427ad8683a", null ],
+    [ "connections", "structdpp_1_1discord__webhook__server.html#a2afbb16c17ac91d491775e589ed784d9", null ],
     [ "creator", "structdpp_1_1discord__webhook__server.html#adc251f3dfe1c146603983b63e5ccf443", null ],
     [ "events", "structdpp_1_1discord__webhook__server.html#a4c98537155766c325a8d417d873e2017", null ],
     [ "fd", "structdpp_1_1discord__webhook__server.html#a3fed071f1108cd751b3381876175943a", null ],

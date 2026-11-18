@@ -150,9 +150,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afa52fd464901a764d39060c7ea640acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__listener.html#afa52fd464901a764d39060c7ea640acd">close_event</a></td></tr>
 <tr class="memdesc:afa52fd464901a764d39060c7ea640acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event to handle socket removal from the connection map.  <a href="structdpp_1_1socket__listener.html#afa52fd464901a764d39060c7ea640acd">More...</a><br /></td></tr>
 <tr class="separator:afa52fd464901a764d39060c7ea640acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23171433eef1f1955dd881427ad8683a"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>, std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__listener.html#a23171433eef1f1955dd881427ad8683a">connections</a></td></tr>
-<tr class="memdesc:a23171433eef1f1955dd881427ad8683a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active connections for the server of type T.  <a href="structdpp_1_1socket__listener.html#a23171433eef1f1955dd881427ad8683a">More...</a><br /></td></tr>
-<tr class="separator:a23171433eef1f1955dd881427ad8683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afbb16c17ac91d491775e589ed784d9"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>, std::shared_ptr&lt; <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__listener.html#a2afbb16c17ac91d491775e589ed784d9">connections</a></td></tr>
+<tr class="memdesc:a2afbb16c17ac91d491775e589ed784d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active connections for the server of type T. Shared pointers, so that work queued for a connection, such as a request handler on the thread pool, keeps it alive after it is removed from this map.  <a href="structdpp_1_1socket__listener.html#a2afbb16c17ac91d491775e589ed784d9">More...</a><br /></td></tr>
+<tr class="separator:a2afbb16c17ac91d491775e589ed784d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc251f3dfe1c146603983b63e5ccf443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1socket__listener.html#adc251f3dfe1c146603983b63e5ccf443">creator</a></td></tr>
 <tr class="memdesc:adc251f3dfe1c146603983b63e5ccf443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cluster creator.  <a href="structdpp_1_1socket__listener.html#adc251f3dfe1c146603983b63e5ccf443">More...</a><br /></td></tr>
 <tr class="separator:adc251f3dfe1c146603983b63e5ccf443"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,8 +393,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a23171433eef1f1955dd881427ad8683a" name="a23171433eef1f1955dd881427ad8683a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23171433eef1f1955dd881427ad8683a">&#9670;&nbsp;</a></span>connections</h2>
+<a id="a2afbb16c17ac91d491775e589ed784d9" name="a2afbb16c17ac91d491775e589ed784d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2afbb16c17ac91d491775e589ed784d9">&#9670;&nbsp;</a></span>connections</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +403,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>, std::unique_ptr&lt;<a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> &gt; &gt; <a class="el" href="structdpp_1_1socket__listener.html">dpp::socket_listener</a>&lt; <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> , typename &gt;::connections</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a>, std::shared_ptr&lt;<a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> &gt; &gt; <a class="el" href="structdpp_1_1socket__listener.html">dpp::socket_listener</a>&lt; <a class="el" href="classdpp_1_1http__server__request.html">http_server_request</a> , typename &gt;::connections</td>
         </tr>
       </table>
   </td>
@@ -413,7 +413,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Active connections for the server of type T. </p>
+<p>Active connections for the server of type T. Shared pointers, so that work queued for a connection, such as a request handler on the thread pool, keeps it alive after it is removed from this map. </p>
 
 </div>
 </div>

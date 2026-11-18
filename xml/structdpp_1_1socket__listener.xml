@@ -25,21 +25,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="81" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="81" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="83" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="83" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a23171433eef1f1955dd881427ad8683a" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref>, std::unique_ptr&lt; T &gt; &gt;</type>
-        <definition>std::unordered_map&lt;socket, std::unique_ptr&lt;T&gt; &gt; dpp::socket_listener&lt; T, typename &gt;::connections</definition>
+      <memberdef kind="variable" id="structdpp_1_1socket__listener_1a2afbb16c17ac91d491775e589ed784d9" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref>, std::shared_ptr&lt; T &gt; &gt;</type>
+        <definition>std::unordered_map&lt;socket, std::shared_ptr&lt;T&gt; &gt; dpp::socket_listener&lt; T, typename &gt;::connections</definition>
         <argsstring></argsstring>
         <name>connections</name>
         <briefdescription>
-<para>Active connections for the server of type T. </para>
+<para>Active connections for the server of type T. Shared pointers, so that work queued for a connection, such as a request handler on the thread pool, keeps it alive after it is removed from this map. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="56" column="20" bodyfile="include/dpp/socket_listener.h" bodystart="56" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="58" column="20" bodyfile="include/dpp/socket_listener.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1adc251f3dfe1c146603983b63e5ccf443" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="61" column="9" bodyfile="include/dpp/socket_listener.h" bodystart="61" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="63" column="9" bodyfile="include/dpp/socket_listener.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a4c98537155766c325a8d417d873e2017" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1socket__events" kindref="compound">socket_events</ref></type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="86" column="15" bodyfile="include/dpp/socket_listener.h" bodystart="86" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="88" column="15" bodyfile="include/dpp/socket_listener.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a3fed071f1108cd751b3381876175943a" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1raii__socket" kindref="compound">raii_socket</ref></type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="66" column="6" bodyfile="include/dpp/socket_listener.h" bodystart="66" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="68" column="6" bodyfile="include/dpp/socket_listener.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a102e5f91201e187e13f57816b180d66f" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="71" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="71" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="73" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1socket__listener_1a85d5ba5395875c51c4952620c5cbb2f9" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="76" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="76" bodyend="-1"/>
+        <location file="include/dpp/socket_listener.h" line="78" column="13" bodyfile="include/dpp/socket_listener.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="98" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="98" bodyend="124"/>
+        <location file="include/dpp/socket_listener.h" line="100" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="100" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1socket__listener_1ada36ac97c4b68ace8653394fb94f6107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="129" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="129" bodyend="131"/>
+        <location file="include/dpp/socket_listener.h" line="131" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="131" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1socket__listener_1ad4a3c8e33a7e71067b47e3b00bc53e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="151" column="14"/>
+        <location file="include/dpp/socket_listener.h" line="153" column="14"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1socket__listener_1a1a3d7791b273a8056f306ae1874c2a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/socket_listener.h" line="139" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="139" bodyend="144"/>
+        <location file="include/dpp/socket_listener.h" line="141" column="14" bodyfile="include/dpp/socket_listener.h" bodystart="141" bodyend="146"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -602,10 +602,10 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/socket_listener.h" line="47" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="47" bodyend="152"/>
+    <location file="include/dpp/socket_listener.h" line="47" column="1" bodyfile="include/dpp/socket_listener.h" bodystart="47" bodyend="154"/>
     <listofallmembers>
       <member refid="structdpp_1_1socket__listener_1afa52fd464901a764d39060c7ea640acd" prot="public" virt="non-virtual"><scope>dpp::socket_listener</scope><name>close_event</name></member>
-      <member refid="structdpp_1_1socket__listener_1a23171433eef1f1955dd881427ad8683a" prot="public" virt="non-virtual"><scope>dpp::socket_listener</scope><name>connections</name></member>
+      <member refid="structdpp_1_1socket__listener_1a2afbb16c17ac91d491775e589ed784d9" prot="public" virt="non-virtual"><scope>dpp::socket_listener</scope><name>connections</name></member>
       <member refid="structdpp_1_1socket__listener_1adc251f3dfe1c146603983b63e5ccf443" prot="public" virt="non-virtual"><scope>dpp::socket_listener</scope><name>creator</name></member>
       <member refid="structdpp_1_1socket__listener_1ad4a3c8e33a7e71067b47e3b00bc53e3a" prot="public" virt="pure-virtual"><scope>dpp::socket_listener</scope><name>emplace</name></member>
       <member refid="structdpp_1_1socket__listener_1a4c98537155766c325a8d417d873e2017" prot="public" virt="non-virtual"><scope>dpp::socket_listener</scope><name>events</name></member>
